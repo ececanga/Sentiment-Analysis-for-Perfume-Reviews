@@ -1,0 +1,4 @@
+model_a,model_b,mean_JS,median_JS,n_perfumes,emotions
+Savani,Cardiff,0.24916858157014352,0.2629978802904024,784,"anger,joy,sadness"
+Savani,GoEmotions,0.32437129114653107,0.31548829836873366,784,"anger,fear,joy,love,sadness,surprise"
+Cardiff,GoEmotions,0.20190825510840066,0.14720344182587422,784,"anger,joy,optimism,sadness"

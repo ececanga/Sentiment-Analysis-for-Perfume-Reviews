@@ -1,0 +1,4 @@
+model_a,model_b,pearson_r,emotions_compared
+Savani,Cardiff,0.036644220326479175,"anger,joy,sadness"
+Savani,GoEmotions,0.12728449188739496,"anger,fear,joy,love,sadness,surprise"
+Cardiff,GoEmotions,0.25682856213365474,"anger,joy,optimism,sadness"

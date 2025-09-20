@@ -1,0 +1,19 @@
+# Ignore virtual environment
+venv/
+
+# Ignore large CSVs
+YouTube_Perfume_Reviews_Partial.csv
+YouTube_Perfume_Reviews_With_ScentEmotion.csv
+YouTube_Perfume_Reviews_With_Transformer.csv
+YouTube_Perfume_Reviews_FullyFormatted.csv
+done/YouTube_Perfume_Reviews_Formatted.csv
+done/YouTube_Perfume_Reviews_PCLEANED.csv
+done/YouTube_Perfume_Reviews_Cleaned.csv
+done/YouTube_Perfume_Reviews_Partial_CLEANED.csv
+done/YouTube_Perfume_Reviews_With_Intensifiers.csv
+
+# Ignore PyTorch binary
+venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib
+
+# System files
+.DS_Store
