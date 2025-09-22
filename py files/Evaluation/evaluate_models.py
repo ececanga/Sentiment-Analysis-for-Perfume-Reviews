@@ -40,6 +40,7 @@ import argparse
 import colorsys
 import numpy as np
 import pandas as pd
+import colorsys
 import matplotlib.pyplot as plt
 from pathlib import Path
 from typing import Dict, Tuple
@@ -86,6 +87,14 @@ LABEL_MAP = {
 
 # For plotting readability
 MODEL_ORDER = ['JHartmann', 'Savani', 'Cardiff', 'GoEmotions']
+
+# Canonical name → accepted column prefixes
+ALIAS_PREFIXES = {
+    'JHartmann': ['JHartmann', 'Hartmann'],   # <-- this is the important one
+    'Savani':    ['Savani'],
+    'Cardiff':   ['Cardiff', 'CardiffRoberta'],
+    'GoEmotions':['GoEmotions']
+}
 
 # ---------------------------- Utilities ----------------------------
 
@@ -235,8 +244,15 @@ PROJECTORS: Dict[str, Dict[str, str]] = {
 }
 
 def project_to_coarse(df: pd.DataFrame, prefix: str) -> pd.DataFrame:
-    """Return DataFrame with columns: Perfume, <prefix>_[joy|sadness|anger|fear|surprise|neutral] (row-normalized)."""
-    cols = [c for c in df.columns if c.lower().startswith(prefix.lower() + '_')]
+    """Return DataFrame with columns: Perfume, <prefix>_[joy|sadness|anger|fear|surprise|neutral] (row-normalized).
+       Accepts alias prefixes (e.g., 'Hartmann_' treated as 'JHartmann_')."""
+    alias_list = ALIAS_PREFIXES.get(prefix, [prefix])
+
+    # Collect all candidate score columns for any accepted prefix
+    cols = []
+    for pfx in alias_list:
+        cols += [c for c in df.columns if c.lower().startswith(pfx.lower() + '_')]
+
     if not cols:
         return pd.DataFrame({'Perfume': df['Perfume']})
 
@@ -245,6 +261,7 @@ def project_to_coarse(df: pd.DataFrame, prefix: str) -> pd.DataFrame:
     bucket = {k: np.zeros(len(df)) for k in COARSE}
 
     for c in cols:
+        # Strip the FIRST underscore only, regardless of actual prefix used
         base = c.split('_', 1)[1]
         coarse_target = mapping.get(base.lower())
         if coarse_target in COARSE:
@@ -259,6 +276,30 @@ def project_to_coarse(df: pd.DataFrame, prefix: str) -> pd.DataFrame:
 
 def build_coarse_cube(unified: pd.DataFrame) -> Dict[str, pd.DataFrame]:
     return {m: project_to_coarse(unified, m) for m in MODEL_ORDER}
+
+def hue_from_valence_full(valence, offset=0.02):
+    # rank in [0,1], guarantees uniform coverage across the wheel
+    r = pd.Series(valence).rank(pct=True).to_numpy(dtype=float)
+    return (r + offset) % 1.0
+
+def pct_rescale(x, lo=1, hi=99):
+    x = np.asarray(x, dtype=float)
+    a, b = np.nanpercentile(x, lo), np.nanpercentile(x, hi)
+    if b <= a:  # fallback
+        mn, mx = np.nanmin(x), np.nanmax(x)
+        return (x - mn) / (mx - mn + 1e-9)
+    return (x - a) / (b - a)
+
+def vad_to_hsv_full(valence, arousal, dominance, hue_offset=0.0):
+    # spread hue around the whole wheel using valence ranks
+    r = pd.Series(valence).rank(pct=True).to_numpy(dtype=float)
+    H = (r + hue_offset) % 1.0
+
+    # much brighter & more saturated
+    S = 0.80 + 0.20 * pct_rescale(arousal, 5, 95)   # was 0.25 + 0.75 * ...
+    V = 0.92 + 0.08 * pct_rescale(dominance, 5, 95) # was 0.55 + 0.40 * ...
+
+    return H, np.clip(S, 0, 1), np.clip(V, 0, 1)
 
 # ---------------------------- Dist. similarity & label distribution ----------------------------
 
@@ -291,27 +332,28 @@ def label_distribution_by_model(unified: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 # ---------------------------- VAD correlations ----------------------------
-
-def derive_valence_proxy(df_model: pd.DataFrame, prefix: str) -> pd.Series:
-    pos = df_model.get(f'{prefix}_joy', 0)
-    neg = sum(df_model.get(f'{prefix}_{k}', 0) for k in ['anger', 'fear', 'sadness'])
-    return pos - neg
-
 def vad_correlations(unified: pd.DataFrame, cube: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     out = []
     if 'VAD_valence' not in unified.columns:
         return pd.DataFrame()
 
+    x = pd.to_numeric(unified['VAD_valence'], errors='coerce')
     for m in MODEL_ORDER:
         if m not in cube or f'{m}_joy' not in cube[m].columns:
             continue
-        proxy = derive_valence_proxy(cube[m], m)
-        df = pd.DataFrame({'VAD_valence': unified['VAD_valence'], 'Proxy': proxy}).dropna()
-        if len(df) < 3:
+        y = derive_valence_proxy(cube[m], m)
+        df = pd.DataFrame({'x': x, 'y': pd.to_numeric(y, errors='coerce')}).dropna()
+
+        # Guard: skip if either vector is ~constant (avoids ConstantInputWarning)
+        if len(df) < 3 or df['x'].nunique() < 2 or df['y'].nunique() < 2:
+            out.append({'Model': m, 'Pearson_r': np.nan, 'Pearson_p': np.nan,
+                        'Spearman_r': np.nan, 'Spearman_p': np.nan})
             continue
-        pr, pr_p = pearsonr(df['VAD_valence'], df['Proxy'])
-        sr, sr_p = spearmanr(df['VAD_valence'], df['Proxy'])
-        out.append({'Model': m, 'Pearson_r': pr, 'Pearson_p': pr_p, 'Spearman_r': sr, 'Spearman_p': sr_p})
+
+        pr, pr_p = pearsonr(df['x'], df['y'])
+        sr, sr_p = spearmanr(df['x'], df['y'])
+        out.append({'Model': m, 'Pearson_r': pr, 'Pearson_p': pr_p,
+                    'Spearman_r': sr, 'Spearman_p': sr_p})
     return pd.DataFrame(out)
 
 # ---------------------------- Extra: common score vectors (non-coarse) ----------------------------
@@ -431,16 +473,19 @@ def plot_vad_scatters(unified: pd.DataFrame, cube: Dict[str, pd.DataFrame], coun
         plt.figure(figsize=(6, 5))
         plt.scatter(x, y, alpha=0.7, s=size)
 
+        plt.ylim(-1.0, 1.0)  # same scale for all models
+
         rc = vad_corr[vad_corr['Model'] == m]
         subtitle = ''
         if not rc.empty and not np.isnan(rc['Pearson_r'].iloc[0]):
             subtitle = f' (r≈{rc["Pearson_r"].iloc[0]:.2f})'
 
         try:
-            z = np.polyfit(x, y, 1)
-            p = np.poly1d(z)
-            xs = np.linspace(x.min(), x.max(), 100)
-            plt.plot(xs, p(xs))
+            if y.nunique() >= 2 and x.nunique() >= 2:
+                z = np.polyfit(x, y, 1)
+                p = np.poly1d(z)
+                xs = np.linspace(x.min(), x.max(), 100)
+                plt.plot(xs, p(xs))
         except Exception:
             pass
 
@@ -493,32 +538,28 @@ def vad_to_hsl(v, a, d):
     L = 0.35 + 0.3 * d  # lightness by dominance
     return H, S, L
 
-def build_vad_palette(unified: pd.DataFrame, counts: pd.Series) -> pd.DataFrame:
-    need = {'VAD_valence', 'VAD_arousal', 'VAD_dominance'}
-    if not need.issubset(unified.columns):
-        return pd.DataFrame()
-    palette = []
-    for _, r in unified.iterrows():
-        H, S, L = vad_to_hsl(float(r["VAD_valence"]), float(r["VAD_arousal"]), float(r["VAD_dominance"]))
-        row = {"Perfume": r["Perfume"], "H": round(H, 3), "S": round(S, 3), "L": round(L, 3)}
-        row["ReviewCount"] = int(counts.get(r["Perfume"], 0))
-        palette.append(row)
-    return pd.DataFrame(palette).sort_values("ReviewCount", ascending=False)
-
-def plot_vad_color_swatches(palette: pd.DataFrame, maxN: int = 40):
+def plot_vad_color_swatches(palette: pd.DataFrame, maxN: int = 40, order="hue"):
     if palette.empty:
         return
+
+    df = palette.copy()
+    if order == "hue" and "H" in df.columns:
+        df = df.sort_values("H")
+
+    N = min(maxN, len(df))
+    idx = np.linspace(0, len(df) - 1, N, dtype=int)   # spread over all hues
+    show = df.iloc[idx]
+
     plt.figure(figsize=(12, 1.5))
-    N = min(maxN, len(palette))
-    for i, (_, row) in enumerate(palette.head(N).iterrows()):
-        R, G, B = colorsys.hls_to_rgb(row["H"], row["L"], row["S"])
-        plt.fill_between([i, i + 1], 0, 1, color=(R, G, B))
+    for i, (_, row) in enumerate(show.iterrows()):
+        r, g, b = colorsys.hsv_to_rgb(float(row["H"]), float(row["S"]), float(row["V"]))
+        plt.fill_between([i, i + 1], 0, 1, color=(r, g, b))
         plt.text(i + 0.5, -0.1, row['Perfume'][:10]+'..', ha='center', va='top', rotation=90, fontsize=8)
     plt.xlim(0, N); plt.yticks([]); plt.xticks([])
-    plt.title(f"VAD→Color Swatches (Top {N} Perfumes by Review Count)")
+    plt.title(f"VAD→Color Swatches (HSV, Top {N} Perfumes)")
     plt.subplots_adjust(bottom=0.4)
     safe_savefig(FIG_DIR / "vad_color_swatches.png")
-
+    
 # ---------------------------- Built-in: Top Disagreements ----------------------------
 
 def compute_and_show_top_disagreements(unified: pd.DataFrame, agree_df: pd.DataFrame, topK: int) -> pd.DataFrame:
@@ -552,19 +593,32 @@ def compute_and_show_top_disagreements(unified: pd.DataFrame, agree_df: pd.DataF
 
 #---------------------------------------------------------------
 
-def ensure_top_labels(unified: pd.DataFrame, cube: Dict[str, pd.DataFrame]) -> pd.DataFrame:
-    """If a model's '<Model>_Label' column is missing/all-NaN, derive it
-       from that model's coarse distribution (argmax over COARSE)."""
+def ensure_top_labels(unified: pd.DataFrame,
+                      cube: Dict[str, pd.DataFrame],
+                      min_conf: float = 0.0,
+                      overwrite: bool = False) -> pd.DataFrame:
+    """
+    If a model's '<Model>_Label' column is missing/all-NaN, or if overwrite=True,
+    derive it from the model's coarse distribution (argmax over COARSE).
+    If the max prob < min_conf, assign 'neutral'.
+    """
     uni = unified.copy()
     for m in MODEL_ORDER:
         lab_col = f"{m}_Label"
-        have = (lab_col in uni.columns) and (uni[lab_col].notna().any())
-        if have: 
-            continue
         if m not in cube or f"{m}_joy" not in cube[m].columns:
             continue
-        dist = cube[m][[f"{m}_{k}" for k in COARSE]]
-        uni[lab_col] = dist.idxmax(axis=1).str.split('_').str[1]  # 'JHartmann_joy' -> 'joy'
+
+        # derive from coarse distribution with confidence
+        dist = cube[m][[f"{m}_{k}" for k in COARSE]].copy()
+        top  = dist.idxmax(axis=1).str.split('_').str[1]
+        conf = dist.max(axis=1)
+        derived = np.where(conf >= float(min_conf), top, 'neutral')
+
+        if overwrite or (lab_col not in uni.columns) or (uni[lab_col].isna().all()):
+            uni[lab_col] = derived
+        else:
+            # fill only where missing
+            uni[lab_col] = uni[lab_col].where(uni[lab_col].notna(), derived)
     return uni
 
 def derive_valence_proxy(df_model: pd.DataFrame, prefix: str) -> pd.Series:
@@ -579,13 +633,6 @@ def derive_valence_proxy(df_model: pd.DataFrame, prefix: str) -> pd.Series:
     centered = (j/denom) - ((ang + fear + sad)/denom)
     return centered.fillna(j - (ang + fear + sad)).clip(-1, 1)
 
-def pct_rescale(x, lo=5, hi=95):
-    x = np.asarray(x, dtype=float)
-    a, b = np.nanpercentile(x, lo), np.nanpercentile(x, hi)
-    if b <= a:
-        return np.clip((x - np.nanmin(x)) / (np.nanmax(x) - np.nanmin(x) + 1e-9), 0, 1)
-    return np.clip((x - a) / (b - a), 0, 1)
-
 def vad_to_hsl_rescaled(valence, arousal, dominance):
     v = pct_rescale(valence, 5, 95)
     a = pct_rescale(arousal, 5, 95)
@@ -597,14 +644,24 @@ def vad_to_hsl_rescaled(valence, arousal, dominance):
 
 def build_vad_palette(unified: pd.DataFrame, counts: pd.Series) -> pd.DataFrame:
     need = {'VAD_valence','VAD_arousal','VAD_dominance'}
-    if not need.issubset(unified.columns): return pd.DataFrame()
-    H, S, L = vad_to_hsl_rescaled(unified['VAD_valence'], unified['VAD_arousal'], unified['VAD_dominance'])
+    if not need.issubset(unified.columns): 
+        return pd.DataFrame()
+
+    # Spread hue around the entire wheel; bright & saturated
+    H, S, V = vad_to_hsv_full(
+        unified['VAD_valence'], 
+        unified['VAD_arousal'], 
+        unified['VAD_dominance'],
+        hue_offset=0.0
+    )
     out = pd.DataFrame({
         "Perfume": unified["Perfume"],
-        "H": np.round(H, 3), "S": np.round(S, 3), "L": np.round(L, 3),
+        "H": np.clip(np.round(H, 3), 0, 1),
+        "S": np.clip(np.round(S, 3), 0, 1),
+        "V": np.clip(np.round(V, 3), 0, 1),
         "ReviewCount": unified["Perfume"].map(counts).fillna(0).astype(int).values
     })
-    return out.sort_values("ReviewCount", ascending=False)
+    return out.sort_values("ReviewCount", ascending=False)  # or just `return out`
 
 def plot_nrc_lift_heatmap(unified: pd.DataFrame, topN: int = 25):
     nrc_cols = [c for c in unified.columns if c.startswith("NRC_")]
@@ -623,14 +680,33 @@ def plot_nrc_lift_heatmap(unified: pd.DataFrame, topN: int = 25):
     plt.title(f"NRC Emotion *Lift* (Top {len(H)} Perfumes)")
     safe_savefig(FIG_DIR / "nrc_lift_heatmap.png")
 
+# --------------------------------------------------------------
+def apply_runtime_mappings(cardiff_optimism_neutral: bool = False):
+    """
+    Optionally remap Cardiff 'optimism' → neutral (default is joy).
+    This helps test whether Cardiff optimism is inflating disagreements.
+    """
+    if 'Cardiff' not in PROJECTORS:
+        return
+    if cardiff_optimism_neutral:
+        PROJECTORS['Cardiff']['optimism'] = 'neutral'
+    else:
+        PROJECTORS['Cardiff']['optimism'] = 'joy'
+
 # ---------------------------- Main ----------------------------
 
-def main(topN: int, topK: int, normalize_vad: bool = False):
+def main(topN: int, topK: int, normalize_vad: bool = False,
+         toplabel_min_conf: float = 0.0,
+         cardiff_optimism_neutral: bool = False,
+         overwrite_labels: bool = False):
     if not UNIFIED_PATH.exists():
         raise FileNotFoundError(f"Missing {UNIFIED_PATH}. Run the aggregation first.")
     unified = pd.read_csv(UNIFIED_PATH)
 
-    # Optionally normalize VAD to [0,1] for color mapping if your lexicon scale differs.
+    # Apply runtime label mapping toggles BEFORE building the cube
+    apply_runtime_mappings(cardiff_optimism_neutral)
+
+    # Optional: normalize VAD to [0,1] for palette only
     if normalize_vad and {'VAD_valence','VAD_arousal','VAD_dominance'}.issubset(unified.columns):
         cols = ['VAD_valence','VAD_arousal','VAD_dominance']
         x = unified[cols].to_numpy(dtype=float)
@@ -640,63 +716,78 @@ def main(topN: int, topK: int, normalize_vad: bool = False):
 
     counts = get_review_counts(unified)
 
-    # 1) Agreement on top labels
-    kappa = compute_pairwise_kappa(unified)
+    # --- Build coarse distributions first ---
+    cube = build_coarse_cube(unified)
+
+    # --- Ensure top labels exist (with confidence threshold) ---
+    unified_labels = ensure_top_labels(
+        unified, cube,
+        min_conf=toplabel_min_conf,
+        overwrite=overwrite_labels
+    )
+
+    print("Example labels:",
+      {m: unified_labels[f"{m}_Label"].iloc[0] for m in MODEL_ORDER if f"{m}_Label" in unified_labels})
+
+    # 1) AGREEMENT (use unified_labels everywhere labels are needed)
+    kappa = compute_pairwise_kappa(unified_labels)
     if not kappa.empty:
         kappa.to_csv(OUT_DIR / 'pairwise_kappa.csv')
         plot_kappa_heatmap(kappa)
 
-    fleiss = fleiss_kappa_from_unified(unified)
+    fleiss = fleiss_kappa_from_unified(unified_labels)
     with open(OUT_DIR / 'fleiss_kappa.txt', 'w') as f:
         f.write(f"Fleiss' kappa across models: {fleiss:.4f}\n")
 
-    agree_df = agreement_by_perfume(unified)
+    agree_df = agreement_by_perfume(unified_labels)
     if not agree_df.empty:
         agree_df.to_csv(OUT_DIR / 'agreement_by_perfume.csv', index=False)
 
-    # 2) Distribution projection & similarity (coarse)
-    cube = build_coarse_cube(unified)
-
+    # 2) Distribution similarity (already uses cube)
     jsd_coarse = pairwise_jsd_coarse(cube)
     if not jsd_coarse.empty:
         jsd_coarse.to_csv(OUT_DIR / 'jsd_pairwise.csv')
         plot_jsd_heatmap(jsd_coarse)
 
-    dist_df = label_distribution_by_model(unified)
+    # Label distribution also needs unified_labels
+    dist_df = label_distribution_by_model(unified_labels)
     if not dist_df.empty:
         dist_df.to_csv(OUT_DIR / 'label_distribution_by_model.csv', index=False)
         plot_label_distribution(dist_df)
 
-    # 3) VAD alignment
+    # 3) VAD alignment (uses unified + cube)
     vad_corr = vad_correlations(unified, cube)
     if not vad_corr.empty:
         vad_corr.to_csv(OUT_DIR / 'vad_correlations.csv', index=False)
         plot_vad_scatters(unified, cube, counts, vad_corr)
 
-    # 4) Per-perfume stacked bars for topN
+    # 4) Per-perfume stacked bars (uses cube)
     plot_topN_stacked_per_perfume(unified, cube, topN, counts)
 
-    # 5) NRC heatmap (top perfumes)
+    # 5) NRC heatmaps
     plot_nrc_heatmap(unified, topN=25)
+    plot_nrc_lift_heatmap(unified, topN=25)
 
-    # 6) Correlations & JSD on common (non-coarse) score vectors
+    # 6) Common score-vector analysis
     corr_df, js_common_df = analyze_common_score_vectors(unified)
     if not corr_df.empty:
         corr_df.to_csv(OUT_DIR / 'score_vector_correlations.csv', index=False)
     if not js_common_df.empty:
         js_common_df.to_csv(OUT_DIR / 'jsd_common_score_vectors.csv', index=False)
 
-    # 7) VAD → HSL color palette + swatches
+    # 7) VAD → color palette
     palette = build_vad_palette(unified, counts)
     if not palette.empty:
-        palette.to_csv(OUT_DIR / 'vad_color_palette_hsl.csv', index=False)
-        plot_vad_color_swatches(palette, maxN=40)
+        palette.to_csv(OUT_DIR / 'vad_color_palette_hsv.csv', index=False)
+        plot_vad_color_swatches(palette, maxN=100)
 
-    # 8) Built-in "Top Disagreements"
+    print(palette["H"].min(), palette["H"].max())  # expect ~0.0 … ~1.0
+
+    # 8) Top disagreements (use unified_labels + agree_df)
     if topK and topK > 0:
-        compute_and_show_top_disagreements(unified, agree_df, topK)
+        compute_and_show_top_disagreements(unified_labels, agree_df, topK)
 
-    # 9) Console Summary
+    # 9) Console summary
     print("\n" + "="*24)
     print("=== Evaluation Summary ===")
     print("="*24)
@@ -715,5 +806,20 @@ if __name__ == '__main__':
     parser.add_argument('--topN', type=int, default=15, help='Top-N perfumes for stacked distribution plots.')
     parser.add_argument('--topK', type=int, default=15, help='How many lowest-agreement perfumes to print & save.')
     parser.add_argument('--normalize_vad', action='store_true', help='Min-max normalize VAD columns to [0,1].')
+    parser.add_argument('--toplabel_min_conf', type=float, default=0.00,
+                        help='When deriving labels, require this min probability; otherwise assign neutral.')
+    parser.add_argument('--cardiff_optimism_neutral', action='store_true',
+                        help="Map Cardiff 'optimism' to neutral (default maps to joy).")
+    parser.add_argument('--overwrite_labels', action='store_true',
+    help='Overwrite existing *_Label columns from coarse distributions (after mappings/conf thresholds).')
+
     args = parser.parse_args()
-    main(topN=args.topN, topK=args.topK, normalize_vad=args.normalize_vad)
+
+    main(
+        topN=args.topN,
+        topK=args.topK,
+        normalize_vad=args.normalize_vad,
+        toplabel_min_conf=args.toplabel_min_conf,
+        cardiff_optimism_neutral=args.cardiff_optimism_neutral,
+        overwrite_labels=args.overwrite_labels
+    )
