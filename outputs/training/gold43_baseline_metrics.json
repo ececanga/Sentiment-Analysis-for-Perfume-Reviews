@@ -1,0 +1,232 @@
+{
+  "n_samples": 43,
+  "n_rows_emotions": 43,
+  "n_rows_vad": 43,
+  "n_features": 58,
+  "vad_missing_count": 0,
+  "emotion_metrics": {
+    "per_label_f1": {
+      "joy": 0.5934962814962814,
+      "sadness": NaN,
+      "anger": 0.0,
+      "fear": 0.19166666666666665,
+      "trust": 0.32704761904761903,
+      "surprise": 0.0391304347826087,
+      "anticipation": 0.07076190476190476,
+      "disgust": 0.0
+    },
+    "macro_f1": 0.19524040932612363,
+    "micro_f1": 0.3798243580944491,
+    "subset_accuracy": 0.09277777777777776,
+    "label_cardinality": 1.3527777777777776
+  },
+  "vad_metrics": {
+    "valence": {
+      "mae": 4.3150438859721785,
+      "rmse": 8.103096750488461,
+      "spearman": -0.0931894169613943
+    },
+    "arousal": {
+      "mae": 3.8388902286220756,
+      "rmse": 6.328118657651591,
+      "spearman": -0.3611150798326016
+    },
+    "dominance": {
+      "mae": 2.3037655218173954,
+      "rmse": 3.8731076896583416,
+      "spearman": 0.23175000240139698
+    }
+  },
+  "fold_diagnostics": {
+    "degenerate_labels_by_fold": [
+      {
+        "seed": 0,
+        "fold": 0,
+        "degenerate_labels": [
+          "sadness",
+          "anger"
+        ]
+      },
+      {
+        "seed": 0,
+        "fold": 1,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 0,
+        "fold": 2,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 0,
+        "fold": 3,
+        "degenerate_labels": [
+          "sadness",
+          "disgust"
+        ]
+      },
+      {
+        "seed": 0,
+        "fold": 4,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 1,
+        "fold": 0,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 1,
+        "fold": 1,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 1,
+        "fold": 2,
+        "degenerate_labels": [
+          "sadness",
+          "anger"
+        ]
+      },
+      {
+        "seed": 1,
+        "fold": 3,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 1,
+        "fold": 4,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 2,
+        "fold": 0,
+        "degenerate_labels": [
+          "sadness",
+          "anger"
+        ]
+      },
+      {
+        "seed": 2,
+        "fold": 1,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 2,
+        "fold": 2,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 2,
+        "fold": 3,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 2,
+        "fold": 4,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 3,
+        "fold": 0,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 3,
+        "fold": 1,
+        "degenerate_labels": [
+          "sadness",
+          "anger"
+        ]
+      },
+      {
+        "seed": 3,
+        "fold": 2,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 3,
+        "fold": 3,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 3,
+        "fold": 4,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 4,
+        "fold": 0,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 4,
+        "fold": 1,
+        "degenerate_labels": [
+          "sadness",
+          "anger"
+        ]
+      },
+      {
+        "seed": 4,
+        "fold": 2,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 4,
+        "fold": 3,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      },
+      {
+        "seed": 4,
+        "fold": 4,
+        "degenerate_labels": [
+          "sadness"
+        ]
+      }
+    ]
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}
