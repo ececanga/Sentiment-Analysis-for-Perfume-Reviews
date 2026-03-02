@@ -17,3 +17,8 @@ venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib
 
 # System files
 .DS_Store
+Ömer Uzel Thesis.pdf
+c2071011_thesis_231123.docx
+notes/CGPT_emotion_pipeline_presentation.pptx
+notes/Nov3MeetingQsAnswered.pages
+.gitignore

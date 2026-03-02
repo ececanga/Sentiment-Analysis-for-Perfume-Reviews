@@ -1,4 +1,4 @@
-""" format_transcripts.py
+""" 03) format_transcripts.py
 Purpose: Cleans and formats transcripts (e.g., removes extra whitespace, newlines, formatting errors).
 Input: YouTube_Perfume_Reviews_Partial.csv
 Output: YouTube_Perfume_Reviews_FullyFormatted.csv

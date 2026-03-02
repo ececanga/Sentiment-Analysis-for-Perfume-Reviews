@@ -1,4 +1,4 @@
-'''analyze_emotions_distilroberta_jhartmann.py
+''' 05) analyze_emotions_distilroberta_jhartmann.py
 Model: j-hartmann/emotion-english-distilroberta-base
 Purpose: Categorical emotion detection (joy, sadness, anger, etc.)
 Input: YouTube_Perfume_Reviews_FullyFormatted.csv

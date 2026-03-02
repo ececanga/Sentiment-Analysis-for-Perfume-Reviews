@@ -1,4 +1,4 @@
-'''analyze_emotions_goemotions_multi.py
+''' 07) analyze_emotions_goemotions_multi.py
 Model: Based on Google’s GoEmotions multilabel model
 Purpose: Fine-grained emotion classification (e.g., approval, admiration, realization)
 Input: YouTube_Perfume_Reviews_FullyFormatted.csv

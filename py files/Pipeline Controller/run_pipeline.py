@@ -1,4 +1,4 @@
-# run_pipeline.py
+# 01) run_pipeline.py
 # Purpose: Automates the pipeline execution
 
 import subprocess

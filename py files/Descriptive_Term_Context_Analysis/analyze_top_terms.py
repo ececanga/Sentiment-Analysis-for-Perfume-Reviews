@@ -1,4 +1,4 @@
-'''analyze_top_terms.py
+''' 10) analyze_top_terms.py
 Purpose: Finds most frequent descriptive terms for each perfume
 Input: perfume_context_keywords.csv
 Output: Console output + optional perfume_intensifier_counts.csv'''
@@ -56,4 +56,3 @@ if existing_intensifiers:
     print("\n📊 Intensifier counts saved to perfume_intensifier_counts.csv")
 else:
     print("\n⚠️ No intensifier columns found in data.")
-

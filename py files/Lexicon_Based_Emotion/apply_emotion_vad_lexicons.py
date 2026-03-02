@@ -1,4 +1,4 @@
-"""apply_emotion_vad_lexicons.py
+""" 04) apply_emotion_vad_lexicons.py
 Purpose: Maps NRC emotion labels and VAD scores to perfumes using lexicons.
 Input: csv files/YouTube_Perfume_Reviews_FullyFormatted.csv, NRC & VAD lexicons
 Output:

@@ -1,4 +1,4 @@
-# reprocess_scent_emotion.py
+# 11) reprocess_scent_emotion.py
 # Purpose: Applies extended scent & emotion lexicons to extract keywords.
 # Input: YouTube_Perfume_Reviews_FullyFormatted.csv
 # Output: YouTube_Perfume_Reviews_With_ScentEmotion.csv
@@ -155,4 +155,3 @@ df["Emotion Terms Found"] = df["Final Transcript"].fillna("").apply(lambda x: ex
 # Save enriched dataset
 df.to_csv("csv files/YouTube_Perfume_Reviews_With_ScentEmotion.csv", index=False)
 print("✅ Reprocessed data saved to YouTube_Perfume_Reviews_With_ScentEmotion.csv")
-
