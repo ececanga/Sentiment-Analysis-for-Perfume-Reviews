@@ -1,0 +1,5 @@
+model,n_compared,n_match,match_rate
+JHartmann_Label,769,425,0.552665799739922
+Savani_Label,769,423,0.5500650195058517
+GoEmotions_Label,769,459,0.5968790637191157
+Cardiff_Label,769,425,0.552665799739922

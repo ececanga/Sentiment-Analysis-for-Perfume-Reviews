@@ -1,0 +1,150 @@
+benchmark:
+  name: thesis_model_benchmark_v1
+  task_type: multi_label_emotion_classification
+  status: frozen_before_new_models
+
+data:
+  canonical_input_csv: outputs/analysis_out/gemini_unified_merged.csv
+  sample_granularity: perfume_level
+  unit_id_column: perfume_id
+  display_name_columns:
+    - Perfume
+    - perfume_name
+    - perfume_name_unified
+    - perfume_name_gemini
+  feature_prefixes:
+    - NRC_
+    - VAD_
+    - Hartmann_
+    - Savani_
+    - GoEmotions_
+    - Cardiff_
+  deep_text_source_csv: data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv
+  deep_text_source_text_column: Final Transcript
+  deep_text_dataset_jsonl: outputs/model_benchmark/datasets/perfume_text_dataset_v1.jsonl
+  deep_text_dataset_chunks_csv: outputs/model_benchmark/datasets/perfume_text_dataset_v1_chunks.csv
+  deep_text_dataset_summary_json: outputs/model_benchmark/datasets/perfume_text_dataset_v1_summary.json
+
+targets:
+  official_emotion_columns:
+    - joy
+    - sadness
+    - fear
+    - trust
+    - surprise
+    - anticipation
+    - disgust
+  excluded_emotion_columns:
+    anger: zero_positive_support_in_frozen_784_row_dataset
+  secondary_vad_columns:
+    - valence
+    - arousal
+    - dominance
+
+models:
+  frozen_model_set:
+    - logistic_regression
+    - xgboost
+    - random_forest
+    - bert
+    - bilstm_attention
+  bert:
+    checkpoint: monologg/bert-base-cased-goemotions-original
+    local_files_only: true
+    max_length: 96
+    aggregation_strategy: mean_probability
+    train_batch_size: 8
+    eval_batch_size: 16
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    max_epochs: 3
+    patience: 1
+    min_delta: 0.0001
+    warmup_ratio: 0.1
+    gradient_accumulation_steps: 1
+    max_grad_norm: 1.0
+    selection_metric: macro_f1
+  bilstm_attention:
+    aggregation_strategy: mean_probability
+    lowercase_tokens: true
+    min_token_freq: 2
+    max_vocab_size: 20000
+    max_tokens: 208
+    embedding_dim: 96
+    hidden_size: 64
+    attention_dim: 64
+    lstm_layers: 1
+    dropout: 0.3
+    train_batch_size: 64
+    eval_batch_size: 128
+    learning_rate: 1.0e-3
+    weight_decay: 1.0e-4
+    max_epochs: 12
+    patience: 2
+    min_delta: 0.0001
+    max_grad_norm: 1.0
+    selection_metric: macro_f1
+
+evaluation:
+  main_table_metrics:
+    - macro_f1
+    - macro_roc_auc
+    - macro_pr_auc
+  secondary_metrics:
+    - per_label_f1
+    - per_label_roc_auc
+    - per_label_pr_auc
+    - micro_f1
+    - subset_accuracy
+    - hamming_loss
+  probability_threshold: 0.5
+  macro_average_over: official_emotion_columns_only
+  vad_in_main_table: false
+
+splits:
+  outer_cv:
+    type: kfold
+    n_splits: 5
+    shuffle: true
+    random_state: 42
+    sort_by_before_split: perfume_id
+    manifest_path: outputs/model_benchmark/tables/fold_assignments.csv
+  inner_validation:
+    applies_to:
+      - bert
+      - bilstm_attention
+    type: kfold_first_split_holdout
+    n_splits: 10
+    shuffle: true
+    random_state: 42
+    sort_by_before_split: perfume_id
+    manifest_path_pattern: outputs/model_benchmark/tables/{model_id}_inner_val_folds.csv
+
+seeds:
+  data_seed: 42
+  model_seed: 42
+  repeated_cv: false
+  multi_seed_averaging: false
+  best_seed_selection: false
+
+artifacts:
+  root_dir: outputs/model_benchmark
+  required_per_model:
+    metrics_json: outputs/model_benchmark/metrics/{model_id}.json
+    per_label_csv: outputs/model_benchmark/metrics/{model_id}_per_label.csv
+    predictions_csv: outputs/model_benchmark/predictions/{model_id}_oof.csv
+    per_label_plot: outputs/model_benchmark/figures/{model_id}_per_label_metrics.png
+    roc_pr_plot: outputs/model_benchmark/figures/{model_id}_roc_pr_curves.png
+    run_log: outputs/model_benchmark/logs/{model_id}.log
+    run_manifest: outputs/model_benchmark/logs/{model_id}_run.json
+    interpretation_note: outputs/model_benchmark/tables/{model_id}_note.md
+  benchmark_wide:
+    comparison_table_csv: outputs/model_benchmark/tables/comparison_table.csv
+    fold_manifest_csv: outputs/model_benchmark/tables/fold_assignments.csv
+
+completion_rule:
+  row_complete_requires:
+    - reproducible_run
+    - saved_metrics
+    - comparable_plots
+    - interpretation_note

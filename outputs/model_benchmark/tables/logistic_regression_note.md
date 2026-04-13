@@ -1,0 +1,1 @@
+Logistic Regression is the first official benchmark row completed under the frozen 7-label perfume protocol, with macro-F1 0.2712, macro ROC-AUC 0.6278, and macro PR-AUC 0.3015. It is strongest on joy, anticipation, while sadness, fear, surprise, disgust remain unstable because positive support is very limited.

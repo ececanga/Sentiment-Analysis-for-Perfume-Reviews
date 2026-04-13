@@ -1,0 +1,401 @@
+{
+  "inputs": {
+    "merged_csv": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/analysis_out/gemini_unified_merged.csv",
+    "stage7_metrics_json": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/training/stage7_gemini784_metrics.json",
+    "stage7_label_diagnostics_csv": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/training/stage7_gemini784_label_diagnostics.csv",
+    "stage7_oof_csv": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/training/stage7_gemini784_oof_predictions.csv"
+  },
+  "config": {
+    "n_repeats": 5,
+    "seed": 42,
+    "max_folds": 5,
+    "rare_pos_threshold": 10,
+    "strict": true
+  },
+  "integrity": {
+    "merged_rows": 784,
+    "oof_rows": 784,
+    "strict_mode": true,
+    "merged_duplicate_perfume_ids": [],
+    "oof_duplicate_perfume_ids": [],
+    "merged_unique_ids": 784,
+    "oof_unique_ids": 784,
+    "merged_only_count": 0,
+    "oof_only_count": 0,
+    "merged_only_sample": [],
+    "oof_only_sample": [],
+    "matched_count": 784,
+    "target_truth_checks": {
+      "joy": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "sadness": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "anger": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "fear": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "trust": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "surprise": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "anticipation": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "disgust": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "valence": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "arousal": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "dominance": {
+        "mismatch_count": 0,
+        "matches": true
+      }
+    },
+    "family_presence": {
+      "NRC": 10,
+      "VAD": 3,
+      "Hartmann": 7,
+      "Savani": 6,
+      "GoEmotions": 28,
+      "Cardiff": 4
+    }
+  },
+  "target_status_overview": [
+    {
+      "target": "joy",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 441.0,
+      "n_neg": 343.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "sadness",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 8.0,
+      "n_neg": 776.0,
+      "n_splits": 5,
+      "is_rare": true,
+      "interpretation_level": "exploratory_rare",
+      "exclude_headline": true,
+      "reason": "rare_positive_count"
+    },
+    {
+      "target": "anger",
+      "target_type": "emotion",
+      "status": "degenerate_constant",
+      "n_pos": 0.0,
+      "n_neg": 784.0,
+      "n_splits": 0,
+      "is_rare": true,
+      "interpretation_level": "not_estimable",
+      "exclude_headline": true,
+      "reason": "degenerate_constant"
+    },
+    {
+      "target": "fear",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 3.0,
+      "n_neg": 781.0,
+      "n_splits": 3,
+      "is_rare": true,
+      "interpretation_level": "exploratory_rare",
+      "exclude_headline": true,
+      "reason": "rare_positive_count"
+    },
+    {
+      "target": "trust",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 174.0,
+      "n_neg": 610.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "surprise",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 15.0,
+      "n_neg": 769.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "anticipation",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 226.0,
+      "n_neg": 558.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "disgust",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 9.0,
+      "n_neg": 775.0,
+      "n_splits": 5,
+      "is_rare": true,
+      "interpretation_level": "exploratory_rare",
+      "exclude_headline": true,
+      "reason": "rare_positive_count"
+    },
+    {
+      "target": "valence",
+      "target_type": "vad",
+      "status": "trained",
+      "n_pos": NaN,
+      "n_neg": NaN,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "arousal",
+      "target_type": "vad",
+      "status": "trained",
+      "n_pos": NaN,
+      "n_neg": NaN,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "dominance",
+      "target_type": "vad",
+      "status": "trained",
+      "n_pos": NaN,
+      "n_neg": NaN,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    }
+  ],
+  "headline": {
+    "emotion_feature_top_nonrare": [
+      {
+        "feature": "GoEmotions_excitement",
+        "mean_positive_importance": 0.024209087348097336,
+        "n_targets": 4
+      },
+      {
+        "feature": "GoEmotions_neutral",
+        "mean_positive_importance": 0.01974131804043888,
+        "n_targets": 4
+      },
+      {
+        "feature": "NRC_sadness",
+        "mean_positive_importance": 0.016347243705198716,
+        "n_targets": 4
+      },
+      {
+        "feature": "NRC_surprise",
+        "mean_positive_importance": 0.016207348445601805,
+        "n_targets": 4
+      },
+      {
+        "feature": "NRC_anger",
+        "mean_positive_importance": 0.013630004673949864,
+        "n_targets": 4
+      },
+      {
+        "feature": "NRC_joy",
+        "mean_positive_importance": 0.01187879589165542,
+        "n_targets": 4
+      },
+      {
+        "feature": "GoEmotions_love",
+        "mean_positive_importance": 0.010694372807204911,
+        "n_targets": 4
+      },
+      {
+        "feature": "Cardiff_joy",
+        "mean_positive_importance": 0.008435857096662726,
+        "n_targets": 4
+      },
+      {
+        "feature": "NRC_negative",
+        "mean_positive_importance": 0.008314217991620606,
+        "n_targets": 4
+      },
+      {
+        "feature": "NRC_trust",
+        "mean_positive_importance": 0.006889315226820376,
+        "n_targets": 4
+      }
+    ],
+    "emotion_family_top_nonrare": [
+      {
+        "family": "GoEmotions",
+        "mean_positive_importance": 0.07984823016441259,
+        "n_targets": 4
+      },
+      {
+        "family": "Cardiff",
+        "mean_positive_importance": 0.019929305802183373,
+        "n_targets": 4
+      },
+      {
+        "family": "VAD",
+        "mean_positive_importance": 0.007707445727643746,
+        "n_targets": 4
+      },
+      {
+        "family": "Hartmann",
+        "mean_positive_importance": 0.007670986254799634,
+        "n_targets": 4
+      },
+      {
+        "family": "Savani",
+        "mean_positive_importance": 0.004435694703269932,
+        "n_targets": 4
+      },
+      {
+        "family": "NRC",
+        "mean_positive_importance": 0.003105028617489714,
+        "n_targets": 4
+      }
+    ],
+    "vad_feature_top": [
+      {
+        "feature": "NRC_joy",
+        "mean_positive_importance": 0.11139596145084674,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_anger",
+        "mean_positive_importance": 0.06327518107806841,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_trust",
+        "mean_positive_importance": 0.04563387877019833,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_surprise",
+        "mean_positive_importance": 0.04301199783823364,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_fear",
+        "mean_positive_importance": 0.036302071691071226,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_positive",
+        "mean_positive_importance": 0.03411534843780865,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_anticipation",
+        "mean_positive_importance": 0.02867505037975637,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_negative",
+        "mean_positive_importance": 0.026227292331284707,
+        "n_targets": 3
+      },
+      {
+        "feature": "GoEmotions_love",
+        "mean_positive_importance": 0.025036869670402234,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_disgust",
+        "mean_positive_importance": 0.020947889868857237,
+        "n_targets": 3
+      }
+    ],
+    "vad_family_top": [
+      {
+        "family": "GoEmotions",
+        "mean_positive_importance": 0.07470215400295017,
+        "n_targets": 3
+      },
+      {
+        "family": "Cardiff",
+        "mean_positive_importance": 0.025318915117316553,
+        "n_targets": 3
+      },
+      {
+        "family": "Hartmann",
+        "mean_positive_importance": 0.005685515180874525,
+        "n_targets": 3
+      },
+      {
+        "family": "NRC",
+        "mean_positive_importance": 0.005429172360657124,
+        "n_targets": 3
+      },
+      {
+        "family": "Savani",
+        "mean_positive_importance": 0.004541142958098301,
+        "n_targets": 3
+      },
+      {
+        "family": "VAD",
+        "mean_positive_importance": 0.0042496630635081205,
+        "n_targets": 3
+      }
+    ]
+  },
+  "caveats": [
+    "Permutation importances are fold-wise held-out estimates; they are not causal effects.",
+    "Degenerate targets are not estimable and are excluded from headline claims.",
+    "Rare emotion targets are marked exploratory_rare and excluded from headline claims."
+  ],
+  "artifacts": {
+    "alignment_report_json": "outputs/analysis_out/stage8_input_alignment_report.json",
+    "emotion_feature_importance_csv": "outputs/analysis_out/stage8_emotion_feature_importance.csv",
+    "emotion_family_importance_csv": "outputs/analysis_out/stage8_emotion_family_importance.csv",
+    "vad_feature_importance_csv": "outputs/analysis_out/stage8_vad_feature_importance.csv",
+    "vad_family_importance_csv": "outputs/analysis_out/stage8_vad_family_importance.csv",
+    "target_interpretation_flags_csv": "outputs/analysis_out/stage8_target_interpretation_flags.csv",
+    "summary_report_json": "outputs/analysis_out/stage8_importance_summary_report.json"
+  }
+}

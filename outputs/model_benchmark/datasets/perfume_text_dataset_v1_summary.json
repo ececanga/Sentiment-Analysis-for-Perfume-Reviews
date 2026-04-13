@@ -1,0 +1,31 @@
+{
+  "dataset_version": "v1",
+  "raw_csv": "data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv",
+  "labels_csv": "labels/gemini_labels_784_v1.csv",
+  "fold_manifest_csv": "outputs/model_benchmark/tables/fold_assignments.csv",
+  "output_jsonl": "outputs/model_benchmark/datasets/perfume_text_dataset_v1.jsonl",
+  "output_chunks_csv": "outputs/model_benchmark/datasets/perfume_text_dataset_v1_chunks.csv",
+  "title_max_words": 24,
+  "description_max_words": 48,
+  "transcript_window_words": 160,
+  "transcript_pre_context_words": 32,
+  "n_perfumes": 784,
+  "n_total_chunks": 4879,
+  "deduplicated_transcript_rows_dropped": 2,
+  "chunks_with_any_name_match": 3370,
+  "perfumes_with_any_name_match": 699,
+  "perfumes_with_only_prefix_fallback": 257,
+  "source_review_count_min": 1,
+  "source_review_count_median": 7.0,
+  "source_review_count_mean": 6.226,
+  "source_review_count_max": 10,
+  "chunk_count_min": 1,
+  "chunk_count_median": 7.0,
+  "chunk_count_mean": 6.223,
+  "chunk_count_max": 10,
+  "match_strategy_counts": {
+    "prefix_fallback": 2719,
+    "anchor_token_window": 845,
+    "alias_phrase_window": 1315
+  }
+}

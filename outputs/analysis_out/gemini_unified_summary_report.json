@@ -1,0 +1,77 @@
+{
+  "join_counts": {
+    "unified_total": 784,
+    "gemini_total": 784,
+    "matched": 784,
+    "unified_only": 0,
+    "gemini_only": 0
+  },
+  "integrity": {
+    "duplicate_ids_unified_count": 0,
+    "duplicate_ids_gemini_count": 0,
+    "duplicate_ids_unified": [],
+    "duplicate_ids_gemini": [],
+    "hash_mismatch_count": 0,
+    "hash_mismatch_ids": []
+  },
+  "binary_agreement_mean_accuracy": 0.15162627551020408,
+  "toplabel_match_rates": {
+    "JHartmann_Label": 0.552665799739922,
+    "Savani_Label": 0.5500650195058517,
+    "GoEmotions_Label": 0.5968790637191157,
+    "Cardiff_Label": 0.552665799739922
+  },
+  "vad_continuous_agreement": [
+    {
+      "dimension": "valence",
+      "n": 784,
+      "pearson_r": 0.246355385217646,
+      "pearson_p": 2.65197654683185e-12,
+      "spearman_r": 0.22701860665052784,
+      "spearman_p": 1.2716653156939909e-10,
+      "mae": 6.5807183388792545
+    },
+    {
+      "dimension": "arousal",
+      "n": 784,
+      "pearson_r": 0.1907376760116521,
+      "pearson_p": 7.382028478888769e-08,
+      "spearman_r": 0.19342433764927944,
+      "spearman_p": 4.791680701077834e-08,
+      "mae": 6.39505358689249
+    },
+    {
+      "dimension": "dominance",
+      "n": 784,
+      "pearson_r": 0.18033683525894095,
+      "pearson_p": 3.713132307895998e-07,
+      "spearman_r": 0.12787111046040403,
+      "spearman_p": 0.00033141042541285476,
+      "mae": 5.789874318106791
+    }
+  ],
+  "gemini_prevalence": {
+    "joy": 0.5625,
+    "sadness": 0.01020408163265306,
+    "anger": 0.0,
+    "fear": 0.003826530612244898,
+    "trust": 0.22193877551020408,
+    "surprise": 0.01913265306122449,
+    "anticipation": 0.288265306122449,
+    "disgust": 0.011479591836734694
+  },
+  "gemini_vad_stats": {
+    "valence": {
+      "mean": 6.747873852040816,
+      "std": 1.147959447277797
+    },
+    "arousal": {
+      "mean": 6.295707142857142,
+      "std": 0.7904129808885624
+    },
+    "dominance": {
+      "mean": 5.8150512755102035,
+      "std": 0.7270322065848516
+    }
+  }
+}

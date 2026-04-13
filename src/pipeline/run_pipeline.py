@@ -1,5 +1,7 @@
 # 01) run_pipeline.py
 # Purpose: Automates the pipeline execution
+# Note: For full thesis workflow orchestration (base + Gemini + training + Stage 8A),
+# use src/pipeline/run_thesis_workflow.py.
 
 import subprocess
 import shlex  # Handles paths with spaces

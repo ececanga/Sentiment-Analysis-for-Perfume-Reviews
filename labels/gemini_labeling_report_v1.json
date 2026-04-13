@@ -1,0 +1,41 @@
+{
+  "counts": {
+    "total_targets": 784,
+    "attempted": 172,
+    "succeeded": 784,
+    "failed": 0,
+    "skipped": 612
+  },
+  "emotion_prevalence": {
+    "joy": 0.5625,
+    "sadness": 0.01020408163265306,
+    "anger": 0.0,
+    "fear": 0.003826530612244898,
+    "trust": 0.22193877551020408,
+    "surprise": 0.01913265306122449,
+    "anticipation": 0.288265306122449,
+    "disgust": 0.011479591836734694
+  },
+  "vad_stats": {
+    "valence": {
+      "mean": 6.747873852040816,
+      "std": 1.1479594472777972,
+      "min": 2.0,
+      "max": 9.0
+    },
+    "arousal": {
+      "mean": 6.295707142857143,
+      "std": 0.7904129808885624,
+      "min": 2.6667,
+      "max": 9.0
+    },
+    "dominance": {
+      "mean": 5.815051275510204,
+      "std": 0.7270322065848517,
+      "min": 2.0,
+      "max": 8.3333
+    }
+  },
+  "failed_ids": [],
+  "missing_ids": []
+}

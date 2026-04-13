@@ -1,0 +1,6 @@
+perfume_id,perfume_id_hash,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+00-auriel-eau-de-parfum,36710bc11d,00 auriel eau de parfum,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+01-nomad-eau-de-parfum,1086cfb7f0,01 nomad eau de parfum,0,0,0,0,0,0,0,0,6.3333,6.0,5.6667
+02-owari-eau-de-parfum,132ea26321,02 owari eau de parfum,1,0,0,0,0,0,0,0,7.0,6.0,6.3333
+03-apr-1968-eau-de-parfum,326f662647,03. apr. 1968 eau de parfum,0,0,0,0,0,0,0,0,6.6667,6.0,5.6667
+03-century-eau-de-parfum,783114c68a,03 century eau de parfum,0,0,0,0,0,0,0,0,5.6667,5.0,6.3333

@@ -1,0 +1,12 @@
+target,target_type,status,n_pos,n_neg,n_splits,is_rare,interpretation_level,exclude_headline,reason
+joy,emotion,trained,441.0,343.0,5,False,stable,False,eligible
+sadness,emotion,trained,8.0,776.0,5,True,exploratory_rare,True,rare_positive_count
+anger,emotion,degenerate_constant,0.0,784.0,0,True,not_estimable,True,degenerate_constant
+fear,emotion,trained,3.0,781.0,3,True,exploratory_rare,True,rare_positive_count
+trust,emotion,trained,174.0,610.0,5,False,stable,False,eligible
+surprise,emotion,trained,15.0,769.0,5,False,stable,False,eligible
+anticipation,emotion,trained,226.0,558.0,5,False,stable,False,eligible
+disgust,emotion,trained,9.0,775.0,5,True,exploratory_rare,True,rare_positive_count
+valence,vad,trained,,,5,False,stable,False,eligible
+arousal,vad,trained,,,5,False,stable,False,eligible
+dominance,vad,trained,,,5,False,stable,False,eligible

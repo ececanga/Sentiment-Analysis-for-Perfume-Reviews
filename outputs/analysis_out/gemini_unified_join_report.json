@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "unified_total": 784,
+    "gemini_total": 784,
+    "matched": 784,
+    "unified_only": 0,
+    "gemini_only": 0
+  },
+  "integrity": {
+    "duplicate_ids_unified_count": 0,
+    "duplicate_ids_gemini_count": 0,
+    "duplicate_ids_unified": [],
+    "duplicate_ids_gemini": [],
+    "hash_mismatch_count": 0,
+    "hash_mismatch_ids": []
+  }
+}

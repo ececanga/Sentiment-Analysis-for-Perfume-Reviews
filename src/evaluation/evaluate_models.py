@@ -48,12 +48,13 @@ from scipy.spatial.distance import jensenshannon
 from scipy.stats import pearsonr, spearmanr
 from sklearn.metrics import cohen_kappa_score
 
-from src.utils.paths import data_path, outputs_path
+from src.utils.paths import PROJECT_ROOT, data_path, outputs_path
 
 # ---------------------------- Paths & IO ----------------------------
 CSV_DIR = data_path()
 OUT_DIR = outputs_path("evaluation_out")
 FIG_DIR = outputs_path("figures")
+ROOT = PROJECT_ROOT
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 
