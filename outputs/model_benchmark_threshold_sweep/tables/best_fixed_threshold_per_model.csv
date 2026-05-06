@@ -1,0 +1,4 @@
+model_id,model_name,best_threshold,best_macro_f1
+logistic_regression,Logistic Regression,0.3,0.269933
+random_forest,Random Forest,0.2,0.226243
+xgboost,XGBoost,0.2,0.272513

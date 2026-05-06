@@ -97,7 +97,18 @@ evaluation:
     - micro_f1
     - subset_accuracy
     - hamming_loss
-  probability_threshold: 0.5
+  probability_threshold: 0.3
+  threshold_tuning:
+    enabled: true
+    selection_metric: macro_f1
+    strategies:
+      - global
+      - per_label
+    threshold_grid:
+      start: 0.05
+      end: 0.95
+      step: 0.05
+    tie_break: closest_to_baseline
   macro_average_over: official_emotion_columns_only
   vad_in_main_table: false
 
@@ -111,6 +122,9 @@ splits:
     manifest_path: outputs/model_benchmark/tables/fold_assignments.csv
   inner_validation:
     applies_to:
+      - logistic_regression
+      - xgboost
+      - random_forest
       - bert
       - bilstm_attention
     type: kfold_first_split_holdout

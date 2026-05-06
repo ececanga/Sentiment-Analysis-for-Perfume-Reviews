@@ -31,6 +31,13 @@ from src.training.model_benchmark_runner import (
     stringify_path,
     update_comparison_table,
 )
+from src.training.threshold_tuning import (
+    add_threshold_tuning_columns,
+    build_threshold_tuning_report,
+    load_threshold_tuning_settings,
+    select_fold_thresholds,
+    threshold_tuning_log_lines,
+)
 from src.training.run_bert_benchmark import (
     aggregate_chunk_probabilities,
     build_expected_inner_validation_manifest,
@@ -370,7 +377,7 @@ def run_bilstm_attention_outer_fold(
     outer_fold_id: int,
     vocab_size: int,
     vocabulary_summary: Mapping[str, int],
-) -> Tuple[np.ndarray, Dict[str, Any]]:
+) -> Tuple[np.ndarray, np.ndarray, Dict[str, Any]]:
     set_global_seed(seed)
 
     label_matrix = chunk_df[target_cols].to_numpy(dtype=np.float32)
@@ -514,6 +521,12 @@ def run_bilstm_attention_outer_fold(
     if device.type == "cpu":
         model.float()
 
+    val_chunk_probs, _ = evaluate_sequence_model(
+        model,
+        val_loader,
+        device=device,
+        pos_weight_tensor=None,
+    )
     test_chunk_probs, _ = evaluate_sequence_model(
         model,
         test_loader,
@@ -543,7 +556,7 @@ def run_bilstm_attention_outer_fold(
         "n_trainable_parameters": n_trainable_params,
         "epoch_history": epoch_history,
     }
-    return test_chunk_probs, fold_summary
+    return test_chunk_probs, val_chunk_probs, fold_summary
 
 
 def run_bilstm_attention_benchmark(
@@ -559,6 +572,7 @@ def run_bilstm_attention_benchmark(
     excluded_target_cols = dict(config["targets"]["excluded_emotion_columns"])
     seed = int(config["seeds"]["data_seed"])
     threshold = float(config["evaluation"]["probability_threshold"])
+    threshold_tuning_settings = load_threshold_tuning_settings(config, baseline_threshold=threshold)
     outer_n_splits = int(config["splits"]["outer_cv"]["n_splits"])
     inner_cfg = config["splits"]["inner_validation"]
     inner_n_splits = int(inner_cfg["n_splits"])
@@ -608,6 +622,9 @@ def run_bilstm_attention_benchmark(
     y_true = perfume_df[target_cols].to_numpy(dtype=int)
     oof_prob = np.full((len(perfume_df), len(target_cols)), np.nan, dtype=np.float32)
     fold_summaries: List[Dict[str, Any]] = []
+    fold_threshold_selections: Dict[str, List[Dict[str, Any]]] = {
+        strategy: [] for strategy in threshold_tuning_settings.strategies
+    }
 
     fold_ids = sorted(perfume_df["fold_id"].unique().tolist())
     if fold_ids != list(range(1, outer_n_splits + 1)):
@@ -641,7 +658,7 @@ def run_bilstm_attention_benchmark(
             max_tokens=settings.max_tokens,
         )
 
-        test_chunk_probs, fold_summary = run_bilstm_attention_outer_fold(
+        test_chunk_probs, val_chunk_probs, fold_summary = run_bilstm_attention_outer_fold(
             encoded_inputs=encoded_inputs,
             encoding_summary=encoding_summary,
             chunk_df=chunk_df,
@@ -661,6 +678,33 @@ def run_bilstm_attention_benchmark(
             vocabulary_summary=vocabulary_summary,
         )
 
+        prob_cols = [f"prob_{label}" for label in target_cols]
+        if threshold_tuning_settings.enabled:
+            val_chunk_df = chunk_df.loc[val_chunk_mask].copy().reset_index(drop=True)
+            val_aggregated_probs = aggregate_chunk_probabilities(
+                val_chunk_df,
+                val_chunk_probs,
+                target_cols=target_cols,
+            )
+            merged_val = merge_perfume_probabilities(
+                val_perfume_df,
+                val_aggregated_probs,
+                target_cols=target_cols,
+            )
+            val_prob = merged_val[prob_cols].to_numpy(dtype=np.float32)
+            val_true = val_perfume_df[target_cols].to_numpy(dtype=int)
+            for strategy in threshold_tuning_settings.strategies:
+                fold_threshold_selections[strategy].append(
+                    select_fold_thresholds(
+                        y_val=val_true,
+                        prob_val=val_prob,
+                        target_cols=target_cols,
+                        fold_id=int(outer_fold_id),
+                        strategy=strategy,
+                        settings=threshold_tuning_settings,
+                    )
+                )
+
         test_chunk_df = chunk_df.loc[test_chunk_mask].copy().reset_index(drop=True)
         aggregated_probs = aggregate_chunk_probabilities(
             test_chunk_df,
@@ -672,7 +716,6 @@ def run_bilstm_attention_benchmark(
             aggregated_probs,
             target_cols=target_cols,
         )
-        prob_cols = [f"prob_{label}" for label in target_cols]
         test_indices = perfume_df.index[perfume_df["fold_id"] == outer_fold_id].to_numpy()
         oof_prob[test_indices, :] = merged_test[prob_cols].to_numpy(dtype=np.float32)
         fold_summaries.append(fold_summary)
@@ -687,6 +730,16 @@ def run_bilstm_attention_benchmark(
         threshold=threshold,
     )
     oof_pred = (oof_prob >= threshold).astype(int)
+    threshold_tuning_report, tuned_predictions_by_strategy = build_threshold_tuning_report(
+        settings=threshold_tuning_settings,
+        y_true=y_true,
+        y_prob=oof_prob,
+        fold_ids=perfume_df["fold_id"].to_numpy(dtype=int),
+        target_cols=target_cols,
+        selections_by_strategy=fold_threshold_selections,
+        baseline_per_label_rows=per_label_rows,
+        baseline_metrics=global_metrics,
+    )
 
     for row in per_label_rows:
         label = row["label"]
@@ -701,12 +754,18 @@ def run_bilstm_attention_benchmark(
         )
 
     per_label_df = pd.DataFrame(per_label_rows)
+    per_label_df = add_threshold_tuning_columns(
+        per_label_df,
+        threshold_tuning_report=threshold_tuning_report,
+    )
     oof_df = perfume_df[["perfume_id", "fold_id", "Perfume", "chunk_count"]].copy()
     oof_df.rename(columns={"chunk_count": "review_chunk_count"}, inplace=True)
     for label_idx, label in enumerate(target_cols):
         oof_df[f"true_{label}"] = y_true[:, label_idx]
         oof_df[f"prob_{label}"] = oof_prob[:, label_idx]
         oof_df[f"pred_{label}"] = oof_pred[:, label_idx]
+        for strategy, tuned_pred in tuned_predictions_by_strategy.items():
+            oof_df[f"pred_tuned_{strategy}_{label}"] = tuned_pred[:, label_idx]
 
     oof_df.to_csv(predictions_path, index=False)
     per_label_df.to_csv(per_label_path, index=False)
@@ -785,6 +844,7 @@ def run_bilstm_attention_benchmark(
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
+        "baseline_threshold": threshold,
         "model_parameters": model_parameters,
         "macro_f1": global_metrics["macro_f1"],
         "macro_roc_auc": global_metrics["macro_roc_auc"],
@@ -803,6 +863,7 @@ def run_bilstm_attention_benchmark(
         },
         "outer_fold_runs": fold_summaries,
         "per_label": per_label_rows,
+        "threshold_tuning": threshold_tuning_report,
         "artifact_paths": artifact_paths,
     }
     metrics_path.write_text(json.dumps(metrics_payload, indent=2), encoding="utf-8")
@@ -819,12 +880,14 @@ def run_bilstm_attention_benchmark(
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
+        "baseline_threshold": threshold,
         "command": " ".join(sys.argv),
         "device": str(device),
         "deterministic_flags": deterministic_flags,
         "model_id": MODEL_ID,
         "model_family": MODEL_FAMILY,
         "model_parameters": model_parameters,
+        "threshold_tuning": threshold_tuning_report,
         "artifact_paths": artifact_paths,
     }
     run_manifest_path.write_text(json.dumps(run_manifest, indent=2), encoding="utf-8")
@@ -847,6 +910,7 @@ def run_bilstm_attention_benchmark(
         f"hamming_loss={global_metrics['hamming_loss']:.6f}",
         f"model_parameters={json.dumps(model_parameters, sort_keys=True)}",
     ]
+    log_lines.extend(threshold_tuning_log_lines(threshold_tuning_report))
     for fold_summary in fold_summaries:
         log_lines.append(
             "outer_fold="
@@ -913,6 +977,7 @@ def run_bilstm_attention_benchmark(
         "run_manifest_path": run_manifest_path,
         "log_path": log_path,
         "macro_metrics": global_metrics,
+        "threshold_tuning": threshold_tuning_report,
         "fold_summaries": fold_summaries,
     }
 
@@ -967,6 +1032,13 @@ def main() -> None:
         f"- Main metrics: macro_f1={metrics['macro_f1']:.4f}, "
         f"macro_roc_auc={metrics['macro_roc_auc']:.4f}, macro_pr_auc={metrics['macro_pr_auc']:.4f}"
     )
+    tuning = result.get("threshold_tuning", {})
+    if tuning.get("enabled", False):
+        for strategy, strategy_report in tuning["strategies"].items():
+            print(
+                f"- Tuned {strategy} Macro-F1={strategy_report['tuned_macro_f1']:.4f} "
+                f"(baseline {tuning['baseline_threshold']:.2f}={tuning['baseline_macro_f1']:.4f})"
+            )
 
 
 if __name__ == "__main__":

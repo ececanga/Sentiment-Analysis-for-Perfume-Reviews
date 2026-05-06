@@ -43,10 +43,12 @@ For each `model_id`, the following files are required.
 - `data_seed`
 - `model_seed`
 - `threshold`
+- `baseline_threshold`
 - `macro_f1`
 - `macro_roc_auc`
 - `macro_pr_auc`
 - `secondary_metrics`
+- `threshold_tuning`
 - `artifact_paths`
 
 `{model_id}_per_label.csv` must include at least:
@@ -57,6 +59,12 @@ For each `model_id`, the following files are required.
 - `f1`
 - `roc_auc`
 - `pr_auc`
+
+When threshold tuning is enabled, `{model_id}_per_label.csv` should also include diagnostic columns for baseline and tuned F1 values, including:
+
+- `f1_baseline`
+- `f1_tuned_global`
+- `f1_tuned_per_label`
 
 ### Predictions
 
@@ -73,6 +81,8 @@ Required columns:
 Optional columns:
 
 - `Perfume`
+- `pred_tuned_global_<label>`
+- `pred_tuned_per_label_<label>`
 - model-specific raw scores
 
 ### Figures
@@ -120,7 +130,7 @@ Optional artifacts do not determine row completeness:
 - saved checkpoints
 - VAD outputs
 - calibration studies
-- threshold sweeps
+- threshold sweeps and threshold-tuning diagnostics
 - exploratory plots
 
 ## Row completeness rule

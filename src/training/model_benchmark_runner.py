@@ -37,6 +37,16 @@ from sklearn.metrics import (
 )
 from sklearn.model_selection import KFold
 
+from src.training.threshold_tuning import (
+    add_threshold_tuning_columns,
+    build_inner_validation_manifest,
+    build_threshold_tuning_report,
+    load_or_write_inner_validation_manifest,
+    load_threshold_tuning_settings,
+    select_fold_thresholds,
+    threshold_tuning_log_lines,
+)
+
 CLASSICAL_MODEL_IDS = ("logistic_regression", "xgboost", "random_forest")
 
 ModelBuilder = Callable[[int, np.ndarray], Any]
@@ -398,6 +408,9 @@ def run_classical_model_benchmark(
     n_splits = int(config["splits"]["outer_cv"]["n_splits"])
     seed = int(config["seeds"]["data_seed"])
     threshold = float(config["evaluation"]["probability_threshold"])
+    threshold_tuning_settings = load_threshold_tuning_settings(config, baseline_threshold=threshold)
+    inner_cfg = config.get("splits", {}).get("inner_validation", {})
+    inner_n_splits = int(inner_cfg.get("n_splits", 10)) if isinstance(inner_cfg, Mapping) else 10
 
     metrics_dir = out_root / "metrics"
     figures_dir = out_root / "figures"
@@ -430,16 +443,80 @@ def run_classical_model_benchmark(
     X = df[feature_cols].to_numpy(dtype=float)
     y = df[target_cols].to_numpy(dtype=int)
     fold_ids = fold_manifest["fold_id"].to_numpy(dtype=int)
+    unit_ids = df[unit_id_col].astype(str).to_numpy()
+    inner_manifest_path = tables_dir / f"{model_spec.model_id}_inner_val_folds.csv"
+    inner_manifest_df: pd.DataFrame | None = None
+    if threshold_tuning_settings.enabled:
+        manifest_input = pd.DataFrame(
+            {
+                unit_id_col: unit_ids,
+                "fold_id": fold_ids,
+            }
+        )
+        display_name_col = "Perfume" if "Perfume" in df.columns else None
+        if display_name_col is not None:
+            manifest_input[display_name_col] = df[display_name_col].astype(str).to_numpy()
+        expected_inner_manifest = build_inner_validation_manifest(
+            manifest_input,
+            unit_id_col=unit_id_col,
+            fold_id_col="fold_id",
+            display_name_col=display_name_col,
+            inner_n_splits=inner_n_splits,
+            seed=seed,
+        )
+        inner_manifest_df = load_or_write_inner_validation_manifest(
+            expected_inner_manifest,
+            output_path=inner_manifest_path,
+        )
 
     oof_prob = np.zeros((len(df), len(target_cols)), dtype=float)
     oof_pred = np.zeros((len(df), len(target_cols)), dtype=int)
     training_status: Dict[str, List[str]] = {label: [] for label in target_cols}
+    fold_threshold_selections: Dict[str, List[Dict[str, Any]]] = {
+        strategy: [] for strategy in threshold_tuning_settings.strategies
+    }
 
     for fold_id in sorted(fold_manifest["fold_id"].unique()):
         train_idx = np.where(fold_ids != fold_id)[0]
         test_idx = np.where(fold_ids == fold_id)[0]
         X_train = X[train_idx]
         X_test = X[test_idx]
+
+        if threshold_tuning_settings.enabled:
+            if inner_manifest_df is None:
+                raise RuntimeError("Threshold tuning is enabled but no inner validation manifest was loaded.")
+            inner_fold_df = inner_manifest_df.loc[inner_manifest_df["outer_fold_id"] == fold_id]
+            inner_train_ids = set(inner_fold_df.loc[inner_fold_df["inner_role"] == "train", unit_id_col].astype(str))
+            val_ids = set(inner_fold_df.loc[inner_fold_df["inner_role"] == "val", unit_id_col].astype(str))
+            if not inner_train_ids or not val_ids:
+                raise ValueError(f"Inner validation split is empty for outer fold {fold_id}")
+
+            inner_train_idx = np.where(np.isin(unit_ids, list(inner_train_ids)))[0]
+            val_idx = np.where(np.isin(unit_ids, list(val_ids)))[0]
+            val_prob = np.zeros((len(val_idx), len(target_cols)), dtype=float)
+
+            for label_idx, label in enumerate(target_cols):
+                y_inner_train = y[inner_train_idx, label_idx]
+                if len(np.unique(y_inner_train)) < 2:
+                    const_val = int(y_inner_train[0]) if len(y_inner_train) else 0
+                    prob = np.full(len(val_idx), float(const_val))
+                else:
+                    threshold_model = model_spec.build_model(seed, y_inner_train)
+                    threshold_model.fit(X[inner_train_idx], y_inner_train)
+                    prob = threshold_model.predict_proba(X[val_idx])[:, 1]
+                val_prob[:, label_idx] = prob
+
+            for strategy in threshold_tuning_settings.strategies:
+                fold_threshold_selections[strategy].append(
+                    select_fold_thresholds(
+                        y_val=y[val_idx],
+                        prob_val=val_prob,
+                        target_cols=target_cols,
+                        fold_id=int(fold_id),
+                        strategy=strategy,
+                        settings=threshold_tuning_settings,
+                    )
+                )
 
         for label_idx, label in enumerate(target_cols):
             y_train = y[train_idx, label_idx]
@@ -486,6 +563,20 @@ def run_classical_model_benchmark(
         "hamming_loss": _metric_or_nan(hamming_loss, y, oof_pred),
         "label_cardinality": float(np.mean(np.sum(y, axis=1))),
     }
+    threshold_tuning_report, tuned_predictions_by_strategy = build_threshold_tuning_report(
+        settings=threshold_tuning_settings,
+        y_true=y,
+        y_prob=oof_prob,
+        fold_ids=fold_ids,
+        target_cols=target_cols,
+        selections_by_strategy=fold_threshold_selections,
+        baseline_per_label_rows=per_label_rows,
+        baseline_metrics=global_metrics,
+    )
+    per_label_df = add_threshold_tuning_columns(
+        per_label_df,
+        threshold_tuning_report=threshold_tuning_report,
+    )
 
     oof_df = fold_manifest.copy()
     if "Perfume" in df.columns and "Perfume" not in oof_df.columns:
@@ -494,6 +585,8 @@ def run_classical_model_benchmark(
         oof_df[f"true_{label}"] = y[:, label_idx]
         oof_df[f"prob_{label}"] = oof_prob[:, label_idx]
         oof_df[f"pred_{label}"] = oof_pred[:, label_idx]
+        for strategy, tuned_pred in tuned_predictions_by_strategy.items():
+            oof_df[f"pred_tuned_{strategy}_{label}"] = tuned_pred[:, label_idx]
 
     predictions_path = predictions_dir / f"{model_spec.model_id}_oof.csv"
     per_label_path = metrics_dir / f"{model_spec.model_id}_per_label.csv"
@@ -529,6 +622,7 @@ def run_classical_model_benchmark(
     timestamp_utc = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     dataset_relpath = stringify_path(input_csv)
     fold_manifest_relpath = stringify_path(fold_manifest_path)
+    inner_manifest_relpath = stringify_path(inner_manifest_path) if threshold_tuning_settings.enabled else None
     artifact_paths = {
         "metrics_json": stringify_path(metrics_path),
         "per_label_csv": stringify_path(per_label_path),
@@ -543,6 +637,8 @@ def run_classical_model_benchmark(
         "classical_summary_table": stringify_path(classical_summary_table_path),
         "classical_summary_figure": stringify_path(classical_summary_figure_path),
     }
+    if inner_manifest_relpath is not None:
+        artifact_paths["inner_validation_manifest"] = inner_manifest_relpath
     run_id = f"{model_spec.model_id}_seed{seed}_kfold{n_splits}"
 
     metrics_payload: Dict[str, Any] = {
@@ -555,9 +651,11 @@ def run_classical_model_benchmark(
         "target_columns": target_cols,
         "excluded_target_columns": excluded_target_cols,
         "split_manifest_path": fold_manifest_relpath,
+        "inner_validation_manifest_path": inner_manifest_relpath,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
+        "baseline_threshold": threshold,
         "model_parameters": dict(model_spec.model_params),
         "macro_f1": global_metrics["macro_f1"],
         "macro_roc_auc": global_metrics["macro_roc_auc"],
@@ -569,6 +667,7 @@ def run_classical_model_benchmark(
             "label_cardinality": global_metrics["label_cardinality"],
         },
         "per_label": per_label_rows,
+        "threshold_tuning": threshold_tuning_report,
         "artifact_paths": artifact_paths,
     }
     metrics_path.write_text(json.dumps(metrics_payload, indent=2), encoding="utf-8")
@@ -581,14 +680,17 @@ def run_classical_model_benchmark(
         "package_versions": collect_package_versions(model_spec.package_names),
         "dataset_path": dataset_relpath,
         "split_manifest_path": fold_manifest_relpath,
+        "inner_validation_manifest_path": inner_manifest_relpath,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
+        "baseline_threshold": threshold,
         "command": " ".join(sys.argv),
         "device": "cpu",
         "model_id": model_spec.model_id,
         "model_family": model_spec.model_family,
         "model_parameters": dict(model_spec.model_params),
+        "threshold_tuning": threshold_tuning_report,
         "artifact_paths": artifact_paths,
     }
     run_manifest_path.write_text(json.dumps(run_manifest, indent=2), encoding="utf-8")
@@ -601,6 +703,7 @@ def run_classical_model_benchmark(
         f"n_rows={len(df)}",
         f"n_features={len(feature_cols)}",
         f"fold_manifest={fold_manifest_relpath}",
+        f"inner_validation_manifest={inner_manifest_relpath}",
         f"macro_f1={global_metrics['macro_f1']:.6f}",
         f"macro_roc_auc={global_metrics['macro_roc_auc']:.6f}",
         f"macro_pr_auc={global_metrics['macro_pr_auc']:.6f}",
@@ -609,6 +712,7 @@ def run_classical_model_benchmark(
         f"hamming_loss={global_metrics['hamming_loss']:.6f}",
         f"model_parameters={json.dumps(model_spec.model_params, sort_keys=True)}",
     ]
+    log_lines.extend(threshold_tuning_log_lines(threshold_tuning_report))
     for row in per_label_rows:
         log_lines.append(
             "label="
@@ -641,6 +745,7 @@ def run_classical_model_benchmark(
         "per_label_path": per_label_path,
         "predictions_path": predictions_path,
         "fold_manifest_path": fold_manifest_path,
+        "inner_validation_manifest_path": inner_manifest_path if threshold_tuning_settings.enabled else None,
         "comparison_table_path": comparison_table_path,
         "note_path": note_path,
         "per_label_plot_path": per_label_plot_path,
@@ -650,4 +755,5 @@ def run_classical_model_benchmark(
         "classical_summary_table_path": classical_summary_table_path,
         "classical_summary_figure_path": classical_summary_figure_path,
         "macro_metrics": global_metrics,
+        "threshold_tuning": threshold_tuning_report,
     }

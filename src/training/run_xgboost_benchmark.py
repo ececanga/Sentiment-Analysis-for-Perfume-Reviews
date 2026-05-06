@@ -140,6 +140,13 @@ def main() -> None:
         f"- Main metrics: macro_f1={metrics['macro_f1']:.4f}, "
         f"macro_roc_auc={metrics['macro_roc_auc']:.4f}, macro_pr_auc={metrics['macro_pr_auc']:.4f}"
     )
+    tuning = result.get("threshold_tuning", {})
+    if tuning.get("enabled", False):
+        for strategy, strategy_report in tuning["strategies"].items():
+            print(
+                f"- Tuned {strategy} Macro-F1={strategy_report['tuned_macro_f1']:.4f} "
+                f"(baseline {tuning['baseline_threshold']:.2f}={tuning['baseline_macro_f1']:.4f})"
+            )
 
 
 if __name__ == "__main__":

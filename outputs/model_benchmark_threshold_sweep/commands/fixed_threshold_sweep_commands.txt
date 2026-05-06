@@ -1,0 +1,16 @@
+# threshold=0.2
+.venv/bin/python -m src.training.run_logistic_regression_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t02.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t02
+.venv/bin/python -m src.training.run_random_forest_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t02.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t02
+.venv/bin/python -m src.training.run_xgboost_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t02.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t02
+
+# threshold=0.3
+.venv/bin/python -m src.training.run_logistic_regression_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t03.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t03
+.venv/bin/python -m src.training.run_random_forest_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t03.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t03
+.venv/bin/python -m src.training.run_xgboost_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t03.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t03
+
+# threshold=0.7
+.venv/bin/python -m src.training.run_logistic_regression_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t07.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t07
+.venv/bin/python -m src.training.run_random_forest_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t07.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t07
+.venv/bin/python -m src.training.run_xgboost_benchmark --config outputs/model_benchmark_threshold_sweep/configs/evaluation_config_t07.yaml --input-csv outputs/analysis_out/gemini_unified_merged.csv --out-root outputs/model_benchmark_t07
+
+.venv/bin/python -m src.training.generate_threshold_sweep_summary --summary-root outputs/model_benchmark_threshold_sweep --threshold-root outputs/model_benchmark_t02 --threshold-root outputs/model_benchmark_t03 --threshold-root outputs/model_benchmark_t07 --models logistic_regression random_forest xgboost

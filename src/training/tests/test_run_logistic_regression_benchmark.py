@@ -79,7 +79,18 @@ targets:
   excluded_emotion_columns:
     anger: zero_positive_support_in_frozen_784_row_dataset
 evaluation:
-  probability_threshold: 0.5
+  probability_threshold: 0.3
+  threshold_tuning:
+    enabled: true
+    selection_metric: macro_f1
+    strategies:
+      - global
+      - per_label
+    threshold_grid:
+      values:
+        - 0.3
+        - 0.5
+        - 0.7
 splits:
   outer_cv:
     n_splits: 5
@@ -102,6 +113,7 @@ seeds:
             self.assertTrue(result["predictions_path"].exists())
             self.assertTrue(result["metrics_path"].exists())
             self.assertTrue(result["per_label_path"].exists())
+            self.assertTrue(result["inner_validation_manifest_path"].exists())
             self.assertTrue(result["per_label_plot_path"].exists())
             self.assertTrue(result["curve_plot_path"].exists())
             self.assertTrue(result["note_path"].exists())
@@ -116,13 +128,24 @@ seeds:
                 self.assertIn(f"true_{label}", pred_df.columns)
                 self.assertIn(f"prob_{label}", pred_df.columns)
                 self.assertIn(f"pred_{label}", pred_df.columns)
+                self.assertIn(f"pred_tuned_global_{label}", pred_df.columns)
+                self.assertIn(f"pred_tuned_per_label_{label}", pred_df.columns)
 
             per_label_df = pd.read_csv(result["per_label_path"])
             self.assertEqual(per_label_df["label"].tolist(), OFFICIAL_LABELS)
+            self.assertIn("f1_baseline", per_label_df.columns)
+            self.assertIn("f1_tuned_global", per_label_df.columns)
+            self.assertIn("f1_tuned_per_label", per_label_df.columns)
 
             payload = json.loads(result["metrics_path"].read_text(encoding="utf-8"))
             self.assertEqual(payload["model_id"], "logistic_regression")
             self.assertEqual(payload["target_columns"], OFFICIAL_LABELS)
+            self.assertEqual(payload["threshold"], 0.3)
+            self.assertTrue(payload["threshold_tuning"]["enabled"])
+            self.assertEqual(payload["threshold_tuning"]["baseline_macro_f1"], payload["macro_f1"])
+            self.assertIn("global", payload["threshold_tuning"]["strategies"])
+            self.assertIn("per_label", payload["threshold_tuning"]["strategies"])
+            self.assertEqual(len(payload["threshold_tuning"]["strategies"]["global"]["selected_thresholds_by_fold"]), 5)
 
             comparison_df = pd.read_csv(result["comparison_table_path"])
             lr_row = comparison_df.loc[comparison_df["model_id"] == "logistic_regression"].iloc[0]

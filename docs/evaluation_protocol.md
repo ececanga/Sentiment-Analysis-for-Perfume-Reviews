@@ -131,7 +131,7 @@ Use a single fixed seed policy for all official runs:
 
 - data split seed: `42`
 - model seed: `42`
-- threshold: `0.5`
+- threshold: `0.3`
 
 Rules:
 
@@ -159,9 +159,23 @@ For every model row, compute these three official metrics from OOF predictions o
 
 Definitions:
 
-- macro-F1: unweighted mean of per-label binary F1 scores using a fixed probability threshold of `0.5`
+- macro-F1: unweighted mean of per-label binary F1 scores using a fixed probability threshold of `0.3`
 - macro ROC-AUC: unweighted mean of per-label ROC-AUC values
 - macro PR-AUC: unweighted mean of per-label average precision values
+
+### Threshold tuning diagnostic
+
+The fixed `0.3` threshold remains the official main-table baseline. Threshold tuning is an additional diagnostic experiment, reported in the per-model metrics JSON and per-label CSV, not a replacement for the frozen main-table row.
+
+Threshold tuning is leakage-safe:
+
+- thresholds are selected inside each outer fold using inner-validation predictions from that fold's outer-train rows only
+- the held-out outer test fold is never used to choose thresholds
+- selected thresholds are then applied to that outer fold's test predictions
+- both one global threshold across labels and per-label thresholds are reported
+- the grid is configured in `evaluation.threshold_tuning`
+
+Rationale: in imbalanced multi-label classification, a fixed baseline threshold may be suboptimal because label prevalences and score distributions differ across labels. Threshold tuning is used as a calibration step to improve final binary decisions under Macro-F1.
 
 ### Secondary diagnostics
 

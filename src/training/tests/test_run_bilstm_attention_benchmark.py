@@ -63,7 +63,18 @@ targets:
   excluded_emotion_columns:
     anger: zero_positive_support_in_frozen_784_row_dataset
 evaluation:
-  probability_threshold: 0.5
+  probability_threshold: 0.3
+  threshold_tuning:
+    enabled: true
+    selection_metric: macro_f1
+    strategies:
+      - global
+      - per_label
+    threshold_grid:
+      values:
+        - 0.3
+        - 0.5
+        - 0.7
 splits:
   outer_cv:
     n_splits: 5
@@ -107,11 +118,11 @@ def _seed_existing_comparison_table(out_root: Path) -> Path:
         "\n".join(
             [
                 "model_id,model_family,dataset,granularity,target_columns,split_design,data_seed,model_seed,threshold,macro_f1,macro_roc_auc,macro_pr_auc,reproducible_run,saved_metrics,comparable_plots,interpretation_note,row_complete,note_path",
-                "logistic_regression,Logistic Regression,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,0.2712,0.627774,0.301525,True,True,True,True,True,outputs/model_benchmark/tables/logistic_regression_note.md",
-                "xgboost,XGBoost,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,0.230065,0.707944,0.277457,True,True,True,True,True,outputs/model_benchmark/tables/xgboost_note.md",
-                "random_forest,Random Forest,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,0.127249,0.711807,0.275711,True,True,True,True,True,outputs/model_benchmark/tables/random_forest_note.md",
-                "bert,BERT,outputs/model_benchmark/datasets/perfume_text_dataset_v1.jsonl,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold + deterministic inner holdout,42,42,0.5,0.16755,0.548542,0.179809,True,True,True,True,True,outputs/model_benchmark/tables/bert_note.md",
-                "bilstm_attention,BiLSTM + Attention,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,,,,False,False,False,False,False,outputs/model_benchmark/tables/bilstm_attention_note.md",
+                "logistic_regression,Logistic Regression,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,0.2712,0.627774,0.301525,True,True,True,True,True,outputs/model_benchmark/tables/logistic_regression_note.md",
+                "xgboost,XGBoost,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,0.230065,0.707944,0.277457,True,True,True,True,True,outputs/model_benchmark/tables/xgboost_note.md",
+                "random_forest,Random Forest,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,0.127249,0.711807,0.275711,True,True,True,True,True,outputs/model_benchmark/tables/random_forest_note.md",
+                "bert,BERT,outputs/model_benchmark/datasets/perfume_text_dataset_v1.jsonl,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold + deterministic inner holdout,42,42,0.3,0.16755,0.548542,0.179809,True,True,True,True,True,outputs/model_benchmark/tables/bert_note.md",
+                "bilstm_attention,BiLSTM + Attention,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,,,,False,False,False,False,False,outputs/model_benchmark/tables/bilstm_attention_note.md",
             ]
         )
         + "\n",
@@ -188,6 +199,7 @@ def _write_synthetic_text_dataset(input_jsonl: Path, fold_manifest_path: Path, n
 def _mock_run_outer_fold(
     *,
     chunk_df: pd.DataFrame,
+    val_chunk_mask: np.ndarray,
     test_chunk_mask: np.ndarray,
     train_perfume_df: pd.DataFrame,
     val_perfume_df: pd.DataFrame,
@@ -198,9 +210,11 @@ def _mock_run_outer_fold(
     vocabulary_summary: dict[str, int],
     encoding_summary: dict[str, float],
     **_: object,
-) -> tuple[np.ndarray, dict[str, object]]:
+) -> tuple[np.ndarray, np.ndarray, dict[str, object]]:
+    val_chunk_df = chunk_df.loc[val_chunk_mask].copy().reset_index(drop=True)
     test_chunk_df = chunk_df.loc[test_chunk_mask].copy().reset_index(drop=True)
-    probs = test_chunk_df[target_cols].to_numpy(dtype=np.float32) * 0.8 + 0.1
+    val_probs = val_chunk_df[target_cols].to_numpy(dtype=np.float32) * 0.8 + 0.1
+    test_probs = test_chunk_df[target_cols].to_numpy(dtype=np.float32) * 0.8 + 0.1
     fold_summary = {
         "outer_fold_id": int(outer_fold_id),
         "n_train_perfumes": int(len(train_perfume_df)),
@@ -232,7 +246,7 @@ def _mock_run_outer_fold(
             }
         ],
     }
-    return probs, fold_summary
+    return test_probs, val_probs, fold_summary
 
 
 class RunBiLSTMAttentionBenchmarkTests(unittest.TestCase):
@@ -296,6 +310,8 @@ class RunBiLSTMAttentionBenchmarkTests(unittest.TestCase):
                 self.assertIn(f"true_{label}", pred_df.columns)
                 self.assertIn(f"prob_{label}", pred_df.columns)
                 self.assertIn(f"pred_{label}", pred_df.columns)
+                self.assertIn(f"pred_tuned_global_{label}", pred_df.columns)
+                self.assertIn(f"pred_tuned_per_label_{label}", pred_df.columns)
 
             payload = json.loads(result["metrics_path"].read_text(encoding="utf-8"))
             self.assertEqual(payload["model_id"], "bilstm_attention")
@@ -303,6 +319,10 @@ class RunBiLSTMAttentionBenchmarkTests(unittest.TestCase):
             self.assertEqual(payload["chunk_aggregation"]["strategy"], "mean_probability")
             self.assertEqual(payload["model_parameters"]["training_mode"], "from_scratch_sequence_encoder")
             self.assertEqual(len(payload["outer_fold_runs"]), 5)
+            self.assertTrue(payload["threshold_tuning"]["enabled"])
+            self.assertEqual(payload["threshold_tuning"]["baseline_macro_f1"], payload["macro_f1"])
+            self.assertIn("global", payload["threshold_tuning"]["strategies"])
+            self.assertIn("per_label", payload["threshold_tuning"]["strategies"])
 
             note_text = result["note_path"].read_text(encoding="utf-8")
             self.assertIn("BiLSTM + Attention", note_text)

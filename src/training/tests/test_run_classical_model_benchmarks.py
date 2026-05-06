@@ -78,7 +78,7 @@ targets:
   excluded_emotion_columns:
     anger: zero_positive_support_in_frozen_784_row_dataset
 evaluation:
-  probability_threshold: 0.5
+  probability_threshold: 0.3
 splits:
   outer_cv:
     n_splits: 5
@@ -97,11 +97,11 @@ def _seed_existing_comparison_table(out_root: Path) -> Path:
         "\n".join(
             [
                 "model_id,model_family,dataset,granularity,target_columns,split_design,data_seed,model_seed,threshold,macro_f1,macro_roc_auc,macro_pr_auc,reproducible_run,saved_metrics,comparable_plots,interpretation_note,row_complete,note_path",
-                "logistic_regression,Logistic Regression,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,0.2712,0.627774,0.301525,True,True,True,True,True,outputs/model_benchmark/tables/logistic_regression_note.md",
-                "xgboost,XGBoost,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,,,,False,False,False,False,False,outputs/model_benchmark/tables/xgboost_note.md",
-                "random_forest,Random Forest,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,,,,False,False,False,False,False,outputs/model_benchmark/tables/random_forest_note.md",
-                "bert,BERT,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,,,,False,False,False,False,False,outputs/model_benchmark/tables/bert_note.md",
-                "bilstm_attention,BiLSTM + Attention,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.5,,,,False,False,False,False,False,outputs/model_benchmark/tables/bilstm_attention_note.md",
+                "logistic_regression,Logistic Regression,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,0.2712,0.627774,0.301525,True,True,True,True,True,outputs/model_benchmark/tables/logistic_regression_note.md",
+                "xgboost,XGBoost,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,,,,False,False,False,False,False,outputs/model_benchmark/tables/xgboost_note.md",
+                "random_forest,Random Forest,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,,,,False,False,False,False,False,outputs/model_benchmark/tables/random_forest_note.md",
+                "bert,BERT,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,,,,False,False,False,False,False,outputs/model_benchmark/tables/bert_note.md",
+                "bilstm_attention,BiLSTM + Attention,outputs/analysis_out/gemini_unified_merged.csv,perfume_level,joy;sadness;fear;trust;surprise;anticipation;disgust,5-fold KFold,42,42,0.3,,,,False,False,False,False,False,outputs/model_benchmark/tables/bilstm_attention_note.md",
             ]
         )
         + "\n",
