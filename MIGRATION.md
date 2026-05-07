@@ -21,10 +21,20 @@ This document describes the new project layout and how legacy paths were moved.
 - `py files/Pipeline Controller/` -> `src/pipeline/`
 - `py files/Preprocessing_Formatting/` -> `src/preprocessing/`
 - `py files/Transformer_Based_Emotion_Classification/` -> `src/transformers/`
-- `py files/documents/g_s.py` -> `src/utils/g_s.py`
-- `py files/documents/generate_fusion_diagram.py` -> `src/utils/generate_fusion_diagram.py`
-- `py files/documents/slide1_de.py` -> `src/utils/slide1_de.py`
-- `csv files/inspect_csv_headers.py` -> `src/utils/inspect_csv_headers.py`
+- `py files/documents/g_s.py` -> removed (superseded by `archive/legacy_scripts/utils/slide1_de.py`)
+- `py files/documents/generate_fusion_diagram.py` -> `archive/legacy_scripts/utils/generate_fusion_diagram.py`
+- `py files/documents/slide1_de.py` -> `archive/legacy_scripts/utils/slide1_de.py`
+- `csv files/inspect_csv_headers.py` -> removed
+
+### Archived after runner cleanup
+- `src/labeling/gemini_label_from_txt.py` -> `archive/legacy_scripts/labeling/gemini_label_from_txt.py`
+- `src/labeling/json_to_labeled_csv.py` -> `archive/legacy_scripts/labeling/json_to_labeled_csv.py`
+- `src/pipeline/demo_pipeline_small.py` -> `archive/legacy_scripts/pipeline/demo_pipeline_small.py`
+- `src/training/train_eval_gold43.py` -> `archive/legacy_scripts/training/train_eval_gold43.py`
+- `src/utils/generate_fusion_diagram.py` -> `archive/legacy_scripts/utils/generate_fusion_diagram.py`
+- `src/utils/slide1_de.py` -> `archive/legacy_scripts/utils/slide1_de.py`
+- `src/labeling/label_report.py` -> removed
+- `src/utils/inspect_csv_headers.py` -> removed
 
 ### Data
 - `csv files/YouTube_Perfume_Reviews_FullyFormatted.csv` -> `data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv`

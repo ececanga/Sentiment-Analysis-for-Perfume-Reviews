@@ -76,3 +76,8 @@ Continue despite stage failures:
 ```bash
 python -m src.pipeline.run_thesis_workflow --continue-on-error
 ```
+
+## Archived Scripts
+
+Legacy scripts that are not part of either runner are kept under `archive/legacy_scripts/`.
+Separate non-runner workflows that are still maintained remain under `src/`.

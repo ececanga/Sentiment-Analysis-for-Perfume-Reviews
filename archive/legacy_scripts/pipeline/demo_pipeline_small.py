@@ -16,10 +16,10 @@ It "emulates" your existing pipeline scripts:
   - Visual mapping: deterministic VAD -> color (HSV-like mapping)
 
 Run examples:
-  python src/pipeline/demo_pipeline_small.py
-  python src/pipeline/demo_pipeline_small.py --transformers hartmann
-  python src/pipeline/demo_pipeline_small.py --transformers hartmann,cardiff
-  python src/pipeline/demo_pipeline_small.py --transformers none
+  python archive/legacy_scripts/pipeline/demo_pipeline_small.py
+  python archive/legacy_scripts/pipeline/demo_pipeline_small.py --transformers hartmann
+  python archive/legacy_scripts/pipeline/demo_pipeline_small.py --transformers hartmann,cardiff
+  python archive/legacy_scripts/pipeline/demo_pipeline_small.py --transformers none
 """
 
 from __future__ import annotations

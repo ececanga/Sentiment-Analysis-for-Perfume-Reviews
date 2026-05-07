@@ -2,14 +2,14 @@
 Deterministic slide-image generator for the worked example (no generative models, no fees, no API).
 
 Outputs
-- Folder: py files/documents
+- Folder: docs/diagrams
 - Files: workedExample_slide1.png ... workedExample_slide11.png
 
 Install
 - pip install matplotlib pillow numpy
 
 Run
-- python "py files/documents/generate_worked_example_images_noai.py"
+- python archive/legacy_scripts/utils/slide1_de.py
 """
 
 from __future__ import annotations
@@ -27,12 +27,14 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401  (needed for 3D projection)
 
+from src.utils.paths import docs_path
+
 
 # -----------------------------
 # Output configuration
 # -----------------------------
 
-OUTPUT_DIR = Path("py files") / "documents"
+OUTPUT_DIR = docs_path("diagrams")
 
 
 # -----------------------------

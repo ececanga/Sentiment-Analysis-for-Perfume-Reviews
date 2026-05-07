@@ -1,23 +1,20 @@
+from pathlib import Path
+
 import graphviz
-import os
+
+from src.utils.paths import docs_path
 
 def generate_fusion_diagram():
     """
     Generates the Thesis Hybrid Fusion Diagram.
     - Font: Avenir (Mac system font)
     - Fixes typo: "Aggregation"
-    - Output: py files/documents/fusion_diagram.png
+    - Output: docs/diagrams/fusion_diagram.png
     """
-    
-    # 1. Setup Output Directory
-    # This ensures the folder exists relative to where you run the script
-    output_dir = "py files/documents"
-    if not os.path.exists(output_dir):
-        try:
-            os.makedirs(output_dir)
-            print(f"Created directory: {output_dir}")
-        except OSError as e:
-            print(f"Note: Could not create directory {output_dir} (might already exist or permission issue). {e}")
+
+    # Keep generated diagram alongside the migrated documentation artifacts.
+    output_dir = docs_path("diagrams")
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     # 2. Initialize Graph
     dot = graphviz.Digraph('Hybrid_Fusion', comment='Thesis Architecture')
@@ -101,7 +98,7 @@ def generate_fusion_diagram():
     # ---------------------------
     try:
         # cleanup=True removes the temporary source file
-        output_path = dot.render('fusion_diagram', directory=output_dir, format='png', cleanup=True)
+        output_path = dot.render("fusion_diagram", directory=str(output_dir), format="png", cleanup=True)
         print(f"✅ Success! Diagram saved to: {output_path}")
     except Exception as e:
         print("\n❌ ERROR: Graphviz executable not found.")
