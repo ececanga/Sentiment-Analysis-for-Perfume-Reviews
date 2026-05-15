@@ -1,3 +1,6 @@
+# Date Created: 2026-03-02 11:07:58+03:00
+# Date Last Modified: 2026-05-15
+
 """train_eval_gold43.py
 
 Train/evaluate baseline models on the 43 labeled perfumes.

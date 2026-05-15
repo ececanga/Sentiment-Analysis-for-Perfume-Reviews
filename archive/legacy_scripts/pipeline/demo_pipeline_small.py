@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Date Created: 2026-03-02 11:07:58+03:00
+# Date Last Modified: 2026-05-15
+
 # demo_pipeline_small.py
 """
 Demo: run the full pipeline on 3+3=6 reviews (2 perfumes) and PRINT every stage's inputs/outputs.

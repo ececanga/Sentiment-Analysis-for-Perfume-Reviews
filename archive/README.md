@@ -1,3 +1,8 @@
+<!--
+Date Created: 2026-05-07 16:18:09+03:00
+Date Last Modified: 2026-05-15
+-->
+
 Archived scripts that are not part of either active runner live here.
 
 - `legacy_scripts/` contains former `src/` files kept for provenance or occasional manual reuse.

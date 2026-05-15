@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Date Created: 2026-03-02 11:07:58+03:00
+# Date Last Modified: 2026-05-15
+
 """
 Ablation runner for: data/perfume_level/Unified_Emotion_Profile_Perfume.csv (Stage 5B)
 

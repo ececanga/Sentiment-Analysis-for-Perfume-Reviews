@@ -1,3 +1,6 @@
+# Date Created: 2025-09-20 17:23:40+03:00
+# Date Last Modified: 2026-05-15
+
 # 12) merge_emotion_profiles.py
 
 import pandas as pd

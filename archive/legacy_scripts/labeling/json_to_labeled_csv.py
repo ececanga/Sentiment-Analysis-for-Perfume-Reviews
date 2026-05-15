@@ -1,3 +1,6 @@
+# Date Created: 2026-03-02 11:07:58+03:00
+# Date Last Modified: 2026-05-15
+
 """json_to_labeled_csv.py
 
 Join LLM label JSON to an annotation packet CSV (or create perfume-only labels).

@@ -1,1 +1,6 @@
+<!--
+Date Created: 2026-04-13 23:02:44+03:00
+Date Last Modified: 2026-05-15
+-->
+
 BiLSTM + Attention trains a from-scratch chunk-level sequence encoder with fold-local vocabulary building and deterministic mean chunk-to-perfume aggregation, reaching macro-F1 0.2324, macro ROC-AUC 0.5356, and macro PR-AUC 0.1977. It is strongest on joy, anticipation, while fear, sadness, disgust, surprise remain unstable under sparse support and noisy review anchoring. The row is benchmark-ready for the official comparison table.

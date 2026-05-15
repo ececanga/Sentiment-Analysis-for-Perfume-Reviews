@@ -1,3 +1,6 @@
+# Date Created: 2026-04-13 23:02:44+03:00
+# Date Last Modified: 2026-05-15
+
 """Run strict Gemini labeling over perfume-level targets with resumability."""
 
 from __future__ import annotations

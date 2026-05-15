@@ -1,3 +1,6 @@
+# Date Created: 2026-05-06 15:46:46+03:00
+# Date Last Modified: 2026-05-15
+
 """Tests for the fixed-threshold sweep runner."""
 
 from __future__ import annotations
