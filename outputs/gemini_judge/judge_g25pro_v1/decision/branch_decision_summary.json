@@ -1,0 +1,68 @@
+{
+  "decision": "go",
+  "decision_reasons": [
+    "judge_gold_macro_f1_improved",
+    "judge_benchmark_mean_macro_f1_improved"
+  ],
+  "merge_integrity_pass": true,
+  "official_collapsed_labels": [],
+  "baseline_gold_macro_f1": 0.26819727891156464,
+  "judge_gold_macro_f1": 0.4329004329004329,
+  "baseline_benchmark_mean_macro_f1": 0.238986,
+  "judge_benchmark_mean_macro_f1": 0.28399199999999997,
+  "benchmark_integrity": {
+    "expected_models": [
+      "logistic_regression",
+      "xgboost",
+      "random_forest",
+      "bert",
+      "bilstm_attention"
+    ],
+    "baseline_complete_rows": 5,
+    "judge_complete_rows": 5,
+    "baseline_mean_macro_f1": 0.238986,
+    "judge_mean_macro_f1": 0.28399199999999997,
+    "baseline_thresholds_complete": [
+      0.3
+    ],
+    "judge_thresholds_complete": [
+      0.3
+    ],
+    "baseline_integrity_pass": true,
+    "judge_integrity_pass": true
+  },
+  "label_drift_summary": {
+    "baseline_label_csv": "labels/gemini_labels_784_v1.csv",
+    "judge_label_csv": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+    "n_rows": 784,
+    "max_abs_prevalence_delta": 0.10459183673469385,
+    "max_abs_prevalence_delta_label": "anticipation",
+    "official_collapsed_labels": [],
+    "baseline_merge_integrity": {
+      "passed": true,
+      "matched": 784,
+      "expected_rows": 784,
+      "unified_only": 0,
+      "gemini_only": 0,
+      "duplicate_total": 0,
+      "hash_mismatch_count": 0
+    },
+    "judge_merge_integrity": {
+      "passed": true,
+      "matched": 784,
+      "expected_rows": 784,
+      "unified_only": 0,
+      "gemini_only": 0,
+      "duplicate_total": 0,
+      "hash_mismatch_count": 0
+    }
+  },
+  "artifacts": {
+    "label_prevalence_delta_csv": "outputs/gemini_judge/judge_g25pro_v1/decision/label_prevalence_delta.csv",
+    "label_drift_summary_json": "outputs/gemini_judge/judge_g25pro_v1/decision/branch_label_drift_summary.json",
+    "gold_side_by_side_csv": "outputs/gemini_judge/judge_g25pro_v1/decision/gold_side_by_side.csv",
+    "benchmark_side_by_side_csv": "outputs/gemini_judge/judge_g25pro_v1/decision/benchmark_side_by_side.csv",
+    "decision_summary_md": "outputs/gemini_judge/judge_g25pro_v1/decision/branch_decision_summary.md",
+    "decision_summary_json": "outputs/gemini_judge/judge_g25pro_v1/decision/branch_decision_summary.json"
+  }
+}

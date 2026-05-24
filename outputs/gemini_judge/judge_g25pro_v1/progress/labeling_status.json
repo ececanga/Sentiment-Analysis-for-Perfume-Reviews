@@ -1,0 +1,26 @@
+{
+  "branch_id": "judge_g25pro_v1",
+  "stage": "labeling",
+  "status": "completed",
+  "updated_at": "2026-05-24T08:30:50+00:00",
+  "log_path": "outputs/gemini_judge/judge_g25pro_v1/logs/labeling.log",
+  "latest_artifact": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+  "completed_at": "2026-05-24T08:30:50+00:00",
+  "duration_sec": 3661.704,
+  "child_log_path": "labels/gemini_labeling_run_judge_g25pro_v1.log",
+  "done": 784,
+  "total": 784,
+  "percent": 100.0,
+  "elapsed_sec": 3661.704,
+  "eta_sec": 0.0,
+  "integrity_checks": {
+    "expected_rows": 784,
+    "jsonl_rows": 784,
+    "csv_rows": 784,
+    "failed_count": 0,
+    "missing_ids_count": 0,
+    "metadata_models": [
+      "gemini-2.5-pro"
+    ]
+  }
+}

@@ -45,6 +45,11 @@ Desktop.ini
 # VS Code
 .vscode/
 
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
 # Project-specific local files
 YouTube_Perfume_Reviews_Partial.csv
 YouTube_Perfume_Reviews_With_ScentEmotion.csv

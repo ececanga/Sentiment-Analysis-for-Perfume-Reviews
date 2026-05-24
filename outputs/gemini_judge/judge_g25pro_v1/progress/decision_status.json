@@ -1,0 +1,13 @@
+{
+  "branch_id": "judge_g25pro_v1",
+  "stage": "decision",
+  "status": "completed",
+  "updated_at": "2026-05-24T09:09:57+00:00",
+  "log_path": "outputs/gemini_judge/judge_g25pro_v1/logs/decision.log",
+  "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/decision/branch_decision_summary.json",
+  "completed_at": "2026-05-24T09:09:57+00:00",
+  "duration_sec": 0.281,
+  "integrity_checks": {
+    "decision": "go"
+  }
+}

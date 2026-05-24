@@ -1,0 +1,26 @@
+{
+  "baseline_label_csv": "labels/gemini_labels_784_v1.csv",
+  "judge_label_csv": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+  "n_rows": 784,
+  "max_abs_prevalence_delta": 0.10459183673469385,
+  "max_abs_prevalence_delta_label": "anticipation",
+  "official_collapsed_labels": [],
+  "baseline_merge_integrity": {
+    "passed": true,
+    "matched": 784,
+    "expected_rows": 784,
+    "unified_only": 0,
+    "gemini_only": 0,
+    "duplicate_total": 0,
+    "hash_mismatch_count": 0
+  },
+  "judge_merge_integrity": {
+    "passed": true,
+    "matched": 784,
+    "expected_rows": 784,
+    "unified_only": 0,
+    "gemini_only": 0,
+    "duplicate_total": 0,
+    "hash_mismatch_count": 0
+  }
+}

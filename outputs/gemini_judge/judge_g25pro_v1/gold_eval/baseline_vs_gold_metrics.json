@@ -1,0 +1,77 @@
+{
+  "branch_name": "baseline",
+  "label_csv": "labels/gemini_labels_784_v1.csv",
+  "gold_csv": "data/annotation_packets/Labeled_Annotation_Packet_strict_v1.csv",
+  "matched_gold_rows": 43,
+  "official_target_labels": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "excluded_from_primary": [
+    "anger"
+  ],
+  "primary_decision_metric": {
+    "name": "macro_f1",
+    "label_scope": "official_target_labels",
+    "excluded_labels": [
+      "anger"
+    ],
+    "value": 0.26819727891156464
+  },
+  "emotion_metrics": {
+    "macro_f1_official": 0.26819727891156464,
+    "macro_f1_all_emotions": 0.23467261904761905,
+    "micro_f1_official": 0.5142857142857142,
+    "subset_accuracy_official": 0.32558139534883723,
+    "hamming_loss_official": 0.16943521594684385,
+    "gold_label_cardinality_official": 1.3255813953488371,
+    "pred_label_cardinality_official": 1.1162790697674418,
+    "per_label_f1": {
+      "joy": 0.7857142857142857,
+      "sadness": 0.0,
+      "anger": 0.0,
+      "fear": 0.6666666666666666,
+      "trust": 0.125,
+      "surprise": 0.0,
+      "anticipation": 0.3,
+      "disgust": 0.0
+    }
+  },
+  "vad_metrics": {
+    "by_dimension": {
+      "valence": {
+        "n": 43,
+        "mae": 1.2868232558139536,
+        "rmse": 1.594567327478042,
+        "pearson_r": 0.7674764920044752,
+        "spearman_r": 0.6545108470780805
+      },
+      "arousal": {
+        "n": 43,
+        "mae": 0.9767418604651162,
+        "rmse": 1.2534236321483279,
+        "pearson_r": 0.5086693161978336,
+        "spearman_r": 0.45730461481887513
+      },
+      "dominance": {
+        "n": 43,
+        "mae": 1.2790651162790698,
+        "rmse": 1.53595579605725,
+        "pearson_r": 0.5936571513515423,
+        "spearman_r": 0.4570013350272889
+      }
+    },
+    "average": {
+      "n": 43,
+      "mae": 1.1808767441860466,
+      "rmse": 1.4613155852278732,
+      "pearson_r": 0.623267653184617,
+      "spearman_r": 0.5229389323080814
+    }
+  }
+}

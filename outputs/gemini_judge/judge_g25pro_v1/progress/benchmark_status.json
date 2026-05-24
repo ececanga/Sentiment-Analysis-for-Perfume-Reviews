@@ -1,0 +1,21 @@
+{
+  "branch_id": "judge_g25pro_v1",
+  "stage": "benchmark",
+  "status": "completed",
+  "updated_at": "2026-05-24T09:09:57+00:00",
+  "log_path": "outputs/gemini_judge/judge_g25pro_v1/logs/benchmark.log",
+  "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv",
+  "completed_at": "2026-05-24T09:09:57+00:00",
+  "duration_sec": 2338.882,
+  "models_done": 5,
+  "models_total": 5,
+  "current_model": null,
+  "elapsed_sec": 2338.882,
+  "integrity_checks": {
+    "complete_rows": 5,
+    "thresholds": [
+      0.3
+    ],
+    "baseline_output_root_unchanged": true
+  }
+}

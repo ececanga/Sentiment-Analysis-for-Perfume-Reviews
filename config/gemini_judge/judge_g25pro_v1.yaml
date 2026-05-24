@@ -1,0 +1,87 @@
+branch:
+  branch_id: judge_g25pro_v1
+  output_tag: judge_g25pro_v1
+  stage_order:
+    - dry-run
+    - labeling
+    - merge
+    - gold_eval
+    - benchmark_prep
+    - benchmark
+    - decision
+
+baseline_anchors:
+  canonical_label_csv: labels/gemini_labels_784_v1.csv
+  provenance_jsonl: labels/gemini_labels_784_v1.jsonl
+  merge_report_json: outputs/analysis_out/gemini_unified_join_report.json
+  benchmark_comparison_table_csv: outputs/model_benchmark/tables/comparison_table.csv
+  benchmark_fold_manifest_csv: outputs/model_benchmark/tables/fold_assignments.csv
+
+raw_inputs:
+  target_csv: data/perfume_level/Unified_Emotion_Profile_Perfume.csv
+  packet_csv: data/annotation_packets/Annotation_Packet_TOSKOVAT_ORTO_PARISI_ELO_NASOMATTO_SERGE_LUTENS.csv
+  raw_csv: data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv
+  unified_csv: data/perfume_level/Unified_Emotion_Profile_Perfume.csv
+  perfume_col: Perfume
+  text_col: Final Transcript
+
+gold_eval:
+  gold_packet_csv: data/annotation_packets/Labeled_Annotation_Packet_strict_v1.csv
+  evaluation_config_yaml: config/evaluation_config.yaml
+
+judge_model:
+  model: gemini-2.5-pro
+  temperature: 0.0
+  max_retries: 5
+  backoff_base_sec: 1.0
+  backoff_cap_sec: 32.0
+  rate_limit_sleep_sec: 0.5
+  batch_size: 20
+  seed: 42
+  snippet_max_chars: 650
+
+benchmark:
+  evaluation_config_yaml: config/evaluation_config.yaml
+  probability_threshold: 0.3
+  run_threshold_sweep: false
+  models:
+    - logistic_regression
+    - xgboost
+    - random_forest
+    - bert
+    - bilstm_attention
+  device_default: auto
+
+output_roots:
+  root_dir: outputs/gemini_judge/judge_g25pro_v1
+  analysis_out_dir: outputs/gemini_judge/judge_g25pro_v1/analysis_out
+  gold_eval_out_dir: outputs/gemini_judge/judge_g25pro_v1/gold_eval
+  model_benchmark_root: outputs/gemini_judge/judge_g25pro_v1/model_benchmark
+  decision_out_dir: outputs/gemini_judge/judge_g25pro_v1/decision
+  progress_dir: outputs/gemini_judge/judge_g25pro_v1/progress
+  logs_dir: outputs/gemini_judge/judge_g25pro_v1/logs
+
+artifacts:
+  judge_labels_jsonl: labels/gemini_labels_784_judge_g25pro_v1.jsonl
+  judge_labels_csv: labels/gemini_labels_784_judge_g25pro_v1.csv
+  judge_labeling_report_json: labels/gemini_labeling_report_judge_g25pro_v1.json
+  judge_labeling_errors_jsonl: labels/gemini_labeling_errors_judge_g25pro_v1.jsonl
+  judge_labeling_run_log: labels/gemini_labeling_run_judge_g25pro_v1.log
+  judge_merge_report_json: outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_join_report.json
+  judge_merged_csv: outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_merged.csv
+  benchmark_dataset_jsonl: outputs/gemini_judge/judge_g25pro_v1/model_benchmark/datasets/perfume_text_dataset_v1.jsonl
+  benchmark_dataset_chunks_csv: outputs/gemini_judge/judge_g25pro_v1/model_benchmark/datasets/perfume_text_dataset_v1_chunks.csv
+  benchmark_dataset_summary_json: outputs/gemini_judge/judge_g25pro_v1/model_benchmark/datasets/perfume_text_dataset_v1_summary.json
+  benchmark_comparison_table_csv: outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv
+  baseline_gold_metrics_json: outputs/gemini_judge/judge_g25pro_v1/gold_eval/baseline_vs_gold_metrics.json
+  judge_gold_metrics_json: outputs/gemini_judge/judge_g25pro_v1/gold_eval/judge_vs_gold_metrics.json
+  decision_summary_json: outputs/gemini_judge/judge_g25pro_v1/decision/branch_decision_summary.json
+
+status_json:
+  branch_status_json: outputs/gemini_judge/judge_g25pro_v1/progress/branch_status.json
+  labeling_status_json: outputs/gemini_judge/judge_g25pro_v1/progress/labeling_status.json
+  merge_status_json: outputs/gemini_judge/judge_g25pro_v1/progress/merge_status.json
+  gold_eval_status_json: outputs/gemini_judge/judge_g25pro_v1/progress/gold_eval_status.json
+  benchmark_prep_status_json: outputs/gemini_judge/judge_g25pro_v1/progress/benchmark_prep_status.json
+  benchmark_status_json: outputs/gemini_judge/judge_g25pro_v1/progress/benchmark_status.json
+  decision_status_json: outputs/gemini_judge/judge_g25pro_v1/progress/decision_status.json

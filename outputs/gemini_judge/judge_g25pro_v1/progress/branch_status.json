@@ -1,0 +1,72 @@
+{
+  "branch_id": "judge_g25pro_v1",
+  "config_path": "config/gemini_judge/judge_g25pro_v1.yaml",
+  "selected_stages": [
+    "dry-run",
+    "labeling",
+    "merge",
+    "gold_eval",
+    "benchmark_prep",
+    "benchmark",
+    "decision"
+  ],
+  "dry_run": false,
+  "resume": true,
+  "started_at": "2026-05-24T07:29:48+00:00",
+  "updated_at": "2026-05-24T09:09:57+00:00",
+  "current_stage": "decision",
+  "stage_status": "completed",
+  "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/progress/branch_status.json",
+  "stage_history": [
+    {
+      "stage": "dry-run",
+      "status": "completed",
+      "completed_at": "2026-05-24T07:29:48+00:00",
+      "duration_sec": 0.001,
+      "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/logs/dry-run.log"
+    },
+    {
+      "stage": "labeling",
+      "status": "completed",
+      "completed_at": "2026-05-24T08:30:50+00:00",
+      "duration_sec": 3661.704,
+      "latest_artifact": "labels/gemini_labels_784_judge_g25pro_v1.csv"
+    },
+    {
+      "stage": "merge",
+      "status": "completed",
+      "completed_at": "2026-05-24T08:30:51+00:00",
+      "duration_sec": 1.126,
+      "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_merged.csv"
+    },
+    {
+      "stage": "gold_eval",
+      "status": "completed",
+      "completed_at": "2026-05-24T08:30:52+00:00",
+      "duration_sec": 0.641,
+      "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/gold_eval/judge_vs_gold_metrics.json"
+    },
+    {
+      "stage": "benchmark_prep",
+      "status": "completed",
+      "completed_at": "2026-05-24T08:30:58+00:00",
+      "duration_sec": 6.296,
+      "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/datasets/perfume_text_dataset_v1_summary.json"
+    },
+    {
+      "stage": "benchmark",
+      "status": "completed",
+      "completed_at": "2026-05-24T09:09:57+00:00",
+      "duration_sec": 2338.882,
+      "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv"
+    },
+    {
+      "stage": "decision",
+      "status": "completed",
+      "completed_at": "2026-05-24T09:09:57+00:00",
+      "duration_sec": 0.281,
+      "latest_artifact": "outputs/gemini_judge/judge_g25pro_v1/decision/branch_decision_summary.json"
+    }
+  ],
+  "completed_at": "2026-05-24T09:09:57+00:00"
+}

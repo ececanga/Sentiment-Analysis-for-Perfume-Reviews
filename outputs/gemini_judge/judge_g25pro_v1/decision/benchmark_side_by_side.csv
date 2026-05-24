@@ -1,0 +1,7 @@
+model_id,baseline_threshold,judge_threshold,baseline_row_complete,judge_row_complete,baseline_macro_f1,judge_macro_f1,delta_macro_f1
+logistic_regression,0.3,0.3,True,True,0.269933,0.31781,0.047877
+xgboost,0.3,0.3,True,True,0.254726,0.318425,0.063699
+random_forest,0.3,0.3,True,True,0.219452,0.255681,0.03622899999999998
+bert,0.3,0.3,True,True,0.218461,0.258405,0.03994400000000001
+bilstm_attention,0.3,0.3,True,True,0.232358,0.269639,0.03728100000000001
+__mean__,,,True,True,0.238986,0.28399199999999997,0.04500599999999996

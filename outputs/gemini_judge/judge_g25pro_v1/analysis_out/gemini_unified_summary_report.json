@@ -1,0 +1,77 @@
+{
+  "join_counts": {
+    "unified_total": 784,
+    "gemini_total": 784,
+    "matched": 784,
+    "unified_only": 0,
+    "gemini_only": 0
+  },
+  "integrity": {
+    "duplicate_ids_unified_count": 0,
+    "duplicate_ids_gemini_count": 0,
+    "duplicate_ids_unified": [],
+    "duplicate_ids_gemini": [],
+    "hash_mismatch_count": 0,
+    "hash_mismatch_ids": []
+  },
+  "binary_agreement_mean_accuracy": 0.18431122448979592,
+  "toplabel_match_rates": {
+    "JHartmann_Label": 0.5064766839378239,
+    "Savani_Label": 0.6308290155440415,
+    "GoEmotions_Label": 0.5880829015544041,
+    "Cardiff_Label": 0.6347150259067358
+  },
+  "vad_continuous_agreement": [
+    {
+      "dimension": "valence",
+      "n": 784,
+      "pearson_r": 0.2523892608469889,
+      "pearson_p": 7.388340539416943e-13,
+      "spearman_r": 0.22092847228516313,
+      "spearman_p": 4.0120259237325855e-10,
+      "mae": 6.51201438479762
+    },
+    {
+      "dimension": "arousal",
+      "n": 784,
+      "pearson_r": 0.21753675835889136,
+      "pearson_p": 7.499749254942169e-10,
+      "spearman_r": 0.21350353851968804,
+      "spearman_p": 1.5572863187984522e-09,
+      "mae": 6.048879607300653
+    },
+    {
+      "dimension": "dominance",
+      "n": 784,
+      "pearson_r": 0.2682065575758983,
+      "pearson_p": 2.203181055840146e-14,
+      "spearman_r": 0.23490605413217022,
+      "spearman_p": 2.732894664709462e-11,
+      "mae": 5.8910644966782195
+    }
+  ],
+  "gemini_prevalence": {
+    "joy": 0.6415816326530612,
+    "sadness": 0.015306122448979591,
+    "anger": 0.0012755102040816326,
+    "fear": 0.003826530612244898,
+    "trust": 0.3010204081632653,
+    "surprise": 0.012755102040816327,
+    "anticipation": 0.39285714285714285,
+    "disgust": 0.01020408163265306
+  },
+  "gemini_vad_stats": {
+    "valence": {
+      "mean": 6.679169897959183,
+      "std": 1.0907198647822465
+    },
+    "arousal": {
+      "mean": 5.949533163265305,
+      "std": 0.7491143681736986
+    },
+    "dominance": {
+      "mean": 5.916241454081633,
+      "std": 0.7100560263382123
+    }
+  }
+}
