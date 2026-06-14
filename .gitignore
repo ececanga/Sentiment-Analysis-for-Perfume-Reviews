@@ -48,6 +48,7 @@ Desktop.ini
 # Local environment secrets
 .env
 .env.*
+.env.youtube_keys
 !.env.example
 
 # Project-specific local files
