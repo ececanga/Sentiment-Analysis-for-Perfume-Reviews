@@ -1,0 +1,93 @@
+{
+  "branch_id": "judge_g25pro_v1",
+  "judge_model": "gemini-2.5-pro",
+  "baseline_label_csv": "labels/gemini_labels_784_v1.csv",
+  "judge_label_csv": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+  "judge_label_jsonl": "labels/gemini_labels_784_judge_g25pro_v1.jsonl",
+  "decision_summary_json": "outputs/gemini_judge/judge_g25pro_v1/decision/branch_decision_summary.json",
+  "gold_metrics_json": "outputs/gemini_judge/judge_g25pro_v1/gold_eval/judge_vs_gold_metrics.json",
+  "benchmark_table_csv": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv",
+  "output_root": "outputs/gemini_judge/judge_g25pro_v1",
+  "final_decision": "go",
+  "baseline_gold_macro_f1": 0.26819727891156464,
+  "judge_gold_macro_f1": 0.4329004329004329,
+  "baseline_benchmark_mean_macro_f1": 0.238986,
+  "judge_benchmark_mean_macro_f1": 0.28399199999999997,
+  "merge_integrity_pass": true,
+  "official_collapsed_labels": [],
+  "timestamp_utc": "2026-05-24T11:57:26.007167+00:00",
+  "implementation_files": [
+    "config/gemini_judge/judge_g25pro_v1.yaml",
+    "src/pipeline/run_gemini_judge_branch.py",
+    "src/analysis/compare_label_branch_to_gold43.py",
+    "src/analysis/compare_gemini_branches.py",
+    "scripts/run_phase1_judge.sh"
+  ],
+  "row_counts": {
+    "baseline_label_csv_rows": 784,
+    "judge_label_csv_rows": 784,
+    "judge_label_jsonl_rows": 784
+  },
+  "integrity_summary": {
+    "baseline_and_judge_perfume_ids_match": true,
+    "judge_csv_and_jsonl_perfume_ids_match": true,
+    "judge_jsonl_metadata_model": "gemini-2.5-pro",
+    "judge_labeling_failed_count": 0,
+    "judge_labeling_missing_ids_count": 0,
+    "baseline_benchmark_complete_rows": 5,
+    "judge_benchmark_complete_rows": 5,
+    "baseline_thresholds_complete": [
+      0.3
+    ],
+    "judge_thresholds_complete": [
+      0.3
+    ],
+    "baseline_merge_duplicate_total": 0,
+    "judge_merge_duplicate_total": 0,
+    "baseline_merge_hash_mismatch_count": 0,
+    "judge_merge_hash_mismatch_count": 0
+  },
+  "limitations": {
+    "matched_gold_rows": 43,
+    "primary_decision_metric_excluded_labels": [
+      "anger"
+    ],
+    "judge_gold_per_label_f1": {
+      "joy": 0.8,
+      "sadness": 0.0,
+      "anger": 0.0,
+      "fear": 0.6666666666666666,
+      "trust": 0.4,
+      "surprise": 0.0,
+      "anticipation": 0.36363636363636365,
+      "disgust": 0.8
+    }
+  },
+  "related_artifacts": {
+    "baseline_gold_metrics_json": "outputs/gemini_judge/judge_g25pro_v1/gold_eval/baseline_vs_gold_metrics.json",
+    "judge_labeling_report_json": "labels/gemini_labeling_report_judge_g25pro_v1.json",
+    "judge_labeling_errors_jsonl": "labels/gemini_labeling_errors_judge_g25pro_v1.jsonl",
+    "judge_labeling_run_log": "labels/gemini_labeling_run_judge_g25pro_v1.log",
+    "judge_merge_report_json": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_join_report.json"
+  },
+  "artifact_hash_count": 16,
+  "file_hashes_sha256": {
+    "config/gemini_judge/judge_g25pro_v1.yaml": "d2a1a7a2e051c4b62d49ac05a26cd16d0c0b62a0a099cdbdf65e1b9bbad49ed6",
+    "src/pipeline/run_gemini_judge_branch.py": "62a210e4c2788b568526bb4ced82efca4e8c0769c2e75a9077876df398eb9d6f",
+    "src/analysis/compare_label_branch_to_gold43.py": "f47874abe7ec65f46af6f443fac661a9e88bdc259b43d1d5f75a942d64bcd3da",
+    "src/analysis/compare_gemini_branches.py": "99eb35b2f60347c5ce9ef47e7cc39c10996fd61fc4ad2f671ae397d354b87bd4",
+    "scripts/run_phase1_judge.sh": "6f0ac8c900e8b4e2cc7847706b1f73a88bb27e137a60a1f3d891056c6402a59e",
+    "labels/gemini_labels_784_v1.csv": "eb717877b4709e6f75240d3094c411ced67fffe3dbe44956c7a1272614dfde99",
+    "labels/gemini_labels_784_judge_g25pro_v1.csv": "1a703a35734d3f30f9d5882efb7eb40289e632aebf77baf2808bfc2625305fad",
+    "labels/gemini_labels_784_judge_g25pro_v1.jsonl": "b995c3eeb0ea290a534c24dfa389934f41b4ffec923e98a870979871678e0cf3",
+    "labels/gemini_labeling_report_judge_g25pro_v1.json": "a83d52f4df6f9f36e8cbb9b555fc009eb68190eb63022ec41d0ebe52f119725f",
+    "labels/gemini_labeling_errors_judge_g25pro_v1.jsonl": "8dbbc72e26d6cfa1a65bb9b8240d45751a5dd4f00001f8e6acaa2c5238ed873e",
+    "labels/gemini_labeling_run_judge_g25pro_v1.log": "2883c68bd1f1a10bad41b5c08fd852ecebd66a372f2bac05681e833497965594",
+    "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_join_report.json": "bade2d59ee4199653ca5778e00b732e3ac6d24dab17259f1d361680b9a1e73d8",
+    "outputs/gemini_judge/judge_g25pro_v1/gold_eval/baseline_vs_gold_metrics.json": "636877a5066405dc3f1392f3eb1e46e85cdf17ebabb1b61f4cb4787485c4f51f",
+    "outputs/gemini_judge/judge_g25pro_v1/gold_eval/judge_vs_gold_metrics.json": "ee5afec9e351ee1b35ac36fc03e298e8e7d5db411c7b773084725b7ca6f71800",
+    "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv": "c7fc4a9b566ec0d01b9509cbb1cf488c6a02ad9086b9704a53f0bd8387f297d4",
+    "outputs/gemini_judge/judge_g25pro_v1/decision/branch_decision_summary.json": "d3895d3cb3844dfc04840ffa251fc62126d85587c4b1eccee9c7dbe8cdcc9b38"
+  },
+  "warnings": []
+}

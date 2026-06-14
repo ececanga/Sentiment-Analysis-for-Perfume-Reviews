@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="823" height="297" viewBox="0 0 823 297">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Model Benchmark</text>
+<rect x="28" y="54" width="767" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="161" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Model</text>
+<rect x="189" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="199" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Macro-F1</text>
+<rect x="294" y="54" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Macro ROC-AUC</text>
+<rect x="413" y="54" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="423" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Macro PR-AUC</text>
+<rect x="525" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="767" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="161" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">XGBoost</text>
+<rect x="189" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="199" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.318425</text>
+<rect x="294" y="87" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.741066</text>
+<rect x="413" y="87" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="423" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.303108</text>
+<rect x="525" y="87" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Best macro-F1.</text>
+<rect x="28" y="120" width="767" height="50" fill="#f8fafc"/>
+<rect x="28" y="120" width="161" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Logistic Regression</text>
+<rect x="189" y="120" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="199" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.317810</text>
+<rect x="294" y="120" width="119" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.729397</text>
+<rect x="413" y="120" width="112" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="423" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.326201</text>
+<rect x="525" y="120" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Best macro PR-AUC; nearly tied on</text>
+<text x="535" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">F1.</text>
+<rect x="28" y="170" width="767" height="33" fill="#ffffff"/>
+<rect x="28" y="170" width="161" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">BiLSTM + Attention</text>
+<rect x="189" y="170" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="199" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.269639</text>
+<rect x="294" y="170" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.487741</text>
+<rect x="413" y="170" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="423" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.256811</text>
+<rect x="525" y="170" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Weaker than classical models.</text>
+<rect x="28" y="203" width="767" height="33" fill="#f8fafc"/>
+<rect x="28" y="203" width="161" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">BERT</text>
+<rect x="189" y="203" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="199" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.258405</text>
+<rect x="294" y="203" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.542510</text>
+<rect x="413" y="203" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="423" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.218617</text>
+<rect x="525" y="203" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Weaker than classical models.</text>
+<rect x="28" y="236" width="767" height="33" fill="#ffffff"/>
+<rect x="28" y="236" width="161" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Random Forest</text>
+<rect x="189" y="236" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="199" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.255681</text>
+<rect x="294" y="236" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.728696</text>
+<rect x="413" y="236" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="423" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.296820</text>
+<rect x="525" y="236" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Lower F1, decent ranking metrics.</text>
+</svg>

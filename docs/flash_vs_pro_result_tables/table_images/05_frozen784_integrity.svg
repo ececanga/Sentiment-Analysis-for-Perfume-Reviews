@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="690" height="529" viewBox="0 0 690 529">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Frozen784 Integrity</text>
+<rect x="28" y="54" width="634" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Check</text>
+<rect x="287" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Result</text>
+<rect x="392" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="634" height="50" fill="#ffffff"/>
+<rect x="28" y="87" width="259" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Unified feature rows</text>
+<rect x="287" y="87" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784</text>
+<rect x="392" y="87" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Feature table covers the frozen</text>
+<text x="402" y="125" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">dataset.</text>
+<rect x="28" y="137" width="634" height="50" fill="#f8fafc"/>
+<rect x="28" y="137" width="259" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gemini Pro label rows</text>
+<rect x="287" y="137" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784</text>
+<rect x="392" y="137" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Label table covers the frozen</text>
+<text x="402" y="175" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">dataset.</text>
+<rect x="28" y="187" width="634" height="33" fill="#ffffff"/>
+<rect x="28" y="187" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Matched rows</text>
+<rect x="287" y="187" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784</text>
+<rect x="392" y="187" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Strict 784/784 join succeeded.</text>
+<rect x="28" y="220" width="634" height="33" fill="#f8fafc"/>
+<rect x="28" y="220" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Unified-only rows</text>
+<rect x="287" y="220" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="392" y="220" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No feature-only perfumes.</text>
+<rect x="28" y="253" width="634" height="33" fill="#ffffff"/>
+<rect x="28" y="253" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gemini-only rows</text>
+<rect x="287" y="253" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="392" y="253" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No label-only perfumes.</text>
+<rect x="28" y="286" width="634" height="33" fill="#f8fafc"/>
+<rect x="28" y="286" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Duplicate unified IDs</text>
+<rect x="287" y="286" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="392" y="286" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No duplicate feature IDs.</text>
+<rect x="28" y="319" width="634" height="33" fill="#ffffff"/>
+<rect x="28" y="319" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="340" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Duplicate Gemini IDs</text>
+<rect x="287" y="319" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="340" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="392" y="319" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="340" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No duplicate label IDs.</text>
+<rect x="28" y="352" width="634" height="33" fill="#f8fafc"/>
+<rect x="28" y="352" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="373" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Hash mismatches</text>
+<rect x="287" y="352" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="373" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="392" y="352" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="373" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">IDs/names aligned cleanly.</text>
+<rect x="28" y="385" width="634" height="50" fill="#ffffff"/>
+<rect x="28" y="385" width="259" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="406" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Stage8 matched rows</text>
+<rect x="287" y="385" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="406" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784</text>
+<rect x="392" y="385" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="406" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Feature importance aligned with</text>
+<text x="402" y="423" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">labels.</text>
+<rect x="28" y="435" width="634" height="33" fill="#f8fafc"/>
+<rect x="28" y="435" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="456" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Stage8 target truth mismatches</text>
+<rect x="287" y="435" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="456" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="392" y="435" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="456" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">OOF targets match labels.</text>
+<rect x="28" y="468" width="634" height="33" fill="#ffffff"/>
+<rect x="28" y="468" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="489" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Phase2A overlap with branch table</text>
+<rect x="287" y="468" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="297" y="489" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="392" y="468" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="489" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No Phase2A leakage.</text>
+</svg>

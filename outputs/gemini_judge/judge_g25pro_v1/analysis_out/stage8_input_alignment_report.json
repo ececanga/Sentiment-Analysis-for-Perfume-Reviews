@@ -1,0 +1,68 @@
+{
+  "merged_rows": 784,
+  "oof_rows": 784,
+  "strict_mode": true,
+  "merged_duplicate_perfume_ids": [],
+  "oof_duplicate_perfume_ids": [],
+  "merged_unique_ids": 784,
+  "oof_unique_ids": 784,
+  "merged_only_count": 0,
+  "oof_only_count": 0,
+  "merged_only_sample": [],
+  "oof_only_sample": [],
+  "matched_count": 784,
+  "target_truth_checks": {
+    "joy": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "sadness": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "anger": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "fear": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "trust": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "surprise": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "anticipation": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "disgust": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "valence": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "arousal": {
+      "mismatch_count": 0,
+      "matches": true
+    },
+    "dominance": {
+      "mismatch_count": 0,
+      "matches": true
+    }
+  },
+  "family_presence": {
+    "NRC": 10,
+    "VAD": 3,
+    "Hartmann": 7,
+    "Savani": 6,
+    "GoEmotions": 28,
+    "Cardiff": 4
+  }
+}

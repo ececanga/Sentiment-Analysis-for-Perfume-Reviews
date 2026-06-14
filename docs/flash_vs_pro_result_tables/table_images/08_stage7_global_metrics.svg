@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="697" height="331" viewBox="0 0 697 331">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Stage7 Global Metrics</text>
+<rect x="28" y="54" width="641" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="266" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Metric</text>
+<rect x="294" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Value</text>
+<rect x="399" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="409" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="641" height="50" fill="#ffffff"/>
+<rect x="28" y="87" width="266" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Macro-F1 over nondegenerate labels</text>
+<rect x="294" y="87" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.300918</text>
+<rect x="399" y="87" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="409" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Modest balanced multi-label</text>
+<text x="409" y="125" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">performance.</text>
+<rect x="28" y="137" width="641" height="33" fill="#f8fafc"/>
+<rect x="28" y="137" width="266" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Micro-F1 over nondegenerate labels</text>
+<rect x="294" y="137" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.513817</text>
+<rect x="399" y="137" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="409" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Better when common labels dominate.</text>
+<rect x="28" y="170" width="641" height="33" fill="#ffffff"/>
+<rect x="28" y="170" width="266" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Subset accuracy</text>
+<rect x="294" y="170" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.200255</text>
+<rect x="399" y="170" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="409" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Exact full-label matches are hard.</text>
+<rect x="28" y="203" width="641" height="50" fill="#f8fafc"/>
+<rect x="28" y="203" width="266" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Hamming loss</text>
+<rect x="294" y="203" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.179528</text>
+<rect x="399" y="203" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="409" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Average per-label error is</text>
+<text x="409" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">moderate.</text>
+<rect x="28" y="253" width="641" height="50" fill="#ffffff"/>
+<rect x="28" y="253" width="266" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Label cardinality</text>
+<rect x="294" y="253" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="304" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">1.378827</text>
+<rect x="399" y="253" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="409" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">About 1.38 positive emotions per</text>
+<text x="409" y="291" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">perfume.</text>
+</svg>

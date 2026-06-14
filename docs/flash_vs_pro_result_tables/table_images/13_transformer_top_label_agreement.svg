@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="536" height="315" viewBox="0 0 536 315">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Transformer Top Label Agreement</text>
+<rect x="28" y="54" width="480" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Source</text>
+<rect x="133" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Match rate</text>
+<rect x="238" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="480" height="50" fill="#ffffff"/>
+<rect x="28" y="87" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Cardiff</text>
+<rect x="133" y="87" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.635</text>
+<rect x="238" y="87" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Contextual emotion agreement is</text>
+<text x="248" y="125" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">stronger than NRC matching.</text>
+<rect x="28" y="137" width="480" height="50" fill="#f8fafc"/>
+<rect x="28" y="137" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Savani</text>
+<rect x="133" y="137" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.631</text>
+<rect x="238" y="137" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Contextual emotion agreement is</text>
+<text x="248" y="175" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">stronger than NRC matching.</text>
+<rect x="28" y="187" width="480" height="50" fill="#ffffff"/>
+<rect x="28" y="187" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">GoEmotions</text>
+<rect x="133" y="187" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.588</text>
+<rect x="238" y="187" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Contextual emotion agreement is</text>
+<text x="248" y="225" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">stronger than NRC matching.</text>
+<rect x="28" y="237" width="480" height="50" fill="#f8fafc"/>
+<rect x="28" y="237" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Hartmann</text>
+<rect x="133" y="237" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.506</text>
+<rect x="238" y="237" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Contextual emotion agreement is</text>
+<text x="248" y="275" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">stronger than NRC matching.</text>
+</svg>

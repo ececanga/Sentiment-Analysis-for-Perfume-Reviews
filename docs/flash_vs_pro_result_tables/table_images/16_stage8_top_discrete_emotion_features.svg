@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="427" height="445" viewBox="0 0 427 445">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Stage8 Top Discrete Emotion Features</text>
+<rect x="28" y="54" width="371" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Feature</text>
+<rect x="203" y="54" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Mean positive importance</text>
+<rect x="28" y="87" width="371" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">GoEmotions_excitement</text>
+<rect x="203" y="87" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0484</text>
+<rect x="28" y="120" width="371" height="33" fill="#f8fafc"/>
+<rect x="28" y="120" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Hartmann_sadness</text>
+<rect x="203" y="120" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0437</text>
+<rect x="28" y="153" width="371" height="33" fill="#ffffff"/>
+<rect x="28" y="153" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Cardiff_sadness</text>
+<rect x="203" y="153" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0286</text>
+<rect x="28" y="186" width="371" height="33" fill="#f8fafc"/>
+<rect x="28" y="186" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Hartmann_surprise</text>
+<rect x="203" y="186" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0269</text>
+<rect x="28" y="219" width="371" height="33" fill="#ffffff"/>
+<rect x="28" y="219" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Savani_anger</text>
+<rect x="203" y="219" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0153</text>
+<rect x="28" y="252" width="371" height="33" fill="#f8fafc"/>
+<rect x="28" y="252" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">NRC_negative</text>
+<rect x="203" y="252" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0113</text>
+<rect x="28" y="285" width="371" height="33" fill="#ffffff"/>
+<rect x="28" y="285" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">VAD_valence</text>
+<rect x="203" y="285" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0112</text>
+<rect x="28" y="318" width="371" height="33" fill="#f8fafc"/>
+<rect x="28" y="318" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">GoEmotions_love</text>
+<rect x="203" y="318" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0111</text>
+<rect x="28" y="351" width="371" height="33" fill="#ffffff"/>
+<rect x="28" y="351" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="372" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Savani_fear</text>
+<rect x="203" y="351" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="372" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0110</text>
+<rect x="28" y="384" width="371" height="33" fill="#f8fafc"/>
+<rect x="28" y="384" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="405" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">NRC_anticipation</text>
+<rect x="203" y="384" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="405" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0104</text>
+</svg>

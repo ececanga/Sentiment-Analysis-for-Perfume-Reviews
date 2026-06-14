@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="609" height="313" viewBox="0 0 609 313">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Stage8 VAD Family Importance</text>
+<rect x="28" y="54" width="553" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Feature family</text>
+<rect x="154" y="54" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Mean positive importance</text>
+<rect x="350" y="54" width="231" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="553" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">GoEmotions</text>
+<rect x="154" y="87" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0686</text>
+<rect x="350" y="87" width="231" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Strongest grouped VAD signal.</text>
+<rect x="28" y="120" width="553" height="33" fill="#f8fafc"/>
+<rect x="28" y="120" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Cardiff</text>
+<rect x="154" y="120" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0248</text>
+<rect x="350" y="120" width="231" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Secondary VAD signal.</text>
+<rect x="28" y="153" width="553" height="33" fill="#ffffff"/>
+<rect x="28" y="153" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">VAD</text>
+<rect x="154" y="153" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0144</text>
+<rect x="350" y="153" width="231" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Secondary VAD signal.</text>
+<rect x="28" y="186" width="553" height="33" fill="#f8fafc"/>
+<rect x="28" y="186" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">NRC</text>
+<rect x="154" y="186" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0075</text>
+<rect x="350" y="186" width="231" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Secondary VAD signal.</text>
+<rect x="28" y="219" width="553" height="33" fill="#ffffff"/>
+<rect x="28" y="219" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Hartmann</text>
+<rect x="154" y="219" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0045</text>
+<rect x="350" y="219" width="231" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Secondary VAD signal.</text>
+<rect x="28" y="252" width="553" height="33" fill="#f8fafc"/>
+<rect x="28" y="252" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Savani</text>
+<rect x="154" y="252" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0018</text>
+<rect x="350" y="252" width="231" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Secondary VAD signal.</text>
+</svg>

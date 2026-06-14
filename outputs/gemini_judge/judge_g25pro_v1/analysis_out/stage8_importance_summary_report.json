@@ -1,0 +1,401 @@
+{
+  "inputs": {
+    "merged_csv": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_merged.csv",
+    "stage7_metrics_json": "outputs/gemini_judge/judge_g25pro_v1/training/stage7_gemini784_metrics.json",
+    "stage7_label_diagnostics_csv": "outputs/gemini_judge/judge_g25pro_v1/training/stage7_gemini784_label_diagnostics.csv",
+    "stage7_oof_csv": "outputs/gemini_judge/judge_g25pro_v1/training/stage7_gemini784_oof_predictions.csv"
+  },
+  "config": {
+    "n_repeats": 5,
+    "seed": 42,
+    "max_folds": 5,
+    "rare_pos_threshold": 10,
+    "strict": true
+  },
+  "integrity": {
+    "merged_rows": 784,
+    "oof_rows": 784,
+    "strict_mode": true,
+    "merged_duplicate_perfume_ids": [],
+    "oof_duplicate_perfume_ids": [],
+    "merged_unique_ids": 784,
+    "oof_unique_ids": 784,
+    "merged_only_count": 0,
+    "oof_only_count": 0,
+    "merged_only_sample": [],
+    "oof_only_sample": [],
+    "matched_count": 784,
+    "target_truth_checks": {
+      "joy": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "sadness": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "anger": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "fear": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "trust": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "surprise": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "anticipation": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "disgust": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "valence": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "arousal": {
+        "mismatch_count": 0,
+        "matches": true
+      },
+      "dominance": {
+        "mismatch_count": 0,
+        "matches": true
+      }
+    },
+    "family_presence": {
+      "NRC": 10,
+      "VAD": 3,
+      "Hartmann": 7,
+      "Savani": 6,
+      "GoEmotions": 28,
+      "Cardiff": 4
+    }
+  },
+  "target_status_overview": [
+    {
+      "target": "joy",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 503.0,
+      "n_neg": 281.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "sadness",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 12.0,
+      "n_neg": 772.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "anger",
+      "target_type": "emotion",
+      "status": "insufficient_minority",
+      "n_pos": 1.0,
+      "n_neg": 783.0,
+      "n_splits": 1,
+      "is_rare": true,
+      "interpretation_level": "not_estimable",
+      "exclude_headline": true,
+      "reason": "insufficient_minority"
+    },
+    {
+      "target": "fear",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 3.0,
+      "n_neg": 781.0,
+      "n_splits": 3,
+      "is_rare": true,
+      "interpretation_level": "exploratory_rare",
+      "exclude_headline": true,
+      "reason": "rare_positive_count"
+    },
+    {
+      "target": "trust",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 236.0,
+      "n_neg": 548.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "surprise",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 10.0,
+      "n_neg": 774.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "anticipation",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 308.0,
+      "n_neg": 476.0,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "disgust",
+      "target_type": "emotion",
+      "status": "trained",
+      "n_pos": 8.0,
+      "n_neg": 776.0,
+      "n_splits": 5,
+      "is_rare": true,
+      "interpretation_level": "exploratory_rare",
+      "exclude_headline": true,
+      "reason": "rare_positive_count"
+    },
+    {
+      "target": "valence",
+      "target_type": "vad",
+      "status": "trained",
+      "n_pos": NaN,
+      "n_neg": NaN,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "arousal",
+      "target_type": "vad",
+      "status": "trained",
+      "n_pos": NaN,
+      "n_neg": NaN,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    },
+    {
+      "target": "dominance",
+      "target_type": "vad",
+      "status": "trained",
+      "n_pos": NaN,
+      "n_neg": NaN,
+      "n_splits": 5,
+      "is_rare": false,
+      "interpretation_level": "stable",
+      "exclude_headline": false,
+      "reason": "eligible"
+    }
+  ],
+  "headline": {
+    "emotion_feature_top_nonrare": [
+      {
+        "feature": "GoEmotions_excitement",
+        "mean_positive_importance": 0.04835126560186209,
+        "n_targets": 5
+      },
+      {
+        "feature": "Hartmann_sadness",
+        "mean_positive_importance": 0.043696140696367444,
+        "n_targets": 5
+      },
+      {
+        "feature": "Cardiff_sadness",
+        "mean_positive_importance": 0.028620589978555388,
+        "n_targets": 5
+      },
+      {
+        "feature": "Hartmann_surprise",
+        "mean_positive_importance": 0.02692934722006938,
+        "n_targets": 5
+      },
+      {
+        "feature": "Savani_anger",
+        "mean_positive_importance": 0.015286426081522544,
+        "n_targets": 5
+      },
+      {
+        "feature": "NRC_negative",
+        "mean_positive_importance": 0.01126211510717852,
+        "n_targets": 5
+      },
+      {
+        "feature": "VAD_valence",
+        "mean_positive_importance": 0.011168949004834389,
+        "n_targets": 5
+      },
+      {
+        "feature": "GoEmotions_love",
+        "mean_positive_importance": 0.011077056947998511,
+        "n_targets": 5
+      },
+      {
+        "feature": "Savani_fear",
+        "mean_positive_importance": 0.010993819357163368,
+        "n_targets": 5
+      },
+      {
+        "feature": "NRC_anticipation",
+        "mean_positive_importance": 0.010360592859831609,
+        "n_targets": 5
+      }
+    ],
+    "emotion_family_top_nonrare": [
+      {
+        "family": "Hartmann",
+        "mean_positive_importance": 0.07789551446358312,
+        "n_targets": 5
+      },
+      {
+        "family": "GoEmotions",
+        "mean_positive_importance": 0.04427414233362564,
+        "n_targets": 5
+      },
+      {
+        "family": "Cardiff",
+        "mean_positive_importance": 0.03656589548113076,
+        "n_targets": 5
+      },
+      {
+        "family": "Savani",
+        "mean_positive_importance": 0.013676096772101774,
+        "n_targets": 5
+      },
+      {
+        "family": "VAD",
+        "mean_positive_importance": 0.0028109727474892607,
+        "n_targets": 5
+      },
+      {
+        "family": "NRC",
+        "mean_positive_importance": 0.0,
+        "n_targets": 5
+      }
+    ],
+    "vad_feature_top": [
+      {
+        "feature": "NRC_joy",
+        "mean_positive_importance": 0.12259336136338668,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_positive",
+        "mean_positive_importance": 0.07975255156563331,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_fear",
+        "mean_positive_importance": 0.07268449444917903,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_trust",
+        "mean_positive_importance": 0.069736488178163,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_anticipation",
+        "mean_positive_importance": 0.045228013114685085,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_negative",
+        "mean_positive_importance": 0.037927200402505044,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_anger",
+        "mean_positive_importance": 0.03649743007361283,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_surprise",
+        "mean_positive_importance": 0.03533241627631938,
+        "n_targets": 3
+      },
+      {
+        "feature": "GoEmotions_excitement",
+        "mean_positive_importance": 0.02142965650462009,
+        "n_targets": 3
+      },
+      {
+        "feature": "NRC_disgust",
+        "mean_positive_importance": 0.01764387047478157,
+        "n_targets": 3
+      }
+    ],
+    "vad_family_top": [
+      {
+        "family": "GoEmotions",
+        "mean_positive_importance": 0.0686030954367554,
+        "n_targets": 3
+      },
+      {
+        "family": "Cardiff",
+        "mean_positive_importance": 0.024765908390080388,
+        "n_targets": 3
+      },
+      {
+        "family": "VAD",
+        "mean_positive_importance": 0.014443031023169767,
+        "n_targets": 3
+      },
+      {
+        "family": "NRC",
+        "mean_positive_importance": 0.007528897107939479,
+        "n_targets": 3
+      },
+      {
+        "family": "Hartmann",
+        "mean_positive_importance": 0.004543865872228761,
+        "n_targets": 3
+      },
+      {
+        "family": "Savani",
+        "mean_positive_importance": 0.0017614842728456163,
+        "n_targets": 3
+      }
+    ]
+  },
+  "caveats": [
+    "Permutation importances are fold-wise held-out estimates; they are not causal effects.",
+    "Degenerate targets are not estimable and are excluded from headline claims.",
+    "Rare emotion targets are marked exploratory_rare and excluded from headline claims."
+  ],
+  "artifacts": {
+    "alignment_report_json": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/stage8_input_alignment_report.json",
+    "emotion_feature_importance_csv": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/stage8_emotion_feature_importance.csv",
+    "emotion_family_importance_csv": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/stage8_emotion_family_importance.csv",
+    "vad_feature_importance_csv": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/stage8_vad_feature_importance.csv",
+    "vad_family_importance_csv": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/stage8_vad_family_importance.csv",
+    "target_interpretation_flags_csv": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/stage8_target_interpretation_flags.csv",
+    "summary_report_json": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/stage8_importance_summary_report.json"
+  }
+}

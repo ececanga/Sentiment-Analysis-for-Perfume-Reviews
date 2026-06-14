@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="613" height="364" viewBox="0 0 613 364">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Phase2A Status Counts</text>
+<rect x="28" y="54" width="557" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Status</text>
+<rect x="210" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="220" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Count</text>
+<rect x="315" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="325" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="557" height="50" fill="#ffffff"/>
+<rect x="28" y="87" width="182" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">done</text>
+<rect x="210" y="87" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="220" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">35</text>
+<rect x="315" y="87" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="325" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Usable new transcript perfumes</text>
+<text x="325" y="125" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">collected.</text>
+<rect x="28" y="137" width="557" height="50" fill="#f8fafc"/>
+<rect x="28" y="137" width="182" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">transcript_fetch_error</text>
+<rect x="210" y="137" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="220" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">86</text>
+<rect x="315" y="137" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="325" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Main evidence of transcript/IP</text>
+<text x="325" y="175" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">blocking.</text>
+<rect x="28" y="187" width="557" height="50" fill="#ffffff"/>
+<rect x="28" y="187" width="182" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">transcript_unavailable</text>
+<rect x="210" y="187" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="220" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">19</text>
+<rect x="315" y="187" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="325" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Video/candidate found, but usable</text>
+<text x="325" y="225" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">captions unavailable.</text>
+<rect x="28" y="237" width="557" height="33" fill="#f8fafc"/>
+<rect x="28" y="237" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">api_error</text>
+<rect x="210" y="237" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="220" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">5</text>
+<rect x="315" y="237" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="325" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Search/API failure.</text>
+<rect x="28" y="270" width="557" height="33" fill="#ffffff"/>
+<rect x="28" y="270" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="291" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">quota_error</text>
+<rect x="210" y="270" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="220" y="291" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">3</text>
+<rect x="315" y="270" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="325" y="291" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Search quota issue.</text>
+<rect x="28" y="303" width="557" height="33" fill="#f8fafc"/>
+<rect x="28" y="303" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="324" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">search_no_videos</text>
+<rect x="210" y="303" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="220" y="324" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">1</text>
+<rect x="315" y="303" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="325" y="324" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No useful video found.</text>
+</svg>

@@ -1,0 +1,500 @@
+{
+  "summary_type": "gemini_g25pro_frozen784_thesis_results",
+  "created_date": "2026-06-03",
+  "scope": {
+    "dataset": "frozen_784_youtube_transcript_perfumes",
+    "label_branch": "Gemini 2.5 Pro",
+    "phase2a_policy": "excluded_from_main_quantitative_outputs",
+    "ground_truth_note": "Gemini 2.5 Pro labels are improved reference labels for evaluation and policy consistency, not perfect ground truth."
+  },
+  "dataset_integrity": {
+    "unified_total": 784,
+    "gemini_total": 784,
+    "matched": 784,
+    "unified_only": 0,
+    "gemini_only": 0,
+    "duplicate_ids_unified_count": 0,
+    "duplicate_ids_gemini_count": 0,
+    "hash_mismatch_count": 0,
+    "strict_join_succeeded": true,
+    "stage8_matched_rows": 784,
+    "stage8_target_truth_mismatch_count": 0,
+    "phase2a_unique_perfumes": 35,
+    "phase2a_overlap_with_branch_merged_table": 0,
+    "phase2a_excluded": true
+  },
+  "gemini_label_distribution": {
+    "n_rows": 784,
+    "emotion_positive_counts": {
+      "joy": 503,
+      "sadness": 12,
+      "anger": 1,
+      "fear": 3,
+      "trust": 236,
+      "surprise": 10,
+      "anticipation": 308,
+      "disgust": 8
+    },
+    "emotion_positive_rates": {
+      "joy": 0.641582,
+      "sadness": 0.015306,
+      "anger": 0.001276,
+      "fear": 0.003827,
+      "trust": 0.30102,
+      "surprise": 0.012755,
+      "anticipation": 0.392857,
+      "disgust": 0.010204
+    },
+    "imbalance_summary": "Joy, anticipation, and trust dominate. Anger is not estimable; fear and disgust are exploratory rare labels.",
+    "gemini_vad_stats": {
+      "valence": {
+        "mean": 6.67917,
+        "std": 1.09072
+      },
+      "arousal": {
+        "mean": 5.949533,
+        "std": 0.749114
+      },
+      "dominance": {
+        "mean": 5.916241,
+        "std": 0.710056
+      }
+    }
+  },
+  "agreement_analysis": {
+    "nrc_vs_gemini": {
+      "mean_binary_accuracy": 0.184311,
+      "per_emotion_accuracy": {
+        "joy": 0.640306,
+        "sadness": 0.035714,
+        "anger": 0.022959,
+        "fear": 0.028061,
+        "trust": 0.304847,
+        "surprise": 0.024235,
+        "anticipation": 0.392857,
+        "disgust": 0.02551
+      },
+      "interpretation": "Low binary agreement mainly reflects the broad NRC_count > 0 rule, which creates many lexicon positives and is not calibrated to perfume-level Gemini labels."
+    },
+    "top_label_agreement": {
+      "compared_rows": 772,
+      "match_rates": {
+        "Cardiff_Label": 0.634715,
+        "Savani_Label": 0.630829,
+        "GoEmotions_Label": 0.588083,
+        "JHartmann_Label": 0.506477
+      },
+      "best_match_source": "Cardiff_Label"
+    },
+    "vad_continuous_agreement": {
+      "valence": {
+        "n": 784,
+        "pearson_r": 0.252389,
+        "spearman_r": 0.220928,
+        "mae": 6.512014
+      },
+      "arousal": {
+        "n": 784,
+        "pearson_r": 0.217537,
+        "spearman_r": 0.213504,
+        "mae": 6.04888
+      },
+      "dominance": {
+        "n": 784,
+        "pearson_r": 0.268207,
+        "spearman_r": 0.234906,
+        "mae": 5.891064
+      },
+      "interpretation": "Lexicon VAD and Gemini VAD show modest positive directional alignment. MAE should be interpreted cautiously because scales differ."
+    }
+  },
+  "benchmark_model_results": {
+    "official_target_columns": [
+      "joy",
+      "sadness",
+      "fear",
+      "trust",
+      "surprise",
+      "anticipation",
+      "disgust"
+    ],
+    "excluded_from_official_targets": {
+      "anger": "one positive example in the frozen 784 branch"
+    },
+    "models": [
+      {
+        "model_id": "xgboost",
+        "model_name": "XGBoost",
+        "macro_f1": 0.318425,
+        "macro_roc_auc": 0.741066,
+        "macro_pr_auc": 0.303108
+      },
+      {
+        "model_id": "logistic_regression",
+        "model_name": "Logistic Regression",
+        "macro_f1": 0.31781,
+        "macro_roc_auc": 0.729397,
+        "macro_pr_auc": 0.326201
+      },
+      {
+        "model_id": "bilstm_attention",
+        "model_name": "BiLSTM + Attention",
+        "macro_f1": 0.269639,
+        "macro_roc_auc": 0.487741,
+        "macro_pr_auc": 0.256811
+      },
+      {
+        "model_id": "bert",
+        "model_name": "BERT",
+        "macro_f1": 0.258405,
+        "macro_roc_auc": 0.54251,
+        "macro_pr_auc": 0.218617
+      },
+      {
+        "model_id": "random_forest",
+        "model_name": "Random Forest",
+        "macro_f1": 0.255681,
+        "macro_roc_auc": 0.728696,
+        "macro_pr_auc": 0.29682
+      }
+    ],
+    "best_by_macro_f1": "xgboost",
+    "best_by_macro_pr_auc": "logistic_regression",
+    "strong_emotions": [
+      {
+        "label": "joy",
+        "mean_f1_across_benchmark_models": 0.782336,
+        "support_pos": 503
+      },
+      {
+        "label": "anticipation",
+        "mean_f1_across_benchmark_models": 0.570259,
+        "support_pos": 308
+      },
+      {
+        "label": "trust",
+        "mean_f1_across_benchmark_models": 0.436303,
+        "support_pos": 236
+      }
+    ],
+    "weak_emotions": [
+      {
+        "label": "fear",
+        "mean_f1_across_benchmark_models": 0.000636,
+        "support_pos": 3
+      },
+      {
+        "label": "disgust",
+        "mean_f1_across_benchmark_models": 0.062627,
+        "support_pos": 8
+      },
+      {
+        "label": "surprise",
+        "mean_f1_across_benchmark_models": 0.063713,
+        "support_pos": 10
+      },
+      {
+        "label": "sadness",
+        "mean_f1_across_benchmark_models": 0.07207,
+        "support_pos": 12
+      }
+    ]
+  },
+  "stage7_training": {
+    "n_rows": 784,
+    "n_features": 58,
+    "input_csv": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_merged.csv",
+    "global_emotion_metrics": {
+      "macro_f1_nondegenerate": 0.300918,
+      "micro_f1_nondegenerate": 0.513817,
+      "subset_accuracy": 0.200255,
+      "hamming_loss": 0.179528,
+      "label_cardinality": 1.378827
+    },
+    "label_diagnostics": {
+      "joy": {
+        "n_pos": 503,
+        "status": "trained",
+        "f1": 0.675214,
+        "roc_auc": 0.651246,
+        "average_precision": 0.734429
+      },
+      "sadness": {
+        "n_pos": 12,
+        "status": "trained",
+        "f1": 0.218182,
+        "roc_auc": 0.867876,
+        "average_precision": 0.153388
+      },
+      "anger": {
+        "n_pos": 1,
+        "status": "insufficient_minority",
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "average_precision": 0.001276
+      },
+      "fear": {
+        "n_pos": 3,
+        "status": "trained_rare",
+        "f1": 0.285714,
+        "roc_auc": 0.994878,
+        "average_precision": 0.527778
+      },
+      "trust": {
+        "n_pos": 236,
+        "status": "trained",
+        "f1": 0.36,
+        "roc_auc": 0.510555,
+        "average_precision": 0.308046
+      },
+      "surprise": {
+        "n_pos": 10,
+        "status": "trained",
+        "f1": 0.153846,
+        "roc_auc": 0.753747,
+        "average_precision": 0.096764
+      },
+      "anticipation": {
+        "n_pos": 308,
+        "status": "trained",
+        "f1": 0.492163,
+        "roc_auc": 0.607552,
+        "average_precision": 0.510769
+      },
+      "disgust": {
+        "n_pos": 8,
+        "status": "trained_rare",
+        "f1": 0.222222,
+        "roc_auc": 0.895457,
+        "average_precision": 0.224275
+      }
+    },
+    "vad_metrics": {
+      "valence": {
+        "mae": 0.787347,
+        "rmse": 1.021283,
+        "r2": 0.12327,
+        "pearson_r": 0.407112,
+        "spearman_r": 0.386864
+      },
+      "arousal": {
+        "mae": 0.568971,
+        "rmse": 0.724305,
+        "r2": 0.065139,
+        "pearson_r": 0.335436,
+        "spearman_r": 0.300587
+      },
+      "dominance": {
+        "mae": 0.550003,
+        "rmse": 0.733069,
+        "r2": -0.065871,
+        "pearson_r": 0.226083,
+        "spearman_r": 0.227821
+      },
+      "average": {
+        "mae": 0.63544,
+        "rmse": 0.826219,
+        "r2": 0.040846,
+        "pearson_r": 0.322877,
+        "spearman_r": 0.305091
+      }
+    }
+  },
+  "stage8_feature_importance": {
+    "config": {
+      "n_repeats": 5,
+      "seed": 42,
+      "max_folds": 5,
+      "strict": true
+    },
+    "family_presence": {
+      "NRC": 10,
+      "VAD": 3,
+      "Hartmann": 7,
+      "Savani": 6,
+      "GoEmotions": 28,
+      "Cardiff": 4
+    },
+    "target_interpretation": {
+      "stable_emotions": [
+        "joy",
+        "sadness",
+        "trust",
+        "surprise",
+        "anticipation"
+      ],
+      "exploratory_rare_emotions": [
+        "fear",
+        "disgust"
+      ],
+      "not_estimable_emotions": [
+        "anger"
+      ],
+      "stable_vad_targets": [
+        "valence",
+        "arousal",
+        "dominance"
+      ]
+    },
+    "emotion_family_top_nonrare": [
+      {
+        "family": "Hartmann",
+        "mean_positive_importance": 0.077896
+      },
+      {
+        "family": "GoEmotions",
+        "mean_positive_importance": 0.044274
+      },
+      {
+        "family": "Cardiff",
+        "mean_positive_importance": 0.036566
+      },
+      {
+        "family": "Savani",
+        "mean_positive_importance": 0.013676
+      },
+      {
+        "family": "VAD",
+        "mean_positive_importance": 0.002811
+      },
+      {
+        "family": "NRC",
+        "mean_positive_importance": 0.0
+      }
+    ],
+    "emotion_feature_top_nonrare": [
+      {
+        "feature": "GoEmotions_excitement",
+        "mean_positive_importance": 0.048351
+      },
+      {
+        "feature": "Hartmann_sadness",
+        "mean_positive_importance": 0.043696
+      },
+      {
+        "feature": "Cardiff_sadness",
+        "mean_positive_importance": 0.028621
+      },
+      {
+        "feature": "Hartmann_surprise",
+        "mean_positive_importance": 0.026929
+      },
+      {
+        "feature": "Savani_anger",
+        "mean_positive_importance": 0.015286
+      },
+      {
+        "feature": "NRC_negative",
+        "mean_positive_importance": 0.011262
+      },
+      {
+        "feature": "VAD_valence",
+        "mean_positive_importance": 0.011169
+      },
+      {
+        "feature": "GoEmotions_love",
+        "mean_positive_importance": 0.011077
+      },
+      {
+        "feature": "Savani_fear",
+        "mean_positive_importance": 0.010994
+      },
+      {
+        "feature": "NRC_anticipation",
+        "mean_positive_importance": 0.010361
+      }
+    ],
+    "vad_family_top": [
+      {
+        "family": "GoEmotions",
+        "mean_positive_importance": 0.068603
+      },
+      {
+        "family": "Cardiff",
+        "mean_positive_importance": 0.024766
+      },
+      {
+        "family": "VAD",
+        "mean_positive_importance": 0.014443
+      },
+      {
+        "family": "NRC",
+        "mean_positive_importance": 0.007529
+      },
+      {
+        "family": "Hartmann",
+        "mean_positive_importance": 0.004544
+      },
+      {
+        "family": "Savani",
+        "mean_positive_importance": 0.001761
+      }
+    ],
+    "vad_feature_top": [
+      {
+        "feature": "NRC_joy",
+        "mean_positive_importance": 0.122593
+      },
+      {
+        "feature": "NRC_positive",
+        "mean_positive_importance": 0.079753
+      },
+      {
+        "feature": "NRC_fear",
+        "mean_positive_importance": 0.072684
+      },
+      {
+        "feature": "NRC_trust",
+        "mean_positive_importance": 0.069736
+      },
+      {
+        "feature": "NRC_anticipation",
+        "mean_positive_importance": 0.045228
+      },
+      {
+        "feature": "NRC_negative",
+        "mean_positive_importance": 0.037927
+      },
+      {
+        "feature": "NRC_anger",
+        "mean_positive_importance": 0.036497
+      },
+      {
+        "feature": "NRC_surprise",
+        "mean_positive_importance": 0.035332
+      },
+      {
+        "feature": "GoEmotions_excitement",
+        "mean_positive_importance": 0.02143
+      },
+      {
+        "feature": "NRC_disgust",
+        "mean_positive_importance": 0.017644
+      }
+    ],
+    "interpretation": "Transformer-derived families dominate discrete emotion prediction, while NRC affect-count features are prominent individual predictors for VAD dimensions."
+  },
+  "thesis_interpretation_bullets": [
+    "The frozen 784 branch has clean dataset integrity: all rows match across unified features and Gemini 2.5 Pro labels.",
+    "Phase2A was excluded from the main quantitative experiments and remains a separate resumable supplement.",
+    "Gemini 2.5 Pro labels are highly imbalanced, with joy, anticipation, and trust dominating the label space.",
+    "Common labels are much more stable than rare labels; anger is not estimable and fear/disgust are exploratory.",
+    "XGBoost has the best macro-F1, while Logistic Regression is almost tied and has the best macro PR-AUC.",
+    "Classical tabular models outperform the neural text models in this small, imbalanced frozen setup.",
+    "Transformer-derived features, especially Hartmann and GoEmotions, provide the strongest signal for discrete emotion prediction.",
+    "NRC binary agreement with Gemini labels is weak, but NRC affect counts contribute to VAD prediction.",
+    "Lexicon VAD and Gemini VAD show modest positive correlations but should not be treated as interchangeable scales.",
+    "Gemini labels should be framed as a stronger model-based reference label branch, not human ground truth."
+  ],
+  "limitations": [
+    "Gemini 2.5 Pro labels are model-generated reference labels, not human consensus labels.",
+    "The emotion labels are severely imbalanced.",
+    "Rare-label metrics are unstable because positive support is very small.",
+    "NRC_count > 0 is a broad lexical rule and not a calibrated classifier.",
+    "VAD agreement MAE between lexicon and Gemini sources is affected by scale differences.",
+    "The main benchmark is limited to the frozen 784 transcript corpus.",
+    "Phase2A is not included in the main quantitative benchmark."
+  ],
+  "phase2a_pause_wording": "The planned 2,000-perfume YouTube transcript expansion was paused because YouTube API quota limits, transcript retrieval IP blocking, low safe-collection yield, and thesis timeline constraints made the full expansion infeasible. The Phase2A artifacts were preserved as a resumable supplement, while all main scoring and evaluation results use the frozen 784-perfume transcript dataset with Gemini 2.5 Pro reference labels.",
+  "recommended_next_thesis_step": "Write the Results section around dataset integrity and label distribution, model benchmark comparison, and Stage8 feature-family importance; then use Discussion to explain label imbalance, rare-label limitations, and the Phase2A pause."
+}

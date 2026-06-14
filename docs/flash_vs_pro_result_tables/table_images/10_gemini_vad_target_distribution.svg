@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="214" viewBox="0 0 630 214">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Gemini VAD Target Distribution</text>
+<rect x="28" y="54" width="574" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Dimension</text>
+<rect x="133" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Mean</text>
+<rect x="238" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Std. dev.</text>
+<rect x="343" y="54" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="574" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">valence</text>
+<rect x="133" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">6.679</text>
+<rect x="238" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">1.091</text>
+<rect x="343" y="87" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Reviews lean positive.</text>
+<rect x="28" y="120" width="574" height="33" fill="#f8fafc"/>
+<rect x="28" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">arousal</text>
+<rect x="133" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">5.950</text>
+<rect x="238" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.749</text>
+<rect x="343" y="120" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Moderate activation/excitement.</text>
+<rect x="28" y="153" width="574" height="33" fill="#ffffff"/>
+<rect x="28" y="153" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">dominance</text>
+<rect x="133" y="153" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">5.916</text>
+<rect x="238" y="153" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.710</text>
+<rect x="343" y="153" width="259" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Moderate confidence/control tone.</text>
+</svg>

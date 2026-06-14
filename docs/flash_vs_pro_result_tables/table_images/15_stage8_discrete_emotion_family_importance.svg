@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="648" height="415" viewBox="0 0 648 415">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Stage8 Discrete Emotion Family Importance</text>
+<rect x="28" y="54" width="592" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Feature family</text>
+<rect x="154" y="54" width="196" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Mean positive importance</text>
+<rect x="350" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="592" height="50" fill="#ffffff"/>
+<rect x="28" y="87" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Hartmann</text>
+<rect x="154" y="87" width="196" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0779</text>
+<rect x="350" y="87" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Transformer-derived features</text>
+<text x="360" y="125" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">dominate.</text>
+<rect x="28" y="137" width="592" height="50" fill="#f8fafc"/>
+<rect x="28" y="137" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">GoEmotions</text>
+<rect x="154" y="137" width="196" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0443</text>
+<rect x="350" y="137" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Transformer-derived features</text>
+<text x="360" y="175" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">dominate.</text>
+<rect x="28" y="187" width="592" height="50" fill="#ffffff"/>
+<rect x="28" y="187" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Cardiff</text>
+<rect x="154" y="187" width="196" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0366</text>
+<rect x="350" y="187" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Transformer-derived features</text>
+<text x="360" y="225" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">dominate.</text>
+<rect x="28" y="237" width="592" height="50" fill="#f8fafc"/>
+<rect x="28" y="237" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Savani</text>
+<rect x="154" y="237" width="196" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0137</text>
+<rect x="350" y="237" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Lower direct signal for discrete</text>
+<text x="360" y="275" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gemini labels.</text>
+<rect x="28" y="287" width="592" height="50" fill="#ffffff"/>
+<rect x="28" y="287" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="308" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">VAD</text>
+<rect x="154" y="287" width="196" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="308" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0028</text>
+<rect x="350" y="287" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="308" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Lower direct signal for discrete</text>
+<text x="360" y="325" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gemini labels.</text>
+<rect x="28" y="337" width="592" height="50" fill="#f8fafc"/>
+<rect x="28" y="337" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="358" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">NRC</text>
+<rect x="154" y="337" width="196" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="358" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.0000</text>
+<rect x="350" y="337" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="360" y="358" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Lower direct signal for discrete</text>
+<text x="360" y="375" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gemini labels.</text>
+</svg>

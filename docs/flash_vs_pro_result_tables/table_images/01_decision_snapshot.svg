@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="872" height="330" viewBox="0 0 872 330">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Decision Snapshot</text>
+<rect x="28" y="54" width="816" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Topic</text>
+<rect x="203" y="54" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Status</text>
+<rect x="392" y="54" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Result</text>
+<rect x="574" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="816" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gemini Flash baseline</text>
+<rect x="203" y="87" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">complete/frozen</text>
+<rect x="392" y="87" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784 labels</text>
+<rect x="574" y="87" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Original reference branch.</text>
+<rect x="28" y="120" width="816" height="33" fill="#f8fafc"/>
+<rect x="28" y="120" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gemini 2.5 Pro branch</text>
+<rect x="203" y="120" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">complete/frozen</text>
+<rect x="392" y="120" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784 labels</text>
+<rect x="574" y="120" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Main thesis reference-label branch.</text>
+<rect x="28" y="153" width="816" height="50" fill="#ffffff"/>
+<rect x="28" y="153" width="175" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Phase 1 decision</text>
+<rect x="203" y="153" width="189" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">GO</text>
+<rect x="392" y="153" width="182" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">GO</text>
+<rect x="574" y="153" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Pro beat Flash under predefined</text>
+<text x="584" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">checks.</text>
+<rect x="28" y="203" width="816" height="33" fill="#f8fafc"/>
+<rect x="28" y="203" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">2K expansion</text>
+<rect x="203" y="203" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">paused_resumable_branch</text>
+<rect x="392" y="203" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">35 new usable perfumes</text>
+<rect x="574" y="203" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Paused, not merged.</text>
+<rect x="28" y="236" width="816" height="33" fill="#ffffff"/>
+<rect x="28" y="236" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Main thesis dataset</text>
+<rect x="203" y="236" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">complete</text>
+<rect x="392" y="236" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784 perfumes</text>
+<rect x="574" y="236" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="257" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Use frozen 784 for main results.</text>
+<rect x="28" y="269" width="816" height="33" fill="#f8fafc"/>
+<rect x="28" y="269" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="290" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Phase2A leakage</text>
+<rect x="203" y="269" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="213" y="290" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">excluded</text>
+<rect x="392" y="269" width="182" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="402" y="290" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0 overlap</text>
+<rect x="574" y="269" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="290" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Main benchmark stays clean.</text>
+</svg>

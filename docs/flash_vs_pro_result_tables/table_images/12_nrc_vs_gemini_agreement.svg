@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="599" height="548" viewBox="0 0 599 548">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">NRC Vs Gemini Agreement</text>
+<rect x="28" y="54" width="543" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="168" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Emotion/measure</text>
+<rect x="196" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Accuracy</text>
+<rect x="301" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="543" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="168" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Mean binary accuracy</text>
+<rect x="196" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.184</text>
+<rect x="301" y="87" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Weak overall agreement.</text>
+<rect x="28" y="120" width="543" height="50" fill="#f8fafc"/>
+<rect x="28" y="120" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">joy</text>
+<rect x="196" y="120" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.640</text>
+<rect x="301" y="120" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+<rect x="28" y="170" width="543" height="50" fill="#ffffff"/>
+<rect x="28" y="170" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">anticipation</text>
+<rect x="196" y="170" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.393</text>
+<rect x="301" y="170" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+<rect x="28" y="220" width="543" height="50" fill="#f8fafc"/>
+<rect x="28" y="220" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trust</text>
+<rect x="196" y="220" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.305</text>
+<rect x="301" y="220" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="258" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+<rect x="28" y="270" width="543" height="50" fill="#ffffff"/>
+<rect x="28" y="270" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="291" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">sadness</text>
+<rect x="196" y="270" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="291" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.036</text>
+<rect x="301" y="270" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="291" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="308" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+<rect x="28" y="320" width="543" height="50" fill="#f8fafc"/>
+<rect x="28" y="320" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="341" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">surprise</text>
+<rect x="196" y="320" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="341" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.024</text>
+<rect x="301" y="320" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="341" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="358" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+<rect x="28" y="370" width="543" height="50" fill="#ffffff"/>
+<rect x="28" y="370" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="391" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">disgust</text>
+<rect x="196" y="370" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="391" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.026</text>
+<rect x="301" y="370" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="391" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="408" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+<rect x="28" y="420" width="543" height="50" fill="#f8fafc"/>
+<rect x="28" y="420" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="441" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">fear</text>
+<rect x="196" y="420" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="441" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.028</text>
+<rect x="301" y="420" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="441" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="458" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+<rect x="28" y="470" width="543" height="50" fill="#ffffff"/>
+<rect x="28" y="470" width="168" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="491" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">anger</text>
+<rect x="196" y="470" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="206" y="491" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.023</text>
+<rect x="301" y="470" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="311" y="491" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Broad lexicon matching is not</text>
+<text x="311" y="508" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">calibrated to Gemini labels.</text>
+</svg>

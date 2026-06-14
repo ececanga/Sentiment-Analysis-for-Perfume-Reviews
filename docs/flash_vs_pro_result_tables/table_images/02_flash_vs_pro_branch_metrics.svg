@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="872" height="347" viewBox="0 0 872 347">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Flash Vs Pro Branch Metrics</text>
+<rect x="28" y="54" width="816" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Metric</text>
+<rect x="217" y="54" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="227" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Flash baseline</text>
+<rect x="343" y="54" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Gemini 2.5 Pro</text>
+<rect x="469" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Change</text>
+<rect x="574" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="816" height="50" fill="#ffffff"/>
+<rect x="28" y="87" width="189" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Gold macro-F1</text>
+<rect x="217" y="87" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="227" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.268197</text>
+<rect x="343" y="87" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.432900</text>
+<rect x="469" y="87" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.164703</text>
+<rect x="574" y="87" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Pro aligned better with the gold</text>
+<text x="584" y="125" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">check.</text>
+<rect x="28" y="137" width="816" height="50" fill="#f8fafc"/>
+<rect x="28" y="137" width="189" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Benchmark mean macro-F1</text>
+<rect x="217" y="137" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="227" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.238986</text>
+<rect x="343" y="137" width="126" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.283992</text>
+<rect x="469" y="137" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.045006</text>
+<rect x="574" y="137" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="158" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Downstream benchmark improved with</text>
+<text x="584" y="175" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Pro labels.</text>
+<rect x="28" y="187" width="816" height="33" fill="#ffffff"/>
+<rect x="28" y="187" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Label CSV rows</text>
+<rect x="217" y="187" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="227" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784</text>
+<rect x="343" y="187" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784</text>
+<rect x="469" y="187" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="574" y="187" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Same 784-perfume branch size.</text>
+<rect x="28" y="220" width="816" height="33" fill="#f8fafc"/>
+<rect x="28" y="220" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Label JSONL rows</text>
+<rect x="217" y="220" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="227" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">n/a</text>
+<rect x="343" y="220" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">784</text>
+<rect x="469" y="220" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">n/a</text>
+<rect x="574" y="220" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="241" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Pro JSONL output is complete.</text>
+<rect x="28" y="253" width="816" height="33" fill="#ffffff"/>
+<rect x="28" y="253" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Labeling failures</text>
+<rect x="217" y="253" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="227" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">n/a</text>
+<rect x="343" y="253" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="469" y="253" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">n/a</text>
+<rect x="574" y="253" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="274" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No failed Pro labels.</text>
+<rect x="28" y="286" width="816" height="33" fill="#f8fafc"/>
+<rect x="28" y="286" width="189" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Missing IDs</text>
+<rect x="217" y="286" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="227" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">n/a</text>
+<rect x="343" y="286" width="126" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0</text>
+<rect x="469" y="286" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">n/a</text>
+<rect x="574" y="286" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="307" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">No missing Pro perfumes.</text>
+</svg>

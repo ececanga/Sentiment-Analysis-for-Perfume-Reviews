@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1022" height="379" viewBox="0 0 1022 379">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Stage7 Per Label Diagnostics</text>
+<rect x="28" y="54" width="966" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Emotion</text>
+<rect x="140" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Positives</text>
+<rect x="245" y="54" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Status</text>
+<rect x="420" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">F1</text>
+<rect x="525" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">ROC-AUC</text>
+<rect x="630" y="54" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Avg precision</text>
+<rect x="749" y="54" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="966" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">joy</text>
+<rect x="140" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">503</text>
+<rect x="245" y="87" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trained</text>
+<rect x="420" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.675</text>
+<rect x="525" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.651</text>
+<rect x="630" y="87" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.734</text>
+<rect x="749" y="87" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Strongest practical label.</text>
+<rect x="28" y="120" width="966" height="33" fill="#f8fafc"/>
+<rect x="28" y="120" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">anticipation</text>
+<rect x="140" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">308</text>
+<rect x="245" y="120" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trained</text>
+<rect x="420" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.492</text>
+<rect x="525" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.608</text>
+<rect x="630" y="120" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.511</text>
+<rect x="749" y="120" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Useful signal.</text>
+<rect x="28" y="153" width="966" height="33" fill="#ffffff"/>
+<rect x="28" y="153" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trust</text>
+<rect x="140" y="153" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">236</text>
+<rect x="245" y="153" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trained</text>
+<rect x="420" y="153" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.360</text>
+<rect x="525" y="153" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.511</text>
+<rect x="630" y="153" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.308</text>
+<rect x="749" y="153" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Weaker but present.</text>
+<rect x="28" y="186" width="966" height="33" fill="#f8fafc"/>
+<rect x="28" y="186" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">fear</text>
+<rect x="140" y="186" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">3</text>
+<rect x="245" y="186" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trained</text>
+<rect x="420" y="186" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.286</text>
+<rect x="525" y="186" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.995</text>
+<rect x="630" y="186" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.528</text>
+<rect x="749" y="186" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="207" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Very rare; ROC-AUC can mislead.</text>
+<rect x="28" y="219" width="966" height="33" fill="#ffffff"/>
+<rect x="28" y="219" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">disgust</text>
+<rect x="140" y="219" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">8</text>
+<rect x="245" y="219" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trained</text>
+<rect x="420" y="219" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.222</text>
+<rect x="525" y="219" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.895</text>
+<rect x="630" y="219" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.224</text>
+<rect x="749" y="219" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Exploratory only.</text>
+<rect x="28" y="252" width="966" height="33" fill="#f8fafc"/>
+<rect x="28" y="252" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">sadness</text>
+<rect x="140" y="252" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">12</text>
+<rect x="245" y="252" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trained</text>
+<rect x="420" y="252" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.218</text>
+<rect x="525" y="252" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.868</text>
+<rect x="630" y="252" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.153</text>
+<rect x="749" y="252" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="273" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Rare; cautious interpretation.</text>
+<rect x="28" y="285" width="966" height="33" fill="#ffffff"/>
+<rect x="28" y="285" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">surprise</text>
+<rect x="140" y="285" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">10</text>
+<rect x="245" y="285" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">trained</text>
+<rect x="420" y="285" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.154</text>
+<rect x="525" y="285" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.754</text>
+<rect x="630" y="285" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.097</text>
+<rect x="749" y="285" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="306" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Rare; weak F1.</text>
+<rect x="28" y="318" width="966" height="33" fill="#f8fafc"/>
+<rect x="28" y="318" width="112" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">anger</text>
+<rect x="140" y="318" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="150" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">1</text>
+<rect x="245" y="318" width="175" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="255" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">insufficient_minority</text>
+<rect x="420" y="318" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="430" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.000</text>
+<rect x="525" y="318" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="535" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.500</text>
+<rect x="630" y="318" width="119" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="640" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.001</text>
+<rect x="749" y="318" width="245" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="339" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Not estimable.</text>
+</svg>

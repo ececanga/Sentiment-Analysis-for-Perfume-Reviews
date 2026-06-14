@@ -1,0 +1,6 @@
+model_id,model_name,macro_f1,macro_roc_auc,macro_pr_auc
+logistic_regression,Logistic Regression,0.31781,0.729397,0.326201
+random_forest,Random Forest,0.255681,0.728696,0.29682
+xgboost,XGBoost,0.318425,0.741066,0.303108
+bert,BERT,0.258405,0.54251,0.218617
+bilstm_attention,BiLSTM + Attention,0.269639,0.487741,0.256811

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="956" height="264" viewBox="0 0 956 264">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Stage7 VAD Prediction</text>
+<rect x="28" y="54" width="900" height="33" fill="#e8eef8"/>
+<rect x="28" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Dimension</text>
+<rect x="133" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">MAE</text>
+<rect x="238" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">RMSE</text>
+<rect x="343" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">R2</text>
+<rect x="448" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="458" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Pearson r</text>
+<rect x="553" y="54" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="563" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Spearman r</text>
+<rect x="658" y="54" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="668" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827">Explanation</text>
+<rect x="28" y="87" width="900" height="33" fill="#ffffff"/>
+<rect x="28" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">valence</text>
+<rect x="133" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.787</text>
+<rect x="238" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">1.021</text>
+<rect x="343" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.123</text>
+<rect x="448" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="458" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.407</text>
+<rect x="553" y="87" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="563" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.387</text>
+<rect x="658" y="87" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="668" y="108" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Easiest VAD dimension.</text>
+<rect x="28" y="120" width="900" height="33" fill="#f8fafc"/>
+<rect x="28" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">arousal</text>
+<rect x="133" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.569</text>
+<rect x="238" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.724</text>
+<rect x="343" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.065</text>
+<rect x="448" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="458" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.335</text>
+<rect x="553" y="120" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="563" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.301</text>
+<rect x="658" y="120" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="668" y="141" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Some signal, still modest.</text>
+<rect x="28" y="153" width="900" height="50" fill="#ffffff"/>
+<rect x="28" y="153" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">dominance</text>
+<rect x="133" y="153" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.550</text>
+<rect x="238" y="153" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.733</text>
+<rect x="343" y="153" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">-0.066</text>
+<rect x="448" y="153" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="458" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.226</text>
+<rect x="553" y="153" width="105" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="563" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.228</text>
+<rect x="658" y="153" width="270" height="50" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="668" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Weakest by explained</text>
+<text x="668" y="191" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">variance/correlation.</text>
+<rect x="28" y="203" width="900" height="33" fill="#f8fafc"/>
+<rect x="28" y="203" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="38" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">average</text>
+<rect x="133" y="203" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="143" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.635</text>
+<rect x="238" y="203" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="248" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.826</text>
+<rect x="343" y="203" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="353" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.041</text>
+<rect x="448" y="203" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="458" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.323</text>
+<rect x="553" y="203" width="105" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="563" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">0.305</text>
+<rect x="658" y="203" width="270" height="33" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="668" y="224" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827">Useful but not highly predictive.</text>
+</svg>

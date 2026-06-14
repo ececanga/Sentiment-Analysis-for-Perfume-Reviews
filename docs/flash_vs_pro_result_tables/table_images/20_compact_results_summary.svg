@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1069" viewBox="0 0 1280 1069">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34" y="42" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">1. Gemini Flash vs Gemini 2.5 Pro, fixed threshold 0.3</text>
+<rect x="34" y="58" width="1195" height="38" fill="#e8eef8"/>
+<rect x="34" y="58" width="190" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Metric</text>
+<rect x="224" y="58" width="245" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="234" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Dataset / n</text>
+<rect x="469" y="58" width="125" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="479" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Gemini Flash</text>
+<rect x="594" y="58" width="135" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="604" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Gemini 2.5 Pro</text>
+<rect x="729" y="58" width="110" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="739" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Change</text>
+<rect x="839" y="58" width="390" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="849" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Explanation</text>
+<rect x="34" y="96" width="1195" height="52" fill="#ffffff"/>
+<rect x="34" y="96" width="190" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="118" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Mean Macro-F1 across 5</text>
+<text x="44" y="135" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">model rows</text>
+<rect x="224" y="96" width="245" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="234" y="118" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">n = 784; avg over 5 models</text>
+<rect x="469" y="96" width="125" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="584" y="118" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.238986</text>
+<rect x="594" y="96" width="135" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="719" y="118" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.283992</text>
+<rect x="729" y="96" width="110" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="829" y="118" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">+0.045006</text>
+<rect x="839" y="96" width="390" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="849" y="118" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Each value is the average of the five model Macro-F1</text>
+<text x="849" y="135" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">rows at threshold 0.3.</text>
+<text x="34" y="176" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">2. Logistic Regression branch comparison, main classical pipeline</text>
+<rect x="34" y="192" width="1190" height="38" fill="#e8eef8"/>
+<rect x="34" y="192" width="380" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="214" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Metric</text>
+<rect x="414" y="192" width="135" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="424" y="214" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Gemini Flash</text>
+<rect x="549" y="192" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="559" y="214" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Gemini 2.5 Pro</text>
+<rect x="699" y="192" width="115" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="709" y="214" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Change</text>
+<rect x="814" y="192" width="410" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="824" y="214" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Note</text>
+<rect x="34" y="230" width="1190" height="52" fill="#ffffff"/>
+<rect x="34" y="230" width="380" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="252" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Logistic Regression Macro-F1, fixed threshold 0.3</text>
+<rect x="414" y="230" width="135" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="539" y="252" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.269933</text>
+<rect x="549" y="230" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="689" y="252" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.317810</text>
+<rect x="699" y="230" width="115" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="804" y="252" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">+0.047877</text>
+<rect x="814" y="230" width="410" height="52" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="824" y="252" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Direct same-threshold comparison for the main classical</text>
+<text x="824" y="269" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">pipeline.</text>
+<rect x="34" y="296" width="1200" height="58" rx="4" fill="#f8fafc" stroke="#d6dee9" stroke-width="1"/>
+<text x="46" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">Flash&#x27;s best Logistic Regression threshold in the sweep was 0.5, with Macro-F1 = 0.271200. Compared with Flash&#x27;s best Logistic Regression sweep value, Pro is still</text>
+<text x="46" y="338" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">higher by +0.046610.</text>
+<text x="34" y="386" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">3. Gemini 2.5 Pro final benchmark, fixed threshold 0.3</text>
+<rect x="34" y="404" width="1200" height="41" rx="4" fill="#f8fafc" stroke="#d6dee9" stroke-width="1"/>
+<text x="46" y="429" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">Dataset: Gemini 2.5 Pro-labeled frozen set, n = 784 perfumes. Threshold: fixed 0.3. The mean in Section 1 is the average of these five Macro-F1 rows.</text>
+<rect x="34" y="475" width="1195" height="38" fill="#e8eef8"/>
+<rect x="34" y="475" width="250" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="497" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Model</text>
+<rect x="284" y="475" width="120" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="294" y="497" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Macro-F1</text>
+<rect x="404" y="475" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="414" y="497" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Macro ROC-AUC</text>
+<rect x="554" y="475" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="564" y="497" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Macro PR-AUC</text>
+<rect x="704" y="475" width="525" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="497" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Explanation</text>
+<rect x="34" y="513" width="1195" height="38" fill="#ffffff"/>
+<rect x="34" y="513" width="250" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="535" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">XGBoost</text>
+<rect x="284" y="513" width="120" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="394" y="535" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.318425</text>
+<rect x="404" y="513" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="544" y="535" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.741066</text>
+<rect x="554" y="513" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="694" y="535" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.303108</text>
+<rect x="704" y="513" width="525" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="535" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Best macro-F1.</text>
+<rect x="34" y="551" width="1195" height="38" fill="#f8fafc"/>
+<rect x="34" y="551" width="250" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="573" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Logistic Regression</text>
+<rect x="284" y="551" width="120" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="394" y="573" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.317810</text>
+<rect x="404" y="551" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="544" y="573" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.729397</text>
+<rect x="554" y="551" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="694" y="573" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.326201</text>
+<rect x="704" y="551" width="525" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="573" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Almost tied with XGBoost in macro-F1; best PR-AUC.</text>
+<rect x="34" y="589" width="1195" height="38" fill="#ffffff"/>
+<rect x="34" y="589" width="250" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="611" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">BiLSTM + Attention</text>
+<rect x="284" y="589" width="120" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="394" y="611" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.269639</text>
+<rect x="404" y="589" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="544" y="611" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.487741</text>
+<rect x="554" y="589" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="694" y="611" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.256811</text>
+<rect x="704" y="589" width="525" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="611" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Lower macro-F1 than the top classical models.</text>
+<rect x="34" y="627" width="1195" height="38" fill="#f8fafc"/>
+<rect x="34" y="627" width="250" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="649" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">BERT</text>
+<rect x="284" y="627" width="120" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="394" y="649" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.258405</text>
+<rect x="404" y="627" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="544" y="649" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.542510</text>
+<rect x="554" y="627" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="694" y="649" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.218617</text>
+<rect x="704" y="627" width="525" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="649" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Lower macro-F1 and PR-AUC than the top classical models.</text>
+<rect x="34" y="665" width="1195" height="38" fill="#ffffff"/>
+<rect x="34" y="665" width="250" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="687" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Random Forest</text>
+<rect x="284" y="665" width="120" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="394" y="687" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.255681</text>
+<rect x="404" y="665" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="544" y="687" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.728696</text>
+<rect x="554" y="665" width="150" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="694" y="687" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.296820</text>
+<rect x="704" y="665" width="525" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="687" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Lower macro-F1, but ROC-AUC and PR-AUC are still competitive.</text>
+<text x="34" y="729" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">4. Gemini Flash threshold sweep, same 5 models</text>
+<rect x="34" y="745" width="870" height="38" fill="#e8eef8"/>
+<rect x="34" y="745" width="360" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="767" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">Model</text>
+<rect x="394" y="745" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="404" y="767" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">0.3 Macro-F1</text>
+<rect x="564" y="745" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="574" y="767" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">0.5 Macro-F1</text>
+<rect x="734" y="745" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="744" y="767" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="start">0.7 Macro-F1</text>
+<rect x="34" y="783" width="870" height="38" fill="#ffffff"/>
+<rect x="34" y="783" width="360" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="805" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Logistic Regression</text>
+<rect x="394" y="783" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="554" y="805" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.269933</text>
+<rect x="564" y="783" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="724" y="805" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.271200</text>
+<rect x="734" y="783" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="894" y="805" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.206337</text>
+<rect x="34" y="821" width="870" height="38" fill="#f8fafc"/>
+<rect x="34" y="821" width="360" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="843" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Random Forest</text>
+<rect x="394" y="821" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="554" y="843" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.219452</text>
+<rect x="564" y="821" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="724" y="843" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.127249</text>
+<rect x="734" y="821" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="894" y="843" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.059406</text>
+<rect x="34" y="859" width="870" height="38" fill="#ffffff"/>
+<rect x="34" y="859" width="360" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="881" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">XGBoost</text>
+<rect x="394" y="859" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="554" y="881" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.254726</text>
+<rect x="564" y="859" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="724" y="881" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.230065</text>
+<rect x="734" y="859" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="894" y="881" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.147491</text>
+<rect x="34" y="897" width="870" height="38" fill="#f8fafc"/>
+<rect x="34" y="897" width="360" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="919" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">BERT</text>
+<rect x="394" y="897" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="554" y="919" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.218461</text>
+<rect x="564" y="897" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="724" y="919" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.167550</text>
+<rect x="734" y="897" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="894" y="919" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.003123</text>
+<rect x="34" y="935" width="870" height="38" fill="#ffffff"/>
+<rect x="34" y="935" width="360" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44" y="957" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">BiLSTM + Attention</text>
+<rect x="394" y="935" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="554" y="957" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.232358</text>
+<rect x="564" y="935" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="724" y="957" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.216145</text>
+<rect x="734" y="935" width="170" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="894" y="957" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="end">0.000000</text>
+<rect x="34" y="987" width="1200" height="58" rx="4" fill="#f8fafc" stroke="#d6dee9" stroke-width="1"/>
+<text x="46" y="1012" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">The Section 1 Flash value uses the 0.3 column averaged over these five rows. Logistic Regression performs best for Gemini Flash at threshold 0.5. XGBoost performs best</text>
+<text x="46" y="1029" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">at threshold 0.3 among the tree models. Threshold 0.7 strongly reduces macro-F1, especially for BERT and BiLSTM.</text>
+</svg>
