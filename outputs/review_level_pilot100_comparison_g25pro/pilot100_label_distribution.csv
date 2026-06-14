@@ -1,0 +1,17 @@
+source,label,positive_count,positive_rate
+synthetic_v2_100,joy,28,0.28
+synthetic_v2_100,sadness,5,0.05
+synthetic_v2_100,anger,0,0.0
+synthetic_v2_100,fear,14,0.14
+synthetic_v2_100,trust,35,0.35
+synthetic_v2_100,surprise,44,0.44
+synthetic_v2_100,anticipation,43,0.43
+synthetic_v2_100,disgust,0,0.0
+youtube_100,joy,77,0.77
+youtube_100,sadness,9,0.09
+youtube_100,anger,2,0.02
+youtube_100,fear,2,0.02
+youtube_100,trust,63,0.63
+youtube_100,surprise,9,0.09
+youtube_100,anticipation,42,0.42
+youtube_100,disgust,7,0.07

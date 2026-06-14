@@ -1,0 +1,101 @@
+synthetic_review_id,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-00-auriel-eau-de-parfum-01,00-auriel-eau-de-parfum,00 auriel eau de parfum,1,0,0,0,0,0,1,0,8.0,2.0,3.0
+emotion-rich-v2-00-auriel-eau-de-parfum-02,00-auriel-eau-de-parfum,00 auriel eau de parfum,1,0,0,0,0,1,0,0,8.0,6.0,5.0
+emotion-rich-v2-00-auriel-eau-de-parfum-03,00-auriel-eau-de-parfum,00 auriel eau de parfum,0,0,0,0,0,1,0,0,3.0,3.0,3.0
+emotion-rich-v2-00-auriel-eau-de-parfum-04,00-auriel-eau-de-parfum,00 auriel eau de parfum,0,0,0,0,0,0,1,0,7.0,5.0,7.0
+emotion-rich-v2-00-auriel-eau-de-parfum-05,00-auriel-eau-de-parfum,00 auriel eau de parfum,1,0,0,0,1,1,0,0,8.0,3.0,3.0
+emotion-rich-v2-01-nomad-eau-de-parfum-01,01-nomad-eau-de-parfum,01 nomad eau de parfum,1,0,0,0,0,1,0,0,8.0,6.0,6.0
+emotion-rich-v2-01-nomad-eau-de-parfum-02,01-nomad-eau-de-parfum,01 nomad eau de parfum,0,0,0,0,0,1,0,0,3.0,4.0,3.0
+emotion-rich-v2-01-nomad-eau-de-parfum-03,01-nomad-eau-de-parfum,01 nomad eau de parfum,0,0,0,0,1,0,1,0,7.0,5.0,8.0
+emotion-rich-v2-01-nomad-eau-de-parfum-04,01-nomad-eau-de-parfum,01 nomad eau de parfum,1,0,0,0,0,1,0,0,7.5,3.0,5.0
+emotion-rich-v2-01-nomad-eau-de-parfum-05,01-nomad-eau-de-parfum,01 nomad eau de parfum,1,0,0,0,1,0,1,0,7.0,3.0,5.0
+emotion-rich-v2-02-owari-eau-de-parfum-01,02-owari-eau-de-parfum,02 owari eau de parfum,0,0,0,0,0,1,0,0,7.0,3.0,5.0
+emotion-rich-v2-02-owari-eau-de-parfum-02,02-owari-eau-de-parfum,02 owari eau de parfum,0,0,0,0,0,1,0,0,3.5,5.5,3.5
+emotion-rich-v2-02-owari-eau-de-parfum-03,02-owari-eau-de-parfum,02 owari eau de parfum,0,0,0,0,1,0,1,0,7.0,3.0,7.0
+emotion-rich-v2-02-owari-eau-de-parfum-04,02-owari-eau-de-parfum,02 owari eau de parfum,1,0,0,0,0,1,0,0,8.0,3.0,4.0
+emotion-rich-v2-02-owari-eau-de-parfum-05,02-owari-eau-de-parfum,02 owari eau de parfum,1,0,0,0,0,0,1,0,7.0,3.0,6.0
+emotion-rich-v2-03-apr-1968-eau-de-parfum-01,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,0,0,0,0,0,0,0,0,5.0,3.0,5.0
+emotion-rich-v2-03-apr-1968-eau-de-parfum-02,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,0,0,0,0,1,0,1,0,7.0,3.0,4.0
+emotion-rich-v2-03-apr-1968-eau-de-parfum-03,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,1,0,0,0,0,1,0,0,8.0,5.0,4.0
+emotion-rich-v2-03-apr-1968-eau-de-parfum-04,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,0,0,0,1,1,1,0,0,3.0,4.0,3.0
+emotion-rich-v2-03-apr-1968-eau-de-parfum-05,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,0,0,0,0,1,0,1,0,6.5,3.5,6.5
+emotion-rich-v2-03-century-eau-de-parfum-01,03-century-eau-de-parfum,03 century eau de parfum,0,1,0,0,0,0,0,0,4.0,3.0,5.0
+emotion-rich-v2-03-century-eau-de-parfum-02,03-century-eau-de-parfum,03 century eau de parfum,0,0,0,0,1,0,1,0,8.0,2.0,6.0
+emotion-rich-v2-03-century-eau-de-parfum-03,03-century-eau-de-parfum,03 century eau de parfum,0,0,0,0,0,1,0,0,6.5,3.5,4.0
+emotion-rich-v2-03-century-eau-de-parfum-04,03-century-eau-de-parfum,03 century eau de parfum,0,0,0,1,0,1,0,0,3.0,7.0,3.0
+emotion-rich-v2-03-century-eau-de-parfum-05,03-century-eau-de-parfum,03 century eau de parfum,0,0,0,0,1,0,1,0,7.0,3.0,7.0
+emotion-rich-v2-08-seylon-eau-de-parfum-01,08-seylon-eau-de-parfum,08 - seylon eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-08-seylon-eau-de-parfum-02,08-seylon-eau-de-parfum,08 - seylon eau de parfum,0,0,0,0,1,0,1,0,8.0,2.0,6.0
+emotion-rich-v2-08-seylon-eau-de-parfum-03,08-seylon-eau-de-parfum,08 - seylon eau de parfum,1,0,0,0,1,1,0,0,7.0,4.0,6.0
+emotion-rich-v2-08-seylon-eau-de-parfum-04,08-seylon-eau-de-parfum,08 - seylon eau de parfum,0,0,0,1,0,1,0,0,3.0,4.0,3.0
+emotion-rich-v2-08-seylon-eau-de-parfum-05,08-seylon-eau-de-parfum,08 - seylon eau de parfum,0,0,0,0,0,0,1,0,7.0,3.0,7.0
+emotion-rich-v2-100-love-eau-de-parfum-01,100-love-eau-de-parfum,100% love eau de parfum,0,0,0,0,0,0,0,0,6.0,4.0,5.0
+emotion-rich-v2-100-love-eau-de-parfum-02,100-love-eau-de-parfum,100% love eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-100-love-eau-de-parfum-03,100-love-eau-de-parfum,100% love eau de parfum,1,0,0,0,0,0,1,0,8.0,2.0,4.0
+emotion-rich-v2-100-love-eau-de-parfum-04,100-love-eau-de-parfum,100% love eau de parfum,1,0,0,0,0,1,0,0,7.0,6.0,5.0
+emotion-rich-v2-100-love-eau-de-parfum-05,100-love-eau-de-parfum,100% love eau de parfum,0,0,0,0,0,1,0,0,3.0,3.0,3.0
+emotion-rich-v2-1499-eau-de-parfum-01,1499-eau-de-parfum,1499 eau de parfum,1,0,0,0,1,1,1,0,8.0,6.0,4.0
+emotion-rich-v2-1499-eau-de-parfum-02,1499-eau-de-parfum,1499 eau de parfum,0,0,0,1,0,1,0,0,3.0,6.0,3.0
+emotion-rich-v2-1499-eau-de-parfum-03,1499-eau-de-parfum,1499 eau de parfum,0,0,0,0,1,0,1,0,7.0,5.0,8.0
+emotion-rich-v2-1499-eau-de-parfum-04,1499-eau-de-parfum,1499 eau de parfum,1,0,0,0,0,1,0,0,7.5,3.0,4.0
+emotion-rich-v2-1499-eau-de-parfum-05,1499-eau-de-parfum,1499 eau de parfum,0,0,0,0,1,0,1,0,8.0,3.0,5.0
+emotion-rich-v2-1725-casanova-eau-de-parfum-01,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,0,0,0,0,0,0,0,0,5.0,3.0,5.0
+emotion-rich-v2-1725-casanova-eau-de-parfum-02,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,1,0,0,0,0,0,1,0,8.0,2.0,5.0
+emotion-rich-v2-1725-casanova-eau-de-parfum-03,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,1,0,0,0,0,1,1,0,8.0,6.0,6.0
+emotion-rich-v2-1725-casanova-eau-de-parfum-04,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,0,0,0,1,1,1,0,0,3.0,4.0,3.0
+emotion-rich-v2-1725-casanova-eau-de-parfum-05,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-01,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,0,0,0,0,1,0,0,6.0,5.0,5.0
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-02,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,0,0,0,0,1,0,0,3.0,3.0,2.0
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-03,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,0,0,0,1,0,1,0,7.0,5.0,7.0
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-04,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,1,0,0,0,0,0,0,4.0,3.0,4.0
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-05,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,0,0,0,1,0,1,0,8.0,2.0,5.0
+emotion-rich-v2-1804-george-sand-eau-de-parfum-01,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,0,0,0,0,0,0,1,0,6.0,5.0,6.0
+emotion-rich-v2-1804-george-sand-eau-de-parfum-02,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-1804-george-sand-eau-de-parfum-03,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,1,0,0,0,1,0,1,0,8.0,2.0,5.0
+emotion-rich-v2-1804-george-sand-eau-de-parfum-04,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,0,0,0,0,0,1,0,0,7.0,3.0,4.0
+emotion-rich-v2-1804-george-sand-eau-de-parfum-05,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,0,0,0,1,0,1,0,0,3.0,4.0,3.0
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-01,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,0,0,0,0,1,1,0,0,6.0,4.0,6.0
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-02,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,0,0,0,1,0,1,0,0,3.5,6.0,3.0
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-03,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,0,0,0,0,1,0,1,0,7.0,5.0,8.0
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-04,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-05,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,1,0,0,0,0,0,1,0,8.0,3.0,5.0
+emotion-rich-v2-1872-for-men-eau-de-parfum-01,1872-for-men-eau-de-parfum,1872 for men eau de parfum,0,0,0,1,0,1,0,0,3.0,7.0,3.0
+emotion-rich-v2-1872-for-men-eau-de-parfum-02,1872-for-men-eau-de-parfum,1872 for men eau de parfum,0,0,0,0,0,0,1,0,7.0,6.0,6.0
+emotion-rich-v2-1872-for-men-eau-de-parfum-03,1872-for-men-eau-de-parfum,1872 for men eau de parfum,1,0,0,0,0,0,0,0,7.0,6.0,5.0
+emotion-rich-v2-1872-for-men-eau-de-parfum-04,1872-for-men-eau-de-parfum,1872 for men eau de parfum,0,0,0,0,1,0,1,0,8.0,2.0,3.0
+emotion-rich-v2-1872-for-men-eau-de-parfum-05,1872-for-men-eau-de-parfum,1872 for men eau de parfum,1,0,0,0,1,1,1,0,8.0,6.0,5.0
+emotion-rich-v2-1872-for-women-eau-de-parfum-01,1872-for-women-eau-de-parfum,1872 for women eau de parfum,0,0,0,0,0,0,1,0,7.0,5.0,7.5
+emotion-rich-v2-1872-for-women-eau-de-parfum-02,1872-for-women-eau-de-parfum,1872 for women eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-1872-for-women-eau-de-parfum-03,1872-for-women-eau-de-parfum,1872 for women eau de parfum,1,0,0,0,1,0,1,0,8.0,3.0,4.0
+emotion-rich-v2-1872-for-women-eau-de-parfum-04,1872-for-women-eau-de-parfum,1872 for women eau de parfum,0,0,0,0,0,1,0,0,7.5,4.0,4.0
+emotion-rich-v2-1872-for-women-eau-de-parfum-05,1872-for-women-eau-de-parfum,1872 for women eau de parfum,0,0,0,1,0,1,0,0,3.0,7.0,3.0
+emotion-rich-v2-1888-eau-de-parfum-01,1888-eau-de-parfum,1888 eau de parfum,0,0,0,0,0,0,1,0,7.0,5.0,8.0
+emotion-rich-v2-1888-eau-de-parfum-02,1888-eau-de-parfum,1888 eau de parfum,0,1,0,0,0,0,0,0,4.0,3.0,5.0
+emotion-rich-v2-1888-eau-de-parfum-03,1888-eau-de-parfum,1888 eau de parfum,1,0,0,0,1,0,1,0,8.0,2.0,3.0
+emotion-rich-v2-1888-eau-de-parfum-04,1888-eau-de-parfum,1888 eau de parfum,1,0,0,0,0,1,1,0,8.0,6.0,6.0
+emotion-rich-v2-1888-eau-de-parfum-05,1888-eau-de-parfum,1888 eau de parfum,0,0,0,1,0,1,0,0,3.0,5.0,3.0
+emotion-rich-v2-1962-eau-de-parfum-01,1962-eau-de-parfum,1962 eau de parfum,0,0,0,0,1,0,1,0,8.0,2.0,6.0
+emotion-rich-v2-1962-eau-de-parfum-02,1962-eau-de-parfum,1962 eau de parfum,0,0,0,0,0,1,0,0,7.0,3.0,4.0
+emotion-rich-v2-1962-eau-de-parfum-03,1962-eau-de-parfum,1962 eau de parfum,0,0,0,1,1,1,1,0,3.0,5.0,3.0
+emotion-rich-v2-1962-eau-de-parfum-04,1962-eau-de-parfum,1962 eau de parfum,0,0,0,0,1,0,1,0,7.0,4.0,7.0
+emotion-rich-v2-1962-eau-de-parfum-05,1962-eau-de-parfum,1962 eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-1976-eau-de-parfum-01,1976-eau-de-parfum,1976 eau de parfum,0,0,0,0,1,0,1,0,7.0,3.0,7.0
+emotion-rich-v2-1976-eau-de-parfum-02,1976-eau-de-parfum,1976 eau de parfum,1,0,0,0,0,1,0,0,8.0,3.0,3.0
+emotion-rich-v2-1976-eau-de-parfum-03,1976-eau-de-parfum,1976 eau de parfum,1,0,0,0,1,0,1,0,7.0,3.0,5.0
+emotion-rich-v2-1976-eau-de-parfum-04,1976-eau-de-parfum,1976 eau de parfum,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+emotion-rich-v2-1976-eau-de-parfum-05,1976-eau-de-parfum,1976 eau de parfum,0,0,0,0,0,1,0,0,3.0,6.0,3.0
+emotion-rich-v2-21-eau-de-parfum-01,21-eau-de-parfum,21 eau de parfum,0,1,0,0,0,0,0,0,4.0,3.0,4.0
+emotion-rich-v2-21-eau-de-parfum-02,21-eau-de-parfum,21 eau de parfum,0,0,0,0,1,0,1,0,7.0,3.0,5.0
+emotion-rich-v2-21-eau-de-parfum-03,21-eau-de-parfum,21 eau de parfum,1,0,0,0,1,1,0,0,7.5,3.0,4.0
+emotion-rich-v2-21-eau-de-parfum-04,21-eau-de-parfum,21 eau de parfum,0,0,0,1,0,1,0,0,3.0,7.0,3.0
+emotion-rich-v2-21-eau-de-parfum-05,21-eau-de-parfum,21 eau de parfum,0,0,0,0,0,0,1,0,7.0,3.0,7.0
+emotion-rich-v2-40-rogue-eau-de-toilette-01,40-rogue-eau-de-toilette,40 rogue eau de toilette,0,0,0,0,1,0,1,0,7.0,5.0,8.0
+emotion-rich-v2-40-rogue-eau-de-toilette-02,40-rogue-eau-de-toilette,40 rogue eau de toilette,0,1,0,0,0,0,0,0,4.0,3.0,5.0
+emotion-rich-v2-40-rogue-eau-de-toilette-03,40-rogue-eau-de-toilette,40 rogue eau de toilette,0,0,0,0,1,0,1,0,7.0,3.0,5.0
+emotion-rich-v2-40-rogue-eau-de-toilette-04,40-rogue-eau-de-toilette,40 rogue eau de toilette,1,0,0,0,0,1,0,0,8.0,4.0,3.0
+emotion-rich-v2-40-rogue-eau-de-toilette-05,40-rogue-eau-de-toilette,40 rogue eau de toilette,0,0,0,1,0,1,0,0,3.0,6.0,3.0
+emotion-rich-v2-a-la-rose-eau-de-parfum-01,a-la-rose-eau-de-parfum,a la rose eau de parfum,0,0,0,0,0,0,0,0,5.0,3.0,5.0
+emotion-rich-v2-a-la-rose-eau-de-parfum-02,a-la-rose-eau-de-parfum,a la rose eau de parfum,1,0,0,0,1,0,1,0,8.0,2.0,5.0
+emotion-rich-v2-a-la-rose-eau-de-parfum-03,a-la-rose-eau-de-parfum,a la rose eau de parfum,0,0,0,0,0,1,0,0,7.0,3.0,4.0
+emotion-rich-v2-a-la-rose-eau-de-parfum-04,a-la-rose-eau-de-parfum,a la rose eau de parfum,0,0,0,1,0,1,0,0,3.0,4.0,3.0
+emotion-rich-v2-a-la-rose-eau-de-parfum-05,a-la-rose-eau-de-parfum,a la rose eau de parfum,0,0,0,0,1,0,1,0,7.0,5.0,8.0

@@ -1,0 +1,195 @@
+{
+  "generated_at_utc": "2026-06-13T09:43:38.789798+00:00",
+  "raw_csv": "data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv",
+  "identity_csv": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+  "output_csv": "data/raw/youtube_review_level_pilot100_g25pro_v1.csv",
+  "rows": 100,
+  "unique_perfumes": 30,
+  "seed": 20260613,
+  "selection_notes": [
+    {
+      "perfume_id": "00-auriel-eau-de-parfum",
+      "available_reviews": 2,
+      "selected_reviews": 2,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "01-nomad-eau-de-parfum",
+      "available_reviews": 6,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "02-owari-eau-de-parfum",
+      "available_reviews": 10,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "03-apr-1968-eau-de-parfum",
+      "available_reviews": 6,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "03-century-eau-de-parfum",
+      "available_reviews": 9,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "08-seylon-eau-de-parfum",
+      "available_reviews": 6,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "100-love-eau-de-parfum",
+      "available_reviews": 5,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1499-eau-de-parfum",
+      "available_reviews": 4,
+      "selected_reviews": 4,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1725-casanova-eau-de-parfum",
+      "available_reviews": 10,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1740-marquis-de-sade-eau-de-parfum",
+      "available_reviews": 8,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1804-george-sand-eau-de-parfum",
+      "available_reviews": 3,
+      "selected_reviews": 3,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1828-jules-verne-eau-de-parfum",
+      "available_reviews": 6,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1872-for-men-eau-de-parfum",
+      "available_reviews": 6,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1872-for-women-eau-de-parfum",
+      "available_reviews": 5,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1888-eau-de-parfum",
+      "available_reviews": 1,
+      "selected_reviews": 1,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1962-eau-de-parfum",
+      "available_reviews": 8,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "1976-eau-de-parfum",
+      "available_reviews": 8,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "21-eau-de-parfum",
+      "available_reviews": 6,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "40-rogue-eau-de-toilette",
+      "available_reviews": 7,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "a-la-rose-eau-de-parfum",
+      "available_reviews": 5,
+      "selected_reviews": 5,
+      "selection_role": "primary_same_as_synthetic_pilot"
+    },
+    {
+      "perfume_id": "a-la-rose-scented-hair-mist",
+      "available_reviews": 2,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "absinth-parfum-extrait",
+      "available_reviews": 10,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "absolue-d-osmanthe-eau-de-parfum",
+      "available_reviews": 8,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "acqua-di-sale-body-cream-scented-body-cream",
+      "available_reviews": 2,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "acqua-di-sale-eau-de-parfum",
+      "available_reviews": 2,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "acqua-di-scandola-eau-de-parfum",
+      "available_reviews": 6,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "acqua-e-zucchero-eau-de-parfum",
+      "available_reviews": 9,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "acqua-fiorentina-eau-de-parfum",
+      "available_reviews": 5,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "acqua-viva-body-cream-scented-body-cream",
+      "available_reviews": 5,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    },
+    {
+      "perfume_id": "acqua-viva-eau-de-parfum",
+      "available_reviews": 5,
+      "selected_reviews": 1,
+      "selection_role": "filler_to_reach_100_without_duplicates"
+    }
+  ],
+  "primary_perfume_count": 20,
+  "reviews_per_primary_perfume": 5,
+  "primary_selected_total": 90,
+  "filler_selected_total": 10
+}

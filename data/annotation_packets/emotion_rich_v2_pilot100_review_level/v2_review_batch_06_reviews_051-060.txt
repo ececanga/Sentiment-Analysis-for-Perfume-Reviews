@@ -1,0 +1,122 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return ONLY valid CSV. No markdown, no explanation.
+Use exactly this header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1804-george-sand-eau-de-parfum-01
+source_type: synthetic
+perfume_id: 1804-george-sand-eau-de-parfum
+perfume_name: 1804 george sand eau de parfum
+review_index: 1
+review_text: 1804 george sand eau de parfum made me think about the person I would become if I wore it outside. In the air around me, there is a little tension between comfort and strangeness. The impression of cool cardamom gives it presence, while faint smoke keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1804-george-sand-eau-de-parfum-02
+source_type: synthetic
+perfume_id: 1804-george-sand-eau-de-parfum
+perfume_name: 1804 george sand eau de parfum
+review_index: 2
+review_text: 1804 george sand eau de parfum immediately gave me a picture rather than a note list: clean laundry musk, soft floral petals, and earthy patchouli. The color in my head was white cotton, placed around a florist window, with soil under rain somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1804-george-sand-eau-de-parfum-03
+source_type: synthetic
+perfume_id: 1804-george-sand-eau-de-parfum
+perfume_name: 1804 george sand eau de parfum
+review_index: 3
+review_text: I tested 1804 george sand eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The clean laundry musk and warm amber resin made it feel like smooth cotton against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1804-george-sand-eau-de-parfum-04
+source_type: synthetic
+perfume_id: 1804-george-sand-eau-de-parfum
+perfume_name: 1804 george sand eau de parfum
+review_index: 4
+review_text: I expected 1804 george sand eau de parfum to be mostly about earthy patchouli, but the drydown changed my mind. After the first sharp moment, faint smoke came forward and the whole scent turned darker. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1804-george-sand-eau-de-parfum-05
+source_type: synthetic
+perfume_id: 1804-george-sand-eau-de-parfum
+perfume_name: 1804 george sand eau de parfum
+review_index: 5
+review_text: I wanted to understand 1804 george sand eau de parfum, but clean laundry musk pushed harder than I expected. The mix of warm amber resin and soft floral petals created a strong image, almost too warm for me. I respect the idea, yet the texture made me feel uneasy after a while. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1828-jules-verne-eau-de-parfum-01
+source_type: synthetic
+perfume_id: 1828-jules-verne-eau-de-parfum
+perfume_name: 1828 jules verne eau de parfum
+review_index: 1
+review_text: I expected 1828 jules verne eau de parfum to be mostly about a bitter green edge, but the drydown changed my mind. After the first sharp moment, soft cosmetic powder came forward and the whole scent turned warmer. The opening made me hesitate, but the base gave it a second chance. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1828-jules-verne-eau-de-parfum-02
+source_type: synthetic
+perfume_id: 1828-jules-verne-eau-de-parfum
+perfume_name: 1828 jules verne eau de parfum
+review_index: 2
+review_text: I wanted to understand 1828 jules verne eau de parfum, but jammy rose petals pushed harder than I expected. The mix of warm amber resin and a bitter green edge created a strong image, almost too warm for me. I respect the idea, yet the texture made me feel uneasy after a while. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1828-jules-verne-eau-de-parfum-03
+source_type: synthetic
+perfume_id: 1828-jules-verne-eau-de-parfum
+perfume_name: 1828 jules verne eau de parfum
+review_index: 3
+review_text: 1828 jules verne eau de parfum made me think about the person I would become if I wore it outside. The impression of cool lavender gives it presence, while a bitter green edge keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1828-jules-verne-eau-de-parfum-04
+source_type: synthetic
+perfume_id: 1828-jules-verne-eau-de-parfum
+perfume_name: 1828 jules verne eau de parfum
+review_index: 4
+review_text: 1828 jules verne eau de parfum immediately gave me a picture rather than a note list: cool lavender, warm amber resin, and warm spice. I did not feel simple happiness, more like a small private memory opening and closing. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1828-jules-verne-eau-de-parfum-05
+source_type: synthetic
+perfume_id: 1828-jules-verne-eau-de-parfum
+perfume_name: 1828 jules verne eau de parfum
+review_index: 5
+review_text: I tested 1828 jules verne eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The jammy rose petals and cool lavender made it feel like velvet petals against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW

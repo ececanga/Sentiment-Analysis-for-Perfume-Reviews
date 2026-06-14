@@ -1,0 +1,56 @@
+{
+  "generated_at_utc": "2026-06-13T10:16:16.410541+00:00",
+  "features_csv": "outputs/youtube_review_level_tests/pilot100_g25pro/features/review_level_features_unlabeled.csv",
+  "labels_csv": "labels/gemini_review_level/gemini_review_labels_youtube_review_pilot100_g25pro_v1_pipeline.csv",
+  "n_rows": 100,
+  "unique_perfumes": 30,
+  "model": "logistic_regression",
+  "split": "GroupKFold(n_splits=5, group=perfume_id)",
+  "threshold": 0.3,
+  "feature_count": 58,
+  "target_columns": [
+    "joy",
+    "sadness",
+    "anger",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "excluded_target_columns": {},
+  "metrics": {
+    "macro_f1": 0.4513978786521356,
+    "macro_roc_auc": 0.6791097399396001,
+    "macro_pr_auc": 0.42561216232392907,
+    "micro_f1": 0.6047430830039525,
+    "hamming_loss": 0.25,
+    "label_cardinality": 2.11,
+    "predicted_label_cardinality": 2.95
+  },
+  "og_logistic_regression_reference": {
+    "path": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/metrics/logistic_regression.json",
+    "n_rows": 784,
+    "macro_f1": 0.31780960681894305,
+    "macro_roc_auc": 0.7293969521576296,
+    "macro_pr_auc": 0.3262007587804459,
+    "micro_f1": 0.5834885164494104,
+    "threshold": 0.3,
+    "target_columns": [
+      "joy",
+      "sadness",
+      "fear",
+      "trust",
+      "surprise",
+      "anticipation",
+      "disgust"
+    ]
+  },
+  "outputs": {
+    "labeled_features": "outputs/youtube_review_level_tests/pilot100_g25pro/supervised_eval_g25pro/review_level_features_labeled_g25pro.csv",
+    "predictions": "outputs/youtube_review_level_tests/pilot100_g25pro/supervised_eval_g25pro/logistic_regression_review_level_oof.csv",
+    "per_label": "outputs/youtube_review_level_tests/pilot100_g25pro/supervised_eval_g25pro/logistic_regression_review_level_per_label.csv",
+    "metrics": "outputs/youtube_review_level_tests/pilot100_g25pro/supervised_eval_g25pro/logistic_regression_review_level_metrics.json",
+    "report": "outputs/youtube_review_level_tests/pilot100_g25pro/supervised_eval_g25pro/logistic_regression_review_level_report.md"
+  }
+}

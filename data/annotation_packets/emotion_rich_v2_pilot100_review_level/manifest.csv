@@ -1,0 +1,101 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,text_word_count,text_char_count,batch_file
+emotion-rich-v2-00-auriel-eau-de-parfum-01,synthetic,00-auriel-eau-de-parfum,00 auriel eau de parfum,1,71,356,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-00-auriel-eau-de-parfum-02,synthetic,00-auriel-eau-de-parfum,00 auriel eau de parfum,2,48,244,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-00-auriel-eau-de-parfum-03,synthetic,00-auriel-eau-de-parfum,00 auriel eau de parfum,3,66,346,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-00-auriel-eau-de-parfum-04,synthetic,00-auriel-eau-de-parfum,00 auriel eau de parfum,4,68,367,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-00-auriel-eau-de-parfum-05,synthetic,00-auriel-eau-de-parfum,00 auriel eau de parfum,5,75,424,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-01-nomad-eau-de-parfum-01,synthetic,01-nomad-eau-de-parfum,01 nomad eau de parfum,1,84,441,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-01-nomad-eau-de-parfum-02,synthetic,01-nomad-eau-de-parfum,01 nomad eau de parfum,2,39,206,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-01-nomad-eau-de-parfum-03,synthetic,01-nomad-eau-de-parfum,01 nomad eau de parfum,3,69,361,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-01-nomad-eau-de-parfum-04,synthetic,01-nomad-eau-de-parfum,01 nomad eau de parfum,4,75,437,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-01-nomad-eau-de-parfum-05,synthetic,01-nomad-eau-de-parfum,01 nomad eau de parfum,5,71,353,v2_review_batch_01_reviews_001-010.txt
+emotion-rich-v2-02-owari-eau-de-parfum-01,synthetic,02-owari-eau-de-parfum,02 owari eau de parfum,1,65,361,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-02-owari-eau-de-parfum-02,synthetic,02-owari-eau-de-parfum,02 owari eau de parfum,2,61,324,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-02-owari-eau-de-parfum-03,synthetic,02-owari-eau-de-parfum,02 owari eau de parfum,3,68,348,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-02-owari-eau-de-parfum-04,synthetic,02-owari-eau-de-parfum,02 owari eau de parfum,4,75,428,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-02-owari-eau-de-parfum-05,synthetic,02-owari-eau-de-parfum,02 owari eau de parfum,5,70,339,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-03-apr-1968-eau-de-parfum-01,synthetic,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,1,91,525,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-03-apr-1968-eau-de-parfum-02,synthetic,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,2,71,349,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-03-apr-1968-eau-de-parfum-03,synthetic,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,3,73,393,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-03-apr-1968-eau-de-parfum-04,synthetic,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,4,55,302,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-03-apr-1968-eau-de-parfum-05,synthetic,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,5,86,444,v2_review_batch_02_reviews_011-020.txt
+emotion-rich-v2-03-century-eau-de-parfum-01,synthetic,03-century-eau-de-parfum,03 century eau de parfum,1,86,497,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-03-century-eau-de-parfum-02,synthetic,03-century-eau-de-parfum,03 century eau de parfum,2,68,350,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-03-century-eau-de-parfum-03,synthetic,03-century-eau-de-parfum,03 century eau de parfum,3,59,349,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-03-century-eau-de-parfum-04,synthetic,03-century-eau-de-parfum,03 century eau de parfum,4,88,474,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-03-century-eau-de-parfum-05,synthetic,03-century-eau-de-parfum,03 century eau de parfum,5,67,340,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-08-seylon-eau-de-parfum-01,synthetic,08-seylon-eau-de-parfum,08 - seylon eau de parfum,1,72,411,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-08-seylon-eau-de-parfum-02,synthetic,08-seylon-eau-de-parfum,08 - seylon eau de parfum,2,43,215,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-08-seylon-eau-de-parfum-03,synthetic,08-seylon-eau-de-parfum,08 - seylon eau de parfum,3,61,340,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-08-seylon-eau-de-parfum-04,synthetic,08-seylon-eau-de-parfum,08 - seylon eau de parfum,4,61,325,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-08-seylon-eau-de-parfum-05,synthetic,08-seylon-eau-de-parfum,08 - seylon eau de parfum,5,41,198,v2_review_batch_03_reviews_021-030.txt
+emotion-rich-v2-100-love-eau-de-parfum-01,synthetic,100-love-eau-de-parfum,100% love eau de parfum,1,70,344,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-100-love-eau-de-parfum-02,synthetic,100-love-eau-de-parfum,100% love eau de parfum,2,47,272,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-100-love-eau-de-parfum-03,synthetic,100-love-eau-de-parfum,100% love eau de parfum,3,70,356,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-100-love-eau-de-parfum-04,synthetic,100-love-eau-de-parfum,100% love eau de parfum,4,74,377,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-100-love-eau-de-parfum-05,synthetic,100-love-eau-de-parfum,100% love eau de parfum,5,68,360,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-1499-eau-de-parfum-01,synthetic,1499-eau-de-parfum,1499 eau de parfum,1,72,379,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-1499-eau-de-parfum-02,synthetic,1499-eau-de-parfum,1499 eau de parfum,2,59,319,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-1499-eau-de-parfum-03,synthetic,1499-eau-de-parfum,1499 eau de parfum,3,69,355,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-1499-eau-de-parfum-04,synthetic,1499-eau-de-parfum,1499 eau de parfum,4,44,252,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-1499-eau-de-parfum-05,synthetic,1499-eau-de-parfum,1499 eau de parfum,5,49,242,v2_review_batch_04_reviews_031-040.txt
+emotion-rich-v2-1725-casanova-eau-de-parfum-01,synthetic,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,1,72,388,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1725-casanova-eau-de-parfum-02,synthetic,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,2,71,366,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1725-casanova-eau-de-parfum-03,synthetic,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,3,70,369,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1725-casanova-eau-de-parfum-04,synthetic,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,4,61,329,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1725-casanova-eau-de-parfum-05,synthetic,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,5,42,218,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-01,synthetic,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,1,55,322,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-02,synthetic,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,2,67,371,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-03,synthetic,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,3,68,364,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-04,synthetic,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,4,91,516,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1740-marquis-de-sade-eau-de-parfum-05,synthetic,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,5,70,358,v2_review_batch_05_reviews_041-050.txt
+emotion-rich-v2-1804-george-sand-eau-de-parfum-01,synthetic,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,1,85,473,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1804-george-sand-eau-de-parfum-02,synthetic,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,2,73,416,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1804-george-sand-eau-de-parfum-03,synthetic,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,3,74,378,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1804-george-sand-eau-de-parfum-04,synthetic,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,4,64,366,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1804-george-sand-eau-de-parfum-05,synthetic,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,5,64,339,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-01,synthetic,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,1,62,335,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-02,synthetic,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,2,64,335,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-03,synthetic,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,3,69,366,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-04,synthetic,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,4,42,241,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1828-jules-verne-eau-de-parfum-05,synthetic,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,5,71,369,v2_review_batch_06_reviews_051-060.txt
+emotion-rich-v2-1872-for-men-eau-de-parfum-01,synthetic,1872-for-men-eau-de-parfum,1872 for men eau de parfum,1,87,458,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-men-eau-de-parfum-02,synthetic,1872-for-men-eau-de-parfum,1872 for men eau de parfum,2,68,368,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-men-eau-de-parfum-03,synthetic,1872-for-men-eau-de-parfum,1872 for men eau de parfum,3,80,462,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-men-eau-de-parfum-04,synthetic,1872-for-men-eau-de-parfum,1872 for men eau de parfum,4,69,347,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-men-eau-de-parfum-05,synthetic,1872-for-men-eau-de-parfum,1872 for men eau de parfum,5,51,261,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-women-eau-de-parfum-01,synthetic,1872-for-women-eau-de-parfum,1872 for women eau de parfum,1,68,366,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-women-eau-de-parfum-02,synthetic,1872-for-women-eau-de-parfum,1872 for women eau de parfum,2,74,417,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-women-eau-de-parfum-03,synthetic,1872-for-women-eau-de-parfum,1872 for women eau de parfum,3,73,373,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-women-eau-de-parfum-04,synthetic,1872-for-women-eau-de-parfum,1872 for women eau de parfum,4,42,230,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1872-for-women-eau-de-parfum-05,synthetic,1872-for-women-eau-de-parfum,1872 for women eau de parfum,5,86,468,v2_review_batch_07_reviews_061-070.txt
+emotion-rich-v2-1888-eau-de-parfum-01,synthetic,1888-eau-de-parfum,1888 eau de parfum,1,67,366,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1888-eau-de-parfum-02,synthetic,1888-eau-de-parfum,1888 eau de parfum,2,86,483,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1888-eau-de-parfum-03,synthetic,1888-eau-de-parfum,1888 eau de parfum,3,87,445,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1888-eau-de-parfum-04,synthetic,1888-eau-de-parfum,1888 eau de parfum,4,74,398,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1888-eau-de-parfum-05,synthetic,1888-eau-de-parfum,1888 eau de parfum,5,60,319,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1962-eau-de-parfum-01,synthetic,1962-eau-de-parfum,1962 eau de parfum,1,90,470,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1962-eau-de-parfum-02,synthetic,1962-eau-de-parfum,1962 eau de parfum,2,60,337,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1962-eau-de-parfum-03,synthetic,1962-eau-de-parfum,1962 eau de parfum,3,59,309,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1962-eau-de-parfum-04,synthetic,1962-eau-de-parfum,1962 eau de parfum,4,88,460,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1962-eau-de-parfum-05,synthetic,1962-eau-de-parfum,1962 eau de parfum,5,69,385,v2_review_batch_08_reviews_071-080.txt
+emotion-rich-v2-1976-eau-de-parfum-01,synthetic,1976-eau-de-parfum,1976 eau de parfum,1,63,337,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-1976-eau-de-parfum-02,synthetic,1976-eau-de-parfum,1976 eau de parfum,2,72,410,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-1976-eau-de-parfum-03,synthetic,1976-eau-de-parfum,1976 eau de parfum,3,73,356,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-1976-eau-de-parfum-04,synthetic,1976-eau-de-parfum,1976 eau de parfum,4,36,191,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-1976-eau-de-parfum-05,synthetic,1976-eau-de-parfum,1976 eau de parfum,5,68,376,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-21-eau-de-parfum-01,synthetic,21-eau-de-parfum,21 eau de parfum,1,41,228,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-21-eau-de-parfum-02,synthetic,21-eau-de-parfum,21 eau de parfum,2,71,341,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-21-eau-de-parfum-03,synthetic,21-eau-de-parfum,21 eau de parfum,3,64,356,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-21-eau-de-parfum-04,synthetic,21-eau-de-parfum,21 eau de parfum,4,85,445,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-21-eau-de-parfum-05,synthetic,21-eau-de-parfum,21 eau de parfum,5,66,329,v2_review_batch_09_reviews_081-090.txt
+emotion-rich-v2-40-rogue-eau-de-toilette-01,synthetic,40-rogue-eau-de-toilette,40 rogue eau de toilette,1,66,364,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-40-rogue-eau-de-toilette-02,synthetic,40-rogue-eau-de-toilette,40 rogue eau de toilette,2,92,527,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-40-rogue-eau-de-toilette-03,synthetic,40-rogue-eau-de-toilette,40 rogue eau de toilette,3,44,217,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-40-rogue-eau-de-toilette-04,synthetic,40-rogue-eau-de-toilette,40 rogue eau de toilette,4,72,375,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-40-rogue-eau-de-toilette-05,synthetic,40-rogue-eau-de-toilette,40 rogue eau de toilette,5,36,195,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-a-la-rose-eau-de-parfum-01,synthetic,a-la-rose-eau-de-parfum,a la rose eau de parfum,1,46,256,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-a-la-rose-eau-de-parfum-02,synthetic,a-la-rose-eau-de-parfum,a la rose eau de parfum,2,87,428,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-a-la-rose-eau-de-parfum-03,synthetic,a-la-rose-eau-de-parfum,a la rose eau de parfum,3,61,347,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-a-la-rose-eau-de-parfum-04,synthetic,a-la-rose-eau-de-parfum,a la rose eau de parfum,4,78,406,v2_review_batch_10_reviews_091-100.txt
+emotion-rich-v2-a-la-rose-eau-de-parfum-05,synthetic,a-la-rose-eau-de-parfum,a la rose eau de parfum,5,69,373,v2_review_batch_10_reviews_091-100.txt

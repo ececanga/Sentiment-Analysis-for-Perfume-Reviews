@@ -1,0 +1,7 @@
+label,support_pos,support_neg,positive_rate,predicted_positive_count,predicted_positive_rate,mean_probability,f1,roc_auc,pr_auc,training_status
+joy,28,72,0.28,46,0.46,0.37991239182813324,0.6756756756756757,0.8814484126984127,0.7034098057421362,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+sadness,5,95,0.05,22,0.22,0.18294765291738949,0.14814814814814814,0.5389473684210526,0.12937102713138549,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+fear,14,86,0.14,22,0.22,0.23275118155277968,0.7777777777777778,0.9750830564784053,0.7629992148374501,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+trust,35,65,0.35,50,0.5,0.4086283169525714,0.5176470588235295,0.7059340659340659,0.6630822334112535,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+surprise,44,56,0.44,48,0.48,0.45962921239138965,0.9347826086956522,0.9675324675324675,0.9003064037261042,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+anticipation,43,57,0.43,49,0.49,0.4583118098543467,0.8478260869565217,0.9118727050183598,0.9016567900111188,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained

@@ -1,0 +1,101 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+youtube-review-00-auriel-eau-de-parfum-01,youtube,00-auriel-eau-de-parfum,00 auriel eau de parfum,1,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-00-auriel-eau-de-parfum-02,youtube,00-auriel-eau-de-parfum,00 auriel eau de parfum,2,1,0,0,0,1,0,1,0,8.0,7.0,6.0
+youtube-review-01-nomad-eau-de-parfum-01,youtube,01-nomad-eau-de-parfum,01 nomad eau de parfum,1,1,0,1,0,1,0,0,0,6.0,7.0,6.5
+youtube-review-01-nomad-eau-de-parfum-02,youtube,01-nomad-eau-de-parfum,01 nomad eau de parfum,2,1,0,0,0,1,0,1,0,9.0,9.0,8.0
+youtube-review-01-nomad-eau-de-parfum-03,youtube,01-nomad-eau-de-parfum,01 nomad eau de parfum,3,1,0,0,0,1,0,0,0,8.5,7.0,6.5
+youtube-review-01-nomad-eau-de-parfum-04,youtube,01-nomad-eau-de-parfum,01 nomad eau de parfum,4,1,0,0,0,1,0,1,0,8.5,7.5,7.0
+youtube-review-01-nomad-eau-de-parfum-05,youtube,01-nomad-eau-de-parfum,01 nomad eau de parfum,5,1,0,0,0,1,0,0,0,8.0,6.0,7.0
+youtube-review-02-owari-eau-de-parfum-01,youtube,02-owari-eau-de-parfum,02 owari eau de parfum,1,1,0,0,0,1,0,1,0,9.0,8.0,7.0
+youtube-review-02-owari-eau-de-parfum-02,youtube,02-owari-eau-de-parfum,02 owari eau de parfum,2,1,0,0,0,1,0,0,0,8.0,7.0,7.0
+youtube-review-02-owari-eau-de-parfum-03,youtube,02-owari-eau-de-parfum,02 owari eau de parfum,3,1,0,0,0,1,0,0,0,8.0,7.0,6.0
+youtube-review-02-owari-eau-de-parfum-04,youtube,02-owari-eau-de-parfum,02 owari eau de parfum,4,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-02-owari-eau-de-parfum-05,youtube,02-owari-eau-de-parfum,02 owari eau de parfum,5,1,0,0,0,1,0,1,0,8.5,7.0,7.0
+youtube-review-03-apr-1968-eau-de-parfum-01,youtube,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,1,0,0,0,0,0,0,1,0,8.0,7.0,8.0
+youtube-review-03-apr-1968-eau-de-parfum-02,youtube,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,2,1,0,0,0,0,0,1,0,8.0,7.0,7.0
+youtube-review-03-apr-1968-eau-de-parfum-03,youtube,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,3,1,0,0,0,0,1,0,0,8.0,6.0,5.0
+youtube-review-03-apr-1968-eau-de-parfum-04,youtube,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,4,0,0,0,0,1,0,0,0,6.0,5.0,6.0
+youtube-review-03-apr-1968-eau-de-parfum-05,youtube,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,5,1,0,0,0,1,0,0,0,8.0,5.0,7.0
+youtube-review-03-century-eau-de-parfum-01,youtube,03-century-eau-de-parfum,03 century eau de parfum,1,0,0,0,0,0,0,0,1,2.0,7.0,8.0
+youtube-review-03-century-eau-de-parfum-02,youtube,03-century-eau-de-parfum,03 century eau de parfum,2,1,0,0,0,1,1,1,0,8.0,7.0,7.0
+youtube-review-03-century-eau-de-parfum-03,youtube,03-century-eau-de-parfum,03 century eau de parfum,3,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-03-century-eau-de-parfum-04,youtube,03-century-eau-de-parfum,03 century eau de parfum,4,1,0,0,0,0,0,0,0,8.0,6.0,5.0
+youtube-review-03-century-eau-de-parfum-05,youtube,03-century-eau-de-parfum,03 century eau de parfum,5,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-08-seylon-eau-de-parfum-01,youtube,08-seylon-eau-de-parfum,08 - seylon eau de parfum,1,1,0,0,0,1,0,1,0,8.0,7.0,5.0
+youtube-review-08-seylon-eau-de-parfum-02,youtube,08-seylon-eau-de-parfum,08 - seylon eau de parfum,2,1,0,0,0,1,0,0,0,9.0,7.0,8.0
+youtube-review-08-seylon-eau-de-parfum-03,youtube,08-seylon-eau-de-parfum,08 - seylon eau de parfum,3,1,0,0,0,1,1,1,0,9.0,8.0,8.0
+youtube-review-08-seylon-eau-de-parfum-04,youtube,08-seylon-eau-de-parfum,08 - seylon eau de parfum,4,0,0,0,0,1,1,1,1,2.0,7.0,8.0
+youtube-review-08-seylon-eau-de-parfum-05,youtube,08-seylon-eau-de-parfum,08 - seylon eau de parfum,5,1,1,0,0,0,0,0,0,5.0,7.0,3.0
+youtube-review-100-love-eau-de-parfum-01,youtube,100-love-eau-de-parfum,100% love eau de parfum,1,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-100-love-eau-de-parfum-02,youtube,100-love-eau-de-parfum,100% love eau de parfum,2,0,0,0,0,0,0,0,0,5.0,5.0,8.0
+youtube-review-100-love-eau-de-parfum-03,youtube,100-love-eau-de-parfum,100% love eau de parfum,3,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-100-love-eau-de-parfum-04,youtube,100-love-eau-de-parfum,100% love eau de parfum,4,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-100-love-eau-de-parfum-05,youtube,100-love-eau-de-parfum,100% love eau de parfum,5,1,0,0,0,0,0,0,1,5.5,8.0,8.0
+youtube-review-1499-eau-de-parfum-01,youtube,1499-eau-de-parfum,1499 eau de parfum,1,1,0,0,0,1,0,0,0,8.0,7.0,6.0
+youtube-review-1499-eau-de-parfum-02,youtube,1499-eau-de-parfum,1499 eau de parfum,2,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1499-eau-de-parfum-03,youtube,1499-eau-de-parfum,1499 eau de parfum,3,1,0,0,0,0,0,0,0,7.0,6.0,6.0
+youtube-review-1499-eau-de-parfum-04,youtube,1499-eau-de-parfum,1499 eau de parfum,4,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1725-casanova-eau-de-parfum-01,youtube,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,1,1,1,0,0,1,0,0,0,3.0,7.0,7.0
+youtube-review-1725-casanova-eau-de-parfum-02,youtube,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,2,1,0,0,0,1,0,1,0,8.0,6.0,7.0
+youtube-review-1725-casanova-eau-de-parfum-03,youtube,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,3,1,1,0,0,1,0,0,0,7.0,6.0,8.0
+youtube-review-1725-casanova-eau-de-parfum-04,youtube,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,4,1,0,0,0,1,0,0,0,8.0,7.0,7.0
+youtube-review-1725-casanova-eau-de-parfum-05,youtube,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,5,1,0,0,0,1,0,1,0,8.0,7.0,8.0
+youtube-review-1740-marquis-de-sade-eau-de-parfum-01,youtube,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,1,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-1740-marquis-de-sade-eau-de-parfum-02,youtube,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,2,1,1,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1740-marquis-de-sade-eau-de-parfum-03,youtube,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,3,1,0,0,0,1,1,1,0,8.5,8.0,7.5
+youtube-review-1740-marquis-de-sade-eau-de-parfum-04,youtube,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,4,1,0,0,0,1,0,0,0,8.0,6.0,6.0
+youtube-review-1740-marquis-de-sade-eau-de-parfum-05,youtube,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,5,1,0,0,0,1,0,0,1,5.0,5.0,5.0
+youtube-review-1804-george-sand-eau-de-parfum-01,youtube,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,1,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1804-george-sand-eau-de-parfum-02,youtube,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,2,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1804-george-sand-eau-de-parfum-03,youtube,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,3,1,0,0,0,1,0,1,0,8.0,7.0,5.0
+youtube-review-1828-jules-verne-eau-de-parfum-01,youtube,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,1,1,0,0,0,0,0,0,0,8.0,7.0,7.0
+youtube-review-1828-jules-verne-eau-de-parfum-02,youtube,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,2,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-1828-jules-verne-eau-de-parfum-03,youtube,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,3,1,0,0,0,1,0,1,0,8.0,6.0,7.0
+youtube-review-1828-jules-verne-eau-de-parfum-04,youtube,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,4,1,0,0,0,1,0,0,0,8.0,6.0,7.0
+youtube-review-1828-jules-verne-eau-de-parfum-05,youtube,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,5,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-1872-for-men-eau-de-parfum-01,youtube,1872-for-men-eau-de-parfum,1872 for men eau de parfum,1,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1872-for-men-eau-de-parfum-02,youtube,1872-for-men-eau-de-parfum,1872 for men eau de parfum,2,1,0,0,0,1,0,0,0,8.0,6.0,7.0
+youtube-review-1872-for-men-eau-de-parfum-03,youtube,1872-for-men-eau-de-parfum,1872 for men eau de parfum,3,1,0,0,0,0,0,0,0,7.0,4.0,7.0
+youtube-review-1872-for-men-eau-de-parfum-04,youtube,1872-for-men-eau-de-parfum,1872 for men eau de parfum,4,1,0,0,0,1,0,0,0,7.0,3.0,7.0
+youtube-review-1872-for-men-eau-de-parfum-05,youtube,1872-for-men-eau-de-parfum,1872 for men eau de parfum,5,1,0,0,0,0,0,0,0,8.0,6.0,6.5
+youtube-review-1872-for-women-eau-de-parfum-01,youtube,1872-for-women-eau-de-parfum,1872 for women eau de parfum,1,1,0,0,0,0,0,0,0,8.0,6.0,6.0
+youtube-review-1872-for-women-eau-de-parfum-02,youtube,1872-for-women-eau-de-parfum,1872 for women eau de parfum,2,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1872-for-women-eau-de-parfum-03,youtube,1872-for-women-eau-de-parfum,1872 for women eau de parfum,3,1,0,0,0,1,0,1,0,7.5,4.0,5.0
+youtube-review-1872-for-women-eau-de-parfum-04,youtube,1872-for-women-eau-de-parfum,1872 for women eau de parfum,4,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-1872-for-women-eau-de-parfum-05,youtube,1872-for-women-eau-de-parfum,1872 for women eau de parfum,5,1,0,0,0,1,0,1,0,8.5,7.0,7.0
+youtube-review-1888-eau-de-parfum-01,youtube,1888-eau-de-parfum,1888 eau de parfum,1,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-1962-eau-de-parfum-01,youtube,1962-eau-de-parfum,1962 eau de parfum,1,1,0,0,0,1,0,0,0,8.5,7.0,7.0
+youtube-review-1962-eau-de-parfum-02,youtube,1962-eau-de-parfum,1962 eau de parfum,2,0,0,0,0,1,0,0,0,8.0,6.0,9.0
+youtube-review-1962-eau-de-parfum-03,youtube,1962-eau-de-parfum,1962 eau de parfum,3,1,0,0,0,0,0,1,0,8.0,7.0,7.0
+youtube-review-1962-eau-de-parfum-04,youtube,1962-eau-de-parfum,1962 eau de parfum,4,1,0,0,0,1,0,1,0,8.0,7.0,6.0
+youtube-review-1962-eau-de-parfum-05,youtube,1962-eau-de-parfum,1962 eau de parfum,5,1,0,0,0,1,1,1,0,8.0,8.0,8.0
+youtube-review-1976-eau-de-parfum-01,youtube,1976-eau-de-parfum,1976 eau de parfum,1,1,1,0,0,1,0,1,0,8.5,8.0,7.5
+youtube-review-1976-eau-de-parfum-02,youtube,1976-eau-de-parfum,1976 eau de parfum,2,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-1976-eau-de-parfum-03,youtube,1976-eau-de-parfum,1976 eau de parfum,3,1,0,0,0,0,0,0,0,8.0,7.0,5.0
+youtube-review-1976-eau-de-parfum-04,youtube,1976-eau-de-parfum,1976 eau de parfum,4,1,0,0,0,1,0,1,0,8.0,7.0,6.0
+youtube-review-1976-eau-de-parfum-05,youtube,1976-eau-de-parfum,1976 eau de parfum,5,1,1,1,1,1,0,1,0,7.0,8.0,7.0
+youtube-review-21-eau-de-parfum-01,youtube,21-eau-de-parfum,21 eau de parfum,1,1,0,0,0,0,0,0,0,8.0,8.0,5.0
+youtube-review-21-eau-de-parfum-02,youtube,21-eau-de-parfum,21 eau de parfum,2,1,0,0,0,1,0,0,0,9.0,7.0,8.0
+youtube-review-21-eau-de-parfum-03,youtube,21-eau-de-parfum,21 eau de parfum,3,0,0,0,0,1,0,0,0,5.5,5.0,7.0
+youtube-review-21-eau-de-parfum-04,youtube,21-eau-de-parfum,21 eau de parfum,4,1,1,0,1,1,1,1,1,7.0,8.0,8.0
+youtube-review-21-eau-de-parfum-05,youtube,21-eau-de-parfum,21 eau de parfum,5,0,0,0,0,0,0,0,0,5.0,5.0,5.0
+youtube-review-40-rogue-eau-de-toilette-01,youtube,40-rogue-eau-de-toilette,40 rogue eau de toilette,1,1,1,0,0,1,0,0,1,5.0,7.0,8.0
+youtube-review-40-rogue-eau-de-toilette-02,youtube,40-rogue-eau-de-toilette,40 rogue eau de toilette,2,1,0,0,0,1,0,0,0,7.0,5.0,7.0
+youtube-review-40-rogue-eau-de-toilette-03,youtube,40-rogue-eau-de-toilette,40 rogue eau de toilette,3,0,0,0,0,0,1,0,0,7.0,5.0,7.0
+youtube-review-40-rogue-eau-de-toilette-04,youtube,40-rogue-eau-de-toilette,40 rogue eau de toilette,4,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-40-rogue-eau-de-toilette-05,youtube,40-rogue-eau-de-toilette,40 rogue eau de toilette,5,1,0,0,0,1,0,1,0,8.0,7.0,7.0
+youtube-review-a-la-rose-eau-de-parfum-01,youtube,a-la-rose-eau-de-parfum,a la rose eau de parfum,1,1,0,0,0,0,0,0,0,8.0,6.0,5.0
+youtube-review-a-la-rose-eau-de-parfum-02,youtube,a-la-rose-eau-de-parfum,a la rose eau de parfum,2,1,0,0,0,1,0,1,0,8.0,7.0,6.0
+youtube-review-a-la-rose-eau-de-parfum-03,youtube,a-la-rose-eau-de-parfum,a la rose eau de parfum,3,1,0,0,0,0,0,0,0,8.5,6.0,6.0
+youtube-review-a-la-rose-eau-de-parfum-04,youtube,a-la-rose-eau-de-parfum,a la rose eau de parfum,4,1,0,0,0,1,0,0,0,8.0,5.0,7.0
+youtube-review-a-la-rose-eau-de-parfum-05,youtube,a-la-rose-eau-de-parfum,a la rose eau de parfum,5,1,1,0,0,1,0,1,0,5.0,6.0,7.0
+youtube-review-a-la-rose-scented-hair-mist-01,youtube,a-la-rose-scented-hair-mist,a la rose scented hair mist,1,1,0,0,0,1,1,0,0,8.0,7.0,6.0
+youtube-review-absinth-parfum-extrait-01,youtube,absinth-parfum-extrait,absinth parfum extrait,1,1,0,0,0,0,0,0,0,7.0,4.0,6.0
+youtube-review-absolue-d-osmanthe-eau-de-parfum-01,youtube,absolue-d-osmanthe-eau-de-parfum,absolue d'osmanthe eau de parfum,1,0,0,0,0,0,0,0,0,4.0,4.0,6.0
+youtube-review-acqua-di-sale-body-cream-scented-body-cream-01,youtube,acqua-di-sale-body-cream-scented-body-cream,acqua di sale body cream scented body cream,1,0,0,0,0,1,0,1,0,7.0,5.0,8.0
+youtube-review-acqua-di-sale-eau-de-parfum-01,youtube,acqua-di-sale-eau-de-parfum,acqua di sale eau de parfum,1,1,0,0,0,0,0,1,0,8.0,7.0,5.0
+youtube-review-acqua-di-scandola-eau-de-parfum-01,youtube,acqua-di-scandola-eau-de-parfum,acqua di scandola eau de parfum,1,0,0,0,0,0,0,0,0,3.5,5.0,5.0
+youtube-review-acqua-e-zucchero-eau-de-parfum-01,youtube,acqua-e-zucchero-eau-de-parfum,acqua e zucchero eau de parfum,1,1,0,0,0,1,0,1,0,8.0,8.0,8.0
+youtube-review-acqua-fiorentina-eau-de-parfum-01,youtube,acqua-fiorentina-eau-de-parfum,acqua fiorentina eau de parfum ...,1,1,0,0,0,1,0,1,0,9.0,8.0,9.0
+youtube-review-acqua-viva-body-cream-scented-body-cream-01,youtube,acqua-viva-body-cream-scented-body-cream,acqua viva body cream scented body cream,1,1,0,0,0,0,0,1,1,6.0,8.0,8.0
+youtube-review-acqua-viva-eau-de-parfum-01,youtube,acqua-viva-eau-de-parfum,acqua viva eau de parfum,1,1,0,0,0,1,0,0,0,9.0,6.0,8.0

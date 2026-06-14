@@ -1,0 +1,73 @@
+{
+  "dataset_version": "unlabeled_synthetic_perfume_reviews_784_emotion_rich_v2",
+  "generated_at_utc": "2026-06-12T12:42:43.185700+00:00",
+  "source_type": "unlabeled_synthetic_emotion_rich_v2",
+  "generation_policy": "local_note_inspired_human_scenario_templates_no_label_conditioning",
+  "source_identity_file": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+  "note_inspiration_file": "data/perfume_level/perfume_context_keywords.csv",
+  "output_csv": "data/synthetic/synthetic_perfume_reviews_784_emotion_rich_v2_pilot100.csv",
+  "n_perfumes": 20,
+  "expected_perfumes": 784,
+  "reviews_per_perfume": 5,
+  "n_synthetic_review_rows": 100,
+  "seed": 20260612,
+  "word_count_min": 36,
+  "word_count_mean": 67.17,
+  "word_count_max": 92,
+  "emotion_keyword_count_mean": 3.36,
+  "persona_counts": {
+    "niche_sampler": 9,
+    "collector_with_boundaries": 18,
+    "sensitive_nose": 9,
+    "casual_daily_wearer": 15,
+    "quiet_observer": 13,
+    "social_wearer": 17,
+    "memory_led_reviewer": 19
+  },
+  "style_family_counts": {
+    "scene_based_review": 32,
+    "short_fragrantica_note": 16,
+    "reflective_mini_review": 18,
+    "long_personal_review": 17,
+    "casual_blunt_review": 17
+  },
+  "scenario_family_counts": {
+    "comfort_routine": 20,
+    "surprising_drydown": 20,
+    "difficult_reaction": 20,
+    "social_identity": 20,
+    "sensory_memory": 20
+  },
+  "length_profile_counts": {
+    "medium": 50,
+    "short": 33,
+    "long": 17
+  },
+  "sensory_source_counts": {
+    "context_keywords": 100
+  },
+  "top_sensory_terms": {
+    "clean laundry musk": 49,
+    "clean skin musk": 41,
+    "soft floral petals": 40,
+    "warm spice": 38,
+    "warm amber resin": 31,
+    "bright citrus peel": 31,
+    "dry woods": 25,
+    "crushed green stems": 25,
+    "soft cosmetic powder": 19,
+    "jammy rose petals": 15,
+    "golden honey": 14,
+    "clean watery air": 12,
+    "faint smoke": 12,
+    "cool lavender": 11,
+    "dry cedar shavings": 11,
+    "earthy patchouli": 10,
+    "soft creamy sweetness": 9,
+    "dark chocolate": 9,
+    "polished leather": 9,
+    "soft vanilla": 9
+  },
+  "label_columns_present": [],
+  "warning": "This is an unlabeled synthetic review dataset. Existing identity-source labels are ignored. Scenario/style/sensory provenance columns are generation metadata only and must not be used as model features."
+}

@@ -1,0 +1,52 @@
+{
+  "generated_at_utc": "2026-06-12T13:25:45.525133+00:00",
+  "input_csv": "outputs/synthetic_review_level_tests/emotion_rich_v2_pilot100/annotation/review_level_annotation_template.csv",
+  "model": "gemini-2.5-pro",
+  "temperature": 0.0,
+  "target_review_count": 100,
+  "completed_review_count": 100,
+  "attempted_review_count": 100,
+  "skipped_existing_count": 0,
+  "failed_review_count": 0,
+  "failed_review_ids": [],
+  "emotion_positive_counts": {
+    "joy": 28,
+    "sadness": 5,
+    "anger": 0,
+    "fear": 14,
+    "trust": 35,
+    "surprise": 44,
+    "anticipation": 43,
+    "disgust": 0
+  },
+  "vad_summary": {
+    "valence": {
+      "mean": 6.06,
+      "min": 3.0,
+      "max": 8.0
+    },
+    "arousal": {
+      "mean": 4.035,
+      "min": 2.0,
+      "max": 7.0
+    },
+    "dominance": {
+      "mean": 4.815,
+      "min": 2.0,
+      "max": 8.0
+    }
+  },
+  "loaded_env_keys": [
+    "YOUTUBE_API_KEY",
+    "GEMINI_API_KEY"
+  ],
+  "outputs": {
+    "jsonl": "labels/gemini_review_level/gemini_review_labels_emotion_rich_v2_pilot100_g25pro_v1.jsonl",
+    "csv": "labels/gemini_review_level/gemini_review_labels_emotion_rich_v2_pilot100_g25pro_v1.csv",
+    "pipeline_csv": "labels/gemini_review_level/gemini_review_labels_emotion_rich_v2_pilot100_g25pro_v1_pipeline.csv",
+    "report": "labels/gemini_review_level/gemini_review_labeling_report_emotion_rich_v2_pilot100_g25pro_v1.json",
+    "errors": "labels/gemini_review_level/gemini_review_labeling_errors_emotion_rich_v2_pilot100_g25pro_v1.jsonl",
+    "run_log": "labels/gemini_review_level/gemini_review_labeling_run_emotion_rich_v2_pilot100_g25pro_v1.log"
+  },
+  "note": "Review-level Gemini labels. These are pseudo-labels from gemini-2.5-pro for comparability with the OG judge run."
+}

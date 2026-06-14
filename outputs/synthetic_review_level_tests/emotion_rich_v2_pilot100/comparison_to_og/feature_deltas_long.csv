@@ -1,0 +1,1161 @@
+perfume_id,Perfume,feature,feature_family,synthetic_mean,og_value,delta_synthetic_minus_og,abs_delta
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_anger,NRC,0.6,5.0,-4.4,4.4
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_anticipation,NRC,1.6,24.0,-22.4,22.4
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_disgust,NRC,0.8,2.0,-1.2,1.2
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_fear,NRC,1.2,7.0,-5.8,5.8
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_joy,NRC,1.6,20.0,-18.4,18.4
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_sadness,NRC,0.6,4.0,-3.4,3.4
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_surprise,NRC,1.0,8.0,-7.0,7.0
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_trust,NRC,2.0,25.0,-23.0,23.0
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_positive,NRC,3.6,57.0,-53.4,53.4
+00-auriel-eau-de-parfum,00 auriel eau de parfum,NRC_negative,NRC,1.2,10.0,-8.8,8.8
+00-auriel-eau-de-parfum,00 auriel eau de parfum,VAD_valence,VAD,0.16973031002449251,0.1532478591870189,0.016482450837473628,0.016482450837473628
+00-auriel-eau-de-parfum,00 auriel eau de parfum,VAD_arousal,VAD,-0.18513699159006963,-0.0653192048012002,-0.11981778678886944,0.11981778678886944
+00-auriel-eau-de-parfum,00 auriel eau de parfum,VAD_dominance,VAD,-0.05812132734622362,0.0529185629740767,-0.11103989032030032,0.11103989032030032
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Hartmann_joy,Hartmann,0.4030746691394597,0.34165,0.06142466913945971,0.06142466913945971
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Hartmann_neutral,Hartmann,0.18017791509628292,0.5337500000000001,-0.35357208490371717,0.35357208490371717
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Hartmann_disgust,Hartmann,0.13832373898476358,0.0026,0.1357237389847636,0.1357237389847636
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Hartmann_sadness,Hartmann,0.07984396596439176,0.00695,0.07289396596439177,0.07289396596439177
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Hartmann_anger,Hartmann,0.01734645036049184,0.00635,0.01099645036049184,0.01099645036049184
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Hartmann_surprise,Hartmann,0.10270466781221325,0.10485,-0.0021453321877867443,0.0021453321877867443
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Hartmann_fear,Hartmann,0.07852858614642169,0.0039,0.07462858614642169,0.07462858614642169
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Savani_joy,Savani,0.6079345545731485,0.9980510771274568,-0.3901165225543083,0.3901165225543083
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Savani_love,Savani,0.20116902110166843,0.0007314958493225,0.20043752525234593,0.20043752525234593
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Savani_sadness,Savani,0.0045414433639961605,0.0004667207540478,0.00407472260994836,0.00407472260994836
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Savani_fear,Savani,0.08553945312160063,0.0001533865288365,0.08538606659276414,0.08538606659276414
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Savani_anger,Savani,0.09997392061341084,0.0002986648032674,0.09967525581014344,0.09967525581014344
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Savani_surprise,Savani,0.00084160075639368,0.0002985235332744,0.00054307722311928,0.00054307722311928
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_admiration,GoEmotions,0.00263328630244356,0.503,-0.5003667136975565,0.5003667136975565
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_amusement,GoEmotions,0.0009313068847404199,0.0007,0.00023130688474041995,0.00023130688474041995
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_anger,GoEmotions,0.00134821754763832,0.0007,0.00064821754763832,0.00064821754763832
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_annoyance,GoEmotions,0.00300404414301732,0.0006,0.0024040441430173204,0.0024040441430173204
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_approval,GoEmotions,0.0030902370403054604,0.02015,-0.01705976295969454,0.01705976295969454
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_caring,GoEmotions,0.00223834703210736,0.0003,0.0019383470321073602,0.0019383470321073602
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_confusion,GoEmotions,0.00252472552238026,0.0007,0.0018247255223802598,0.0018247255223802598
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_curiosity,GoEmotions,0.0034359879296971202,0.00085,0.00258598792969712,0.00258598792969712
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_desire,GoEmotions,0.024319777678465417,0.003,0.021319777678465417,0.021319777678465417
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_disappointment,GoEmotions,0.08070403283927584,0.00055,0.08015403283927584,0.08015403283927584
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_disapproval,GoEmotions,0.00276596145704384,0.00115,0.0016159614570438402,0.0016159614570438402
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_disgust,GoEmotions,0.00044165466097178,0.00025,0.00019165466097178,0.00019165466097178
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00385269443504506,0.0001,0.0037526944350450603,0.0037526944350450603
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_excitement,GoEmotions,0.0014530482818372,0.03085,-0.029396951718162798,0.029396951718162798
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_fear,GoEmotions,0.00499787490698506,0.00025,0.00474787490698506,0.00474787490698506
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_gratitude,GoEmotions,0.0010144121042685,0.0006,0.00041441210426850005,0.00041441210426850005
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_grief,GoEmotions,0.007868868776131379,0.0001,0.007768868776131379,0.007768868776131379
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_joy,GoEmotions,0.006134794589888719,0.0028499999999999,0.0032847945898888194,0.0032847945898888194
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_love,GoEmotions,0.025877182610565742,0.4948,-0.46892281738943425,0.46892281738943425
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_nervousness,GoEmotions,0.009700322599382999,0.0002,0.009500322599382998,0.009500322599382998
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_optimism,GoEmotions,0.0013871246192138198,0.00705,-0.00566287538078618,0.00566287538078618
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_pride,GoEmotions,0.0025397061370312397,0.00105,0.0014897061370312398,0.0014897061370312398
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_realization,GoEmotions,0.3786711409687996,0.0066999999999999,0.37197114096879974,0.37197114096879974
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_relief,GoEmotions,0.004578859891626,5e-05,0.004528859891626,0.004528859891626
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_remorse,GoEmotions,0.0010959434264805,0.0001,0.0009959434264805,0.0009959434264805
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_sadness,GoEmotions,0.07289382920425846,0.0001999999999999,0.07269382920425857,0.07269382920425857
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_surprise,GoEmotions,0.061129564617294754,0.0006,0.06052956461729475,0.06052956461729475
+00-auriel-eau-de-parfum,00 auriel eau de parfum,GoEmotions_neutral,GoEmotions,0.6463001593947411,0.01005,0.636250159394741,0.636250159394741
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Cardiff_joy,Cardiff,0.04611870925873514,0.0183499999999999,0.027768709258735237,0.027768709258735237
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Cardiff_optimism,Cardiff,0.6186451613903046,0.9169,-0.2982548386096955,0.2982548386096955
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Cardiff_anger,Cardiff,0.07141592949628825,0.0535,0.01791592949628825,0.01791592949628825
+00-auriel-eau-de-parfum,00 auriel eau de parfum,Cardiff_sadness,Cardiff,0.263820182159543,0.01125,0.252570182159543,0.252570182159543
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_anger,NRC,0.6,38.0,-37.4,37.4
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_anticipation,NRC,2.2,91.0,-88.8,88.8
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_disgust,NRC,0.8,35.0,-34.2,34.2
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_fear,NRC,1.2,33.0,-31.8,31.8
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_joy,NRC,2.2,111.0,-108.8,108.8
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_sadness,NRC,0.8,45.0,-44.2,44.2
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_surprise,NRC,1.4,39.0,-37.6,37.6
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_trust,NRC,2.2,161.0,-158.8,158.8
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_positive,NRC,4.8,212.0,-207.2,207.2
+01-nomad-eau-de-parfum,01 nomad eau de parfum,NRC_negative,NRC,1.6,103.0,-101.4,101.4
+01-nomad-eau-de-parfum,01 nomad eau de parfum,VAD_valence,VAD,0.13226097331240189,0.146382424017379,-0.014121450704977112,0.014121450704977112
+01-nomad-eau-de-parfum,01 nomad eau de parfum,VAD_arousal,VAD,-0.1305920408163265,-0.108799780433145,-0.021792260383181494,0.021792260383181494
+01-nomad-eau-de-parfum,01 nomad eau de parfum,VAD_dominance,VAD,-0.02451029652886794,0.0197085420911332,-0.044218838620001144,0.044218838620001144
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Hartmann_joy,Hartmann,0.3448111327830702,0.4822,-0.13738886721692983,0.13738886721692983
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Hartmann_neutral,Hartmann,0.260572475194931,0.4320333333333333,-0.17146085813840234,0.17146085813840234
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Hartmann_disgust,Hartmann,0.0983579564839601,0.0116333333333333,0.0867246231506268,0.0867246231506268
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Hartmann_sadness,Hartmann,0.16971991793252525,0.0151666666666666,0.15455325126585864,0.15455325126585864
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Hartmann_anger,Hartmann,0.030300228251144264,0.0103666666666666,0.019933561584477663,0.019933561584477663
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Hartmann_surprise,Hartmann,0.028469989122822836,0.0454666666666666,-0.016996677543843763,0.016996677543843763
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Hartmann_fear,Hartmann,0.06776832088362424,0.0031,0.06466832088362423,0.06466832088362423
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Savani_joy,Savani,0.4090348216705023,0.796172042687734,-0.3871372210172317,0.3871372210172317
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Savani_love,Savani,0.20101478444412352,0.1395770572707987,0.061437727173324824,0.061437727173324824
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Savani_sadness,Savani,0.3370671574375592,0.0081032028635187,0.32896395457404054,0.32896395457404054
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Savani_fear,Savani,0.0020526032079941996,0.0030402653283089,-0.0009876621203147003,0.0009876621203147003
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Savani_anger,Savani,0.050094513013027545,0.0522916600457392,-0.0021971470327116563,0.0021971470327116563
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Savani_surprise,Savani,0.0007361239433520799,0.0008158253331202,-7.970138976812007e-05,7.970138976812007e-05
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_admiration,GoEmotions,0.04134080093936058,0.0207166666666666,0.02062413427269398,0.02062413427269398
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_amusement,GoEmotions,0.00089559047337384,0.00035,0.00054559047337384,0.00054559047337384
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_anger,GoEmotions,0.0007821108069037601,0.0003166666666666,0.00046544414023716007,0.00046544414023716007
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_annoyance,GoEmotions,0.00108469001715998,0.0351,-0.03401530998284002,0.03401530998284002
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_approval,GoEmotions,0.3774364059325307,0.16185,0.2155864059325307,0.2155864059325307
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_caring,GoEmotions,0.00336847559956364,0.0003166666666666,0.00305180893289704,0.00305180893289704
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_confusion,GoEmotions,0.0024141439236700203,0.00075,0.0016641439236700203,0.0016641439236700203
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_curiosity,GoEmotions,0.00177976483828382,0.0040666666666666,-0.0022869018283827804,0.0022869018283827804
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_desire,GoEmotions,0.004974767705425561,0.0035,0.0014747677054255605,0.0014747677054255605
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_disappointment,GoEmotions,0.00457187083084132,0.0018333333333333,0.00273853749750802,0.00273853749750802
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_disapproval,GoEmotions,0.0030148359248413996,0.0011333333333333,0.0018815025915080996,0.0018815025915080996
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_disgust,GoEmotions,0.0005095544504001,0.0005666666666666,-5.711221626650005e-05,5.711221626650005e-05
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0006532488332595201,0.00015,0.0005032488332595202,0.0005032488332595202
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_excitement,GoEmotions,0.0017997957678744,0.0563333333333333,-0.054533537565458895,0.054533537565458895
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_fear,GoEmotions,0.00112950845796142,0.0013499999999999,-0.00022049154203848003,0.00022049154203848003
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_gratitude,GoEmotions,0.0038375953372451086,0.0003666666666666,0.003470928670578509,0.003470928670578509
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_grief,GoEmotions,0.0017669915512668998,0.0002333333333333,0.0015336582179335998,0.0015336582179335998
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_joy,GoEmotions,0.020553438189381233,0.0019333333333333,0.018620104856047932,0.018620104856047932
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_love,GoEmotions,0.00509098084294234,0.0046833333333333,0.00040764750960904043,0.00040764750960904043
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_nervousness,GoEmotions,0.00124678167048836,0.0005333333333333,0.0007134483371550599,0.0007134483371550599
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_optimism,GoEmotions,0.00726523121120404,0.0031999999999999,0.00406523121120414,0.00406523121120414
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_pride,GoEmotions,0.006360925786429961,0.0063,6.092578642996095e-05,6.092578642996095e-05
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_realization,GoEmotions,0.40991789060644807,0.0275666666666666,0.3823512239397815,0.3823512239397815
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_relief,GoEmotions,0.03922784021269759,0.0006333333333333,0.03859450687936429,0.03859450687936429
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_remorse,GoEmotions,0.0006578232278115601,0.00015,0.0005078232278115601,0.0005078232278115601
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_sadness,GoEmotions,0.01028109822946128,0.0003166666666666,0.00996443156279468,0.00996443156279468
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_surprise,GoEmotions,0.09119405336095948,0.0007166666666666,0.09047738669429288,0.09047738669429288
+01-nomad-eau-de-parfum,01 nomad eau de parfum,GoEmotions_neutral,GoEmotions,0.31758135873824356,0.6850666666666667,-0.36748530792842315,0.36748530792842315
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Cardiff_joy,Cardiff,0.0491740087047219,0.1061666666666666,-0.05699265796194471,0.05699265796194471
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Cardiff_optimism,Cardiff,0.7033830612897873,0.7838166666666666,-0.08043360537687927,0.08043360537687927
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Cardiff_anger,Cardiff,0.10971050262451168,0.0376,0.07211050262451169,0.07211050262451169
+01-nomad-eau-de-parfum,01 nomad eau de parfum,Cardiff_sadness,Cardiff,0.1377324383705854,0.0724,0.0653324383705854,0.0653324383705854
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_anger,NRC,1.4,111.0,-109.6,109.6
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_anticipation,NRC,1.2,264.0,-262.8,262.8
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_disgust,NRC,1.6,163.0,-161.4,161.4
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_fear,NRC,1.4,87.0,-85.6,85.6
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_joy,NRC,2.2,392.0,-389.8,389.8
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_sadness,NRC,1.6,101.0,-99.4,99.4
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_surprise,NRC,0.6,140.0,-139.4,139.4
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_trust,NRC,2.6,509.0,-506.4,506.4
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_positive,NRC,4.0,751.0,-747.0,747.0
+02-owari-eau-de-parfum,02 owari eau de parfum,NRC_negative,NRC,2.4,271.0,-268.6,268.6
+02-owari-eau-de-parfum,02 owari eau de parfum,VAD_valence,VAD,0.16191276165914462,0.168909509273108,-0.006996747613963378,0.006996747613963378
+02-owari-eau-de-parfum,02 owari eau de parfum,VAD_arousal,VAD,-0.13088216579971268,-0.1184993946648114,-0.012382771134901285,0.012382771134901285
+02-owari-eau-de-parfum,02 owari eau de parfum,VAD_dominance,VAD,-0.03498503287423184,0.012735345744659,-0.047720378618890835,0.047720378618890835
+02-owari-eau-de-parfum,02 owari eau de parfum,Hartmann_joy,Hartmann,0.37572677570860835,0.53746,-0.1617332242913917,0.1617332242913917
+02-owari-eau-de-parfum,02 owari eau de parfum,Hartmann_neutral,Hartmann,0.12864872217178341,0.26868,-0.14003127782821656,0.14003127782821656
+02-owari-eau-de-parfum,02 owari eau de parfum,Hartmann_disgust,Hartmann,0.030197794269770362,0.00478,0.025417794269770363,0.025417794269770363
+02-owari-eau-de-parfum,02 owari eau de parfum,Hartmann_sadness,Hartmann,0.05903713456355032,0.0093,0.04973713456355032,0.04973713456355032
+02-owari-eau-de-parfum,02 owari eau de parfum,Hartmann_anger,Hartmann,0.00561058043967928,0.00884,-0.0032294195603207202,0.0032294195603207202
+02-owari-eau-de-parfum,02 owari eau de parfum,Hartmann_surprise,Hartmann,0.20502944509498774,0.1582,0.04682944509498774,0.04682944509498774
+02-owari-eau-de-parfum,02 owari eau de parfum,Hartmann_fear,Hartmann,0.1957495325943455,0.01274,0.1830095325943455,0.1830095325943455
+02-owari-eau-de-parfum,02 owari eau de parfum,Savani_joy,Savani,0.4020445494388696,0.7294910229742527,-0.32744647353538314,0.32744647353538314
+02-owari-eau-de-parfum,02 owari eau de parfum,Savani_love,Savani,0.20011815949110306,0.0868234418099745,0.11329471768112856,0.11329471768112856
+02-owari-eau-de-parfum,02 owari eau de parfum,Savani_sadness,Savani,0.009257286446518218,0.0944520844306679,-0.08519479798414968,0.08519479798414968
+02-owari-eau-de-parfum,02 owari eau de parfum,Savani_fear,Savani,0.24505851891590283,0.0026162183959967,0.24244230051990612,0.24244230051990612
+02-owari-eau-de-parfum,02 owari eau de parfum,Savani_anger,Savani,0.00116080725856586,0.0858643760540871,-0.08470356879552124,0.08470356879552124
+02-owari-eau-de-parfum,02 owari eau de parfum,Savani_surprise,Savani,0.14236065224686167,0.0007528941452619,0.14160775810159978,0.14160775810159978
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_admiration,GoEmotions,0.17800733490148554,0.25823,-0.08022266509851447,0.08022266509851447
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_amusement,GoEmotions,0.00081291498499918,0.0009,-8.708501500082001e-05,8.708501500082001e-05
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_anger,GoEmotions,0.00262712663970884,0.00085,0.0017771266397088401,0.0017771266397088401
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_annoyance,GoEmotions,0.00272355838678774,0.0015699999999999,0.0011535583867878399,0.0011535583867878399
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_approval,GoEmotions,0.10721413772553201,0.12631,-0.019095862274467995,0.019095862274467995
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_caring,GoEmotions,0.00172647144645448,0.00154,0.00018647144645448006,0.00018647144645448006
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_confusion,GoEmotions,0.0034266918082720803,0.18821,-0.18478330819172792,0.18478330819172792
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_curiosity,GoEmotions,0.00636188229545946,0.00145,0.00491188229545946,0.00491188229545946
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_desire,GoEmotions,0.01072448969935062,0.009,0.00172448969935062,0.00172448969935062
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_disappointment,GoEmotions,0.07032888639951122,0.00779,0.06253888639951122,0.06253888639951122
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_disapproval,GoEmotions,0.0034969325119163404,0.00184,0.0016569325119163403,0.0016569325119163403
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_disgust,GoEmotions,0.00084915659390386,0.00035,0.0004991565939038601,0.0004991565939038601
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00369613022776318,0.00059,0.00310613022776318,0.00310613022776318
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_excitement,GoEmotions,0.0033231260778847594,0.1431899999999999,-0.13986687392211514,0.13986687392211514
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_fear,GoEmotions,0.0044448475760873,0.0006799999999999,0.0037648475760874004,0.0037648475760874004
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_gratitude,GoEmotions,0.0042343813576735,0.06597,-0.061735618642326504,0.061735618642326504
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_grief,GoEmotions,0.0035297367547172595,0.0009,0.0026297367547172597,0.0026297367547172597
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_joy,GoEmotions,0.00946961098234166,0.09524,-0.08577038901765835,0.08577038901765835
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_love,GoEmotions,0.011167914424731844,0.06865,-0.057482085575268155,0.057482085575268155
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_nervousness,GoEmotions,0.03403753169113764,0.00107,0.03296753169113764,0.03296753169113764
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_optimism,GoEmotions,0.00227551397401836,0.0031,-0.0008244860259816397,0.0008244860259816397
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_pride,GoEmotions,0.00440293088904578,0.01192,-0.00751706911095422,0.00751706911095422
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_realization,GoEmotions,0.25754796024411913,0.15685,0.10069796024411914,0.10069796024411914
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_relief,GoEmotions,0.04359184010827442,0.00215,0.04144184010827442,0.04144184010827442
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_remorse,GoEmotions,0.00147247354907444,0.0179599999999999,-0.01648752645092546,0.01648752645092546
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_sadness,GoEmotions,0.02588993266108442,0.00415,0.02173993266108442,0.02173993266108442
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_surprise,GoEmotions,0.29773263492679686,0.00124,0.29649263492679684,0.29649263492679684
+02-owari-eau-de-parfum,02 owari eau de parfum,GoEmotions_neutral,GoEmotions,0.31142090503126385,0.27913,0.03229090503126386,0.03229090503126386
+02-owari-eau-de-parfum,02 owari eau de parfum,Cardiff_joy,Cardiff,0.022004648484289603,0.02957,-0.007565351515710396,0.007565351515710396
+02-owari-eau-de-parfum,02 owari eau de parfum,Cardiff_optimism,Cardiff,0.814245593547821,0.89964,-0.085394406452179,0.085394406452179
+02-owari-eau-de-parfum,02 owari eau de parfum,Cardiff_anger,Cardiff,0.10192266926169391,0.03004,0.07188266926169391,0.07188266926169391
+02-owari-eau-de-parfum,02 owari eau de parfum,Cardiff_sadness,Cardiff,0.061827085912227596,0.04074,0.021087085912227597,0.021087085912227597
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_anger,NRC,0.2,7.0,-6.8,6.8
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_anticipation,NRC,2.0,38.0,-36.0,36.0
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_disgust,NRC,0.6,4.0,-3.4,3.4
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_fear,NRC,1.2,4.0,-2.8,2.8
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_joy,NRC,3.0,38.0,-35.0,35.0
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_sadness,NRC,0.4,6.0,-5.6,5.6
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_surprise,NRC,1.0,18.0,-17.0,17.0
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_trust,NRC,3.4,48.0,-44.6,44.6
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_positive,NRC,6.0,74.0,-68.0,68.0
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,NRC_negative,NRC,1.8,26.0,-24.2,24.2
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,VAD_valence,VAD,0.1836505615979057,0.1891496562610455,-0.005499094663139803,0.005499094663139803
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,VAD_arousal,VAD,-0.1506532548308229,-0.1119064281745522,-0.0387468266562707,0.0387468266562707
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,VAD_dominance,VAD,-0.015816561369925458,0.0183631574323393,-0.03417971880226476,0.03417971880226476
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Hartmann_joy,Hartmann,0.3385275247506797,0.0981,0.2404275247506797,0.2404275247506797
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Hartmann_neutral,Hartmann,0.19428479149937627,0.2878666666666666,-0.09358187516729033,0.09358187516729033
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Hartmann_disgust,Hartmann,0.11870345920324324,0.1379,-0.019196540796756756,0.019196540796756756
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Hartmann_sadness,Hartmann,0.02426333483308548,0.0612,-0.03693666516691452,0.03693666516691452
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Hartmann_anger,Hartmann,0.0140627172775566,0.0331666666666666,-0.019103949389110003,0.019103949389110003
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Hartmann_surprise,Hartmann,0.08507120856083925,0.2906333333333333,-0.20556212477249405,0.20556212477249405
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Hartmann_fear,Hartmann,0.22508695079013702,0.0911333333333333,0.13395361745680373,0.13395361745680373
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Savani_joy,Savani,0.4556821826379746,0.259165650815703,0.19651653182227163,0.19651653182227163
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Savani_love,Savani,0.16859200788312587,0.3038855420309119,-0.13529353414778603,0.13529353414778603
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Savani_sadness,Savani,0.005009217769838819,0.0421739294251892,-0.03716471165535038,0.03716471165535038
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Savani_fear,Savani,0.24507835626136507,0.0449727699742652,0.20010558628709987,0.20010558628709987
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Savani_anger,Savani,0.1247890994593035,0.0358369727813017,0.0889521266780018,0.0889521266780018
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Savani_surprise,Savani,0.0008491567423334,0.3139651419575481,-0.3131159852152147,0.3131159852152147
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_admiration,GoEmotions,0.19062004513689312,0.1721,0.01852004513689312,0.01852004513689312
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_amusement,GoEmotions,0.0012607636163010799,0.0008666666666666,0.0003940969496344799,0.0003940969496344799
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_anger,GoEmotions,0.00071280024130822,0.0004833333333333,0.00022946690797492002,0.00022946690797492002
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_annoyance,GoEmotions,0.00287016389775084,0.0012666666666666,0.00160349723108424,0.00160349723108424
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_approval,GoEmotions,0.20609467102913187,0.1632166666666666,0.04287800436246528,0.04287800436246528
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_caring,GoEmotions,0.00128363666590296,0.0006333333333333,0.00065030333256966,0.00065030333256966
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_confusion,GoEmotions,0.00558458451414474,0.00295,0.00263458451414474,0.00263458451414474
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_curiosity,GoEmotions,0.00357837097253644,0.1503833333333333,-0.14680496236079688,0.14680496236079688
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_desire,GoEmotions,0.02653268377180206,0.0313499999999999,-0.004817316228197838,0.004817316228197838
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_disappointment,GoEmotions,0.08847508009057488,0.0012666666666666,0.08720841342390828,0.08720841342390828
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_disapproval,GoEmotions,0.0102094345958903,0.0025333333333333,0.007676101262557001,0.007676101262557001
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_disgust,GoEmotions,0.00102492724545294,0.00045,0.00057492724545294,0.00057492724545294
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00488368268124756,0.0001999999999999,0.0046836826812476605,0.0046836826812476605
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_excitement,GoEmotions,0.0021613545599392997,0.00435,-0.0021886454400607,0.0021886454400607
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_fear,GoEmotions,0.0073717953520826595,0.00045,0.00692179535208266,0.00692179535208266
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_gratitude,GoEmotions,0.0015905702603049,0.1561999999999999,-0.154609429739695,0.154609429739695
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_grief,GoEmotions,0.0021523868956137,0.00015,0.0020023868956137,0.0020023868956137
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_joy,GoEmotions,0.02070929518667976,0.0004666666666666,0.02024262852001316,0.02024262852001316
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_love,GoEmotions,0.15297068445361214,0.03725,0.11572068445361214,0.11572068445361214
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_nervousness,GoEmotions,0.026722244569100384,0.0002833333333333,0.026438911235767085,0.026438911235767085
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_optimism,GoEmotions,0.08620219688164066,0.0058666666666666,0.08033553021497405,0.08033553021497405
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_pride,GoEmotions,0.00161741806659844,0.0007833333333333,0.0008340847332651399,0.0008340847332651399
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_realization,GoEmotions,0.2915367402136326,0.0136999999999999,0.2778367402136327,0.2778367402136327
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_relief,GoEmotions,0.0017947304935659598,0.0003999999999999,0.0013947304935660598,0.0013947304935660598
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_remorse,GoEmotions,0.0010784192709251401,0.0003166666666666,0.0007617526042585401,0.0007617526042585401
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_sadness,GoEmotions,0.01184813511790702,0.0006,0.01124813511790702,0.01124813511790702
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_surprise,GoEmotions,0.00200084971147584,0.1617666666666666,-0.15976581695519074,0.15976581695519074
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,GoEmotions_neutral,GoEmotions,0.3771778424270451,0.4357999999999999,-0.0586221575729548,0.0586221575729548
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Cardiff_joy,Cardiff,0.060762368142604786,0.0464166666666666,0.014345701475938187,0.014345701475938187
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Cardiff_optimism,Cardiff,0.6464906871318817,0.7855833333333333,-0.13909264620145156,0.13909264620145156
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Cardiff_anger,Cardiff,0.15933707654476162,0.0940333333333333,0.06530374321142832,0.06530374321142832
+03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,Cardiff_sadness,Cardiff,0.1334098502993583,0.0740166666666666,0.05939318363269171,0.05939318363269171
+03-century-eau-de-parfum,03 century eau de parfum,NRC_anger,NRC,1.4,66.0,-64.6,64.6
+03-century-eau-de-parfum,03 century eau de parfum,NRC_anticipation,NRC,1.8,173.0,-171.2,171.2
+03-century-eau-de-parfum,03 century eau de parfum,NRC_disgust,NRC,1.2,46.0,-44.8,44.8
+03-century-eau-de-parfum,03 century eau de parfum,NRC_fear,NRC,1.6,49.0,-47.4,47.4
+03-century-eau-de-parfum,03 century eau de parfum,NRC_joy,NRC,3.2,269.0,-265.8,265.8
+03-century-eau-de-parfum,03 century eau de parfum,NRC_sadness,NRC,1.8,55.0,-53.2,53.2
+03-century-eau-de-parfum,03 century eau de parfum,NRC_surprise,NRC,0.8,110.0,-109.2,109.2
+03-century-eau-de-parfum,03 century eau de parfum,NRC_trust,NRC,3.8,334.0,-330.2,330.2
+03-century-eau-de-parfum,03 century eau de parfum,NRC_positive,NRC,5.2,479.0,-473.8,473.8
+03-century-eau-de-parfum,03 century eau de parfum,NRC_negative,NRC,2.2,147.0,-144.8,144.8
+03-century-eau-de-parfum,03 century eau de parfum,VAD_valence,VAD,0.14686817281420764,0.1590875041309742,-0.012219331316766557,0.012219331316766557
+03-century-eau-de-parfum,03 century eau de parfum,VAD_arousal,VAD,-0.13301359029404108,-0.086567774880996,-0.046445815413045086,0.046445815413045086
+03-century-eau-de-parfum,03 century eau de parfum,VAD_dominance,VAD,-0.019643445225084558,0.0492343966582616,-0.06887784188334616,0.06887784188334616
+03-century-eau-de-parfum,03 century eau de parfum,Hartmann_joy,Hartmann,0.1779420567676425,0.2414555555555555,-0.06351349878791301,0.06351349878791301
+03-century-eau-de-parfum,03 century eau de parfum,Hartmann_neutral,Hartmann,0.16088741999119516,0.4299555555555556,-0.26906813556436043,0.26906813556436043
+03-century-eau-de-parfum,03 century eau de parfum,Hartmann_disgust,Hartmann,0.13739523657131936,0.0092333333333333,0.12816190323798607,0.12816190323798607
+03-century-eau-de-parfum,03 century eau de parfum,Hartmann_sadness,Hartmann,0.13028691608924414,0.1280666666666666,0.002220249422577536,0.002220249422577536
+03-century-eau-de-parfum,03 century eau de parfum,Hartmann_anger,Hartmann,0.012851046537980401,0.0133555555555555,-0.0005045090175750996,0.0005045090175750996
+03-century-eau-de-parfum,03 century eau de parfum,Hartmann_surprise,Hartmann,0.20343494829721748,0.1693111111111111,0.03412383718610637,0.03412383718610637
+03-century-eau-de-parfum,03 century eau de parfum,Hartmann_fear,Hartmann,0.1772023475030437,0.0086777777777777,0.168524569725266,0.168524569725266
+03-century-eau-de-parfum,03 century eau de parfum,Savani_joy,Savani,0.6218251455575228,0.9207401275634766,-0.2989149820059538,0.2989149820059538
+03-century-eau-de-parfum,03 century eau de parfum,Savani_love,Savani,0.19992282027378672,0.0059797222816591,0.1939430979921276,0.1939430979921276
+03-century-eau-de-parfum,03 century eau de parfum,Savani_sadness,Savani,0.0018151403171941,0.0039373613156688,-0.0021222209984747,0.0021222209984747
+03-century-eau-de-parfum,03 century eau de parfum,Savani_fear,Savani,0.00308187450864346,0.0020964356582326,0.0009854388504108597,0.0009854388504108597
+03-century-eau-de-parfum,03 century eau de parfum,Savani_anger,Savani,0.0006291013429290401,0.012531791941405,-0.01190269059847596,0.01190269059847596
+03-century-eau-de-parfum,03 century eau de parfum,Savani_surprise,Savani,0.17272591767541595,0.0547145772418136,0.11801134043360235,0.11801134043360235
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_admiration,GoEmotions,0.009591968526365182,0.3478111111111111,-0.33821914258474595,0.33821914258474595
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_amusement,GoEmotions,0.0009547473455313,0.001,-4.525265446870001e-05,4.525265446870001e-05
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_anger,GoEmotions,0.0013235984515631001,0.0013333333333333,-9.734881770199783e-06,9.734881770199783e-06
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_annoyance,GoEmotions,0.0028805010835639597,0.0086888888888888,-0.00580838780532484,0.00580838780532484
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_approval,GoEmotions,0.11799494666047392,0.1433666666666666,-0.025371720006192672,0.025371720006192672
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_caring,GoEmotions,0.00132040111348028,0.0262555555555555,-0.02493515444207522,0.02493515444207522
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_confusion,GoEmotions,0.00736912790453058,0.0013,0.00606912790453058,0.00606912790453058
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_curiosity,GoEmotions,0.06816658920142797,0.0016111111111111,0.06655547809031687,0.06655547809031687
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_desire,GoEmotions,0.009768852626439119,0.0145777777777777,-0.004808925151338581,0.004808925151338581
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_disappointment,GoEmotions,0.021978456876240622,0.0567999999999999,-0.03482154312375928,0.03482154312375928
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_disapproval,GoEmotions,0.0018012111890129,0.0210555555555555,-0.0192543443665426,0.0192543443665426
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_disgust,GoEmotions,0.0007832469127606,0.0006777777777777,0.00010546913498290004,0.00010546913498290004
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0030426568351685397,0.0007999999999999,0.00224265683516864,0.00224265683516864
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_excitement,GoEmotions,0.00371737108798694,0.0123444444444444,-0.00862707335645746,0.00862707335645746
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_fear,GoEmotions,0.0026975535671226,0.0007777777777777,0.0019197757893448999,0.0019197757893448999
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_gratitude,GoEmotions,0.00147969888639632,0.1865333333333333,-0.18505363444693698,0.18505363444693698
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_grief,GoEmotions,0.00105381120229132,0.0007555555555555,0.00029825564673581994,0.00029825564673581994
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_joy,GoEmotions,0.00367537396959954,0.0070888888888888,-0.00341351491928926,0.00341351491928926
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_love,GoEmotions,0.00347411145921792,0.1054,-0.10192588854078208,0.10192588854078208
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_nervousness,GoEmotions,0.037448147818213304,0.0005666666666666,0.036881481151546706,0.036881481151546706
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_optimism,GoEmotions,0.0059864617185666795,0.0555666666666666,-0.04958020494809992,0.04958020494809992
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_pride,GoEmotions,0.00855620874790468,0.0052444444444444,0.0033117643034602804,0.0033117643034602804
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_realization,GoEmotions,0.32058568894863126,0.0271333333333333,0.293452355615298,0.293452355615298
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_relief,GoEmotions,0.02835304611362512,0.0145777777777777,0.01377526833584742,0.01377526833584742
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_remorse,GoEmotions,0.00083549369592218,0.0016222222222222,-0.00078672852630002,0.00078672852630002
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_sadness,GoEmotions,0.0034610989328939003,0.0340111111111111,-0.030550012178217203,0.030550012178217203
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_surprise,GoEmotions,0.19956715818261725,0.1021555555555555,0.09741160262706175,0.09741160262706175
+03-century-eau-de-parfum,03 century eau de parfum,GoEmotions_neutral,GoEmotions,0.4435436652973294,0.3133222222222222,0.1302214430751072,0.1302214430751072
+03-century-eau-de-parfum,03 century eau de parfum,Cardiff_joy,Cardiff,0.02300115339457982,0.0498,-0.026798846605420177,0.026798846605420177
+03-century-eau-de-parfum,03 century eau de parfum,Cardiff_optimism,Cardiff,0.7219253420829773,0.7419222222222221,-0.019996880139244833,0.019996880139244833
+03-century-eau-de-parfum,03 century eau de parfum,Cardiff_anger,Cardiff,0.16142349839210507,0.0477,0.11372349839210508,0.11372349839210508
+03-century-eau-de-parfum,03 century eau de parfum,Cardiff_sadness,Cardiff,0.09364999011158938,0.1605777777777778,-0.06692778766618841,0.06692778766618841
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_anger,NRC,0.2,116.0,-115.8,115.8
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_anticipation,NRC,1.2,308.0,-306.8,306.8
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_disgust,NRC,0.4,126.0,-125.6,125.6
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_fear,NRC,0.6,111.0,-110.4,110.4
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_joy,NRC,1.4,712.0,-710.6,710.6
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_sadness,NRC,0.6,89.0,-88.4,88.4
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_surprise,NRC,0.2,151.0,-150.8,150.8
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_trust,NRC,1.8,653.0,-651.2,651.2
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_positive,NRC,3.0,1114.0,-1111.0,1111.0
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,NRC_negative,NRC,1.0,314.0,-313.0,313.0
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,VAD_valence,VAD,0.20837367583302363,0.1866554683792509,0.02171820745377273,0.02171820745377273
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,VAD_arousal,VAD,-0.15264932367149756,-0.1136657102996542,-0.03898361337184336,0.03898361337184336
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,VAD_dominance,VAD,-0.0062440226681531015,0.031556270338373,-0.037800293006526105,0.037800293006526105
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Hartmann_joy,Hartmann,0.5163732873275876,0.3585333333333333,0.15783995399425427,0.15783995399425427
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Hartmann_neutral,Hartmann,0.06860769465565679,0.3963666666666667,-0.3277589720110099,0.3277589720110099
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Hartmann_disgust,Hartmann,0.00733252470381552,0.0072166666666666,0.00011585803714892016,0.00011585803714892016
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Hartmann_sadness,Hartmann,0.00905356169678268,0.0105333333333333,-0.0014797716365506208,0.0014797716365506208
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Hartmann_anger,Hartmann,0.0028541831299662397,0.0142166666666666,-0.01136248353670036,0.01136248353670036
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Hartmann_surprise,Hartmann,0.011094918404705782,0.0544833333333333,-0.04338841492862752,0.04338841492862752
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Hartmann_fear,Hartmann,0.38468382541323076,0.15865,0.22603382541323075,0.22603382541323075
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Savani_joy,Savani,0.787994147563586,0.8258842810367545,-0.0378901334731685,0.0378901334731685
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Savani_love,Savani,0.00586977822531472,0.0069399207277455,-0.0010701425024307798,0.0010701425024307798
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Savani_sadness,Savani,0.00103671301621938,0.0137728580618082,-0.01273614504558882,0.01273614504558882
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Savani_fear,Savani,0.20301513716694894,0.0013389839574907,0.20167615320945823,0.20167615320945823
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Savani_anger,Savani,0.00157829360978208,0.151604638454349,-0.15002634484456692,0.15002634484456692
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Savani_surprise,Savani,0.00050588194862934,0.0004593069970723,4.657495155704005e-05,4.657495155704005e-05
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_admiration,GoEmotions,0.18239562368253243,0.3316,-0.14920437631746758,0.14920437631746758
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_amusement,GoEmotions,0.00076923869783054,0.0007499999999999,1.9238697830639933e-05,1.9238697830639933e-05
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_anger,GoEmotions,0.00098203312372784,0.0003,0.0006820331237278401,0.0006820331237278401
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_annoyance,GoEmotions,0.00313634821795854,0.0014833333333333,0.0016530148846252398,0.0016530148846252398
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_approval,GoEmotions,0.12663278125692154,0.2681833333333333,-0.14155055207641173,0.14155055207641173
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_caring,GoEmotions,0.00108993731555524,0.0004833333333333,0.0006066039822219399,0.0006066039822219399
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_confusion,GoEmotions,0.0026450402801856,0.0015333333333333,0.0011117069468523,0.0011117069468523
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_curiosity,GoEmotions,0.005197362881153781,0.0018499999999999,0.0033473628811538808,0.0033473628811538808
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_desire,GoEmotions,0.0093961998005397,0.0639833333333333,-0.0545871335327936,0.0545871335327936
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_disappointment,GoEmotions,0.07980072374921289,0.0032166666666666,0.07658405708254629,0.07658405708254629
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_disapproval,GoEmotions,0.0034502397931646,0.0244,-0.0209497602068354,0.0209497602068354
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_disgust,GoEmotions,0.00091329491697246,0.0006333333333333,0.00027996158363916,0.00027996158363916
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00306815447402182,0.00015,0.00291815447402182,0.00291815447402182
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_excitement,GoEmotions,0.00234081093803974,0.0227499999999999,-0.02040918906196016,0.02040918906196016
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_fear,GoEmotions,0.005955903558060459,0.0071166666666666,-0.001160763108606141,0.001160763108606141
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_gratitude,GoEmotions,0.00108113106834928,0.1246666666666666,-0.12358553559831732,0.12358553559831732
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_grief,GoEmotions,0.0012767581094521399,0.00015,0.00112675810945214,0.00112675810945214
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_joy,GoEmotions,0.1812436957552563,0.0021,0.17914369575525632,0.17914369575525632
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_love,GoEmotions,0.0017916124896145999,0.0140333333333333,-0.0122417208437187,0.0122417208437187
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_nervousness,GoEmotions,0.030516004812670815,0.0011833333333333,0.029332671479337515,0.029332671479337515
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_optimism,GoEmotions,0.0014928066753782,0.0066833333333333,-0.0051905266579551,0.0051905266579551
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_pride,GoEmotions,0.0020308456558268,0.0010666666666666,0.0009641789891601999,0.0009641789891601999
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_realization,GoEmotions,0.09433555267751212,0.0152,0.07913555267751211,0.07913555267751211
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_relief,GoEmotions,0.00369906579726368,0.0003833333333333,0.0033157324639303803,0.0033157324639303803
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_remorse,GoEmotions,0.0007538126752478399,0.0002833333333333,0.0004704793419145399,0.0004704793419145399
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_sadness,GoEmotions,0.00354472329490816,0.00035,0.00319472329490816,0.00319472329490816
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_surprise,GoEmotions,0.001485705259256,0.0003166666666666,0.0011690385925894001,0.0011690385925894001
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,GoEmotions_neutral,GoEmotions,0.6145331575535238,0.3041833333333333,0.3103498242201905,0.3103498242201905
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Cardiff_joy,Cardiff,0.02930807247757906,0.0460833333333333,-0.016775260855754242,0.016775260855754242
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Cardiff_optimism,Cardiff,0.6570620357990264,0.7558666666666666,-0.09880463086764013,0.09880463086764013
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Cardiff_anger,Cardiff,0.182832059264183,0.0559833333333333,0.1268487259308497,0.1268487259308497
+08-seylon-eau-de-parfum,08 - seylon eau de parfum,Cardiff_sadness,Cardiff,0.13079780563712115,0.1420833333333333,-0.011285527696212161,0.011285527696212161
+100-love-eau-de-parfum,100% love eau de parfum,NRC_anger,NRC,0.4,11.0,-10.6,10.6
+100-love-eau-de-parfum,100% love eau de parfum,NRC_anticipation,NRC,1.8,13.0,-11.2,11.2
+100-love-eau-de-parfum,100% love eau de parfum,NRC_disgust,NRC,0.6,7.0,-6.4,6.4
+100-love-eau-de-parfum,100% love eau de parfum,NRC_fear,NRC,1.0,5.0,-4.0,4.0
+100-love-eau-de-parfum,100% love eau de parfum,NRC_joy,NRC,3.2,26.0,-22.8,22.8
+100-love-eau-de-parfum,100% love eau de parfum,NRC_sadness,NRC,0.8,5.0,-4.2,4.2
+100-love-eau-de-parfum,100% love eau de parfum,NRC_surprise,NRC,1.0,10.0,-9.0,9.0
+100-love-eau-de-parfum,100% love eau de parfum,NRC_trust,NRC,2.8,21.0,-18.2,18.2
+100-love-eau-de-parfum,100% love eau de parfum,NRC_positive,NRC,6.2,35.0,-28.8,28.8
+100-love-eau-de-parfum,100% love eau de parfum,NRC_negative,NRC,1.4,17.0,-15.6,15.6
+100-love-eau-de-parfum,100% love eau de parfum,VAD_valence,VAD,0.1903435386265799,0.1642183345362064,0.0261252040903735,0.0261252040903735
+100-love-eau-de-parfum,100% love eau de parfum,VAD_arousal,VAD,-0.16156124718299755,-0.0954568177377147,-0.06610442944528286,0.06610442944528286
+100-love-eau-de-parfum,100% love eau de parfum,VAD_dominance,VAD,-0.0439138264471091,0.02469966442294,-0.0686134908700491,0.0686134908700491
+100-love-eau-de-parfum,100% love eau de parfum,Hartmann_joy,Hartmann,0.35961424876004455,0.23982,0.11979424876004455,0.11979424876004455
+100-love-eau-de-parfum,100% love eau de parfum,Hartmann_neutral,Hartmann,0.3456430912017822,0.45844,-0.1127969087982178,0.1127969087982178
+100-love-eau-de-parfum,100% love eau de parfum,Hartmann_disgust,Hartmann,0.1197254298254847,0.1320599999999999,-0.012334570174515197,0.012334570174515197
+100-love-eau-de-parfum,100% love eau de parfum,Hartmann_sadness,Hartmann,0.07680696058087048,0.0401,0.03670696058087049,0.03670696058087049
+100-love-eau-de-parfum,100% love eau de parfum,Hartmann_anger,Hartmann,0.0238656006753444,0.0299599999999999,-0.006094399324655501,0.006094399324655501
+100-love-eau-de-parfum,100% love eau de parfum,Hartmann_surprise,Hartmann,0.04091072166338559,0.0936999999999999,-0.05278927833661431,0.05278927833661431
+100-love-eau-de-parfum,100% love eau de parfum,Hartmann_fear,Hartmann,0.03343396724667394,0.00592,0.02751396724667394,0.02751396724667394
+100-love-eau-de-parfum,100% love eau de parfum,Savani_joy,Savani,0.7638611555565149,0.6733523696660996,0.09050878589041533,0.09050878589041533
+100-love-eau-de-parfum,100% love eau de parfum,Savani_love,Savani,0.20342739776242524,0.0100268883164971,0.19340050944592815,0.19340050944592815
+100-love-eau-de-parfum,100% love eau de parfum,Savani_sadness,Savani,0.0031023760151583204,0.0857197095989249,-0.08261733358376658,0.08261733358376658
+100-love-eau-de-parfum,100% love eau de parfum,Savani_fear,Savani,0.005427272894303259,0.008038277644664,-0.00261100475036074,0.00261100475036074
+100-love-eau-de-parfum,100% love eau de parfum,Savani_anger,Savani,0.02365829650661904,0.2216705551429185,-0.19801225863629945,0.19801225863629945
+100-love-eau-de-parfum,100% love eau de parfum,Savani_surprise,Savani,0.00052350403711894,0.0011921925703063,-0.0006686885331873599,0.0006686885331873599
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_admiration,GoEmotions,0.14380872240290044,0.3083599999999999,-0.16455127759709948,0.16455127759709948
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_amusement,GoEmotions,0.00017413861787642687,0.0334,-0.03322586138212357,0.03322586138212357
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_anger,GoEmotions,0.00098222986562174,0.0004,0.00058222986562174,0.00058222986562174
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_annoyance,GoEmotions,0.004066110472194779,0.05958,-0.05551388952780522,0.05551388952780522
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_approval,GoEmotions,0.2685835972428322,0.16392,0.1046635972428322,0.1046635972428322
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_caring,GoEmotions,0.0017131587315815998,0.00224,-0.0005268412684184,0.0005268412684184
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_confusion,GoEmotions,0.00128570675151418,0.0035,-0.00221429324848582,0.00221429324848582
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_curiosity,GoEmotions,0.0008703795727341999,0.00118,-0.00030962042726580014,0.00030962042726580014
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_desire,GoEmotions,0.13068707846105096,0.00346,0.12722707846105097,0.12722707846105097
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_disappointment,GoEmotions,0.00483972986694418,0.00366,0.0011797298669441797,0.0011797298669441797
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_disapproval,GoEmotions,0.00245320855174208,0.0067599999999999,-0.00430679144825782,0.00430679144825782
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_disgust,GoEmotions,0.00038399828772522,0.00172,-0.00133600171227478,0.00133600171227478
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0005318380426615258,0.00044,9.183804266152574e-05,9.183804266152574e-05
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_excitement,GoEmotions,0.0019072023802436402,0.00078,0.0011272023802436403,0.0011272023802436403
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_fear,GoEmotions,0.00062882868805896,0.0003399999999999,0.00028882868805905996,0.00028882868805905996
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_gratitude,GoEmotions,0.00116380562540138,0.00028,0.00088380562540138,0.00088380562540138
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_grief,GoEmotions,0.00070422975695686,0.00016,0.0005442297569568601,0.0005442297569568601
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_joy,GoEmotions,0.00824143660138356,0.00156,0.006681436601383561,0.006681436601383561
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_love,GoEmotions,0.5196497604250908,0.1606,0.35904976042509085,0.35904976042509085
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_nervousness,GoEmotions,0.00110161397606128,0.0003199999999999,0.00078161397606138,0.00078161397606138
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_optimism,GoEmotions,0.00522014652378852,0.0078,-0.00257985347621148,0.00257985347621148
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_pride,GoEmotions,0.00400159293785686,0.00068,0.00332159293785686,0.00332159293785686
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_realization,GoEmotions,0.17324396939948197,0.00364,0.16960396939948197,0.16960396939948197
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_relief,GoEmotions,0.000977292493917,0.00038,0.000597292493917,0.000597292493917
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_remorse,GoEmotions,0.00056379976449528,0.00092,-0.00035620023550472,0.00035620023550472
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_sadness,GoEmotions,0.0024759020190685396,0.00054,0.0019359020190685395,0.0019359020190685395
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_surprise,GoEmotions,0.0007482939923647,0.00016,0.0005882939923647,0.0005882939923647
+100-love-eau-de-parfum,100% love eau de parfum,GoEmotions_neutral,GoEmotions,0.15194637626409527,0.56886,-0.4169136237359048,0.4169136237359048
+100-love-eau-de-parfum,100% love eau de parfum,Cardiff_joy,Cardiff,0.02331561092287296,0.14918,-0.12586438907712705,0.12586438907712705
+100-love-eau-de-parfum,100% love eau de parfum,Cardiff_optimism,Cardiff,0.8506213665008545,0.68962,0.1610013665008545,0.1610013665008545
+100-love-eau-de-parfum,100% love eau de parfum,Cardiff_anger,Cardiff,0.08288464844226831,0.05094,0.03194464844226831,0.03194464844226831
+100-love-eau-de-parfum,100% love eau de parfum,Cardiff_sadness,Cardiff,0.0431783907115459,0.11026,-0.0670816092884541,0.0670816092884541
+1499-eau-de-parfum,1499 eau de parfum,NRC_anger,NRC,0.2,2.0,-1.8,1.8
+1499-eau-de-parfum,1499 eau de parfum,NRC_anticipation,NRC,1.8,4.0,-2.2,2.2
+1499-eau-de-parfum,1499 eau de parfum,NRC_disgust,NRC,0.4,1.0,-0.6,0.6
+1499-eau-de-parfum,1499 eau de parfum,NRC_fear,NRC,0.8,1.0,-0.19999999999999996,0.19999999999999996
+1499-eau-de-parfum,1499 eau de parfum,NRC_joy,NRC,2.6,7.0,-4.4,4.4
+1499-eau-de-parfum,1499 eau de parfum,NRC_sadness,NRC,0.6,0.0,0.6,0.6
+1499-eau-de-parfum,1499 eau de parfum,NRC_surprise,NRC,1.2,3.0,-1.8,1.8
+1499-eau-de-parfum,1499 eau de parfum,NRC_trust,NRC,3.0,6.0,-3.0,3.0
+1499-eau-de-parfum,1499 eau de parfum,NRC_positive,NRC,4.8,9.0,-4.2,4.2
+1499-eau-de-parfum,1499 eau de parfum,NRC_negative,NRC,0.6,3.0,-2.4,2.4
+1499-eau-de-parfum,1499 eau de parfum,VAD_valence,VAD,0.21598971079387824,0.1921106565656565,0.02387905422822173,0.02387905422822173
+1499-eau-de-parfum,1499 eau de parfum,VAD_arousal,VAD,-0.1723995910832033,-0.0574645454545454,-0.11493504562865789,0.11493504562865789
+1499-eau-de-parfum,1499 eau de parfum,VAD_dominance,VAD,-0.028992498646745517,0.0474932828282828,-0.07648578147502832,0.07648578147502832
+1499-eau-de-parfum,1499 eau de parfum,Hartmann_joy,Hartmann,0.29434001687914135,0.234125,0.06021501687914135,0.06021501687914135
+1499-eau-de-parfum,1499 eau de parfum,Hartmann_neutral,Hartmann,0.23801424801349635,0.5015,-0.2634857519865036,0.2634857519865036
+1499-eau-de-parfum,1499 eau de parfum,Hartmann_disgust,Hartmann,0.11236277800053351,0.021625,0.09073777800053351,0.09073777800053351
+1499-eau-de-parfum,1499 eau de parfum,Hartmann_sadness,Hartmann,0.09837829046882687,0.0205249999999999,0.07785329046882697,0.07785329046882697
+1499-eau-de-parfum,1499 eau de parfum,Hartmann_anger,Hartmann,0.024216563301160884,0.0094,0.014816563301160884,0.014816563301160884
+1499-eau-de-parfum,1499 eau de parfum,Hartmann_surprise,Hartmann,0.05701347475405778,0.208775,-0.15176152524594222,0.15176152524594222
+1499-eau-de-parfum,1499 eau de parfum,Hartmann_fear,Hartmann,0.1756746400613337,0.0040999999999999,0.1715746400613338,0.1715746400613338
+1499-eau-de-parfum,1499 eau de parfum,Savani_joy,Savani,0.5750921389320865,0.78483647108078,-0.20974433214869348,0.20974433214869348
+1499-eau-de-parfum,1499 eau de parfum,Savani_love,Savani,0.2257842351566069,0.2100915170376538,0.015692718118953092,0.015692718118953092
+1499-eau-de-parfum,1499 eau de parfum,Savani_sadness,Savani,0.18311097514815625,0.0013015372969675,0.18180943785118875,0.18180943785118875
+1499-eau-de-parfum,1499 eau de parfum,Savani_fear,Savani,0.0012394720455630999,0.0006672093077213,0.0005722627378417998,0.0005722627378417998
+1499-eau-de-parfum,1499 eau de parfum,Savani_anger,Savani,0.01401990897720674,0.0015094428745214,0.01251046610268534,0.01251046610268534
+1499-eau-de-parfum,1499 eau de parfum,Savani_surprise,Savani,0.0007532466261181601,0.0015937833377392,-0.0008405367116210399,0.0008405367116210399
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_admiration,GoEmotions,0.2612264959607273,0.2508,0.010426495960727256,0.010426495960727256
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_amusement,GoEmotions,0.00082533669483378,0.0007,0.00012533669483378,0.00012533669483378
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_anger,GoEmotions,0.00057092740898948,0.001725,-0.00115407259101052,0.00115407259101052
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_annoyance,GoEmotions,0.00169928162358698,0.003875,-0.0021757183764130198,0.0021757183764130198
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_approval,GoEmotions,0.39147328643593937,0.0814,0.31007328643593934,0.31007328643593934
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_caring,GoEmotions,0.00271856319159264,0.00035,0.00236856319159264,0.00236856319159264
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_confusion,GoEmotions,0.00276783765293654,0.04255,-0.03978216234706346,0.03978216234706346
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_curiosity,GoEmotions,0.014345212810439939,0.00665,0.007695212810439939,0.007695212810439939
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_desire,GoEmotions,0.01800122570712116,0.0002,0.01780122570712116,0.01780122570712116
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_disappointment,GoEmotions,0.08875038567930457,0.00065,0.08810038567930457,0.08810038567930457
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_disapproval,GoEmotions,0.007929876260459361,0.0141,-0.006170123739540638,0.006170123739540638
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_disgust,GoEmotions,0.0007132016413379,0.031325,-0.0306117983586621,0.0306117983586621
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00087848194234534,0.00025,0.00062848194234534,0.00062848194234534
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_excitement,GoEmotions,0.00420682635740374,0.0004,0.0038068263574037395,0.0038068263574037395
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_fear,GoEmotions,0.0057444808771833404,0.001475,0.004269480877183341,0.004269480877183341
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_gratitude,GoEmotions,0.00115820456412616,0.000575,0.00058320456412616,0.00058320456412616
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_grief,GoEmotions,0.00144487292272966,0.00015,0.0012948729227296601,0.0012948729227296601
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_joy,GoEmotions,0.005517354396579294,0.00035,0.0051673543965792944,0.0051673543965792944
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_love,GoEmotions,0.0019623898202552796,0.000675,0.0012873898202552796,0.0012873898202552796
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_nervousness,GoEmotions,0.0028868390305433,0.000125,0.0027618390305433,0.0027618390305433
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_optimism,GoEmotions,0.0033634910359978203,0.0004,0.00296349103599782,0.00296349103599782
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_pride,GoEmotions,0.02561743699479844,0.000325,0.02529243699479844,0.02529243699479844
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_realization,GoEmotions,0.2745707094669342,0.004175,0.2703957094669342,0.2703957094669342
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_relief,GoEmotions,0.022762419650098262,0.00015,0.02261241965009826,0.02261241965009826
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_remorse,GoEmotions,0.00141389034688468,0.000175,0.00123889034688468,0.00123889034688468
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_sadness,GoEmotions,0.008437935967231119,0.00025,0.008187935967231118,0.008187935967231118
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_surprise,GoEmotions,0.0106484738644212,0.00025,0.0103984738644212,0.0103984738644212
+1499-eau-de-parfum,1499 eau de parfum,GoEmotions_neutral,GoEmotions,0.25143475988879793,0.57035,-0.3189152401112021,0.3189152401112021
+1499-eau-de-parfum,1499 eau de parfum,Cardiff_joy,Cardiff,0.036230322346091234,0.1119999999999999,-0.07576967765390867,0.07576967765390867
+1499-eau-de-parfum,1499 eau de parfum,Cardiff_optimism,Cardiff,0.7631683588027954,0.733425,0.02974335880279544,0.02974335880279544
+1499-eau-de-parfum,1499 eau de parfum,Cardiff_anger,Cardiff,0.12518654912710184,0.10055,0.024636549127101837,0.024636549127101837
+1499-eau-de-parfum,1499 eau de parfum,Cardiff_sadness,Cardiff,0.07541481703519817,0.05405,0.021364817035198172,0.021364817035198172
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_anger,NRC,0.2,94.0,-93.8,93.8
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_anticipation,NRC,1.6,174.0,-172.4,172.4
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_disgust,NRC,0.6,52.0,-51.4,51.4
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_fear,NRC,0.8,54.0,-53.2,53.2
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_joy,NRC,1.0,236.0,-235.0,235.0
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_sadness,NRC,0.4,42.0,-41.6,41.6
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_surprise,NRC,0.6,85.0,-84.4,84.4
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_trust,NRC,1.2,293.0,-291.8,291.8
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_positive,NRC,3.2,435.0,-431.8,431.8
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,NRC_negative,NRC,1.2,138.0,-136.8,136.8
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,VAD_valence,VAD,0.19783630600820698,0.1661671102383105,0.03166919576989649,0.03166919576989649
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,VAD_arousal,VAD,-0.14525147299508995,-0.1094095380745582,-0.035841934920531754,0.035841934920531754
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,VAD_dominance,VAD,0.003048382907564218,0.030132459779269,-0.027084076871704783,0.027084076871704783
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Hartmann_joy,Hartmann,0.3992730147670954,0.2600699999999999,0.1392030147670955,0.1392030147670955
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Hartmann_neutral,Hartmann,0.2344577651470899,0.50018,-0.26572223485291,0.26572223485291
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Hartmann_disgust,Hartmann,0.021070923469960662,0.01751,0.0035609234699606612,0.0035609234699606612
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Hartmann_sadness,Hartmann,0.01129851345904168,0.01237,-0.0010714865409583215,0.0010714865409583215
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Hartmann_anger,Hartmann,0.012330748559907019,0.02248,-0.010149251440092981,0.010149251440092981
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Hartmann_surprise,Hartmann,0.06867883917875583,0.15825,-0.08957116082124417,0.08957116082124417
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Hartmann_fear,Hartmann,0.25289014917798336,0.02915,0.22374014917798335,0.22374014917798335
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Savani_joy,Savani,0.5853426277695689,0.7045012256130576,-0.1191585978434887,0.1191585978434887
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Savani_love,Savani,0.007597283940412999,0.069837438018294,-0.062240154077881006,0.062240154077881006
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Savani_sadness,Savani,0.1363638284616172,0.0828739887016126,0.05348983976000461,0.05348983976000461
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Savani_fear,Savani,0.2189381887495983,0.003132731415826,0.2158054573337723,0.2158054573337723
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Savani_anger,Savani,0.05084175537340337,0.11566625610576,-0.06482450073235663,0.06482450073235663
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Savani_surprise,Savani,0.00091636551951518,0.0239883678310433,-0.02307200231152812,0.02307200231152812
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_admiration,GoEmotions,0.1861960679874755,0.30206,-0.11586393201252448,0.11586393201252448
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_amusement,GoEmotions,0.0020632095634937004,0.00124,0.0008232095634937004,0.0008232095634937004
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_anger,GoEmotions,0.0006626478629186435,0.00031,0.0003526478629186435,0.0003526478629186435
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_annoyance,GoEmotions,0.0040351860923692005,0.0006799999999999,0.0033551860923693006,0.0033551860923693006
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_approval,GoEmotions,0.014938603516202378,0.16235,-0.1474113964837976,0.1474113964837976
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_caring,GoEmotions,0.00166051681153472,0.0008399999999999,0.00082051681153482,0.00082051681153482
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_confusion,GoEmotions,0.0028716469649224803,0.00349,-0.0006183530350775198,0.0006183530350775198
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_curiosity,GoEmotions,0.006172996951499901,0.10063,-0.09445700304850009,0.09445700304850009
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_desire,GoEmotions,0.05257759296800938,0.00686,0.04571759296800938,0.04571759296800938
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_disappointment,GoEmotions,0.056454121874412455,0.00107,0.055384121874412454,0.055384121874412454
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_disapproval,GoEmotions,0.007362716668285379,0.0011099999999999,0.006252716668285479,0.006252716668285479
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_disgust,GoEmotions,0.0010751910245743999,0.0004199999999999,0.0006551910245744998,0.0006551910245744998
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0026788251998368213,0.00027,0.0024088251998368214,0.0024088251998368214
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_excitement,GoEmotions,0.00228726032655682,0.10415,-0.10186273967344318,0.10186273967344318
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_fear,GoEmotions,0.012748970880056679,0.00069,0.012058970880056679,0.012058970880056679
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_gratitude,GoEmotions,0.0009452644153497751,0.09204,-0.09109473558465023,0.09109473558465023
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_grief,GoEmotions,0.0014972529286751,0.0003,0.0011972529286751001,0.0011972529286751001
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_joy,GoEmotions,0.16698974840110165,0.02448,0.14250974840110164,0.14250974840110164
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_love,GoEmotions,0.00226640477194444,0.08352,-0.08125359522805556,0.08125359522805556
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_nervousness,GoEmotions,0.03225165655312588,0.00044,0.03181165655312588,0.03181165655312588
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_optimism,GoEmotions,0.0040142595651558996,0.00349,0.0005242595651558995,0.0005242595651558995
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_pride,GoEmotions,0.0033383566536940197,0.0025,0.0008383566536940197,0.0008383566536940197
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_realization,GoEmotions,0.1922058695927262,0.10114,0.09106586959272621,0.09106586959272621
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_relief,GoEmotions,0.02792484897363462,0.003,0.02492484897363462,0.02492484897363462
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_remorse,GoEmotions,0.00110373733623414,0.00045,0.00065373733623414,0.00065373733623414
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_sadness,GoEmotions,0.006786489783553359,0.00046,0.006326489783553359,0.006326489783553359
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_surprise,GoEmotions,0.0010770380380562801,0.00091,0.00016703803805628013,0.00016703803805628013
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,GoEmotions_neutral,GoEmotions,0.6250821396708488,0.32589,0.2991921396708488,0.2991921396708488
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Cardiff_joy,Cardiff,0.02700894027948374,0.01512,0.01188894027948374,0.01188894027948374
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Cardiff_optimism,Cardiff,0.8111571073532104,0.94052,-0.12936289264678957,0.12936289264678957
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Cardiff_anger,Cardiff,0.09955725520849226,0.0310599999999999,0.06849725520849237,0.06849725520849237
+1725-casanova-eau-de-parfum,1725 casanova eau de parfum,Cardiff_sadness,Cardiff,0.062276724725961644,0.01328,0.04899672472596164,0.04899672472596164
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_anger,NRC,1.6,116.0,-114.4,114.4
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_anticipation,NRC,1.6,212.0,-210.4,210.4
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_disgust,NRC,1.8,113.0,-111.2,111.2
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_fear,NRC,2.2,87.0,-84.8,84.8
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_joy,NRC,2.6,252.0,-249.4,249.4
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_sadness,NRC,1.6,79.0,-77.4,77.4
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_surprise,NRC,0.6,119.0,-118.4,118.4
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_trust,NRC,2.4,329.0,-326.6,326.6
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_positive,NRC,5.8,598.0,-592.2,592.2
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,NRC_negative,NRC,2.4,209.0,-206.6,206.6
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,VAD_valence,VAD,0.1431889580045677,0.1431960685190665,-7.110514498781528e-06,7.110514498781528e-06
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,VAD_arousal,VAD,-0.11357834801542115,-0.0915502017929161,-0.02202814622250504,0.02202814622250504
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,VAD_dominance,VAD,-0.02986284439650292,0.0320098483087803,-0.06187269270528322,0.06187269270528322
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Hartmann_joy,Hartmann,0.2000474638305604,0.2120875,-0.012040036169439605,0.012040036169439605
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Hartmann_neutral,Hartmann,0.20940021127462388,0.300375,-0.09097478872537612,0.09097478872537612
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Hartmann_disgust,Hartmann,0.25375829357653856,0.0099,0.24385829357653857,0.24385829357653857
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Hartmann_sadness,Hartmann,0.12545293150469655,0.1580875,-0.03263456849530344,0.03263456849530344
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Hartmann_anger,Hartmann,0.012343584094196522,0.0060875,0.0062560840941965215,0.0062560840941965215
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Hartmann_surprise,Hartmann,0.0140481597743928,0.3054875,-0.29143934022560725,0.29143934022560725
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Hartmann_fear,Hartmann,0.18494934416376052,0.0079375,0.17701184416376053,0.17701184416376053
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Savani_joy,Savani,0.8107431724667549,0.741747067309916,0.06899610515683885,0.06899610515683885
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Savani_love,Savani,0.00080775690730656,0.1231750299011764,-0.12236727299386985,0.12236727299386985
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Savani_sadness,Savani,0.16437154167215337,0.1190499776639626,0.045321564008190776,0.045321564008190776
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Savani_fear,Savani,0.00111047140089788,0.0011956209473282,-8.51495464303199e-05,8.51495464303199e-05
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Savani_anger,Savani,0.02211086062598038,0.0033384119451511,0.018772448680829282,0.018772448680829282
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Savani_surprise,Savani,0.00085618611774402,0.0114938990409427,-0.010637712923198681,0.010637712923198681
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_admiration,GoEmotions,0.1390844006251427,0.1388125,0.00027190062514270696,0.00027190062514270696
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_amusement,GoEmotions,0.00100528646726156,0.0019125,-0.00090721353273844,0.00090721353273844
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_anger,GoEmotions,0.0008922613866161,0.000775,0.00011726138661610004,0.00011726138661610004
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_annoyance,GoEmotions,0.005272067640908,0.0020125,0.0032595676409080004,0.0032595676409080004
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_approval,GoEmotions,0.01913202892756084,0.132,-0.11286797107243916,0.11286797107243916
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_caring,GoEmotions,0.00420150257996278,0.001175,0.0030265025799627804,0.0030265025799627804
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_confusion,GoEmotions,0.00304754134267562,0.001875,0.0011725413426756201,0.0011725413426756201
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_curiosity,GoEmotions,0.0012540240772068,0.0184375,-0.0171834759227932,0.0171834759227932
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_desire,GoEmotions,0.0032201406196690403,0.003375,-0.00015485938033095968,0.00015485938033095968
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_disappointment,GoEmotions,0.3052490379661321,0.025675,0.2795740379661321,0.2795740379661321
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_disapproval,GoEmotions,0.008386562007945,0.0472874999999999,-0.0389009379920549,0.0389009379920549
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_disgust,GoEmotions,0.00108172812033438,0.00195,-0.00086827187966562,0.00086827187966562
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0009349782310891201,0.0003625,0.0005724782310891201,0.0005724782310891201
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_excitement,GoEmotions,0.00042003272974394006,0.14775,-0.14732996727025605,0.14732996727025605
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_fear,GoEmotions,0.00420132367871696,0.0006875,0.0035138236787169604,0.0035138236787169604
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_gratitude,GoEmotions,0.00037043658085162,0.0156,-0.015229563419148379,0.015229563419148379
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_grief,GoEmotions,0.014623833168297939,0.0008125,0.013811333168297938,0.013811333168297938
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_joy,GoEmotions,0.00220590975950468,0.017925,-0.01571909024049532,0.01571909024049532
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_love,GoEmotions,0.0005928260303335001,0.004375,-0.0037821739696665005,0.0037821739696665005
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_nervousness,GoEmotions,0.00518477507866914,0.001275,0.00390977507866914,0.00390977507866914
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_optimism,GoEmotions,0.0048356518382205995,0.00265,0.0021856518382205995,0.0021856518382205995
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_pride,GoEmotions,0.00171698376070702,0.00255,-0.0008330162392929802,0.0008330162392929802
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_realization,GoEmotions,0.07926517836749547,0.01475,0.06451517836749547,0.06451517836749547
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_relief,GoEmotions,0.00300005784374656,0.0013,0.00170005784374656,0.00170005784374656
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_remorse,GoEmotions,0.00231437621405344,0.0006,0.00171437621405344,0.00171437621405344
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_sadness,GoEmotions,0.3881200239993632,0.00235,0.38577002399936317,0.38577002399936317
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_surprise,GoEmotions,0.0251696097897365,0.0036,0.021569609789736502,0.021569609789736502
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,GoEmotions_neutral,GoEmotions,0.37202409040182827,0.535525,-0.16350090959817176,0.16350090959817176
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Cardiff_joy,Cardiff,0.06419715136289594,0.0245625,0.03963465136289594,0.03963465136289594
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Cardiff_optimism,Cardiff,0.5925871044397354,0.8111375,-0.21855039556026457,0.21855039556026457
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Cardiff_anger,Cardiff,0.15918652862310406,0.0444125,0.11477402862310407,0.11477402862310407
+1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,Cardiff_sadness,Cardiff,0.18402924984693525,0.1199124999999999,0.06411674984693536,0.06411674984693536
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_anger,NRC,0.6,13.0,-12.4,12.4
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_anticipation,NRC,1.6,72.0,-70.4,70.4
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_disgust,NRC,0.8,13.0,-12.2,12.2
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_fear,NRC,1.0,10.0,-9.0,9.0
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_joy,NRC,1.8,129.0,-127.2,127.2
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_sadness,NRC,0.6,36.0,-35.4,35.4
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_surprise,NRC,0.6,17.0,-16.4,16.4
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_trust,NRC,1.6,144.0,-142.4,142.4
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_positive,NRC,4.0,249.0,-245.0,245.0
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,NRC_negative,NRC,1.2,43.0,-41.8,41.8
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,VAD_valence,VAD,0.17483807951141708,0.1709266355416724,0.003911443969744688,0.003911443969744688
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,VAD_arousal,VAD,-0.1720943734196911,-0.1140725794631745,-0.058021793956516604,0.058021793956516604
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,VAD_dominance,VAD,-0.03107375792585678,0.0137952529440135,-0.04486901086987028,0.04486901086987028
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Hartmann_joy,Hartmann,0.36960423653945323,0.1238333333333333,0.24577090320611994,0.24577090320611994
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Hartmann_neutral,Hartmann,0.19809366483241317,0.7442666666666667,-0.5461730018342535,0.5461730018342535
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Hartmann_disgust,Hartmann,0.0244461419060826,0.0107999999999999,0.013646141906082699,0.013646141906082699
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Hartmann_sadness,Hartmann,0.01042674402706322,0.0101333333333333,0.0002934106937299199,0.0002934106937299199
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Hartmann_anger,Hartmann,0.00396132434252646,0.0202333333333333,-0.01627200899080684,0.01627200899080684
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Hartmann_surprise,Hartmann,0.19371205177158113,0.0770666666666666,0.11664538510491453,0.11664538510491453
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Hartmann_fear,Hartmann,0.19975582030601793,0.0136666666666666,0.18608915363935133,0.18608915363935133
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Savani_joy,Savani,0.6000515356077812,0.8657657901446024,-0.2657142545368212,0.2657142545368212
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Savani_love,Savani,0.0005339654744602,0.09722147808255,-0.09668751260808979,0.09668751260808979
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Savani_sadness,Savani,0.0009794913232325998,0.0063496894824007,-0.0053701981591681,0.0053701981591681
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Savani_fear,Savani,0.21017713244946207,0.0067450748368476,0.20343205761261446,0.20343205761261446
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Savani_anger,Savani,0.00058011309010904,0.0216619800776242,-0.02108186698751516,0.02108186698751516
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Savani_surprise,Savani,0.18767776871682137,0.0022560567983115,0.18542171191850987,0.18542171191850987
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_admiration,GoEmotions,0.16232999226194805,0.1728,-0.010470007738051956,0.010470007738051956
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_amusement,GoEmotions,0.00138939809403378,0.0007,0.0006893980940337799,0.0006893980940337799
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_anger,GoEmotions,0.0012266926845768,0.0003,0.0009266926845768,0.0009266926845768
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_annoyance,GoEmotions,0.004399595968425219,0.0014666666666666,0.0029329293017586197,0.0029329293017586197
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_approval,GoEmotions,0.00909916560049164,0.3206666666666666,-0.311567501066175,0.311567501066175
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_caring,GoEmotions,0.0013771893456577598,0.0005666666666666,0.0008105226789911598,0.0008105226789911598
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_confusion,GoEmotions,0.0018926813616417,0.0012666666666666,0.0006260146949751001,0.0006260146949751001
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_curiosity,GoEmotions,0.0031475284049519796,0.0066666666666666,-0.0035191382617146207,0.0035191382617146207
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_desire,GoEmotions,0.0100557851925259,0.0020666666666666,0.0079891185258593,0.0079891185258593
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_disappointment,GoEmotions,0.08757744501344854,0.0009666666666666,0.08661077834678194,0.08661077834678194
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_disapproval,GoEmotions,0.0055699079064651606,0.0011666666666666,0.004403241239798561,0.004403241239798561
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_disgust,GoEmotions,0.0010752859059720802,0.0007,0.0003752859059720802,0.0003752859059720802
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0044256065273657,0.0003,0.0041256065273657,0.0041256065273657
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_excitement,GoEmotions,0.0020376479951664398,0.0019666666666666,7.098132849983965e-05,7.098132849983965e-05
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_fear,GoEmotions,0.0034113638568669196,0.0007333333333333,0.0026780305235336197,0.0026780305235336197
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_gratitude,GoEmotions,0.00223263551015404,0.0001999999999999,0.00203263551015414,0.00203263551015414
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_grief,GoEmotions,0.0028547524940222197,0.0001666666666666,0.0026880858273556196,0.0026880858273556196
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_joy,GoEmotions,0.08958937331335612,0.0011333333333333,0.08845603998002281,0.08845603998002281
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_love,GoEmotions,0.0017395954942912508,0.3181,-0.31636040450570874,0.31636040450570874
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_nervousness,GoEmotions,0.03162227630964478,0.0004333333333333,0.03118894297631148,0.03118894297631148
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_optimism,GoEmotions,0.00395657795015716,0.0069333333333333,-0.0029767553831761403,0.0029767553831761403
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_pride,GoEmotions,0.0032263851142487997,0.0007333333333333,0.0024930517809155,0.0024930517809155
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_realization,GoEmotions,0.22726425025612113,0.0070999999999999,0.2201642502561212,0.2201642502561212
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_relief,GoEmotions,0.033248347346670884,0.0001666666666666,0.033081680680004284,0.033081680680004284
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_remorse,GoEmotions,0.00135042928741308,0.0001666666666666,0.0011837626207464801,0.0011837626207464801
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_sadness,GoEmotions,0.006587522657355261,0.0005333333333333,0.006054189324021961,0.006054189324021961
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_surprise,GoEmotions,0.1986868649313692,0.0002,0.1984868649313692,0.1984868649313692
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,GoEmotions_neutral,GoEmotions,0.42628237726166845,0.4933666666666667,-0.06708428940499822,0.06708428940499822
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Cardiff_joy,Cardiff,0.028194345161318718,0.0253,0.0028943451613187184,0.0028943451613187184
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Cardiff_optimism,Cardiff,0.7470529317855835,0.8861,-0.13904706821441648,0.13904706821441648
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Cardiff_anger,Cardiff,0.10733310282230372,0.0584333333333333,0.04889976948897042,0.04889976948897042
+1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,Cardiff_sadness,Cardiff,0.11741959825158114,0.0301666666666666,0.08725293158491454,0.08725293158491454
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_anger,NRC,0.2,98.0,-97.8,97.8
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_anticipation,NRC,1.2,200.0,-198.8,198.8
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_disgust,NRC,0.4,76.0,-75.6,75.6
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_fear,NRC,0.8,58.0,-57.2,57.2
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_joy,NRC,1.8,308.0,-306.2,306.2
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_sadness,NRC,0.6,102.0,-101.4,101.4
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_surprise,NRC,0.4,114.0,-113.6,113.6
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_trust,NRC,2.0,377.0,-375.0,375.0
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_positive,NRC,3.8,552.0,-548.2,548.2
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,NRC_negative,NRC,0.8,192.0,-191.2,191.2
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,VAD_valence,VAD,0.2058549758454106,0.169806025249811,0.036048950595599594,0.036048950595599594
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,VAD_arousal,VAD,-0.15625304280496216,-0.1148766413677024,-0.04137640143725976,0.04137640143725976
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,VAD_dominance,VAD,-0.01560828443501828,0.0258234778402041,-0.041431762275222384,0.041431762275222384
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Hartmann_joy,Hartmann,0.3247103458503261,0.3896,-0.0648896541496739,0.0648896541496739
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Hartmann_neutral,Hartmann,0.07576871346682305,0.45195,-0.37618128653317695,0.37618128653317695
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Hartmann_disgust,Hartmann,0.04349158611148592,0.0124666666666666,0.031024919444819325,0.031024919444819325
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Hartmann_sadness,Hartmann,0.02966974745504556,0.0057333333333333,0.02393641412171226,0.02393641412171226
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Hartmann_anger,Hartmann,0.13251832975074646,0.0118833333333333,0.12063499641741315,0.12063499641741315
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Hartmann_surprise,Hartmann,0.00513296057470138,0.1193666666666666,-0.11423370609196522,0.11423370609196522
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Hartmann_fear,Hartmann,0.3887083212379366,0.0089666666666666,0.37974165457126996,0.37974165457126996
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Savani_joy,Savani,0.5939716918510385,0.994397630294164,-0.40042593844312546,0.40042593844312546
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Savani_love,Savani,0.0011996639397693,0.0008833224613529,0.00031634147841640007,0.00031634147841640007
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Savani_sadness,Savani,0.00346811807248736,0.0010304012418297,0.00243771683065766,0.00243771683065766
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Savani_fear,Savani,0.20037610736617353,0.0005192537052304,0.19985685366094313,0.19985685366094313
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Savani_anger,Savani,0.20067738014331554,0.0026694156222219,0.19800796452109365,0.19800796452109365
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Savani_surprise,Savani,0.00030709241691506,0.0004999992949402,-0.00019290687802513997,0.00019290687802513997
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_admiration,GoEmotions,0.15179230084177103,0.41775,-0.265957699158229,0.265957699158229
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_amusement,GoEmotions,0.00178461840841916,0.0013166666666666,0.00046795174175256007,0.00046795174175256007
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_anger,GoEmotions,0.0007009788881987001,0.0003333333333333,0.00036764555486540015,0.00036764555486540015
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_annoyance,GoEmotions,0.00322244739800222,0.0013499999999999,0.0018724473980023199,0.0018724473980023199
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_approval,GoEmotions,0.014372942596673922,0.1025666666666666,-0.08819372406999268,0.08819372406999268
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_caring,GoEmotions,0.00105227865860794,0.0005,0.0005522786586079399,0.0005522786586079399
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_confusion,GoEmotions,0.00891270675929258,0.0007166666666666,0.00819604009262598,0.00819604009262598
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_curiosity,GoEmotions,0.00820923790452064,0.0007666666666666,0.0074425712378540405,0.0074425712378540405
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_desire,GoEmotions,0.00941761924186716,0.0020166666666666,0.0074009525752005605,0.0074009525752005605
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_disappointment,GoEmotions,0.09924646462313827,0.0010166666666666,0.09822979795647167,0.09822979795647167
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_disapproval,GoEmotions,0.00287455180659888,0.0013666666666666,0.00150788513993228,0.00150788513993228
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_disgust,GoEmotions,0.0007530756964115,0.0002333333333333,0.0005197423630782,0.0005197423630782
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00273520203190852,0.0001666666666666,0.00256853536524192,0.00256853536524192
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_excitement,GoEmotions,0.0016712193202692402,0.0436666666666666,-0.041995447346397353,0.041995447346397353
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_fear,GoEmotions,0.00395694354374422,0.00055,0.0034069435437442197,0.0034069435437442197
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_gratitude,GoEmotions,0.0011043338745366199,0.0054833333333333,-0.00437899945879668,0.00437899945879668
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_grief,GoEmotions,0.00116175159928384,0.0001833333333333,0.00097841826595054,0.00097841826595054
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_joy,GoEmotions,0.03488465831760547,0.0176666666666666,0.017217991650938867,0.017217991650938867
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_love,GoEmotions,0.0023250053331139,0.3274833333333333,-0.3251583280002194,0.3251583280002194
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_nervousness,GoEmotions,0.033795939560513896,0.0002666666666666,0.033529272893847294,0.033529272893847294
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_optimism,GoEmotions,0.0094697294523939,0.0066333333333333,0.0028363961190605996,0.0028363961190605996
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_pride,GoEmotions,0.0014692904864204398,0.00305,-0.0015807095135795604,0.0015807095135795604
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_realization,GoEmotions,0.2155640859622508,0.0054333333333333,0.2101307526289175,0.2101307526289175
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_relief,GoEmotions,0.00662825394829266,0.00035,0.006278253948292661,0.006278253948292661
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_remorse,GoEmotions,0.00105129635194312,0.0002166666666666,0.00083462968527652,0.00083462968527652
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_sadness,GoEmotions,0.0040864985610823395,0.0003833333333333,0.0037031652277490397,0.0037031652277490397
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_surprise,GoEmotions,0.00280507684219624,0.0016166666666666,0.0011884101755296399,0.0011884101755296399
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,GoEmotions_neutral,GoEmotions,0.5923031685873866,0.4801666666666667,0.11213650192071994,0.11213650192071994
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Cardiff_joy,Cardiff,0.02541199438273902,0.0350166666666666,-0.009604672283927577,0.009604672283927577
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Cardiff_optimism,Cardiff,0.7803604006767273,0.8589666666666668,-0.07860626598993947,0.07860626598993947
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Cardiff_anger,Cardiff,0.11235347688198087,0.0657833333333333,0.046570143548647566,0.046570143548647566
+1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,Cardiff_sadness,Cardiff,0.08187411352992054,0.0402,0.04167411352992054,0.04167411352992054
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_anger,NRC,0.6,38.0,-37.4,37.4
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_anticipation,NRC,2.4,82.0,-79.6,79.6
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_disgust,NRC,0.8,38.0,-37.2,37.2
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_fear,NRC,1.0,11.0,-10.0,10.0
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_joy,NRC,2.6,152.0,-149.4,149.4
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_sadness,NRC,1.2,30.0,-28.8,28.8
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_surprise,NRC,1.4,36.0,-34.6,34.6
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_trust,NRC,3.2,199.0,-195.8,195.8
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_positive,NRC,5.2,294.0,-288.8,288.8
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,NRC_negative,NRC,1.2,74.0,-72.8,72.8
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,VAD_valence,VAD,0.20214708532695372,0.1467737105087844,0.05537337481816931,0.05537337481816931
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,VAD_arousal,VAD,-0.1734076438729399,-0.1099948965925465,-0.06341274728039338,0.06341274728039338
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,VAD_dominance,VAD,-0.03341113370547576,0.0239448734191747,-0.05735600712465046,0.05735600712465046
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Hartmann_joy,Hartmann,0.38676825957372785,0.3804333333333333,0.006334926240394556,0.006334926240394556
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Hartmann_neutral,Hartmann,0.21359333023428917,0.4054333333333333,-0.19184000309904414,0.19184000309904414
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Hartmann_disgust,Hartmann,0.02700860667973754,0.1121166666666666,-0.08510805998692905,0.08510805998692905
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Hartmann_sadness,Hartmann,0.02029206289444114,0.0185666666666666,0.0017253962277745394,0.0017253962277745394
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Hartmann_anger,Hartmann,0.015577188227325622,0.0079333333333333,0.007643854893992323,0.007643854893992323
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Hartmann_surprise,Hartmann,0.10939947520382698,0.0657,0.043699475203826985,0.043699475203826985
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Hartmann_fear,Hartmann,0.22736106859520072,0.0098,0.21756106859520072,0.21756106859520072
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Savani_joy,Savani,0.6095174523070455,0.5313304690644145,0.07818698324263096,0.07818698324263096
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Savani_love,Savani,0.25366645412286737,0.1207528678060043,0.13291358631686306,0.13291358631686306
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Savani_sadness,Savani,0.00490006254985922,0.0174173858977155,-0.012517323347856279,0.012517323347856279
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Savani_fear,Savani,0.047961121506523305,0.1736764274416297,-0.12571530593510638,0.12571530593510638
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Savani_anger,Savani,0.08249375805025917,0.1552244930935557,-0.07273073504329654,0.07273073504329654
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Savani_surprise,Savani,0.0014611525053623599,0.0015983580427321,-0.00013720553736974012,0.00013720553736974012
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_admiration,GoEmotions,0.1274501046107616,0.2535666666666666,-0.12611656205590502,0.12611656205590502
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_amusement,GoEmotions,0.00060546824824992,0.0007166666666666,-0.00011119841841667995,0.00011119841841667995
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_anger,GoEmotions,0.00043266032880632003,0.0003166666666666,0.00011599366213972,0.00011599366213972
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_annoyance,GoEmotions,0.00248308755690228,0.0013499999999999,0.00113308755690238,0.00113308755690238
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_approval,GoEmotions,0.06264783714432266,0.0041333333333333,0.05851450381098936,0.05851450381098936
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_caring,GoEmotions,0.00114017602172674,0.0003166666666666,0.0008235093550601401,0.0008235093550601401
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_confusion,GoEmotions,0.00310400743619534,0.12,-0.11689599256380466,0.11689599256380466
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_curiosity,GoEmotions,0.004977004090323979,0.0020499999999999,0.0029270040903240794,0.0029270040903240794
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_desire,GoEmotions,0.00610447035869576,0.00035,0.00575447035869576,0.00575447035869576
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_disappointment,GoEmotions,0.08164155096746975,0.0011833333333333,0.08045821763413645,0.08045821763413645
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_disapproval,GoEmotions,0.00135793337831266,0.0028333333333333,-0.0014753999550206401,0.0014753999550206401
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_disgust,GoEmotions,0.00049188617267642,0.0005166666666666,-2.4780493990179996e-05,2.4780493990179996e-05
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00140019184327678,0.0002333333333333,0.00116685850994348,0.00116685850994348
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_excitement,GoEmotions,0.00125197475426824,0.0002833333333333,0.00096864142093494,0.00096864142093494
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_fear,GoEmotions,0.0011687711114063586,0.0002333333333333,0.0009354377780730586,0.0009354377780730586
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_gratitude,GoEmotions,0.00027272259758313996,0.1621666666666666,-0.16189394406908345,0.16189394406908345
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_grief,GoEmotions,0.00065076844766732,0.0001333333333333,0.00051743511433402,0.00051743511433402
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_joy,GoEmotions,0.057007385074393804,0.00025,0.056757385074393804,0.056757385074393804
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_love,GoEmotions,0.07634317671763705,0.0021166666666666,0.07422651005097045,0.07422651005097045
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_nervousness,GoEmotions,0.01122752535738978,0.0001666666666666,0.01106085869072318,0.01106085869072318
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_optimism,GoEmotions,0.00201289599062872,0.0058,-0.0037871040093712797,0.0037871040093712797
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_pride,GoEmotions,0.00266298866481516,0.0003166666666666,0.00234632199814856,0.00234632199814856
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_realization,GoEmotions,0.2972314544022083,0.0200333333333333,0.277198121068875,0.277198121068875
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_relief,GoEmotions,0.0029107451380695802,0.00045,0.0024607451380695804,0.0024607451380695804
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_remorse,GoEmotions,0.0005611425149254,0.0003,0.0002611425149254,0.0002611425149254
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_sadness,GoEmotions,0.0028173799044452197,0.0002666666666666,0.0025507132377786197,0.0025507132377786197
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_surprise,GoEmotions,0.0024571567191741797,0.0007,0.0017571567191741796,0.0017571567191741796
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,GoEmotions_neutral,GoEmotions,0.6050869036465883,0.5061333333333333,0.09895357031325502,0.09895357031325502
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Cardiff_joy,Cardiff,0.027955428324639757,0.02885,-0.0008945716753602437,0.0008945716753602437
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Cardiff_optimism,Cardiff,0.8162318587303161,0.8548666666666667,-0.038634807936350546,0.038634807936350546
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Cardiff_anger,Cardiff,0.08804674893617623,0.0669833333333333,0.02106341560284293,0.02106341560284293
+1872-for-men-eau-de-parfum,1872 for men eau de parfum,Cardiff_sadness,Cardiff,0.06776601560413834,0.0493333333333333,0.018432682270805037,0.018432682270805037
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_anger,NRC,0.6,35.0,-34.4,34.4
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_anticipation,NRC,2.4,68.0,-65.6,65.6
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_disgust,NRC,0.8,39.0,-38.2,38.2
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_fear,NRC,0.8,10.0,-9.2,9.2
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_joy,NRC,2.6,119.0,-116.4,116.4
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_sadness,NRC,0.8,17.0,-16.2,16.2
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_surprise,NRC,1.2,28.0,-26.8,26.8
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_trust,NRC,2.4,102.0,-99.6,99.6
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_positive,NRC,4.4,228.0,-223.6,223.6
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,NRC_negative,NRC,1.2,65.0,-63.8,63.8
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,VAD_valence,VAD,0.2292637362637362,0.1710585681818733,0.05820516808186291,0.05820516808186291
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,VAD_arousal,VAD,-0.13976862605785018,-0.111952638465016,-0.02781598759283417,0.02781598759283417
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,VAD_dominance,VAD,-0.01872323007452318,0.0159676309666837,-0.034690861041206875,0.034690861041206875
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Hartmann_joy,Hartmann,0.34953256594017146,0.58468,-0.23514743405982852,0.23514743405982852
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Hartmann_neutral,Hartmann,0.08705173265188929,0.33718,-0.25012826734811067,0.25012826734811067
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Hartmann_disgust,Hartmann,0.11444249427877365,0.0193,0.09514249427877365,0.09514249427877365
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Hartmann_sadness,Hartmann,0.05074203722178931,0.01194,0.038802037221789314,0.038802037221789314
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Hartmann_anger,Hartmann,0.00922758840024466,0.00818,0.0010475884002446607,0.0010475884002446607
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Hartmann_surprise,Hartmann,0.20429028528742488,0.03654,0.16775028528742486,0.16775028528742486
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Hartmann_fear,Hartmann,0.18471331309992817,0.00216,0.18255331309992817,0.18255331309992817
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Savani_joy,Savani,0.5692930538207293,0.9643117904663084,-0.3950187366455792,0.3950187366455792
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Savani_love,Savani,0.038755159883294206,0.033041990676429,0.005713169206865203,0.005713169206865203
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Savani_sadness,Savani,0.16771878246217964,0.0010018149972892,0.16671696746489043,0.16671696746489043
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Savani_fear,Savani,0.0035664963972521406,0.0003205839326255,0.0032459124646266406,0.0032459124646266406
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Savani_anger,Savani,0.0236308758001541,0.0008969521702965,0.0227339236298576,0.0227339236298576
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Savani_surprise,Savani,0.1970356004341738,0.00042684514774,0.19660875528643382,0.19660875528643382
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_admiration,GoEmotions,0.10075307743099979,0.6373800000000001,-0.5366269225690002,0.5366269225690002
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_amusement,GoEmotions,0.00141801062272858,0.00086,0.00055801062272858,0.00055801062272858
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_anger,GoEmotions,0.00128126084746322,0.0003,0.0009812608474632201,0.0009812608474632201
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_annoyance,GoEmotions,0.00164332280401136,0.00068,0.0009633228040113601,0.0009633228040113601
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_approval,GoEmotions,0.1591814616229385,0.11772,0.0414614616229385,0.0414614616229385
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_caring,GoEmotions,0.0020380973233841,0.00058,0.0014580973233840999,0.0014580973233840999
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_confusion,GoEmotions,0.006148035172372999,0.1125,-0.106351964827627,0.106351964827627
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_curiosity,GoEmotions,0.00478752452181648,0.0023399999999999,0.0024475245218165804,0.0024475245218165804
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_desire,GoEmotions,0.00259612170048052,0.00304,-0.0004438782995194804,0.0004438782995194804
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_disappointment,GoEmotions,0.10262557582464064,0.0019199999999999,0.10070557582464075,0.10070557582464075
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_disapproval,GoEmotions,0.00232780359219756,0.00352,-0.0011921964078024402,0.0011921964078024402
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_disgust,GoEmotions,0.0008634558122139,0.0005,0.00036345581221390003,0.00036345581221390003
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0013699161354452,0.00016,0.0012099161354452,0.0012099161354452
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_excitement,GoEmotions,0.00212514592858492,0.14046,-0.13833485407141508,0.13833485407141508
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_fear,GoEmotions,0.00076916287944184,0.00026,0.00050916287944184,0.00050916287944184
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_gratitude,GoEmotions,0.00316215720959004,0.0006,0.00256215720959004,0.00256215720959004
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_grief,GoEmotions,0.0038507511955685595,0.0001799999999999,0.0036707511955686597,0.0036707511955686597
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_joy,GoEmotions,0.14395166511822022,0.0540799999999999,0.08987166511822031,0.08987166511822031
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_love,GoEmotions,0.0018879754468798002,0.18348,-0.1815920245531202,0.1815920245531202
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_nervousness,GoEmotions,0.00444812609930516,0.0003199999999999,0.0041281260993052595,0.0041281260993052595
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_optimism,GoEmotions,0.00243900290224696,0.00968,-0.007240997097753039,0.007240997097753039
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_pride,GoEmotions,0.00477269946713926,0.00966,-0.004887300532860741,0.004887300532860741
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_realization,GoEmotions,0.3322696197777986,0.02616,0.3061096197777986,0.3061096197777986
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_relief,GoEmotions,0.03475824950728562,0.00052,0.03423824950728562,0.03423824950728562
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_remorse,GoEmotions,0.0007744465139694001,0.0002199999999999,0.0005544465139695001,0.0005544465139695001
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_sadness,GoEmotions,0.05012367402378,0.00056,0.04956367402378,0.04956367402378
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_surprise,GoEmotions,0.20063871185993776,0.00078,0.19985871185993775,0.19985871185993775
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,GoEmotions_neutral,GoEmotions,0.23070179866626858,0.04264,0.1880617986662686,0.1880617986662686
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Cardiff_joy,Cardiff,0.018708156235516,0.01472,0.003988156235515999,0.003988156235515999
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Cardiff_optimism,Cardiff,0.814309048652649,0.9346,-0.12029095134735102,0.12029095134735102
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Cardiff_anger,Cardiff,0.10142061486840244,0.02864,0.07278061486840244,0.07278061486840244
+1872-for-women-eau-de-parfum,1872 for women eau de parfum,Cardiff_sadness,Cardiff,0.06556218005716799,0.02206,0.043502180057167994,0.043502180057167994
+1888-eau-de-parfum,1888 eau de parfum,NRC_anger,NRC,0.2,0.0,0.2,0.2
+1888-eau-de-parfum,1888 eau de parfum,NRC_anticipation,NRC,1.8,4.0,-2.2,2.2
+1888-eau-de-parfum,1888 eau de parfum,NRC_disgust,NRC,0.8,0.0,0.8,0.8
+1888-eau-de-parfum,1888 eau de parfum,NRC_fear,NRC,1.0,1.0,0.0,0.0
+1888-eau-de-parfum,1888 eau de parfum,NRC_joy,NRC,2.2,8.0,-5.8,5.8
+1888-eau-de-parfum,1888 eau de parfum,NRC_sadness,NRC,1.0,3.0,-2.0,2.0
+1888-eau-de-parfum,1888 eau de parfum,NRC_surprise,NRC,0.8,1.0,-0.19999999999999996,0.19999999999999996
+1888-eau-de-parfum,1888 eau de parfum,NRC_trust,NRC,3.2,5.0,-1.7999999999999998,1.7999999999999998
+1888-eau-de-parfum,1888 eau de parfum,NRC_positive,NRC,4.8,13.0,-8.2,8.2
+1888-eau-de-parfum,1888 eau de parfum,NRC_negative,NRC,1.2,3.0,-1.8,1.8
+1888-eau-de-parfum,1888 eau de parfum,VAD_valence,VAD,0.17379114853677408,0.2030808823529411,-0.029289733816167035,0.029289733816167035
+1888-eau-de-parfum,1888 eau de parfum,VAD_arousal,VAD,-0.17585782305689332,-0.1144411764705882,-0.06141664658630512,0.06141664658630512
+1888-eau-de-parfum,1888 eau de parfum,VAD_dominance,VAD,-0.020320069436913203,0.0070661764705882,-0.027386245907501404,0.027386245907501404
+1888-eau-de-parfum,1888 eau de parfum,Hartmann_joy,Hartmann,0.13259028962347655,0.9461,-0.8135097103765235,0.8135097103765235
+1888-eau-de-parfum,1888 eau de parfum,Hartmann_neutral,Hartmann,0.3225194115191698,0.0399,0.2826194115191698,0.2826194115191698
+1888-eau-de-parfum,1888 eau de parfum,Hartmann_disgust,Hartmann,0.18322854582220313,0.0025,0.18072854582220313,0.18072854582220313
+1888-eau-de-parfum,1888 eau de parfum,Hartmann_sadness,Hartmann,0.07783356024883682,0.0058,0.07203356024883682,0.07203356024883682
+1888-eau-de-parfum,1888 eau de parfum,Hartmann_anger,Hartmann,0.011150243529118562,0.0014,0.009750243529118562,0.009750243529118562
+1888-eau-de-parfum,1888 eau de parfum,Hartmann_surprise,Hartmann,0.03728325641714032,0.0036,0.033683256417140324,0.033683256417140324
+1888-eau-de-parfum,1888 eau de parfum,Hartmann_fear,Hartmann,0.23539472720585758,0.0007,0.23469472720585757,0.23469472720585757
+1888-eau-de-parfum,1888 eau de parfum,Savani_joy,Savani,0.04757175567792724,0.391772985458374,-0.34420122978044676,0.34420122978044676
+1888-eau-de-parfum,1888 eau de parfum,Savani_love,Savani,0.20087075197952795,0.604666531085968,-0.40379577910644004,0.40379577910644004
+1888-eau-de-parfum,1888 eau de parfum,Savani_sadness,Savani,0.35991724065970626,0.0013111076550558,0.35860613300465044,0.35860613300465044
+1888-eau-de-parfum,1888 eau de parfum,Savani_fear,Savani,0.24879684220068152,0.0005787518457509,0.24821809035493062,0.24821809035493062
+1888-eau-de-parfum,1888 eau de parfum,Savani_anger,Savani,0.14179413045058023,0.0006536425789818,0.14114048787159844,0.14114048787159844
+1888-eau-de-parfum,1888 eau de parfum,Savani_surprise,Savani,0.0010492844681720599,0.0010170511668547,3.223330131735995e-05,3.223330131735995e-05
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_admiration,GoEmotions,0.2347923879045993,0.9405,-0.7057076120954007,0.7057076120954007
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_amusement,GoEmotions,0.00134350702282968,0.002,-0.00065649297717032,0.00065649297717032
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_anger,GoEmotions,0.0008876988431438399,0.0012,-0.00031230115685615997,0.00031230115685615997
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_annoyance,GoEmotions,0.00213228417560452,0.0008,0.00133228417560452,0.00133228417560452
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_approval,GoEmotions,0.027178840769920436,0.032,-0.004821159230079565,0.004821159230079565
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_caring,GoEmotions,0.0027893897029570595,0.0041,-0.0013106102970429408,0.0013106102970429408
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_confusion,GoEmotions,0.0024418265093117198,0.0022,0.00024182650931171964,0.00024182650931171964
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_curiosity,GoEmotions,0.00434628592920486,0.0015,0.00284628592920486,0.00284628592920486
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_desire,GoEmotions,0.004691772203659581,0.0017,0.0029917722036595807,0.0029917722036595807
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_disappointment,GoEmotions,0.11508739287964995,0.0023,0.11278739287964995,0.11278739287964995
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_disapproval,GoEmotions,0.003868544276338,0.0019,0.0019685442763380002,0.0019685442763380002
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_disgust,GoEmotions,0.00127210046630346,0.0005,0.00077210046630346,0.00077210046630346
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0034437625901773,0.0006,0.0028437625901773004,0.0028437625901773004
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_excitement,GoEmotions,0.0012261514202691,0.0126,-0.0113738485797309,0.0113738485797309
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_fear,GoEmotions,0.0023465611302526204,0.0004,0.0019465611302526204,0.0019465611302526204
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_gratitude,GoEmotions,0.0027684375294483804,0.0046,-0.0018315624705516195,0.0018315624705516195
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_grief,GoEmotions,0.00105687195318746,0.0005,0.00055687195318746,0.00055687195318746
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_joy,GoEmotions,0.03607504429237446,0.0572,-0.021124955707625542,0.021124955707625542
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_love,GoEmotions,0.00345569192431862,0.9911,-0.9876443080756814,0.9876443080756814
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_nervousness,GoEmotions,0.01181522399419914,0.0005,0.011315223994199139,0.011315223994199139
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_optimism,GoEmotions,0.0025536017608828398,0.0028,-0.0002463982391171602,0.0002463982391171602
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_pride,GoEmotions,0.006858506088610721,0.0027,0.0041585060886107205,0.0041585060886107205
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_realization,GoEmotions,0.3705681219696998,0.0054,0.3651681219696998,0.3651681219696998
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_relief,GoEmotions,0.10894926650798875,0.0003,0.10864926650798876,0.10864926650798876
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_remorse,GoEmotions,0.00139063933747814,0.0006,0.00079063933747814,0.00079063933747814
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_sadness,GoEmotions,0.0028599323763046,0.0018,0.0010599323763045999,0.0010599323763045999
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_surprise,GoEmotions,0.004637365258531581,0.0009,0.003737365258531581,0.003737365258531581
+1888-eau-de-parfum,1888 eau de parfum,GoEmotions_neutral,GoEmotions,0.43581832670606674,0.0008,0.4350183267060667,0.4350183267060667
+1888-eau-de-parfum,1888 eau de parfum,Cardiff_joy,Cardiff,0.06263292580842965,0.0087,0.05393292580842965,0.05393292580842965
+1888-eau-de-parfum,1888 eau de parfum,Cardiff_optimism,Cardiff,0.7052210748195649,0.9588,-0.2535789251804351,0.2535789251804351
+1888-eau-de-parfum,1888 eau de parfum,Cardiff_anger,Cardiff,0.12464648783206936,0.0209,0.10374648783206936,0.10374648783206936
+1888-eau-de-parfum,1888 eau de parfum,Cardiff_sadness,Cardiff,0.10749953612685201,0.0116,0.09589953612685201,0.09589953612685201
+1962-eau-de-parfum,1962 eau de parfum,NRC_anger,NRC,0.4,104.0,-103.6,103.6
+1962-eau-de-parfum,1962 eau de parfum,NRC_anticipation,NRC,2.0,197.0,-195.0,195.0
+1962-eau-de-parfum,1962 eau de parfum,NRC_disgust,NRC,0.8,106.0,-105.2,105.2
+1962-eau-de-parfum,1962 eau de parfum,NRC_fear,NRC,0.8,91.0,-90.2,90.2
+1962-eau-de-parfum,1962 eau de parfum,NRC_joy,NRC,2.6,290.0,-287.4,287.4
+1962-eau-de-parfum,1962 eau de parfum,NRC_sadness,NRC,0.6,83.0,-82.4,82.4
+1962-eau-de-parfum,1962 eau de parfum,NRC_surprise,NRC,0.8,94.0,-93.2,93.2
+1962-eau-de-parfum,1962 eau de parfum,NRC_trust,NRC,2.6,337.0,-334.4,334.4
+1962-eau-de-parfum,1962 eau de parfum,NRC_positive,NRC,4.8,576.0,-571.2,571.2
+1962-eau-de-parfum,1962 eau de parfum,NRC_negative,NRC,1.8,236.0,-234.2,234.2
+1962-eau-de-parfum,1962 eau de parfum,VAD_valence,VAD,0.21265689713399674,0.1782108606759443,0.03444603645805244,0.03444603645805244
+1962-eau-de-parfum,1962 eau de parfum,VAD_arousal,VAD,-0.13518038441895452,-0.099045859064316,-0.03613452535463853,0.03613452535463853
+1962-eau-de-parfum,1962 eau de parfum,VAD_dominance,VAD,0.019001052493547003,0.03432024575461,-0.015319193261062996,0.015319193261062996
+1962-eau-de-parfum,1962 eau de parfum,Hartmann_joy,Hartmann,0.327468355698511,0.3631,-0.03563164430148896,0.03563164430148896
+1962-eau-de-parfum,1962 eau de parfum,Hartmann_neutral,Hartmann,0.24115788415074343,0.420975,-0.17981711584925655,0.17981711584925655
+1962-eau-de-parfum,1962 eau de parfum,Hartmann_disgust,Hartmann,0.020437809079885422,0.0131,0.007337809079885422,0.007337809079885422
+1962-eau-de-parfum,1962 eau de parfum,Hartmann_sadness,Hartmann,0.012076337030157359,0.0063374999999999,0.005738837030157459,0.005738837030157459
+1962-eau-de-parfum,1962 eau de parfum,Hartmann_anger,Hartmann,0.00562551412731402,0.0199125,-0.01428698587268598,0.01428698587268598
+1962-eau-de-parfum,1962 eau de parfum,Hartmann_surprise,Hartmann,0.00979001652449364,0.1518749999999999,-0.14208498347550627,0.14208498347550627
+1962-eau-de-parfum,1962 eau de parfum,Hartmann_fear,Hartmann,0.38344406657852226,0.0246875,0.3587565665785223,0.3587565665785223
+1962-eau-de-parfum,1962 eau de parfum,Savani_joy,Savani,0.41106220245710573,0.8461485542356968,-0.43508635177859106,0.43508635177859106
+1962-eau-de-parfum,1962 eau de parfum,Savani_love,Savani,0.20202772445627484,0.0037872814100409,0.19824044304623395,0.19824044304623395
+1962-eau-de-parfum,1962 eau de parfum,Savani_sadness,Savani,0.03015835024416444,0.0019755039556911,0.02818284628847334,0.02818284628847334
+1962-eau-de-parfum,1962 eau de parfum,Savani_fear,Savani,0.34457816464419005,0.1186246854285854,0.22595347921560466,0.22595347921560466
+1962-eau-de-parfum,1962 eau de parfum,Savani_anger,Savani,0.01124648670374878,0.0275022504665684,-0.01625576376281962,0.01625576376281962
+1962-eau-de-parfum,1962 eau de parfum,Savani_surprise,Savani,0.0009270378577639,0.0019617298639786,-0.0010346920062147002,0.0010346920062147002
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_admiration,GoEmotions,0.19623056188574992,0.21565,-0.019419438114250093,0.019419438114250093
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_amusement,GoEmotions,0.00068075890594624,0.0007,-1.9241094053760034e-05,1.9241094053760034e-05
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_anger,GoEmotions,0.0007243446540087,0.0004625,0.00026184465400869996,0.00026184465400869996
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_annoyance,GoEmotions,0.0034226485760882005,0.0012,0.0022226485760882004,0.0022226485760882004
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_approval,GoEmotions,0.04687533497344697,0.0919625,-0.045087165026553036,0.045087165026553036
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_caring,GoEmotions,0.0016367318195988831,0.00075,0.0008867318195988831,0.0008867318195988831
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_confusion,GoEmotions,0.0033969738986342605,0.001875,0.0015219738986342606,0.0015219738986342606
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_curiosity,GoEmotions,0.005448603950208001,0.0161,-0.010651396049791999,0.010651396049791999
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_desire,GoEmotions,0.037573724612593624,0.003025,0.034548724612593625,0.034548724612593625
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_disappointment,GoEmotions,0.12656913753598925,0.00155,0.12501913753598926,0.12501913753598926
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_disapproval,GoEmotions,0.0057340819621458,0.0013625,0.0043715819621458,0.0043715819621458
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_disgust,GoEmotions,0.0008888197335181199,0.0005625,0.00032631973351812,0.00032631973351812
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_embarrassment,GoEmotions,0.004272171345655759,0.0003,0.003972171345655759,0.003972171345655759
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_excitement,GoEmotions,0.0017990830703638002,0.0842875,-0.0824884169296362,0.0824884169296362
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_fear,GoEmotions,0.00241516571404638,0.001375,0.0010401657140463802,0.0010401657140463802
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_gratitude,GoEmotions,0.0022129978751763402,0.11355,-0.11133700212482366,0.11133700212482366
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_grief,GoEmotions,0.0013661700941156,0.000375,0.0009911700941155998,0.0009911700941155998
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_joy,GoEmotions,0.2036669881243142,0.0062625,0.1974044881243142,0.1974044881243142
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_love,GoEmotions,0.03329956474481146,0.124275,-0.09097543525518853,0.09097543525518853
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_nervousness,GoEmotions,0.013736130489269222,0.000625,0.013111130489269221,0.013111130489269221
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_optimism,GoEmotions,0.00671809237683184,0.0035125,0.00320559237683184,0.00320559237683184
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_pride,GoEmotions,0.00635685706511134,0.021825,-0.01546814293488866,0.01546814293488866
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_realization,GoEmotions,0.10445635216310616,0.1307125,-0.026256147836893853,0.026256147836893853
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_relief,GoEmotions,0.0834876147244358,0.0021375,0.0813501147244358,0.0813501147244358
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_remorse,GoEmotions,0.00209109158022322,0.0004125,0.0016785915802232198,0.0016785915802232198
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_sadness,GoEmotions,0.003752102114958639,0.0004125,0.003339602114958639,0.003339602114958639
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_surprise,GoEmotions,0.0018875667592509998,0.0035625,-0.0016749332407490004,0.0016749332407490004
+1962-eau-de-parfum,1962 eau de parfum,GoEmotions_neutral,GoEmotions,0.4567950463388115,0.5791875,-0.12239245366118845,0.12239245366118845
+1962-eau-de-parfum,1962 eau de parfum,Cardiff_joy,Cardiff,0.0269130868837237,0.022425,0.004488086883723701,0.004488086883723701
+1962-eau-de-parfum,1962 eau de parfum,Cardiff_optimism,Cardiff,0.7659501791000366,0.9137375,-0.14778732089996338,0.14778732089996338
+1962-eau-de-parfum,1962 eau de parfum,Cardiff_anger,Cardiff,0.12475741207599636,0.0345375,0.09021991207599636,0.09021991207599636
+1962-eau-de-parfum,1962 eau de parfum,Cardiff_sadness,Cardiff,0.08237931765615936,0.029275,0.05310431765615936,0.05310431765615936
+1976-eau-de-parfum,1976 eau de parfum,NRC_anger,NRC,0.8,213.0,-212.2,212.2
+1976-eau-de-parfum,1976 eau de parfum,NRC_anticipation,NRC,1.4,444.0,-442.6,442.6
+1976-eau-de-parfum,1976 eau de parfum,NRC_disgust,NRC,0.6,211.0,-210.4,210.4
+1976-eau-de-parfum,1976 eau de parfum,NRC_fear,NRC,1.6,194.0,-192.4,192.4
+1976-eau-de-parfum,1976 eau de parfum,NRC_joy,NRC,1.8,619.0,-617.2,617.2
+1976-eau-de-parfum,1976 eau de parfum,NRC_sadness,NRC,0.8,215.0,-214.2,214.2
+1976-eau-de-parfum,1976 eau de parfum,NRC_surprise,NRC,0.6,221.0,-220.4,220.4
+1976-eau-de-parfum,1976 eau de parfum,NRC_trust,NRC,2.4,823.0,-820.6,820.6
+1976-eau-de-parfum,1976 eau de parfum,NRC_positive,NRC,4.2,1265.0,-1260.8,1260.8
+1976-eau-de-parfum,1976 eau de parfum,NRC_negative,NRC,1.4,469.0,-467.6,467.6
+1976-eau-de-parfum,1976 eau de parfum,VAD_valence,VAD,0.15877799638696058,0.1660818886153002,-0.007303892228339631,0.007303892228339631
+1976-eau-de-parfum,1976 eau de parfum,VAD_arousal,VAD,-0.14484414921040875,-0.102623504874308,-0.042220644336100746,0.042220644336100746
+1976-eau-de-parfum,1976 eau de parfum,VAD_dominance,VAD,-0.0404205634717655,0.027871278199276,-0.0682918416710415,0.0682918416710415
+1976-eau-de-parfum,1976 eau de parfum,Hartmann_joy,Hartmann,0.2599676095182076,0.5484875,-0.28851989048179244,0.28851989048179244
+1976-eau-de-parfum,1976 eau de parfum,Hartmann_neutral,Hartmann,0.26931757116690275,0.27755,-0.008232428833097272,0.008232428833097272
+1976-eau-de-parfum,1976 eau de parfum,Hartmann_disgust,Hartmann,0.162060714373365,0.00325,0.158810714373365,0.158810714373365
+1976-eau-de-parfum,1976 eau de parfum,Hartmann_sadness,Hartmann,0.06139416147489096,0.0108875,0.05050666147489096,0.05050666147489096
+1976-eau-de-parfum,1976 eau de parfum,Hartmann_anger,Hartmann,0.00940495457034554,0.00715,0.00225495457034554,0.00225495457034554
+1976-eau-de-parfum,1976 eau de parfum,Hartmann_surprise,Hartmann,0.03142931465990836,0.1497375,-0.11830818534009163,0.11830818534009163
+1976-eau-de-parfum,1976 eau de parfum,Hartmann_fear,Hartmann,0.20642567507456983,0.0029125,0.2035131750745698,0.2035131750745698
+1976-eau-de-parfum,1976 eau de parfum,Savani_joy,Savani,0.20416280557401473,0.8716417325777002,-0.6674789270036854,0.6674789270036854
+1976-eau-de-parfum,1976 eau de parfum,Savani_love,Savani,0.39870238249422985,0.0011121979405288,0.39759018455370104,0.39759018455370104
+1976-eau-de-parfum,1976 eau de parfum,Savani_sadness,Savani,0.20087641184218225,0.1247503052563842,0.07612610658579805,0.07612610658579805
+1976-eau-de-parfum,1976 eau de parfum,Savani_fear,Savani,0.16215630352962757,0.0002576572342149,0.16189864629541267,0.16189864629541267
+1976-eau-de-parfum,1976 eau de parfum,Savani_anger,Savani,0.0332868579396745,0.0019379111963644,0.031348946743310104,0.031348946743310104
+1976-eau-de-parfum,1976 eau de parfum,Savani_surprise,Savani,0.00081522309628778,0.0003001703571498,0.00051505273913798,0.00051505273913798
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_admiration,GoEmotions,0.00187429403886194,0.1181499999999999,-0.11627570596113795,0.11627570596113795
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_amusement,GoEmotions,0.0006295609171502,0.001,-0.0003704390828498,0.0003704390828498
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_anger,GoEmotions,0.0010246045305393,0.00085,0.00017460453053929996,0.00017460453053929996
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_annoyance,GoEmotions,0.0026013720082118602,0.005,-0.00239862799178814,0.00239862799178814
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_approval,GoEmotions,0.21115722149843347,0.1369,0.07425722149843347,0.07425722149843347
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_caring,GoEmotions,0.00363338317984012,0.0039,-0.00026661682015988,0.00026661682015988
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_confusion,GoEmotions,0.00490693544270468,0.00085,0.00405693544270468,0.00405693544270468
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_curiosity,GoEmotions,0.00366011891746888,0.002425,0.0012351189174688798,0.0012351189174688798
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_desire,GoEmotions,0.07053296332014718,0.0289875,0.04154546332014718,0.04154546332014718
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_disappointment,GoEmotions,0.024921877565793622,0.0123375,0.012584377565793623,0.012584377565793623
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_disapproval,GoEmotions,0.0016997858067042397,0.0157,-0.014000214193295758,0.014000214193295758
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_disgust,GoEmotions,0.00046734855714018,0.00025,0.00021734855714017999,0.00021734855714017999
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00205061142623886,0.0003375,0.00171311142623886,0.00171311142623886
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_excitement,GoEmotions,0.00225942541146646,0.3758875,-0.37362807458853353,0.37362807458853353
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_fear,GoEmotions,0.010830749392334827,0.00105,0.009780749392334826,0.009780749392334826
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_gratitude,GoEmotions,0.0023889591568149,0.1313125,-0.1289235408431851,0.1289235408431851
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_grief,GoEmotions,0.00719251902773974,0.0007875,0.00640501902773974,0.00640501902773974
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_joy,GoEmotions,0.007223530428018385,0.1286999999999999,-0.12147646957198151,0.12147646957198151
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_love,GoEmotions,0.11321029657265166,0.10845,0.004760296572651659,0.004760296572651659
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_nervousness,GoEmotions,0.013401050830725519,0.0008375,0.01256355083072552,0.01256355083072552
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_optimism,GoEmotions,0.039906554913613904,0.004075,0.0358315549136139,0.0358315549136139
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_pride,GoEmotions,0.0034335932548856,0.018375,-0.014941406745114398,0.014941406745114398
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_realization,GoEmotions,0.2824761986732483,0.0221625,0.2603136986732483,0.2603136986732483
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_relief,GoEmotions,0.011559655073506241,0.016825,-0.005265344926493758,0.005265344926493758
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_remorse,GoEmotions,0.00138907875516448,0.0011875,0.00020157875516448,0.00020157875516448
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_sadness,GoEmotions,0.09601276038156352,0.0007,0.09531276038156351,0.09531276038156351
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_surprise,GoEmotions,0.10380873756948854,0.047075,0.05673373756948854,0.05673373756948854
+1976-eau-de-parfum,1976 eau de parfum,GoEmotions_neutral,GoEmotions,0.34777987040579317,0.252525,0.09525487040579317,0.09525487040579317
+1976-eau-de-parfum,1976 eau de parfum,Cardiff_joy,Cardiff,0.050853355601429895,0.0253375,0.025515855601429896,0.025515855601429896
+1976-eau-de-parfum,1976 eau de parfum,Cardiff_optimism,Cardiff,0.48723793029785156,0.90225,-0.41501206970214843,0.41501206970214843
+1976-eau-de-parfum,1976 eau de parfum,Cardiff_anger,Cardiff,0.2458704799413681,0.0307375,0.2151329799413681,0.2151329799413681
+1976-eau-de-parfum,1976 eau de parfum,Cardiff_sadness,Cardiff,0.21603824719786643,0.0416625,0.17437574719786644,0.17437574719786644
+21-eau-de-parfum,21 eau de parfum,NRC_anger,NRC,0.2,65.0,-64.8,64.8
+21-eau-de-parfum,21 eau de parfum,NRC_anticipation,NRC,1.4,133.0,-131.6,131.6
+21-eau-de-parfum,21 eau de parfum,NRC_disgust,NRC,0.4,64.0,-63.6,63.6
+21-eau-de-parfum,21 eau de parfum,NRC_fear,NRC,0.8,33.0,-32.2,32.2
+21-eau-de-parfum,21 eau de parfum,NRC_joy,NRC,2.2,199.0,-196.8,196.8
+21-eau-de-parfum,21 eau de parfum,NRC_sadness,NRC,0.2,34.0,-33.8,33.8
+21-eau-de-parfum,21 eau de parfum,NRC_surprise,NRC,0.4,67.0,-66.6,66.6
+21-eau-de-parfum,21 eau de parfum,NRC_trust,NRC,2.4,180.0,-177.6,177.6
+21-eau-de-parfum,21 eau de parfum,NRC_positive,NRC,5.4,309.0,-303.6,303.6
+21-eau-de-parfum,21 eau de parfum,NRC_negative,NRC,1.0,98.0,-97.0,97.0
+21-eau-de-parfum,21 eau de parfum,VAD_valence,VAD,0.2270446801346801,0.1616710479106753,0.0653736322240048,0.0653736322240048
+21-eau-de-parfum,21 eau de parfum,VAD_arousal,VAD,-0.12233859427609424,-0.1218183139600633,-0.0005202803160309355,0.0005202803160309355
+21-eau-de-parfum,21 eau de parfum,VAD_dominance,VAD,0.02986278619528616,0.0139472026227723,0.01591558357251386,0.01591558357251386
+21-eau-de-parfum,21 eau de parfum,Hartmann_joy,Hartmann,0.40889263960998506,0.49045,-0.08155736039001493,0.08155736039001493
+21-eau-de-parfum,21 eau de parfum,Hartmann_neutral,Hartmann,0.15357794985175127,0.4110833333333333,-0.25750538348158203,0.25750538348158203
+21-eau-de-parfum,21 eau de parfum,Hartmann_disgust,Hartmann,0.01849401874933386,0.0119999999999999,0.00649401874933396,0.00649401874933396
+21-eau-de-parfum,21 eau de parfum,Hartmann_sadness,Hartmann,0.040037735353689596,0.01025,0.029787735353689594,0.029787735353689594
+21-eau-de-parfum,21 eau de parfum,Hartmann_anger,Hartmann,0.00913143493235106,0.0107333333333333,-0.0016018984009822396,0.0016018984009822396
+21-eau-de-parfum,21 eau de parfum,Hartmann_surprise,Hartmann,0.20131111973896618,0.0601833333333333,0.1411277864056329,0.1411277864056329
+21-eau-de-parfum,21 eau de parfum,Hartmann_fear,Hartmann,0.16855510453460734,0.0052333333333333,0.16332177120127403,0.16332177120127403
+21-eau-de-parfum,21 eau de parfum,Savani_joy,Savani,0.4363143652677536,0.8877466668685278,-0.4514323016007742,0.4514323016007742
+21-eau-de-parfum,21 eau de parfum,Savani_love,Savani,0.2042700256220996,0.0082858547102659,0.19598417091183368,0.19598417091183368
+21-eau-de-parfum,21 eau de parfum,Savani_sadness,Savani,0.0480938682914711,0.0030237255826553,0.045070142708815805,0.045070142708815805
+21-eau-de-parfum,21 eau de parfum,Savani_fear,Savani,0.11090087102493265,0.0068542802000592,0.10404659082487346,0.10404659082487346
+21-eau-de-parfum,21 eau de parfum,Savani_anger,Savani,0.009755298358504621,0.0933804872571878,-0.08362518889868317,0.08362518889868317
+21-eau-de-parfum,21 eau de parfum,Savani_surprise,Savani,0.1906656386374379,0.0007089772067653,0.1899566614306726,0.1899566614306726
+21-eau-de-parfum,21 eau de parfum,GoEmotions_admiration,GoEmotions,0.10195590418879867,0.2012166666666666,-0.09926076247786793,0.09926076247786793
+21-eau-de-parfum,21 eau de parfum,GoEmotions_amusement,GoEmotions,0.00138562874344636,0.0076666666666666,-0.0062810379232202404,0.0062810379232202404
+21-eau-de-parfum,21 eau de parfum,GoEmotions_anger,GoEmotions,0.0011112324078566798,0.0007833333333333,0.00032789907452337986,0.00032789907452337986
+21-eau-de-parfum,21 eau de parfum,GoEmotions_annoyance,GoEmotions,0.0018780035548843,0.0042166666666666,-0.0023386631117823004,0.0023386631117823004
+21-eau-de-parfum,21 eau de parfum,GoEmotions_approval,GoEmotions,0.2012246348022017,0.3044833333333333,-0.10325869853113157,0.10325869853113157
+21-eau-de-parfum,21 eau de parfum,GoEmotions_caring,GoEmotions,0.0009909060609060798,0.0009166666666666,7.423939423947985e-05,7.423939423947985e-05
+21-eau-de-parfum,21 eau de parfum,GoEmotions_confusion,GoEmotions,0.00256137400865548,0.00295,-0.00038862599134452,0.00038862599134452
+21-eau-de-parfum,21 eau de parfum,GoEmotions_curiosity,GoEmotions,0.0110671107016969,0.00155,0.0095171107016969,0.0095171107016969
+21-eau-de-parfum,21 eau de parfum,GoEmotions_desire,GoEmotions,0.06028841882944104,0.00265,0.05763841882944104,0.05763841882944104
+21-eau-de-parfum,21 eau de parfum,GoEmotions_disappointment,GoEmotions,0.04861263278871772,0.0018,0.046812632788717716,0.046812632788717716
+21-eau-de-parfum,21 eau de parfum,GoEmotions_disapproval,GoEmotions,0.00209970386931666,0.0143166666666666,-0.012216962797349941,0.012216962797349941
+21-eau-de-parfum,21 eau de parfum,GoEmotions_disgust,GoEmotions,0.00045578269055105997,0.00085,-0.00039421730944894,0.00039421730944894
+21-eau-de-parfum,21 eau de parfum,GoEmotions_embarrassment,GoEmotions,0.0011700249538989,0.0006666666666666,0.0005033582872323,0.0005033582872323
+21-eau-de-parfum,21 eau de parfum,GoEmotions_excitement,GoEmotions,0.0050577625806908395,0.0731333333333333,-0.06807557075264246,0.06807557075264246
+21-eau-de-parfum,21 eau de parfum,GoEmotions_fear,GoEmotions,0.0015539973974227398,0.0013333333333333,0.0002206640640894399,0.0002206640640894399
+21-eau-de-parfum,21 eau de parfum,GoEmotions_gratitude,GoEmotions,0.00122003777069034,0.1412,-0.13997996222930964,0.13997996222930964
+21-eau-de-parfum,21 eau de parfum,GoEmotions_grief,GoEmotions,0.00227359542623158,0.0012,0.0010735954262315803,0.0010735954262315803
+21-eau-de-parfum,21 eau de parfum,GoEmotions_joy,GoEmotions,0.11309207146987314,0.1631333333333333,-0.050041261863460154,0.050041261863460154
+21-eau-de-parfum,21 eau de parfum,GoEmotions_love,GoEmotions,0.00352858638507308,0.0056,-0.00207141361492692,0.00207141361492692
+21-eau-de-parfum,21 eau de parfum,GoEmotions_nervousness,GoEmotions,0.00374119968619192,0.00045,0.00329119968619192,0.00329119968619192
+21-eau-de-parfum,21 eau de parfum,GoEmotions_optimism,GoEmotions,0.00437705714721228,0.1079333333333333,-0.10355627618612102,0.10355627618612102
+21-eau-de-parfum,21 eau de parfum,GoEmotions_pride,GoEmotions,0.0016279536997899,0.0028666666666666,-0.0012387129668767,0.0012387129668767
+21-eau-de-parfum,21 eau de parfum,GoEmotions_realization,GoEmotions,0.0998264939524233,0.0881333333333333,0.011693160619089996,0.011693160619089996
+21-eau-de-parfum,21 eau de parfum,GoEmotions_relief,GoEmotions,0.00437967274920076,0.0166666666666666,-0.01228699391746584,0.01228699391746584
+21-eau-de-parfum,21 eau de parfum,GoEmotions_remorse,GoEmotions,0.00077041898621244,0.0003,0.00047041898621244,0.00047041898621244
+21-eau-de-parfum,21 eau de parfum,GoEmotions_sadness,GoEmotions,0.01829731651232574,0.00065,0.017647316512325737,0.017647316512325737
+21-eau-de-parfum,21 eau de parfum,GoEmotions_surprise,GoEmotions,0.20010806102072812,0.0045833333333333,0.19552472768739482,0.19552472768739482
+21-eau-de-parfum,21 eau de parfum,GoEmotions_neutral,GoEmotions,0.3565954047720879,0.4895333333333333,-0.13293792856124542,0.13293792856124542
+21-eau-de-parfum,21 eau de parfum,Cardiff_joy,Cardiff,0.023787582106888243,0.0296666666666666,-0.005879084559778359,0.005879084559778359
+21-eau-de-parfum,21 eau de parfum,Cardiff_optimism,Cardiff,0.6998944401741027,0.91105,-0.2111555598258973,0.2111555598258973
+21-eau-de-parfum,21 eau de parfum,Cardiff_anger,Cardiff,0.1403050303459167,0.0426999999999999,0.0976050303459168,0.0976050303459168
+21-eau-de-parfum,21 eau de parfum,Cardiff_sadness,Cardiff,0.13601296506822103,0.0166,0.11941296506822102,0.11941296506822102
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_anger,NRC,0.2,33.0,-32.8,32.8
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_anticipation,NRC,1.6,114.0,-112.4,112.4
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_disgust,NRC,1.6,39.0,-37.4,37.4
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_fear,NRC,1.2,25.0,-23.8,23.8
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_joy,NRC,1.8,125.0,-123.2,123.2
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_sadness,NRC,1.0,36.0,-35.0,35.0
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_surprise,NRC,0.8,43.0,-42.2,42.2
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_trust,NRC,2.4,165.0,-162.6,162.6
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_positive,NRC,4.2,274.0,-269.8,269.8
+40-rogue-eau-de-toilette,40 rogue eau de toilette,NRC_negative,NRC,2.2,99.0,-96.8,96.8
+40-rogue-eau-de-toilette,40 rogue eau de toilette,VAD_valence,VAD,0.1922956751296263,0.1695097365128081,0.022785938616818213,0.022785938616818213
+40-rogue-eau-de-toilette,40 rogue eau de toilette,VAD_arousal,VAD,-0.16831097830621608,-0.0974790750272376,-0.07083190327897848,0.07083190327897848
+40-rogue-eau-de-toilette,40 rogue eau de toilette,VAD_dominance,VAD,-0.01385939561356456,0.0367590424653546,-0.050618438078919165,0.050618438078919165
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Hartmann_joy,Hartmann,0.2034419616684317,0.4302714285714285,-0.22682946690299682,0.22682946690299682
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Hartmann_neutral,Hartmann,0.2606907036155462,0.2411285714285714,0.019562132186974807,0.019562132186974807
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Hartmann_disgust,Hartmann,0.15432198485359544,0.003,0.15132198485359544,0.15132198485359544
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Hartmann_sadness,Hartmann,0.11650499594397841,0.1416714285714286,-0.025166432627450178,0.025166432627450178
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Hartmann_anger,Hartmann,0.01451583751477294,0.0058142857142857,0.00870155180048724,0.00870155180048724
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Hartmann_surprise,Hartmann,0.03474956825375552,0.1765,-0.14175043174624447,0.14175043174624447
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Hartmann_fear,Hartmann,0.21577490582130845,0.0016285714285714,0.21414633439273706,0.21414633439273706
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Savani_joy,Savani,0.38779193685622887,0.765141989636634,-0.3773500527804052,0.3773500527804052
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Savani_love,Savani,0.3987528439727612,0.0034239318587683,0.39532891211399285,0.39532891211399285
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Savani_sadness,Savani,0.009565427136840261,0.0064271844520199,0.0031382426848203613,0.0031382426848203613
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Savani_fear,Savani,0.20026432233280497,0.0025698849827416,0.19769443735006337,0.19769443735006337
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Savani_anger,Savani,0.00293135227402666,0.0818761889448588,-0.07894483667083214,0.07894483667083214
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Savani_surprise,Savani,0.00069404919340736,0.1405608347870708,-0.13986678559366345,0.13986678559366345
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_admiration,GoEmotions,0.18989173516165458,0.1842285714285714,0.005663163733083176,0.005663163733083176
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_amusement,GoEmotions,0.0015084031678270198,0.0015285714285714,-2.0168260744380176e-05,2.0168260744380176e-05
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_anger,GoEmotions,0.00109933690982868,0.0014428571428571,-0.00034352023302841985,0.00034352023302841985
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_annoyance,GoEmotions,0.0040725526399909995,0.0056285714285714,-0.0015560187885804008,0.0015560187885804008
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_approval,GoEmotions,0.0211662456975318,0.2421857142857142,-0.2210194685881824,0.2210194685881824
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_caring,GoEmotions,0.00100722843199034,0.0113857142857142,-0.01037848585372386,0.01037848585372386
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_confusion,GoEmotions,0.00627909049508156,0.0039857142857142,0.00229337620936736,0.00229337620936736
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_curiosity,GoEmotions,0.00518871151725756,0.0012571428571428,0.00393156866011476,0.00393156866011476
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_desire,GoEmotions,0.00268584286095566,0.0042428571428571,-0.0015570142819014404,0.0015570142819014404
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_disappointment,GoEmotions,0.03727553436765442,0.0017428571428571,0.03553267722479732,0.03553267722479732
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_disapproval,GoEmotions,0.0056945997755974195,0.1362285714285714,-0.13053397165297398,0.13053397165297398
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_disgust,GoEmotions,0.00186539329588408,0.0010142857142857,0.00085110758159838,0.00085110758159838
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_embarrassment,GoEmotions,0.0072570234537124205,0.0005285714285714,0.0067284520251410206,0.0067284520251410206
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_excitement,GoEmotions,0.00125091206282374,0.1444714285714285,-0.14322051650860476,0.14322051650860476
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_fear,GoEmotions,0.01825942874711466,0.0008857142857142,0.017373714461400458,0.017373714461400458
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_gratitude,GoEmotions,0.00100444260169748,0.1435428571428571,-0.14253841454115962,0.14253841454115962
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_grief,GoEmotions,0.00089768519392232,0.0013142857142857,-0.0004166005203633799,0.0004166005203633799
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_joy,GoEmotions,0.00189044617582108,0.0534571428571428,-0.05156669668132172,0.05156669668132172
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_love,GoEmotions,0.15545387453748843,0.0037142857142857,0.15173958882320274,0.15173958882320274
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_nervousness,GoEmotions,0.034454019553959304,0.0006428571428571,0.03381116241110221,0.03381116241110221
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_optimism,GoEmotions,0.00210804931120942,0.0536714285714285,-0.05156337926021908,0.05156337926021908
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_pride,GoEmotions,0.0022817954188212,0.0042142857142857,-0.0019324902954645,0.0019324902954645
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_realization,GoEmotions,0.34190522916615007,0.0540714285714285,0.2878338005947216,0.2878338005947216
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_relief,GoEmotions,0.00372811944980634,0.0050999999999999,-0.0013718805501935598,0.0013718805501935598
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_remorse,GoEmotions,0.00084384127985682,0.0009142857142857,-7.044443442887993e-05,7.044443442887993e-05
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_sadness,GoEmotions,0.00716072549985252,0.0984857142857142,-0.09132498878586168,0.09132498878586168
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_surprise,GoEmotions,0.0021022765256929602,0.1399,-0.13779772347430705,0.13779772347430705
+40-rogue-eau-de-toilette,40 rogue eau de toilette,GoEmotions_neutral,GoEmotions,0.5270686946809292,0.1615142857142857,0.3655544089666435,0.3655544089666435
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Cardiff_joy,Cardiff,0.047237658314406836,0.1247571428571428,-0.07751948454273597,0.07751948454273597
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Cardiff_optimism,Cardiff,0.7212464332580566,0.5859571428571428,0.13528929040091375,0.13528929040091375
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Cardiff_anger,Cardiff,0.13722985163331028,0.1114571428571428,0.025772708776167483,0.025772708776167483
+40-rogue-eau-de-toilette,40 rogue eau de toilette,Cardiff_sadness,Cardiff,0.09428605213761325,0.1778571428571428,-0.08357109071952955,0.08357109071952955
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_anger,NRC,0.4,20.0,-19.6,19.6
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_anticipation,NRC,1.4,60.0,-58.6,58.6
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_disgust,NRC,0.6,25.0,-24.4,24.4
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_fear,NRC,1.0,10.0,-9.0,9.0
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_joy,NRC,2.4,92.0,-89.6,89.6
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_sadness,NRC,0.6,22.0,-21.4,21.4
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_surprise,NRC,0.8,30.0,-29.2,29.2
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_trust,NRC,2.4,103.0,-100.6,100.6
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_positive,NRC,3.8,171.0,-167.2,167.2
+a-la-rose-eau-de-parfum,a la rose eau de parfum,NRC_negative,NRC,1.0,51.0,-50.0,50.0
+a-la-rose-eau-de-parfum,a la rose eau de parfum,VAD_valence,VAD,0.23739582294567002,0.2011289410983282,0.03626688184734181,0.03626688184734181
+a-la-rose-eau-de-parfum,a la rose eau de parfum,VAD_arousal,VAD,-0.1876504193617477,-0.1325767138648065,-0.05507370549694121,0.05507370549694121
+a-la-rose-eau-de-parfum,a la rose eau de parfum,VAD_dominance,VAD,-0.0180410601128007,-0.0087451755826973,-0.009295884530103401,0.009295884530103401
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Hartmann_joy,Hartmann,0.34317868091166015,0.33188,0.011298680911660142,0.011298680911660142
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Hartmann_neutral,Hartmann,0.07944100126624104,0.45872,-0.379278998733759,0.379278998733759
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Hartmann_disgust,Hartmann,0.038362185785081174,0.0115199999999999,0.026842185785081275,0.026842185785081275
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Hartmann_sadness,Hartmann,0.14440686043817547,0.01884,0.12556686043817547,0.12556686043817547
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Hartmann_anger,Hartmann,0.0033858059672638207,0.01714,-0.01375419403273618,0.01375419403273618
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Hartmann_surprise,Hartmann,0.2003590619191527,0.0823,0.1180590619191527,0.1180590619191527
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Hartmann_fear,Hartmann,0.19086645923089235,0.0796,0.11126645923089235,0.11126645923089235
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Savani_joy,Savani,0.4022229456459171,0.9864187836647034,-0.5841958380187863,0.5841958380187863
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Savani_love,Savani,0.19917997874435966,0.0024281989259179,0.19675177981844177,0.19675177981844177
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Savani_sadness,Savani,0.18519421077799045,0.0087893621559487,0.17640484862204175,0.17640484862204175
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Savani_fear,Savani,0.2000947367487242,0.0004862447894992,0.19960849195922498,0.19960849195922498
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Savani_anger,Savani,0.012729192955885042,0.0014668633899418,0.011262329565943242,0.011262329565943242
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Savani_surprise,Savani,0.0005788997223134401,0.0004105052590602,0.00016839446325324006,0.00016839446325324006
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_admiration,GoEmotions,0.20342039644019674,0.21066,-0.007239603559803243,0.007239603559803243
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_amusement,GoEmotions,0.00539696901105338,0.0008199999999999,0.00457696901105348,0.00457696901105348
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_anger,GoEmotions,0.0014275553709012,0.00058,0.0008475553709012,0.0008475553709012
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_annoyance,GoEmotions,0.00413923554588106,0.00116,0.0029792355458810598,0.0029792355458810598
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_approval,GoEmotions,0.15346520496532318,0.1763199999999999,-0.022854795034676717,0.022854795034676717
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_caring,GoEmotions,0.00111655604559922,0.0023,-0.00118344395440078,0.00118344395440078
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_confusion,GoEmotions,0.00303494537947694,0.0014399999999999,0.0015949453794770402,0.0015949453794770402
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_curiosity,GoEmotions,0.0023160866549005203,0.00246,-0.00014391334509947966,0.00014391334509947966
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_desire,GoEmotions,0.0024897900642826603,0.0044399999999999,-0.0019502099357172394,0.0019502099357172394
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_disappointment,GoEmotions,0.024897806771332357,0.00172,0.023177806771332358,0.023177806771332358
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_disapproval,GoEmotions,0.00431417805375528,0.13702,-0.13270582194624472,0.13270582194624472
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_disgust,GoEmotions,0.0018970017583341801,0.0003199999999999,0.00157700175833428,0.00157700175833428
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_embarrassment,GoEmotions,0.00401292636524882,0.0002,0.00381292636524882,0.00381292636524882
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_excitement,GoEmotions,0.00160861064796332,0.19656,-0.19495138935203668,0.19495138935203668
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_fear,GoEmotions,0.011852775633451478,0.00066,0.011192775633451477,0.011192775633451477
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_gratitude,GoEmotions,0.00245272200554606,0.19642,-0.19396727799445396,0.19396727799445396
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_grief,GoEmotions,0.00100637955474662,0.0004199999999999,0.0005863795547467199,0.0005863795547467199
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_joy,GoEmotions,0.009229656067327539,0.00574,0.0034896560673275383,0.0034896560673275383
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_love,GoEmotions,0.00253758157195982,0.09772,-0.09518241842804018,0.09518241842804018
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_nervousness,GoEmotions,0.031419570413709116,0.0006399999999999,0.030779570413709215,0.030779570413709215
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_optimism,GoEmotions,0.00790074421092864,0.00276,0.00514074421092864,0.00514074421092864
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_pride,GoEmotions,0.011324375506956079,0.0024,0.00892437550695608,0.00892437550695608
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_realization,GoEmotions,0.22447778843343252,0.0121999999999999,0.21227778843343262,0.21227778843343262
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_relief,GoEmotions,0.01002322139102032,0.0036,0.006423221391020321,0.006423221391020321
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_remorse,GoEmotions,0.00104118951130654,0.00178,-0.00073881048869346,0.00073881048869346
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_sadness,GoEmotions,0.0016226848121732001,0.0008,0.0008226848121732001,0.0008226848121732001
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_surprise,GoEmotions,0.1991662408690899,0.00082,0.19834624086908992,0.19834624086908992
+a-la-rose-eau-de-parfum,a la rose eau de parfum,GoEmotions_neutral,GoEmotions,0.29226610250771046,0.24752,0.04474610250771047,0.04474610250771047
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Cardiff_joy,Cardiff,0.02145973052829498,0.01758,0.003879730528294982,0.003879730528294982
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Cardiff_optimism,Cardiff,0.7863275885581971,0.94182,-0.15549241144180292,0.15549241144180292
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Cardiff_anger,Cardiff,0.10786503404378889,0.02462,0.08324503404378888,0.08324503404378888
+a-la-rose-eau-de-parfum,a la rose eau de parfum,Cardiff_sadness,Cardiff,0.08434763066470619,0.016,0.06834763066470619,0.06834763066470619

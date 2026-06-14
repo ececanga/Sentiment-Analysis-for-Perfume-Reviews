@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-06-13T09:44:05.736632+00:00",
+  "input_csv": "data/raw/youtube_review_level_pilot100_g25pro_v1.csv",
+  "output_csv": "outputs/youtube_review_level_tests/pilot100_g25pro/features/review_level_features_unlabeled.csv",
+  "annotation_template_csv": "outputs/youtube_review_level_tests/pilot100_g25pro/annotation/review_level_annotation_template.csv",
+  "review_rows": 100,
+  "unique_perfumes": 30,
+  "models": [
+    "hartmann",
+    "savani",
+    "goemotions",
+    "cardiff"
+  ],
+  "numeric_feature_count": 58,
+  "feature_prefix_counts": {
+    "NRC_": 10,
+    "VAD_": 3,
+    "Hartmann_": 7,
+    "Savani_": 6,
+    "GoEmotions_": 28,
+    "Cardiff_": 4
+  },
+  "persona_counts": {},
+  "tone_profile_counts": {},
+  "style_family_counts": {},
+  "scenario_family_counts": {},
+  "warning": "This is unlabeled review-level feature data. Train logistic regression only after adding review-level labels."
+}

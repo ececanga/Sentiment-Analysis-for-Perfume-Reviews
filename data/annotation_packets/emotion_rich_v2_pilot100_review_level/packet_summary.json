@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-06-12T12:59:04.322018+00:00",
+  "input_csv": "outputs/synthetic_review_level_tests/emotion_rich_v2_pilot100/annotation/review_level_annotation_template.csv",
+  "out_dir": "data/annotation_packets/emotion_rich_v2_pilot100_review_level",
+  "review_rows": 100,
+  "unique_perfumes": 20,
+  "batch_size": 10,
+  "batch_count": 10,
+  "output_columns": [
+    "synthetic_review_id",
+    "source_type",
+    "perfume_id",
+    "perfume_name",
+    "review_index",
+    "joy",
+    "sadness",
+    "anger",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust",
+    "valence",
+    "arousal",
+    "dominance"
+  ],
+  "note": "These packets contain no labels. Paste each batch into a browser LLM and save the returned CSV rows."
+}

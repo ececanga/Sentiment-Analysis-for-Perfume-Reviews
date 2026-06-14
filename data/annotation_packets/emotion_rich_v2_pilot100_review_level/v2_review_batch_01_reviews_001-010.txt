@@ -1,0 +1,122 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return ONLY valid CSV. No markdown, no explanation.
+Use exactly this header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-00-auriel-eau-de-parfum-01
+source_type: synthetic
+perfume_id: 00-auriel-eau-de-parfum
+perfume_name: 00 auriel eau de parfum
+review_index: 1
+review_text: I tested 00 auriel eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and warm amber resin made it feel like petal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-00-auriel-eau-de-parfum-02
+source_type: synthetic
+perfume_id: 00-auriel-eau-de-parfum
+perfume_name: 00 auriel eau de parfum
+review_index: 2
+review_text: I expected 00 auriel eau de parfum to be mostly about clean skin musk, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-00-auriel-eau-de-parfum-03
+source_type: synthetic
+perfume_id: 00-auriel-eau-de-parfum
+perfume_name: 00 auriel eau de parfum
+review_index: 3
+review_text: I wanted to understand 00 auriel eau de parfum, but clean skin musk pushed harder than I expected. The mix of bright citrus peel and soft cosmetic powder created a strong image, almost too dry for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-00-auriel-eau-de-parfum-04
+source_type: synthetic
+perfume_id: 00-auriel-eau-de-parfum
+perfume_name: 00 auriel eau de parfum
+review_index: 4
+review_text: 00 auriel eau de parfum made me think about the person I would become if I wore it outside. The impression of soft floral petals gives it presence, while warm spice keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-00-auriel-eau-de-parfum-05
+source_type: synthetic
+perfume_id: 00-auriel-eau-de-parfum
+perfume_name: 00 auriel eau de parfum
+review_index: 5
+review_text: 00 auriel eau de parfum immediately gave me a picture rather than a note list: warm amber resin, soft floral petals, and clean skin musk. The color in my head was orange lamp light, placed around a florist window, with cotton brushing skin somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-01-nomad-eau-de-parfum-01
+source_type: synthetic
+perfume_id: 01-nomad-eau-de-parfum
+perfume_name: 01 nomad eau de parfum
+review_index: 1
+review_text: I expected 01 nomad eau de parfum to be mostly about warm spice, but the drydown changed my mind. At first, the texture matters here as much as the smell itself. After the first sharp moment, sparkling bergamot peel came forward and the whole scent turned warmer. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-01-nomad-eau-de-parfum-02
+source_type: synthetic
+perfume_id: 01-nomad-eau-de-parfum
+perfume_name: 01 nomad eau de parfum
+review_index: 2
+review_text: I wanted to understand 01 nomad eau de parfum, but warm spice pushed harder than I expected. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-01-nomad-eau-de-parfum-03
+source_type: synthetic
+perfume_id: 01-nomad-eau-de-parfum
+perfume_name: 01 nomad eau de parfum
+review_index: 3
+review_text: 01 nomad eau de parfum made me think about the person I would become if I wore it outside. The impression of warm spice gives it presence, while sparkling bergamot peel keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-01-nomad-eau-de-parfum-04
+source_type: synthetic
+perfume_id: 01-nomad-eau-de-parfum
+perfume_name: 01 nomad eau de parfum
+review_index: 4
+review_text: 01 nomad eau de parfum immediately gave me a picture rather than a note list: warm spice, sparkling bergamot peel, and dry black pepper. The color in my head was rust orange, placed around a sunny kitchen, with peppercorns cracking somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-01-nomad-eau-de-parfum-05
+source_type: synthetic
+perfume_id: 01-nomad-eau-de-parfum
+perfume_name: 01 nomad eau de parfum
+review_index: 5
+review_text: I tested 01 nomad eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm spice and sparkling bergamot peel made it feel like dry warmth against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I can see the appeal, just not on every day.
+END_REVIEW

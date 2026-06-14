@@ -1,0 +1,122 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return ONLY valid CSV. No markdown, no explanation.
+Use exactly this header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1976-eau-de-parfum-01
+source_type: synthetic
+perfume_id: 1976-eau-de-parfum
+perfume_name: 1976 eau de parfum
+review_index: 1
+review_text: 1976 eau de parfum made me think about the person I would become if I wore it outside. The impression of polished leather gives it presence, while powdery iris keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1976-eau-de-parfum-02
+source_type: synthetic
+perfume_id: 1976-eau-de-parfum
+perfume_name: 1976 eau de parfum
+review_index: 2
+review_text: 1976 eau de parfum immediately gave me a picture rather than a note list: clean laundry musk, polished leather, and crushed green stems. The color in my head was white cotton, placed around a coat closet, with grass being cut somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1976-eau-de-parfum-03
+source_type: synthetic
+perfume_id: 1976-eau-de-parfum
+perfume_name: 1976 eau de parfum
+review_index: 3
+review_text: I tested 1976 eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The powdery iris and jammy rose petals made it feel like dry powder against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1976-eau-de-parfum-04
+source_type: synthetic
+perfume_id: 1976-eau-de-parfum
+perfume_name: 1976 eau de parfum
+review_index: 4
+review_text: I expected 1976 eau de parfum to be mostly about jammy rose petals, but the drydown changed my mind. The opening made me hesitate, but the base gave it a second chance. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-1976-eau-de-parfum-05
+source_type: synthetic
+perfume_id: 1976-eau-de-parfum
+perfume_name: 1976 eau de parfum
+review_index: 5
+review_text: I wanted to understand 1976 eau de parfum, but clean laundry musk pushed harder than I expected. The mix of polished leather and soft floral petals created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-21-eau-de-parfum-01
+source_type: synthetic
+perfume_id: 21-eau-de-parfum
+perfume_name: 21 eau de parfum
+review_index: 1
+review_text: 21 eau de parfum immediately gave me a picture rather than a note list: golden honey, clean skin musk, and warm spice. I did not feel simple happiness, more like a small private memory opening and closing. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-21-eau-de-parfum-02
+source_type: synthetic
+perfume_id: 21-eau-de-parfum
+perfume_name: 21 eau de parfum
+review_index: 2
+review_text: I tested 21 eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The golden honey and clean skin musk made it feel like sticky glow against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-21-eau-de-parfum-03
+source_type: synthetic
+perfume_id: 21-eau-de-parfum
+perfume_name: 21 eau de parfum
+review_index: 3
+review_text: I expected 21 eau de parfum to be mostly about golden honey, but the drydown changed my mind. After the first sharp moment, clean skin musk came forward and the whole scent turned cleaner. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-21-eau-de-parfum-04
+source_type: synthetic
+perfume_id: 21-eau-de-parfum
+perfume_name: 21 eau de parfum
+review_index: 4
+review_text: I wanted to understand 21 eau de parfum, but golden honey pushed harder than I expected. In the air around me, the image in my head was stronger than the actual note list. The mix of clean skin musk and warm spice created a strong image, almost too close for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-21-eau-de-parfum-05
+source_type: synthetic
+perfume_id: 21-eau-de-parfum
+perfume_name: 21 eau de parfum
+review_index: 5
+review_text: 21 eau de parfum made me think about the person I would become if I wore it outside. The impression of golden honey gives it presence, while clean skin musk keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. I remember the color of it more than any single note.
+END_REVIEW

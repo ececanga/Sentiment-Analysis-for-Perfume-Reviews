@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-06-12T12:48:51.560031+00:00",
+  "input_csv": "data/synthetic/synthetic_perfume_reviews_784_emotion_rich_v2_pilot100.csv",
+  "output_csv": "outputs/synthetic_review_level_tests/emotion_rich_v2_pilot100/features/review_level_features_unlabeled.csv",
+  "annotation_template_csv": "outputs/synthetic_review_level_tests/emotion_rich_v2_pilot100/annotation/review_level_annotation_template.csv",
+  "review_rows": 100,
+  "unique_perfumes": 20,
+  "models": [
+    "hartmann",
+    "savani",
+    "goemotions",
+    "cardiff"
+  ],
+  "numeric_feature_count": 58,
+  "feature_prefix_counts": {
+    "NRC_": 10,
+    "VAD_": 3,
+    "Hartmann_": 7,
+    "Savani_": 6,
+    "GoEmotions_": 28,
+    "Cardiff_": 4
+  },
+  "persona_counts": {
+    "memory_led_reviewer": 19,
+    "collector_with_boundaries": 18,
+    "social_wearer": 17,
+    "casual_daily_wearer": 15,
+    "quiet_observer": 13,
+    "niche_sampler": 9,
+    "sensitive_nose": 9
+  },
+  "tone_profile_counts": {},
+  "style_family_counts": {
+    "scene_based_review": 32,
+    "reflective_mini_review": 18,
+    "long_personal_review": 17,
+    "casual_blunt_review": 17,
+    "short_fragrantica_note": 16
+  },
+  "scenario_family_counts": {
+    "comfort_routine": 20,
+    "surprising_drydown": 20,
+    "difficult_reaction": 20,
+    "social_identity": 20,
+    "sensory_memory": 20
+  },
+  "warning": "This is unlabeled review-level feature data. Train logistic regression only after adding review-level labels."
+}

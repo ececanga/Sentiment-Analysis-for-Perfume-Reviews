@@ -1,0 +1,77 @@
+{
+  "v2_file": "data/synthetic/synthetic_perfume_reviews_784_emotion_rich_v2_pilot100.csv",
+  "rows": 100,
+  "unique_perfumes": 20,
+  "reviews_per_perfume_min": 5,
+  "reviews_per_perfume_max": 5,
+  "label_columns_present": [],
+  "v2_word_count": {
+    "min": 36,
+    "mean": 67.17,
+    "max": 92
+  },
+  "v1_first100_word_count": {
+    "min": 70,
+    "mean": 107.08,
+    "max": 144
+  },
+  "v2_emotion_keyword_mean": 3.36,
+  "v1_first100_emotion_keyword_mean": 2.13,
+  "emotion_keyword_delta": 1.23,
+  "style_family_counts": {
+    "scene_based_review": 32,
+    "reflective_mini_review": 18,
+    "long_personal_review": 17,
+    "casual_blunt_review": 17,
+    "short_fragrantica_note": 16
+  },
+  "scenario_family_counts": {
+    "comfort_routine": 20,
+    "surprising_drydown": 20,
+    "difficult_reaction": 20,
+    "social_identity": 20,
+    "sensory_memory": 20
+  },
+  "sensory_source_counts": {
+    "context_keywords": 100
+  },
+  "sample_reviews": [
+    {
+      "synthetic_review_id": "emotion-rich-v2-00-auriel-eau-de-parfum-01",
+      "scenario_family": "comfort_routine",
+      "style_family": "scene_based_review",
+      "sensory_terms": "soft floral petals;warm amber resin;soft cosmetic powder;bright citrus peel;clean skin musk",
+      "Final Transcript": "I tested 00 auriel eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and warm amber resin made it feel like petal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I remember the color of it more than any single note."
+    },
+    {
+      "synthetic_review_id": "emotion-rich-v2-00-auriel-eau-de-parfum-02",
+      "scenario_family": "surprising_drydown",
+      "style_family": "short_fragrantica_note",
+      "sensory_terms": "clean skin musk;bright citrus peel;warm amber resin;dry woods;soft floral petals",
+      "Final Transcript": "I expected 00 auriel eau de parfum to be mostly about clean skin musk, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. Very specific mood."
+    },
+    {
+      "synthetic_review_id": "emotion-rich-v2-00-auriel-eau-de-parfum-03",
+      "scenario_family": "difficult_reaction",
+      "style_family": "scene_based_review",
+      "sensory_terms": "clean skin musk;bright citrus peel;soft cosmetic powder;soft floral petals;dry woods",
+      "Final Transcript": "I wanted to understand 00 auriel eau de parfum, but clean skin musk pushed harder than I expected. The mix of bright citrus peel and soft cosmetic powder created a strong image, almost too dry for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I remember the color of it more than any single note."
+    },
+    {
+      "synthetic_review_id": "emotion-rich-v2-00-auriel-eau-de-parfum-04",
+      "scenario_family": "social_identity",
+      "style_family": "scene_based_review",
+      "sensory_terms": "soft floral petals;warm spice;clean skin musk;warm amber resin;dry woods",
+      "Final Transcript": "00 auriel eau de parfum made me think about the person I would become if I wore it outside. The impression of soft floral petals gives it presence, while warm spice keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. The whole thing feels more like a scene than a product description."
+    },
+    {
+      "synthetic_review_id": "emotion-rich-v2-00-auriel-eau-de-parfum-05",
+      "scenario_family": "sensory_memory",
+      "style_family": "reflective_mini_review",
+      "sensory_terms": "warm amber resin;soft floral petals;clean skin musk;soft cosmetic powder;bright citrus peel",
+      "Final Transcript": "00 auriel eau de parfum immediately gave me a picture rather than a note list: warm amber resin, soft floral petals, and clean skin musk. The color in my head was orange lamp light, placed around a florist window, with cotton brushing skin somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It feels tied to a specific weather, not to every day."
+    }
+  ],
+  "errors": [],
+  "validation_status": "pass"
+}

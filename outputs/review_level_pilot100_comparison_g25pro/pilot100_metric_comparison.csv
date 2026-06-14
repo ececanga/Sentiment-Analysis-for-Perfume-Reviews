@@ -1,0 +1,5 @@
+source,rows,unique_perfumes,feature_count,metric_target_set,target_columns,macro_f1,macro_roc_auc,macro_pr_auc,micro_f1,hamming_loss,label_cardinality,vad_valence_mean,vad_arousal_mean,vad_dominance_mean
+synthetic_v2_100,100,20,58,all_evaluable,"joy,sadness,fear,trust,surprise,anticipation",0.6503095593462175,0.8301363460137939,0.6768042458099081,0.7142857142857143,0.19333333333333333,1.69,6.06,4.035,4.815
+synthetic_v2_100,100,20,58,common_6_labels,"joy,sadness,fear,trust,surprise,anticipation",0.6503095593462175,0.8301363460137939,0.6768042458099081,,,1.69,6.06,4.035,4.815
+youtube_100,100,30,58,all_evaluable,"joy,sadness,anger,fear,trust,surprise,anticipation,disgust",0.4513978786521356,0.6791097399396001,0.42561216232392907,0.6047430830039525,0.25,2.11,7.1,6.355,6.555
+youtube_100,100,30,58,common_6_labels,"joy,sadness,fear,trust,surprise,anticipation",0.495382356721366,0.6513285304380828,0.48005777801042343,,,2.02,7.1,6.355,6.555
