@@ -1,0 +1,22 @@
+{
+  "attempted": 3,
+  "done_count": 3,
+  "key_results": [
+    {
+      "attempted": 3,
+      "key_fingerprint": "ec56df80dcdd",
+      "key_label": "key_01",
+      "planned": 3,
+      "statuses": {
+        "done": 3
+      },
+      "stopped_on": "",
+      "written": 5
+    }
+  ],
+  "pace": "old",
+  "recommendation": "",
+  "stop_reason": "",
+  "transcript_fetch_error_count": 0,
+  "written": 5
+}

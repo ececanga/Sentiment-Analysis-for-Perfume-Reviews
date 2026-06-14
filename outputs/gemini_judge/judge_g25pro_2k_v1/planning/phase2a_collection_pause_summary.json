@@ -1,0 +1,157 @@
+{
+  "summary_type": "phase2a_collection_pause_freeze",
+  "created_date": "2026-06-03",
+  "phase": "phase2a_2000_perfume_youtube_transcript_expansion",
+  "status": "paused_resumable_branch",
+  "do_not_scrape": true,
+  "counts": {
+    "frozen_phase1_perfumes": 784,
+    "phase2a_raw_rows": 306,
+    "phase2a_formatted_rows": 306,
+    "phase2a_unique_perfumes": 35,
+    "phase2a_overlap_with_frozen_784": 0,
+    "total_usable_including_frozen_784": 819,
+    "phase2a_processed_status_rows": 149,
+    "phase2a_processed_status_counts": {
+      "api_error": 5,
+      "done": 35,
+      "transcript_unavailable": 19,
+      "quota_error": 3,
+      "transcript_fetch_error": 86,
+      "search_no_videos": 1
+    }
+  },
+  "source_artifacts": {
+    "phase2a_raw_csv": "data/raw/YouTube_Perfume_Reviews_Phase2A_Partial.csv",
+    "phase2a_formatted_csv": "data/raw/YouTube_Perfume_Reviews_Phase2A_FullyFormatted.csv",
+    "phase2a_processed_status_csv": "data/intermediate/phase2a_processed_perfumes.csv",
+    "frozen_phase1_labels_csv": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+    "phase1_freeze_manifest": "outputs/gemini_judge/judge_g25pro_v1/phase1_freeze_manifest.json"
+  },
+  "queue_state": {
+    "versions_created": [
+      {
+        "version": "v1",
+        "path": "outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_next_candidate_queue.csv",
+        "rows": 50
+      },
+      {
+        "version": "v2",
+        "path": "outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_next_candidate_queue_v2.csv",
+        "rows": 2191
+      },
+      {
+        "version": "v3",
+        "path": "outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_next_candidate_queue_v3.csv",
+        "rows": 2191
+      }
+    ],
+    "current_recommended_queue_path": "outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_next_candidate_queue_v3.csv",
+    "regenerate_v4_only_if": "queue v3 becomes exhausted or polluted"
+  },
+  "safe_collection_mode": {
+    "recommended_flag": "--old-pace",
+    "last_run_summary_path": "outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_collection_run_summary.json"
+  },
+  "blockers": [
+    "YouTube Data API quota limits",
+    "youtube_transcript_api transcript_fetch_error / IpBlocked",
+    "low yield under safe collection settings",
+    "limited thesis timeline"
+  ],
+  "decision": {
+    "pause_2k_youtube_transcript_expansion": true,
+    "branch_resumable": true,
+    "primary_thesis_dataset_now": "frozen_784",
+    "phase2a_supplement_policy": "keep separate unless explicitly merged later",
+    "rationale": "2K transcript coverage is not realistic under current quota, IP, yield, and timeline constraints."
+  },
+  "resume_phase2a_later": {
+    "preconditions": [
+      "Wait for YouTube quota reset or quota increase.",
+      "Use a network that is not blocked for transcript retrieval.",
+      "Confirm transcript diagnostics before retrying collection."
+    ],
+    "commands": [
+      "python3 src/preprocessing/run_phase2a_collection_batch.py --diagnose-transcript-error YXcy3En2gCA",
+      "python3 src/preprocessing/perfume_emotion_scraper.py --diagnose-youtube-keys --youtube-key-file .env.youtube_keys --max-keys 13",
+      "python3 src/preprocessing/run_phase2a_collection_batch.py --old-pace"
+    ],
+    "after_collection": [
+      "Count raw rows, formatted rows, unique Phase2A perfumes, and status counts.",
+      "Regenerate queue v4 only if queue v3 becomes exhausted or polluted."
+    ]
+  },
+  "do_not_do_when_resuming": [
+    "Do not run large 13-key batches immediately.",
+    "Do not retry transcript_fetch_error unless IP diagnostic passes and retrying is explicitly intended.",
+    "Do not mix Description+Notes as a replacement for YouTube review transcripts.",
+    "Do not overwrite frozen Phase1 artifacts.",
+    "Do not commit .env or .env.youtube_keys."
+  ],
+  "scoring_evaluation_pipeline_inspection": {
+    "nrc_emotion_extraction": {
+      "script": "src/lexicon/apply_emotion_vad_lexicons.py",
+      "lexicon": "data/lexicons/nrc_emotion/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+      "output": "data/perfume_level/NRC_Emotion_Labels_Perfume.csv"
+    },
+    "vad_mapping": {
+      "script": "src/lexicon/apply_emotion_vad_lexicons.py",
+      "lexicon": "data/lexicons/nrc_vad/NRC-VAD-Lexicon-v2.1.txt",
+      "output": "data/perfume_level/VAD_Scores_Perfume.csv"
+    },
+    "gemini_pro_labels": {
+      "frozen_label_csv": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+      "gold_eval_metrics": "outputs/gemini_judge/judge_g25pro_v1/gold_eval/judge_vs_gold_metrics.json"
+    },
+    "aggregation_fusion": {
+      "script": "src/aggregation_fusion/aggregate_and_merge_emotions.py",
+      "unified_profile": "data/perfume_level/Unified_Emotion_Profile_Perfume.csv",
+      "judge_merged_profile": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_merged.csv"
+    },
+    "benchmark_outputs": {
+      "comparison_table": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv",
+      "metrics_dir": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/metrics",
+      "figures_dir": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/figures",
+      "predictions_dir": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/predictions",
+      "deep_text_dataset_summary": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/datasets/perfume_text_dataset_v1_summary.json"
+    },
+    "visual_mapping": {
+      "script": "src/evaluation/evaluate_models.py",
+      "tables_dir": "outputs/evaluation_out",
+      "figures_dir": "outputs/figures",
+      "vad_palette_output": "outputs/evaluation_out/vad_color_palette_hsv.csv"
+    }
+  },
+  "next_scoring_plan_frozen_784": {
+    "inputs": [
+      "data/perfume_level/Unified_Emotion_Profile_Perfume.csv",
+      "labels/gemini_labels_784_judge_g25pro_v1.csv",
+      "data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv",
+      "config/evaluation_config.yaml",
+      "outputs/model_benchmark/tables/fold_assignments.csv"
+    ],
+    "primary_outputs": [
+      "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_merged.csv",
+      "outputs/gemini_judge/judge_g25pro_v1/gold_eval/judge_vs_gold_metrics.json",
+      "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv",
+      "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/final_model_comparison_for_thesis.csv",
+      "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/figures/all_models_grouped_metric_comparison.png"
+    ],
+    "commands": [
+      "python3 -m src.analysis.analyze_gemini_unified --unified-csv data/perfume_level/Unified_Emotion_Profile_Perfume.csv --gemini-csv labels/gemini_labels_784_judge_g25pro_v1.csv --out-dir outputs/gemini_judge/judge_g25pro_v1/analysis_out --perfume-col Perfume --strict",
+      "python3 -m src.training.generate_final_benchmark_figures --source-table outputs/gemini_judge/judge_g25pro_v1/model_benchmark/tables/comparison_table.csv --output-dir outputs/gemini_judge/judge_g25pro_v1/model_benchmark",
+      "python3 -m src.evaluation.evaluate_models --topN 15 --topK 15 --normalize_vad",
+      "python3 -m src.analysis.analyze_stage8_feature_importance --merged-csv outputs/analysis_out/gemini_unified_merged.csv --stage7-metrics-json outputs/training/stage7_gemini784_metrics.json --stage7-label-diagnostics-csv outputs/training/stage7_gemini784_label_diagnostics.csv --stage7-oof-csv outputs/training/stage7_gemini784_oof_predictions.csv --out-dir outputs/analysis_out --n-repeats 5 --strict"
+    ],
+    "produces": [
+      "Join integrity tables and Gemini-vs-feature agreement diagnostics.",
+      "Gold-43 sanity-check metrics for Gemini Pro labels.",
+      "Five-model benchmark table with macro-F1, macro ROC-AUC, and macro PR-AUC.",
+      "Per-label metrics, ROC/PR curves, model comparison figures, and final thesis comparison table.",
+      "Agreement, JSD, VAD correlation, disagreement, NRC heatmap, and VAD color mapping outputs.",
+      "Stage 8 feature/family importance tables for interpretation."
+    ]
+  },
+  "phase2a_supplement_recommendation": "Stay separate for now. Use only as supplementary qualitative examples, or merge later only after enough additional transcript perfumes are collected and labeled under the same protocol."
+}

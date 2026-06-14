@@ -1,0 +1,71 @@
+{
+  "baseline_labels": {
+    "blank_perfume_ids": 0,
+    "blank_perfume_names": 0,
+    "path": "labels/gemini_labels_784_v1.csv",
+    "rows": 784,
+    "unique_normalized_perfumes": 784,
+    "unique_perfume_ids": 784
+  },
+  "baseline_only_names_count": 0,
+  "label_source_name_sets_match": true,
+  "name_only_universe": {
+    "path": "data/perfume_level/final_perfume_data.csv",
+    "rows": 2191,
+    "unique_names": 2184,
+    "unique_names_inside_frozen_784": 784,
+    "unique_names_outside_frozen_784": 1400
+  },
+  "outputs": {
+    "candidate_csv": "outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_candidate_perfumes.csv",
+    "inventory_json": "outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_inventory.json"
+  },
+  "phase": "phase2a_2000_perfume_expansion",
+  "phase1_pro_labels": {
+    "blank_perfume_ids": 0,
+    "blank_perfume_names": 0,
+    "path": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+    "rows": 784,
+    "unique_normalized_perfumes": 784,
+    "unique_perfume_ids": 784
+  },
+  "phase1_pro_only_names_count": 0,
+  "phase2a_readiness": {
+    "additional_usable_perfumes_required_beyond_frozen_784": 1216,
+    "additional_usable_perfumes_required_to_reach_2000": 1216,
+    "blocker": "Local raw transcript coverage does not contain enough usable perfumes for a 2,000-perfume target set.",
+    "can_create_2k_target_builder_now": false,
+    "candidate_perfumes_outside_frozen_784": 0,
+    "local_data_supports_2000": false,
+    "usable_perfumes_available": 784
+  },
+  "processed_perfumes": {
+    "path": "data/intermediate/processed_perfumes.csv",
+    "rows": 1330,
+    "status_counts": {
+      "Done": 784,
+      "No results": 13,
+      "No videos": 533
+    },
+    "status_counts_outside_frozen_784": {
+      "No results": 13,
+      "No videos": 533
+    },
+    "unique_names": 1330,
+    "unique_names_outside_frozen_784": 546
+  },
+  "raw_transcripts": {
+    "blank_perfume_rows": 0,
+    "candidate_perfumes_outside_frozen_784": 0,
+    "frozen_784_missing_from_raw": 0,
+    "path": "data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv",
+    "perfumes_with_usable_text": 784,
+    "perfumes_with_usable_text_outside_frozen_784": 0,
+    "raw_perfumes_missing_from_frozen_784": 0,
+    "rows": 4881,
+    "unique_perfumes": 784,
+    "usable_review_rows": 4881
+  },
+  "status": "blocked_pending_raw_text_expansion",
+  "target_perfumes": 2000
+}

@@ -1,0 +1,289 @@
+{
+  "diagnostic_scope": "phase2a_first_fresh_25_batch",
+  "current_status_counts": {
+    "api_error": 6,
+    "done": 5,
+    "transcript_unavailable": 19,
+    "quota_error": 5
+  },
+  "raw_rows": 56,
+  "raw_unique_perfumes": 5,
+  "formatted_rows": 56,
+  "formatted_unique_perfumes": 5,
+  "attempted_25_candidates": [
+    {
+      "perfume_name": "20 years eau de parfum",
+      "normalized_name": "20 years eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=O3FFi4aJTrI! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "2013 residence d'artistes eau de parfum",
+      "normalized_name": "2013 residence d'artistes eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "transcripts_disabled_or_missing",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "TranscriptsDisabled; TranscriptsDisabled; IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=p2WRB1RM72o! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to"
+    },
+    {
+      "perfume_name": "2015 le phenix eau de parfum",
+      "normalized_name": "2015 le phenix eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=cZvewr_PxbQ! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "2018 roxo tonic eau de parfum",
+      "normalized_name": "2018 roxo tonic eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=BlYOY6S35CE! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "2022 generation homme eau de parfum",
+      "normalized_name": "2022 generation homme eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "transcripts_disabled_or_missing",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "NoTranscriptFound; IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2osuRqqLz0w! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following r"
+    },
+    {
+      "perfume_name": "3 eau de toilette",
+      "normalized_name": "3 eau de toilette",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HvmeDLU2a6g! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "34 boulevard saint germain edp eau de parfum",
+      "normalized_name": "34 boulevard saint germain edp eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=TDHMF5lvGXc! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "450 eau de parfum",
+      "normalized_name": "450 eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-l1Slo9QTWY! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "a blvd. called sunset eau de parfum",
+      "normalized_name": "a blvd. called sunset eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": false,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3YHYwGRDALc! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "a man's cologne eau de parfum",
+      "normalized_name": "a man's cologne eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=6M1Wh7hUQ8U! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "a rose for... eau de parfum",
+      "normalized_name": "a rose for... eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=kVPhs7FOH5s! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "acquiiissssima eau de parfum",
+      "normalized_name": "acquiiissssima eau de parfum",
+      "status": "api_error",
+      "attempts": "1",
+      "error_category": "youtube_data_api_quota",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "api_error: Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:954069448259'."
+    },
+    {
+      "perfume_name": "adameku parfum",
+      "normalized_name": "adameku parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=8r0n9cDbyXs! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "aenotus parfum extrait",
+      "normalized_name": "aenotus parfum extrait",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=eiFBlrbxojA! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "against nature eau de parfum",
+      "normalized_name": "against nature eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": false,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0cinEuu-k-g! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "agarwood eau de parfum",
+      "normalized_name": "agarwood eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=wr17GYru6HQ! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "agua magnoliana eau de parfum",
+      "normalized_name": "agua magnoliana eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": false,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=x_37OAUKHdI! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "aguamadera eau de parfum",
+      "normalized_name": "aguamadera eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ekU7Yrjai8A! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "akanesasu eau de parfum",
+      "normalized_name": "akanesasu eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HWHhghXH-tw! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "alchemico eau de parfum",
+      "normalized_name": "alchemico eau de parfum",
+      "status": "transcript_unavailable",
+      "attempts": "1",
+      "error_category": "videos_found_but_transcripts_unavailable_or_not_english",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "IpBlocked: Could not retrieve a transcript for the video https://www.youtube.com/watch?v=CUzpdSnwTfI! This is most likely caused by: YouTube is blocking requests from your IP. This usually is due to one of the following reasons: - You have "
+    },
+    {
+      "perfume_name": "allegretto 7.2 eau de parfum",
+      "normalized_name": "allegretto 7.2 eau de parfum",
+      "status": "quota_error",
+      "attempts": "1",
+      "error_category": "youtube_data_api_quota",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "quota_error: The request cannot be completed because you have exceeded your <a href=\"/youtube/v3/getting-started#quota\">quota</a>."
+    },
+    {
+      "perfume_name": "allende parfum",
+      "normalized_name": "allende parfum",
+      "status": "quota_error",
+      "attempts": "1",
+      "error_category": "youtube_data_api_quota",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "quota_error: The request cannot be completed because you have exceeded your <a href=\"/youtube/v3/getting-started#quota\">quota</a>."
+    },
+    {
+      "perfume_name": "amazingreen eau de parfum",
+      "normalized_name": "amazingreen eau de parfum",
+      "status": "quota_error",
+      "attempts": "1",
+      "error_category": "youtube_data_api_quota",
+      "numeric_or_ambiguous": true,
+      "last_error_sanitized_sample": "quota_error: The request cannot be completed because you have exceeded your <a href=\"/youtube/v3/getting-started#quota\">quota</a>."
+    },
+    {
+      "perfume_name": "amber absolutely eau de parfum",
+      "normalized_name": "amber absolutely eau de parfum",
+      "status": "quota_error",
+      "attempts": "1",
+      "error_category": "youtube_data_api_quota",
+      "numeric_or_ambiguous": false,
+      "last_error_sanitized_sample": "quota_error: The request cannot be completed because you have exceeded your <a href=\"/youtube/v3/getting-started#quota\">quota</a>."
+    },
+    {
+      "perfume_name": "amber chocolate eau de parfum",
+      "normalized_name": "amber chocolate eau de parfum",
+      "status": "quota_error",
+      "attempts": "1",
+      "error_category": "youtube_data_api_quota",
+      "numeric_or_ambiguous": false,
+      "last_error_sanitized_sample": "quota_error: The request cannot be completed because you have exceeded your <a href=\"/youtube/v3/getting-started#quota\">quota</a>."
+    }
+  ],
+  "attempted_25_status_counts": {
+    "transcript_unavailable": 19,
+    "api_error": 1,
+    "quota_error": 5
+  },
+  "attempted_25_error_category_counts": {
+    "videos_found_but_transcripts_unavailable_or_not_english": 17,
+    "transcripts_disabled_or_missing": 2,
+    "youtube_data_api_quota": 6
+  },
+  "attempted_25_numeric_or_ambiguous_count": 20,
+  "final_perfume_data_fields": [
+    "Name",
+    "Brand",
+    "Description",
+    "Notes",
+    "Image URL"
+  ],
+  "final_perfume_data_has_review_or_popularity_fields": false,
+  "scraper_queue_diagnosis": {
+    "currently_prioritizes_weak_alphabetical_candidates": true,
+    "reason": "load_perfume_names sorts by hard-coded popular brand token in the perfume name, then alphabetically; it does not use the Brand column, review coverage, popularity, or candidate quality filters.",
+    "query_issue": "current query templates use perfume name only, without Brand context, which hurts ambiguous names such as numeric names and common terms."
+  },
+  "likely_failure_causes": [
+    "Candidate quality and ordering were weak: the fresh 25 batch came from early alphabetical/name-only candidates with numeric or ambiguous names.",
+    "Most transcript_unavailable results are inconclusive from local status alone: videos were likely found but usable English transcripts were not fetched, disabled, unavailable, or the search results were off-target.",
+    "quota_error occurred during YouTube Data API search: the scraper returned quota_error while processing the first search query for the last five candidates, before transcript fetching.",
+    "One fresh api_error occurred for acquiiissssima during YouTube Data API search; older api_error rows were DNS/network failures from the sandboxed attempt."
+  ],
+  "recommendation": {
+    "next_batch_size": 25,
+    "do_not_increase_to_50_yet": true,
+    "wait_for_quota_before_retrying": true,
+    "next_queue_source": "phase2a_next_candidate_queue.csv first 25 rows with recommended_for_next_batch=true after implementing/using brand-aware query templates.",
+    "retry_policy": {
+      "done": "do_not_retry",
+      "transcript_unavailable": "retry only with brand-aware query templates and preferably after off-target result inspection",
+      "api_error": "retry only after network/API recovery; separate from quality queue",
+      "quota_error": "wait for quota reset before retrying",
+      "legacy No videos/No results": "do not retry in the main queue unless explicitly testing improved queries"
+    },
+    "query_strategy": [
+      "{brand} {perfume} perfume review",
+      "{brand} {perfume} fragrance review",
+      "\"{brand}\" \"{perfume}\" perfume",
+      "{perfume} {brand} review"
+    ]
+  }
+}

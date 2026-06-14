@@ -1,0 +1,909 @@
+Perfume,Status,Attempts,Last Error
+10 am accord eau de parfum,api_error,1,"api_error: ConnectionError: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&q=10+am+accord+eau+de+parfum+perfume&maxResults=10&type=video&key=<REDACTED_API_KEY> (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x119ef17f0>: Failed to resolve 'www.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"")); api_error: ConnectionError: HTTPSConnectionPool(host="
+1270 eau de parfum,api_error,1,"api_error: ConnectionError: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&q=1270+eau+de+parfum+perfume&maxResults=10&type=video&key=<REDACTED_API_KEY> (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x119eafc50>: Failed to resolve 'www.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"")); api_error: ConnectionError: HTTPSConnectionPool(host='www.goo"
+1885 bains sulfureux eau de parfum,api_error,1,"api_error: ConnectionError: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&q=1885+bains+sulfureux+eau+de+parfum+perfume&maxResults=10&type=video&key=<REDACTED_API_KEY> (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x11a0b4410>: Failed to resolve 'www.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"")); api_error: ConnectionError: HTTPSConnectionPo"
+1900 l'heure de proust eau de parfum,api_error,1,"api_error: ConnectionError: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&q=1900+l%27heure+de+proust+eau+de+parfum+perfume&maxResults=10&type=video&key=<REDACTED_API_KEY> (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x11a0b51d0>: Failed to resolve 'www.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"")); api_error: ConnectionError: HTTPSConnecti"
+1978 les bains douches eau de parfum,api_error,1,"api_error: ConnectionError: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/search?part=snippet&q=1978+les+bains+douches+eau+de+parfum+perfume&maxResults=10&type=video&key=<REDACTED_API_KEY> (Caused by NameResolutionError(""<urllib3.connection.HTTPSConnection object at 0x119eafb10>: Failed to resolve 'www.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"")); api_error: ConnectionError: HTTPSConnection"
+1979 new wave eau de parfum,done,3,
+2 candle,done,3,
+2 eau de parfum,done,3,
+2 man eau de toilette,done,3,
+20 20 eau de parfum,done,3,
+20 years eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=O3FFi4aJTrI! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+2013 residence d'artistes eau de parfum,transcript_unavailable,1,"TranscriptsDisabled; TranscriptsDisabled; IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=p2WRB1RM72o! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud prov"
+2015 le phenix eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=cZvewr_PxbQ! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+2018 roxo tonic eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=BlYOY6S35CE! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+2022 generation homme eau de parfum,transcript_unavailable,1,"NoTranscriptFound; IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2osuRqqLz0w! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by Yo"
+3 eau de toilette,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HvmeDLU2a6g! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+34 boulevard saint germain edp eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=TDHMF5lvGXc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+450 eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-l1Slo9QTWY! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+a blvd. called sunset eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3YHYwGRDALc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+a man's cologne eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=6M1Wh7hUQ8U! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+a rose for... eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=kVPhs7FOH5s! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+adameku parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=8r0n9cDbyXs! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+aenotus parfum extrait,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=eiFBlrbxojA! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+against nature eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0cinEuu-k-g! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+agarwood eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=wr17GYru6HQ! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+agua magnoliana eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=x_37OAUKHdI! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+aguamadera eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ekU7Yrjai8A! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+akanesasu eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HWHhghXH-tw! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+alchemico eau de parfum,transcript_unavailable,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=CUzpdSnwTfI! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+allegretto 7.2 eau de parfum,quota_error,1,"quota_error: The request cannot be completed because you have exceeded your <a href=""/youtube/v3/getting-started#quota"">quota</a>."
+amber absolutely eau de parfum,quota_error,1,"quota_error: The request cannot be completed because you have exceeded your <a href=""/youtube/v3/getting-started#quota"">quota</a>."
+amber chocolate eau de parfum,quota_error,1,"quota_error: The request cannot be completed because you have exceeded your <a href=""/youtube/v3/getting-started#quota"">quota</a>."
+Rose Of No Man's Land Hair Perfume,done,3,
+Andy Warhol's You're In Eau de Toilette,done,3,
+Eau Rose Hair Mist Scented Hair Perfume,done,3,
+Oud Satin Mood Extrait Extrait de Parfum,done,3,
+XJ Amber Gold & Rose Gold Collection Eau de Parfum,done,3,
+Baccarat Rouge 540 Hair Mist Scented Hair Perfume,done,3,
+Baccarat Rouge 540 Extrait Extrait de Parfum,done,3,
+Grace by Grace Coddington Eau de Toilette,done,4,
+L'Homme A La Rose Eau de Parfum,done,4,
+La Couche du Diable Eau de Parfum,done,4,
+Cruz Del Sur I Eau de Parfum,done,4,
+Cruz Del Sur II Eau de Parfum,done,4,
+Orange X Santal Eau de Parfum,transcript_fetch_error,13,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=I7Ng7uonsH8! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+gentle Fluidity Gold Eau de Parfum,transcript_fetch_error,13,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YXcy3En2gCA! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Gentle fluidity Silver Eau de Parfum,transcript_fetch_error,13,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YXcy3En2gCA! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+L'Eau A La Rose Eau de Toilette,transcript_fetch_error,13,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=DQv3vC66HOM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Oud Silk Mood - Eau de Parfum,transcript_fetch_error,13,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Kvj3wjhx6xQ! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Safran Colognise Extrait de Cologne,transcript_fetch_error,13,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Fl6IZt48tG4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Vain & Naive Extrait de Parfum,transcript_fetch_error,13,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=roTFrJTk5xg! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Bois Et Musc Eau de Parfum,transcript_fetch_error,12,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=GK4fs6zEhIk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Iris Silver Mist Eau de Parfum,transcript_fetch_error,12,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=9Bi_s0BDqsw! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Le Participe Passe Eau de Parfum,transcript_fetch_error,12,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=rZLIp8_aAB0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Oud Stars - Alexandria II Eau de Parfum,transcript_fetch_error,14,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=TiEfZq6XMA8! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Interlude Black Iris Eau de Parfum,transcript_fetch_error,14,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Pk6OXwSFwuM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Rolling in Love Eau de Parfum,transcript_fetch_error,14,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=p4Uf5otiKIk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+I Don't Know What Eau de Parfum,done,3,
+Muscs Koublai Khan Eau de Parfum,done,2,
+Oud Stars - Ceylon Eau de Parfum,done,2,
+Oud Stars - Malesia Eau de Parfum,transcript_fetch_error,2,"NoTranscriptFound; IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=DaEsNzRtUc4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by Yo"
+Oud Stars - Indochine Parfum,transcript_fetch_error,2,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=iFkXEBhLTaE! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Amazingreen Eau de Parfum,transcript_fetch_error,3,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-xRCgic-wsA! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Oud - Extrait de Parfum,transcript_fetch_error,2,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2h35Mn6khM0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Intense Black Aoud Extrait de Parfum,transcript_fetch_error,2,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=6KN4oU_dz6c! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Ristretto Intense Cafe Extrait de Parfum,transcript_fetch_error,2,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=t_sGUjTmhR4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Ani Extrait de Parfum,transcript_fetch_error,2,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=jGPOCtQNZsk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Hacivat Extrait de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=OxVCn3w9JKU! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Nefs Extrait de Parfum,done,3,
+Unutamam Extrait de Parfum,done,1,
+Beach Hut Man Eau de Parfum,done,1,
+Figment Man Eau de Parfum,done,1,
+Love Tuberose Eau de Parfum,done,1,
+Portrayal Man Eau de Parfum,done,1,
+Bibliotheque Eau de Parfum,done,1,
+Lil Fleur Eau de Parfum,done,1,
+Slow Dance Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=INzIhpEevTk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Sundazed Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-X20QBVcySE! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Unnamed Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=kzu24INxNxU! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Velvet Haze Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EC4yrYH5Ggk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Blackpepper Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=WyiHFZxepg8! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Concrete Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2Czj6JZhi2c! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Acquiiissssima Eau de Parfum,search_no_videos,2,
+Allende Parfum,transcript_fetch_error,2,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=B-NSGo2T3eU! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Dot Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=4mJlMSiz4o4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Floriental Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Ul44uElhf8Y! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Original Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Fxzgjh-O9LM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Wonderoud Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ZvO-MKfPcss! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Wonderwood Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=zifLjCjPwX4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Amber Kiso Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=dZVNFMIF5iw! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Amber Teutonic Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3X-5UmPgmKI! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+El Cosmico Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=qoLACHwNeB8! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Notorious Oud Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=X4f9RF9y4Pc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Eau de Minthe Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=x1TGGbanlFc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Fleur de Peau Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EPsZH_cvar0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Tempo Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Ux_2jrwDEl4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Vetyverio - Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2GNtcStKy-c! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Cuir Celeste Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Vj0BtoJy5lM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+French Affair Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=epySHn9TfNM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Lust In Paradise Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Ek_nxBsfXaE! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Midnight Special Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=yw3YaM7rry0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Viper Green Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=qtmPTa4PnmM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Amber Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=TdElVW1lnBQ! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Brume du Matin Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=aaoEYNTG-Pc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Cannabis Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pmnBWW5TE24! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Heritage Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=iIkKl1P_UVA! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+London Oud Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=yNfsVgNQbOY! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Oud Bleu Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=GhcKzlw9fyc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Oud Jaune Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=96lNYi7hF24! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Oud Noir Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=BNCBu-6avoM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Oud Orange Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=RcPCXkrJmEk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Oud Rouge Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=97i_F2DHOdM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Oud Vert Intense Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-1oOVYCE2VM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Parisian Oud Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=A6noBH7ymjQ! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Patchouli Argent Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HV2akn-APmk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Petales de Cashmere Eau de Parfum,transcript_fetch_error,1,"RequestBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=LH6FevqhWms! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+There "
+Sahraa Oud Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=4bbhLtzFr9c! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Santal Complet Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=JFFoaWUj91c! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Zest Marin Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=VomnUJEQl58! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Bana Banana Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=jd4WIAlAF_o! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Histoire D'Orangers Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=bDRxbrF7uOc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Le Chant de Camargue Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=urMkJZKjhzg! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+AnOther 13 Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=sJWMaGrd7_A! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Tonka 25 Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=zCM7sgmSYkk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Amber Musk Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=VRIiE3-Ju0M! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Day Dreams Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=aWP0NdwMUtc! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Fantastic Oud Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=MCef81Ognts! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Leather Patchouli Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=WFi890WB5Os! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Oud Dream Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=k_yxl3-GPUY! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Sensual Instinct Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=fP9LvklUUaw! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Sweet Flowers Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=qpnw6R862d8! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Velvet Fantasy Eau de Parfum,done,1,
+Vetiver Patchouli Eau de Parfum,done,1,
+Cairo Eau de Parfum,done,1,
+Changing Constance Eau de Parfum,done,1,
+Monsieur Beauregard Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=8HFQBN9CdkM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+The Bewitching Yasmine Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=6JPyEoU13Q4! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+The Ruthless Countess Dorothea Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=5NGFaGYyg8A! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+The Uncompromising Sohan Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HtyxRLiG4H0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Chene Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=kyW0SAWlatQ! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Cuir Mauresque Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=AHiBuAN9dIk! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+De Profundis Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EIKUytYRG04! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Dent de Lait Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=q8mKExJVso8! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Douce Amere Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=aFVQmFi72IU! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Fleurs de Citronnier Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=C-nIQt9KfA0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Fumerie Turque Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=7tUpD5brvJM! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Gris Clair Eau de Parfum,done,1,
+Louve Eau de Parfum - ...,done,1,
+Rahat Loukhoum Eau de Parfum,done,1,
+Santal Blanc Eau de Parfum,done,1,
+Sarrasins Eau de Parfum,done,1,
+Serge Noire Eau de Parfum - ...,done,1,
+Tubereuse Criminelle Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=vhNYiBTsjQA! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Fabulous Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=u4WL9l7vrWs! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Fougere d'Argent Eau de Parfum,transcript_fetch_error,1,"IpBlocked: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=7PG4NCQaIWs! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to wor"
+Fougere Platine Eau de Parfum,done,1,
+Fucking Fabulous Travel Atomizer Eau de Parfum,done,1,
+Lavender Extreme Eau de Parfum,done,1,

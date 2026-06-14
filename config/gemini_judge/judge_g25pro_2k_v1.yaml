@@ -1,0 +1,65 @@
+branch:
+  branch_id: judge_g25pro_2k_v1
+  status: draft_blocked_pending_raw_text_expansion
+  expected_target_perfumes: 2000
+  production_ready: false
+  blocker: raw transcript coverage must reach 2,000 target perfumes before labeling can start
+
+phase1_anchor:
+  winning_policy_branch_id: judge_g25pro_v1
+  winning_model: gemini-2.5-pro
+  freeze_manifest: outputs/gemini_judge/judge_g25pro_v1/phase1_freeze_manifest.json
+  decision_doc: docs/phase1_gemini_pro_judge_decision.md
+
+judge_policy:
+  model: gemini-2.5-pro
+  temperature: 0.0
+  snippets_per_perfume: 3
+  prompt_schema: strict emotion-tone protocol from src.labeling.strict_schema
+  aggregation_rule: existing src.labeling.aggregate_snippets policy
+
+targets:
+  expected_target_perfumes: 2000
+  target_csv: data/perfume_level/phase2a_2000_perfume_targets.csv
+  status: not_created
+  blocker: do not build a 2,000 target list until inventory confirms 2,000 perfumes with usable raw transcript text
+
+raw_inputs:
+  raw_csv: data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv
+  perfume_col: Perfume
+  text_col: Final Transcript
+
+benchmark:
+  probability_threshold: 0.3
+  run_threshold_sweep: false
+
+output_roots:
+  output_root: outputs/gemini_judge/judge_g25pro_2k_v1
+  planning_dir: outputs/gemini_judge/judge_g25pro_2k_v1/planning
+  analysis_out_dir: outputs/gemini_judge/judge_g25pro_2k_v1/analysis_out
+  model_benchmark_root: outputs/gemini_judge/judge_g25pro_2k_v1/model_benchmark
+  logs_dir: outputs/gemini_judge/judge_g25pro_2k_v1/logs
+  progress_dir: outputs/gemini_judge/judge_g25pro_2k_v1/progress
+
+labels:
+  csv: labels/gemini_labels_2000_judge_g25pro_v1.csv
+  jsonl: labels/gemini_labels_2000_judge_g25pro_v1.jsonl
+  report_json: labels/gemini_labeling_report_2000_judge_g25pro_v1.json
+  errors_jsonl: labels/gemini_labeling_errors_2000_judge_g25pro_v1.jsonl
+  run_log: labels/gemini_labeling_run_2000_judge_g25pro_v1.log
+
+planning_artifacts:
+  inventory_json: outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_inventory.json
+  candidate_csv: outputs/gemini_judge/judge_g25pro_2k_v1/planning/phase2a_candidate_perfumes.csv
+
+do_not_overwrite:
+  frozen_flash_baseline:
+    - labels/gemini_labels_784_v1.csv
+    - outputs/model_benchmark/
+    - outputs/analysis_out/
+  frozen_phase1_pro_branch:
+    - labels/gemini_labels_784_judge_g25pro_v1.csv
+    - labels/gemini_labels_784_judge_g25pro_v1.jsonl
+    - outputs/gemini_judge/judge_g25pro_v1/
+    - docs/phase1_gemini_pro_judge_decision.md
+    - outputs/gemini_judge/judge_g25pro_v1/phase1_freeze_manifest.json
