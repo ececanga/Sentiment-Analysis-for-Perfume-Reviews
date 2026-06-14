@@ -1,0 +1,30 @@
+{
+  "label_file": "labels/claude_browser/claude_synthetic_first50_browser_labels.csv",
+  "pipeline_file": "labels/claude_browser/claude_synthetic_first50_browser_labels_pipeline.csv",
+  "source_attachment": "/Users/ece/.codex/attachments/4bedb8eb-1b61-4c4f-a2d7-0305948710c7/pasted-text.txt",
+  "manifest_file": "data/annotation_packets/claude_browser_first100/synthetic/synthetic_manifest.csv",
+  "rows": 50,
+  "unique_item_ids": 50,
+  "unique_perfume_ids": 50,
+  "expected_scope": "first 50 synthetic items / first 5 batches",
+  "source_types": [
+    "synthetic"
+  ],
+  "emotion_prevalence": {
+    "joy": 0.0,
+    "sadness": 0.0,
+    "anger": 0.0,
+    "fear": 0.0,
+    "trust": 0.02,
+    "surprise": 0.0,
+    "anticipation": 0.0,
+    "disgust": 0.0
+  },
+  "vad_mean": {
+    "valence": 5.46,
+    "arousal": 3.14,
+    "dominance": 5.0
+  },
+  "errors": [],
+  "validation_status": "pass"
+}

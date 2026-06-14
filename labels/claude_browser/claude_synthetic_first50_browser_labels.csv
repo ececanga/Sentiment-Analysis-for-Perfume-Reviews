@@ -1,0 +1,51 @@
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+synthetic::00-auriel-eau-de-parfum,synthetic,00-auriel-eau-de-parfum,00 auriel eau de parfum,0,0,0,0,0,0,0,0,4,4,5
+synthetic::01-nomad-eau-de-parfum,synthetic,01-nomad-eau-de-parfum,01 nomad eau de parfum,0,0,0,0,1,0,0,0,6,3,5
+synthetic::02-owari-eau-de-parfum,synthetic,02-owari-eau-de-parfum,02 owari eau de parfum,0,0,0,0,0,0,0,0,6,4,5
+synthetic::03-apr-1968-eau-de-parfum,synthetic,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,0,0,0,0,0,0,0,0,5,4,5
+synthetic::03-century-eau-de-parfum,synthetic,03-century-eau-de-parfum,03 century eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::08-seylon-eau-de-parfum,synthetic,08-seylon-eau-de-parfum,08 - seylon eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::100-love-eau-de-parfum,synthetic,100-love-eau-de-parfum,100% love eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::1499-eau-de-parfum,synthetic,1499-eau-de-parfum,1499 eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::1725-casanova-eau-de-parfum,synthetic,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::1740-marquis-de-sade-eau-de-parfum,synthetic,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::1804-george-sand-eau-de-parfum,synthetic,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::1828-jules-verne-eau-de-parfum,synthetic,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,0,0,0,0,0,0,0,0,6,4,5
+synthetic::1872-for-men-eau-de-parfum,synthetic,1872-for-men-eau-de-parfum,1872 for men eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::1872-for-women-eau-de-parfum,synthetic,1872-for-women-eau-de-parfum,1872 for women eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::1888-eau-de-parfum,synthetic,1888-eau-de-parfum,1888 eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::1962-eau-de-parfum,synthetic,1962-eau-de-parfum,1962 eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::1976-eau-de-parfum,synthetic,1976-eau-de-parfum,1976 eau de parfum,0,0,0,0,0,0,0,0,5,4,5
+synthetic::21-eau-de-parfum,synthetic,21-eau-de-parfum,21 eau de parfum,0,0,0,0,0,0,0,0,5,4,5
+synthetic::40-rogue-eau-de-toilette,synthetic,40-rogue-eau-de-toilette,40 rogue eau de toilette,0,0,0,0,0,0,0,0,6,3,5
+synthetic::a-la-rose-eau-de-parfum,synthetic,a-la-rose-eau-de-parfum,a la rose eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::a-la-rose-scented-hair-mist,synthetic,a-la-rose-scented-hair-mist,a la rose scented hair mist,0,0,0,0,0,0,0,0,5,3,5
+synthetic::absinth-parfum-extrait,synthetic,absinth-parfum-extrait,absinth parfum extrait,0,0,0,0,0,0,0,0,5,4,5
+synthetic::absolue-d-osmanthe-eau-de-parfum,synthetic,absolue-d-osmanthe-eau-de-parfum,absolue d'osmanthe eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::acqua-di-sale-body-cream-scented-body-cream,synthetic,acqua-di-sale-body-cream-scented-body-cream,acqua di sale body cream scented body cream,0,0,0,0,0,0,0,0,5,3,5
+synthetic::acqua-di-sale-eau-de-parfum,synthetic,acqua-di-sale-eau-de-parfum,acqua di sale eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::acqua-di-scandola-eau-de-parfum,synthetic,acqua-di-scandola-eau-de-parfum,acqua di scandola eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::acqua-e-zucchero-eau-de-parfum,synthetic,acqua-e-zucchero-eau-de-parfum,acqua e zucchero eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::acqua-fiorentina-eau-de-parfum,synthetic,acqua-fiorentina-eau-de-parfum,acqua fiorentina eau de parfum ...,0,0,0,0,0,0,0,0,5,3,5
+synthetic::acqua-viva-body-cream-scented-body-cream,synthetic,acqua-viva-body-cream-scented-body-cream,acqua viva body cream scented body cream,0,0,0,0,0,0,0,0,5,3,5
+synthetic::acqua-viva-eau-de-parfum,synthetic,acqua-viva-eau-de-parfum,acqua viva eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::across-the-ocean-eau-de-parfum,synthetic,across-the-ocean-eau-de-parfum,across the ocean eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::al-oudh-eau-de-parfum,synthetic,al-oudh-eau-de-parfum,al oudh eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::alba-di-seoul-cologne-eau-de-cologne,synthetic,alba-di-seoul-cologne-eau-de-cologne,alba di seoul cologne eau de cologne,0,0,0,0,0,0,0,0,5,3,5
+synthetic::almond-harmony-eau-de-parfum,synthetic,almond-harmony-eau-de-parfum,almond harmony eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::altruist-eau-de-parfum,synthetic,altruist-eau-de-parfum,altruist eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::amber-aoud-extrait-de-parfum,synthetic,amber-aoud-extrait-de-parfum,amber aoud extrait de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::amber-aquilaria-parfum,synthetic,amber-aquilaria-parfum,amber aquilaria parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::amber-perfume-oil,synthetic,amber-perfume-oil,amber perfume oil,0,0,0,0,0,0,0,0,6,3,5
+synthetic::amber-room-eau-de-parfum,synthetic,amber-room-eau-de-parfum,amber room eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::amber-roses-eau-de-parfum,synthetic,amber-roses-eau-de-parfum,amber & roses eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::amber-sky-eau-de-parfum,synthetic,amber-sky-eau-de-parfum,amber sky eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::amber-vanilla-perfume-oil,synthetic,amber-vanilla-perfume-oil,amber vanilla perfume oil,0,0,0,0,0,0,0,0,6,3,5
+synthetic::ambra-aurea-eau-de-parfum,synthetic,ambra-aurea-eau-de-parfum,ambra aurea eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::ambre-114-eau-de-parfum,synthetic,ambre-114-eau-de-parfum,ambre 114 eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::ambre-loup-eau-de-parfum,synthetic,ambre-loup-eau-de-parfum,ambre loup eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::ambre-mythique-eau-de-parfum,synthetic,ambre-mythique-eau-de-parfum,ambre mythique eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::ambre-premier-eau-de-parfum,synthetic,ambre-premier-eau-de-parfum,ambre premier eau de parfum,0,0,0,0,0,0,0,0,6,3,5
+synthetic::ambre-russe-eau-de-parfum,synthetic,ambre-russe-eau-de-parfum,ambre russe eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::ambre-sultan-eau-de-parfum,synthetic,ambre-sultan-eau-de-parfum,ambre sultan eau de parfum,0,0,0,0,0,0,0,0,5,3,5
+synthetic::ambre-topkapi-eau-de-parfum,synthetic,ambre-topkapi-eau-de-parfum,ambre topkapi eau de parfum,0,0,0,0,0,0,0,0,6,3,5

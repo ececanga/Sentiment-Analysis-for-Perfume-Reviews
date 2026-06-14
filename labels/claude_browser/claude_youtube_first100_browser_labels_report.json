@@ -1,0 +1,27 @@
+{
+  "label_file": "labels/claude_browser/claude_youtube_first100_browser_labels.csv",
+  "manifest_file": "data/annotation_packets/claude_browser_first100/youtube/youtube_manifest.csv",
+  "rows": 100,
+  "unique_item_ids": 100,
+  "unique_perfume_ids": 100,
+  "source_types": [
+    "youtube"
+  ],
+  "emotion_prevalence": {
+    "joy": 0.57,
+    "sadness": 0.0,
+    "anger": 0.0,
+    "fear": 0.0,
+    "trust": 0.43,
+    "surprise": 0.1,
+    "anticipation": 0.25,
+    "disgust": 0.04
+  },
+  "vad_mean": {
+    "valence": 6.27,
+    "arousal": 5.32,
+    "dominance": 5.17
+  },
+  "errors": [],
+  "validation_status": "pass"
+}
