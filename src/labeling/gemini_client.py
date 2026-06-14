@@ -49,9 +49,9 @@ class GeminiLabelingError(RuntimeError):
 
 class GeminiStrictLabelClient:
     def __init__(self, config: GeminiLabelConfig, api_key: Optional[str] = None) -> None:
-        key = api_key or os.environ.get("GEMINI_API_KEY")
+        key = api_key or os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
         if not key:
-            raise ValueError("Set GEMINI_API_KEY in environment.")
+            raise ValueError("Set GEMINI_API_KEY or GOOGLE_API_KEY in environment.")
         self.config = config
         self.client = genai.Client(api_key=key)
 
@@ -112,4 +112,3 @@ class GeminiStrictLabelClient:
             last_error=last_error or "unknown_error",
             last_response=last_response or None,
         )
-
