@@ -65,3 +65,8 @@ done/YouTube_Perfume_Reviews_With_Intensifiers.csv
 c2071011_thesis_231123.docx
 notes/CGPT_emotion_pipeline_presentation.pptx
 notes/Nov3MeetingQsAnswered.pages
+
+# Local leftovers from exploratory runs; keep out of commits
+archive/local_experiments_2026-06-16/
+data/raw/YouTube_Perfume_Reviews_Phase2A_FullyFormatted.csv
+data/raw/YouTube_Perfume_Reviews_Phase2A_Partial.csv
