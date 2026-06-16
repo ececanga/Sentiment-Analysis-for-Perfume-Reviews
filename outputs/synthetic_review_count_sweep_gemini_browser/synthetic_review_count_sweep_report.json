@@ -37,6 +37,8 @@
     "report_json": "outputs/synthetic_review_count_sweep_gemini_browser/synthetic_review_count_sweep_report.json",
     "metrics_plot_svg": "outputs/synthetic_review_count_sweep_gemini_browser/figures/synthetic_review_count_sweep_metrics.svg",
     "metrics_plot_png": "outputs/synthetic_review_count_sweep_gemini_browser/figures/synthetic_review_count_sweep_metrics.png",
+    "metrics_table_svg": "outputs/synthetic_review_count_sweep_gemini_browser/figures/synthetic_review_count_sweep_table.svg",
+    "metrics_table_png": "outputs/synthetic_review_count_sweep_gemini_browser/figures/synthetic_review_count_sweep_table.png",
     "per_label_dir": "outputs/synthetic_review_count_sweep_gemini_browser/per_label"
   },
   "note": "Each synthetic review count is selected as complete 3-review perfume blocks. Metrics are evaluated only on held-out YouTube perfume-level rows using fixed perfume folds."
