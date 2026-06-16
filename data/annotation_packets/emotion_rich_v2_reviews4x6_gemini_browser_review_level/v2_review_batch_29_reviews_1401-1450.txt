@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 29 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mousse-illuminee-eau-de-toilette-06
+source_type: synthetic
+perfume_id: mousse-illuminee-eau-de-toilette
+perfume_name: mousse illuminee eau de toilette
+review_index: 6
+review_text: I wanted to understand mousse illuminee eau de toilette, but crushed green stems pushed harder than I expected. The mix of clean laundry musk and cool lavender created a strong image, almost too warm for me. I respect the idea, yet the texture made me feel uneasy after a while. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mriga-parfum-04
+source_type: synthetic
+perfume_id: mriga-parfum
+perfume_name: mriga parfum
+review_index: 4
+review_text: mriga parfum made me think about the person I would become if I wore it outside. I would wear it when I want to feel composed, even if I am not fully sure of myself. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mriga-parfum-05
+source_type: synthetic
+perfume_id: mriga-parfum
+perfume_name: mriga parfum
+review_index: 5
+review_text: mriga parfum immediately gave me a picture rather than a note list: soft floral petals, polished leather, and warm spice. The color in my head was dusty pink, placed around a coat closet, with a match striking somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mriga-parfum-06
+source_type: synthetic
+perfume_id: mriga-parfum
+perfume_name: mriga parfum
+review_index: 6
+review_text: I tested mriga parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm amber resin and soft floral petals made it feel like thick warmth against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-much-ado-about-the-duke-eau-de-parfum-04
+source_type: synthetic
+perfume_id: much-ado-about-the-duke-eau-de-parfum
+perfume_name: much ado about the duke eau de parfum
+review_index: 4
+review_text: I expected much ado about the duke eau de parfum to be mostly about clean laundry musk, but the drydown changed my mind. After the first sharp moment, crushed green stems came forward and the whole scent turned cleaner. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-much-ado-about-the-duke-eau-de-parfum-05
+source_type: synthetic
+perfume_id: much-ado-about-the-duke-eau-de-parfum
+perfume_name: much ado about the duke eau de parfum
+review_index: 5
+review_text: I wanted to understand much ado about the duke eau de parfum, but jammy rose petals pushed harder than I expected. The mix of crushed green stems and sweet cinnamon warmth created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-much-ado-about-the-duke-eau-de-parfum-06
+source_type: synthetic
+perfume_id: much-ado-about-the-duke-eau-de-parfum
+perfume_name: much ado about the duke eau de parfum
+review_index: 6
+review_text: much ado about the duke eau de parfum made me think about the person I would become if I wore it outside. I would wear it when I want to feel composed, even if I am not fully sure of myself. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-muguet-fleuri-eau-de-parfum-04
+source_type: synthetic
+perfume_id: muguet-fleuri-eau-de-parfum
+perfume_name: muguet fleuri eau de parfum
+review_index: 4
+review_text: I tested muguet fleuri eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft creamy sweetness and jammy rose petals made it feel like round softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-muguet-fleuri-eau-de-parfum-05
+source_type: synthetic
+perfume_id: muguet-fleuri-eau-de-parfum
+perfume_name: muguet fleuri eau de parfum
+review_index: 5
+review_text: I expected muguet fleuri eau de parfum to be mostly about clean laundry musk, but the drydown changed my mind. After the first sharp moment, bright citrus peel came forward and the whole scent turned warmer. The opening made me hesitate, but the base gave it a second chance. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-muguet-fleuri-eau-de-parfum-06
+source_type: synthetic
+perfume_id: muguet-fleuri-eau-de-parfum
+perfume_name: muguet fleuri eau de parfum
+review_index: 6
+review_text: I wanted to understand muguet fleuri eau de parfum, but clean watery air pushed harder than I expected. The mix of clean laundry musk and crushed green stems created a strong image, almost too dry for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mure-et-musc-eau-de-toilette-04
+source_type: synthetic
+perfume_id: mure-et-musc-eau-de-toilette
+perfume_name: mure et musc eau de toilette
+review_index: 4
+review_text: I wanted to understand mure et musc eau de toilette, but soft cosmetic powder pushed harder than I expected. The mix of soft vanilla and green fig skin created a strong image, almost too sharp for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mure-et-musc-eau-de-toilette-05
+source_type: synthetic
+perfume_id: mure-et-musc-eau-de-toilette
+perfume_name: mure et musc eau de toilette
+review_index: 5
+review_text: mure et musc eau de toilette made me think about the person I would become if I wore it outside. The impression of warm spice gives it presence, while dark chocolate keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mure-et-musc-eau-de-toilette-06
+source_type: synthetic
+perfume_id: mure-et-musc-eau-de-toilette
+perfume_name: mure et musc eau de toilette
+review_index: 6
+review_text: mure et musc eau de toilette immediately gave me a picture rather than a note list: dark chocolate, dry black pepper, and clean laundry musk. On my skin, i kept checking my wrist, not because it was loud, but because the mood kept shifting. The color in my head was matte brown, placed around a busy kitchen, with sheets snapping in air somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mure-et-musc-extreme-eau-de-parfum-04
+source_type: synthetic
+perfume_id: mure-et-musc-extreme-eau-de-parfum
+perfume_name: mure et musc extreme eau de parfum
+review_index: 4
+review_text: I tested mure et musc extreme eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The clean skin musk and soft cosmetic powder made it feel like smooth powder against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mure-et-musc-extreme-eau-de-parfum-05
+source_type: synthetic
+perfume_id: mure-et-musc-extreme-eau-de-parfum
+perfume_name: mure et musc extreme eau de parfum
+review_index: 5
+review_text: I expected mure et musc extreme eau de parfum to be mostly about clean skin musk, but the drydown changed my mind. After the first sharp moment, soft vanilla came forward and the whole scent turned stranger. The opening made me hesitate, but the base gave it a second chance. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-mure-et-musc-extreme-eau-de-parfum-06
+source_type: synthetic
+perfume_id: mure-et-musc-extreme-eau-de-parfum
+perfume_name: mure et musc extreme eau de parfum
+review_index: 6
+review_text: I wanted to understand mure et musc extreme eau de parfum, but soft vanilla pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-bleu-eau-de-parfum-04
+source_type: synthetic
+perfume_id: musc-bleu-eau-de-parfum
+perfume_name: musc bleu eau de parfum
+review_index: 4
+review_text: I tested musc bleu eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and clean skin musk made it feel like petal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-bleu-eau-de-parfum-05
+source_type: synthetic
+perfume_id: musc-bleu-eau-de-parfum
+perfume_name: musc bleu eau de parfum
+review_index: 5
+review_text: I expected musc bleu eau de parfum to be mostly about sweet orange peel, but the drydown changed my mind. After the first sharp moment, cool cardamom came forward and the whole scent turned more tender. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-bleu-eau-de-parfum-06
+source_type: synthetic
+perfume_id: musc-bleu-eau-de-parfum
+perfume_name: musc bleu eau de parfum
+review_index: 6
+review_text: I wanted to understand musc bleu eau de parfum, but soft cosmetic powder pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-gold-extrait-parfum-extrait-04
+source_type: synthetic
+perfume_id: musc-gold-extrait-parfum-extrait
+perfume_name: musc gold extrait parfum extrait
+review_index: 4
+review_text: musc gold extrait parfum extrait immediately gave me a picture rather than a note list: clean skin musk, clean laundry musk, and soft creamy sweetness. The color in my head was soft beige, placed around a sunny laundry room, with a spoon through custard somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-gold-extrait-parfum-extrait-05
+source_type: synthetic
+perfume_id: musc-gold-extrait-parfum-extrait
+perfume_name: musc gold extrait parfum extrait
+review_index: 5
+review_text: I tested musc gold extrait parfum extrait on a normal day, the kind where I wanted my perfume to change my mood a little. For me, it is not a simple compliment scent, but it does create a clear atmosphere. The clean skin musk and clean laundry musk made it feel like smooth powder against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-gold-extrait-parfum-extrait-06
+source_type: synthetic
+perfume_id: musc-gold-extrait-parfum-extrait
+perfume_name: musc gold extrait parfum extrait
+review_index: 6
+review_text: I expected musc gold extrait parfum extrait to be mostly about clean skin musk, but the drydown changed my mind. After the first sharp moment, clean laundry musk came forward and the whole scent turned warmer. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-gold-perfume-oil-04
+source_type: synthetic
+perfume_id: musc-gold-perfume-oil
+perfume_name: musc gold perfume oil
+review_index: 4
+review_text: I expected musc gold perfume oil to be mostly about faint smoke, but the drydown changed my mind. After the first sharp moment, clean laundry musk came forward and the whole scent turned stranger. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-gold-perfume-oil-05
+source_type: synthetic
+perfume_id: musc-gold-perfume-oil
+perfume_name: musc gold perfume oil
+review_index: 5
+review_text: I wanted to understand musc gold perfume oil, but faint smoke pushed harder than I expected. The mix of clean laundry musk and clean skin musk created a strong image, almost too sharp for me. I respect the idea, yet the texture made me feel uneasy after a while. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-gold-perfume-oil-06
+source_type: synthetic
+perfume_id: musc-gold-perfume-oil
+perfume_name: musc gold perfume oil
+review_index: 6
+review_text: musc gold perfume oil made me think about the person I would become if I wore it outside. The impression of faint smoke gives it presence, while clean laundry musk keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-intense-eau-de-parfum-04
+source_type: synthetic
+perfume_id: musc-intense-eau-de-parfum
+perfume_name: musc intense eau de parfum
+review_index: 4
+review_text: musc intense eau de parfum immediately gave me a picture rather than a note list: clean skin musk, soft cosmetic powder, and clean laundry musk. The color in my head was soft beige, placed around an old vanity table, with sheets snapping in air somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-intense-eau-de-parfum-05
+source_type: synthetic
+perfume_id: musc-intense-eau-de-parfum
+perfume_name: musc intense eau de parfum
+review_index: 5
+review_text: I tested musc intense eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-intense-eau-de-parfum-06
+source_type: synthetic
+perfume_id: musc-intense-eau-de-parfum
+perfume_name: musc intense eau de parfum
+review_index: 6
+review_text: I expected musc intense eau de parfum to be mostly about clean skin musk, but the drydown changed my mind. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-les-nombres-d-or-eau-de-parfum-04
+source_type: synthetic
+perfume_id: musc-les-nombres-d-or-eau-de-parfum
+perfume_name: musc - les nombres d'or eau de parfum
+review_index: 4
+review_text: musc - les nombres d'or eau de parfum made me think about the person I would become if I wore it outside. The impression of dry woods gives it presence, while dark labdanum resin keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-les-nombres-d-or-eau-de-parfum-05
+source_type: synthetic
+perfume_id: musc-les-nombres-d-or-eau-de-parfum
+perfume_name: musc - les nombres d'or eau de parfum
+review_index: 5
+review_text: musc - les nombres d'or eau de parfum immediately gave me a picture rather than a note list: dark labdanum resin, clean skin musk, and bright citrus peel. For me, it made more sense after an hour, when the sharper edges had settled. The color in my head was brown amber, placed around fresh sheets, with a bicycle bell somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-les-nombres-d-or-eau-de-parfum-06
+source_type: synthetic
+perfume_id: musc-les-nombres-d-or-eau-de-parfum
+perfume_name: musc - les nombres d'or eau de parfum
+review_index: 6
+review_text: I tested musc - les nombres d'or eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The dark labdanum resin and jammy rose petals made it feel like sticky resin against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-maori-eau-de-parfum-04
+source_type: synthetic
+perfume_id: musc-maori-eau-de-parfum
+perfume_name: musc maori eau de parfum
+review_index: 4
+review_text: I wanted to understand musc maori eau de parfum, but clean skin musk pushed harder than I expected. The mix of dry woods and soft vanilla created a strong image, almost too warm for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-maori-eau-de-parfum-05
+source_type: synthetic
+perfume_id: musc-maori-eau-de-parfum
+perfume_name: musc maori eau de parfum
+review_index: 5
+review_text: musc maori eau de parfum made me think about the person I would become if I wore it outside. At first, it feels tied to a specific weather, not to every day. The impression of soft vanilla gives it presence, while clean skin musk keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-maori-eau-de-parfum-06
+source_type: synthetic
+perfume_id: musc-maori-eau-de-parfum
+perfume_name: musc maori eau de parfum
+review_index: 6
+review_text: musc maori eau de parfum immediately gave me a picture rather than a note list: clean skin musk, dark coffee bitterness, and dry woods. The color in my head was soft beige, placed around a morning cafe, with a drawer sliding open somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-moschus-eau-de-parfum-04
+source_type: synthetic
+perfume_id: musc-moschus-eau-de-parfum
+perfume_name: musc moschus eau de parfum
+review_index: 4
+review_text: I expected musc moschus eau de parfum to be mostly about clean laundry musk, but the drydown changed my mind. After the first sharp moment, soft vanilla came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-moschus-eau-de-parfum-05
+source_type: synthetic
+perfume_id: musc-moschus-eau-de-parfum
+perfume_name: musc moschus eau de parfum
+review_index: 5
+review_text: I wanted to understand musc moschus eau de parfum, but clean laundry musk pushed harder than I expected. The mix of soft vanilla and soft floral petals created a strong image, almost too close for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-moschus-eau-de-parfum-06
+source_type: synthetic
+perfume_id: musc-moschus-eau-de-parfum
+perfume_name: musc moschus eau de parfum
+review_index: 6
+review_text: musc moschus eau de parfum made me think about the person I would become if I wore it outside. The impression of soft floral petals gives it presence, while clean laundry musk keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-perfume-oil-04
+source_type: synthetic
+perfume_id: musc-perfume-oil
+perfume_name: musc perfume oil
+review_index: 4
+review_text: I tested musc perfume oil on a normal day, the kind where I wanted my perfume to change my mood a little. The clean skin musk and warm amber resin made it feel like smooth powder against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-perfume-oil-05
+source_type: synthetic
+perfume_id: musc-perfume-oil
+perfume_name: musc perfume oil
+review_index: 5
+review_text: I expected musc perfume oil to be mostly about clean skin musk, but the drydown changed my mind. After the first sharp moment, warm amber resin came forward and the whole scent turned warmer. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-perfume-oil-06
+source_type: synthetic
+perfume_id: musc-perfume-oil
+perfume_name: musc perfume oil
+review_index: 6
+review_text: I wanted to understand musc perfume oil, but clean skin musk pushed harder than I expected. The mix of warm amber resin and soft floral petals created a strong image, almost too warm for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-tonkin-eau-de-parfum-04
+source_type: synthetic
+perfume_id: musc-tonkin-eau-de-parfum
+perfume_name: musc tonkin eau de parfum
+review_index: 4
+review_text: I wanted to understand musc tonkin eau de parfum, but warm spice pushed harder than I expected. The mix of crushed green stems and clean laundry musk created a strong image, almost too close for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-tonkin-eau-de-parfum-05
+source_type: synthetic
+perfume_id: musc-tonkin-eau-de-parfum
+perfume_name: musc tonkin eau de parfum
+review_index: 5
+review_text: musc tonkin eau de parfum made me think about the person I would become if I wore it outside. The impression of clean laundry musk gives it presence, while clean skin musk keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musc-tonkin-eau-de-parfum-06
+source_type: synthetic
+perfume_id: musc-tonkin-eau-de-parfum
+perfume_name: musc tonkin eau de parfum
+review_index: 6
+review_text: musc tonkin eau de parfum immediately gave me a picture rather than a note list: warm spice, clean laundry musk, and crushed green stems. In the air around me, i liked some moments more than others, which made the wearing feel alive. The color in my head was rust orange, placed around a sunny laundry room, with grass being cut somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musk-aoud-extrait-de-parfum-04
+source_type: synthetic
+perfume_id: musk-aoud-extrait-de-parfum
+perfume_name: musk aoud extrait de parfum
+review_index: 4
+review_text: I tested musk aoud extrait de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm jasmine and clean skin musk made it feel like heady petals against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musk-aoud-extrait-de-parfum-05
+source_type: synthetic
+perfume_id: musk-aoud-extrait-de-parfum
+perfume_name: musk aoud extrait de parfum
+review_index: 5
+review_text: I expected musk aoud extrait de parfum to be mostly about clean skin musk, but the drydown changed my mind. After the first sharp moment, dry woods came forward and the whole scent turned cleaner. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musk-aoud-extrait-de-parfum-06
+source_type: synthetic
+perfume_id: musk-aoud-extrait-de-parfum
+perfume_name: musk aoud extrait de parfum
+review_index: 6
+review_text: I wanted to understand musk aoud extrait de parfum, but warm spice pushed harder than I expected. The mix of dry woods and warm jasmine created a strong image, almost too warm for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musk-muschio-cologne-eau-de-cologne-04
+source_type: synthetic
+perfume_id: musk-muschio-cologne-eau-de-cologne
+perfume_name: musk / muschio cologne eau de cologne
+review_index: 4
+review_text: musk / muschio cologne eau de cologne immediately gave me a picture rather than a note list: soft creamy sweetness, soft cosmetic powder, and warm jasmine. The color in my head was warm cream, placed around an old vanity table, with night insects outside somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musk-muschio-cologne-eau-de-cologne-05
+source_type: synthetic
+perfume_id: musk-muschio-cologne-eau-de-cologne
+perfume_name: musk / muschio cologne eau de cologne
+review_index: 5
+review_text: I tested musk / muschio cologne eau de cologne on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and clean skin musk made it feel like petal softness against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musk-muschio-cologne-eau-de-cologne-06
+source_type: synthetic
+perfume_id: musk-muschio-cologne-eau-de-cologne
+perfume_name: musk / muschio cologne eau de cologne
+review_index: 6
+review_text: I expected musk / muschio cologne eau de cologne to be mostly about soft creamy sweetness, but the drydown changed my mind. After the first sharp moment, clean laundry musk came forward and the whole scent turned warmer. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-musk-s-eau-de-parfum-04
+source_type: synthetic
+perfume_id: musk-s-eau-de-parfum
+perfume_name: musk s eau de parfum
+review_index: 4
+review_text: I wanted to understand musk s eau de parfum, but bright citrus peel pushed harder than I expected. The mix of clean skin musk and warm spice created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. On skin it became more personal than it seemed on paper.
+END_REVIEW

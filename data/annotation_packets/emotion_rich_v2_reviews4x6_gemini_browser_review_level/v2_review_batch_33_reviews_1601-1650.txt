@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 33 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-orchidee-vanille-eau-de-parfum-05
+source_type: synthetic
+perfume_id: orchidee-vanille-eau-de-parfum
+perfume_name: orchidee vanille eau de parfum
+review_index: 5
+review_text: I expected orchidee vanille eau de parfum to be mostly about creamy tonka, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-orchidee-vanille-eau-de-parfum-06
+source_type: synthetic
+perfume_id: orchidee-vanille-eau-de-parfum
+perfume_name: orchidee vanille eau de parfum
+review_index: 6
+review_text: I wanted to understand orchidee vanille eau de parfum, but soft cosmetic powder pushed harder than I expected. The mix of a bitter green edge and soft vanilla created a strong image, almost too sharp for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-osmanthus-interdite-eau-de-parfum-04
+source_type: synthetic
+perfume_id: osmanthus-interdite-eau-de-parfum
+perfume_name: osmanthus interdite eau de parfum
+review_index: 4
+review_text: osmanthus interdite eau de parfum immediately gave me a picture rather than a note list: soft cosmetic powder, warm spice, and apricot osmanthus. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-osmanthus-interdite-eau-de-parfum-05
+source_type: synthetic
+perfume_id: osmanthus-interdite-eau-de-parfum
+perfume_name: osmanthus interdite eau de parfum
+review_index: 5
+review_text: I tested osmanthus interdite eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The powdery iris and clean skin musk made it feel like dry powder against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-osmanthus-interdite-eau-de-parfum-06
+source_type: synthetic
+perfume_id: osmanthus-interdite-eau-de-parfum
+perfume_name: osmanthus interdite eau de parfum
+review_index: 6
+review_text: I expected osmanthus interdite eau de parfum to be mostly about apricot osmanthus, but the drydown changed my mind. The opening made me hesitate, but the base gave it a second chance. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-assam-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oud-assam-eau-de-parfum
+perfume_name: oud assam eau de parfum
+review_index: 4
+review_text: oud assam eau de parfum made me think about the person I would become if I wore it outside. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-assam-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oud-assam-eau-de-parfum
+perfume_name: oud assam eau de parfum
+review_index: 5
+review_text: oud assam eau de parfum immediately gave me a picture rather than a note list: dark coffee bitterness, cool lavender, and dry vetiver roots. The color in my head was espresso brown, placed around a clean bedroom, with dry grass underfoot somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-assam-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oud-assam-eau-de-parfum
+perfume_name: oud assam eau de parfum
+review_index: 6
+review_text: I tested oud assam eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The dark oud wood and dark coffee bitterness made it feel like dense wood against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-du-bois-attar-perfume-oil-04
+source_type: synthetic
+perfume_id: oud-du-bois-attar-perfume-oil
+perfume_name: oud du bois attar / perfume oil
+review_index: 4
+review_text: oud du bois attar / perfume oil made me think about the person I would become if I wore it outside. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-du-bois-attar-perfume-oil-05
+source_type: synthetic
+perfume_id: oud-du-bois-attar-perfume-oil
+perfume_name: oud du bois attar / perfume oil
+review_index: 5
+review_text: oud du bois attar / perfume oil immediately gave me a picture rather than a note list: dry woods, warm resin, and crushed green stems. The color in my head was pale brown, placed around a dim room, with grass being cut somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-du-bois-attar-perfume-oil-06
+source_type: synthetic
+perfume_id: oud-du-bois-attar-perfume-oil
+perfume_name: oud du bois attar / perfume oil
+review_index: 6
+review_text: I tested oud du bois attar / perfume oil on a normal day, the kind where I wanted my perfume to change my mood a little. The dry woods and warm resin made it feel like dry grain against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oud-eau-de-parfum
+perfume_name: oud - eau de parfum
+review_index: 4
+review_text: I wanted to understand oud - eau de parfum, but warm spice pushed harder than I expected. The mix of dark oud wood and bright citrus peel created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oud-eau-de-parfum
+perfume_name: oud - eau de parfum
+review_index: 5
+review_text: oud - eau de parfum made me think about the person I would become if I wore it outside. The impression of soft cosmetic powder gives it presence, while soft floral petals keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oud-eau-de-parfum
+perfume_name: oud - eau de parfum
+review_index: 6
+review_text: oud - eau de parfum immediately gave me a picture rather than a note list: bright citrus peel, dry woods, and clean skin musk. On my skin, the texture matters here as much as the smell itself. The color in my head was clear yellow, placed around a quiet study, with cotton brushing skin somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-imperial-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oud-imperial-eau-de-parfum
+perfume_name: oud imperial eau de parfum
+review_index: 4
+review_text: oud imperial eau de parfum immediately gave me a picture rather than a note list: dark labdanum resin, warm spice, and dark oud wood. I did not feel simple happiness, more like a small private memory opening and closing. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-imperial-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oud-imperial-eau-de-parfum
+perfume_name: oud imperial eau de parfum
+review_index: 5
+review_text: I tested oud imperial eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The dark labdanum resin and warm spice made it feel like sticky resin against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-imperial-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oud-imperial-eau-de-parfum
+perfume_name: oud imperial eau de parfum
+review_index: 6
+review_text: I expected oud imperial eau de parfum to be mostly about dark labdanum resin, but the drydown changed my mind. At first, it is not a simple compliment scent, but it does create a clear atmosphere. After the first sharp moment, warm spice came forward and the whole scent turned more tender. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-04
+source_type: synthetic
+perfume_id: oud-maximus-autumn-19-extrait-de-parfum
+perfume_name: oud maximus autumn 19 extrait de parfum
+review_index: 4
+review_text: I wanted to understand oud maximus autumn 19 extrait de parfum, but warm jasmine pushed harder than I expected. The mix of dark oud wood and jammy rose petals created a strong image, almost too heavy for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-05
+source_type: synthetic
+perfume_id: oud-maximus-autumn-19-extrait-de-parfum
+perfume_name: oud maximus autumn 19 extrait de parfum
+review_index: 5
+review_text: oud maximus autumn 19 extrait de parfum made me think about the person I would become if I wore it outside. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-06
+source_type: synthetic
+perfume_id: oud-maximus-autumn-19-extrait-de-parfum
+perfume_name: oud maximus autumn 19 extrait de parfum
+review_index: 6
+review_text: oud maximus autumn 19 extrait de parfum immediately gave me a picture rather than a note list: jammy rose petals, soft floral petals, and dark oud wood. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-silk-mood-extrait-de-parfum-04
+source_type: synthetic
+perfume_id: oud-silk-mood-extrait-de-parfum
+perfume_name: oud silk mood - extrait de parfum
+review_index: 4
+review_text: oud silk mood - extrait de parfum immediately gave me a picture rather than a note list: dark oud wood, warm spice, and jammy rose petals. The color in my head was near black, placed around a spice drawer, with a vase being moved somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-silk-mood-extrait-de-parfum-05
+source_type: synthetic
+perfume_id: oud-silk-mood-extrait-de-parfum
+perfume_name: oud silk mood - extrait de parfum
+review_index: 5
+review_text: I tested oud silk mood - extrait de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The saffron warmth and crushed green stems made it feel like dry warmth against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-silk-mood-extrait-de-parfum-06
+source_type: synthetic
+perfume_id: oud-silk-mood-extrait-de-parfum
+perfume_name: oud silk mood - extrait de parfum
+review_index: 6
+review_text: I expected oud silk mood - extrait de parfum to be mostly about saffron warmth, but the drydown changed my mind. After a while, the image in my head was stronger than the actual note list. After the first sharp moment, warm spice came forward and the whole scent turned cleaner. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oud-stars-al-khatt-eau-de-parfum
+perfume_name: oud stars - al khatt eau de parfum
+review_index: 4
+review_text: oud stars - al khatt eau de parfum immediately gave me a picture rather than a note list: sparkling bergamot peel, crushed green stems, and dry woods. The color in my head was clear yellow, placed around a garden after rain, with a drawer sliding open somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oud-stars-al-khatt-eau-de-parfum
+perfume_name: oud stars - al khatt eau de parfum
+review_index: 5
+review_text: I tested oud stars - al khatt eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The crushed green stems and dark oud wood made it feel like leafy snap against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oud-stars-al-khatt-eau-de-parfum
+perfume_name: oud stars - al khatt eau de parfum
+review_index: 6
+review_text: I expected oud stars - al khatt eau de parfum to be mostly about jammy rose petals, but the drydown changed my mind. After the first sharp moment, soft floral petals came forward and the whole scent turned more tender. The opening made me hesitate, but the base gave it a second chance. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-alexandria-iii-parfum-04
+source_type: synthetic
+perfume_id: oud-stars-alexandria-iii-parfum
+perfume_name: oud stars - alexandria iii parfum
+review_index: 4
+review_text: I expected oud stars - alexandria iii parfum to be mostly about dark oud wood, but the drydown changed my mind. After the first sharp moment, warm amber resin came forward and the whole scent turned darker. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-alexandria-iii-parfum-05
+source_type: synthetic
+perfume_id: oud-stars-alexandria-iii-parfum
+perfume_name: oud stars - alexandria iii parfum
+review_index: 5
+review_text: I wanted to understand oud stars - alexandria iii parfum, but warm spice pushed harder than I expected. At first, the texture matters here as much as the smell itself. The mix of soft cosmetic powder and dry woods created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-alexandria-iii-parfum-06
+source_type: synthetic
+perfume_id: oud-stars-alexandria-iii-parfum
+perfume_name: oud stars - alexandria iii parfum
+review_index: 6
+review_text: oud stars - alexandria iii parfum made me think about the person I would become if I wore it outside. The impression of dark oud wood gives it presence, while soft floral petals keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-fars-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oud-stars-fars-eau-de-parfum
+perfume_name: oud stars - fars eau de parfum
+review_index: 4
+review_text: oud stars - fars eau de parfum immediately gave me a picture rather than a note list: warm jasmine, cool lavender, and warm amber resin. The color in my head was creamy white, placed around a clean bedroom, with a low cello note somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-fars-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oud-stars-fars-eau-de-parfum
+perfume_name: oud stars - fars eau de parfum
+review_index: 5
+review_text: I tested oud stars - fars eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-fars-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oud-stars-fars-eau-de-parfum
+perfume_name: oud stars - fars eau de parfum
+review_index: 6
+review_text: I expected oud stars - fars eau de parfum to be mostly about warm jasmine, but the drydown changed my mind. After the first sharp moment, dry woods came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-gao-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oud-stars-gao-eau-de-parfum
+perfume_name: oud stars - gao eau de parfum
+review_index: 4
+review_text: oud stars - gao eau de parfum immediately gave me a picture rather than a note list: sweet orange peel, crushed green stems, and soft floral petals. The color in my head was orange light, placed around a garden after rain, with quiet footsteps on carpet somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-gao-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oud-stars-gao-eau-de-parfum
+perfume_name: oud stars - gao eau de parfum
+review_index: 5
+review_text: I tested oud stars - gao eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The sweet orange peel and crushed green stems made it feel like juicy zest against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-gao-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oud-stars-gao-eau-de-parfum
+perfume_name: oud stars - gao eau de parfum
+review_index: 6
+review_text: I expected oud stars - gao eau de parfum to be mostly about dark oud wood, but the drydown changed my mind. After the first sharp moment, clean skin musk came forward and the whole scent turned warmer. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oud-stars-mamluk-eau-de-parfum
+perfume_name: oud stars - mamluk eau de parfum
+review_index: 4
+review_text: I expected oud stars - mamluk eau de parfum to be mostly about dark oud wood, but the drydown changed my mind. After the first sharp moment, soft cosmetic powder came forward and the whole scent turned cleaner. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oud-stars-mamluk-eau-de-parfum
+perfume_name: oud stars - mamluk eau de parfum
+review_index: 5
+review_text: I wanted to understand oud stars - mamluk eau de parfum, but crushed green stems pushed harder than I expected. The mix of dark oud wood and sparkling bergamot peel created a strong image, almost too warm for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oud-stars-mamluk-eau-de-parfum
+perfume_name: oud stars - mamluk eau de parfum
+review_index: 6
+review_text: oud stars - mamluk eau de parfum made me think about the person I would become if I wore it outside. The impression of clean skin musk gives it presence, while earthy patchouli keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-sublime-elixir-de-parfum-04
+source_type: synthetic
+perfume_id: oud-sublime-elixir-de-parfum
+perfume_name: oud sublime elixir de parfum
+review_index: 4
+review_text: oud sublime elixir de parfum made me think about the person I would become if I wore it outside. The impression of clean laundry musk gives it presence, while creamy coconut keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-sublime-elixir-de-parfum-05
+source_type: synthetic
+perfume_id: oud-sublime-elixir-de-parfum
+perfume_name: oud sublime elixir de parfum
+review_index: 5
+review_text: oud sublime elixir de parfum immediately gave me a picture rather than a note list: clean laundry musk, creamy coconut, and soft floral petals. By the drydown, the image in my head was stronger than the actual note list. The color in my head was white cotton, placed around a quiet poolside, with quiet footsteps on carpet somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oud-sublime-elixir-de-parfum-06
+source_type: synthetic
+perfume_id: oud-sublime-elixir-de-parfum
+perfume_name: oud sublime elixir de parfum
+review_index: 6
+review_text: I tested oud sublime elixir de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oudh-infini-extrait-de-parfum-04
+source_type: synthetic
+perfume_id: oudh-infini-extrait-de-parfum
+perfume_name: oudh infini extrait de parfum
+review_index: 4
+review_text: oudh infini extrait de parfum made me think about the person I would become if I wore it outside. Strangely, i would not call it easy, but I would call it memorable. The impression of dark oud wood gives it presence, while soft floral petals keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oudh-infini-extrait-de-parfum-05
+source_type: synthetic
+perfume_id: oudh-infini-extrait-de-parfum
+perfume_name: oudh infini extrait de parfum
+review_index: 5
+review_text: oudh infini extrait de parfum immediately gave me a picture rather than a note list: smooth sandalwood, warm spice, and clean skin musk. At first, i can imagine someone loving this for exactly the reason another person would avoid it. The color in my head was pale tan, placed around a spice drawer, with cotton brushing skin somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oudh-infini-extrait-de-parfum-06
+source_type: synthetic
+perfume_id: oudh-infini-extrait-de-parfum
+perfume_name: oudh infini extrait de parfum
+review_index: 6
+review_text: I tested oudh infini extrait de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and dark oud wood made it feel like petal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oudmazing-eau-de-parfum-04
+source_type: synthetic
+perfume_id: oudmazing-eau-de-parfum
+perfume_name: oudmazing eau de parfum
+review_index: 4
+review_text: I wanted to understand oudmazing eau de parfum, but earthy patchouli pushed harder than I expected. The mix of polished leather and dark coffee bitterness created a strong image, almost too warm for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oudmazing-eau-de-parfum-05
+source_type: synthetic
+perfume_id: oudmazing-eau-de-parfum
+perfume_name: oudmazing eau de parfum
+review_index: 5
+review_text: oudmazing eau de parfum made me think about the person I would become if I wore it outside. The impression of green fig skin gives it presence, while golden honey keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oudmazing-eau-de-parfum-06
+source_type: synthetic
+perfume_id: oudmazing-eau-de-parfum
+perfume_name: oudmazing eau de parfum
+review_index: 6
+review_text: oudmazing eau de parfum immediately gave me a picture rather than a note list: jammy rose petals, green fig skin, and golden honey. Strangely, the image in my head was stronger than the actual note list. The color in my head was deep pink, placed around a shaded terrace, with slow dripping somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oyedo-eau-de-toilette-04
+source_type: synthetic
+perfume_id: oyedo-eau-de-toilette
+perfume_name: oyedo eau de toilette
+review_index: 4
+review_text: oyedo eau de toilette immediately gave me a picture rather than a note list: bright citrus peel, soft floral petals, and dry incense smoke. In the air around me, the image in my head was stronger than the actual note list. The color in my head was clear yellow, placed around a florist window, with a door closing softly somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oyedo-eau-de-toilette-05
+source_type: synthetic
+perfume_id: oyedo-eau-de-toilette
+perfume_name: oyedo eau de toilette
+review_index: 5
+review_text: I tested oyedo eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-oyedo-eau-de-toilette-06
+source_type: synthetic
+perfume_id: oyedo-eau-de-toilette
+perfume_name: oyedo eau de toilette
+review_index: 6
+review_text: I expected oyedo eau de toilette to be mostly about bright citrus peel, but the drydown changed my mind. Strangely, it is not a simple compliment scent, but it does create a clear atmosphere. After the first sharp moment, soft floral petals came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW

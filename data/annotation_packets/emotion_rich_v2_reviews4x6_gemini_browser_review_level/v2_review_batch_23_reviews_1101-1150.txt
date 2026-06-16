@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 23 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-kobe-eau-de-parfum-06
+source_type: synthetic
+perfume_id: kobe-eau-de-parfum
+perfume_name: kobe eau de parfum
+review_index: 6
+review_text: I wanted to understand kobe eau de parfum, but clean laundry musk pushed harder than I expected. The mix of warm amber resin and sparkling bergamot peel created a strong image, almost too dry for me. I respect the idea, yet the texture made me feel uneasy after a while. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-koiame-eau-de-parfum-04
+source_type: synthetic
+perfume_id: koiame-eau-de-parfum
+perfume_name: koiame eau de parfum
+review_index: 4
+review_text: koiame eau de parfum immediately gave me a picture rather than a note list: soft floral petals, cool mint leaves, and crushed green stems. The color in my head was dusty pink, placed around a shaded glass of water, with grass being cut somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-koiame-eau-de-parfum-05
+source_type: synthetic
+perfume_id: koiame-eau-de-parfum
+perfume_name: koiame eau de parfum
+review_index: 5
+review_text: I tested koiame eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The cool mint leaves and dry cedar shavings made it feel like cold snap against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-koiame-eau-de-parfum-06
+source_type: synthetic
+perfume_id: koiame-eau-de-parfum
+perfume_name: koiame eau de parfum
+review_index: 6
+review_text: I expected koiame eau de parfum to be mostly about clean laundry musk, but the drydown changed my mind. After the first sharp moment, soft creamy sweetness came forward and the whole scent turned cleaner. The opening made me hesitate, but the base gave it a second chance. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-air-du-desert-marocain-eau-de-toilette-04
+source_type: synthetic
+perfume_id: l-air-du-desert-marocain-eau-de-toilette
+perfume_name: l'air du desert marocain eau de toilette ...
+review_index: 4
+review_text: l'air du desert marocain eau de toilette ... immediately gave me a picture rather than a note list: warm amber resin, crushed green stems, and warm tobacco leaf. The color in my head was orange lamp light, placed around a garden after rain, with paper slowly folding somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-air-du-desert-marocain-eau-de-toilette-05
+source_type: synthetic
+perfume_id: l-air-du-desert-marocain-eau-de-toilette
+perfume_name: l'air du desert marocain eau de toilette ...
+review_index: 5
+review_text: I tested l'air du desert marocain eau de toilette ... on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-air-du-desert-marocain-eau-de-toilette-06
+source_type: synthetic
+perfume_id: l-air-du-desert-marocain-eau-de-toilette
+perfume_name: l'air du desert marocain eau de toilette ...
+review_index: 6
+review_text: I expected l'air du desert marocain eau de toilette ... to be mostly about sweet cinnamon warmth, but the drydown changed my mind. After the first sharp moment, warm tobacco leaf came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-attesa-eau-de-parfum-04
+source_type: synthetic
+perfume_id: l-attesa-eau-de-parfum
+perfume_name: l'attesa eau de parfum
+review_index: 4
+review_text: I wanted to understand l'attesa eau de parfum, but soft cosmetic powder pushed harder than I expected. The mix of jammy rose petals and polished leather created a strong image, almost too close for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-attesa-eau-de-parfum-05
+source_type: synthetic
+perfume_id: l-attesa-eau-de-parfum
+perfume_name: l'attesa eau de parfum
+review_index: 5
+review_text: l'attesa eau de parfum made me think about the person I would become if I wore it outside. The impression of bright citrus peel gives it presence, while powdery iris keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-attesa-eau-de-parfum-06
+source_type: synthetic
+perfume_id: l-attesa-eau-de-parfum
+perfume_name: l'attesa eau de parfum
+review_index: 6
+review_text: l'attesa eau de parfum immediately gave me a picture rather than a note list: soft cosmetic powder, dry woods, and powdery iris. The color in my head was pale pink, placed around a quiet study, with makeup brushes tapping somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-d-ambre-eau-de-toilette-04
+source_type: synthetic
+perfume_id: l-eau-d-ambre-eau-de-toilette
+perfume_name: l'eau d'ambre eau de toilette
+review_index: 4
+review_text: I expected l'eau d'ambre eau de toilette to be mostly about dry incense smoke, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-d-ambre-eau-de-toilette-05
+source_type: synthetic
+perfume_id: l-eau-d-ambre-eau-de-toilette
+perfume_name: l'eau d'ambre eau de toilette
+review_index: 5
+review_text: I wanted to understand l'eau d'ambre eau de toilette, but soft creamy sweetness pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-d-ambre-eau-de-toilette-06
+source_type: synthetic
+perfume_id: l-eau-d-ambre-eau-de-toilette
+perfume_name: l'eau d'ambre eau de toilette
+review_index: 6
+review_text: l'eau d'ambre eau de toilette made me think about the person I would become if I wore it outside. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-de-circe-eau-de-parfum-04
+source_type: synthetic
+perfume_id: l-eau-de-circe-eau-de-parfum
+perfume_name: l'eau de circe eau de parfum
+review_index: 4
+review_text: I expected l'eau de circe eau de parfum to be mostly about warm spice, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-de-circe-eau-de-parfum-05
+source_type: synthetic
+perfume_id: l-eau-de-circe-eau-de-parfum
+perfume_name: l'eau de circe eau de parfum
+review_index: 5
+review_text: I wanted to understand l'eau de circe eau de parfum, but clean skin musk pushed harder than I expected. The mix of warm amber resin and clean laundry musk created a strong image, almost too sharp for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-de-circe-eau-de-parfum-06
+source_type: synthetic
+perfume_id: l-eau-de-circe-eau-de-parfum
+perfume_name: l'eau de circe eau de parfum
+review_index: 6
+review_text: l'eau de circe eau de parfum made me think about the person I would become if I wore it outside. The impression of warm amber resin gives it presence, while soft cosmetic powder keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-de-l-artisan-eau-de-toilette-04
+source_type: synthetic
+perfume_id: l-eau-de-l-artisan-eau-de-toilette
+perfume_name: l'eau de l'artisan eau de toilette
+review_index: 4
+review_text: I tested l'eau de l'artisan eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. The soft vanilla and soft tea steam made it feel like creamy sweetness against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-de-l-artisan-eau-de-toilette-05
+source_type: synthetic
+perfume_id: l-eau-de-l-artisan-eau-de-toilette
+perfume_name: l'eau de l'artisan eau de toilette
+review_index: 5
+review_text: I expected l'eau de l'artisan eau de toilette to be mostly about soft cosmetic powder, but the drydown changed my mind. The opening made me hesitate, but the base gave it a second chance. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-de-l-artisan-eau-de-toilette-06
+source_type: synthetic
+perfume_id: l-eau-de-l-artisan-eau-de-toilette
+perfume_name: l'eau de l'artisan eau de toilette
+review_index: 6
+review_text: I wanted to understand l'eau de l'artisan eau de toilette, but dry vetiver roots pushed harder than I expected. The mix of soft vanilla and soft tea steam created a strong image, almost too sharp for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-eau-de-toilette-04
+source_type: synthetic
+perfume_id: l-eau-eau-de-toilette
+perfume_name: l'eau eau de toilette
+review_index: 4
+review_text: I wanted to understand l'eau eau de toilette, but clean laundry musk pushed harder than I expected. Strangely, it feels tied to a specific weather, not to every day. The mix of green fig skin and fresh ginger bite created a strong image, almost too dry for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-eau-de-toilette-05
+source_type: synthetic
+perfume_id: l-eau-eau-de-toilette
+perfume_name: l'eau eau de toilette
+review_index: 5
+review_text: l'eau eau de toilette made me think about the person I would become if I wore it outside. The impression of clean laundry musk gives it presence, while green fig skin keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-eau-de-toilette-06
+source_type: synthetic
+perfume_id: l-eau-eau-de-toilette
+perfume_name: l'eau eau de toilette
+review_index: 6
+review_text: l'eau eau de toilette immediately gave me a picture rather than a note list: clean laundry musk, green fig skin, and fresh ginger bite. I did not feel simple happiness, more like a small private memory opening and closing. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-mixte-eau-fraiche-04
+source_type: synthetic
+perfume_id: l-eau-mixte-eau-fraiche
+perfume_name: l'eau mixte eau fraiche
+review_index: 4
+review_text: l'eau mixte eau fraiche made me think about the person I would become if I wore it outside. Strangely, it feels tied to a specific weather, not to every day. The impression of crushed green stems gives it presence, while warm resin keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-mixte-eau-fraiche-05
+source_type: synthetic
+perfume_id: l-eau-mixte-eau-fraiche
+perfume_name: l'eau mixte eau fraiche
+review_index: 5
+review_text: l'eau mixte eau fraiche immediately gave me a picture rather than a note list: crushed green stems, warm resin, and jammy rose petals. The color in my head was wet green, placed around a dim room, with a vase being moved somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-mixte-eau-fraiche-06
+source_type: synthetic
+perfume_id: l-eau-mixte-eau-fraiche
+perfume_name: l'eau mixte eau fraiche
+review_index: 6
+review_text: I tested l'eau mixte eau fraiche on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-rare-matale-eau-de-toilette-04
+source_type: synthetic
+perfume_id: l-eau-rare-matale-eau-de-toilette
+perfume_name: l'eau rare matale eau de toilette
+review_index: 4
+review_text: I expected l'eau rare matale eau de toilette to be mostly about powdery iris, but the drydown changed my mind. Strangely, i kept checking my wrist, not because it was loud, but because the mood kept shifting. After the first sharp moment, soft tea steam came forward and the whole scent turned stranger. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-rare-matale-eau-de-toilette-05
+source_type: synthetic
+perfume_id: l-eau-rare-matale-eau-de-toilette
+perfume_name: l'eau rare matale eau de toilette
+review_index: 5
+review_text: I wanted to understand l'eau rare matale eau de toilette, but soft creamy sweetness pushed harder than I expected. The mix of crushed green stems and soft tea steam created a strong image, almost too warm for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-eau-rare-matale-eau-de-toilette-06
+source_type: synthetic
+perfume_id: l-eau-rare-matale-eau-de-toilette
+perfume_name: l'eau rare matale eau de toilette
+review_index: 6
+review_text: l'eau rare matale eau de toilette made me think about the person I would become if I wore it outside. The impression of faint smoke gives it presence, while warm spice keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ete-en-douce-eau-de-toilette-04
+source_type: synthetic
+perfume_id: l-ete-en-douce-eau-de-toilette
+perfume_name: l'ete en douce eau de toilette
+review_index: 4
+review_text: l'ete en douce eau de toilette made me think about the person I would become if I wore it outside. The impression of crushed green stems gives it presence, while warm amber resin keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ete-en-douce-eau-de-toilette-05
+source_type: synthetic
+perfume_id: l-ete-en-douce-eau-de-toilette
+perfume_name: l'ete en douce eau de toilette
+review_index: 5
+review_text: l'ete en douce eau de toilette immediately gave me a picture rather than a note list: bright citrus peel, warm amber resin, and dry woods. The color in my head was clear yellow, placed around a quiet evening room, with a drawer sliding open somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ete-en-douce-eau-de-toilette-06
+source_type: synthetic
+perfume_id: l-ete-en-douce-eau-de-toilette
+perfume_name: l'ete en douce eau de toilette
+review_index: 6
+review_text: I tested l'ete en douce eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-humaniste-eau-de-parfum-04
+source_type: synthetic
+perfume_id: l-humaniste-eau-de-parfum
+perfume_name: l'humaniste eau de parfum
+review_index: 4
+review_text: I expected l'humaniste eau de parfum to be mostly about warm tobacco leaf, but the drydown changed my mind. After the first sharp moment, bright citrus peel came forward and the whole scent turned darker. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-humaniste-eau-de-parfum-05
+source_type: synthetic
+perfume_id: l-humaniste-eau-de-parfum
+perfume_name: l'humaniste eau de parfum
+review_index: 5
+review_text: I wanted to understand l'humaniste eau de parfum, but warm tobacco leaf pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-humaniste-eau-de-parfum-06
+source_type: synthetic
+perfume_id: l-humaniste-eau-de-parfum
+perfume_name: l'humaniste eau de parfum
+review_index: 6
+review_text: l'humaniste eau de parfum made me think about the person I would become if I wore it outside. The impression of warm spice gives it presence, while bright citrus peel keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ombre-dans-l-eau-eau-de-parfum-04
+source_type: synthetic
+perfume_id: l-ombre-dans-l-eau-eau-de-parfum
+perfume_name: l'ombre dans l'eau - eau de parfum
+review_index: 4
+review_text: I tested l'ombre dans l'eau - eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and warm spice made it feel like petal softness against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ombre-dans-l-eau-eau-de-parfum-05
+source_type: synthetic
+perfume_id: l-ombre-dans-l-eau-eau-de-parfum
+perfume_name: l'ombre dans l'eau - eau de parfum
+review_index: 5
+review_text: I expected l'ombre dans l'eau - eau de parfum to be mostly about green fig skin, but the drydown changed my mind. After the first sharp moment, soft floral petals came forward and the whole scent turned stranger. The opening made me hesitate, but the base gave it a second chance. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ombre-dans-l-eau-eau-de-parfum-06
+source_type: synthetic
+perfume_id: l-ombre-dans-l-eau-eau-de-parfum
+perfume_name: l'ombre dans l'eau - eau de parfum
+review_index: 6
+review_text: I wanted to understand l'ombre dans l'eau - eau de parfum, but soft floral petals pushed harder than I expected. The mix of green fig skin and soft vanilla created a strong image, almost too heavy for me. I respect the idea, yet the texture made me feel uneasy after a while. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ombre-dans-l-eau-eau-de-toilette-04
+source_type: synthetic
+perfume_id: l-ombre-dans-l-eau-eau-de-toilette
+perfume_name: l'ombre dans l'eau - eau de toilette
+review_index: 4
+review_text: l'ombre dans l'eau - eau de toilette immediately gave me a picture rather than a note list: sweet orange peel, clean laundry musk, and soft vanilla. The color in my head was orange light, placed around a sunny laundry room, with a spoon through custard somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ombre-dans-l-eau-eau-de-toilette-05
+source_type: synthetic
+perfume_id: l-ombre-dans-l-eau-eau-de-toilette
+perfume_name: l'ombre dans l'eau - eau de toilette
+review_index: 5
+review_text: I tested l'ombre dans l'eau - eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. For me, i liked some moments more than others, which made the wearing feel alive. The crushed green stems and clean laundry musk made it feel like leafy snap against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-l-ombre-dans-l-eau-eau-de-toilette-06
+source_type: synthetic
+perfume_id: l-ombre-dans-l-eau-eau-de-toilette
+perfume_name: l'ombre dans l'eau - eau de toilette
+review_index: 6
+review_text: I expected l'ombre dans l'eau - eau de toilette to be mostly about jammy rose petals, but the drydown changed my mind. After the first sharp moment, soft vanilla came forward and the whole scent turned cleaner. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-capitale-parfum-04
+source_type: synthetic
+perfume_id: la-capitale-parfum
+perfume_name: la capitale parfum
+review_index: 4
+review_text: I wanted to understand la capitale parfum, but burnt caramel pushed harder than I expected. By the drydown, the opening and the drydown almost felt like two different opinions from the same person. The mix of cool cardamom and jammy rose petals created a strong image, almost too dry for me. I respect the idea, yet the texture made me feel uneasy after a while. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-capitale-parfum-05
+source_type: synthetic
+perfume_id: la-capitale-parfum
+perfume_name: la capitale parfum
+review_index: 5
+review_text: la capitale parfum made me think about the person I would become if I wore it outside. The impression of burnt caramel gives it presence, while cool cardamom keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-capitale-parfum-06
+source_type: synthetic
+perfume_id: la-capitale-parfum
+perfume_name: la capitale parfum
+review_index: 6
+review_text: la capitale parfum immediately gave me a picture rather than a note list: burnt caramel, cool cardamom, and jammy rose petals. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-chasse-aux-papillons-eau-de-toilette-04
+source_type: synthetic
+perfume_id: la-chasse-aux-papillons-eau-de-toilette
+perfume_name: la chasse aux papillons eau de toilette
+review_index: 4
+review_text: la chasse aux papillons eau de toilette immediately gave me a picture rather than a note list: edible gourmand sweetness, soft floral petals, and jammy rose petals. The color in my head was caramel gold, placed around a florist window, with a vase being moved somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-chasse-aux-papillons-eau-de-toilette-05
+source_type: synthetic
+perfume_id: la-chasse-aux-papillons-eau-de-toilette
+perfume_name: la chasse aux papillons eau de toilette
+review_index: 5
+review_text: I tested la chasse aux papillons eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. For me, it is not a simple compliment scent, but it does create a clear atmosphere. The bitter grapefruit peel and crushed green stems made it feel like sharp sparkle against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-chasse-aux-papillons-eau-de-toilette-06
+source_type: synthetic
+perfume_id: la-chasse-aux-papillons-eau-de-toilette
+perfume_name: la chasse aux papillons eau de toilette
+review_index: 6
+review_text: I expected la chasse aux papillons eau de toilette to be mostly about jammy rose petals, but the drydown changed my mind. After the first sharp moment, soft cosmetic powder came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-chasse-aux-papillons-extreme-eau-de-parfum-04
+source_type: synthetic
+perfume_id: la-chasse-aux-papillons-extreme-eau-de-parfum
+perfume_name: la chasse aux papillons extreme eau de parfum
+review_index: 4
+review_text: I wanted to understand la chasse aux papillons extreme eau de parfum, but soft cosmetic powder pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-chasse-aux-papillons-extreme-eau-de-parfum-05
+source_type: synthetic
+perfume_id: la-chasse-aux-papillons-extreme-eau-de-parfum
+perfume_name: la chasse aux papillons extreme eau de parfum
+review_index: 5
+review_text: la chasse aux papillons extreme eau de parfum made me think about the person I would become if I wore it outside. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-chasse-aux-papillons-extreme-eau-de-parfum-06
+source_type: synthetic
+perfume_id: la-chasse-aux-papillons-extreme-eau-de-parfum
+perfume_name: la chasse aux papillons extreme eau de parfum
+review_index: 6
+review_text: la chasse aux papillons extreme eau de parfum immediately gave me a picture rather than a note list: soft floral petals, clean skin musk, and warm jasmine. The color in my head was dusty pink, placed around fresh sheets, with night insects outside somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-la-liturgie-des-heures-eau-de-parfum-04
+source_type: synthetic
+perfume_id: la-liturgie-des-heures-eau-de-parfum
+perfume_name: la liturgie des heures eau de parfum
+review_index: 4
+review_text: I wanted to understand la liturgie des heures eau de parfum, but dry incense smoke pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. It has a clear personality.
+END_REVIEW

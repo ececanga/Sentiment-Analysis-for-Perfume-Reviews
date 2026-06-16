@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 19 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grand-neroli-cologne-absolue-04
+source_type: synthetic
+perfume_id: grand-neroli-cologne-absolue
+perfume_name: grand neroli cologne absolue
+review_index: 4
+review_text: I expected grand neroli cologne absolue to be mostly about soft vanilla, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grand-neroli-cologne-absolue-05
+source_type: synthetic
+perfume_id: grand-neroli-cologne-absolue
+perfume_name: grand neroli cologne absolue
+review_index: 5
+review_text: I wanted to understand grand neroli cologne absolue, but bright citrus peel pushed harder than I expected. The mix of warm tobacco leaf and bitter neroli created a strong image, almost too sharp for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grand-neroli-cologne-absolue-06
+source_type: synthetic
+perfume_id: grand-neroli-cologne-absolue
+perfume_name: grand neroli cologne absolue
+review_index: 6
+review_text: grand neroli cologne absolue made me think about the person I would become if I wore it outside. The impression of bitter neroli gives it presence, while warm tobacco leaf keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grand-soir-eau-de-parfum-04
+source_type: synthetic
+perfume_id: grand-soir-eau-de-parfum
+perfume_name: grand soir eau de parfum
+review_index: 4
+review_text: I expected grand soir eau de parfum to be mostly about warm amber resin, but the drydown changed my mind. After the first sharp moment, soft floral petals came forward and the whole scent turned more tender. The opening made me hesitate, but the base gave it a second chance. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grand-soir-eau-de-parfum-05
+source_type: synthetic
+perfume_id: grand-soir-eau-de-parfum
+perfume_name: grand soir eau de parfum
+review_index: 5
+review_text: I wanted to understand grand soir eau de parfum, but warm amber resin pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grand-soir-eau-de-parfum-06
+source_type: synthetic
+perfume_id: grand-soir-eau-de-parfum
+perfume_name: grand soir eau de parfum
+review_index: 6
+review_text: grand soir eau de parfum made me think about the person I would become if I wore it outside. The impression of warm amber resin gives it presence, while soft floral petals keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grape-pearls-eau-de-parfum-04
+source_type: synthetic
+perfume_id: grape-pearls-eau-de-parfum
+perfume_name: grape pearls eau de parfum
+review_index: 4
+review_text: I expected grape pearls eau de parfum to be mostly about warm amber resin, but the drydown changed my mind. For me, i liked some moments more than others, which made the wearing feel alive. After the first sharp moment, clean skin musk came forward and the whole scent turned warmer. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grape-pearls-eau-de-parfum-05
+source_type: synthetic
+perfume_id: grape-pearls-eau-de-parfum
+perfume_name: grape pearls eau de parfum
+review_index: 5
+review_text: I wanted to understand grape pearls eau de parfum, but warm amber resin pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-grape-pearls-eau-de-parfum-06
+source_type: synthetic
+perfume_id: grape-pearls-eau-de-parfum
+perfume_name: grape pearls eau de parfum
+review_index: 6
+review_text: grape pearls eau de parfum made me think about the person I would become if I wore it outside. The impression of warm amber resin gives it presence, while dry woods keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-graphite-eau-de-parfum-04
+source_type: synthetic
+perfume_id: graphite-eau-de-parfum
+perfume_name: graphite eau de parfum
+review_index: 4
+review_text: I tested graphite eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. At first, i can imagine someone loving this for exactly the reason another person would avoid it. The dry cedar shavings and powdery violet made it feel like dry grain against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-graphite-eau-de-parfum-05
+source_type: synthetic
+perfume_id: graphite-eau-de-parfum
+perfume_name: graphite eau de parfum
+review_index: 5
+review_text: I expected graphite eau de parfum to be mostly about dry cedar shavings, but the drydown changed my mind. After the first sharp moment, powdery violet came forward and the whole scent turned more tender. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-graphite-eau-de-parfum-06
+source_type: synthetic
+perfume_id: graphite-eau-de-parfum
+perfume_name: graphite eau de parfum
+review_index: 6
+review_text: I wanted to understand graphite eau de parfum, but dry cedar shavings pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-greek-keys-extrait-de-parfum-04
+source_type: synthetic
+perfume_id: greek-keys-extrait-de-parfum
+perfume_name: greek keys extrait de parfum
+review_index: 4
+review_text: greek keys extrait de parfum made me think about the person I would become if I wore it outside. The impression of soft floral petals gives it presence, while soft vanilla keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-greek-keys-extrait-de-parfum-05
+source_type: synthetic
+perfume_id: greek-keys-extrait-de-parfum
+perfume_name: greek keys extrait de parfum
+review_index: 5
+review_text: greek keys extrait de parfum immediately gave me a picture rather than a note list: bright citrus peel, creamy coconut, and soft floral petals. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-greek-keys-extrait-de-parfum-06
+source_type: synthetic
+perfume_id: greek-keys-extrait-de-parfum
+perfume_name: greek keys extrait de parfum
+review_index: 6
+review_text: I tested greek keys extrait de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and faint smoke made it feel like petal softness against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-eau-de-parfum-04
+source_type: synthetic
+perfume_id: green-eau-de-parfum
+perfume_name: green eau de parfum
+review_index: 4
+review_text: I expected green eau de parfum to be mostly about clean laundry musk, but the drydown changed my mind. After the first sharp moment, crushed green stems came forward and the whole scent turned cleaner. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-eau-de-parfum-05
+source_type: synthetic
+perfume_id: green-eau-de-parfum
+perfume_name: green eau de parfum
+review_index: 5
+review_text: I wanted to understand green eau de parfum, but crushed green stems pushed harder than I expected. The mix of warm amber resin and bright citrus peel created a strong image, almost too dry for me. I respect the idea, yet the texture made me feel uneasy after a while. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-eau-de-parfum-06
+source_type: synthetic
+perfume_id: green-eau-de-parfum
+perfume_name: green eau de parfum
+review_index: 6
+review_text: green eau de parfum made me think about the person I would become if I wore it outside. The impression of dry woods gives it presence, while bright citrus peel keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-irish-tweed-eau-de-parfum-04
+source_type: synthetic
+perfume_id: green-irish-tweed-eau-de-parfum
+perfume_name: green irish tweed eau de parfum ...
+review_index: 4
+review_text: I expected green irish tweed eau de parfum ... to be mostly about crushed green stems, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-irish-tweed-eau-de-parfum-05
+source_type: synthetic
+perfume_id: green-irish-tweed-eau-de-parfum
+perfume_name: green irish tweed eau de parfum ...
+review_index: 5
+review_text: I wanted to understand green irish tweed eau de parfum ..., but crushed green stems pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-irish-tweed-eau-de-parfum-06
+source_type: synthetic
+perfume_id: green-irish-tweed-eau-de-parfum
+perfume_name: green irish tweed eau de parfum ...
+review_index: 6
+review_text: green irish tweed eau de parfum ... made me think about the person I would become if I wore it outside. The impression of crushed green stems gives it presence, while bright citrus peel keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-pearl-eau-de-parfum-04
+source_type: synthetic
+perfume_id: green-pearl-eau-de-parfum
+perfume_name: green pearl eau de parfum
+review_index: 4
+review_text: green pearl eau de parfum made me think about the person I would become if I wore it outside. After a while, i can imagine someone loving this for exactly the reason another person would avoid it. The impression of crushed green stems gives it presence, while bright citrus peel keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-pearl-eau-de-parfum-05
+source_type: synthetic
+perfume_id: green-pearl-eau-de-parfum
+perfume_name: green pearl eau de parfum
+review_index: 5
+review_text: green pearl eau de parfum immediately gave me a picture rather than a note list: crushed green stems, bright citrus peel, and soft floral petals. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-green-pearl-eau-de-parfum-06
+source_type: synthetic
+perfume_id: green-pearl-eau-de-parfum
+perfume_name: green pearl eau de parfum
+review_index: 6
+review_text: I tested green pearl eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The crushed green stems and bright citrus peel made it feel like leafy snap against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-habdan-eau-de-parfum-04
+source_type: synthetic
+perfume_id: habdan-eau-de-parfum
+perfume_name: habdan eau de parfum
+review_index: 4
+review_text: habdan eau de parfum immediately gave me a picture rather than a note list: dry incense smoke, warm amber resin, and sweet cinnamon warmth. The color in my head was grey violet, placed around a quiet evening room, with a kettle starting to hum somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-habdan-eau-de-parfum-05
+source_type: synthetic
+perfume_id: habdan-eau-de-parfum
+perfume_name: habdan eau de parfum
+review_index: 5
+review_text: I tested habdan eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. On my skin, the texture matters here as much as the smell itself. The dry incense smoke and warm amber resin made it feel like thin smoke against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-habdan-eau-de-parfum-06
+source_type: synthetic
+perfume_id: habdan-eau-de-parfum
+perfume_name: habdan eau de parfum
+review_index: 6
+review_text: I expected habdan eau de parfum to be mostly about dry incense smoke, but the drydown changed my mind. After the first sharp moment, warm amber resin came forward and the whole scent turned stranger. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hakka-eau-de-parfum-04
+source_type: synthetic
+perfume_id: hakka-eau-de-parfum
+perfume_name: hakka eau de parfum
+review_index: 4
+review_text: I expected hakka eau de parfum to be mostly about warm spice, but the drydown changed my mind. In the air around me, the opening and the drydown almost felt like two different opinions from the same person. After the first sharp moment, soft floral petals came forward and the whole scent turned warmer. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hakka-eau-de-parfum-05
+source_type: synthetic
+perfume_id: hakka-eau-de-parfum
+perfume_name: hakka eau de parfum
+review_index: 5
+review_text: I wanted to understand hakka eau de parfum, but warm amber resin pushed harder than I expected. The mix of bright citrus peel and dry woods created a strong image, almost too heavy for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hakka-eau-de-parfum-06
+source_type: synthetic
+perfume_id: hakka-eau-de-parfum
+perfume_name: hakka eau de parfum
+review_index: 6
+review_text: hakka eau de parfum made me think about the person I would become if I wore it outside. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-harmatan-noir-eau-de-toilette-04
+source_type: synthetic
+perfume_id: harmatan-noir-eau-de-toilette
+perfume_name: harmatan noir eau de toilette
+review_index: 4
+review_text: I wanted to understand harmatan noir eau de toilette, but powdery violet pushed harder than I expected. The mix of soft vanilla and jammy rose petals created a strong image, almost too heavy for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-harmatan-noir-eau-de-toilette-05
+source_type: synthetic
+perfume_id: harmatan-noir-eau-de-toilette
+perfume_name: harmatan noir eau de toilette
+review_index: 5
+review_text: harmatan noir eau de toilette made me think about the person I would become if I wore it outside. The impression of creamy tuberose gives it presence, while soft vanilla keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-harmatan-noir-eau-de-toilette-06
+source_type: synthetic
+perfume_id: harmatan-noir-eau-de-toilette
+perfume_name: harmatan noir eau de toilette
+review_index: 6
+review_text: harmatan noir eau de toilette immediately gave me a picture rather than a note list: soft vanilla, creamy tuberose, and warm amber resin. The color in my head was warm cream, placed around a humid garden, with a low cello note somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-haxan-eau-de-parfum-04
+source_type: synthetic
+perfume_id: haxan-eau-de-parfum
+perfume_name: haxan eau de parfum
+review_index: 4
+review_text: I tested haxan eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-haxan-eau-de-parfum-05
+source_type: synthetic
+perfume_id: haxan-eau-de-parfum
+perfume_name: haxan eau de parfum
+review_index: 5
+review_text: I expected haxan eau de parfum to be mostly about faint smoke, but the drydown changed my mind. After the first sharp moment, crushed green stems came forward and the whole scent turned cleaner. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-haxan-eau-de-parfum-06
+source_type: synthetic
+perfume_id: haxan-eau-de-parfum
+perfume_name: haxan eau de parfum
+review_index: 6
+review_text: I wanted to understand haxan eau de parfum, but bitter grapefruit peel pushed harder than I expected. The mix of dry woods and faint smoke created a strong image, almost too heavy for me. I respect the idea, yet the texture made me feel uneasy after a while. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-heartless-helen-eau-de-parfum-04
+source_type: synthetic
+perfume_id: heartless-helen-eau-de-parfum
+perfume_name: heartless helen eau de parfum
+review_index: 4
+review_text: heartless helen eau de parfum immediately gave me a picture rather than a note list: dark cherry syrup, clean laundry musk, and soft floral petals. The color in my head was red lacquer, placed around a sunny laundry room, with quiet footsteps on carpet somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-heartless-helen-eau-de-parfum-05
+source_type: synthetic
+perfume_id: heartless-helen-eau-de-parfum
+perfume_name: heartless helen eau de parfum
+review_index: 5
+review_text: I tested heartless helen eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft vanilla and jammy rose petals made it feel like creamy sweetness against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-heartless-helen-eau-de-parfum-06
+source_type: synthetic
+perfume_id: heartless-helen-eau-de-parfum
+perfume_name: heartless helen eau de parfum
+review_index: 6
+review_text: I expected heartless helen eau de parfum to be mostly about creamy tuberose, but the drydown changed my mind. After the first sharp moment, soft floral petals came forward and the whole scent turned warmer. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-eau-de-parfum-04
+source_type: synthetic
+perfume_id: hedonist-eau-de-parfum
+perfume_name: hedonist eau de parfum
+review_index: 4
+review_text: hedonist eau de parfum immediately gave me a picture rather than a note list: dark oud wood, soft floral petals, and soft peach skin. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-eau-de-parfum-05
+source_type: synthetic
+perfume_id: hedonist-eau-de-parfum
+perfume_name: hedonist eau de parfum
+review_index: 5
+review_text: I tested hedonist eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The clean skin musk and soft floral petals made it feel like smooth powder against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-eau-de-parfum-06
+source_type: synthetic
+perfume_id: hedonist-eau-de-parfum
+perfume_name: hedonist eau de parfum
+review_index: 6
+review_text: I expected hedonist eau de parfum to be mostly about soft floral petals, but the drydown changed my mind. After the first sharp moment, dark oud wood came forward and the whole scent turned darker. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-iris-absolute-eau-de-parfum-04
+source_type: synthetic
+perfume_id: hedonist-iris-absolute-eau-de-parfum
+perfume_name: hedonist iris absolute eau de parfum
+review_index: 4
+review_text: I wanted to understand hedonist iris absolute eau de parfum, but clean laundry musk pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-iris-absolute-eau-de-parfum-05
+source_type: synthetic
+perfume_id: hedonist-iris-absolute-eau-de-parfum
+perfume_name: hedonist iris absolute eau de parfum
+review_index: 5
+review_text: hedonist iris absolute eau de parfum made me think about the person I would become if I wore it outside. The impression of soft floral petals gives it presence, while soft vanilla keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-iris-absolute-eau-de-parfum-06
+source_type: synthetic
+perfume_id: hedonist-iris-absolute-eau-de-parfum
+perfume_name: hedonist iris absolute eau de parfum
+review_index: 6
+review_text: hedonist iris absolute eau de parfum immediately gave me a picture rather than a note list: clean skin musk, powdery iris, and jammy rose petals. The color in my head was soft beige, placed around an old vanity table, with a vase being moved somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-iris-eau-de-parfum-04
+source_type: synthetic
+perfume_id: hedonist-iris-eau-de-parfum
+perfume_name: hedonist iris eau de parfum
+review_index: 4
+review_text: I tested hedonist iris eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The powdery iris and powdered sugar made it feel like dry powder against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-iris-eau-de-parfum-05
+source_type: synthetic
+perfume_id: hedonist-iris-eau-de-parfum
+perfume_name: hedonist iris eau de parfum
+review_index: 5
+review_text: I expected hedonist iris eau de parfum to be mostly about powdered sugar, but the drydown changed my mind. After the first sharp moment, powdery iris came forward and the whole scent turned stranger. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-iris-eau-de-parfum-06
+source_type: synthetic
+perfume_id: hedonist-iris-eau-de-parfum
+perfume_name: hedonist iris eau de parfum
+review_index: 6
+review_text: I wanted to understand hedonist iris eau de parfum, but soft vanilla pushed harder than I expected. The mix of soft floral petals and powdered sugar created a strong image, almost too dry for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-rose-absolute-eau-de-parfum-04
+source_type: synthetic
+perfume_id: hedonist-rose-absolute-eau-de-parfum
+perfume_name: hedonist rose absolute eau de parfum
+review_index: 4
+review_text: I wanted to understand hedonist rose absolute eau de parfum, but soft vanilla pushed harder than I expected. The mix of warm amber resin and dark cherry syrup created a strong image, almost too heavy for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-hedonist-rose-absolute-eau-de-parfum-05
+source_type: synthetic
+perfume_id: hedonist-rose-absolute-eau-de-parfum
+perfume_name: hedonist rose absolute eau de parfum
+review_index: 5
+review_text: hedonist rose absolute eau de parfum made me think about the person I would become if I wore it outside. The impression of dark cherry syrup gives it presence, while warm amber resin keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It feels tied to a specific weather, not to every day.
+END_REVIEW

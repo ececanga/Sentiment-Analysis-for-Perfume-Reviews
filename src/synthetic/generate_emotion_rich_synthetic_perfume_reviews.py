@@ -627,6 +627,7 @@ def build_review(identity: PerfumeIdentity, review_index: int, seed: int, contex
 def generate_rows(
     *,
     identities: Sequence[PerfumeIdentity],
+    start_review_index: int,
     reviews_per_perfume: int,
     seed: int,
     source_csv: Path,
@@ -635,7 +636,8 @@ def generate_rows(
 ) -> List[Dict[str, Any]]:
     rows: List[Dict[str, Any]] = []
     for identity in identities:
-        for review_index in range(1, reviews_per_perfume + 1):
+        stop_review_index = start_review_index + reviews_per_perfume
+        for review_index in range(start_review_index, stop_review_index):
             rows.append(build_review(identity, review_index, seed, context_hints, source_csv, context_csv))
     return rows
 
@@ -697,6 +699,8 @@ def write_summary(
         "n_perfumes": len(identities),
         "expected_perfumes": expected_perfumes,
         "reviews_per_perfume": reviews_per_perfume,
+        "review_index_min": min(int(row["review_index"]) for row in rows) if rows else None,
+        "review_index_max": max(int(row["review_index"]) for row in rows) if rows else None,
         "n_synthetic_review_rows": len(rows),
         "seed": seed,
         "word_count_min": min(word_counts) if word_counts else 0,
@@ -744,6 +748,7 @@ def parse_args() -> argparse.Namespace:
         default=data_path("synthetic", "synthetic_perfume_reviews_784_emotion_rich_v2_pilot100_summary.json"),
     )
     parser.add_argument("--reviews-per-perfume", type=int, default=5)
+    parser.add_argument("--start-review-index", type=int, default=1)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
     parser.add_argument("--limit-perfumes", type=int, default=20, help="Use 0 or a negative value for all perfumes.")
     parser.add_argument("--expected-perfumes", type=int, default=784)
@@ -755,6 +760,8 @@ def main() -> None:
     args = parse_args()
     if args.reviews_per_perfume <= 0:
         raise ValueError("--reviews-per-perfume must be positive.")
+    if args.start_review_index <= 0:
+        raise ValueError("--start-review-index must be positive.")
     if not args.overwrite:
         existing = [path for path in [args.output_csv, args.summary_json] if path.exists()]
         if existing:
@@ -772,6 +779,7 @@ def main() -> None:
     context_hints = load_context_hints(args.context_keywords_csv)
     rows = generate_rows(
         identities=identities,
+        start_review_index=args.start_review_index,
         reviews_per_perfume=args.reviews_per_perfume,
         seed=args.seed,
         source_csv=args.source_csv,

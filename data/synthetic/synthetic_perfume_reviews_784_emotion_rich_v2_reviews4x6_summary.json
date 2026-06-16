@@ -1,0 +1,76 @@
+{
+  "dataset_version": "unlabeled_synthetic_perfume_reviews_784_emotion_rich_v2",
+  "generated_at_utc": "2026-06-16T13:38:24.305681+00:00",
+  "source_type": "unlabeled_synthetic_emotion_rich_v2",
+  "generation_policy": "local_note_inspired_human_scenario_templates_no_label_conditioning",
+  "source_identity_file": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+  "note_inspiration_file": "data/perfume_level/perfume_context_keywords.csv",
+  "output_csv": "data/synthetic/synthetic_perfume_reviews_784_emotion_rich_v2_reviews4x6.csv",
+  "n_perfumes": 784,
+  "expected_perfumes": 784,
+  "reviews_per_perfume": 3,
+  "review_index_min": 4,
+  "review_index_max": 6,
+  "n_synthetic_review_rows": 2352,
+  "seed": 20260612,
+  "word_count_min": 34,
+  "word_count_mean": 65.922,
+  "word_count_max": 96,
+  "emotion_keyword_count_mean": 3.509,
+  "persona_counts": {
+    "sensitive_nose": 311,
+    "casual_daily_wearer": 337,
+    "niche_sampler": 343,
+    "quiet_observer": 326,
+    "collector_with_boundaries": 316,
+    "memory_led_reviewer": 345,
+    "social_wearer": 374
+  },
+  "style_family_counts": {
+    "scene_based_review": 536,
+    "reflective_mini_review": 648,
+    "casual_blunt_review": 394,
+    "short_fragrantica_note": 451,
+    "long_personal_review": 323
+  },
+  "scenario_family_counts": {
+    "social_identity": 496,
+    "sensory_memory": 473,
+    "comfort_routine": 459,
+    "surprising_drydown": 453,
+    "difficult_reaction": 471
+  },
+  "length_profile_counts": {
+    "medium": 1184,
+    "short": 845,
+    "long": 323
+  },
+  "sensory_source_counts": {
+    "context_keywords": 2223,
+    "name_or_generic": 129
+  },
+  "top_sensory_terms": {
+    "soft floral petals": 876,
+    "clean laundry musk": 808,
+    "dry woods": 677,
+    "warm amber resin": 602,
+    "clean skin musk": 600,
+    "warm spice": 596,
+    "crushed green stems": 567,
+    "jammy rose petals": 549,
+    "bright citrus peel": 526,
+    "soft cosmetic powder": 447,
+    "soft vanilla": 426,
+    "polished leather": 327,
+    "soft creamy sweetness": 283,
+    "dry incense smoke": 198,
+    "earthy patchouli": 181,
+    "faint smoke": 179,
+    "sweet orange peel": 161,
+    "warm jasmine": 156,
+    "dark chocolate": 150,
+    "dark oud wood": 143
+  },
+  "label_columns_present": [],
+  "warning": "This is an unlabeled synthetic review dataset. Existing identity-source labels are ignored. Scenario/style/sensory provenance columns are generation metadata only and must not be used as model features."
+}

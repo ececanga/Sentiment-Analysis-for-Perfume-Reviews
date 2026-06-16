@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 46 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetiverus-eau-de-parfum-04
+source_type: synthetic
+perfume_id: vetiverus-eau-de-parfum
+perfume_name: vetiverus eau de parfum
+review_index: 4
+review_text: I tested vetiverus eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The clean laundry musk and fresh ginger bite made it feel like smooth cotton against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetiverus-eau-de-parfum-05
+source_type: synthetic
+perfume_id: vetiverus-eau-de-parfum
+perfume_name: vetiverus eau de parfum
+review_index: 5
+review_text: I expected vetiverus eau de parfum to be mostly about dry vetiver roots, but the drydown changed my mind. After the first sharp moment, sweet orange peel came forward and the whole scent turned darker. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetiverus-eau-de-parfum-06
+source_type: synthetic
+perfume_id: vetiverus-eau-de-parfum
+perfume_name: vetiverus eau de parfum
+review_index: 6
+review_text: I wanted to understand vetiverus eau de parfum, but dry cedar shavings pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vettiveru-2-04
+source_type: synthetic
+perfume_id: vettiveru-2
+perfume_name: vettiveru 2
+review_index: 4
+review_text: vettiveru 2 made me think about the person I would become if I wore it outside. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vettiveru-2-05
+source_type: synthetic
+perfume_id: vettiveru-2
+perfume_name: vettiveru 2
+review_index: 5
+review_text: vettiveru 2 immediately gave me a picture rather than a note list: crushed green stems, sweet orange peel, and polished leather. The color in my head was wet green, placed around a kitchen in sunlight, with boots on pavement somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vettiveru-2-06
+source_type: synthetic
+perfume_id: vettiveru-2
+perfume_name: vettiveru 2
+review_index: 6
+review_text: I tested vettiveru 2 on a normal day, the kind where I wanted my perfume to change my mood a little. The faint smoke and dry vetiver roots made it feel like dry haze against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetyver-eau-de-toilette-04
+source_type: synthetic
+perfume_id: vetyver-eau-de-toilette
+perfume_name: vetyver eau de toilette
+review_index: 4
+review_text: I expected vetyver eau de toilette to be mostly about dry vetiver roots, but the drydown changed my mind. The opening made me hesitate, but the base gave it a second chance. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetyver-eau-de-toilette-05
+source_type: synthetic
+perfume_id: vetyver-eau-de-toilette
+perfume_name: vetyver eau de toilette
+review_index: 5
+review_text: I wanted to understand vetyver eau de toilette, but dry vetiver roots pushed harder than I expected. This is not automatically bad, but on my skin it became tiring and a little hard to escape. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetyver-eau-de-toilette-06
+source_type: synthetic
+perfume_id: vetyver-eau-de-toilette
+perfume_name: vetyver eau de toilette
+review_index: 6
+review_text: vetyver eau de toilette made me think about the person I would become if I wore it outside. The impression of soft creamy sweetness gives it presence, while salted skin keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetyverio-eau-de-toilette-04
+source_type: synthetic
+perfume_id: vetyverio-eau-de-toilette
+perfume_name: vetyverio eau de toilette
+review_index: 4
+review_text: vetyverio eau de toilette made me think about the person I would become if I wore it outside. The impression of jammy rose petals gives it presence, while dry vetiver roots keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetyverio-eau-de-toilette-05
+source_type: synthetic
+perfume_id: vetyverio-eau-de-toilette
+perfume_name: vetyverio eau de toilette
+review_index: 5
+review_text: vetyverio eau de toilette immediately gave me a picture rather than a note list: cool lavender, dark chocolate, and soft floral petals. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vetyverio-eau-de-toilette-06
+source_type: synthetic
+perfume_id: vetyverio-eau-de-toilette
+perfume_name: vetyverio eau de toilette
+review_index: 6
+review_text: I tested vetyverio eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. The cool lavender and clean laundry musk made it feel like herbal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-victrix-eau-de-parfum-04
+source_type: synthetic
+perfume_id: victrix-eau-de-parfum
+perfume_name: victrix eau de parfum
+review_index: 4
+review_text: I wanted to understand victrix eau de parfum, but warm amber resin pushed harder than I expected. This is not automatically bad, but on my skin it became tiring and a little hard to escape. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-victrix-eau-de-parfum-05
+source_type: synthetic
+perfume_id: victrix-eau-de-parfum
+perfume_name: victrix eau de parfum
+review_index: 5
+review_text: victrix eau de parfum made me think about the person I would become if I wore it outside. Strangely, the opening and the drydown almost felt like two different opinions from the same person. The impression of clean laundry musk gives it presence, while soft creamy sweetness keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-victrix-eau-de-parfum-06
+source_type: synthetic
+perfume_id: victrix-eau-de-parfum
+perfume_name: victrix eau de parfum
+review_index: 6
+review_text: victrix eau de parfum immediately gave me a picture rather than a note list: warm amber resin, dry black pepper, and soft creamy sweetness. The color in my head was orange lamp light, placed around a busy kitchen, with a spoon through custard somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-violette-in-love-eau-de-toilette-04
+source_type: synthetic
+perfume_id: violette-in-love-eau-de-toilette
+perfume_name: violette in love eau de toilette
+review_index: 4
+review_text: violette in love eau de toilette made me think about the person I would become if I wore it outside. The impression of powdery violet gives it presence, while powdery iris keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-violette-in-love-eau-de-toilette-05
+source_type: synthetic
+perfume_id: violette-in-love-eau-de-toilette
+perfume_name: violette in love eau de toilette
+review_index: 5
+review_text: violette in love eau de toilette immediately gave me a picture rather than a note list: powdery violet, powdery iris, and warm resin. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-violette-in-love-eau-de-toilette-06
+source_type: synthetic
+perfume_id: violette-in-love-eau-de-toilette
+perfume_name: violette in love eau de toilette
+review_index: 6
+review_text: I tested violette in love eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-violettes-du-czar-eau-de-parfum-04
+source_type: synthetic
+perfume_id: violettes-du-czar-eau-de-parfum
+perfume_name: violettes du czar eau de parfum
+review_index: 4
+review_text: I tested violettes du czar eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-violettes-du-czar-eau-de-parfum-05
+source_type: synthetic
+perfume_id: violettes-du-czar-eau-de-parfum
+perfume_name: violettes du czar eau de parfum
+review_index: 5
+review_text: I expected violettes du czar eau de parfum to be mostly about powdery violet, but the drydown changed my mind. The opening made me hesitate, but the base gave it a second chance. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-violettes-du-czar-eau-de-parfum-06
+source_type: synthetic
+perfume_id: violettes-du-czar-eau-de-parfum
+perfume_name: violettes du czar eau de parfum
+review_index: 6
+review_text: I wanted to understand violettes du czar eau de parfum, but a bitter green edge pushed harder than I expected. The mix of dark chocolate and powdery violet created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-virgin-island-water-eau-de-parfum-04
+source_type: synthetic
+perfume_id: virgin-island-water-eau-de-parfum
+perfume_name: virgin island water eau de parfum ...
+review_index: 4
+review_text: virgin island water eau de parfum ... made me think about the person I would become if I wore it outside. The impression of powdery iris gives it presence, while clean skin musk keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-virgin-island-water-eau-de-parfum-05
+source_type: synthetic
+perfume_id: virgin-island-water-eau-de-parfum
+perfume_name: virgin island water eau de parfum ...
+review_index: 5
+review_text: virgin island water eau de parfum ... immediately gave me a picture rather than a note list: cool lavender, powdery iris, and soft creamy sweetness. At first, i would not call it easy, but I would call it memorable. The color in my head was dusty purple, placed around an old vanity table, with a spoon through custard somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-virgin-island-water-eau-de-parfum-06
+source_type: synthetic
+perfume_id: virgin-island-water-eau-de-parfum
+perfume_name: virgin island water eau de parfum ...
+review_index: 6
+review_text: I tested virgin island water eau de parfum ... on a normal day, the kind where I wanted my perfume to change my mood a little. Strangely, the texture matters here as much as the smell itself. The clean skin musk and cool lavender made it feel like smooth powder against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-viride-parfum-04
+source_type: synthetic
+perfume_id: viride-parfum
+perfume_name: viride parfum
+review_index: 4
+review_text: I tested viride parfum on a normal day, the kind where I wanted my perfume to change my mood a little. After a while, i liked some moments more than others, which made the wearing feel alive. The dry incense smoke and dry woods made it feel like thin smoke against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-viride-parfum-05
+source_type: synthetic
+perfume_id: viride-parfum
+perfume_name: viride parfum
+review_index: 5
+review_text: I expected viride parfum to be mostly about smooth sandalwood, but the drydown changed my mind. After the first sharp moment, dark oud wood came forward and the whole scent turned warmer. The opening made me hesitate, but the base gave it a second chance. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-viride-parfum-06
+source_type: synthetic
+perfume_id: viride-parfum
+perfume_name: viride parfum
+review_index: 6
+review_text: I wanted to understand viride parfum, but smooth sandalwood pushed harder than I expected. The mix of crushed green stems and dry woods created a strong image, almost too warm for me. I respect the idea, yet the texture made me feel uneasy after a while. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vivacious-eau-de-parfum-04
+source_type: synthetic
+perfume_id: vivacious-eau-de-parfum
+perfume_name: vivacious eau de parfum
+review_index: 4
+review_text: I expected vivacious eau de parfum to be mostly about sparkling bergamot peel, but the drydown changed my mind. After the first sharp moment, soft floral petals came forward and the whole scent turned cleaner. The opening made me hesitate, but the base gave it a second chance. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vivacious-eau-de-parfum-05
+source_type: synthetic
+perfume_id: vivacious-eau-de-parfum
+perfume_name: vivacious eau de parfum
+review_index: 5
+review_text: I wanted to understand vivacious eau de parfum, but soft cosmetic powder pushed harder than I expected. In the air around me, i would not call it easy, but I would call it memorable. The mix of warm amber resin and crushed green stems created a strong image, almost too dry for me. I respect the idea, yet the texture made me feel uneasy after a while. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vivacious-eau-de-parfum-06
+source_type: synthetic
+perfume_id: vivacious-eau-de-parfum
+perfume_name: vivacious eau de parfum
+review_index: 6
+review_text: vivacious eau de parfum made me think about the person I would become if I wore it outside. The impression of powdery violet gives it presence, while soft floral petals keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vixere-eau-de-parfum-04
+source_type: synthetic
+perfume_id: vixere-eau-de-parfum
+perfume_name: vixere eau de parfum
+review_index: 4
+review_text: I expected vixere eau de parfum to be mostly about bright citrus peel, but the drydown changed my mind. After the first sharp moment, powdery iris came forward and the whole scent turned stranger. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vixere-eau-de-parfum-05
+source_type: synthetic
+perfume_id: vixere-eau-de-parfum
+perfume_name: vixere eau de parfum
+review_index: 5
+review_text: I wanted to understand vixere eau de parfum, but dark coffee bitterness pushed harder than I expected. The mix of creamy gardenia and powdery iris created a strong image, almost too sharp for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vixere-eau-de-parfum-06
+source_type: synthetic
+perfume_id: vixere-eau-de-parfum
+perfume_name: vixere eau de parfum
+review_index: 6
+review_text: vixere eau de parfum made me think about the person I would become if I wore it outside. The impression of bright citrus peel gives it presence, while dark coffee bitterness keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vodka-on-the-rocks-eau-de-parfum-04
+source_type: synthetic
+perfume_id: vodka-on-the-rocks-eau-de-parfum
+perfume_name: vodka on the rocks eau de parfum
+review_index: 4
+review_text: vodka on the rocks eau de parfum immediately gave me a picture rather than a note list: warm spice, clean skin musk, and warm amber resin. The color in my head was rust orange, placed around fresh sheets, with a low cello note somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vodka-on-the-rocks-eau-de-parfum-05
+source_type: synthetic
+perfume_id: vodka-on-the-rocks-eau-de-parfum
+perfume_name: vodka on the rocks eau de parfum
+review_index: 5
+review_text: I tested vodka on the rocks eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm spice and clean skin musk made it feel like dry warmth against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-vodka-on-the-rocks-eau-de-parfum-06
+source_type: synthetic
+perfume_id: vodka-on-the-rocks-eau-de-parfum
+perfume_name: vodka on the rocks eau de parfum
+review_index: 6
+review_text: I expected vodka on the rocks eau de parfum to be mostly about warm spice, but the drydown changed my mind. After the first sharp moment, clean skin musk came forward and the whole scent turned darker. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-voleur-de-roses-eau-de-toilette-04
+source_type: synthetic
+perfume_id: voleur-de-roses-eau-de-toilette
+perfume_name: voleur de roses eau de toilette
+review_index: 4
+review_text: I wanted to understand voleur de roses eau de toilette, but jammy rose petals pushed harder than I expected. At first, the opening and the drydown almost felt like two different opinions from the same person. The mix of warm spice and dry woods created a strong image, almost too dry for me. I respect the idea, yet the texture made me feel uneasy after a while. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-voleur-de-roses-eau-de-toilette-05
+source_type: synthetic
+perfume_id: voleur-de-roses-eau-de-toilette
+perfume_name: voleur de roses eau de toilette
+review_index: 5
+review_text: voleur de roses eau de toilette made me think about the person I would become if I wore it outside. The impression of jammy rose petals gives it presence, while warm spice keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-voleur-de-roses-eau-de-toilette-06
+source_type: synthetic
+perfume_id: voleur-de-roses-eau-de-toilette
+perfume_name: voleur de roses eau de toilette
+review_index: 6
+review_text: voleur de roses eau de toilette immediately gave me a picture rather than a note list: jammy rose petals, warm spice, and dry woods. The color in my head was deep pink, placed around a spice drawer, with a drawer sliding open somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-war-and-peace-ii-extrait-de-parfum-04
+source_type: synthetic
+perfume_id: war-and-peace-ii-extrait-de-parfum
+perfume_name: war and peace ii extrait de parfum
+review_index: 4
+review_text: I expected war and peace ii extrait de parfum to be mostly about jammy rose petals, but the drydown changed my mind. After the first sharp moment, clean skin musk came forward and the whole scent turned more tender. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-war-and-peace-ii-extrait-de-parfum-05
+source_type: synthetic
+perfume_id: war-and-peace-ii-extrait-de-parfum
+perfume_name: war and peace ii extrait de parfum
+review_index: 5
+review_text: I wanted to understand war and peace ii extrait de parfum, but powdery iris pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-war-and-peace-ii-extrait-de-parfum-06
+source_type: synthetic
+perfume_id: war-and-peace-ii-extrait-de-parfum
+perfume_name: war and peace ii extrait de parfum
+review_index: 6
+review_text: war and peace ii extrait de parfum made me think about the person I would become if I wore it outside. On my skin, there is a little tension between comfort and strangeness. The impression of soft creamy sweetness gives it presence, while polished leather keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-wazamba-eau-de-parfum-04
+source_type: synthetic
+perfume_id: wazamba-eau-de-parfum
+perfume_name: wazamba eau de parfum
+review_index: 4
+review_text: wazamba eau de parfum made me think about the person I would become if I wore it outside. The impression of warm amber resin gives it presence, while bright citrus peel keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-wazamba-eau-de-parfum-05
+source_type: synthetic
+perfume_id: wazamba-eau-de-parfum
+perfume_name: wazamba eau de parfum
+review_index: 5
+review_text: wazamba eau de parfum immediately gave me a picture rather than a note list: dry woods, dry incense smoke, and bright citrus peel. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-wazamba-eau-de-parfum-06
+source_type: synthetic
+perfume_id: wazamba-eau-de-parfum
+perfume_name: wazamba eau de parfum
+review_index: 6
+review_text: I tested wazamba eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-what-about-pop-eau-de-parfum-04
+source_type: synthetic
+perfume_id: what-about-pop-eau-de-parfum
+perfume_name: what about pop eau de parfum
+review_index: 4
+review_text: I tested what about pop eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-what-about-pop-eau-de-parfum-05
+source_type: synthetic
+perfume_id: what-about-pop-eau-de-parfum
+perfume_name: what about pop eau de parfum
+review_index: 5
+review_text: I expected what about pop eau de parfum to be mostly about crushed green stems, but the drydown changed my mind. After the first sharp moment, burnt caramel came forward and the whole scent turned stranger. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-what-about-pop-eau-de-parfum-06
+source_type: synthetic
+perfume_id: what-about-pop-eau-de-parfum
+perfume_name: what about pop eau de parfum
+review_index: 6
+review_text: I wanted to understand what about pop eau de parfum, but burnt caramel pushed harder than I expected. The mix of edible gourmand sweetness and soft floral petals created a strong image, almost too heavy for me. I respect the idea, yet the texture made me feel uneasy after a while. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-what-i-did-on-my-holidays-eau-de-parfum-04
+source_type: synthetic
+perfume_id: what-i-did-on-my-holidays-eau-de-parfum
+perfume_name: what i did on my holidays eau de parfum
+review_index: 4
+review_text: I tested what i did on my holidays eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The clean skin musk and clean laundry musk made it feel like smooth powder against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-what-i-did-on-my-holidays-eau-de-parfum-05
+source_type: synthetic
+perfume_id: what-i-did-on-my-holidays-eau-de-parfum
+perfume_name: what i did on my holidays eau de parfum
+review_index: 5
+review_text: I expected what i did on my holidays eau de parfum to be mostly about creamy coconut, but the drydown changed my mind. After the first sharp moment, clean watery air came forward and the whole scent turned darker. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. The image in my head was stronger than the actual note list.
+END_REVIEW
