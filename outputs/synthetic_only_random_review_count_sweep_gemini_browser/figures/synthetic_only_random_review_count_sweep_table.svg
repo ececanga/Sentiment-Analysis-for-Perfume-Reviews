@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1133" height="676" viewBox="0 0 1133 676">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34.0" y="52.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="start">Randomized Synthetic-Only Review Count Sweep Metrics</text>
+<text x="34.0" y="80.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Mean +/- SD across random perfume orders; folds are grouped by perfume_id.</text>
+<rect x="34" y="106" width="1065" height="40" fill="#e8eef8"/>
+<rect x="34" y="106" width="210" height="40" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44.0" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="start">Model</text>
+<rect x="244" y="106" width="150" height="40" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="319.0" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Synthetic reviews</text>
+<rect x="394" y="106" width="105" height="40" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="446.5" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Perfumes</text>
+<rect x="499" y="106" width="120" height="40" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="559.0" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Random orders</text>
+<rect x="619" y="106" width="150" height="40" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="694.0" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">F1 mean +/- SD</text>
+<rect x="769" y="106" width="170" height="40" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="854.0" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">ROC-AUC mean +/- SD</text>
+<rect x="939" y="106" width="160" height="40" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1019.0" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">PR-AUC mean +/- SD</text>
+<rect x="34" y="146" width="1065" height="34" fill="#ffffff"/>
+<rect x="34" y="146" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<rect x="244" y="146" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">99</text>
+<rect x="394" y="146" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">33</text>
+<rect x="499" y="146" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="146" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.5829 +/- 0.0375</text>
+<rect x="769" y="146" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.8515 +/- 0.0824</text>
+<rect x="939" y="146" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6161 +/- 0.0321</text>
+<rect x="34" y="180" width="1065" height="34" fill="#f8fafc"/>
+<rect x="34" y="180" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<rect x="244" y="180" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">201</text>
+<rect x="394" y="180" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">67</text>
+<rect x="499" y="180" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="180" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.5711 +/- 0.0241</text>
+<rect x="769" y="180" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.8356 +/- 0.0748</text>
+<rect x="939" y="180" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6037 +/- 0.0301</text>
+<rect x="34" y="214" width="1065" height="34" fill="#ffffff"/>
+<rect x="34" y="214" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<rect x="244" y="214" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">300</text>
+<rect x="394" y="214" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">100</text>
+<rect x="499" y="214" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="214" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.5877 +/- 0.0219</text>
+<rect x="769" y="214" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.8969 +/- 0.0206</text>
+<rect x="939" y="214" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6062 +/- 0.0101</text>
+<rect x="34" y="248" width="1065" height="34" fill="#f8fafc"/>
+<rect x="34" y="248" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<rect x="244" y="248" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">501</text>
+<rect x="394" y="248" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">167</text>
+<rect x="499" y="248" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="248" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6199 +/- 0.0271</text>
+<rect x="769" y="248" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.9127 +/- 0.0176</text>
+<rect x="939" y="248" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="270.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6265 +/- 0.0540</text>
+<rect x="34" y="282" width="1065" height="34" fill="#ffffff"/>
+<rect x="34" y="282" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<rect x="244" y="282" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">1002</text>
+<rect x="394" y="282" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">334</text>
+<rect x="499" y="282" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="282" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6236 +/- 0.0114</text>
+<rect x="769" y="282" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.9324 +/- 0.0091</text>
+<rect x="939" y="282" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6424 +/- 0.0108</text>
+<rect x="34" y="316" width="1065" height="34" fill="#f8fafc"/>
+<rect x="34" y="316" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<rect x="244" y="316" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">2001</text>
+<rect x="394" y="316" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">667</text>
+<rect x="499" y="316" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="316" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6242 +/- 0.0044</text>
+<rect x="769" y="316" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.9335 +/- 0.0022</text>
+<rect x="939" y="316" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="338.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6442 +/- 0.0029</text>
+<rect x="34" y="350" width="1065" height="34" fill="#ffffff"/>
+<rect x="34" y="350" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<rect x="244" y="350" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">2352</text>
+<rect x="394" y="350" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="499" y="350" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="350" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">0.6277 +/- 0.0000</text>
+<rect x="769" y="350" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">0.9424 +/- 0.0000</text>
+<rect x="939" y="350" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">0.6497 +/- 0.0000</text>
+<line x1="34" y1="384" x2="1099" y2="384" stroke="#64748b" stroke-width="1.5"/>
+<rect x="34" y="384" width="1065" height="34" fill="#f8fafc"/>
+<rect x="34" y="384" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<rect x="244" y="384" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">99</text>
+<rect x="394" y="384" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">33</text>
+<rect x="499" y="384" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="384" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.5957 +/- 0.0709</text>
+<rect x="769" y="384" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.8571 +/- 0.0809</text>
+<rect x="939" y="384" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6461 +/- 0.0673</text>
+<rect x="34" y="418" width="1065" height="34" fill="#ffffff"/>
+<rect x="34" y="418" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<rect x="244" y="418" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">201</text>
+<rect x="394" y="418" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">67</text>
+<rect x="499" y="418" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="418" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6105 +/- 0.0410</text>
+<rect x="769" y="418" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.8515 +/- 0.0777</text>
+<rect x="939" y="418" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="440.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6381 +/- 0.0419</text>
+<rect x="34" y="452" width="1065" height="34" fill="#f8fafc"/>
+<rect x="34" y="452" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<rect x="244" y="452" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">300</text>
+<rect x="394" y="452" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">100</text>
+<rect x="499" y="452" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="452" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6239 +/- 0.0190</text>
+<rect x="769" y="452" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.9238 +/- 0.0146</text>
+<rect x="939" y="452" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6596 +/- 0.0241</text>
+<rect x="34" y="486" width="1065" height="34" fill="#ffffff"/>
+<rect x="34" y="486" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<rect x="244" y="486" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">501</text>
+<rect x="394" y="486" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">167</text>
+<rect x="499" y="486" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="486" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6309 +/- 0.0306</text>
+<rect x="769" y="486" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.9277 +/- 0.0103</text>
+<rect x="939" y="486" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6659 +/- 0.0250</text>
+<rect x="34" y="520" width="1065" height="34" fill="#f8fafc"/>
+<rect x="34" y="520" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<rect x="244" y="520" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">1002</text>
+<rect x="394" y="520" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">334</text>
+<rect x="499" y="520" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="520" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6415 +/- 0.0160</text>
+<rect x="769" y="520" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.9413 +/- 0.0052</text>
+<rect x="939" y="520" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6694 +/- 0.0108</text>
+<rect x="34" y="554" width="1065" height="34" fill="#ffffff"/>
+<rect x="34" y="554" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<rect x="244" y="554" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">2001</text>
+<rect x="394" y="554" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">667</text>
+<rect x="499" y="554" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="554" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6527 +/- 0.0144</text>
+<rect x="769" y="554" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.9464 +/- 0.0021</text>
+<rect x="939" y="554" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">0.6679 +/- 0.0046</text>
+<rect x="34" y="588" width="1065" height="34" fill="#f8fafc"/>
+<rect x="34" y="588" width="210" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="610.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<rect x="244" y="588" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="319.0" y="610.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">2352</text>
+<rect x="394" y="588" width="105" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="446.5" y="610.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="499" y="588" width="120" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="559.0" y="610.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="middle">5</text>
+<rect x="619" y="588" width="150" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="694.0" y="610.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">0.6624 +/- 0.0046</text>
+<rect x="769" y="588" width="170" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="854.0" y="610.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">0.9483 +/- 0.0004</text>
+<rect x="939" y="588" width="160" height="34" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1019.0" y="610.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">0.6745 +/- 0.0017</text>
+<text x="34.0" y="656.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">Bold metric values mark the best mean value for that model within each metric.</text>
+</svg>
