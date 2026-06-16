@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-06-16T07:41:34.413513+00:00",
+  "inputs": {
+    "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "og_features": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "fold_assignments": "outputs/gemini_browser_og784/model_benchmark/tables/fold_assignments.csv",
+    "og_metrics_dir": "outputs/gemini_browser_og784/model_benchmark/metrics"
+  },
+  "review_counts": [
+    99,
+    201,
+    300,
+    501,
+    1002,
+    2001,
+    2352
+  ],
+  "models": [
+    "logistic_regression",
+    "xgboost"
+  ],
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "threshold": 0.3,
+  "seed": 42,
+  "feature_count": 58,
+  "outputs": {
+    "summary_csv": "outputs/synthetic_review_count_sweep_gemini_browser/synthetic_review_count_sweep_summary.csv",
+    "summary_md": "outputs/synthetic_review_count_sweep_gemini_browser/synthetic_review_count_sweep_summary.md",
+    "report_json": "outputs/synthetic_review_count_sweep_gemini_browser/synthetic_review_count_sweep_report.json",
+    "per_label_dir": "outputs/synthetic_review_count_sweep_gemini_browser/per_label"
+  },
+  "note": "Each synthetic review count is selected as complete 3-review perfume blocks. Metrics are evaluated only on held-out YouTube perfume-level rows using fixed perfume folds."
+}
