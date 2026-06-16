@@ -17,20 +17,24 @@ DEFAULT_SUMMARY = (
 )
 DEFAULT_OUT_DIR = ROOT / "outputs/synthetic_only_random_review_count_sweep_gemini_browser/figures"
 
-COLUMNS = [
-    ("model_family", "Model", 210),
-    ("synthetic_reviews", "Synthetic reviews", 150),
-    ("synthetic_perfumes", "Perfumes", 105),
-    ("runs", "Random orders", 120),
-    ("macro_f1", "F1 mean +/- SD", 150),
-    ("macro_roc_auc", "ROC-AUC mean +/- SD", 170),
-    ("macro_pr_auc", "PR-AUC mean +/- SD", 160),
-]
-
 MODEL_COLORS = {
     "Logistic Regression": "#2563eb",
     "XGBoost": "#dc2626",
 }
+
+METRICS = [
+    ("macro_f1", "F1"),
+    ("macro_roc_auc", "ROC-AUC"),
+    ("macro_pr_auc", "PR-AUC"),
+]
+
+TABLE_COLUMNS = [
+    ("synthetic_reviews", "Reviews", 86),
+    ("synthetic_perfumes", "Perfumes", 82),
+    ("macro_f1", "F1", 112),
+    ("macro_roc_auc", "ROC-AUC", 128),
+    ("macro_pr_auc", "PR-AUC", 128),
+]
 
 
 def parse_args() -> argparse.Namespace:
@@ -46,12 +50,12 @@ def load_rows(path: Path) -> list[dict[str, str]]:
     return sorted(rows, key=lambda row: (row["model_family"], int(row["synthetic_reviews"])))
 
 
-def fmt(row: dict[str, str], key: str) -> str:
-    if key in {"model_family", "synthetic_reviews", "synthetic_perfumes", "runs"}:
-        return str(row[key])
-    mean_value = float(row[f"{key}_mean"])
-    std_value = float(row[f"{key}_std"])
-    return f"{mean_value:.4f} +/- {std_value:.4f}"
+def fmt_mean(row: dict[str, str], key: str) -> str:
+    return f"{float(row[f'{key}_mean']):.4f}"
+
+
+def fmt_sd(row: dict[str, str], key: str) -> str:
+    return f"SD {float(row[f'{key}_std']):.4f}"
 
 
 def text(
@@ -71,19 +75,117 @@ def text(
     )
 
 
+def rows_by_model(rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
+    grouped: dict[str, list[dict[str, str]]] = {}
+    for row in rows:
+        grouped.setdefault(row["model_family"], []).append(row)
+    for model_rows in grouped.values():
+        model_rows.sort(key=lambda row: int(row["synthetic_reviews"]))
+    return grouped
+
+
+def column_positions(start_x: float) -> list[float]:
+    positions = [start_x]
+    for _, _, col_w in TABLE_COLUMNS[:-1]:
+        positions.append(positions[-1] + col_w)
+    return positions
+
+
+def render_model_panel(
+    *,
+    model: str,
+    model_rows: list[dict[str, str]],
+    x: float,
+    y: float,
+    width: float,
+    row_h: float,
+    header_h: float,
+) -> list[str]:
+    panel_h = 48 + header_h + len(model_rows) * row_h + 40
+    table_w = sum(width for _, _, width in TABLE_COLUMNS)
+    col_xs = column_positions(x)
+    color = MODEL_COLORS.get(model, "#111827")
+
+    best_metric_counts = {
+        metric: max(model_rows, key=lambda row: float(row[f"{metric}_mean"]))["synthetic_reviews"]
+        for metric, _ in METRICS
+    }
+
+    parts = [
+        f'<rect x="{x:.1f}" y="{y:.1f}" width="{width:.1f}" height="{panel_h:.1f}" fill="#ffffff" stroke="#cbd5e1"/>',
+        text(x=x + 14, y=y + 28, value=model, size=18, weight="700", color=color),
+        text(x=x + width - 14, y=y + 27, value=f'{model_rows[0]["runs"]} random orders', size=12, color="#4b5563", anchor="end"),
+    ]
+
+    header_y = y + 48
+    parts.append(f'<rect x="{x}" y="{header_y:.1f}" width="{table_w}" height="{header_h}" fill="#e8eef8"/>')
+    for col_index, ((_, label, col_w), col_x) in enumerate(zip(TABLE_COLUMNS, col_xs)):
+        parts.append(
+            f'<rect x="{col_x:.1f}" y="{header_y:.1f}" width="{col_w}" height="{header_h}" '
+            'fill="none" stroke="#cbd5e1" stroke-width="1"/>'
+        )
+        anchor = "start" if col_index == 0 else "middle"
+        text_x = col_x + 10 if col_index == 0 else col_x + col_w / 2
+        parts.append(text(x=text_x, y=header_y + 24, value=label, size=12, weight="700", anchor=anchor))
+
+    row_y = header_y + header_h
+    for row_index, row in enumerate(model_rows):
+        base_fill = "#ffffff" if row_index % 2 == 0 else "#f8fafc"
+        parts.append(f'<rect x="{x:.1f}" y="{row_y:.1f}" width="{table_w}" height="{row_h}" fill="{base_fill}"/>')
+
+        for col_index, ((key, _, col_w), col_x) in enumerate(zip(TABLE_COLUMNS, col_xs)):
+            parts.append(
+                f'<rect x="{col_x:.1f}" y="{row_y:.1f}" width="{col_w}" height="{row_h}" '
+                'fill="none" stroke="#e2e8f0" stroke-width="1"/>'
+            )
+
+            if key in {"synthetic_reviews", "synthetic_perfumes"}:
+                anchor = "start" if col_index == 0 else "middle"
+                text_x = col_x + 10 if col_index == 0 else col_x + col_w / 2
+                parts.append(text(x=text_x, y=row_y + 31, value=row[key], size=13, color="#111827", anchor=anchor))
+                continue
+
+            is_best = row["synthetic_reviews"] == best_metric_counts[key]
+            text_x = col_x + col_w / 2
+            parts.append(
+                text(
+                    x=text_x,
+                    y=row_y + 23,
+                    value=fmt_mean(row, key),
+                    size=13,
+                    weight="700" if is_best else "400",
+                    color="#111827",
+                    anchor="middle",
+                )
+            )
+            parts.append(text(x=text_x, y=row_y + 42, value=fmt_sd(row, key), size=10, color="#64748b", anchor="middle"))
+        row_y += row_h
+
+    parts.append(
+        text(
+            x=x + 14,
+            y=y + panel_h - 16,
+            value="Bold = best mean for this model.",
+            size=11,
+            color="#374151",
+        )
+    )
+    return parts
+
+
 def build_svg(rows: list[dict[str, str]]) -> str:
     margin_x = 34
     top = 32
-    title_h = 74
-    row_h = 34
-    header_h = 40
-    table_w = sum(width for _, _, width in COLUMNS)
-    width = table_w + margin_x * 2
-    height = top + title_h + header_h + len(rows) * row_h + 54
-
-    x_positions = [margin_x]
-    for _, _, col_w in COLUMNS[:-1]:
-        x_positions.append(x_positions[-1] + col_w)
+    title_h = 82
+    row_h = 54
+    header_h = 38
+    panel_gap = 28
+    table_w = sum(width for _, _, width in TABLE_COLUMNS)
+    panel_w = table_w
+    width = margin_x * 2 + panel_w * 2 + panel_gap
+    panel_h = 48 + header_h + 7 * row_h + 40
+    height = top + title_h + panel_h + 44
+    grouped_rows = rows_by_model(rows)
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
@@ -92,69 +194,33 @@ def build_svg(rows: list[dict[str, str]]) -> str:
         text(
             x=margin_x,
             y=top + 48,
-            value="Mean +/- SD across random perfume orders; folds are grouped by perfume_id.",
+            value="Top number is the mean across random perfume orders; the smaller gray value is SD. Folds are grouped by perfume_id.",
             size=13,
             color="#374151",
         ),
     ]
 
-    table_y = top + title_h
-    parts.append(f'<rect x="{margin_x}" y="{table_y}" width="{table_w}" height="{header_h}" fill="#e8eef8"/>')
-    for col_index, ((_, label, col_w), col_x) in enumerate(zip(COLUMNS, x_positions)):
-        parts.append(
-            f'<rect x="{col_x}" y="{table_y}" width="{col_w}" height="{header_h}" '
-            'fill="none" stroke="#cbd5e1" stroke-width="1"/>'
-        )
-        anchor = "start" if col_index == 0 else "middle"
-        text_x = col_x + 10 if col_index == 0 else col_x + col_w / 2
-        parts.append(text(x=text_x, y=table_y + 25, value=label, size=12, weight="700", anchor=anchor))
-
-    best_by_model_metric: set[tuple[str, str, str]] = set()
-    for model in {row["model_family"] for row in rows}:
-        model_rows = [row for row in rows if row["model_family"] == model]
-        for metric in ["macro_f1", "macro_roc_auc", "macro_pr_auc"]:
-            best = max(model_rows, key=lambda row: float(row[f"{metric}_mean"]))
-            best_by_model_metric.add((model, best["synthetic_reviews"], metric))
-
-    y = table_y + header_h
-    previous_model = ""
-    for row_index, row in enumerate(rows):
-        model = row["model_family"]
-        base_fill = "#ffffff" if row_index % 2 == 0 else "#f8fafc"
-        if model != previous_model and previous_model:
-            parts.append(
-                f'<line x1="{margin_x}" y1="{y}" x2="{margin_x + table_w}" y2="{y}" '
-                'stroke="#64748b" stroke-width="1.5"/>'
-            )
-        parts.append(f'<rect x="{margin_x}" y="{y}" width="{table_w}" height="{row_h}" fill="{base_fill}"/>')
-
-        for col_index, ((key, _, col_w), col_x) in enumerate(zip(COLUMNS, x_positions)):
-            value = fmt(row, key)
-            metric_key = key if key.startswith("macro_") else ""
-            is_best_metric = (model, row["synthetic_reviews"], metric_key) in best_by_model_metric
-            color = MODEL_COLORS.get(model, "#111827") if col_index == 0 else "#111827"
-            weight = "700" if is_best_metric or col_index == 0 else "400"
-            if col_index == 0:
-                anchor = "start"
-                text_x = col_x + 10
-            else:
-                anchor = "middle"
-                text_x = col_x + col_w / 2
-            parts.append(
-                f'<rect x="{col_x}" y="{y}" width="{col_w}" height="{row_h}" '
-                'fill="none" stroke="#e2e8f0" stroke-width="1"/>'
-            )
-            parts.append(text(x=text_x, y=y + 22, value=value, size=12, weight=weight, color=color, anchor=anchor))
-        previous_model = model
-        y += row_h
-
-    parts.append(
-        text(
+    panel_y = top + title_h
+    parts.extend(
+        render_model_panel(
+            model="Logistic Regression",
+            model_rows=grouped_rows["Logistic Regression"],
             x=margin_x,
-            y=height - 20,
-            value="Bold metric values mark the best mean value for that model within each metric.",
-            size=12,
-            color="#374151",
+            y=panel_y,
+            width=panel_w,
+            row_h=row_h,
+            header_h=header_h,
+        )
+    )
+    parts.extend(
+        render_model_panel(
+            model="XGBoost",
+            model_rows=grouped_rows["XGBoost"],
+            x=margin_x + panel_w + panel_gap,
+            y=panel_y,
+            width=panel_w,
+            row_h=row_h,
+            header_h=header_h,
         )
     )
     parts.append("</svg>\n")
