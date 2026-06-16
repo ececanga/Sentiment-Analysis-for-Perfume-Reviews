@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-clair-de-musc-eau-de-parfum-01,synthetic,clair-de-musc-eau-de-parfum,clair de musc eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-clair-de-musc-eau-de-parfum-02,synthetic,clair-de-musc-eau-de-parfum,clair de musc eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-clair-de-musc-eau-de-parfum-03,synthetic,clair-de-musc-eau-de-parfum,clair de musc eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-coal-eau-de-parfum-01,synthetic,coal-eau-de-parfum,coal eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-coal-eau-de-parfum-02,synthetic,coal-eau-de-parfum,coal eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-coal-eau-de-parfum-03,synthetic,coal-eau-de-parfum,coal eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-cologne-cedrat-eau-de-cologne-01,synthetic,cologne-cedrat-eau-de-cologne,cologne cedrat eau de cologne,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-cologne-cedrat-eau-de-cologne-02,synthetic,cologne-cedrat-eau-de-cologne,cologne cedrat eau de cologne,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-cologne-cedrat-eau-de-cologne-03,synthetic,cologne-cedrat-eau-de-cologne,cologne cedrat eau de cologne,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-cologne-sologne-eau-de-cologne-01,synthetic,cologne-sologne-eau-de-cologne,cologne sologne eau de cologne,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-cologne-sologne-eau-de-cologne-02,synthetic,cologne-sologne-eau-de-cologne,cologne sologne eau de cologne,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-cologne-sologne-eau-de-cologne-03,synthetic,cologne-sologne-eau-de-cologne,cologne sologne eau de cologne,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-colonia-no-1-eau-de-cologne-01,synthetic,colonia-no-1-eau-de-cologne,colonia no. 1 eau de cologne,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-colonia-no-1-eau-de-cologne-02,synthetic,colonia-no-1-eau-de-cologne,colonia no. 1 eau de cologne,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-colonia-no-1-eau-de-cologne-03,synthetic,colonia-no-1-eau-de-cologne,colonia no. 1 eau de cologne,3,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-colonia-no-4-eau-de-cologne-01,synthetic,colonia-no-4-eau-de-cologne,colonia no. 4 eau de cologne,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-colonia-no-4-eau-de-cologne-02,synthetic,colonia-no-4-eau-de-cologne,colonia no. 4 eau de cologne,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-colonia-no-4-eau-de-cologne-03,synthetic,colonia-no-4-eau-de-cologne,colonia no. 4 eau de cologne,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-comme-un-carrousel-eau-de-parfum-01,synthetic,comme-un-carrousel-eau-de-parfum,comme un carrousel eau de parfum,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-comme-un-carrousel-eau-de-parfum-02,synthetic,comme-un-carrousel-eau-de-parfum,comme un carrousel eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-comme-un-carrousel-eau-de-parfum-03,synthetic,comme-un-carrousel-eau-de-parfum,comme un carrousel eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-complex-eau-de-parfum-01,synthetic,complex-eau-de-parfum,complex eau de parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-complex-eau-de-parfum-02,synthetic,complex-eau-de-parfum,complex eau de parfum,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-complex-eau-de-parfum-03,synthetic,complex-eau-de-parfum,complex eau de parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-confetto-body-cream-scented-body-cream-01,synthetic,confetto-body-cream-scented-body-cream,confetto body cream scented body cream,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-confetto-body-cream-scented-body-cream-02,synthetic,confetto-body-cream-scented-body-cream,confetto body cream scented body cream,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-confetto-body-cream-scented-body-cream-03,synthetic,confetto-body-cream-scented-body-cream,confetto body cream scented body cream,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-confetto-eau-de-parfum-01,synthetic,confetto-eau-de-parfum,confetto eau de parfum,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-confetto-eau-de-parfum-02,synthetic,confetto-eau-de-parfum,confetto eau de parfum,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-confetto-eau-de-parfum-03,synthetic,confetto-eau-de-parfum,confetto eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-copper-eau-de-parfum-01,synthetic,copper-eau-de-parfum,copper eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-copper-eau-de-parfum-02,synthetic,copper-eau-de-parfum,copper eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-copper-eau-de-parfum-03,synthetic,copper-eau-de-parfum,copper eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-coquette-tropique-01,synthetic,coquette-tropique,coquette tropique,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-coquette-tropique-02,synthetic,coquette-tropique,coquette tropique,2,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-coquette-tropique-03,synthetic,coquette-tropique,coquette tropique,3,0,0,0,0,0,0,1,0,6,4,6
+emotion-rich-v2-coral-perfume-oil-01,synthetic,coral-perfume-oil,coral perfume oil,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-coral-perfume-oil-02,synthetic,coral-perfume-oil,coral perfume oil,2,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-coral-perfume-oil-03,synthetic,coral-perfume-oil,coral perfume oil,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-coriander-eau-de-parfum-01,synthetic,coriander-eau-de-parfum,coriander eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-coriander-eau-de-parfum-02,synthetic,coriander-eau-de-parfum,coriander eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-coriander-eau-de-parfum-03,synthetic,coriander-eau-de-parfum,coriander eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-corpse-reviver-eau-de-parfum-01,synthetic,corpse-reviver-eau-de-parfum,corpse reviver eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-corpse-reviver-eau-de-parfum-02,synthetic,corpse-reviver-eau-de-parfum,corpse reviver eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-corpse-reviver-eau-de-parfum-03,synthetic,corpse-reviver-eau-de-parfum,corpse reviver eau de parfum,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-corsica-furiosa-eau-de-parfum-01,synthetic,corsica-furiosa-eau-de-parfum,corsica furiosa eau de parfum,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-corsica-furiosa-eau-de-parfum-02,synthetic,corsica-furiosa-eau-de-parfum,corsica furiosa eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-corsica-furiosa-eau-de-parfum-03,synthetic,corsica-furiosa-eau-de-parfum,corsica furiosa eau de parfum,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-costes-perfume-eau-de-toilette-01,synthetic,costes-perfume-eau-de-toilette,costes perfume eau de toilette,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-costes-perfume-eau-de-toilette-02,synthetic,costes-perfume-eau-de-toilette,costes perfume eau de toilette,2,0,0,0,0,0,1,1,0,6,5,5

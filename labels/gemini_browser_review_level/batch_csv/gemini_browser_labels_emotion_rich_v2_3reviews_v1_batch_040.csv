@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-shams-oud-01,synthetic,shams-oud,shams oud,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-shams-oud-02,synthetic,shams-oud,shams oud,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-shams-oud-03,synthetic,shams-oud,shams oud,3,1,0,0,0,1,1,1,0,7,6,5
+emotion-rich-v2-sheiduna-parfum-extrait-01,synthetic,sheiduna-parfum-extrait,sheiduna parfum extrait,1,0,0,0,0,1,1,0,0,6,4,6
+emotion-rich-v2-sheiduna-parfum-extrait-02,synthetic,sheiduna-parfum-extrait,sheiduna parfum extrait,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-sheiduna-parfum-extrait-03,synthetic,sheiduna-parfum-extrait,sheiduna parfum extrait,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-sienne-l-hiver-eau-de-toilette-01,synthetic,sienne-l-hiver-eau-de-toilette,sienne l'hiver eau de toilette,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-sienne-l-hiver-eau-de-toilette-02,synthetic,sienne-l-hiver-eau-de-toilette,sienne l'hiver eau de toilette,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-sienne-l-hiver-eau-de-toilette-03,synthetic,sienne-l-hiver-eau-de-toilette,sienne l'hiver eau de toilette,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-silk-lace-chocolate-eau-de-parfum-01,synthetic,silk-lace-chocolate-eau-de-parfum,"silk, lace & chocolate eau de parfum",1,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-silk-lace-chocolate-eau-de-parfum-02,synthetic,silk-lace-chocolate-eau-de-parfum,"silk, lace & chocolate eau de parfum",2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-silk-lace-chocolate-eau-de-parfum-03,synthetic,silk-lace-chocolate-eau-de-parfum,"silk, lace & chocolate eau de parfum",3,0,0,0,0,1,1,0,0,6,5,5
+emotion-rich-v2-silk-perfume-oil-01,synthetic,silk-perfume-oil,silk perfume oil,1,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-silk-perfume-oil-02,synthetic,silk-perfume-oil,silk perfume oil,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-silk-perfume-oil-03,synthetic,silk-perfume-oil,silk perfume oil,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-silver-man-eau-de-parfum-01,synthetic,silver-man-eau-de-parfum,silver man eau de parfum,1,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-silver-man-eau-de-parfum-02,synthetic,silver-man-eau-de-parfum,silver man eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-silver-man-eau-de-parfum-03,synthetic,silver-man-eau-de-parfum,silver man eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-silver-mountain-water-eau-de-parfum-01,synthetic,silver-mountain-water-eau-de-parfum,silver mountain water eau de parfum ...,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-silver-mountain-water-eau-de-parfum-02,synthetic,silver-mountain-water-eau-de-parfum,silver mountain water eau de parfum ...,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-silver-mountain-water-eau-de-parfum-03,synthetic,silver-mountain-water-eau-de-parfum,silver mountain water eau de parfum ...,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-silver-musk-parfum-extrait-01,synthetic,silver-musk-parfum-extrait,silver musk parfum extrait,1,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-silver-musk-parfum-extrait-02,synthetic,silver-musk-parfum-extrait,silver musk parfum extrait,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-silver-musk-parfum-extrait-03,synthetic,silver-musk-parfum-extrait,silver musk parfum extrait,3,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-sir-winston-attar-perfume-oil-01,synthetic,sir-winston-attar-perfume-oil,sir winston attar perfume oil,1,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-sir-winston-attar-perfume-oil-02,synthetic,sir-winston-attar-perfume-oil,sir winston attar perfume oil,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-sir-winston-attar-perfume-oil-03,synthetic,sir-winston-attar-perfume-oil,sir winston attar perfume oil,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-soavissima-eau-de-parfum-01,synthetic,soavissima-eau-de-parfum,soavissima eau de parfum,1,0,0,0,0,1,0,1,0,6,5,7
+emotion-rich-v2-soavissima-eau-de-parfum-02,synthetic,soavissima-eau-de-parfum,soavissima eau de parfum,2,0,1,0,0,0,0,1,0,5,4,5
+emotion-rich-v2-soavissima-eau-de-parfum-03,synthetic,soavissima-eau-de-parfum,soavissima eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-soft-tension-eau-de-parfum-01,synthetic,soft-tension-eau-de-parfum,soft tension eau de parfum,1,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-soft-tension-eau-de-parfum-02,synthetic,soft-tension-eau-de-parfum,soft tension eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-soft-tension-eau-de-parfum-03,synthetic,soft-tension-eau-de-parfum,soft tension eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-sola-parfum-01,synthetic,sola-parfum,sola parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-sola-parfum-02,synthetic,sola-parfum,sola parfum,2,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-sola-parfum-03,synthetic,sola-parfum,sola parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-sole-di-positano-eau-de-parfum-01,synthetic,sole-di-positano-eau-de-parfum,sole di positano eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-sole-di-positano-eau-de-parfum-02,synthetic,sole-di-positano-eau-de-parfum,sole di positano eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-sole-di-positano-eau-de-parfum-03,synthetic,sole-di-positano-eau-de-parfum,sole di positano eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-soleil-blanc-eau-de-parfum-01,synthetic,soleil-blanc-eau-de-parfum,soleil blanc eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-soleil-blanc-eau-de-parfum-02,synthetic,soleil-blanc-eau-de-parfum,soleil blanc eau de parfum,2,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-soleil-blanc-eau-de-parfum-03,synthetic,soleil-blanc-eau-de-parfum,soleil blanc eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-soleil-neige-eau-de-parfum-01,synthetic,soleil-neige-eau-de-parfum,soleil neige eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-soleil-neige-eau-de-parfum-02,synthetic,soleil-neige-eau-de-parfum,soleil neige eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-soleil-neige-eau-de-parfum-03,synthetic,soleil-neige-eau-de-parfum,soleil neige eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-sombre-negra-eau-de-parfum-01,synthetic,sombre-negra-eau-de-parfum,sombre negra eau de parfum,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-sombre-negra-eau-de-parfum-02,synthetic,sombre-negra-eau-de-parfum,sombre negra eau de parfum,2,0,0,0,0,1,1,1,0,6,4,5
+emotion-rich-v2-sombre-negra-eau-de-parfum-03,synthetic,sombre-negra-eau-de-parfum,sombre negra eau de parfum,3,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-sotto-la-luna-tuberose-eau-de-parfum-01,synthetic,sotto-la-luna-tuberose-eau-de-parfum,sotto la luna tuberose eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-sotto-la-luna-tuberose-eau-de-parfum-02,synthetic,sotto-la-luna-tuberose-eau-de-parfum,sotto la luna tuberose eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5

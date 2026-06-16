@@ -1,0 +1,105 @@
+Batch 43 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-the-exact-friction-of-stars-perfume-oil-roll-on-01,synthetic,the-exact-friction-of-stars-perfume-oil-roll-on,the exact friction of stars perfume oil roll-on,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-the-exact-friction-of-stars-perfume-oil-roll-on-02,synthetic,the-exact-friction-of-stars-perfume-oil-roll-on,the exact friction of stars perfume oil roll-on,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-the-exact-friction-of-stars-perfume-oil-roll-on-03,synthetic,the-exact-friction-of-stars-perfume-oil-roll-on,the exact friction of stars perfume oil roll-on,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-the-orchid-man-eau-de-parfum-01,synthetic,the-orchid-man-eau-de-parfum,the orchid man eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-the-orchid-man-eau-de-parfum-02,synthetic,the-orchid-man-eau-de-parfum,the orchid man eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-the-orchid-man-eau-de-parfum-03,synthetic,the-orchid-man-eau-de-parfum,the orchid man eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-the-pour-un-ete-eau-de-toilette-01,synthetic,the-pour-un-ete-eau-de-toilette,the pour un ete eau de toilette,1,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-the-pour-un-ete-eau-de-toilette-02,synthetic,the-pour-un-ete-eau-de-toilette,the pour un ete eau de toilette,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-the-pour-un-ete-eau-de-toilette-03,synthetic,the-pour-un-ete-eau-de-toilette,the pour un ete eau de toilette,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-the-revenge-of-lady-blanche-eau-de-parfum-01,synthetic,the-revenge-of-lady-blanche-eau-de-parfum,the revenge of lady blanche eau de parfum,1,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-the-revenge-of-lady-blanche-eau-de-parfum-02,synthetic,the-revenge-of-lady-blanche-eau-de-parfum,the revenge of lady blanche eau de parfum,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-the-revenge-of-lady-blanche-eau-de-parfum-03,synthetic,the-revenge-of-lady-blanche-eau-de-parfum,the revenge of lady blanche eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-the-soft-lawn-eau-de-parfum-01,synthetic,the-soft-lawn-eau-de-parfum,the soft lawn eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-the-soft-lawn-eau-de-parfum-02,synthetic,the-soft-lawn-eau-de-parfum,the soft lawn eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-the-soft-lawn-eau-de-parfum-03,synthetic,the-soft-lawn-eau-de-parfum,the soft lawn eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-the-tragedy-of-lord-george-eau-de-parfum-01,synthetic,the-tragedy-of-lord-george-eau-de-parfum,the tragedy of lord george eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-the-tragedy-of-lord-george-eau-de-parfum-02,synthetic,the-tragedy-of-lord-george-eau-de-parfum,the tragedy of lord george eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-the-tragedy-of-lord-george-eau-de-parfum-03,synthetic,the-tragedy-of-lord-george-eau-de-parfum,the tragedy of lord george eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-thundra-eau-de-parfum-01,synthetic,thundra-eau-de-parfum,thundra eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-thundra-eau-de-parfum-02,synthetic,thundra-eau-de-parfum,thundra eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-thundra-eau-de-parfum-03,synthetic,thundra-eau-de-parfum,thundra eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tigerlust-pure-parfum-01,synthetic,tigerlust-pure-parfum,tigerlust pure parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tigerlust-pure-parfum-02,synthetic,tigerlust-pure-parfum,tigerlust pure parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tigerlust-pure-parfum-03,synthetic,tigerlust-pure-parfum,tigerlust pure parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tilda-swinton-like-this-eau-de-parfum-01,synthetic,tilda-swinton-like-this-eau-de-parfum,tilda swinton like this eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tilda-swinton-like-this-eau-de-parfum-02,synthetic,tilda-swinton-like-this-eau-de-parfum,tilda swinton like this eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tilda-swinton-like-this-eau-de-parfum-03,synthetic,tilda-swinton-like-this-eau-de-parfum,tilda swinton like this eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-timbuktu-eau-de-toilette-01,synthetic,timbuktu-eau-de-toilette,timbuktu eau de toilette,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-timbuktu-eau-de-toilette-02,synthetic,timbuktu-eau-de-toilette,timbuktu eau de toilette,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-timbuktu-eau-de-toilette-03,synthetic,timbuktu-eau-de-toilette,timbuktu eau de toilette,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tiptoeing-through-chambers-of-the-moon-eau-de-parfum-01,synthetic,tiptoeing-through-chambers-of-the-moon-eau-de-parfum,tiptoeing through chambers of the moon eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tiptoeing-through-chambers-of-the-moon-eau-de-parfum-02,synthetic,tiptoeing-through-chambers-of-the-moon-eau-de-parfum,tiptoeing through chambers of the moon eau de parfum,2,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-tiptoeing-through-chambers-of-the-moon-eau-de-parfum-03,synthetic,tiptoeing-through-chambers-of-the-moon-eau-de-parfum,tiptoeing through chambers of the moon eau de parfum,3,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-to-twirl-all-girly-eau-de-parfum-01,synthetic,to-twirl-all-girly-eau-de-parfum,to twirl all girly eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-to-twirl-all-girly-eau-de-parfum-02,synthetic,to-twirl-all-girly-eau-de-parfum,to twirl all girly eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-to-twirl-all-girly-eau-de-parfum-03,synthetic,to-twirl-all-girly-eau-de-parfum,to twirl all girly eau de parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-to-twirl-all-girly-perfume-oil-roll-on-perfume-oil-01,synthetic,to-twirl-all-girly-perfume-oil-roll-on-perfume-oil,to twirl all girly perfume oil roll-on perfume oil,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-to-twirl-all-girly-perfume-oil-roll-on-perfume-oil-02,synthetic,to-twirl-all-girly-perfume-oil-roll-on-perfume-oil,to twirl all girly perfume oil roll-on perfume oil,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-to-twirl-all-girly-perfume-oil-roll-on-perfume-oil-03,synthetic,to-twirl-all-girly-perfume-oil-roll-on-perfume-oil,to twirl all girly perfume oil roll-on perfume oil,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tobacco-vanille-body-spray-scented-body-spray-01,synthetic,tobacco-vanille-body-spray-scented-body-spray,tobacco vanille body spray scented body spray,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tobacco-vanille-body-spray-scented-body-spray-02,synthetic,tobacco-vanille-body-spray-scented-body-spray,tobacco vanille body spray scented body spray,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tobacco-vanille-body-spray-scented-body-spray-03,synthetic,tobacco-vanille-body-spray-scented-body-spray,tobacco vanille body spray scented body spray,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-tom-of-finland-eau-de-parfum-01,synthetic,tom-of-finland-eau-de-parfum,tom of finland eau de parfum,1,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-tom-of-finland-eau-de-parfum-02,synthetic,tom-of-finland-eau-de-parfum,tom of finland eau de parfum,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-tom-of-finland-eau-de-parfum-03,synthetic,tom-of-finland-eau-de-parfum,tom of finland eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tomboy-neroli-eau-de-parfum-01,synthetic,tomboy-neroli-eau-de-parfum,tomboy neroli eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tomboy-neroli-eau-de-parfum-02,synthetic,tomboy-neroli-eau-de-parfum,tomboy neroli eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-tomboy-neroli-eau-de-parfum-03,synthetic,tomboy-neroli-eau-de-parfum,tomboy neroli eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-totally-white-eau-de-parfum-01,synthetic,totally-white-eau-de-parfum,totally white eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-totally-white-eau-de-parfum-02,synthetic,totally-white-eau-de-parfum,totally white eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+
+Batch 44 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-totally-white-eau-de-parfum-03,synthetic,totally-white-eau-de-parfum,totally white eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-trajan-eau-de-parfum-01,synthetic,trajan-eau-de-parfum,trajan eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-trajan-eau-de-parfum-02,synthetic,trajan-eau-de-parfum,trajan eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-trajan-eau-de-parfum-03,synthetic,trajan-eau-de-parfum,trajan eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-tubereuse-couture-eau-de-parfum-01,synthetic,tubereuse-couture-eau-de-parfum,tubereuse couture eau de parfum,1,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-tubereuse-couture-eau-de-parfum-02,synthetic,tubereuse-couture-eau-de-parfum,tubereuse couture eau de parfum,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tubereuse-couture-eau-de-parfum-03,synthetic,tubereuse-couture-eau-de-parfum,tubereuse couture eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tuberosa-eau-de-parfum-01,synthetic,tuberosa-eau-de-parfum,tuberosa eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tuberosa-eau-de-parfum-02,synthetic,tuberosa-eau-de-parfum,tuberosa eau de parfum,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-tuberosa-eau-de-parfum-03,synthetic,tuberosa-eau-de-parfum,tuberosa eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-turquoise-perfume-oil-01,synthetic,turquoise-perfume-oil,turquoise perfume oil,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-turquoise-perfume-oil-02,synthetic,turquoise-perfume-oil,turquoise perfume oil,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-turquoise-perfume-oil-03,synthetic,turquoise-perfume-oil,turquoise perfume oil,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tuscan-leather-body-spray-scented-body-spray-01,synthetic,tuscan-leather-body-spray-scented-body-spray,tuscan leather body spray scented body spray,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tuscan-leather-body-spray-scented-body-spray-02,synthetic,tuscan-leather-body-spray-scented-body-spray,tuscan leather body spray scented body spray,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tuscan-leather-body-spray-scented-body-spray-03,synthetic,tuscan-leather-body-spray-scented-body-spray,tuscan leather body spray scented body spray,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-uden-eau-de-parfum-01,synthetic,uden-eau-de-parfum,uden eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-uden-eau-de-parfum-02,synthetic,uden-eau-de-parfum,uden eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-uden-eau-de-parfum-03,synthetic,uden-eau-de-parfum,uden eau de parfum,3,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-ummo-eau-de-parfum-01,synthetic,ummo-eau-de-parfum,ummo eau de parfum,1,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-ummo-eau-de-parfum-02,synthetic,ummo-eau-de-parfum,ummo eau de parfum,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-ummo-eau-de-parfum-03,synthetic,ummo-eau-de-parfum,ummo eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-un-bois-vanille-eau-de-parfum-01,synthetic,un-bois-vanille-eau-de-parfum,un bois vanille eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-un-bois-vanille-eau-de-parfum-02,synthetic,un-bois-vanille-eau-de-parfum,un bois vanille eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-un-bois-vanille-eau-de-parfum-03,synthetic,un-bois-vanille-eau-de-parfum,un bois vanille eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-une-rose-vermeille-eau-de-parfum-01,synthetic,une-rose-vermeille-eau-de-parfum,une rose vermeille eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-une-rose-vermeille-eau-de-parfum-02,synthetic,une-rose-vermeille-eau-de-parfum,une rose vermeille eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-une-rose-vermeille-eau-de-parfum-03,synthetic,une-rose-vermeille-eau-de-parfum,une rose vermeille eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-une-tonne-de-roses-eau-de-parfum-01,synthetic,une-tonne-de-roses-eau-de-parfum,une tonne de roses eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-une-tonne-de-roses-eau-de-parfum-02,synthetic,une-tonne-de-roses-eau-de-parfum,une tonne de roses eau de parfum,2,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-une-tonne-de-roses-eau-de-parfum-03,synthetic,une-tonne-de-roses-eau-de-parfum,une tonne de roses eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-vanilla-perfume-oil-01,synthetic,vanilla-perfume-oil,vanilla perfume oil,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-vanilla-perfume-oil-02,synthetic,vanilla-perfume-oil,vanilla perfume oil,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-vanilla-perfume-oil-03,synthetic,vanilla-perfume-oil,vanilla perfume oil,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vanille-abricot-eau-de-toilette-01,synthetic,vanille-abricot-eau-de-toilette,vanille abricot eau de toilette,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vanille-abricot-eau-de-toilette-02,synthetic,vanille-abricot-eau-de-toilette,vanille abricot eau de toilette,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-vanille-abricot-eau-de-toilette-03,synthetic,vanille-abricot-eau-de-toilette,vanille abricot eau de toilette,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-vanille-blackberry-01,synthetic,vanille-blackberry,vanille blackberry,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-vanille-blackberry-02,synthetic,vanille-blackberry,vanille blackberry,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vanille-blackberry-03,synthetic,vanille-blackberry,vanille blackberry,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-vanille-bourbon-eau-de-parfum-01,synthetic,vanille-bourbon-eau-de-parfum,vanille bourbon eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-vanille-bourbon-eau-de-parfum-02,synthetic,vanille-bourbon-eau-de-parfum,vanille bourbon eau de parfum,2,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-vanille-bourbon-eau-de-parfum-03,synthetic,vanille-bourbon-eau-de-parfum,vanille bourbon eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-vanille-coco-01,synthetic,vanille-coco,vanille coco,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-vanille-coco-02,synthetic,vanille-coco,vanille coco,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-vanille-coco-03,synthetic,vanille-coco,vanille coco,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vanille-extreme-eau-de-toilette-01,synthetic,vanille-extreme-eau-de-toilette,vanille extreme eau de toilette,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vanille-extreme-eau-de-toilette-02,synthetic,vanille-extreme-eau-de-toilette,vanille extreme eau de toilette,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-vanille-extreme-eau-de-toilette-03,synthetic,vanille-extreme-eau-de-toilette,vanille extreme eau de toilette,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-vanille-fleurie-de-tahiti-eau-de-toilette-01,synthetic,vanille-fleurie-de-tahiti-eau-de-toilette,vanille fleurie de tahiti eau de toilette,1,0,0,0,0,1,0,1,0,6,4,7

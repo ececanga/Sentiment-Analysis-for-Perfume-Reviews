@@ -1,0 +1,52 @@
+Batch 21 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-indian-wood-eau-de-parfum-02,synthetic,indian-wood-eau-de-parfum,indian wood eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-indian-wood-eau-de-parfum-03,synthetic,indian-wood-eau-de-parfum,indian wood eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-intelligence-fantasy-eau-de-toilette-01,synthetic,intelligence-fantasy-eau-de-toilette,intelligence & fantasy eau de toilette,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-intelligence-fantasy-eau-de-toilette-02,synthetic,intelligence-fantasy-eau-de-toilette,intelligence & fantasy eau de toilette,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-intelligence-fantasy-eau-de-toilette-03,synthetic,intelligence-fantasy-eau-de-toilette,intelligence & fantasy eau de toilette,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-intense-tiare-eau-de-parfum-01,synthetic,intense-tiare-eau-de-parfum,intense tiare eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-intense-tiare-eau-de-parfum-02,synthetic,intense-tiare-eau-de-parfum,intense tiare eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-intense-tiare-eau-de-parfum-03,synthetic,intense-tiare-eau-de-parfum,intense tiare eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-into-the-void-eau-de-parfum-01,synthetic,into-the-void-eau-de-parfum,into the void eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-into-the-void-eau-de-parfum-02,synthetic,into-the-void-eau-de-parfum,into the void eau de parfum,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-into-the-void-eau-de-parfum-03,synthetic,into-the-void-eau-de-parfum,into the void eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-invasion-barbare-eau-de-parfum-01,synthetic,invasion-barbare-eau-de-parfum,invasion barbare eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-invasion-barbare-eau-de-parfum-02,synthetic,invasion-barbare-eau-de-parfum,invasion barbare eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-invasion-barbare-eau-de-parfum-03,synthetic,invasion-barbare-eau-de-parfum,invasion barbare eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-iridescent-sky-eau-de-parfum-01,synthetic,iridescent-sky-eau-de-parfum,iridescent sky eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-iridescent-sky-eau-de-parfum-02,synthetic,iridescent-sky-eau-de-parfum,iridescent sky eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-iridescent-sky-eau-de-parfum-03,synthetic,iridescent-sky-eau-de-parfum,iridescent sky eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-iris-bleu-gris-eau-de-parfum-01,synthetic,iris-bleu-gris-eau-de-parfum,iris bleu gris eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-iris-bleu-gris-eau-de-parfum-02,synthetic,iris-bleu-gris-eau-de-parfum,iris bleu gris eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-iris-bleu-gris-eau-de-parfum-03,synthetic,iris-bleu-gris-eau-de-parfum,iris bleu gris eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-iris-de-nuit-eau-de-parfum-01,synthetic,iris-de-nuit-eau-de-parfum,iris de nuit eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-iris-de-nuit-eau-de-parfum-02,synthetic,iris-de-nuit-eau-de-parfum,iris de nuit eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-iris-de-nuit-eau-de-parfum-03,synthetic,iris-de-nuit-eau-de-parfum,iris de nuit eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-iskander-eau-de-parfum-01,synthetic,iskander-eau-de-parfum,iskander eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-iskander-eau-de-parfum-02,synthetic,iskander-eau-de-parfum,iskander eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-iskander-eau-de-parfum-03,synthetic,iskander-eau-de-parfum,iskander eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-issara-extrait-de-parfum-01,synthetic,issara-extrait-de-parfum,issara extrait de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-issara-extrait-de-parfum-02,synthetic,issara-extrait-de-parfum,issara extrait de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-issara-extrait-de-parfum-03,synthetic,issara-extrait-de-parfum,issara extrait de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-italian-citrus-eau-de-parfum-01,synthetic,italian-citrus-eau-de-parfum,italian citrus eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-italian-citrus-eau-de-parfum-02,synthetic,italian-citrus-eau-de-parfum,italian citrus eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-italian-citrus-eau-de-parfum-03,synthetic,italian-citrus-eau-de-parfum,italian citrus eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-jack-eau-de-parfum-01,synthetic,jack-eau-de-parfum,jack eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jack-eau-de-parfum-02,synthetic,jack-eau-de-parfum,jack eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-jack-eau-de-parfum-03,synthetic,jack-eau-de-parfum,jack eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jade-eau-de-parfum-01,synthetic,jade-eau-de-parfum,jade eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jade-eau-de-parfum-02,synthetic,jade-eau-de-parfum,jade eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-jade-eau-de-parfum-03,synthetic,jade-eau-de-parfum,jade eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jardins-d-armide-eau-de-parfum-01,synthetic,jardins-d-armide-eau-de-parfum,jardins d'armide eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-jardins-d-armide-eau-de-parfum-02,synthetic,jardins-d-armide-eau-de-parfum,jardins d'armide eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jardins-d-armide-eau-de-parfum-03,synthetic,jardins-d-armide-eau-de-parfum,jardins d'armide eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-jasmin-17-eau-de-parfum-01,synthetic,jasmin-17-eau-de-parfum,jasmin 17 eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jasmin-17-eau-de-parfum-02,synthetic,jasmin-17-eau-de-parfum,jasmin 17 eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-jasmin-17-eau-de-parfum-03,synthetic,jasmin-17-eau-de-parfum,jasmin 17 eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jasmin-angelique-cologne-absolue-01,synthetic,jasmin-angelique-cologne-absolue,jasmin angelique cologne absolue,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jasmin-angelique-cologne-absolue-02,synthetic,jasmin-angelique-cologne-absolue,jasmin angelique cologne absolue,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-jasmin-angelique-cologne-absolue-03,synthetic,jasmin-angelique-cologne-absolue,jasmin angelique cologne absolue,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jasmin-et-cigarette-eau-de-parfum-01,synthetic,jasmin-et-cigarette-eau-de-parfum,jasmin et cigarette eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jasmin-et-cigarette-eau-de-parfum-02,synthetic,jasmin-et-cigarette-eau-de-parfum,jasmin et cigarette eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-jasmin-et-cigarette-eau-de-parfum-03,synthetic,jasmin-et-cigarette-eau-de-parfum,jasmin et cigarette eau de parfum,3,0,0,0,0,1,0,0,0,6,4,5

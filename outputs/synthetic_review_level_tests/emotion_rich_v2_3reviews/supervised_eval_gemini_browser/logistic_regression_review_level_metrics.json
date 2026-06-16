@@ -1,0 +1,57 @@
+{
+  "generated_at_utc": "2026-06-15T07:51:03.881294+00:00",
+  "features_csv": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/features/review_level_features_unlabeled.csv",
+  "labels_csv": "labels/gemini_browser_review_level/gemini_browser_labels_emotion_rich_v2_3reviews_v1_pipeline.csv",
+  "n_rows": 2352,
+  "unique_perfumes": 784,
+  "model": "logistic_regression",
+  "split": "GroupKFold(n_splits=5, group=perfume_id)",
+  "threshold": 0.3,
+  "feature_count": 58,
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "excluded_target_columns": {
+    "anger": "single_class_in_labeled_v2_pilot"
+  },
+  "metrics": {
+    "macro_f1": 0.6277084519160325,
+    "macro_roc_auc": 0.942426722012975,
+    "macro_pr_auc": 0.6496862418472286,
+    "micro_f1": 0.7806515301085883,
+    "hamming_loss": 0.1349611273080661,
+    "label_cardinality": 1.7674319727891157,
+    "predicted_label_cardinality": 2.5395408163265305
+  },
+  "og_logistic_regression_reference": {
+    "path": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/metrics/logistic_regression.json",
+    "n_rows": 784,
+    "macro_f1": 0.31780960681894305,
+    "macro_roc_auc": 0.7293969521576296,
+    "macro_pr_auc": 0.3262007587804459,
+    "micro_f1": 0.5834885164494104,
+    "threshold": 0.3,
+    "target_columns": [
+      "joy",
+      "sadness",
+      "fear",
+      "trust",
+      "surprise",
+      "anticipation",
+      "disgust"
+    ]
+  },
+  "outputs": {
+    "labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "predictions": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/logistic_regression_review_level_oof.csv",
+    "per_label": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/logistic_regression_review_level_per_label.csv",
+    "metrics": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/logistic_regression_review_level_metrics.json",
+    "report": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/logistic_regression_review_level_report.md"
+  }
+}

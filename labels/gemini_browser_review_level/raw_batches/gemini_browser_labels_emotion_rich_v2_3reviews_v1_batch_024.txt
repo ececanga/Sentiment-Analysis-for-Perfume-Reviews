@@ -1,0 +1,52 @@
+Batch 24 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-la-liturgie-des-heures-eau-de-parfum-02,synthetic,la-liturgie-des-heures-eau-de-parfum,la liturgie des heures eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-la-liturgie-des-heures-eau-de-parfum-03,synthetic,la-liturgie-des-heures-eau-de-parfum,la liturgie des heures eau de parfum,3,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-la-tulipe-eau-de-parfum-01,synthetic,la-tulipe-eau-de-parfum,la tulipe eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-la-tulipe-eau-de-parfum-02,synthetic,la-tulipe-eau-de-parfum,la tulipe eau de parfum,2,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-la-tulipe-eau-de-parfum-03,synthetic,la-tulipe-eau-de-parfum,la tulipe eau de parfum,3,0,0,0,0,0,0,1,0,4,7,4
+emotion-rich-v2-la-tulipe-hair-perfume-01,synthetic,la-tulipe-hair-perfume,la tulipe hair perfume,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-la-tulipe-hair-perfume-02,synthetic,la-tulipe-hair-perfume,la tulipe hair perfume,2,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-la-tulipe-hair-perfume-03,synthetic,la-tulipe-hair-perfume,la tulipe hair perfume,3,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-la-vierge-de-fer-eau-de-parfum-01,synthetic,la-vierge-de-fer-eau-de-parfum,la vierge de fer eau de parfum,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-la-vierge-de-fer-eau-de-parfum-02,synthetic,la-vierge-de-fer-eau-de-parfum,la vierge de fer eau de parfum,2,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-la-vierge-de-fer-eau-de-parfum-03,synthetic,la-vierge-de-fer-eau-de-parfum,la vierge de fer eau de parfum,3,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-labdanum-18-eau-de-parfum-01,synthetic,labdanum-18-eau-de-parfum,labdanum 18 eau de parfum,1,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-labdanum-18-eau-de-parfum-02,synthetic,labdanum-18-eau-de-parfum,labdanum 18 eau de parfum,2,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-labdanum-18-eau-de-parfum-03,synthetic,labdanum-18-eau-de-parfum,labdanum 18 eau de parfum,3,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-lace-extrait-de-parfum-01,synthetic,lace-extrait-de-parfum,lace extrait de parfum,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-lace-extrait-de-parfum-02,synthetic,lace-extrait-de-parfum,lace extrait de parfum,2,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-lace-extrait-de-parfum-03,synthetic,lace-extrait-de-parfum,lace extrait de parfum,3,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-lady-vengeance-eau-de-parfum-01,synthetic,lady-vengeance-eau-de-parfum,lady vengeance eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-lady-vengeance-eau-de-parfum-02,synthetic,lady-vengeance-eau-de-parfum,lady vengeance eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-lady-vengeance-eau-de-parfum-03,synthetic,lady-vengeance-eau-de-parfum,lady vengeance eau de parfum,3,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-lalibela-eau-de-parfum-01,synthetic,lalibela-eau-de-parfum,lalibela eau de parfum,1,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-lalibela-eau-de-parfum-02,synthetic,lalibela-eau-de-parfum,lalibela eau de parfum,2,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-lalibela-eau-de-parfum-03,synthetic,lalibela-eau-de-parfum,lalibela eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-lampblack-eau-de-parfum-01,synthetic,lampblack-eau-de-parfum,lampblack eau de parfum,1,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-lampblack-eau-de-parfum-02,synthetic,lampblack-eau-de-parfum,lampblack eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-lampblack-eau-de-parfum-03,synthetic,lampblack-eau-de-parfum,lampblack eau de parfum,3,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-land-of-warriors-eau-de-parfum-01,synthetic,land-of-warriors-eau-de-parfum,land of warriors eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-land-of-warriors-eau-de-parfum-02,synthetic,land-of-warriors-eau-de-parfum,land of warriors eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-land-of-warriors-eau-de-parfum-03,synthetic,land-of-warriors-eau-de-parfum,land of warriors eau de parfum,3,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-larmes-du-desert-eau-de-parfum-01,synthetic,larmes-du-desert-eau-de-parfum,larmes du desert eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-larmes-du-desert-eau-de-parfum-02,synthetic,larmes-du-desert-eau-de-parfum,larmes du desert eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-larmes-du-desert-eau-de-parfum-03,synthetic,larmes-du-desert-eau-de-parfum,larmes du desert eau de parfum,3,0,0,0,0,0,0,1,0,5,5,5
+emotion-rich-v2-laudano-nero-extrait-de-parfum-01,synthetic,laudano-nero-extrait-de-parfum,laudano nero extrait de parfum,1,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-laudano-nero-extrait-de-parfum-02,synthetic,laudano-nero-extrait-de-parfum,laudano nero extrait de parfum,2,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-laudano-nero-extrait-de-parfum-03,synthetic,laudano-nero-extrait-de-parfum,laudano nero extrait de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-lavande-44-eau-de-parfum-01,synthetic,lavande-44-eau-de-parfum,lavande 44 eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-lavande-44-eau-de-parfum-02,synthetic,lavande-44-eau-de-parfum,lavande 44 eau de parfum,2,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-lavande-44-eau-de-parfum-03,synthetic,lavande-44-eau-de-parfum,lavande 44 eau de parfum,3,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-layton-eau-de-parfum-01,synthetic,layton-eau-de-parfum,layton eau de parfum,1,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-layton-eau-de-parfum-02,synthetic,layton-eau-de-parfum,layton eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-layton-eau-de-parfum-03,synthetic,layton-eau-de-parfum,layton eau de parfum,3,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-le-barbier-de-tanger-eau-de-parfum-01,synthetic,le-barbier-de-tanger-eau-de-parfum,le barbier de tanger eau de parfum,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-le-barbier-de-tanger-eau-de-parfum-02,synthetic,le-barbier-de-tanger-eau-de-parfum,le barbier de tanger eau de parfum,2,0,0,0,0,0,0,1,0,6,6,6
+emotion-rich-v2-le-barbier-de-tanger-eau-de-parfum-03,synthetic,le-barbier-de-tanger-eau-de-parfum,le barbier de tanger eau de parfum,3,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-le-maroc-pour-elle-eau-de-parfum-01,synthetic,le-maroc-pour-elle-eau-de-parfum,le maroc pour elle eau de parfum,1,1,0,0,0,0,0,1,0,6,6,5
+emotion-rich-v2-le-maroc-pour-elle-eau-de-parfum-02,synthetic,le-maroc-pour-elle-eau-de-parfum,le maroc pour elle eau de parfum,2,1,0,0,0,0,0,1,0,5,6,4
+emotion-rich-v2-le-maroc-pour-elle-eau-de-parfum-03,synthetic,le-maroc-pour-elle-eau-de-parfum,le maroc pour elle eau de parfum,3,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-le-musc-la-peau-eau-de-parfum-01,synthetic,le-musc-la-peau-eau-de-parfum,le musc & la peau eau de parfum,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-le-musc-la-peau-eau-de-parfum-02,synthetic,le-musc-la-peau-eau-de-parfum,le musc & la peau eau de parfum,2,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-le-musc-la-peau-eau-de-parfum-03,synthetic,le-musc-la-peau-eau-de-parfum,le musc & la peau eau de parfum,3,0,0,0,0,0,0,1,0,3,6,3

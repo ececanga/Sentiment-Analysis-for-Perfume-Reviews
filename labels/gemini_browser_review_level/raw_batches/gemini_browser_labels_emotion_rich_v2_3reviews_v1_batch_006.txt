@@ -1,0 +1,52 @@
+Batch 6 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-azzurro-di-capri-extrait-parfum-extrait-02,synthetic,azzurro-di-capri-extrait-parfum-extrait,azzurro di capri extrait parfum extrait,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-azzurro-di-capri-extrait-parfum-extrait-03,synthetic,azzurro-di-capri-extrait-parfum-extrait,azzurro di capri extrait parfum extrait,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-baie-19-eau-de-parfum-01,synthetic,baie-19-eau-de-parfum,baie 19 eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-baie-19-eau-de-parfum-02,synthetic,baie-19-eau-de-parfum,baie 19 eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-baie-19-eau-de-parfum-03,synthetic,baie-19-eau-de-parfum,baie 19 eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-bamboo-harmony-eau-de-parfum-01,synthetic,bamboo-harmony-eau-de-parfum,bamboo harmony eau de parfum,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-bamboo-harmony-eau-de-parfum-02,synthetic,bamboo-harmony-eau-de-parfum,bamboo harmony eau de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-bamboo-harmony-eau-de-parfum-03,synthetic,bamboo-harmony-eau-de-parfum,bamboo harmony eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-bapteme-du-feu-eau-de-parfum-01,synthetic,bapteme-du-feu-eau-de-parfum,bapteme du feu eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-bapteme-du-feu-eau-de-parfum-02,synthetic,bapteme-du-feu-eau-de-parfum,bapteme du feu eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-bapteme-du-feu-eau-de-parfum-03,synthetic,bapteme-du-feu-eau-de-parfum,bapteme du feu eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-baudelaire-eau-de-parfum-01,synthetic,baudelaire-eau-de-parfum,baudelaire eau de parfum,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-baudelaire-eau-de-parfum-02,synthetic,baudelaire-eau-de-parfum,baudelaire eau de parfum,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-baudelaire-eau-de-parfum-03,synthetic,baudelaire-eau-de-parfum,baudelaire eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-bay-rum-cologne-01,synthetic,bay-rum-cologne,bay rum cologne,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-bay-rum-cologne-02,synthetic,bay-rum-cologne,bay rum cologne,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-bay-rum-cologne-03,synthetic,bay-rum-cologne,bay rum cologne,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-bee-extrait-de-parfum-01,synthetic,bee-extrait-de-parfum,bee extrait de parfum,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-bee-extrait-de-parfum-02,synthetic,bee-extrait-de-parfum,bee extrait de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-bee-extrait-de-parfum-03,synthetic,bee-extrait-de-parfum,bee extrait de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-belle-de-jour-eau-de-parfum-01,synthetic,belle-de-jour-eau-de-parfum,belle de jour eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-belle-de-jour-eau-de-parfum-02,synthetic,belle-de-jour-eau-de-parfum,belle de jour eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-belle-de-jour-eau-de-parfum-03,synthetic,belle-de-jour-eau-de-parfum,belle de jour eau de parfum,3,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-bello-rabelo-eau-de-parfum-01,synthetic,bello-rabelo-eau-de-parfum,bello rabelo eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-bello-rabelo-eau-de-parfum-02,synthetic,bello-rabelo-eau-de-parfum,bello rabelo eau de parfum,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-bello-rabelo-eau-de-parfum-03,synthetic,bello-rabelo-eau-de-parfum,bello rabelo eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-bergamask-parfum-01,synthetic,bergamask-parfum,bergamask parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-bergamask-parfum-02,synthetic,bergamask-parfum,bergamask parfum,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-bergamask-parfum-03,synthetic,bergamask-parfum,bergamask parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-bergamote-22-eau-de-parfum-01,synthetic,bergamote-22-eau-de-parfum,bergamote 22 eau de parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-bergamote-22-eau-de-parfum-02,synthetic,bergamote-22-eau-de-parfum,bergamote 22 eau de parfum,2,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-bergamote-22-eau-de-parfum-03,synthetic,bergamote-22-eau-de-parfum,bergamote 22 eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-bergamote-eau-de-toilette-01,synthetic,bergamote-eau-de-toilette,bergamote eau de toilette,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-bergamote-eau-de-toilette-02,synthetic,bergamote-eau-de-toilette,bergamote eau de toilette,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-bergamote-eau-de-toilette-03,synthetic,bergamote-eau-de-toilette,bergamote eau de toilette,3,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-bergamotto-di-positano-eau-de-parfum-01,synthetic,bergamotto-di-positano-eau-de-parfum,bergamotto di positano eau de parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-bergamotto-di-positano-eau-de-parfum-02,synthetic,bergamotto-di-positano-eau-de-parfum,bergamotto di positano eau de parfum,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-bergamotto-di-positano-eau-de-parfum-03,synthetic,bergamotto-di-positano-eau-de-parfum,bergamotto di positano eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-bertrand-duchaufour-eau-de-toilette-01,synthetic,bertrand-duchaufour-eau-de-toilette,bertrand duchaufour eau de toilette,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-bertrand-duchaufour-eau-de-toilette-02,synthetic,bertrand-duchaufour-eau-de-toilette,bertrand duchaufour eau de toilette,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-bertrand-duchaufour-eau-de-toilette-03,synthetic,bertrand-duchaufour-eau-de-toilette,bertrand duchaufour eau de toilette,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-bijou-romantique-eau-de-parfum-01,synthetic,bijou-romantique-eau-de-parfum,bijou romantique eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-bijou-romantique-eau-de-parfum-02,synthetic,bijou-romantique-eau-de-parfum,bijou romantique eau de parfum,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-bijou-romantique-eau-de-parfum-03,synthetic,bijou-romantique-eau-de-parfum,bijou romantique eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-black-afgano-parfum-extrait-01,synthetic,black-afgano-parfum-extrait,black afgano parfum extrait,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-black-afgano-parfum-extrait-02,synthetic,black-afgano-parfum-extrait,black afgano parfum extrait,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-black-afgano-parfum-extrait-03,synthetic,black-afgano-parfum-extrait,black afgano parfum extrait,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-black-ambergris-parfum-extrait-01,synthetic,black-ambergris-parfum-extrait,black ambergris parfum extrait,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-black-ambergris-parfum-extrait-02,synthetic,black-ambergris-parfum-extrait,black ambergris parfum extrait,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-black-ambergris-parfum-extrait-03,synthetic,black-ambergris-parfum-extrait,black ambergris parfum extrait,3,0,0,0,1,0,1,1,0,3,6,3

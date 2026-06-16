@@ -1,0 +1,52 @@
+Batch 19 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-grand-neroli-cologne-absolue-01,synthetic,grand-neroli-cologne-absolue,grand neroli cologne absolue,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-grand-neroli-cologne-absolue-02,synthetic,grand-neroli-cologne-absolue,grand neroli cologne absolue,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-grand-neroli-cologne-absolue-03,synthetic,grand-neroli-cologne-absolue,grand neroli cologne absolue,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-grand-soir-eau-de-parfum-01,synthetic,grand-soir-eau-de-parfum,grand soir eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-grand-soir-eau-de-parfum-02,synthetic,grand-soir-eau-de-parfum,grand soir eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-grand-soir-eau-de-parfum-03,synthetic,grand-soir-eau-de-parfum,grand soir eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-grape-pearls-eau-de-parfum-01,synthetic,grape-pearls-eau-de-parfum,grape pearls eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-grape-pearls-eau-de-parfum-02,synthetic,grape-pearls-eau-de-parfum,grape pearls eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-grape-pearls-eau-de-parfum-03,synthetic,grape-pearls-eau-de-parfum,grape pearls eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-graphite-eau-de-parfum-01,synthetic,graphite-eau-de-parfum,graphite eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-graphite-eau-de-parfum-02,synthetic,graphite-eau-de-parfum,graphite eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-graphite-eau-de-parfum-03,synthetic,graphite-eau-de-parfum,graphite eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-greek-keys-extrait-de-parfum-01,synthetic,greek-keys-extrait-de-parfum,greek keys extrait de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-greek-keys-extrait-de-parfum-02,synthetic,greek-keys-extrait-de-parfum,greek keys extrait de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-greek-keys-extrait-de-parfum-03,synthetic,greek-keys-extrait-de-parfum,greek keys extrait de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-green-eau-de-parfum-01,synthetic,green-eau-de-parfum,green eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-green-eau-de-parfum-02,synthetic,green-eau-de-parfum,green eau de parfum,2,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-green-eau-de-parfum-03,synthetic,green-eau-de-parfum,green eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-green-irish-tweed-eau-de-parfum-01,synthetic,green-irish-tweed-eau-de-parfum,green irish tweed eau de parfum ...,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-green-irish-tweed-eau-de-parfum-02,synthetic,green-irish-tweed-eau-de-parfum,green irish tweed eau de parfum ...,2,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-green-irish-tweed-eau-de-parfum-03,synthetic,green-irish-tweed-eau-de-parfum,green irish tweed eau de parfum ...,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-green-pearl-eau-de-parfum-01,synthetic,green-pearl-eau-de-parfum,green pearl eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-green-pearl-eau-de-parfum-02,synthetic,green-pearl-eau-de-parfum,green pearl eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-green-pearl-eau-de-parfum-03,synthetic,green-pearl-eau-de-parfum,green pearl eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-habdan-eau-de-parfum-01,synthetic,habdan-eau-de-parfum,habdan eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-habdan-eau-de-parfum-02,synthetic,habdan-eau-de-parfum,habdan eau de parfum,2,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-habdan-eau-de-parfum-03,synthetic,habdan-eau-de-parfum,habdan eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-hakka-eau-de-parfum-01,synthetic,hakka-eau-de-parfum,hakka eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-hakka-eau-de-parfum-02,synthetic,hakka-eau-de-parfum,hakka eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-hakka-eau-de-parfum-03,synthetic,hakka-eau-de-parfum,hakka eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-harmatan-noir-eau-de-toilette-01,synthetic,harmatan-noir-eau-de-toilette,harmatan noir eau de toilette,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-harmatan-noir-eau-de-toilette-02,synthetic,harmatan-noir-eau-de-toilette,harmatan noir eau de toilette,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-harmatan-noir-eau-de-toilette-03,synthetic,harmatan-noir-eau-de-toilette,harmatan noir eau de toilette,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-haxan-eau-de-parfum-01,synthetic,haxan-eau-de-parfum,haxan eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-haxan-eau-de-parfum-02,synthetic,haxan-eau-de-parfum,haxan eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-haxan-eau-de-parfum-03,synthetic,haxan-eau-de-parfum,haxan eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-heartless-helen-eau-de-parfum-01,synthetic,heartless-helen-eau-de-parfum,heartless helen eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-heartless-helen-eau-de-parfum-02,synthetic,heartless-helen-eau-de-parfum,heartless helen eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-heartless-helen-eau-de-parfum-03,synthetic,heartless-helen-eau-de-parfum,heartless helen eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-hedonist-eau-de-parfum-01,synthetic,hedonist-eau-de-parfum,hedonist eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-hedonist-eau-de-parfum-02,synthetic,hedonist-eau-de-parfum,hedonist eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-hedonist-eau-de-parfum-03,synthetic,hedonist-eau-de-parfum,hedonist eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-hedonist-iris-absolute-eau-de-parfum-01,synthetic,hedonist-iris-absolute-eau-de-parfum,hedonist iris absolute eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-hedonist-iris-absolute-eau-de-parfum-02,synthetic,hedonist-iris-absolute-eau-de-parfum,hedonist iris absolute eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-hedonist-iris-absolute-eau-de-parfum-03,synthetic,hedonist-iris-absolute-eau-de-parfum,hedonist iris absolute eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-hedonist-iris-eau-de-parfum-01,synthetic,hedonist-iris-eau-de-parfum,hedonist iris eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-hedonist-iris-eau-de-parfum-02,synthetic,hedonist-iris-eau-de-parfum,hedonist iris eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-hedonist-iris-eau-de-parfum-03,synthetic,hedonist-iris-eau-de-parfum,hedonist iris eau de parfum,3,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-hedonist-rose-absolute-eau-de-parfum-01,synthetic,hedonist-rose-absolute-eau-de-parfum,hedonist rose absolute eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-hedonist-rose-absolute-eau-de-parfum-02,synthetic,hedonist-rose-absolute-eau-de-parfum,hedonist rose absolute eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5

@@ -1,0 +1,52 @@
+Batch 12 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-dates-delight-eau-de-parfum-02,synthetic,dates-delight-eau-de-parfum,dates delight eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-dates-delight-eau-de-parfum-03,synthetic,dates-delight-eau-de-parfum,dates delight eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-datura-noir-eau-de-parfum-01,synthetic,datura-noir-eau-de-parfum,datura noir eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-datura-noir-eau-de-parfum-02,synthetic,datura-noir-eau-de-parfum,datura noir eau de parfum,2,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-datura-noir-eau-de-parfum-03,synthetic,datura-noir-eau-de-parfum,datura noir eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-de-bachmakov-eau-de-parfum-01,synthetic,de-bachmakov-eau-de-parfum,de bachmakov eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-de-bachmakov-eau-de-parfum-02,synthetic,de-bachmakov-eau-de-parfum,de bachmakov eau de parfum,2,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-de-bachmakov-eau-de-parfum-03,synthetic,de-bachmakov-eau-de-parfum,de bachmakov eau de parfum,3,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-debaser-eau-de-parfum-01,synthetic,debaser-eau-de-parfum,debaser eau de parfum,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-debaser-eau-de-parfum-02,synthetic,debaser-eau-de-parfum,debaser eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-debaser-eau-de-parfum-03,synthetic,debaser-eau-de-parfum,debaser eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-debaser-pocket-perfume-perfume-oil-01,synthetic,debaser-pocket-perfume-perfume-oil,debaser pocket perfume perfume oil,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-debaser-pocket-perfume-perfume-oil-02,synthetic,debaser-pocket-perfume-perfume-oil,debaser pocket perfume perfume oil,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-debaser-pocket-perfume-perfume-oil-03,synthetic,debaser-pocket-perfume-perfume-oil,debaser pocket perfume perfume oil,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-deja-le-printemps-eau-de-parfum-01,synthetic,deja-le-printemps-eau-de-parfum,deja le printemps eau de parfum,1,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-deja-le-printemps-eau-de-parfum-02,synthetic,deja-le-printemps-eau-de-parfum,deja le printemps eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-deja-le-printemps-eau-de-parfum-03,synthetic,deja-le-printemps-eau-de-parfum,deja le printemps eau de parfum,3,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-dendera-extrait-de-parfum-01,synthetic,dendera-extrait-de-parfum,dendera extrait de parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-dendera-extrait-de-parfum-02,synthetic,dendera-extrait-de-parfum,dendera extrait de parfum,2,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-dendera-extrait-de-parfum-03,synthetic,dendera-extrait-de-parfum,dendera extrait de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-derviche-eau-de-toilette-01,synthetic,derviche-eau-de-toilette,derviche eau de toilette,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-derviche-eau-de-toilette-02,synthetic,derviche-eau-de-toilette,derviche eau de toilette,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-derviche-eau-de-toilette-03,synthetic,derviche-eau-de-toilette,derviche eau de toilette,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-devil-tender-eau-de-parfum-01,synthetic,devil-tender-eau-de-parfum,devil tender eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-devil-tender-eau-de-parfum-02,synthetic,devil-tender-eau-de-parfum,devil tender eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-devil-tender-eau-de-parfum-03,synthetic,devil-tender-eau-de-parfum,devil tender eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-dia-man-eau-de-parfum-01,synthetic,dia-man-eau-de-parfum,dia man eau de parfum,1,0,0,0,0,0,1,1,0,3,6,4
+emotion-rich-v2-dia-man-eau-de-parfum-02,synthetic,dia-man-eau-de-parfum,dia man eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-dia-man-eau-de-parfum-03,synthetic,dia-man-eau-de-parfum,dia man eau de parfum,3,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-dia-woman-eau-de-parfum-01,synthetic,dia-woman-eau-de-parfum,dia woman eau de parfum,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-dia-woman-eau-de-parfum-02,synthetic,dia-woman-eau-de-parfum,dia woman eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-dia-woman-eau-de-parfum-03,synthetic,dia-woman-eau-de-parfum,dia woman eau de parfum,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-diaghilev-extrait-de-parfum-01,synthetic,diaghilev-extrait-de-parfum,diaghilev extrait de parfum,1,0,0,0,0,0,1,1,0,3,6,4
+emotion-rich-v2-diaghilev-extrait-de-parfum-02,synthetic,diaghilev-extrait-de-parfum,diaghilev extrait de parfum,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-diaghilev-extrait-de-parfum-03,synthetic,diaghilev-extrait-de-parfum,diaghilev extrait de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-divine-vanille-eau-de-parfum-01,synthetic,divine-vanille-eau-de-parfum,divine vanille eau de parfum,1,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-divine-vanille-eau-de-parfum-02,synthetic,divine-vanille-eau-de-parfum,divine vanille eau de parfum,2,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-divine-vanille-eau-de-parfum-03,synthetic,divine-vanille-eau-de-parfum,divine vanille eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-do-son-eau-de-parfum-01,synthetic,do-son-eau-de-parfum,do son - eau de parfum,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-do-son-eau-de-parfum-02,synthetic,do-son-eau-de-parfum,do son - eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-do-son-eau-de-parfum-03,synthetic,do-son-eau-de-parfum,do son - eau de parfum,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-do-son-eau-de-toilette-01,synthetic,do-son-eau-de-toilette,do son - eau de toilette,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-do-son-eau-de-toilette-02,synthetic,do-son-eau-de-toilette,do son - eau de toilette,2,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-do-son-eau-de-toilette-03,synthetic,do-son-eau-de-toilette,do son - eau de toilette,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-doe-in-the-snow-eau-de-parfum-01,synthetic,doe-in-the-snow-eau-de-parfum,doe in the snow eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-doe-in-the-snow-eau-de-parfum-02,synthetic,doe-in-the-snow-eau-de-parfum,doe in the snow eau de parfum,2,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-doe-in-the-snow-eau-de-parfum-03,synthetic,doe-in-the-snow-eau-de-parfum,doe in the snow eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-dom-rosa-eau-de-parfum-01,synthetic,dom-rosa-eau-de-parfum,dom rosa eau de parfum,1,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-dom-rosa-eau-de-parfum-02,synthetic,dom-rosa-eau-de-parfum,dom rosa eau de parfum,2,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-dom-rosa-eau-de-parfum-03,synthetic,dom-rosa-eau-de-parfum,dom rosa eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5

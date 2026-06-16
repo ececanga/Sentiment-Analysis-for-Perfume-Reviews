@@ -1,0 +1,105 @@
+Batch 41 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-sotto-la-luna-tuberose-eau-de-parfum-03,synthetic,sotto-la-luna-tuberose-eau-de-parfum,sotto la luna tuberose eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-spanish-leather-cologne-eau-de-cologne-01,synthetic,spanish-leather-cologne-eau-de-cologne,spanish leather cologne eau de cologne,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-spanish-leather-cologne-eau-de-cologne-02,synthetic,spanish-leather-cologne-eau-de-cologne,spanish leather cologne eau de cologne,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-spanish-leather-cologne-eau-de-cologne-03,synthetic,spanish-leather-cologne-eau-de-cologne,spanish leather cologne eau de cologne,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-spem-petram-eau-de-parfum-01,synthetic,spem-petram-eau-de-parfum,spem petram eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-spem-petram-eau-de-parfum-02,synthetic,spem-petram-eau-de-parfum,spem petram eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-spem-petram-eau-de-parfum-03,synthetic,spem-petram-eau-de-parfum,spem petram eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-spicematic-eau-de-parfum-01,synthetic,spicematic-eau-de-parfum,spicematic eau de parfum,1,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-spicematic-eau-de-parfum-02,synthetic,spicematic-eau-de-parfum,spicematic eau de parfum,2,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-spicematic-eau-de-parfum-03,synthetic,spicematic-eau-de-parfum,spicematic eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-stercus-parfum-01,synthetic,stercus-parfum,stercus parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-stercus-parfum-02,synthetic,stercus-parfum,stercus parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-stercus-parfum-03,synthetic,stercus-parfum,stercus parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-still-life-eau-de-parfum-01,synthetic,still-life-eau-de-parfum,still life eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-still-life-eau-de-parfum-02,synthetic,still-life-eau-de-parfum,still life eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-still-life-eau-de-parfum-03,synthetic,still-life-eau-de-parfum,still life eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-sublime-balkiss-eau-de-parfum-01,synthetic,sublime-balkiss-eau-de-parfum,sublime balkiss eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-sublime-balkiss-eau-de-parfum-02,synthetic,sublime-balkiss-eau-de-parfum,sublime balkiss eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-sublime-balkiss-eau-de-parfum-03,synthetic,sublime-balkiss-eau-de-parfum,sublime balkiss eau de parfum,3,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-sublimes-essences-musc-perfume-oil-01,synthetic,sublimes-essences-musc-perfume-oil,sublimes essences musc perfume oil,1,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-sublimes-essences-musc-perfume-oil-02,synthetic,sublimes-essences-musc-perfume-oil,sublimes essences musc perfume oil,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-sublimes-essences-musc-perfume-oil-03,synthetic,sublimes-essences-musc-perfume-oil,sublimes essences musc perfume oil,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-suede-hand-lotion-01,synthetic,suede-hand-lotion,suede hand lotion,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-suede-hand-lotion-02,synthetic,suede-hand-lotion,suede hand lotion,2,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-suede-hand-lotion-03,synthetic,suede-hand-lotion,suede hand lotion,3,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-suede-hand-wash-01,synthetic,suede-hand-wash,suede hand wash,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-suede-hand-wash-02,synthetic,suede-hand-wash,suede hand wash,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-suede-hand-wash-03,synthetic,suede-hand-wash,suede hand wash,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-sultan-musk-attar-perfume-oil-01,synthetic,sultan-musk-attar-perfume-oil,sultan musk attar perfume oil,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-sultan-musk-attar-perfume-oil-02,synthetic,sultan-musk-attar-perfume-oil,sultan musk attar perfume oil,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-sultan-musk-attar-perfume-oil-03,synthetic,sultan-musk-attar-perfume-oil,sultan musk attar perfume oil,3,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-sunday-cologne-eau-de-parfum-01,synthetic,sunday-cologne-eau-de-parfum,sunday cologne eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-sunday-cologne-eau-de-parfum-02,synthetic,sunday-cologne-eau-de-parfum,sunday cologne eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-sunday-cologne-eau-de-parfum-03,synthetic,sunday-cologne-eau-de-parfum,sunday cologne eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-sunshine-and-pancakes-eau-de-parfum-01,synthetic,sunshine-and-pancakes-eau-de-parfum,sunshine and pancakes eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-sunshine-and-pancakes-eau-de-parfum-02,synthetic,sunshine-and-pancakes-eau-de-parfum,sunshine and pancakes eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-sunshine-and-pancakes-eau-de-parfum-03,synthetic,sunshine-and-pancakes-eau-de-parfum,sunshine and pancakes eau de parfum,3,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-super-cedar-eau-de-parfum-01,synthetic,super-cedar-eau-de-parfum,super cedar eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-super-cedar-eau-de-parfum-02,synthetic,super-cedar-eau-de-parfum,super cedar eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-super-cedar-eau-de-parfum-03,synthetic,super-cedar-eau-de-parfum,super cedar eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-swan-princess-eau-de-parfum-01,synthetic,swan-princess-eau-de-parfum,swan princess eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-swan-princess-eau-de-parfum-02,synthetic,swan-princess-eau-de-parfum,swan princess eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-swan-princess-eau-de-parfum-03,synthetic,swan-princess-eau-de-parfum,swan princess eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-sweet-morphine-eau-de-parfum-01,synthetic,sweet-morphine-eau-de-parfum,sweet morphine eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-sweet-morphine-eau-de-parfum-02,synthetic,sweet-morphine-eau-de-parfum,sweet morphine eau de parfum,2,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-sweet-morphine-eau-de-parfum-03,synthetic,sweet-morphine-eau-de-parfum,sweet morphine eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-sweet-vanilla-eau-de-parfum-01,synthetic,sweet-vanilla-eau-de-parfum,sweet vanilla eau de parfum,1,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-sweet-vanilla-eau-de-parfum-02,synthetic,sweet-vanilla-eau-de-parfum,sweet vanilla eau de parfum,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-sweet-vanilla-eau-de-parfum-03,synthetic,sweet-vanilla-eau-de-parfum,sweet vanilla eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-t-habanero-eau-de-parfum-01,synthetic,t-habanero-eau-de-parfum,t. habanero eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+
+Batch 42 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-t-habanero-eau-de-parfum-02,synthetic,t-habanero-eau-de-parfum,t. habanero eau de parfum,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-t-habanero-eau-de-parfum-03,synthetic,t-habanero-eau-de-parfum,t. habanero eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tabac-vert-eau-de-toilette-01,synthetic,tabac-vert-eau-de-toilette,tabac vert eau de toilette,1,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-tabac-vert-eau-de-toilette-02,synthetic,tabac-vert-eau-de-toilette,tabac vert eau de toilette,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tabac-vert-eau-de-toilette-03,synthetic,tabac-vert-eau-de-toilette,tabac vert eau de toilette,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tabacco-toscano-cologne-eau-de-cologne-01,synthetic,tabacco-toscano-cologne-eau-de-cologne,tabacco toscano cologne eau de cologne,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tabacco-toscano-cologne-eau-de-cologne-02,synthetic,tabacco-toscano-cologne-eau-de-cologne,tabacco toscano cologne eau de cologne,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tabacco-toscano-cologne-eau-de-cologne-03,synthetic,tabacco-toscano-cologne-eau-de-cologne,tabacco toscano cologne eau de cologne,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-tabaco-eau-de-parfum-01,synthetic,tabaco-eau-de-parfum,tabaco eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tabaco-eau-de-parfum-02,synthetic,tabaco-eau-de-parfum,tabaco eau de parfum,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-tabaco-eau-de-parfum-03,synthetic,tabaco-eau-de-parfum,tabaco eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tacit-eau-de-parfum-01,synthetic,tacit-eau-de-parfum,tacit eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tacit-eau-de-parfum-02,synthetic,tacit-eau-de-parfum,tacit eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tacit-eau-de-parfum-03,synthetic,tacit-eau-de-parfum,tacit eau de parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tagete-eau-de-parfum-01,synthetic,tagete-eau-de-parfum,tagete eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tagete-eau-de-parfum-02,synthetic,tagete-eau-de-parfum,tagete eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-tagete-eau-de-parfum-03,synthetic,tagete-eau-de-parfum,tagete eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tam-dao-eau-de-toilette-01,synthetic,tam-dao-eau-de-toilette,tam dao - eau de toilette,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-tam-dao-eau-de-toilette-02,synthetic,tam-dao-eau-de-toilette,tam dao - eau de toilette,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tam-dao-eau-de-toilette-03,synthetic,tam-dao-eau-de-toilette,tam dao - eau de toilette,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tango-eau-de-parfum-01,synthetic,tango-eau-de-parfum,tango eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tango-eau-de-parfum-02,synthetic,tango-eau-de-parfum,tango eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tango-eau-de-parfum-03,synthetic,tango-eau-de-parfum,tango eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-tart-s-knicker-drawer-eau-de-parfum-01,synthetic,tart-s-knicker-drawer-eau-de-parfum,tart's knicker drawer eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-tart-s-knicker-drawer-eau-de-parfum-02,synthetic,tart-s-knicker-drawer-eau-de-parfum,tart's knicker drawer eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tart-s-knicker-drawer-eau-de-parfum-03,synthetic,tart-s-knicker-drawer-eau-de-parfum,tart's knicker drawer eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-tartan-extrait-de-parfum-01,synthetic,tartan-extrait-de-parfum,tartan extrait de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-tartan-extrait-de-parfum-02,synthetic,tartan-extrait-de-parfum,tartan extrait de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-tartan-extrait-de-parfum-03,synthetic,tartan-extrait-de-parfum,tartan extrait de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-telegrama-eau-de-parfum-01,synthetic,telegrama-eau-de-parfum,telegrama eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-telegrama-eau-de-parfum-02,synthetic,telegrama-eau-de-parfum,telegrama eau de parfum,2,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-telegrama-eau-de-parfum-03,synthetic,telegrama-eau-de-parfum,telegrama eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-tellus-eau-de-parfum-01,synthetic,tellus-eau-de-parfum,tellus eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-tellus-eau-de-parfum-02,synthetic,tellus-eau-de-parfum,tellus eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-tellus-eau-de-parfum-03,synthetic,tellus-eau-de-parfum,tellus eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-terre-noire-eau-de-parfum-01,synthetic,terre-noire-eau-de-parfum,terre noire eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-terre-noire-eau-de-parfum-02,synthetic,terre-noire-eau-de-parfum,terre noire eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-terre-noire-eau-de-parfum-03,synthetic,terre-noire-eau-de-parfum,terre noire eau de parfum,3,0,0,0,0,0,1,1,1,3,6,3
+emotion-rich-v2-terrible-teddy-eau-de-parfum-01,synthetic,terrible-teddy-eau-de-parfum,terrible teddy eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-terrible-teddy-eau-de-parfum-02,synthetic,terrible-teddy-eau-de-parfum,terrible teddy eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-terrible-teddy-eau-de-parfum-03,synthetic,terrible-teddy-eau-de-parfum,terrible teddy eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-the-cobra-the-canary-eau-de-parfum-01,synthetic,the-cobra-the-canary-eau-de-parfum,the cobra & the canary eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-the-cobra-the-canary-eau-de-parfum-02,synthetic,the-cobra-the-canary-eau-de-parfum,the cobra & the canary eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-the-cobra-the-canary-eau-de-parfum-03,synthetic,the-cobra-the-canary-eau-de-parfum,the cobra & the canary eau de parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-the-coveted-duchess-rose-eau-de-parfum-01,synthetic,the-coveted-duchess-rose-eau-de-parfum,the coveted duchess rose eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-the-coveted-duchess-rose-eau-de-parfum-02,synthetic,the-coveted-duchess-rose-eau-de-parfum,the coveted duchess rose eau de parfum,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-the-coveted-duchess-rose-eau-de-parfum-03,synthetic,the-coveted-duchess-rose-eau-de-parfum,the coveted duchess rose eau de parfum,3,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-the-exact-friction-of-stars-eau-de-parfum-01,synthetic,the-exact-friction-of-stars-eau-de-parfum,the exact friction of stars eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-the-exact-friction-of-stars-eau-de-parfum-02,synthetic,the-exact-friction-of-stars-eau-de-parfum,the exact friction of stars eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-the-exact-friction-of-stars-eau-de-parfum-03,synthetic,the-exact-friction-of-stars-eau-de-parfum,the exact friction of stars eau de parfum,3,0,0,0,0,0,1,1,1,3,6,3

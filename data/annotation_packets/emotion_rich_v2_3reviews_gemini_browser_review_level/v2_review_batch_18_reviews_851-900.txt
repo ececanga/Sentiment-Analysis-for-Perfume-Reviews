@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 18 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-ginger-ciao-eau-de-parfum-02
+source_type: synthetic
+perfume_id: ginger-ciao-eau-de-parfum
+perfume_name: ginger ciao eau de parfum
+review_index: 2
+review_text: I tested ginger ciao eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The polished leather and warm spice made it feel like smooth hide against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-ginger-ciao-eau-de-parfum-03
+source_type: synthetic
+perfume_id: ginger-ciao-eau-de-parfum
+perfume_name: ginger ciao eau de parfum
+review_index: 3
+review_text: I expected ginger ciao eau de parfum to be mostly about crushed green stems, but the drydown changed my mind. In the air around me, it feels tied to a specific weather, not to every day. After the first sharp moment, fresh ginger bite came forward and the whole scent turned stranger. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-glorious-eau-de-parfum-01
+source_type: synthetic
+perfume_id: glorious-eau-de-parfum
+perfume_name: glorious eau de parfum
+review_index: 1
+review_text: I wanted to understand glorious eau de parfum, but soft cosmetic powder pushed harder than I expected. The mix of warm spice and clean laundry musk created a strong image, almost too sharp for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-glorious-eau-de-parfum-02
+source_type: synthetic
+perfume_id: glorious-eau-de-parfum
+perfume_name: glorious eau de parfum
+review_index: 2
+review_text: glorious eau de parfum made me think about the person I would become if I wore it outside. The impression of clean laundry musk gives it presence, while soft floral petals keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-glorious-eau-de-parfum-03
+source_type: synthetic
+perfume_id: glorious-eau-de-parfum
+perfume_name: glorious eau de parfum
+review_index: 3
+review_text: glorious eau de parfum immediately gave me a picture rather than a note list: bright citrus peel, warm amber resin, and clean laundry musk. I did not feel simple happiness, more like a small private memory opening and closing. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-godolphin-eau-de-parfum-01
+source_type: synthetic
+perfume_id: godolphin-eau-de-parfum
+perfume_name: godolphin eau de parfum
+review_index: 1
+review_text: godolphin eau de parfum made me think about the person I would become if I wore it outside. The impression of soft vanilla gives it presence, while soft almond cream keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-godolphin-eau-de-parfum-02
+source_type: synthetic
+perfume_id: godolphin-eau-de-parfum
+perfume_name: godolphin eau de parfum
+review_index: 2
+review_text: godolphin eau de parfum immediately gave me a picture rather than a note list: warm spice, polished leather, and saffron warmth. The color in my head was rust orange, placed around a coat closet, with silk rustling somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-godolphin-eau-de-parfum-03
+source_type: synthetic
+perfume_id: godolphin-eau-de-parfum
+perfume_name: godolphin eau de parfum
+review_index: 3
+review_text: I tested godolphin eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm spice and soft almond cream made it feel like dry warmth against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-extrait-de-parfum-01
+source_type: synthetic
+perfume_id: gold-extrait-de-parfum
+perfume_name: gold extrait de parfum
+review_index: 1
+review_text: I tested gold extrait de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. In the air around me, it feels tied to a specific weather, not to every day. The soft floral petals and clean laundry musk made it feel like petal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-extrait-de-parfum-02
+source_type: synthetic
+perfume_id: gold-extrait-de-parfum
+perfume_name: gold extrait de parfum
+review_index: 2
+review_text: I expected gold extrait de parfum to be mostly about soft floral petals, but the drydown changed my mind. After the first sharp moment, clean laundry musk came forward and the whole scent turned cleaner. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-extrait-de-parfum-03
+source_type: synthetic
+perfume_id: gold-extrait-de-parfum
+perfume_name: gold extrait de parfum
+review_index: 3
+review_text: I wanted to understand gold extrait de parfum, but soft floral petals pushed harder than I expected. The mix of clean laundry musk and bitter grapefruit peel created a strong image, almost too heavy for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-rose-oudh-extrait-de-parfum-01
+source_type: synthetic
+perfume_id: gold-rose-oudh-extrait-de-parfum
+perfume_name: gold rose oudh extrait de parfum
+review_index: 1
+review_text: I tested gold rose oudh extrait de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm spice and earthy patchouli made it feel like dry warmth against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-rose-oudh-extrait-de-parfum-02
+source_type: synthetic
+perfume_id: gold-rose-oudh-extrait-de-parfum
+perfume_name: gold rose oudh extrait de parfum
+review_index: 2
+review_text: I expected gold rose oudh extrait de parfum to be mostly about jammy rose petals, but the drydown changed my mind. For me, i liked some moments more than others, which made the wearing feel alive. After the first sharp moment, soft cosmetic powder came forward and the whole scent turned more tender. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-rose-oudh-extrait-de-parfum-03
+source_type: synthetic
+perfume_id: gold-rose-oudh-extrait-de-parfum
+perfume_name: gold rose oudh extrait de parfum
+review_index: 3
+review_text: I wanted to understand gold rose oudh extrait de parfum, but warm amber resin pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-woman-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gold-woman-eau-de-parfum
+perfume_name: gold woman eau de parfum
+review_index: 1
+review_text: gold woman eau de parfum made me think about the person I would become if I wore it outside. The impression of soft cosmetic powder gives it presence, while soft floral petals keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-woman-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gold-woman-eau-de-parfum
+perfume_name: gold woman eau de parfum
+review_index: 2
+review_text: gold woman eau de parfum immediately gave me a picture rather than a note list: soft cosmetic powder, soft floral petals, and bright citrus peel. The color in my head was pale pink, placed around a florist window, with a bicycle bell somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gold-woman-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gold-woman-eau-de-parfum
+perfume_name: gold woman eau de parfum
+review_index: 3
+review_text: I tested gold woman eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft cosmetic powder and soft floral petals made it feel like dry softness against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-golden-powder-eau-de-parfum-01
+source_type: synthetic
+perfume_id: golden-powder-eau-de-parfum
+perfume_name: golden powder eau de parfum
+review_index: 1
+review_text: golden powder eau de parfum made me think about the person I would become if I wore it outside. The impression of warm spice gives it presence, while soft vanilla keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-golden-powder-eau-de-parfum-02
+source_type: synthetic
+perfume_id: golden-powder-eau-de-parfum
+perfume_name: golden powder eau de parfum
+review_index: 2
+review_text: golden powder eau de parfum immediately gave me a picture rather than a note list: warm spice, dark oud wood, and sweet cinnamon warmth. For me, it is not a simple compliment scent, but it does create a clear atmosphere. The color in my head was rust orange, placed around a shadowed room, with a kettle starting to hum somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-golden-powder-eau-de-parfum-03
+source_type: synthetic
+perfume_id: golden-powder-eau-de-parfum
+perfume_name: golden powder eau de parfum
+review_index: 3
+review_text: I tested golden powder eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-good-girl-gone-bad-eau-de-parfum-01
+source_type: synthetic
+perfume_id: good-girl-gone-bad-eau-de-parfum
+perfume_name: good girl gone bad eau de parfum
+review_index: 1
+review_text: I wanted to understand good girl gone bad eau de parfum, but soft cosmetic powder pushed harder than I expected. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-good-girl-gone-bad-eau-de-parfum-02
+source_type: synthetic
+perfume_id: good-girl-gone-bad-eau-de-parfum
+perfume_name: good girl gone bad eau de parfum
+review_index: 2
+review_text: good girl gone bad eau de parfum made me think about the person I would become if I wore it outside. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-good-girl-gone-bad-eau-de-parfum-03
+source_type: synthetic
+perfume_id: good-girl-gone-bad-eau-de-parfum
+perfume_name: good girl gone bad eau de parfum
+review_index: 3
+review_text: good girl gone bad eau de parfum immediately gave me a picture rather than a note list: edible gourmand sweetness, clean laundry musk, and warm jasmine. The color in my head was caramel gold, placed around a sunny laundry room, with night insects outside somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-i-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gothic-i-eau-de-parfum
+perfume_name: gothic i - eau de parfum
+review_index: 1
+review_text: gothic i - eau de parfum made me think about the person I would become if I wore it outside. The impression of warm jasmine gives it presence, while soft floral petals keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-i-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gothic-i-eau-de-parfum
+perfume_name: gothic i - eau de parfum
+review_index: 2
+review_text: gothic i - eau de parfum immediately gave me a picture rather than a note list: soft creamy sweetness, warm jasmine, and dark cherry syrup. The color in my head was warm cream, placed around a humid garden at night, with a spoon tapping glass somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-i-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gothic-i-eau-de-parfum
+perfume_name: gothic i - eau de parfum
+review_index: 3
+review_text: I tested gothic i - eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The dark cherry syrup and warm spice made it feel like glossy sweetness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-i-perfume-oil-roll-on-perfume-oil-01
+source_type: synthetic
+perfume_id: gothic-i-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic i - perfume oil roll-on perfume oil
+review_index: 1
+review_text: gothic i - perfume oil roll-on perfume oil made me think about the person I would become if I wore it outside. I would wear it when I want to feel composed, even if I am not fully sure of myself. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-i-perfume-oil-roll-on-perfume-oil-02
+source_type: synthetic
+perfume_id: gothic-i-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic i - perfume oil roll-on perfume oil
+review_index: 2
+review_text: gothic i - perfume oil roll-on perfume oil immediately gave me a picture rather than a note list: soft floral petals, dry woods, and crushed green stems. The color in my head was dusty pink, placed around a quiet study, with grass being cut somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-i-perfume-oil-roll-on-perfume-oil-03
+source_type: synthetic
+perfume_id: gothic-i-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic i - perfume oil roll-on perfume oil
+review_index: 3
+review_text: I tested gothic i - perfume oil roll-on perfume oil on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-ii-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gothic-ii-eau-de-parfum
+perfume_name: gothic ii - eau de parfum
+review_index: 1
+review_text: I tested gothic ii - eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The earthy patchouli and jammy rose petals made it feel like damp earth against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-ii-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gothic-ii-eau-de-parfum
+perfume_name: gothic ii - eau de parfum
+review_index: 2
+review_text: I expected gothic ii - eau de parfum to be mostly about earthy patchouli, but the drydown changed my mind. After the first sharp moment, jammy rose petals came forward and the whole scent turned darker. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-ii-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gothic-ii-eau-de-parfum
+perfume_name: gothic ii - eau de parfum
+review_index: 3
+review_text: I wanted to understand gothic ii - eau de parfum, but earthy patchouli pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-ii-perfume-oil-roll-on-perfume-oil-01
+source_type: synthetic
+perfume_id: gothic-ii-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic ii - perfume oil roll-on perfume oil
+review_index: 1
+review_text: I wanted to understand gothic ii - perfume oil roll-on perfume oil, but soft floral petals pushed harder than I expected. The mix of dry woods and crushed green stems created a strong image, almost too sharp for me. I respect the idea, yet the texture made me feel uneasy after a while. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-ii-perfume-oil-roll-on-perfume-oil-02
+source_type: synthetic
+perfume_id: gothic-ii-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic ii - perfume oil roll-on perfume oil
+review_index: 2
+review_text: gothic ii - perfume oil roll-on perfume oil made me think about the person I would become if I wore it outside. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-ii-perfume-oil-roll-on-perfume-oil-03
+source_type: synthetic
+perfume_id: gothic-ii-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic ii - perfume oil roll-on perfume oil
+review_index: 3
+review_text: gothic ii - perfume oil roll-on perfume oil immediately gave me a picture rather than a note list: soft floral petals, dry woods, and crushed green stems. The color in my head was dusty pink, placed around a quiet study, with grass being cut somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iii-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gothic-iii-eau-de-parfum
+perfume_name: gothic iii - eau de parfum
+review_index: 1
+review_text: I tested gothic iii - eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The jammy rose petals and soft cosmetic powder made it feel like velvet petals against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iii-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gothic-iii-eau-de-parfum
+perfume_name: gothic iii - eau de parfum
+review_index: 2
+review_text: I expected gothic iii - eau de parfum to be mostly about clean watery air, but the drydown changed my mind. After the first sharp moment, faint smoke came forward and the whole scent turned more tender. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iii-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gothic-iii-eau-de-parfum
+perfume_name: gothic iii - eau de parfum
+review_index: 3
+review_text: I wanted to understand gothic iii - eau de parfum, but faint smoke pushed harder than I expected. The mix of soft cosmetic powder and creamy tonka created a strong image, almost too close for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iii-perfume-oil-roll-on-perfume-oil-01
+source_type: synthetic
+perfume_id: gothic-iii-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic iii - perfume oil roll-on perfume oil
+review_index: 1
+review_text: I tested gothic iii - perfume oil roll-on perfume oil on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and dry woods made it feel like petal softness against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iii-perfume-oil-roll-on-perfume-oil-02
+source_type: synthetic
+perfume_id: gothic-iii-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic iii - perfume oil roll-on perfume oil
+review_index: 2
+review_text: I expected gothic iii - perfume oil roll-on perfume oil to be mostly about soft floral petals, but the drydown changed my mind. After the first sharp moment, dry woods came forward and the whole scent turned darker. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iii-perfume-oil-roll-on-perfume-oil-03
+source_type: synthetic
+perfume_id: gothic-iii-perfume-oil-roll-on-perfume-oil
+perfume_name: gothic iii - perfume oil roll-on perfume oil
+review_index: 3
+review_text: I wanted to understand gothic iii - perfume oil roll-on perfume oil, but soft floral petals pushed harder than I expected. At first, it made more sense after an hour, when the sharper edges had settled. The mix of dry woods and crushed green stems created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iv-perfume-oil-perfume-oil-roll-on-01
+source_type: synthetic
+perfume_id: gothic-iv-perfume-oil-perfume-oil-roll-on
+perfume_name: gothic iv- perfume oil perfume oil roll-on
+review_index: 1
+review_text: I tested gothic iv- perfume oil perfume oil roll-on on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and dry woods made it feel like petal softness against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iv-perfume-oil-perfume-oil-roll-on-02
+source_type: synthetic
+perfume_id: gothic-iv-perfume-oil-perfume-oil-roll-on
+perfume_name: gothic iv- perfume oil perfume oil roll-on
+review_index: 2
+review_text: I expected gothic iv- perfume oil perfume oil roll-on to be mostly about soft floral petals, but the drydown changed my mind. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-iv-perfume-oil-perfume-oil-roll-on-03
+source_type: synthetic
+perfume_id: gothic-iv-perfume-oil-perfume-oil-roll-on
+perfume_name: gothic iv- perfume oil perfume oil roll-on
+review_index: 3
+review_text: I wanted to understand gothic iv- perfume oil perfume oil roll-on, but soft floral petals pushed harder than I expected. At first, i kept checking my wrist, not because it was loud, but because the mood kept shifting. The mix of dry woods and crushed green stems created a strong image, almost too sharp for me. I respect the idea, yet the texture made me feel uneasy after a while. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-v-perfume-oil-perfume-oil-roll-on-01
+source_type: synthetic
+perfume_id: gothic-v-perfume-oil-perfume-oil-roll-on
+perfume_name: gothic v- perfume oil perfume oil roll-on
+review_index: 1
+review_text: I tested gothic v- perfume oil perfume oil roll-on on a normal day, the kind where I wanted my perfume to change my mood a little. In the air around me, i kept checking my wrist, not because it was loud, but because the mood kept shifting. The soft floral petals and dry woods made it feel like petal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-v-perfume-oil-perfume-oil-roll-on-02
+source_type: synthetic
+perfume_id: gothic-v-perfume-oil-perfume-oil-roll-on
+perfume_name: gothic v- perfume oil perfume oil roll-on
+review_index: 2
+review_text: I expected gothic v- perfume oil perfume oil roll-on to be mostly about soft floral petals, but the drydown changed my mind. After the first sharp moment, dry woods came forward and the whole scent turned warmer. The opening made me hesitate, but the base gave it a second chance. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gothic-v-perfume-oil-perfume-oil-roll-on-03
+source_type: synthetic
+perfume_id: gothic-v-perfume-oil-perfume-oil-roll-on
+perfume_name: gothic v- perfume oil perfume oil roll-on
+review_index: 3
+review_text: I wanted to understand gothic v- perfume oil perfume oil roll-on, but soft floral petals pushed harder than I expected. The mix of dry woods and crushed green stems created a strong image, almost too heavy for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-graine-de-joie-eau-de-parfum-01
+source_type: synthetic
+perfume_id: graine-de-joie-eau-de-parfum
+perfume_name: graine de joie eau de parfum
+review_index: 1
+review_text: graine de joie eau de parfum immediately gave me a picture rather than a note list: crushed green stems, dry cedar shavings, and bright citrus peel. The color in my head was wet green, placed around a quiet study, with a bicycle bell somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-graine-de-joie-eau-de-parfum-02
+source_type: synthetic
+perfume_id: graine-de-joie-eau-de-parfum
+perfume_name: graine de joie eau de parfum
+review_index: 2
+review_text: I tested graine de joie eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. By the drydown, there is a little tension between comfort and strangeness. The crushed green stems and dry cedar shavings made it feel like leafy snap against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-graine-de-joie-eau-de-parfum-03
+source_type: synthetic
+perfume_id: graine-de-joie-eau-de-parfum
+perfume_name: graine de joie eau de parfum
+review_index: 3
+review_text: I expected graine de joie eau de parfum to be mostly about crushed green stems, but the drydown changed my mind. After the first sharp moment, dry cedar shavings came forward and the whole scent turned cleaner. The opening made me hesitate, but the base gave it a second chance. I remember the color of it more than any single note.
+END_REVIEW

@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-jasmin-kama-eau-de-parfum-01,synthetic,jasmin-kama-eau-de-parfum,jasmin kama eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jasmin-kama-eau-de-parfum-02,synthetic,jasmin-kama-eau-de-parfum,jasmin kama eau de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-jasmin-kama-eau-de-parfum-03,synthetic,jasmin-kama-eau-de-parfum,jasmin kama eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-jasmin-perfume-oil-01,synthetic,jasmin-perfume-oil,jasmin perfume oil,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-jasmin-perfume-oil-02,synthetic,jasmin-perfume-oil,jasmin perfume oil,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jasmin-perfume-oil-03,synthetic,jasmin-perfume-oil,jasmin perfume oil,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-jubilation-25-eau-de-parfum-01,synthetic,jubilation-25-eau-de-parfum,jubilation 25 eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-jubilation-25-eau-de-parfum-02,synthetic,jubilation-25-eau-de-parfum,jubilation 25 eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-jubilation-25-eau-de-parfum-03,synthetic,jubilation-25-eau-de-parfum,jubilation 25 eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jubilation-xxv-eau-de-parfum-01,synthetic,jubilation-xxv-eau-de-parfum,jubilation xxv eau de parfum,1,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-jubilation-xxv-eau-de-parfum-02,synthetic,jubilation-xxv-eau-de-parfum,jubilation xxv eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-jubilation-xxv-eau-de-parfum-03,synthetic,jubilation-xxv-eau-de-parfum,jubilation xxv eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jungle-jezebel-extrait-de-parfum-01,synthetic,jungle-jezebel-extrait-de-parfum,jungle jezebel extrait de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-jungle-jezebel-extrait-de-parfum-02,synthetic,jungle-jezebel-extrait-de-parfum,jungle jezebel extrait de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-jungle-jezebel-extrait-de-parfum-03,synthetic,jungle-jezebel-extrait-de-parfum,jungle jezebel extrait de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jupiter-eau-de-parfum-01,synthetic,jupiter-eau-de-parfum,jupiter eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jupiter-eau-de-parfum-02,synthetic,jupiter-eau-de-parfum,jupiter eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-jupiter-eau-de-parfum-03,synthetic,jupiter-eau-de-parfum,jupiter eau de parfum,3,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-jus-d-amour-eau-de-parfum-01,synthetic,jus-d-amour-eau-de-parfum,jus d'amour - eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-jus-d-amour-eau-de-parfum-02,synthetic,jus-d-amour-eau-de-parfum,jus d'amour - eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-jus-d-amour-eau-de-parfum-03,synthetic,jus-d-amour-eau-de-parfum,jus d'amour - eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-jus-d-amour-perfume-oil-perfume-oil-01,synthetic,jus-d-amour-perfume-oil-perfume-oil,jus d'amour - perfume oil perfume oil,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-jus-d-amour-perfume-oil-perfume-oil-02,synthetic,jus-d-amour-perfume-oil-perfume-oil,jus d'amour - perfume oil perfume oil,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-jus-d-amour-perfume-oil-perfume-oil-03,synthetic,jus-d-amour-perfume-oil-perfume-oil,jus d'amour - perfume oil perfume oil,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-kai-eau-de-parfum-eau-de-parfum-spray-01,synthetic,kai-eau-de-parfum-eau-de-parfum-spray,kai - eau de parfum eau de parfum spray,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-kai-eau-de-parfum-eau-de-parfum-spray-02,synthetic,kai-eau-de-parfum-eau-de-parfum-spray,kai - eau de parfum eau de parfum spray,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-kai-eau-de-parfum-eau-de-parfum-spray-03,synthetic,kai-eau-de-parfum-eau-de-parfum-spray,kai - eau de parfum eau de parfum spray,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-kai-perfume-oil-roll-on-perfume-oil-01,synthetic,kai-perfume-oil-roll-on-perfume-oil,kai - perfume oil roll-on perfume oil,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-kai-perfume-oil-roll-on-perfume-oil-02,synthetic,kai-perfume-oil-roll-on-perfume-oil,kai - perfume oil roll-on perfume oil,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-kai-perfume-oil-roll-on-perfume-oil-03,synthetic,kai-perfume-oil-roll-on-perfume-oil,kai - perfume oil roll-on perfume oil,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-karagoz-extrait-de-parfum-01,synthetic,karagoz-extrait-de-parfum,karagoz extrait de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-karagoz-extrait-de-parfum-02,synthetic,karagoz-extrait-de-parfum,karagoz extrait de parfum,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-karagoz-extrait-de-parfum-03,synthetic,karagoz-extrait-de-parfum,karagoz extrait de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-kashan-rose-eau-de-toilette-01,synthetic,kashan-rose-eau-de-toilette,kashan rose eau de toilette,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-kashan-rose-eau-de-toilette-02,synthetic,kashan-rose-eau-de-toilette,kashan rose eau de toilette,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-kashan-rose-eau-de-toilette-03,synthetic,kashan-rose-eau-de-toilette,kashan rose eau de toilette,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-keman-parfum-01,synthetic,keman-parfum,keman parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-keman-parfum-02,synthetic,keman-parfum,keman parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-keman-parfum-03,synthetic,keman-parfum,keman parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-kira-kira-eau-de-parfum-01,synthetic,kira-kira-eau-de-parfum,kira kira eau de parfum,1,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-kira-kira-eau-de-parfum-02,synthetic,kira-kira-eau-de-parfum,kira kira eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-kira-kira-eau-de-parfum-03,synthetic,kira-kira-eau-de-parfum,kira kira eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-kiss-me-intense-eau-de-parfum-01,synthetic,kiss-me-intense-eau-de-parfum,kiss me intense eau de parfum,1,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-kiss-me-intense-eau-de-parfum-02,synthetic,kiss-me-intense-eau-de-parfum,kiss me intense eau de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-kiss-me-intense-eau-de-parfum-03,synthetic,kiss-me-intense-eau-de-parfum,kiss me intense eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-knize-ten-eau-de-toilette-01,synthetic,knize-ten-eau-de-toilette,knize ten eau de toilette,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-knize-ten-eau-de-toilette-02,synthetic,knize-ten-eau-de-toilette,knize ten eau de toilette,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-knize-ten-eau-de-toilette-03,synthetic,knize-ten-eau-de-toilette,knize ten eau de toilette,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-kobe-eau-de-parfum-01,synthetic,kobe-eau-de-parfum,kobe eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-kobe-eau-de-parfum-02,synthetic,kobe-eau-de-parfum,kobe eau de parfum,2,0,0,0,0,0,0,1,0,6,5,6

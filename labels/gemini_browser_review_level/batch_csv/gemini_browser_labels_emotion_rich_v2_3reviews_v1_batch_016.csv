@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-fleurs-d-oranger-eau-de-parfum-01,synthetic,fleurs-d-oranger-eau-de-parfum,fleurs d'oranger eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-fleurs-d-oranger-eau-de-parfum-02,synthetic,fleurs-d-oranger-eau-de-parfum,fleurs d'oranger eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-fleurs-d-oranger-eau-de-parfum-03,synthetic,fleurs-d-oranger-eau-de-parfum,fleurs d'oranger eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-flor-de-naranjo-eau-de-parfum-01,synthetic,flor-de-naranjo-eau-de-parfum,flor de naranjo eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-flor-de-naranjo-eau-de-parfum-02,synthetic,flor-de-naranjo-eau-de-parfum,flor de naranjo eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-flor-de-naranjo-eau-de-parfum-03,synthetic,flor-de-naranjo-eau-de-parfum,flor de naranjo eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-flos-mortis-eau-de-toilette-01,synthetic,flos-mortis-eau-de-toilette,flos mortis eau de toilette,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-flos-mortis-eau-de-toilette-02,synthetic,flos-mortis-eau-de-toilette,flos mortis eau de toilette,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-flos-mortis-eau-de-toilette-03,synthetic,flos-mortis-eau-de-toilette,flos mortis eau de toilette,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-flower-of-immortality-eau-de-parfum-01,synthetic,flower-of-immortality-eau-de-parfum,flower of immortality eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-flower-of-immortality-eau-de-parfum-02,synthetic,flower-of-immortality-eau-de-parfum,flower of immortality eau de parfum,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-flower-of-immortality-eau-de-parfum-03,synthetic,flower-of-immortality-eau-de-parfum,flower of immortality eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-foin-fraichement-coupe-eau-de-parfum-01,synthetic,foin-fraichement-coupe-eau-de-parfum,foin fraichement coupe eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-foin-fraichement-coupe-eau-de-parfum-02,synthetic,foin-fraichement-coupe-eau-de-parfum,foin fraichement coupe eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-foin-fraichement-coupe-eau-de-parfum-03,synthetic,foin-fraichement-coupe-eau-de-parfum,foin fraichement coupe eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-forbidden-games-eau-de-parfum-01,synthetic,forbidden-games-eau-de-parfum,forbidden games eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-forbidden-games-eau-de-parfum-02,synthetic,forbidden-games-eau-de-parfum,forbidden games eau de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-forbidden-games-eau-de-parfum-03,synthetic,forbidden-games-eau-de-parfum,forbidden games eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-fortis-eau-de-parfum-01,synthetic,fortis-eau-de-parfum,fortis eau de parfum,1,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-fortis-eau-de-parfum-02,synthetic,fortis-eau-de-parfum,fortis eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-fortis-eau-de-parfum-03,synthetic,fortis-eau-de-parfum,fortis eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-fou-d-absinthe-eau-de-parfum-01,synthetic,fou-d-absinthe-eau-de-parfum,fou d'absinthe eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fou-d-absinthe-eau-de-parfum-02,synthetic,fou-d-absinthe-eau-de-parfum,fou d'absinthe eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-fou-d-absinthe-eau-de-parfum-03,synthetic,fou-d-absinthe-eau-de-parfum,fou d'absinthe eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-fougere-bengale-eau-de-parfum-01,synthetic,fougere-bengale-eau-de-parfum,fougere bengale eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-fougere-bengale-eau-de-parfum-02,synthetic,fougere-bengale-eau-de-parfum,fougere bengale eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-fougere-bengale-eau-de-parfum-03,synthetic,fougere-bengale-eau-de-parfum,fougere bengale eau de parfum,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-framboise-noire-eau-de-parfum-01,synthetic,framboise-noire-eau-de-parfum,framboise noire eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-framboise-noire-eau-de-parfum-02,synthetic,framboise-noire-eau-de-parfum,framboise noire eau de parfum,2,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-framboise-noire-eau-de-parfum-03,synthetic,framboise-noire-eau-de-parfum,framboise noire eau de parfum,3,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-francois-charles-eau-de-parfum-01,synthetic,francois-charles-eau-de-parfum,francois charles eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-francois-charles-eau-de-parfum-02,synthetic,francois-charles-eau-de-parfum,francois charles eau de parfum,2,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-francois-charles-eau-de-parfum-03,synthetic,francois-charles-eau-de-parfum,francois charles eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-frank-no-1-eau-de-parfum-01,synthetic,frank-no-1-eau-de-parfum,frank no. 1 eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-frank-no-1-eau-de-parfum-02,synthetic,frank-no-1-eau-de-parfum,frank no. 1 eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-frank-no-1-eau-de-parfum-03,synthetic,frank-no-1-eau-de-parfum,frank no. 1 eau de parfum,3,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-frank-no-2-eau-de-parfum-01,synthetic,frank-no-2-eau-de-parfum,frank no. 2 eau de parfum,1,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-frank-no-2-eau-de-parfum-02,synthetic,frank-no-2-eau-de-parfum,frank no. 2 eau de parfum,2,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-frank-no-2-eau-de-parfum-03,synthetic,frank-no-2-eau-de-parfum,frank no. 2 eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-frankincense-myrrh-rose-maroc-perfume-oil-01,synthetic,frankincense-myrrh-rose-maroc-perfume-oil,frankincense - myrrh - rose maroc perfume oil,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-frankincense-myrrh-rose-maroc-perfume-oil-02,synthetic,frankincense-myrrh-rose-maroc-perfume-oil,frankincense - myrrh - rose maroc perfume oil,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-frankincense-myrrh-rose-maroc-perfume-oil-03,synthetic,frankincense-myrrh-rose-maroc-perfume-oil,frankincense - myrrh - rose maroc perfume oil,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-freetrapper-eau-de-parfum-01,synthetic,freetrapper-eau-de-parfum,freetrapper eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-freetrapper-eau-de-parfum-02,synthetic,freetrapper-eau-de-parfum,freetrapper eau de parfum,2,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-freetrapper-eau-de-parfum-03,synthetic,freetrapper-eau-de-parfum,freetrapper eau de parfum,3,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-french-leather-eau-de-parfum-01,synthetic,french-leather-eau-de-parfum,french leather eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-french-leather-eau-de-parfum-02,synthetic,french-leather-eau-de-parfum,french leather eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-french-leather-eau-de-parfum-03,synthetic,french-leather-eau-de-parfum,french leather eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-fruitchouli-eau-de-parfum-01,synthetic,fruitchouli-eau-de-parfum,fruitchouli eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-fruitchouli-eau-de-parfum-02,synthetic,fruitchouli-eau-de-parfum,fruitchouli eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3

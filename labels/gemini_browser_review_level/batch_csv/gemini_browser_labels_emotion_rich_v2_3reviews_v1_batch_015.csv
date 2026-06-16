@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-female-christ-eau-de-parfum-02,synthetic,female-christ-eau-de-parfum,female christ eau de parfum,2,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-female-christ-eau-de-parfum-03,synthetic,female-christ-eau-de-parfum,female christ eau de parfum,3,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-feminite-du-bois-eau-de-parfum-01,synthetic,feminite-du-bois-eau-de-parfum,feminite du bois eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-feminite-du-bois-eau-de-parfum-02,synthetic,feminite-du-bois-eau-de-parfum,feminite du bois eau de parfum,2,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-feminite-du-bois-eau-de-parfum-03,synthetic,feminite-du-bois-eau-de-parfum,feminite du bois eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fetes-persanes-eau-de-parfum-01,synthetic,fetes-persanes-eau-de-parfum,fetes persanes eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-fetes-persanes-eau-de-parfum-02,synthetic,fetes-persanes-eau-de-parfum,fetes persanes eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-fetes-persanes-eau-de-parfum-03,synthetic,fetes-persanes-eau-de-parfum,fetes persanes eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-feu-secret-eau-de-parfum-01,synthetic,feu-secret-eau-de-parfum,feu secret eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-feu-secret-eau-de-parfum-02,synthetic,feu-secret-eau-de-parfum,feu secret eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-feu-secret-eau-de-parfum-03,synthetic,feu-secret-eau-de-parfum,feu secret eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-fiero-eau-de-parfum-01,synthetic,fiero-eau-de-parfum,fiero eau de parfum,1,1,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-fiero-eau-de-parfum-02,synthetic,fiero-eau-de-parfum,fiero eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-fiero-eau-de-parfum-03,synthetic,fiero-eau-de-parfum,fiero eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-fig-tea-eau-de-toilette-01,synthetic,fig-tea-eau-de-toilette,fig tea eau de toilette,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-fig-tea-eau-de-toilette-02,synthetic,fig-tea-eau-de-toilette,fig tea eau de toilette,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-fig-tea-eau-de-toilette-03,synthetic,fig-tea-eau-de-toilette,fig tea eau de toilette,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fils-de-dieu-eau-de-parfum-01,synthetic,fils-de-dieu-eau-de-parfum,fils de dieu eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-fils-de-dieu-eau-de-parfum-02,synthetic,fils-de-dieu-eau-de-parfum,fils de dieu eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-fils-de-dieu-eau-de-parfum-03,synthetic,fils-de-dieu-eau-de-parfum,fils de dieu eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-fiore-d-ambra-eau-de-parfum-01,synthetic,fiore-d-ambra-eau-de-parfum,fiore d'ambra eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-fiore-d-ambra-eau-de-parfum-02,synthetic,fiore-d-ambra-eau-de-parfum,fiore d'ambra eau de parfum,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-fiore-d-ambra-eau-de-parfum-03,synthetic,fiore-d-ambra-eau-de-parfum,fiore d'ambra eau de parfum,3,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-fiore-d-ulivo-eau-de-parfum-01,synthetic,fiore-d-ulivo-eau-de-parfum,fiore d'ulivo eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-fiore-d-ulivo-eau-de-parfum-02,synthetic,fiore-d-ulivo-eau-de-parfum,fiore d'ulivo eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-fiore-d-ulivo-eau-de-parfum-03,synthetic,fiore-d-ulivo-eau-de-parfum,fiore d'ulivo eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fiori-di-capri-parfum-01,synthetic,fiori-di-capri-parfum,fiori di capri parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fiori-di-capri-parfum-02,synthetic,fiori-di-capri-parfum,fiori di capri parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-fiori-di-capri-parfum-03,synthetic,fiori-di-capri-parfum,fiori di capri parfum,3,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-five-o-clock-au-gingembre-eau-de-parfum-01,synthetic,five-o-clock-au-gingembre-eau-de-parfum,five o'clock au gingembre eau de parfum,1,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-five-o-clock-au-gingembre-eau-de-parfum-02,synthetic,five-o-clock-au-gingembre-eau-de-parfum,five o'clock au gingembre eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-five-o-clock-au-gingembre-eau-de-parfum-03,synthetic,five-o-clock-au-gingembre-eau-de-parfum,five o'clock au gingembre eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-flaming-dandelion-eau-de-parfum-01,synthetic,flaming-dandelion-eau-de-parfum,flaming dandelion eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-flaming-dandelion-eau-de-parfum-02,synthetic,flaming-dandelion-eau-de-parfum,flaming dandelion eau de parfum,2,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-flaming-dandelion-eau-de-parfum-03,synthetic,flaming-dandelion-eau-de-parfum,flaming dandelion eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-flash-back-eau-de-parfum-01,synthetic,flash-back-eau-de-parfum,flash back eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-flash-back-eau-de-parfum-02,synthetic,flash-back-eau-de-parfum,flash back eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-flash-back-eau-de-parfum-03,synthetic,flash-back-eau-de-parfum,flash back eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-flavia-vanilla-eau-de-parfum-01,synthetic,flavia-vanilla-eau-de-parfum,flavia vanilla eau de parfum,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-flavia-vanilla-eau-de-parfum-02,synthetic,flavia-vanilla-eau-de-parfum,flavia vanilla eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-flavia-vanilla-eau-de-parfum-03,synthetic,flavia-vanilla-eau-de-parfum,flavia vanilla eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fleur-d-oranger-27-eau-de-parfum-01,synthetic,fleur-d-oranger-27-eau-de-parfum,fleur d'oranger 27 eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-fleur-d-oranger-27-eau-de-parfum-02,synthetic,fleur-d-oranger-27-eau-de-parfum,fleur d'oranger 27 eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-fleur-d-oranger-27-eau-de-parfum-03,synthetic,fleur-d-oranger-27-eau-de-parfum,fleur d'oranger 27 eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fleur-de-comores-eau-de-parfum-01,synthetic,fleur-de-comores-eau-de-parfum,fleur de comores eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-fleur-de-comores-eau-de-parfum-02,synthetic,fleur-de-comores-eau-de-parfum,fleur de comores eau de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-fleur-de-comores-eau-de-parfum-03,synthetic,fleur-de-comores-eau-de-parfum,fleur de comores eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-fleur-nocturne-eau-de-parfum-01,synthetic,fleur-nocturne-eau-de-parfum,fleur nocturne eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-fleur-nocturne-eau-de-parfum-02,synthetic,fleur-nocturne-eau-de-parfum,fleur nocturne eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-fleur-nocturne-eau-de-parfum-03,synthetic,fleur-nocturne-eau-de-parfum,fleur nocturne eau de parfum,3,0,0,0,0,0,0,1,0,6,5,6

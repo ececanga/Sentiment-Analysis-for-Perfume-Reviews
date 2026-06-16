@@ -1,0 +1,14 @@
+{
+  "source_csv": "data/synthetic/synthetic_perfume_reviews_784_emotion_rich_v2.csv",
+  "output_csv": "data/synthetic/synthetic_perfume_reviews_784_emotion_rich_v2_3reviews.csv",
+  "selection_policy": "keep existing generated reviews with review_index 1-3 per perfume; no text regenerated",
+  "rows": 2352,
+  "unique_perfumes": 784,
+  "min_reviews_per_perfume": 3,
+  "max_reviews_per_perfume": 3,
+  "dropped_review_indexes": [
+    4,
+    5
+  ],
+  "label_columns_present": []
+}

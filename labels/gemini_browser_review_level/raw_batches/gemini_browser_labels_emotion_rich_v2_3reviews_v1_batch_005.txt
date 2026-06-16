@@ -1,0 +1,52 @@
+Batch 5 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-aquae-nobilis-eau-de-parfum-03,synthetic,aquae-nobilis-eau-de-parfum,aquae nobilis eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-arabesque-attar-perfume-oil-01,synthetic,arabesque-attar-perfume-oil,arabesque attar / perfume oil,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-arabesque-attar-perfume-oil-02,synthetic,arabesque-attar-perfume-oil,arabesque attar / perfume oil,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-arabesque-attar-perfume-oil-03,synthetic,arabesque-attar-perfume-oil,arabesque attar / perfume oil,3,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-arabian-horse-eau-de-parfum-01,synthetic,arabian-horse-eau-de-parfum,arabian horse eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-arabian-horse-eau-de-parfum-02,synthetic,arabian-horse-eau-de-parfum,arabian horse eau de parfum,2,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-arabian-horse-eau-de-parfum-03,synthetic,arabian-horse-eau-de-parfum,arabian horse eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-aran-parfum-01,synthetic,aran-parfum,aran parfum,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-aran-parfum-02,synthetic,aran-parfum,aran parfum,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-aran-parfum-03,synthetic,aran-parfum,aran parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-arbole-eau-de-parfum-01,synthetic,arbole-eau-de-parfum,arbole eau de parfum,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-arbole-eau-de-parfum-02,synthetic,arbole-eau-de-parfum,arbole eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-arbole-eau-de-parfum-03,synthetic,arbole-eau-de-parfum,arbole eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-areej-attar-perfume-oil-01,synthetic,areej-attar-perfume-oil,areej attar / perfume oil,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-areej-attar-perfume-oil-02,synthetic,areej-attar-perfume-oil,areej attar / perfume oil,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-areej-attar-perfume-oil-03,synthetic,areej-attar-perfume-oil,areej attar / perfume oil,3,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-artemisia-eau-de-parfum-01,synthetic,artemisia-eau-de-parfum,artemisia eau de parfum,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-artemisia-eau-de-parfum-02,synthetic,artemisia-eau-de-parfum,artemisia eau de parfum,2,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-artemisia-eau-de-parfum-03,synthetic,artemisia-eau-de-parfum,artemisia eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-aseel-attar-perfume-oil-01,synthetic,aseel-attar-perfume-oil,aseel attar / perfume oil,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-aseel-attar-perfume-oil-02,synthetic,aseel-attar-perfume-oil,aseel attar / perfume oil,2,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-aseel-attar-perfume-oil-03,synthetic,aseel-attar-perfume-oil,aseel attar / perfume oil,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-atlante-extrait-de-parfum-01,synthetic,atlante-extrait-de-parfum,atlante extrait de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-atlante-extrait-de-parfum-02,synthetic,atlante-extrait-de-parfum,atlante extrait de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-atlante-extrait-de-parfum-03,synthetic,atlante-extrait-de-parfum,atlante extrait de parfum,3,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-atlas-fever-eau-de-parfum-01,synthetic,atlas-fever-eau-de-parfum,atlas fever eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-atlas-fever-eau-de-parfum-02,synthetic,atlas-fever-eau-de-parfum,atlas fever eau de parfum,2,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-atlas-fever-eau-de-parfum-03,synthetic,atlas-fever-eau-de-parfum,atlas fever eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-atomic-rose-eau-de-parfum-01,synthetic,atomic-rose-eau-de-parfum,atomic rose eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-atomic-rose-eau-de-parfum-02,synthetic,atomic-rose-eau-de-parfum,atomic rose eau de parfum,2,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-atomic-rose-eau-de-parfum-03,synthetic,atomic-rose-eau-de-parfum,atomic rose eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-au-coeur-du-desert-parfum-extrait-01,synthetic,au-coeur-du-desert-parfum-extrait,au coeur du desert parfum extrait,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-au-coeur-du-desert-parfum-extrait-02,synthetic,au-coeur-du-desert-parfum-extrait,au coeur du desert parfum extrait,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-au-coeur-du-desert-parfum-extrait-03,synthetic,au-coeur-du-desert-parfum-extrait,au coeur du desert parfum extrait,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-aurora-eau-de-parfum-01,synthetic,aurora-eau-de-parfum,aurora eau de parfum,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-aurora-eau-de-parfum-02,synthetic,aurora-eau-de-parfum,aurora eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-aurora-eau-de-parfum-03,synthetic,aurora-eau-de-parfum,aurora eau de parfum,3,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-aurum-eau-de-parfum-01,synthetic,aurum-eau-de-parfum,aurum eau de parfum,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-aurum-eau-de-parfum-02,synthetic,aurum-eau-de-parfum,aurum eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-aurum-eau-de-parfum-03,synthetic,aurum-eau-de-parfum,aurum eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-auster-eau-de-parfum-01,synthetic,auster-eau-de-parfum,auster eau de parfum,1,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-auster-eau-de-parfum-02,synthetic,auster-eau-de-parfum,auster eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-auster-eau-de-parfum-03,synthetic,auster-eau-de-parfum,auster eau de parfum,3,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-autoportrait-eau-de-parfum-01,synthetic,autoportrait-eau-de-parfum,autoportrait eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-autoportrait-eau-de-parfum-02,synthetic,autoportrait-eau-de-parfum,autoportrait eau de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-autoportrait-eau-de-parfum-03,synthetic,autoportrait-eau-de-parfum,autoportrait eau de parfum,3,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-aziyade-eau-de-parfum-01,synthetic,aziyade-eau-de-parfum,aziyade eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-aziyade-eau-de-parfum-02,synthetic,aziyade-eau-de-parfum,aziyade eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-aziyade-eau-de-parfum-03,synthetic,aziyade-eau-de-parfum,aziyade eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-azzurro-di-capri-extrait-parfum-extrait-01,synthetic,azzurro-di-capri-extrait-parfum-extrait,azzurro di capri extrait parfum extrait,1,0,0,0,0,0,1,1,0,3,6,3

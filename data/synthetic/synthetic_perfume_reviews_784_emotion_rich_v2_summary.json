@@ -1,0 +1,74 @@
+{
+  "dataset_version": "unlabeled_synthetic_perfume_reviews_784_emotion_rich_v2",
+  "generated_at_utc": "2026-06-14T16:46:19.302735+00:00",
+  "source_type": "unlabeled_synthetic_emotion_rich_v2",
+  "generation_policy": "local_note_inspired_human_scenario_templates_no_label_conditioning",
+  "source_identity_file": "labels/gemini_labels_784_judge_g25pro_v1.csv",
+  "note_inspiration_file": "data/perfume_level/perfume_context_keywords.csv",
+  "output_csv": "data/synthetic/synthetic_perfume_reviews_784_emotion_rich_v2.csv",
+  "n_perfumes": 784,
+  "expected_perfumes": 784,
+  "reviews_per_perfume": 5,
+  "n_synthetic_review_rows": 3920,
+  "seed": 20260612,
+  "word_count_min": 34,
+  "word_count_mean": 66.238,
+  "word_count_max": 102,
+  "emotion_keyword_count_mean": 3.535,
+  "persona_counts": {
+    "niche_sampler": 570,
+    "collector_with_boundaries": 513,
+    "sensitive_nose": 571,
+    "casual_daily_wearer": 571,
+    "quiet_observer": 540,
+    "social_wearer": 614,
+    "memory_led_reviewer": 541
+  },
+  "style_family_counts": {
+    "scene_based_review": 913,
+    "short_fragrantica_note": 719,
+    "reflective_mini_review": 1076,
+    "long_personal_review": 553,
+    "casual_blunt_review": 659
+  },
+  "scenario_family_counts": {
+    "comfort_routine": 784,
+    "surprising_drydown": 784,
+    "difficult_reaction": 784,
+    "social_identity": 784,
+    "sensory_memory": 784
+  },
+  "length_profile_counts": {
+    "medium": 1989,
+    "short": 1378,
+    "long": 553
+  },
+  "sensory_source_counts": {
+    "context_keywords": 3705,
+    "name_or_generic": 215
+  },
+  "top_sensory_terms": {
+    "soft floral petals": 1439,
+    "clean laundry musk": 1345,
+    "dry woods": 1117,
+    "clean skin musk": 990,
+    "warm amber resin": 985,
+    "warm spice": 975,
+    "crushed green stems": 951,
+    "jammy rose petals": 901,
+    "bright citrus peel": 881,
+    "soft cosmetic powder": 769,
+    "soft vanilla": 707,
+    "polished leather": 537,
+    "soft creamy sweetness": 471,
+    "dry incense smoke": 341,
+    "faint smoke": 301,
+    "earthy patchouli": 298,
+    "sweet orange peel": 275,
+    "dark chocolate": 269,
+    "warm jasmine": 264,
+    "warm tobacco leaf": 241
+  },
+  "label_columns_present": [],
+  "warning": "This is an unlabeled synthetic review dataset. Existing identity-source labels are ignored. Scenario/style/sensory provenance columns are generation metadata only and must not be used as model features."
+}

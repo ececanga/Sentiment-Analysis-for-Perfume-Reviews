@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 11 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-costes-perfume-eau-de-toilette-03
+source_type: synthetic
+perfume_id: costes-perfume-eau-de-toilette
+perfume_name: costes perfume eau de toilette
+review_index: 3
+review_text: I wanted to understand costes perfume eau de toilette, but cool lavender pushed harder than I expected. The mix of cool cardamom and crushed green stems created a strong image, almost too dry for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-covent-garden-eau-de-parfum-01
+source_type: synthetic
+perfume_id: covent-garden-eau-de-parfum
+perfume_name: covent garden eau de parfum
+review_index: 1
+review_text: covent garden eau de parfum made me think about the person I would become if I wore it outside. The impression of jammy rose petals gives it presence, while fresh ginger bite keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-covent-garden-eau-de-parfum-02
+source_type: synthetic
+perfume_id: covent-garden-eau-de-parfum
+perfume_name: covent garden eau de parfum
+review_index: 2
+review_text: covent garden eau de parfum immediately gave me a picture rather than a note list: jammy rose petals, warm spice, and soft vanilla. After a while, i liked some moments more than others, which made the wearing feel alive. The color in my head was deep pink, placed around a spice drawer, with a spoon through custard somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-covent-garden-eau-de-parfum-03
+source_type: synthetic
+perfume_id: covent-garden-eau-de-parfum
+perfume_name: covent garden eau de parfum
+review_index: 3
+review_text: I tested covent garden eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft vanilla and dry woods made it feel like creamy sweetness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cowboy-grass-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cowboy-grass-eau-de-parfum
+perfume_name: cowboy grass eau de parfum
+review_index: 1
+review_text: I tested cowboy grass eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm spice and dry vetiver roots made it feel like dry warmth against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cowboy-grass-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cowboy-grass-eau-de-parfum
+perfume_name: cowboy grass eau de parfum
+review_index: 2
+review_text: I expected cowboy grass eau de parfum to be mostly about warm amber resin, but the drydown changed my mind. After the first sharp moment, sparkling bergamot peel came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cowboy-grass-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cowboy-grass-eau-de-parfum
+perfume_name: cowboy grass eau de parfum
+review_index: 3
+review_text: I wanted to understand cowboy grass eau de parfum, but sparkling bergamot peel pushed harder than I expected. The mix of warm spice and dry incense smoke created a strong image, almost too sharp for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-coze-eau-de-parfum-01
+source_type: synthetic
+perfume_id: coze-eau-de-parfum
+perfume_name: coze eau de parfum
+review_index: 1
+review_text: coze eau de parfum immediately gave me a picture rather than a note list: dark chocolate, green fig skin, and warm amber resin. The color in my head was matte brown, placed around a shaded terrace, with a low cello note somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-coze-eau-de-parfum-02
+source_type: synthetic
+perfume_id: coze-eau-de-parfum
+perfume_name: coze eau de parfum
+review_index: 2
+review_text: I tested coze eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm tobacco leaf and soft vanilla made it feel like dry sweetness against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-coze-eau-de-parfum-03
+source_type: synthetic
+perfume_id: coze-eau-de-parfum
+perfume_name: coze eau de parfum
+review_index: 3
+review_text: I expected coze eau de parfum to be mostly about warm amber resin, but the drydown changed my mind. After the first sharp moment, green fig skin came forward and the whole scent turned cleaner. The opening made me hesitate, but the base gave it a second chance. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-creation-e-parfum-cologne-01
+source_type: synthetic
+perfume_id: creation-e-parfum-cologne
+perfume_name: creation-e parfum cologne
+review_index: 1
+review_text: I tested creation-e parfum cologne on a normal day, the kind where I wanted my perfume to change my mood a little. The dark boozy warmth and warm tobacco leaf made it feel like velvet heat against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-creation-e-parfum-cologne-02
+source_type: synthetic
+perfume_id: creation-e-parfum-cologne
+perfume_name: creation-e parfum cologne
+review_index: 2
+review_text: I expected creation-e parfum cologne to be mostly about dark boozy warmth, but the drydown changed my mind. After the first sharp moment, warm tobacco leaf came forward and the whole scent turned darker. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-creation-e-parfum-cologne-03
+source_type: synthetic
+perfume_id: creation-e-parfum-cologne
+perfume_name: creation-e parfum cologne
+review_index: 3
+review_text: I wanted to understand creation-e parfum cologne, but dark boozy warmth pushed harder than I expected. The mix of warm tobacco leaf and dry black pepper created a strong image, almost too heavy for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-crystal-pistil-eau-de-parfum-01
+source_type: synthetic
+perfume_id: crystal-pistil-eau-de-parfum
+perfume_name: crystal pistil eau de parfum
+review_index: 1
+review_text: I tested crystal pistil eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The sparkling bergamot peel and soft floral petals made it feel like zesty brightness against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-crystal-pistil-eau-de-parfum-02
+source_type: synthetic
+perfume_id: crystal-pistil-eau-de-parfum
+perfume_name: crystal pistil eau de parfum
+review_index: 2
+review_text: I expected crystal pistil eau de parfum to be mostly about sparkling bergamot peel, but the drydown changed my mind. After the first sharp moment, soft floral petals came forward and the whole scent turned warmer. The opening made me hesitate, but the base gave it a second chance. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-crystal-pistil-eau-de-parfum-03
+source_type: synthetic
+perfume_id: crystal-pistil-eau-de-parfum
+perfume_name: crystal pistil eau de parfum
+review_index: 3
+review_text: I wanted to understand crystal pistil eau de parfum, but sparkling bergamot peel pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-andalou-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cuir-andalou-eau-de-parfum
+perfume_name: cuir andalou eau de parfum
+review_index: 1
+review_text: cuir andalou eau de parfum immediately gave me a picture rather than a note list: faint smoke, earthy patchouli, and jammy rose petals. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-andalou-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cuir-andalou-eau-de-parfum
+perfume_name: cuir andalou eau de parfum
+review_index: 2
+review_text: I tested cuir andalou eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The jammy rose petals and powdery iris made it feel like velvet petals against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-andalou-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cuir-andalou-eau-de-parfum
+perfume_name: cuir andalou eau de parfum
+review_index: 3
+review_text: I expected cuir andalou eau de parfum to be mostly about faint smoke, but the drydown changed my mind. After the first sharp moment, jammy rose petals came forward and the whole scent turned more tender. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-cuba-intense-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cuir-cuba-intense-eau-de-parfum
+perfume_name: cuir cuba intense eau de parfum
+review_index: 1
+review_text: cuir cuba intense eau de parfum immediately gave me a picture rather than a note list: crushed green stems, earthy patchouli, and clean skin musk. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-cuba-intense-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cuir-cuba-intense-eau-de-parfum
+perfume_name: cuir cuba intense eau de parfum
+review_index: 2
+review_text: I tested cuir cuba intense eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm spice and clean skin musk made it feel like dry warmth against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-cuba-intense-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cuir-cuba-intense-eau-de-parfum
+perfume_name: cuir cuba intense eau de parfum
+review_index: 3
+review_text: I expected cuir cuba intense eau de parfum to be mostly about warm tobacco leaf, but the drydown changed my mind. After the first sharp moment, polished leather came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-les-nombres-d-or-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cuir-les-nombres-d-or-eau-de-parfum
+perfume_name: cuir - les nombres d'or eau de parfum
+review_index: 1
+review_text: cuir - les nombres d'or eau de parfum made me think about the person I would become if I wore it outside. The impression of clean skin musk gives it presence, while polished leather keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-les-nombres-d-or-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cuir-les-nombres-d-or-eau-de-parfum
+perfume_name: cuir - les nombres d'or eau de parfum
+review_index: 2
+review_text: cuir - les nombres d'or eau de parfum immediately gave me a picture rather than a note list: clean skin musk, polished leather, and faint smoke. The color in my head was soft beige, placed around a coat closet, with embers settling somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-les-nombres-d-or-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cuir-les-nombres-d-or-eau-de-parfum
+perfume_name: cuir - les nombres d'or eau de parfum
+review_index: 3
+review_text: I tested cuir - les nombres d'or eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The clean skin musk and polished leather made it feel like smooth powder against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-ottoman-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cuir-ottoman-eau-de-parfum
+perfume_name: cuir ottoman eau de parfum
+review_index: 1
+review_text: I wanted to understand cuir ottoman eau de parfum, but dry incense smoke pushed harder than I expected. At first, the opening and the drydown almost felt like two different opinions from the same person. The mix of warm spice and faint smoke created a strong image, almost too warm for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-ottoman-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cuir-ottoman-eau-de-parfum
+perfume_name: cuir ottoman eau de parfum
+review_index: 2
+review_text: cuir ottoman eau de parfum made me think about the person I would become if I wore it outside. On my skin, it made more sense after an hour, when the sharper edges had settled. The impression of polished leather gives it presence, while powdery iris keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-ottoman-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cuir-ottoman-eau-de-parfum
+perfume_name: cuir ottoman eau de parfum
+review_index: 3
+review_text: cuir ottoman eau de parfum immediately gave me a picture rather than a note list: warm spice, powdery iris, and soft vanilla. I did not feel simple happiness, more like a small private memory opening and closing. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-velours-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cuir-velours-eau-de-parfum
+perfume_name: cuir velours eau de parfum
+review_index: 1
+review_text: I expected cuir velours eau de parfum to be mostly about polished leather, but the drydown changed my mind. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-velours-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cuir-velours-eau-de-parfum
+perfume_name: cuir velours eau de parfum
+review_index: 2
+review_text: I wanted to understand cuir velours eau de parfum, but polished leather pushed harder than I expected. The mix of powdery iris and faint smoke created a strong image, almost too warm for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-velours-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cuir-velours-eau-de-parfum
+perfume_name: cuir velours eau de parfum
+review_index: 3
+review_text: cuir velours eau de parfum made me think about the person I would become if I wore it outside. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I would sample first.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-venenum-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cuir-venenum-eau-de-parfum
+perfume_name: cuir venenum eau de parfum
+review_index: 1
+review_text: I expected cuir venenum eau de parfum to be mostly about soft floral petals, but the drydown changed my mind. After the first sharp moment, clean watery air came forward and the whole scent turned more tender. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-venenum-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cuir-venenum-eau-de-parfum
+perfume_name: cuir venenum eau de parfum
+review_index: 2
+review_text: I wanted to understand cuir venenum eau de parfum, but clean watery air pushed harder than I expected. The mix of soft floral petals and faint smoke created a strong image, almost too close for me. I respect the idea, yet the texture made me feel uneasy after a while. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cuir-venenum-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cuir-venenum-eau-de-parfum
+perfume_name: cuir venenum eau de parfum
+review_index: 3
+review_text: cuir venenum eau de parfum made me think about the person I would become if I wore it outside. I would wear it when I want to feel composed, even if I am not fully sure of myself. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cypress-shade-eau-de-parfum-01
+source_type: synthetic
+perfume_id: cypress-shade-eau-de-parfum
+perfume_name: cypress shade eau de parfum
+review_index: 1
+review_text: I tested cypress shade eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The warm spice and edible gourmand sweetness made it feel like dry warmth against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cypress-shade-eau-de-parfum-02
+source_type: synthetic
+perfume_id: cypress-shade-eau-de-parfum
+perfume_name: cypress shade eau de parfum
+review_index: 2
+review_text: I expected cypress shade eau de parfum to be mostly about edible gourmand sweetness, but the drydown changed my mind. After a while, i kept checking my wrist, not because it was loud, but because the mood kept shifting. After the first sharp moment, soft creamy sweetness came forward and the whole scent turned stranger. The opening made me hesitate, but the base gave it a second chance. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-cypress-shade-eau-de-parfum-03
+source_type: synthetic
+perfume_id: cypress-shade-eau-de-parfum
+perfume_name: cypress shade eau de parfum
+review_index: 3
+review_text: I wanted to understand cypress shade eau de parfum, but warm spice pushed harder than I expected. After a while, i kept checking my wrist, not because it was loud, but because the mood kept shifting. The mix of edible gourmand sweetness and dry vetiver roots created a strong image, almost too close for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dama-bianca-eau-de-parfum-01
+source_type: synthetic
+perfume_id: dama-bianca-eau-de-parfum
+perfume_name: dama bianca eau de parfum
+review_index: 1
+review_text: I wanted to understand dama bianca eau de parfum, but soft floral petals pushed harder than I expected. The mix of soft cosmetic powder and soft creamy sweetness created a strong image, almost too dry for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dama-bianca-eau-de-parfum-02
+source_type: synthetic
+perfume_id: dama-bianca-eau-de-parfum
+perfume_name: dama bianca eau de parfum
+review_index: 2
+review_text: dama bianca eau de parfum made me think about the person I would become if I wore it outside. The impression of powdery iris gives it presence, while soft cosmetic powder keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dama-bianca-eau-de-parfum-03
+source_type: synthetic
+perfume_id: dama-bianca-eau-de-parfum
+perfume_name: dama bianca eau de parfum
+review_index: 3
+review_text: dama bianca eau de parfum immediately gave me a picture rather than a note list: powdery iris, clean skin musk, and soft floral petals. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dambrosia-eau-de-parfum-01
+source_type: synthetic
+perfume_id: dambrosia-eau-de-parfum
+perfume_name: dambrosia eau de parfum
+review_index: 1
+review_text: I expected dambrosia eau de parfum to be mostly about soft almond cream, but the drydown changed my mind. After the first sharp moment, green fig skin came forward and the whole scent turned more tender. The opening made me hesitate, but the base gave it a second chance. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dambrosia-eau-de-parfum-02
+source_type: synthetic
+perfume_id: dambrosia-eau-de-parfum
+perfume_name: dambrosia eau de parfum
+review_index: 2
+review_text: I wanted to understand dambrosia eau de parfum, but smooth sandalwood pushed harder than I expected. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dambrosia-eau-de-parfum-03
+source_type: synthetic
+perfume_id: dambrosia-eau-de-parfum
+perfume_name: dambrosia eau de parfum
+review_index: 3
+review_text: dambrosia eau de parfum made me think about the person I would become if I wore it outside. The impression of green fig skin gives it presence, while warm amber resin keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It is not a simple compliment scent, but it does create a clear atmosphere.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-danger-parfum-cologne-01
+source_type: synthetic
+perfume_id: danger-parfum-cologne
+perfume_name: danger parfum cologne
+review_index: 1
+review_text: danger parfum cologne immediately gave me a picture rather than a note list: dry cedar shavings, sparkling bergamot peel, and bright lemon peel. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-danger-parfum-cologne-02
+source_type: synthetic
+perfume_id: danger-parfum-cologne
+perfume_name: danger parfum cologne
+review_index: 2
+review_text: I tested danger parfum cologne on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-danger-parfum-cologne-03
+source_type: synthetic
+perfume_id: danger-parfum-cologne
+perfume_name: danger parfum cologne
+review_index: 3
+review_text: I expected danger parfum cologne to be mostly about warm spice, but the drydown changed my mind. After the first sharp moment, dry incense smoke came forward and the whole scent turned warmer. The opening made me hesitate, but the base gave it a second chance. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dark-eau-de-parfum-01
+source_type: synthetic
+perfume_id: dark-eau-de-parfum
+perfume_name: dark eau de parfum
+review_index: 1
+review_text: I expected dark eau de parfum to be mostly about polished leather, but the drydown changed my mind. The opening made me hesitate, but the base gave it a second chance. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dark-eau-de-parfum-02
+source_type: synthetic
+perfume_id: dark-eau-de-parfum
+perfume_name: dark eau de parfum
+review_index: 2
+review_text: I wanted to understand dark eau de parfum, but polished leather pushed harder than I expected. Strangely, it is not a simple compliment scent, but it does create a clear atmosphere. The mix of warm spice and warm resin created a strong image, almost too dry for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dark-eau-de-parfum-03
+source_type: synthetic
+perfume_id: dark-eau-de-parfum
+perfume_name: dark eau de parfum
+review_index: 3
+review_text: dark eau de parfum made me think about the person I would become if I wore it outside. By the drydown, i liked some moments more than others, which made the wearing feel alive. The impression of polished leather gives it presence, while warm spice keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-dates-delight-eau-de-parfum-01
+source_type: synthetic
+perfume_id: dates-delight-eau-de-parfum
+perfume_name: dates delight eau de parfum
+review_index: 1
+review_text: I expected dates delight eau de parfum to be mostly about dark chocolate, but the drydown changed my mind. After the first sharp moment, a bitter green edge came forward and the whole scent turned warmer. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. I remember the color of it more than any single note.
+END_REVIEW

@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-costes-perfume-eau-de-toilette-03,synthetic,costes-perfume-eau-de-toilette,costes perfume eau de toilette,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-covent-garden-eau-de-parfum-01,synthetic,covent-garden-eau-de-parfum,covent garden eau de parfum,1,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-covent-garden-eau-de-parfum-02,synthetic,covent-garden-eau-de-parfum,covent garden eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-covent-garden-eau-de-parfum-03,synthetic,covent-garden-eau-de-parfum,covent garden eau de parfum,3,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-cowboy-grass-eau-de-parfum-01,synthetic,cowboy-grass-eau-de-parfum,cowboy grass eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-cowboy-grass-eau-de-parfum-02,synthetic,cowboy-grass-eau-de-parfum,cowboy grass eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-cowboy-grass-eau-de-parfum-03,synthetic,cowboy-grass-eau-de-parfum,cowboy grass eau de parfum,3,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-coze-eau-de-parfum-01,synthetic,coze-eau-de-parfum,coze eau de parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-coze-eau-de-parfum-02,synthetic,coze-eau-de-parfum,coze eau de parfum,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-coze-eau-de-parfum-03,synthetic,coze-eau-de-parfum,coze eau de parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-creation-e-parfum-cologne-01,synthetic,creation-e-parfum-cologne,creation-e parfum cologne,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-creation-e-parfum-cologne-02,synthetic,creation-e-parfum-cologne,creation-e parfum cologne,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-creation-e-parfum-cologne-03,synthetic,creation-e-parfum-cologne,creation-e parfum cologne,3,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-crystal-pistil-eau-de-parfum-01,synthetic,crystal-pistil-eau-de-parfum,crystal pistil eau de parfum,1,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-crystal-pistil-eau-de-parfum-02,synthetic,crystal-pistil-eau-de-parfum,crystal pistil eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-crystal-pistil-eau-de-parfum-03,synthetic,crystal-pistil-eau-de-parfum,crystal pistil eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-cuir-andalou-eau-de-parfum-01,synthetic,cuir-andalou-eau-de-parfum,cuir andalou eau de parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-cuir-andalou-eau-de-parfum-02,synthetic,cuir-andalou-eau-de-parfum,cuir andalou eau de parfum,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-cuir-andalou-eau-de-parfum-03,synthetic,cuir-andalou-eau-de-parfum,cuir andalou eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-cuir-cuba-intense-eau-de-parfum-01,synthetic,cuir-cuba-intense-eau-de-parfum,cuir cuba intense eau de parfum,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-cuir-cuba-intense-eau-de-parfum-02,synthetic,cuir-cuba-intense-eau-de-parfum,cuir cuba intense eau de parfum,2,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-cuir-cuba-intense-eau-de-parfum-03,synthetic,cuir-cuba-intense-eau-de-parfum,cuir cuba intense eau de parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-cuir-les-nombres-d-or-eau-de-parfum-01,synthetic,cuir-les-nombres-d-or-eau-de-parfum,cuir - les nombres d'or eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-cuir-les-nombres-d-or-eau-de-parfum-02,synthetic,cuir-les-nombres-d-or-eau-de-parfum,cuir - les nombres d'or eau de parfum,2,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-cuir-les-nombres-d-or-eau-de-parfum-03,synthetic,cuir-les-nombres-d-or-eau-de-parfum,cuir - les nombres d'or eau de parfum,3,0,0,0,0,1,0,1,0,7,3,6
+emotion-rich-v2-cuir-ottoman-eau-de-parfum-01,synthetic,cuir-ottoman-eau-de-parfum,cuir ottoman eau de parfum,1,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-cuir-ottoman-eau-de-parfum-02,synthetic,cuir-ottoman-eau-de-parfum,cuir ottoman eau de parfum,2,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-cuir-ottoman-eau-de-parfum-03,synthetic,cuir-ottoman-eau-de-parfum,cuir ottoman eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-cuir-velours-eau-de-parfum-01,synthetic,cuir-velours-eau-de-parfum,cuir velours eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-cuir-velours-eau-de-parfum-02,synthetic,cuir-velours-eau-de-parfum,cuir velours eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-cuir-velours-eau-de-parfum-03,synthetic,cuir-velours-eau-de-parfum,cuir velours eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-cuir-venenum-eau-de-parfum-01,synthetic,cuir-venenum-eau-de-parfum,cuir venenum eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-cuir-venenum-eau-de-parfum-02,synthetic,cuir-venenum-eau-de-parfum,cuir venenum eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-cuir-venenum-eau-de-parfum-03,synthetic,cuir-venenum-eau-de-parfum,cuir venenum eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-cypress-shade-eau-de-parfum-01,synthetic,cypress-shade-eau-de-parfum,cypress shade eau de parfum,1,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-cypress-shade-eau-de-parfum-02,synthetic,cypress-shade-eau-de-parfum,cypress shade eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-cypress-shade-eau-de-parfum-03,synthetic,cypress-shade-eau-de-parfum,cypress shade eau de parfum,3,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-dama-bianca-eau-de-parfum-01,synthetic,dama-bianca-eau-de-parfum,dama bianca eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-dama-bianca-eau-de-parfum-02,synthetic,dama-bianca-eau-de-parfum,dama bianca eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-dama-bianca-eau-de-parfum-03,synthetic,dama-bianca-eau-de-parfum,dama bianca eau de parfum,3,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-dambrosia-eau-de-parfum-01,synthetic,dambrosia-eau-de-parfum,dambrosia eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-dambrosia-eau-de-parfum-02,synthetic,dambrosia-eau-de-parfum,dambrosia eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-dambrosia-eau-de-parfum-03,synthetic,dambrosia-eau-de-parfum,dambrosia eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-danger-parfum-cologne-01,synthetic,danger-parfum-cologne,danger parfum cologne,1,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-danger-parfum-cologne-02,synthetic,danger-parfum-cologne,danger parfum cologne,2,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-danger-parfum-cologne-03,synthetic,danger-parfum-cologne,danger parfum cologne,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-dark-eau-de-parfum-01,synthetic,dark-eau-de-parfum,dark eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-dark-eau-de-parfum-02,synthetic,dark-eau-de-parfum,dark eau de parfum,2,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-dark-eau-de-parfum-03,synthetic,dark-eau-de-parfum,dark eau de parfum,3,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-dates-delight-eau-de-parfum-01,synthetic,dates-delight-eau-de-parfum,dates delight eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5

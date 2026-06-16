@@ -1,0 +1,487 @@
+You are labeling perfume review text for an academic thesis.
+
+Task: For each review in the batch, assign emotion-tone labels using ONLY the review text provided.
+
+Rules:
+- Label each review independently.
+- Do NOT infer from brand, perfume name, reputation, note list, marketing concept, or niche status.
+- Labels reflect the reviewer's emotional tone expressed in the text.
+- Set an emotion to 1 only when there is clear linguistic evidence. Otherwise set it to 0.
+- Multiple emotions can be 1.
+- Surprise=1 only when the text explicitly expresses unexpectedness, such as "surprised", "did not expect", "caught me off guard", or similar language.
+- Anticipation=1 when the text clearly expresses expectation, looking forward, curiosity, desire to keep testing, or waiting for something to unfold.
+- Trust=1 when the text clearly expresses comfort, safety, reliability, attachment, reassurance, or confidence in wearing the perfume.
+- Arousal means emotional activation or calmness, not perfume strength or projection.
+- Dominance means confidence/control/assertiveness, not perfume loudness unless framed as personal power/control.
+- If emotional evidence is weak or neutral, use all emotions=0 and valence=5, arousal=5, dominance=5.
+
+Emotion columns, binary 0/1:
+joy,sadness,anger,fear,trust,surprise,anticipation,disgust
+
+VAD columns, integer 1-9:
+valence: 1 very negative, 5 neutral, 9 very positive
+arousal: 1 very calm, 5 neutral, 9 highly activated
+dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
+
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+
+Return exactly one output row per input review.
+
+RESPONSE FORMAT
+Start your response with exactly this tracking line: Batch 17 output:
+Then immediately output the CSV header and one CSV row per input review.
+
+INPUT BATCH
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-fruitchouli-eau-de-parfum-03
+source_type: synthetic
+perfume_id: fruitchouli-eau-de-parfum
+perfume_name: fruitchouli eau de parfum
+review_index: 3
+review_text: fruitchouli eau de parfum made me think about the person I would become if I wore it outside. I would wear it when I want to feel composed, even if I am not fully sure of myself. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-fumidus-eau-de-parfum-01
+source_type: synthetic
+perfume_id: fumidus-eau-de-parfum
+perfume_name: fumidus eau de parfum
+review_index: 1
+review_text: fumidus eau de parfum made me think about the person I would become if I wore it outside. The impression of dry vetiver roots gives it presence, while golden honey keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-fumidus-eau-de-parfum-02
+source_type: synthetic
+perfume_id: fumidus-eau-de-parfum
+perfume_name: fumidus eau de parfum
+review_index: 2
+review_text: fumidus eau de parfum immediately gave me a picture rather than a note list: jammy rose petals, polished leather, and clean skin musk. The color in my head was deep pink, placed around a coat closet, with cotton brushing skin somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-fumidus-eau-de-parfum-03
+source_type: synthetic
+perfume_id: fumidus-eau-de-parfum
+perfume_name: fumidus eau de parfum
+review_index: 3
+review_text: I tested fumidus eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The polished leather and jammy rose petals made it feel like smooth hide against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gaea-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gaea-eau-de-parfum
+perfume_name: gaea eau de parfum
+review_index: 1
+review_text: gaea eau de parfum made me think about the person I would become if I wore it outside. The impression of golden honey gives it presence, while crushed green stems keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gaea-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gaea-eau-de-parfum
+perfume_name: gaea eau de parfum
+review_index: 2
+review_text: gaea eau de parfum immediately gave me a picture rather than a note list: golden honey, crushed green stems, and clean skin musk. The color in my head was deep gold, placed around a garden after rain, with cotton brushing skin somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gaea-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gaea-eau-de-parfum
+perfume_name: gaea eau de parfum
+review_index: 3
+review_text: I tested gaea eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The golden honey and crushed green stems made it feel like sticky glow against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-galloway-eau-de-parfum-01
+source_type: synthetic
+perfume_id: galloway-eau-de-parfum
+perfume_name: galloway eau de parfum
+review_index: 1
+review_text: I tested galloway eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The bright citrus peel and soft cosmetic powder made it feel like zesty brightness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-galloway-eau-de-parfum-02
+source_type: synthetic
+perfume_id: galloway-eau-de-parfum
+perfume_name: galloway eau de parfum
+review_index: 2
+review_text: I expected galloway eau de parfum to be mostly about dry woods, but the drydown changed my mind. The opening made me hesitate, but the base gave it a second chance. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-galloway-eau-de-parfum-03
+source_type: synthetic
+perfume_id: galloway-eau-de-parfum
+perfume_name: galloway eau de parfum
+review_index: 3
+review_text: I wanted to understand galloway eau de parfum, but clean laundry musk pushed harder than I expected. For me, it feels tied to a specific weather, not to every day. The mix of soft cosmetic powder and bright citrus peel created a strong image, almost too heavy for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gardenia-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gardenia-eau-de-parfum
+perfume_name: gardenia eau de parfum
+review_index: 1
+review_text: I wanted to understand gardenia eau de parfum, but warm spice pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gardenia-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gardenia-eau-de-parfum
+perfume_name: gardenia eau de parfum
+review_index: 2
+review_text: gardenia eau de parfum made me think about the person I would become if I wore it outside. By the drydown, on skin it became more personal than it seemed on paper. The impression of dry woods gives it presence, while clean laundry musk keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gardenia-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gardenia-eau-de-parfum
+perfume_name: gardenia eau de parfum
+review_index: 3
+review_text: gardenia eau de parfum immediately gave me a picture rather than a note list: warm spice, soft floral petals, and dry woods. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gardenia-petale-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gardenia-petale-eau-de-parfum
+perfume_name: gardenia petale eau de parfum
+review_index: 1
+review_text: I expected gardenia petale eau de parfum to be mostly about powdery iris, but the drydown changed my mind. After the first sharp moment, crushed green stems came forward and the whole scent turned warmer. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gardenia-petale-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gardenia-petale-eau-de-parfum
+perfume_name: gardenia petale eau de parfum
+review_index: 2
+review_text: I wanted to understand gardenia petale eau de parfum, but powdery iris pushed harder than I expected. For me, there is a little tension between comfort and strangeness. The mix of soft floral petals and creamy gardenia created a strong image, almost too warm for me. I respect the idea, yet the texture made me feel uneasy after a while. The opening and the drydown almost felt like two different opinions from the same person.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gardenia-petale-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gardenia-petale-eau-de-parfum
+perfume_name: gardenia petale eau de parfum
+review_index: 3
+review_text: gardenia petale eau de parfum made me think about the person I would become if I wore it outside. The impression of powdery iris gives it presence, while soft cosmetic powder keeps the mood from feeling flat. I imagine it with a dark coat, clean shoes, and the confidence to enter a room without speaking first. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-garnet-perfume-oil-01
+source_type: synthetic
+perfume_id: garnet-perfume-oil
+perfume_name: garnet perfume oil
+review_index: 1
+review_text: I expected garnet perfume oil to be mostly about soft floral petals, but the drydown changed my mind. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-garnet-perfume-oil-02
+source_type: synthetic
+perfume_id: garnet-perfume-oil
+perfume_name: garnet perfume oil
+review_index: 2
+review_text: I wanted to understand garnet perfume oil, but clean laundry musk pushed harder than I expected. I respect the idea, yet the texture made me feel uneasy after a while. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-garnet-perfume-oil-03
+source_type: synthetic
+perfume_id: garnet-perfume-oil
+perfume_name: garnet perfume oil
+review_index: 3
+review_text: garnet perfume oil made me think about the person I would become if I wore it outside. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-blanche-eau-de-parfum-01
+source_type: synthetic
+perfume_id: geisha-blanche-eau-de-parfum
+perfume_name: geisha blanche eau de parfum
+review_index: 1
+review_text: geisha blanche eau de parfum immediately gave me a picture rather than a note list: clean skin musk, soft tea steam, and crushed green stems. The color in my head was soft beige, placed around a quiet table, with grass being cut somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-blanche-eau-de-parfum-02
+source_type: synthetic
+perfume_id: geisha-blanche-eau-de-parfum
+perfume_name: geisha blanche eau de parfum
+review_index: 2
+review_text: I tested geisha blanche eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft tea steam and clean laundry musk made it feel like transparent warmth against the skin. I felt calmer and safer wearing it, as if the room around me had softer corners. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-blanche-eau-de-parfum-03
+source_type: synthetic
+perfume_id: geisha-blanche-eau-de-parfum
+perfume_name: geisha blanche eau de parfum
+review_index: 3
+review_text: I expected geisha blanche eau de parfum to be mostly about clean skin musk, but the drydown changed my mind. After a while, i liked some moments more than others, which made the wearing feel alive. After the first sharp moment, warm amber resin came forward and the whole scent turned more tender. The opening made me hesitate, but the base gave it a second chance. The texture matters here as much as the smell itself.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-green-roll-on-perfume-oil-01
+source_type: synthetic
+perfume_id: geisha-green-roll-on-perfume-oil
+perfume_name: geisha green roll-on perfume oil
+review_index: 1
+review_text: geisha green roll-on perfume oil made me think about the person I would become if I wore it outside. The impression of bright lemon peel gives it presence, while sweet cinnamon warmth keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-green-roll-on-perfume-oil-02
+source_type: synthetic
+perfume_id: geisha-green-roll-on-perfume-oil
+perfume_name: geisha green roll-on perfume oil
+review_index: 2
+review_text: geisha green roll-on perfume oil immediately gave me a picture rather than a note list: soft floral petals, sweet cinnamon warmth, and crushed green stems. I did not feel simple happiness, more like a small private memory opening and closing. It has a clear personality.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-green-roll-on-perfume-oil-03
+source_type: synthetic
+perfume_id: geisha-green-roll-on-perfume-oil
+perfume_name: geisha green roll-on perfume oil
+review_index: 3
+review_text: I tested geisha green roll-on perfume oil on a normal day, the kind where I wanted my perfume to change my mood a little. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. Very specific mood.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-noire-eau-de-parfum-01
+source_type: synthetic
+perfume_id: geisha-noire-eau-de-parfum
+perfume_name: geisha noire eau de parfum
+review_index: 1
+review_text: geisha noire eau de parfum immediately gave me a picture rather than a note list: warm amber resin, dry incense smoke, and faint smoke. The color in my head was orange lamp light, placed around a stone chapel, with embers settling somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-noire-eau-de-parfum-02
+source_type: synthetic
+perfume_id: geisha-noire-eau-de-parfum
+perfume_name: geisha noire eau de parfum
+review_index: 2
+review_text: I tested geisha noire eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The faint smoke and cool cardamom made it feel like dry haze against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-noire-eau-de-parfum-03
+source_type: synthetic
+perfume_id: geisha-noire-eau-de-parfum
+perfume_name: geisha noire eau de parfum
+review_index: 3
+review_text: I expected geisha noire eau de parfum to be mostly about cool cardamom, but the drydown changed my mind. After the first sharp moment, faint smoke came forward and the whole scent turned darker. The opening made me hesitate, but the base gave it a second chance. I would not call it easy, but I would call it memorable.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-noire-roll-on-perfume-oil-01
+source_type: synthetic
+perfume_id: geisha-noire-roll-on-perfume-oil
+perfume_name: geisha noire roll-on perfume oil
+review_index: 1
+review_text: geisha noire roll-on perfume oil made me think about the person I would become if I wore it outside. The impression of warm spice gives it presence, while clean skin musk keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-noire-roll-on-perfume-oil-02
+source_type: synthetic
+perfume_id: geisha-noire-roll-on-perfume-oil
+perfume_name: geisha noire roll-on perfume oil
+review_index: 2
+review_text: geisha noire roll-on perfume oil immediately gave me a picture rather than a note list: jammy rose petals, clean skin musk, and clean laundry musk. In the air around me, i liked some moments more than others, which made the wearing feel alive. The color in my head was deep pink, placed around fresh sheets, with sheets snapping in air somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-noire-roll-on-perfume-oil-03
+source_type: synthetic
+perfume_id: geisha-noire-roll-on-perfume-oil
+perfume_name: geisha noire roll-on perfume oil
+review_index: 3
+review_text: I tested geisha noire roll-on perfume oil on a normal day, the kind where I wanted my perfume to change my mood a little. The soft floral petals and clean laundry musk made it feel like petal softness against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-rouge-eau-de-parfum-01
+source_type: synthetic
+perfume_id: geisha-rouge-eau-de-parfum
+perfume_name: geisha rouge - eau de parfum
+review_index: 1
+review_text: I expected geisha rouge - eau de parfum to be mostly about clean laundry musk, but the drydown changed my mind. For me, the texture matters here as much as the smell itself. After the first sharp moment, warm jasmine came forward and the whole scent turned cleaner. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I can imagine someone loving this for exactly the reason another person would avoid it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-rouge-eau-de-parfum-02
+source_type: synthetic
+perfume_id: geisha-rouge-eau-de-parfum
+perfume_name: geisha rouge - eau de parfum
+review_index: 2
+review_text: I wanted to understand geisha rouge - eau de parfum, but warm amber resin pushed harder than I expected. The mix of warm jasmine and faint smoke created a strong image, almost too heavy for me. It is interesting, but I felt tense wearing it and would not reach for it when I need comfort. The image in my head was stronger than the actual note list.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-rouge-eau-de-parfum-03
+source_type: synthetic
+perfume_id: geisha-rouge-eau-de-parfum
+perfume_name: geisha rouge - eau de parfum
+review_index: 3
+review_text: geisha rouge - eau de parfum made me think about the person I would become if I wore it outside. I would wear it when I want to feel composed, even if I am not fully sure of myself. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-vanilla-hinoki-eau-de-parfum-01
+source_type: synthetic
+perfume_id: geisha-vanilla-hinoki-eau-de-parfum
+perfume_name: geisha vanilla hinoki- eau de parfum
+review_index: 1
+review_text: geisha vanilla hinoki- eau de parfum made me think about the person I would become if I wore it outside. The impression of faint smoke gives it presence, while saffron warmth keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. I get the idea, but I would need the right mood for it.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-vanilla-hinoki-eau-de-parfum-02
+source_type: synthetic
+perfume_id: geisha-vanilla-hinoki-eau-de-parfum
+perfume_name: geisha vanilla hinoki- eau de parfum
+review_index: 2
+review_text: geisha vanilla hinoki- eau de parfum immediately gave me a picture rather than a note list: faint smoke, soft tea steam, and crushed green stems. The color in my head was soft grey, placed around a quiet table, with grass being cut somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. It made more sense after an hour, when the sharper edges had settled.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-vanilla-hinoki-eau-de-parfum-03
+source_type: synthetic
+perfume_id: geisha-vanilla-hinoki-eau-de-parfum
+perfume_name: geisha vanilla hinoki- eau de parfum
+review_index: 3
+review_text: I tested geisha vanilla hinoki- eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. The soft tea steam and crushed green stems made it feel like transparent warmth against the skin. It made me feel comforted in a quiet way, not like a dessert, more like clean clothes after a long shower. On skin it became more personal than it seemed on paper.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-vanilla-hinoki-roll-on-perfume-oil-01
+source_type: synthetic
+perfume_id: geisha-vanilla-hinoki-roll-on-perfume-oil
+perfume_name: geisha vanilla hinoki roll-on perfume oil
+review_index: 1
+review_text: I wanted to understand geisha vanilla hinoki roll-on perfume oil, but sweet cinnamon warmth pushed harder than I expected. The mix of warm spice and soft vanilla created a strong image, almost too warm for me. This is not automatically bad, but on my skin it became tiring and a little hard to escape. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-vanilla-hinoki-roll-on-perfume-oil-02
+source_type: synthetic
+perfume_id: geisha-vanilla-hinoki-roll-on-perfume-oil
+perfume_name: geisha vanilla hinoki roll-on perfume oil
+review_index: 2
+review_text: geisha vanilla hinoki roll-on perfume oil made me think about the person I would become if I wore it outside. The impression of sweet cinnamon warmth gives it presence, while warm spice keeps the mood from feeling flat. I would wear it when I want to feel composed, even if I am not fully sure of myself. Pretty memorable, not necessarily easy.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geisha-vanilla-hinoki-roll-on-perfume-oil-03
+source_type: synthetic
+perfume_id: geisha-vanilla-hinoki-roll-on-perfume-oil
+perfume_name: geisha vanilla hinoki roll-on perfume oil
+review_index: 3
+review_text: geisha vanilla hinoki roll-on perfume oil immediately gave me a picture rather than a note list: sweet cinnamon warmth, warm spice, and soft vanilla. The color in my head was rust orange, placed around a spice drawer, with a spoon through custard somewhere in the background. It felt nostalgic without being sweet about it, like remembering a place more than wanting to return there. There is a little tension between comfort and strangeness.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gendarme-eau-de-cologne-01
+source_type: synthetic
+perfume_id: gendarme-eau-de-cologne
+perfume_name: gendarme - eau de cologne
+review_index: 1
+review_text: I wanted to understand gendarme - eau de cologne, but soft creamy sweetness pushed harder than I expected. For me, the image in my head was stronger than the actual note list. The mix of crushed green stems and soft floral petals created a strong image, almost too dry for me. I respect the idea, yet the texture made me feel uneasy after a while. I liked some moments more than others, which made the wearing feel alive.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gendarme-eau-de-cologne-02
+source_type: synthetic
+perfume_id: gendarme-eau-de-cologne
+perfume_name: gendarme - eau de cologne
+review_index: 2
+review_text: gendarme - eau de cologne made me think about the person I would become if I wore it outside. The impression of soft floral petals gives it presence, while clean laundry musk keeps the mood from feeling flat. It made me feel more dressed than casual, like a scent for being seen rather than just feeling cozy. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gendarme-eau-de-cologne-03
+source_type: synthetic
+perfume_id: gendarme-eau-de-cologne
+perfume_name: gendarme - eau de cologne
+review_index: 3
+review_text: gendarme - eau de cologne immediately gave me a picture rather than a note list: soft creamy sweetness, cool lavender, and jammy rose petals. For me, it made more sense after an hour, when the sharper edges had settled. The color in my head was warm cream, placed around a clean bedroom, with a vase being moved somewhere in the background. That image made me feel unexpectedly tender toward it, even though part of the scent stayed distant. I kept checking my wrist, not because it was loud, but because the mood kept shifting.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geza-schoen-eau-de-toilette-01
+source_type: synthetic
+perfume_id: geza-schoen-eau-de-toilette
+perfume_name: geza schoen eau de toilette
+review_index: 1
+review_text: geza schoen eau de toilette immediately gave me a picture rather than a note list: powdery iris, sweet orange peel, and warm jasmine. After a while, i liked some moments more than others, which made the wearing feel alive. The color in my head was mauve grey, placed around a kitchen in sunlight, with night insects outside somewhere in the background. I did not feel simple happiness, more like a small private memory opening and closing. It feels tied to a specific weather, not to every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geza-schoen-eau-de-toilette-02
+source_type: synthetic
+perfume_id: geza-schoen-eau-de-toilette
+perfume_name: geza schoen eau de toilette
+review_index: 2
+review_text: I tested geza schoen eau de toilette on a normal day, the kind where I wanted my perfume to change my mood a little. The powdery iris and soft floral petals made it feel like dry powder against the skin. It made me feel relaxed enough to slow down, make tea, and stop checking my phone for a while. I can see the appeal, just not on every day.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-geza-schoen-eau-de-toilette-03
+source_type: synthetic
+perfume_id: geza-schoen-eau-de-toilette
+perfume_name: geza schoen eau de toilette
+review_index: 3
+review_text: I expected geza schoen eau de toilette to be mostly about sweet orange peel, but the drydown changed my mind. After the first sharp moment, creamy tuberose came forward and the whole scent turned darker. That shift caught me off guard in a good way; I kept smelling my wrist because I did not expect to like the softer part. I remember the color of it more than any single note.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gheorghe-eau-de-parfum-01
+source_type: synthetic
+perfume_id: gheorghe-eau-de-parfum
+perfume_name: gheorghe eau de parfum
+review_index: 1
+review_text: I tested gheorghe eau de parfum on a normal day, the kind where I wanted my perfume to change my mood a little. I felt calmer and safer wearing it, as if the room around me had softer corners. Not an everyday reach.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gheorghe-eau-de-parfum-02
+source_type: synthetic
+perfume_id: gheorghe-eau-de-parfum
+perfume_name: gheorghe eau de parfum
+review_index: 2
+review_text: I expected gheorghe eau de parfum to be mostly about dry woods, but the drydown changed my mind. After the first sharp moment, clean skin musk came forward and the whole scent turned warmer. I was surprised by how emotional the change felt, almost like the perfume had relaxed before I did. The whole thing feels more like a scene than a product description.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-gheorghe-eau-de-parfum-03
+source_type: synthetic
+perfume_id: gheorghe-eau-de-parfum
+perfume_name: gheorghe eau de parfum
+review_index: 3
+review_text: I wanted to understand gheorghe eau de parfum, but clean skin musk pushed harder than I expected. The mix of clean laundry musk and dry woods created a strong image, almost too heavy for me. I respect the idea, yet the texture made me feel uneasy after a while. It leaves a little atmosphere behind after the scent gets quiet.
+END_REVIEW
+
+BEGIN_REVIEW
+synthetic_review_id: emotion-rich-v2-ginger-ciao-eau-de-parfum-01
+source_type: synthetic
+perfume_id: ginger-ciao-eau-de-parfum
+perfume_name: ginger ciao eau de parfum
+review_index: 1
+review_text: ginger ciao eau de parfum immediately gave me a picture rather than a note list: warm spice, sweet cinnamon warmth, and soft tea steam. I did not feel simple happiness, more like a small private memory opening and closing. Not an everyday reach.
+END_REVIEW

@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-vetiverus-eau-de-parfum-01,synthetic,vetiverus-eau-de-parfum,vetiverus eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-vetiverus-eau-de-parfum-02,synthetic,vetiverus-eau-de-parfum,vetiverus eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-vetiverus-eau-de-parfum-03,synthetic,vetiverus-eau-de-parfum,vetiverus eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vettiveru-2-01,synthetic,vettiveru-2,vettiveru 2,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vettiveru-2-02,synthetic,vettiveru-2,vettiveru 2,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-vettiveru-2-03,synthetic,vettiveru-2,vettiveru 2,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-vetyver-eau-de-toilette-01,synthetic,vetyver-eau-de-toilette,vetyver eau de toilette,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-vetyver-eau-de-toilette-02,synthetic,vetyver-eau-de-toilette,vetyver eau de toilette,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vetyver-eau-de-toilette-03,synthetic,vetyver-eau-de-toilette,vetyver eau de toilette,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vetyverio-eau-de-toilette-01,synthetic,vetyverio-eau-de-toilette,vetyverio eau de toilette,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vetyverio-eau-de-toilette-02,synthetic,vetyverio-eau-de-toilette,vetyverio eau de toilette,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-vetyverio-eau-de-toilette-03,synthetic,vetyverio-eau-de-toilette,vetyverio eau de toilette,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-victrix-eau-de-parfum-01,synthetic,victrix-eau-de-parfum,victrix eau de parfum,1,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-victrix-eau-de-parfum-02,synthetic,victrix-eau-de-parfum,victrix eau de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-victrix-eau-de-parfum-03,synthetic,victrix-eau-de-parfum,victrix eau de parfum,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-violette-in-love-eau-de-toilette-01,synthetic,violette-in-love-eau-de-toilette,violette in love eau de toilette,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-violette-in-love-eau-de-toilette-02,synthetic,violette-in-love-eau-de-toilette,violette in love eau de toilette,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-violette-in-love-eau-de-toilette-03,synthetic,violette-in-love-eau-de-toilette,violette in love eau de toilette,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-violettes-du-czar-eau-de-parfum-01,synthetic,violettes-du-czar-eau-de-parfum,violettes du czar eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-violettes-du-czar-eau-de-parfum-02,synthetic,violettes-du-czar-eau-de-parfum,violettes du czar eau de parfum,2,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-violettes-du-czar-eau-de-parfum-03,synthetic,violettes-du-czar-eau-de-parfum,violettes du czar eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-virgin-island-water-eau-de-parfum-01,synthetic,virgin-island-water-eau-de-parfum,virgin island water eau de parfum ...,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-virgin-island-water-eau-de-parfum-02,synthetic,virgin-island-water-eau-de-parfum,virgin island water eau de parfum ...,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-virgin-island-water-eau-de-parfum-03,synthetic,virgin-island-water-eau-de-parfum,virgin island water eau de parfum ...,3,0,0,0,0,0,0,1,1,3,6,3
+emotion-rich-v2-viride-parfum-01,synthetic,viride-parfum,viride parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-viride-parfum-02,synthetic,viride-parfum,viride parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-viride-parfum-03,synthetic,viride-parfum,viride parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vivacious-eau-de-parfum-01,synthetic,vivacious-eau-de-parfum,vivacious eau de parfum,1,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-vivacious-eau-de-parfum-02,synthetic,vivacious-eau-de-parfum,vivacious eau de parfum,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-vivacious-eau-de-parfum-03,synthetic,vivacious-eau-de-parfum,vivacious eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vixere-eau-de-parfum-01,synthetic,vixere-eau-de-parfum,vixere eau de parfum,1,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-vixere-eau-de-parfum-02,synthetic,vixere-eau-de-parfum,vixere eau de parfum,2,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-vixere-eau-de-parfum-03,synthetic,vixere-eau-de-parfum,vixere eau de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-vodka-on-the-rocks-eau-de-parfum-01,synthetic,vodka-on-the-rocks-eau-de-parfum,vodka on the rocks eau de parfum,1,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-vodka-on-the-rocks-eau-de-parfum-02,synthetic,vodka-on-the-rocks-eau-de-parfum,vodka on the rocks eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-vodka-on-the-rocks-eau-de-parfum-03,synthetic,vodka-on-the-rocks-eau-de-parfum,vodka on the rocks eau de parfum,3,0,0,0,0,0,0,1,0,7,6,9
+emotion-rich-v2-voleur-de-roses-eau-de-toilette-01,synthetic,voleur-de-roses-eau-de-toilette,voleur de roses eau de toilette,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-voleur-de-roses-eau-de-toilette-02,synthetic,voleur-de-roses-eau-de-toilette,voleur de roses eau de toilette,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-voleur-de-roses-eau-de-toilette-03,synthetic,voleur-de-roses-eau-de-toilette,voleur de roses eau de toilette,3,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-war-and-peace-ii-extrait-de-parfum-01,synthetic,war-and-peace-ii-extrait-de-parfum,war and peace ii extrait de parfum,1,0,0,0,0,1,0,1,0,6,4,7
+emotion-rich-v2-war-and-peace-ii-extrait-de-parfum-02,synthetic,war-and-peace-ii-extrait-de-parfum,war and peace ii extrait de parfum,2,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-war-and-peace-ii-extrait-de-parfum-03,synthetic,war-and-peace-ii-extrait-de-parfum,war and peace ii extrait de parfum,3,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-wazamba-eau-de-parfum-01,synthetic,wazamba-eau-de-parfum,wazamba eau de parfum,1,1,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-wazamba-eau-de-parfum-02,synthetic,wazamba-eau-de-parfum,wazamba eau de parfum,2,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-wazamba-eau-de-parfum-03,synthetic,wazamba-eau-de-parfum,wazamba eau de parfum,3,0,0,0,0,0,0,1,1,3,6,3
+emotion-rich-v2-what-about-pop-eau-de-parfum-01,synthetic,what-about-pop-eau-de-parfum,what about pop eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-what-about-pop-eau-de-parfum-02,synthetic,what-about-pop-eau-de-parfum,what about pop eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-what-about-pop-eau-de-parfum-03,synthetic,what-about-pop-eau-de-parfum,what about pop eau de parfum,3,0,1,0,0,0,0,0,0,5,3,5
+emotion-rich-v2-what-i-did-on-my-holidays-eau-de-parfum-01,synthetic,what-i-did-on-my-holidays-eau-de-parfum,what i did on my holidays eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-what-i-did-on-my-holidays-eau-de-parfum-02,synthetic,what-i-did-on-my-holidays-eau-de-parfum,what i did on my holidays eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7

@@ -1,0 +1,44 @@
+{
+  "generated_at_utc": "2026-06-15T07:42:17.540160+00:00",
+  "output_tag": "gemini_browser_labels_emotion_rich_v2_3reviews_v1",
+  "last_ingested_batch": 48,
+  "completed_rows": 2352,
+  "completed_batches": 48,
+  "target_rows": 2352,
+  "remaining_rows": 0,
+  "emotion_positive_counts": {
+    "joy": 312,
+    "sadness": 159,
+    "anger": 0,
+    "fear": 221,
+    "trust": 834,
+    "surprise": 774,
+    "anticipation": 1834,
+    "disgust": 23
+  },
+  "vad_summary": {
+    "valence": {
+      "mean": 5.659438775510204,
+      "min": 3,
+      "max": 8
+    },
+    "arousal": {
+      "mean": 4.645833333333333,
+      "min": 2,
+      "max": 7
+    },
+    "dominance": {
+      "mean": 5.128826530612245,
+      "min": 3,
+      "max": 9
+    }
+  },
+  "outputs": {
+    "raw_batch": "labels/gemini_browser_review_level/raw_batches/gemini_browser_labels_emotion_rich_v2_3reviews_v1_batch_048.txt",
+    "batch_csv": "labels/gemini_browser_review_level/batch_csv/gemini_browser_labels_emotion_rich_v2_3reviews_v1_batch_048.csv",
+    "combined_csv": "labels/gemini_browser_review_level/gemini_browser_labels_emotion_rich_v2_3reviews_v1.csv",
+    "pipeline_csv": "labels/gemini_browser_review_level/gemini_browser_labels_emotion_rich_v2_3reviews_v1_pipeline.csv",
+    "report": "labels/gemini_browser_review_level/gemini_browser_labels_emotion_rich_v2_3reviews_v1_report.json"
+  },
+  "note": "Browser Gemini pseudo-labels for emotion-rich synthetic v2, 3 reviews per perfume."
+}

@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-hedonist-rose-absolute-eau-de-parfum-03,synthetic,hedonist-rose-absolute-eau-de-parfum,hedonist rose absolute eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-hedonist-rose-eau-de-parfum-01,synthetic,hedonist-rose-eau-de-parfum,hedonist rose eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-hedonist-rose-eau-de-parfum-02,synthetic,hedonist-rose-eau-de-parfum,hedonist rose eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-hedonist-rose-eau-de-parfum-03,synthetic,hedonist-rose-eau-de-parfum,hedonist rose eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-heliotrope-eau-de-parfum-01,synthetic,heliotrope-eau-de-parfum,heliotrope eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-heliotrope-eau-de-parfum-02,synthetic,heliotrope-eau-de-parfum,heliotrope eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-heliotrope-eau-de-parfum-03,synthetic,heliotrope-eau-de-parfum,heliotrope eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-hermann-eau-de-parfum-01,synthetic,hermann-eau-de-parfum,hermann eau de parfum,1,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-hermann-eau-de-parfum-02,synthetic,hermann-eau-de-parfum,hermann eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-hermann-eau-de-parfum-03,synthetic,hermann-eau-de-parfum,hermann eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-himalaya-eau-de-parfum-01,synthetic,himalaya-eau-de-parfum,himalaya eau de parfum ...,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-himalaya-eau-de-parfum-02,synthetic,himalaya-eau-de-parfum,himalaya eau de parfum ...,2,0,0,0,1,0,0,0,0,6,4,5
+emotion-rich-v2-himalaya-eau-de-parfum-03,synthetic,himalaya-eau-de-parfum,himalaya eau de parfum ...,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-homme-eau-de-parfum-01,synthetic,homme-eau-de-parfum,homme eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-homme-eau-de-parfum-02,synthetic,homme-eau-de-parfum,homme eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-homme-eau-de-parfum-03,synthetic,homme-eau-de-parfum,homme eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-honey-aoud-eau-de-parfum-01,synthetic,honey-aoud-eau-de-parfum,honey aoud eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-honey-aoud-eau-de-parfum-02,synthetic,honey-aoud-eau-de-parfum,honey aoud eau de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-honey-aoud-eau-de-parfum-03,synthetic,honey-aoud-eau-de-parfum,honey aoud eau de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-honeysuckle-caprifoglio-cologne-eau-de-cologne-01,synthetic,honeysuckle-caprifoglio-cologne-eau-de-cologne,honeysuckle / caprifoglio cologne eau de cologne,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-honeysuckle-caprifoglio-cologne-eau-de-cologne-02,synthetic,honeysuckle-caprifoglio-cologne-eau-de-cologne,honeysuckle / caprifoglio cologne eau de cologne,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-honeysuckle-caprifoglio-cologne-eau-de-cologne-03,synthetic,honeysuckle-caprifoglio-cologne-eau-de-cologne,honeysuckle / caprifoglio cologne eau de cologne,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-horizon-eau-de-parfum-01,synthetic,horizon-eau-de-parfum,horizon eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-horizon-eau-de-parfum-02,synthetic,horizon-eau-de-parfum,horizon eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-horizon-eau-de-parfum-03,synthetic,horizon-eau-de-parfum,horizon eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-hundred-silent-ways-extrait-de-parfum-01,synthetic,hundred-silent-ways-extrait-de-parfum,hundred silent ways extrait de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-hundred-silent-ways-extrait-de-parfum-02,synthetic,hundred-silent-ways-extrait-de-parfum,hundred silent ways extrait de parfum,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-hundred-silent-ways-extrait-de-parfum-03,synthetic,hundred-silent-ways-extrait-de-parfum,hundred silent ways extrait de parfum,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-ichnusa-eau-de-parfum-01,synthetic,ichnusa-eau-de-parfum,ichnusa eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-ichnusa-eau-de-parfum-02,synthetic,ichnusa-eau-de-parfum,ichnusa eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-ichnusa-eau-de-parfum-03,synthetic,ichnusa-eau-de-parfum,ichnusa eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-if-by-rk-eau-de-parfum-01,synthetic,if-by-rk-eau-de-parfum,if by rk eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-if-by-rk-eau-de-parfum-02,synthetic,if-by-rk-eau-de-parfum,if by rk eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-if-by-rk-eau-de-parfum-03,synthetic,if-by-rk-eau-de-parfum,if by rk eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-ile-pourpre-eau-de-parfum-01,synthetic,ile-pourpre-eau-de-parfum,ile pourpre eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-ile-pourpre-eau-de-parfum-02,synthetic,ile-pourpre-eau-de-parfum,ile pourpre eau de parfum,2,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-ile-pourpre-eau-de-parfum-03,synthetic,ile-pourpre-eau-de-parfum,ile pourpre eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-incense-extreme-eau-de-parfum-01,synthetic,incense-extreme-eau-de-parfum,incense extreme eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-incense-extreme-eau-de-parfum-02,synthetic,incense-extreme-eau-de-parfum,incense extreme eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-incense-extreme-eau-de-parfum-03,synthetic,incense-extreme-eau-de-parfum,incense extreme eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-incense-flash-eau-de-parfum-01,synthetic,incense-flash-eau-de-parfum,incense flash eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-incense-flash-eau-de-parfum-02,synthetic,incense-flash-eau-de-parfum,incense flash eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-incense-flash-eau-de-parfum-03,synthetic,incense-flash-eau-de-parfum,incense flash eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-incense-oud-eau-de-parfum-01,synthetic,incense-oud-eau-de-parfum,incense oud eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-incense-oud-eau-de-parfum-02,synthetic,incense-oud-eau-de-parfum,incense oud eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-incense-oud-eau-de-parfum-03,synthetic,incense-oud-eau-de-parfum,incense oud eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-incense-rose-eau-de-parfum-01,synthetic,incense-rose-eau-de-parfum,incense rose eau de parfum,1,0,0,0,1,0,0,0,0,6,4,5
+emotion-rich-v2-incense-rose-eau-de-parfum-02,synthetic,incense-rose-eau-de-parfum,incense rose eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-incense-rose-eau-de-parfum-03,synthetic,incense-rose-eau-de-parfum,incense rose eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-indian-wood-eau-de-parfum-01,synthetic,indian-wood-eau-de-parfum,indian wood eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5

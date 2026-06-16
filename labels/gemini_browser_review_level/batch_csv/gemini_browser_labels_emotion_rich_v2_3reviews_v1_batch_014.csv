@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-egypt-eau-de-toilette-03,synthetic,egypt-eau-de-toilette,egypt eau de toilette,3,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-elysium-parfum-cologne-01,synthetic,elysium-parfum-cologne,elysium parfum cologne,1,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-elysium-parfum-cologne-02,synthetic,elysium-parfum-cologne,elysium parfum cologne,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-elysium-parfum-cologne-03,synthetic,elysium-parfum-cologne,elysium parfum cologne,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-empathy-eau-de-parfum-01,synthetic,empathy-eau-de-parfum,empathy eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-empathy-eau-de-parfum-02,synthetic,empathy-eau-de-parfum,empathy eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-empathy-eau-de-parfum-03,synthetic,empathy-eau-de-parfum,empathy eau de parfum,3,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-empressa-eau-de-toilette-01,synthetic,empressa-eau-de-toilette,empressa eau de toilette,1,0,0,0,0,1,0,1,0,7,5,5
+emotion-rich-v2-empressa-eau-de-toilette-02,synthetic,empressa-eau-de-toilette,empressa eau de toilette,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-empressa-eau-de-toilette-03,synthetic,empressa-eau-de-toilette,empressa eau de toilette,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-endymion-cologne-01,synthetic,endymion-cologne,endymion cologne,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-endymion-cologne-02,synthetic,endymion-cologne,endymion cologne,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-endymion-cologne-03,synthetic,endymion-cologne,endymion cologne,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-ennui-noir-parfum-extrait-01,synthetic,ennui-noir-parfum-extrait,ennui noir parfum extrait,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-ennui-noir-parfum-extrait-02,synthetic,ennui-noir-parfum-extrait,ennui noir parfum extrait,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-ennui-noir-parfum-extrait-03,synthetic,ennui-noir-parfum-extrait,ennui noir parfum extrait,3,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-epic-woman-eau-de-parfum-01,synthetic,epic-woman-eau-de-parfum,epic woman eau de parfum,1,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-epic-woman-eau-de-parfum-02,synthetic,epic-woman-eau-de-parfum,epic woman eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-epic-woman-eau-de-parfum-03,synthetic,epic-woman-eau-de-parfum,epic woman eau de parfum,3,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-epidor-eau-de-parfum-01,synthetic,epidor-eau-de-parfum,epidor eau de parfum,1,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-epidor-eau-de-parfum-02,synthetic,epidor-eau-de-parfum,epidor eau de parfum,2,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-epidor-eau-de-parfum-03,synthetic,epidor-eau-de-parfum,epidor eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-equistrius-eau-de-parfum-01,synthetic,equistrius-eau-de-parfum,equistrius eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-equistrius-eau-de-parfum-02,synthetic,equistrius-eau-de-parfum,equistrius eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-equistrius-eau-de-parfum-03,synthetic,equistrius-eau-de-parfum,equistrius eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-erdenstern-eau-de-parfum-01,synthetic,erdenstern-eau-de-parfum,erdenstern eau de parfum,1,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-erdenstern-eau-de-parfum-02,synthetic,erdenstern-eau-de-parfum,erdenstern eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-erdenstern-eau-de-parfum-03,synthetic,erdenstern-eau-de-parfum,erdenstern eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-essential-13-sample-pack-feminine-01,synthetic,essential-13-sample-pack-feminine,essential 13 sample pack - feminine,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-essential-13-sample-pack-feminine-02,synthetic,essential-13-sample-pack-feminine,essential 13 sample pack - feminine,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-essential-13-sample-pack-feminine-03,synthetic,essential-13-sample-pack-feminine,essential 13 sample pack - feminine,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-eternal-summer-eau-de-parfum-01,synthetic,eternal-summer-eau-de-parfum,eternal summer eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-eternal-summer-eau-de-parfum-02,synthetic,eternal-summer-eau-de-parfum,eternal summer eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-eternal-summer-eau-de-parfum-03,synthetic,eternal-summer-eau-de-parfum,eternal summer eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-every-storm-a-serenade-eau-de-parfum-01,synthetic,every-storm-a-serenade-eau-de-parfum,every storm a serenade eau de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-every-storm-a-serenade-eau-de-parfum-02,synthetic,every-storm-a-serenade-eau-de-parfum,every storm a serenade eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-every-storm-a-serenade-eau-de-parfum-03,synthetic,every-storm-a-serenade-eau-de-parfum,every storm a serenade eau de parfum,3,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-fall-into-stars-eau-de-parfum-01,synthetic,fall-into-stars-eau-de-parfum,fall into stars eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-fall-into-stars-eau-de-parfum-02,synthetic,fall-into-stars-eau-de-parfum,fall into stars eau de parfum,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-fall-into-stars-eau-de-parfum-03,synthetic,fall-into-stars-eau-de-parfum,fall into stars eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-falling-into-the-sea-eau-de-parfum-01,synthetic,falling-into-the-sea-eau-de-parfum,falling into the sea eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-falling-into-the-sea-eau-de-parfum-02,synthetic,falling-into-the-sea-eau-de-parfum,falling into the sea eau de parfum,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-falling-into-the-sea-eau-de-parfum-03,synthetic,falling-into-the-sea-eau-de-parfum,falling into the sea eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-fat-electrician-eau-de-parfum-01,synthetic,fat-electrician-eau-de-parfum,fat electrician eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-fat-electrician-eau-de-parfum-02,synthetic,fat-electrician-eau-de-parfum,fat electrician eau de parfum,2,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-fat-electrician-eau-de-parfum-03,synthetic,fat-electrician-eau-de-parfum,fat electrician eau de parfum,3,1,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-felanilla-eau-de-parfum-01,synthetic,felanilla-eau-de-parfum,felanilla eau de parfum,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-felanilla-eau-de-parfum-02,synthetic,felanilla-eau-de-parfum,felanilla eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-felanilla-eau-de-parfum-03,synthetic,felanilla-eau-de-parfum,felanilla eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-female-christ-eau-de-parfum-01,synthetic,female-christ-eau-de-parfum,female christ eau de parfum,1,0,0,0,1,0,1,1,0,3,6,3

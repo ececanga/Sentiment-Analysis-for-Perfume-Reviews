@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-musk-s-eau-de-parfum-02,synthetic,musk-s-eau-de-parfum,musk s eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-musk-s-eau-de-parfum-03,synthetic,musk-s-eau-de-parfum,musk s eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-mutheer-attar-perfume-oil-01,synthetic,mutheer-attar-perfume-oil,mutheer attar / perfume oil,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-mutheer-attar-perfume-oil-02,synthetic,mutheer-attar-perfume-oil,mutheer attar / perfume oil,2,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-mutheer-attar-perfume-oil-03,synthetic,mutheer-attar-perfume-oil,mutheer attar / perfume oil,3,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-mxxx-extrait-de-parfum-01,synthetic,mxxx-extrait-de-parfum,mxxx. extrait de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-mxxx-extrait-de-parfum-02,synthetic,mxxx-extrait-de-parfum,mxxx. extrait de parfum,2,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-mxxx-extrait-de-parfum-03,synthetic,mxxx-extrait-de-parfum,mxxx. extrait de parfum,3,1,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-myrrh-casati-eau-de-parfum-01,synthetic,myrrh-casati-eau-de-parfum,myrrh casati eau de parfum,1,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-myrrh-casati-eau-de-parfum-02,synthetic,myrrh-casati-eau-de-parfum,myrrh casati eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-myrrh-casati-eau-de-parfum-03,synthetic,myrrh-casati-eau-de-parfum,myrrh casati eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-mysterious-oud-attar-perfume-oil-01,synthetic,mysterious-oud-attar-perfume-oil,mysterious oud attar perfume oil,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-mysterious-oud-attar-perfume-oil-02,synthetic,mysterious-oud-attar-perfume-oil,mysterious oud attar perfume oil,2,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-mysterious-oud-attar-perfume-oil-03,synthetic,mysterious-oud-attar-perfume-oil,mysterious oud attar perfume oil,3,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-naga-layyen-organic-oud-pure-oud-01,synthetic,naga-layyen-organic-oud-pure-oud,naga layyen organic oud pure oud,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-naga-layyen-organic-oud-pure-oud-02,synthetic,naga-layyen-organic-oud-pure-oud,naga layyen organic oud pure oud,2,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-naga-layyen-organic-oud-pure-oud-03,synthetic,naga-layyen-organic-oud-pure-oud,naga layyen organic oud pure oud,3,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-namasoma-organic-oud-pure-oud-01,synthetic,namasoma-organic-oud-pure-oud,namasoma organic oud pure oud,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-namasoma-organic-oud-pure-oud-02,synthetic,namasoma-organic-oud-pure-oud,namasoma organic oud pure oud,2,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-namasoma-organic-oud-pure-oud-03,synthetic,namasoma-organic-oud-pure-oud,namasoma organic oud pure oud,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-narcotic-v-parfum-extrait-01,synthetic,narcotic-v-parfum-extrait,narcotic v parfum extrait,1,1,0,0,0,0,0,1,0,6,6,5
+emotion-rich-v2-narcotic-v-parfum-extrait-02,synthetic,narcotic-v-parfum-extrait,narcotic v parfum extrait,2,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-narcotic-v-parfum-extrait-03,synthetic,narcotic-v-parfum-extrait,narcotic v parfum extrait,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-natsumeku-eau-de-parfum-01,synthetic,natsumeku-eau-de-parfum,natsumeku eau de parfum,1,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-natsumeku-eau-de-parfum-02,synthetic,natsumeku-eau-de-parfum,natsumeku eau de parfum,2,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-natsumeku-eau-de-parfum-03,synthetic,natsumeku-eau-de-parfum,natsumeku eau de parfum,3,0,0,0,0,0,0,1,0,6,6,6
+emotion-rich-v2-neroli-36-eau-de-parfum-01,synthetic,neroli-36-eau-de-parfum,neroli 36 eau de parfum,1,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-neroli-36-eau-de-parfum-02,synthetic,neroli-36-eau-de-parfum,neroli 36 eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-neroli-36-eau-de-parfum-03,synthetic,neroli-36-eau-de-parfum,neroli 36 eau de parfum,3,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-neroli-eau-de-parfum-01,synthetic,neroli-eau-de-parfum,neroli eau de parfum,1,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-neroli-eau-de-parfum-02,synthetic,neroli-eau-de-parfum,neroli eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-neroli-eau-de-parfum-03,synthetic,neroli-eau-de-parfum,neroli eau de parfum,3,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-new-sibet-extrait-de-parfum-01,synthetic,new-sibet-extrait-de-parfum,new sibet extrait de parfum,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-new-sibet-extrait-de-parfum-02,synthetic,new-sibet-extrait-de-parfum,new sibet extrait de parfum,2,0,0,0,0,0,0,1,0,4,7,4
+emotion-rich-v2-new-sibet-extrait-de-parfum-03,synthetic,new-sibet-extrait-de-parfum,new sibet extrait de parfum,3,1,0,0,0,1,0,1,0,7,6,6
+emotion-rich-v2-new-york-5th-avenue-eau-de-parfum-01,synthetic,new-york-5th-avenue-eau-de-parfum,new york 5th avenue eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-new-york-5th-avenue-eau-de-parfum-02,synthetic,new-york-5th-avenue-eau-de-parfum,new york 5th avenue eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-new-york-5th-avenue-eau-de-parfum-03,synthetic,new-york-5th-avenue-eau-de-parfum,new york 5th avenue eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-new-york-eau-de-toilette-01,synthetic,new-york-eau-de-toilette,new york eau de toilette,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-new-york-eau-de-toilette-02,synthetic,new-york-eau-de-toilette,new york eau de toilette,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-new-york-eau-de-toilette-03,synthetic,new-york-eau-de-toilette,new york eau de toilette,3,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-new-york-intense-eau-de-parfum-01,synthetic,new-york-intense-eau-de-parfum,new york intense eau de parfum,1,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-new-york-intense-eau-de-parfum-02,synthetic,new-york-intense-eau-de-parfum,new york intense eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-new-york-intense-eau-de-parfum-03,synthetic,new-york-intense-eau-de-parfum,new york intense eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-night-flower-eau-de-parfum-01,synthetic,night-flower-eau-de-parfum,night flower eau de parfum,1,1,0,0,0,0,0,1,0,6,6,5
+emotion-rich-v2-night-flower-eau-de-parfum-02,synthetic,night-flower-eau-de-parfum,night flower eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-night-flower-eau-de-parfum-03,synthetic,night-flower-eau-de-parfum,night flower eau de parfum,3,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-nio-eau-de-parfum-01,synthetic,nio-eau-de-parfum,nio eau de parfum,1,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-nio-eau-de-parfum-02,synthetic,nio-eau-de-parfum,nio eau de parfum,2,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-nio-eau-de-parfum-03,synthetic,nio-eau-de-parfum,nio eau de parfum,3,1,0,0,0,0,0,1,0,6,6,6

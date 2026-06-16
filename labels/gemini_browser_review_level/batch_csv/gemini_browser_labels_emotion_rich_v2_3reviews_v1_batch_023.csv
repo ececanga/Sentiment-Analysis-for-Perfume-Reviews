@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-kobe-eau-de-parfum-03,synthetic,kobe-eau-de-parfum,kobe eau de parfum,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-koiame-eau-de-parfum-01,synthetic,koiame-eau-de-parfum,koiame eau de parfum,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-koiame-eau-de-parfum-02,synthetic,koiame-eau-de-parfum,koiame eau de parfum,2,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-koiame-eau-de-parfum-03,synthetic,koiame-eau-de-parfum,koiame eau de parfum,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-l-air-du-desert-marocain-eau-de-toilette-01,synthetic,l-air-du-desert-marocain-eau-de-toilette,l'air du desert marocain eau de toilette ...,1,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-l-air-du-desert-marocain-eau-de-toilette-02,synthetic,l-air-du-desert-marocain-eau-de-toilette,l'air du desert marocain eau de toilette ...,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-l-air-du-desert-marocain-eau-de-toilette-03,synthetic,l-air-du-desert-marocain-eau-de-toilette,l'air du desert marocain eau de toilette ...,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-l-attesa-eau-de-parfum-01,synthetic,l-attesa-eau-de-parfum,l'attesa eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-l-attesa-eau-de-parfum-02,synthetic,l-attesa-eau-de-parfum,l'attesa eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-attesa-eau-de-parfum-03,synthetic,l-attesa-eau-de-parfum,l'attesa eau de parfum,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-l-eau-d-ambre-eau-de-toilette-01,synthetic,l-eau-d-ambre-eau-de-toilette,l'eau d'ambre eau de toilette,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-l-eau-d-ambre-eau-de-toilette-02,synthetic,l-eau-d-ambre-eau-de-toilette,l'eau d'ambre eau de toilette,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-l-eau-d-ambre-eau-de-toilette-03,synthetic,l-eau-d-ambre-eau-de-toilette,l'eau d'ambre eau de toilette,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-eau-de-circe-eau-de-parfum-01,synthetic,l-eau-de-circe-eau-de-parfum,l'eau de circe eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-l-eau-de-circe-eau-de-parfum-02,synthetic,l-eau-de-circe-eau-de-parfum,l'eau de circe eau de parfum,2,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-l-eau-de-circe-eau-de-parfum-03,synthetic,l-eau-de-circe-eau-de-parfum,l'eau de circe eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-eau-de-l-artisan-eau-de-toilette-01,synthetic,l-eau-de-l-artisan-eau-de-toilette,l'eau de l'artisan eau de toilette,1,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-l-eau-de-l-artisan-eau-de-toilette-02,synthetic,l-eau-de-l-artisan-eau-de-toilette,l'eau de l'artisan eau de toilette,2,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-l-eau-de-l-artisan-eau-de-toilette-03,synthetic,l-eau-de-l-artisan-eau-de-toilette,l'eau de l'artisan eau de toilette,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-l-eau-eau-de-toilette-01,synthetic,l-eau-eau-de-toilette,l'eau eau de toilette,1,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-l-eau-eau-de-toilette-02,synthetic,l-eau-eau-de-toilette,l'eau eau de toilette,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-eau-eau-de-toilette-03,synthetic,l-eau-eau-de-toilette,l'eau eau de toilette,3,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-l-eau-mixte-eau-fraiche-01,synthetic,l-eau-mixte-eau-fraiche,l'eau mixte eau fraiche,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-eau-mixte-eau-fraiche-02,synthetic,l-eau-mixte-eau-fraiche,l'eau mixte eau fraiche,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-l-eau-mixte-eau-fraiche-03,synthetic,l-eau-mixte-eau-fraiche,l'eau mixte eau fraiche,3,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-l-eau-rare-matale-eau-de-toilette-01,synthetic,l-eau-rare-matale-eau-de-toilette,l'eau rare matale eau de toilette,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-l-eau-rare-matale-eau-de-toilette-02,synthetic,l-eau-rare-matale-eau-de-toilette,l'eau rare matale eau de toilette,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-l-eau-rare-matale-eau-de-toilette-03,synthetic,l-eau-rare-matale-eau-de-toilette,l'eau rare matale eau de toilette,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-ete-en-douce-eau-de-toilette-01,synthetic,l-ete-en-douce-eau-de-toilette,l'ete en douce eau de toilette,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-ete-en-douce-eau-de-toilette-02,synthetic,l-ete-en-douce-eau-de-toilette,l'ete en douce eau de toilette,2,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-l-ete-en-douce-eau-de-toilette-03,synthetic,l-ete-en-douce-eau-de-toilette,l'ete en douce eau de toilette,3,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-l-humaniste-eau-de-parfum-01,synthetic,l-humaniste-eau-de-parfum,l'humaniste eau de parfum,1,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-l-humaniste-eau-de-parfum-02,synthetic,l-humaniste-eau-de-parfum,l'humaniste eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-l-humaniste-eau-de-parfum-03,synthetic,l-humaniste-eau-de-parfum,l'humaniste eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-l-ombre-dans-l-eau-eau-de-parfum-01,synthetic,l-ombre-dans-l-eau-eau-de-parfum,l'ombre dans l'eau - eau de parfum,1,0,0,0,1,0,1,1,0,3,7,3
+emotion-rich-v2-l-ombre-dans-l-eau-eau-de-parfum-02,synthetic,l-ombre-dans-l-eau-eau-de-parfum,l'ombre dans l'eau - eau de parfum,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-l-ombre-dans-l-eau-eau-de-parfum-03,synthetic,l-ombre-dans-l-eau-eau-de-parfum,l'ombre dans l'eau - eau de parfum,3,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-l-ombre-dans-l-eau-eau-de-toilette-01,synthetic,l-ombre-dans-l-eau-eau-de-toilette,l'ombre dans l'eau - eau de toilette,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-l-ombre-dans-l-eau-eau-de-toilette-02,synthetic,l-ombre-dans-l-eau-eau-de-toilette,l'ombre dans l'eau - eau de toilette,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-l-ombre-dans-l-eau-eau-de-toilette-03,synthetic,l-ombre-dans-l-eau-eau-de-toilette,l'ombre dans l'eau - eau de toilette,3,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-la-capitale-parfum-01,synthetic,la-capitale-parfum,la capitale parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-la-capitale-parfum-02,synthetic,la-capitale-parfum,la capitale parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-la-capitale-parfum-03,synthetic,la-capitale-parfum,la capitale parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-la-chasse-aux-papillons-eau-de-toilette-01,synthetic,la-chasse-aux-papillons-eau-de-toilette,la chasse aux papillons eau de toilette,1,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-la-chasse-aux-papillons-eau-de-toilette-02,synthetic,la-chasse-aux-papillons-eau-de-toilette,la chasse aux papillons eau de toilette,2,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-la-chasse-aux-papillons-eau-de-toilette-03,synthetic,la-chasse-aux-papillons-eau-de-toilette,la chasse aux papillons eau de toilette,3,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-la-chasse-aux-papillons-extreme-eau-de-parfum-01,synthetic,la-chasse-aux-papillons-extreme-eau-de-parfum,la chasse aux papillons extreme eau de parfum,1,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-la-chasse-aux-papillons-extreme-eau-de-parfum-02,synthetic,la-chasse-aux-papillons-extreme-eau-de-parfum,la chasse aux papillons extreme eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-la-chasse-aux-papillons-extreme-eau-de-parfum-03,synthetic,la-chasse-aux-papillons-extreme-eau-de-parfum,la chasse aux papillons extreme eau de parfum,3,0,0,0,0,0,1,1,0,3,6,3
+emotion-rich-v2-la-liturgie-des-heures-eau-de-parfum-01,synthetic,la-liturgie-des-heures-eau-de-parfum,la liturgie des heures eau de parfum,1,1,0,0,0,0,1,1,0,7,6,5

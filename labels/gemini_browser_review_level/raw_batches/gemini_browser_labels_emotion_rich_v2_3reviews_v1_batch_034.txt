@@ -1,0 +1,105 @@
+Batch 33 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-orchidee-vanille-eau-de-parfum-02,synthetic,orchidee-vanille-eau-de-parfum,orchidee vanille eau de parfum,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-orchidee-vanille-eau-de-parfum-03,synthetic,orchidee-vanille-eau-de-parfum,orchidee vanille eau de parfum,3,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-osmanthus-interdite-eau-de-parfum-01,synthetic,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-osmanthus-interdite-eau-de-parfum-02,synthetic,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,2,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-osmanthus-interdite-eau-de-parfum-03,synthetic,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,3,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-oud-assam-eau-de-parfum-01,synthetic,oud-assam-eau-de-parfum,oud assam eau de parfum,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-oud-assam-eau-de-parfum-02,synthetic,oud-assam-eau-de-parfum,oud assam eau de parfum,2,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-oud-assam-eau-de-parfum-03,synthetic,oud-assam-eau-de-parfum,oud assam eau de parfum,3,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-oud-du-bois-attar-perfume-oil-01,synthetic,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-oud-du-bois-attar-perfume-oil-02,synthetic,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,2,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-du-bois-attar-perfume-oil-03,synthetic,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,3,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-oud-eau-de-parfum-01,synthetic,oud-eau-de-parfum,oud - eau de parfum,1,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-oud-eau-de-parfum-02,synthetic,oud-eau-de-parfum,oud - eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-oud-eau-de-parfum-03,synthetic,oud-eau-de-parfum,oud - eau de parfum,3,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-imperial-eau-de-parfum-01,synthetic,oud-imperial-eau-de-parfum,oud imperial eau de parfum,1,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-oud-imperial-eau-de-parfum-02,synthetic,oud-imperial-eau-de-parfum,oud imperial eau de parfum,2,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-oud-imperial-eau-de-parfum-03,synthetic,oud-imperial-eau-de-parfum,oud imperial eau de parfum,3,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-01,synthetic,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,1,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-02,synthetic,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-03,synthetic,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,3,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-oud-silk-mood-extrait-de-parfum-01,synthetic,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,1,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-oud-silk-mood-extrait-de-parfum-02,synthetic,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,2,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-silk-mood-extrait-de-parfum-03,synthetic,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,3,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-01,synthetic,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,1,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-02,synthetic,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,2,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-03,synthetic,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,3,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-oud-stars-alexandria-iii-parfum-01,synthetic,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,1,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-oud-stars-alexandria-iii-parfum-02,synthetic,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,2,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-oud-stars-alexandria-iii-parfum-03,synthetic,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,3,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-oud-stars-fars-eau-de-parfum-01,synthetic,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,1,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-oud-stars-fars-eau-de-parfum-02,synthetic,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,2,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-oud-stars-fars-eau-de-parfum-03,synthetic,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-oud-stars-gao-eau-de-parfum-01,synthetic,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-stars-gao-eau-de-parfum-02,synthetic,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,2,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-stars-gao-eau-de-parfum-03,synthetic,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,3,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-01,synthetic,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,1,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-02,synthetic,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,2,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-03,synthetic,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-oud-sublime-elixir-de-parfum-01,synthetic,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-oud-sublime-elixir-de-parfum-02,synthetic,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-oud-sublime-elixir-de-parfum-03,synthetic,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,3,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-oudh-infini-extrait-de-parfum-01,synthetic,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-oudh-infini-extrait-de-parfum-02,synthetic,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,2,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-oudh-infini-extrait-de-parfum-03,synthetic,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,3,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-oudmazing-eau-de-parfum-01,synthetic,oudmazing-eau-de-parfum,oudmazing eau de parfum,1,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oudmazing-eau-de-parfum-02,synthetic,oudmazing-eau-de-parfum,oudmazing eau de parfum,2,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-oudmazing-eau-de-parfum-03,synthetic,oudmazing-eau-de-parfum,oudmazing eau de parfum,3,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-oyedo-eau-de-toilette-01,synthetic,oyedo-eau-de-toilette,oyedo eau de toilette,1,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-oyedo-eau-de-toilette-02,synthetic,oyedo-eau-de-toilette,oyedo eau de toilette,2,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-oyedo-eau-de-toilette-03,synthetic,oyedo-eau-de-toilette,oyedo eau de toilette,3,0,0,0,0,0,0,1,0,6,5,6
+
+Batch 34 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-parfums-de-nicolai-eau-de-yuzu-travel-spray-01,synthetic,parfums-de-nicolai-eau-de-yuzu-travel-spray,parfums de nicolai - eau de yuzu travel spray,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-parfums-de-nicolai-eau-de-yuzu-travel-spray-02,synthetic,parfums-de-nicolai-eau-de-yuzu-travel-spray,parfums de nicolai - eau de yuzu travel spray,2,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-parfums-de-nicolai-eau-de-yuzu-travel-spray-03,synthetic,parfums-de-nicolai-eau-de-yuzu-travel-spray,parfums de nicolai - eau de yuzu travel spray,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-paris-la-eau-de-parfum-01,synthetic,paris-la-eau-de-parfum,paris la eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-paris-la-eau-de-parfum-02,synthetic,paris-la-eau-de-parfum,paris la eau de parfum,2,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-paris-la-eau-de-parfum-03,synthetic,paris-la-eau-de-parfum,paris la eau de parfum,3,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-passage-d-enfer-eau-de-toilette-01,synthetic,passage-d-enfer-eau-de-toilette,passage d'enfer eau de toilette,1,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-passage-d-enfer-eau-de-toilette-02,synthetic,passage-d-enfer-eau-de-toilette,passage d'enfer eau de toilette,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-passage-d-enfer-eau-de-toilette-03,synthetic,passage-d-enfer-eau-de-toilette,passage d'enfer eau de toilette,3,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-patchouli-absolu-eau-de-parfum-01,synthetic,patchouli-absolu-eau-de-parfum,patchouli absolu eau de parfum,1,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-patchouli-absolu-eau-de-parfum-02,synthetic,patchouli-absolu-eau-de-parfum,patchouli absolu eau de parfum,2,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-patchouli-absolu-eau-de-parfum-03,synthetic,patchouli-absolu-eau-de-parfum,patchouli absolu eau de parfum,3,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-patchouli-cologne-01,synthetic,patchouli-cologne,patchouli cologne,1,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-patchouli-cologne-02,synthetic,patchouli-cologne,patchouli cologne,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-patchouli-cologne-03,synthetic,patchouli-cologne,patchouli cologne,3,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-patchouli-in-perfumery-magazine-01,synthetic,patchouli-in-perfumery-magazine,patchouli in perfumery magazine,1,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-patchouli-in-perfumery-magazine-02,synthetic,patchouli-in-perfumery-magazine,patchouli in perfumery magazine,2,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-patchouli-in-perfumery-magazine-03,synthetic,patchouli-in-perfumery-magazine,patchouli in perfumery magazine,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-patchouli-intense-eau-de-parfum-01,synthetic,patchouli-intense-eau-de-parfum,patchouli intense eau de parfum,1,0,0,0,0,0,0,1,0,6,6,6
+emotion-rich-v2-patchouli-intense-eau-de-parfum-02,synthetic,patchouli-intense-eau-de-parfum,patchouli intense eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-patchouli-intense-eau-de-parfum-03,synthetic,patchouli-intense-eau-de-parfum,patchouli intense eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-patchouli-leaves-eau-de-parfum-01,synthetic,patchouli-leaves-eau-de-parfum,patchouli leaves eau de parfum,1,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-patchouli-leaves-eau-de-parfum-02,synthetic,patchouli-leaves-eau-de-parfum,patchouli leaves eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-patchouli-leaves-eau-de-parfum-03,synthetic,patchouli-leaves-eau-de-parfum,patchouli leaves eau de parfum,3,0,0,0,0,0,1,1,0,6,6,5
+emotion-rich-v2-patchouli-noir-eau-de-parfum-01,synthetic,patchouli-noir-eau-de-parfum,patchouli noir eau de parfum,1,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-patchouli-noir-eau-de-parfum-02,synthetic,patchouli-noir-eau-de-parfum,patchouli noir eau de parfum,2,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-patchouli-noir-eau-de-parfum-03,synthetic,patchouli-noir-eau-de-parfum,patchouli noir eau de parfum,3,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-patchouli-patch-eau-de-toilette-01,synthetic,patchouli-patch-eau-de-toilette,patchouli patch eau de toilette,1,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-patchouli-patch-eau-de-toilette-02,synthetic,patchouli-patch-eau-de-toilette,patchouli patch eau de toilette,2,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-patchouli-patch-eau-de-toilette-03,synthetic,patchouli-patch-eau-de-toilette,patchouli patch eau de toilette,3,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-patchouli-perfume-oil-01,synthetic,patchouli-perfume-oil,patchouli perfume oil,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-patchouli-perfume-oil-02,synthetic,patchouli-perfume-oil,patchouli perfume oil,2,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-patchouli-perfume-oil-03,synthetic,patchouli-perfume-oil,patchouli perfume oil,3,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-patchouly-eau-de-parfum-01,synthetic,patchouly-eau-de-parfum,patchouly eau de parfum,1,0,0,0,0,0,0,1,0,3,7,4
+emotion-rich-v2-patchouly-eau-de-parfum-02,synthetic,patchouly-eau-de-parfum,patchouly eau de parfum,2,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-patchouly-eau-de-parfum-03,synthetic,patchouly-eau-de-parfum,patchouly eau de parfum,3,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-peacock-throne-eau-de-parfum-01,synthetic,peacock-throne-eau-de-parfum,peacock throne eau de parfum,1,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-peacock-throne-eau-de-parfum-02,synthetic,peacock-throne-eau-de-parfum,peacock throne eau de parfum,2,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-peacock-throne-eau-de-parfum-03,synthetic,peacock-throne-eau-de-parfum,peacock throne eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-pearl-perfume-oil-01,synthetic,pearl-perfume-oil,pearl perfume oil,1,0,0,0,0,0,0,1,0,6,6,5
+emotion-rich-v2-pearl-perfume-oil-02,synthetic,pearl-perfume-oil,pearl perfume oil,2,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-pearl-perfume-oil-03,synthetic,pearl-perfume-oil,pearl perfume oil,3,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-peche-cardinal-eau-de-parfum-01,synthetic,peche-cardinal-eau-de-parfum,peche cardinal eau de parfum,1,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-peche-cardinal-eau-de-parfum-02,synthetic,peche-cardinal-eau-de-parfum,peche cardinal eau de parfum,2,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-peche-cardinal-eau-de-parfum-03,synthetic,peche-cardinal-eau-de-parfum,peche cardinal eau de parfum,3,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-people-s-kampot-organic-oud-pure-oud-01,synthetic,people-s-kampot-organic-oud-pure-oud,people's kampot organic oud pure oud,1,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-people-s-kampot-organic-oud-pure-oud-02,synthetic,people-s-kampot-organic-oud-pure-oud,people's kampot organic oud pure oud,2,0,0,0,0,0,0,1,0,4,7,4
+emotion-rich-v2-people-s-kampot-organic-oud-pure-oud-03,synthetic,people-s-kampot-organic-oud-pure-oud,people's kampot organic oud pure oud,3,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-perfect-kiss-eau-de-parfum-01,synthetic,perfect-kiss-eau-de-parfum,perfect kiss eau de parfum,1,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-perfect-kiss-eau-de-parfum-02,synthetic,perfect-kiss-eau-de-parfum,perfect kiss eau de parfum,2,0,0,0,0,1,0,1,0,7,5,8
