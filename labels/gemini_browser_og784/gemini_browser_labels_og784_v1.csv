@@ -1,0 +1,785 @@
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance,perfume_id_hash
+og::00-auriel-eau-de-parfum,og_youtube,00-auriel-eau-de-parfum,00 auriel eau de parfum,1,0,0,0,1,0,1,0,7,6,5,36710bc11d
+og::01-nomad-eau-de-parfum,og_youtube,01-nomad-eau-de-parfum,01 nomad eau de parfum,1,0,0,0,1,0,1,0,8,7,7,1086cfb7f0
+og::02-owari-eau-de-parfum,og_youtube,02-owari-eau-de-parfum,02 owari eau de parfum,0,0,0,0,0,0,0,0,5,5,5,132ea26321
+og::03-apr-1968-eau-de-parfum,og_youtube,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,1,0,0,0,1,0,0,0,7,5,5,326f662647
+og::03-century-eau-de-parfum,og_youtube,03-century-eau-de-parfum,03 century eau de parfum,1,0,0,0,1,0,0,0,7,6,6,783114c68a
+og::08-seylon-eau-de-parfum,og_youtube,08-seylon-eau-de-parfum,08 - seylon eau de parfum,1,0,0,1,0,1,0,1,4,6,7,912d216032
+og::100-love-eau-de-parfum,og_youtube,100-love-eau-de-parfum,100% love eau de parfum,1,0,1,0,1,0,0,0,6,7,8,82050b27e8
+og::1499-eau-de-parfum,og_youtube,1499-eau-de-parfum,1499 eau de parfum,1,0,0,0,1,0,0,0,6,5,5,97cb94ca52
+og::1725-casanova-eau-de-parfum,og_youtube,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,1,0,0,0,0,0,1,0,7,6,5,239d789ef6
+og::1740-marquis-de-sade-eau-de-parfum,og_youtube,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,0,0,0,0,0,1,0,5,5,5,3fe1a7ca25
+og::1804-george-sand-eau-de-parfum,og_youtube,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,1,0,0,0,0,0,0,0,6,4,5,65d1feeb14
+og::1828-jules-verne-eau-de-parfum,og_youtube,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,1,0,0,0,1,0,0,0,7,5,5,d610f22abc
+og::1872-for-men-eau-de-parfum,og_youtube,1872-for-men-eau-de-parfum,1872 for men eau de parfum,1,0,0,0,1,0,0,0,7,5,6,bd846ef2d8
+og::1872-for-women-eau-de-parfum,og_youtube,1872-for-women-eau-de-parfum,1872 for women eau de parfum,1,0,0,0,1,0,0,0,8,5,5,4ebca69d69
+og::1888-eau-de-parfum,og_youtube,1888-eau-de-parfum,1888 eau de parfum,1,0,0,0,1,0,0,0,8,6,6,27915f6f34
+og::1962-eau-de-parfum,og_youtube,1962-eau-de-parfum,1962 eau de parfum,1,0,0,0,0,0,1,0,6,5,5,36159e38b7
+og::1976-eau-de-parfum,og_youtube,1976-eau-de-parfum,1976 eau de parfum,0,0,0,0,0,0,0,0,5,5,5,61d50c5328
+og::21-eau-de-parfum,og_youtube,21-eau-de-parfum,21 eau de parfum,1,0,0,0,1,0,0,0,8,7,6,a31bc10607
+og::40-rogue-eau-de-toilette,og_youtube,40-rogue-eau-de-toilette,40 rogue eau de toilette,0,0,0,0,0,0,1,0,5,5,6,c15caac725
+og::a-la-rose-eau-de-parfum,og_youtube,a-la-rose-eau-de-parfum,a la rose eau de parfum,1,0,0,0,1,0,0,0,8,5,6,e124fb69d0
+og::a-la-rose-scented-hair-mist,og_youtube,a-la-rose-scented-hair-mist,a la rose scented hair mist,0,0,0,0,0,0,1,0,6,6,5,573b288613
+og::absinth-parfum-extrait,og_youtube,absinth-parfum-extrait,absinth parfum extrait,0,0,0,0,0,0,1,0,5,5,5,a2c3f5d2cd
+og::absolue-d-osmanthe-eau-de-parfum,og_youtube,absolue-d-osmanthe-eau-de-parfum,absolue d'osmanthe eau de parfum,0,0,0,0,0,0,1,0,5,5,5,c10f48c1a0
+og::acqua-di-sale-body-cream-scented-body-cream,og_youtube,acqua-di-sale-body-cream-scented-body-cream,acqua di sale body cream scented body cream,0,0,1,0,0,0,0,1,2,7,8,669b67a7c6
+og::acqua-di-sale-eau-de-parfum,og_youtube,acqua-di-sale-eau-de-parfum,acqua di sale eau de parfum,1,0,0,0,1,0,0,0,8,6,5,562ba064a7
+og::acqua-di-scandola-eau-de-parfum,og_youtube,acqua-di-scandola-eau-de-parfum,acqua di scandola eau de parfum,1,0,0,0,1,0,0,0,7,5,5,bc97664c32
+og::acqua-e-zucchero-eau-de-parfum,og_youtube,acqua-e-zucchero-eau-de-parfum,acqua e zucchero eau de parfum,0,0,0,0,0,0,1,0,4,4,5,bfacf70367
+og::acqua-fiorentina-eau-de-parfum,og_youtube,acqua-fiorentina-eau-de-parfum,acqua fiorentina eau de parfum ...,0,0,0,0,0,0,0,0,5,5,5,3f96974512
+og::acqua-viva-body-cream-scented-body-cream,og_youtube,acqua-viva-body-cream-scented-body-cream,acqua viva body cream scented body cream,1,0,0,0,0,0,0,0,6,6,6,81bba11704
+og::acqua-viva-eau-de-parfum,og_youtube,acqua-viva-eau-de-parfum,acqua viva eau de parfum,1,0,0,0,1,0,0,1,5,5,6,89cdcf6cce
+og::across-the-ocean-eau-de-parfum,og_youtube,across-the-ocean-eau-de-parfum,across the ocean eau de parfum,1,0,0,0,1,0,0,0,8,6,7,c5577a3608
+og::al-oudh-eau-de-parfum,og_youtube,al-oudh-eau-de-parfum,al oudh eau de parfum,1,0,0,0,1,0,0,0,8,6,6,7d83e95891
+og::alba-di-seoul-cologne-eau-de-cologne,og_youtube,alba-di-seoul-cologne-eau-de-cologne,alba di seoul cologne eau de cologne,1,0,0,0,1,0,1,0,8,7,5,d0dc2690ae
+og::almond-harmony-eau-de-parfum,og_youtube,almond-harmony-eau-de-parfum,almond harmony eau de parfum,0,0,0,0,0,0,1,0,6,6,5,4b486f92e5
+og::altruist-eau-de-parfum,og_youtube,altruist-eau-de-parfum,altruist eau de parfum,1,0,0,0,1,0,0,0,8,6,5,6207415bd7
+og::amber-aoud-extrait-de-parfum,og_youtube,amber-aoud-extrait-de-parfum,amber aoud extrait de parfum,1,0,0,0,0,0,0,0,8,5,5,10c54af7d8
+og::amber-aquilaria-parfum,og_youtube,amber-aquilaria-parfum,amber aquilaria parfum,1,0,0,0,0,0,0,0,7,7,8,a3ef7cf8f9
+og::amber-perfume-oil,og_youtube,amber-perfume-oil,amber perfume oil,1,0,0,0,0,0,0,0,7,7,6,642a97199b
+og::amber-room-eau-de-parfum,og_youtube,amber-room-eau-de-parfum,amber room eau de parfum,1,0,0,0,0,0,0,0,6,6,6,d0b2a868e6
+og::amber-roses-eau-de-parfum,og_youtube,amber-roses-eau-de-parfum,amber & roses eau de parfum,1,0,0,0,1,0,0,0,8,6,6,0949d5bace
+og::amber-sky-eau-de-parfum,og_youtube,amber-sky-eau-de-parfum,amber sky eau de parfum,1,0,0,0,1,0,0,0,8,7,6,29b8984fb2
+og::amber-vanilla-perfume-oil,og_youtube,amber-vanilla-perfume-oil,amber vanilla perfume oil,1,0,0,0,1,0,0,0,9,8,8,8a5ae1e5ac
+og::ambra-aurea-eau-de-parfum,og_youtube,ambra-aurea-eau-de-parfum,ambra aurea eau de parfum,1,0,0,0,1,0,1,0,9,7,6,beee7d2cb8
+og::ambre-114-eau-de-parfum,og_youtube,ambre-114-eau-de-parfum,ambre 114 eau de parfum,1,0,0,0,1,0,0,0,8,6,6,7f56c0c4d9
+og::ambre-loup-eau-de-parfum,og_youtube,ambre-loup-eau-de-parfum,ambre loup eau de parfum,1,0,0,0,1,0,0,0,8,5,5,529f35baf1
+og::ambre-mythique-eau-de-parfum,og_youtube,ambre-mythique-eau-de-parfum,ambre mythique eau de parfum,1,0,0,0,0,0,0,0,7,5,5,0e69a4ab41
+og::ambre-premier-eau-de-parfum,og_youtube,ambre-premier-eau-de-parfum,ambre premier eau de parfum,1,0,1,0,0,0,1,1,4,6,6,a76ca6f7bf
+og::ambre-russe-eau-de-parfum,og_youtube,ambre-russe-eau-de-parfum,ambre russe eau de parfum,1,0,0,0,0,0,0,0,7,7,6,cfc9d5b590
+og::ambre-sultan-eau-de-parfum,og_youtube,ambre-sultan-eau-de-parfum,ambre sultan eau de parfum,1,0,0,0,0,0,1,0,7,6,5,65eb299e3e
+og::ambre-topkapi-eau-de-parfum,og_youtube,ambre-topkapi-eau-de-parfum,ambre topkapi eau de parfum,0,0,0,0,1,0,0,0,6,5,5,f0f91fda03
+og::american-oud,og_youtube,american-oud,american oud,1,0,0,0,1,1,0,0,8,8,7,76edcf6b14
+og::amour-de-cacao-eau-de-toilette,og_youtube,amour-de-cacao-eau-de-toilette,amour de cacao eau de toilette,1,0,0,0,1,0,0,0,8,7,5,5cfaaf5613
+og::amyris-pour-femme-eau-de-parfum,og_youtube,amyris-pour-femme-eau-de-parfum,amyris pour femme eau de parfum,0,0,0,0,0,0,1,0,5,5,5,05e83eeb08
+og::amyris-pour-homme-eau-de-toilette,og_youtube,amyris-pour-homme-eau-de-toilette,amyris pour homme eau de toilette,0,0,0,0,0,0,1,0,5,5,5,69c68aefaa
+og::amyris-pour-homme-travel-set,og_youtube,amyris-pour-homme-travel-set,amyris pour homme travel set,0,0,0,0,1,0,0,0,5,5,7,f69e14516c
+og::anatolia-parfum,og_youtube,anatolia-parfum,anatolia parfum,1,0,0,0,0,0,0,0,6,5,6,dc6ba2d23e
+og::anbar,og_youtube,anbar,anbar,1,0,0,0,1,0,0,0,7,5,6,4ca8ad2b23
+og::angels-of-florence-cologne-eau-de-cologne,og_youtube,angels-of-florence-cologne-eau-de-cologne,angels of florence cologne eau de cologne,1,0,0,0,1,0,1,0,8,8,8,63eeded8b3
+og::anne-pliska-eau-de-parfum,og_youtube,anne-pliska-eau-de-parfum,anne pliska - eau de parfum,1,0,0,0,1,0,1,0,7,5,6,fe4e03396e
+og::another-oud-eau-de-parfum,og_youtube,another-oud-eau-de-parfum,another oud eau de parfum,1,0,0,0,1,0,1,0,9,8,7,108d65b15b
+og::antico-caruso-eau-de-parfum,og_youtube,antico-caruso-eau-de-parfum,antico caruso eau de parfum,1,0,0,0,0,0,1,0,5,5,6,74f0899bed
+og::aoud-cuir-d-arabie-eau-de-parfum,og_youtube,aoud-cuir-d-arabie-eau-de-parfum,aoud cuir d'arabie eau de parfum,1,0,0,0,1,0,1,0,7,6,7,24cbaa1fb4
+og::aoud-queen-roses-eau-de-parfum,og_youtube,aoud-queen-roses-eau-de-parfum,aoud queen roses eau de parfum,0,0,0,0,0,0,1,1,3,7,6,30687d4fb8
+og::aqaba-eau-de-parfum,og_youtube,aqaba-eau-de-parfum,aqaba eau de parfum,1,0,0,0,1,0,1,0,8,6,7,1e74705bbf
+og::aqua-universalis-eau-de-toilette,og_youtube,aqua-universalis-eau-de-toilette,aqua universalis eau de toilette,1,0,0,0,0,0,1,0,7,7,6,584388f2ba
+og::aqua-universalis-scented-hair-mist,og_youtube,aqua-universalis-scented-hair-mist,aqua universalis scented hair mist,1,0,0,0,1,0,1,0,7,7,6,0f27ce476c
+og::aquae-nobilis-eau-de-parfum,og_youtube,aquae-nobilis-eau-de-parfum,aquae nobilis eau de parfum,1,0,0,0,1,0,1,0,8,6,5,03210e4d66
+og::arabesque-attar-perfume-oil,og_youtube,arabesque-attar-perfume-oil,arabesque attar / perfume oil,0,0,0,0,1,0,1,0,6,5,7,c356d2c644
+og::arabian-horse-eau-de-parfum,og_youtube,arabian-horse-eau-de-parfum,arabian horse eau de parfum,0,0,0,0,1,0,1,0,6,4,5,0b68056418
+og::aran-parfum,og_youtube,aran-parfum,aran parfum,1,0,0,0,1,0,0,0,6,6,7,782b366364
+og::arbole-eau-de-parfum,og_youtube,arbole-eau-de-parfum,arbole eau de parfum,1,0,0,0,1,0,0,0,7,6,5,ee219e0954
+og::areej-attar-perfume-oil,og_youtube,areej-attar-perfume-oil,areej attar / perfume oil,1,0,0,0,1,0,0,0,7,6,7,d8c541bed5
+og::artemisia-eau-de-parfum,og_youtube,artemisia-eau-de-parfum,artemisia eau de parfum,1,0,0,0,1,1,1,0,9,7,5,71c9af5f58
+og::aseel-attar-perfume-oil,og_youtube,aseel-attar-perfume-oil,aseel attar / perfume oil,1,0,0,0,1,0,0,0,7,6,6,c2a9b0a156
+og::atlante-extrait-de-parfum,og_youtube,atlante-extrait-de-parfum,atlante extrait de parfum,1,0,0,0,0,0,0,0,7,6,8,d213cf2ab1
+og::atlas-fever-eau-de-parfum,og_youtube,atlas-fever-eau-de-parfum,atlas fever eau de parfum,1,0,0,0,1,0,0,0,8,6,6,620f13c514
+og::atomic-rose-eau-de-parfum,og_youtube,atomic-rose-eau-de-parfum,atomic rose eau de parfum,1,0,0,0,1,0,0,0,8,6,7,72d2721985
+og::au-coeur-du-desert-parfum-extrait,og_youtube,au-coeur-du-desert-parfum-extrait,au coeur du desert parfum extrait,1,0,0,0,0,0,1,0,7,5,5,90589b552c
+og::aurora-eau-de-parfum,og_youtube,aurora-eau-de-parfum,aurora eau de parfum,1,0,0,0,1,0,0,0,8,5,5,0792b99912
+og::aurum-eau-de-parfum,og_youtube,aurum-eau-de-parfum,aurum eau de parfum,1,0,0,0,0,0,1,0,8,7,6,52997d2317
+og::auster-eau-de-parfum,og_youtube,auster-eau-de-parfum,auster eau de parfum,0,0,0,0,0,0,1,0,5,5,5,f7bdab84e1
+og::autoportrait-eau-de-parfum,og_youtube,autoportrait-eau-de-parfum,autoportrait eau de parfum,1,0,0,0,0,0,0,0,7,6,6,e39eb4b40b
+og::aziyade-eau-de-parfum,og_youtube,aziyade-eau-de-parfum,aziyade eau de parfum,1,0,0,0,1,0,1,0,8,5,5,cd6c78e3f7
+og::azzurro-di-capri-extrait-parfum-extrait,og_youtube,azzurro-di-capri-extrait-parfum-extrait,azzurro di capri extrait parfum extrait,0,0,0,0,0,0,0,0,5,5,5,a1dad967cf
+og::baie-19-eau-de-parfum,og_youtube,baie-19-eau-de-parfum,baie 19 eau de parfum,1,0,0,0,1,0,1,0,7,6,6,cead50d5c4
+og::bamboo-harmony-eau-de-parfum,og_youtube,bamboo-harmony-eau-de-parfum,bamboo harmony eau de parfum,1,0,0,0,0,0,1,0,6,5,5,769ed553d0
+og::bapteme-du-feu-eau-de-parfum,og_youtube,bapteme-du-feu-eau-de-parfum,bapteme du feu eau de parfum,1,0,0,0,0,0,0,0,8,6,6,a45ea8ca04
+og::baudelaire-eau-de-parfum,og_youtube,baudelaire-eau-de-parfum,baudelaire eau de parfum,1,0,0,0,1,0,0,0,8,5,6,4506edd04a
+og::bay-rum-cologne,og_youtube,bay-rum-cologne,bay rum cologne,1,0,0,0,0,0,1,0,7,5,6,02f6f7ba36
+og::bee-extrait-de-parfum,og_youtube,bee-extrait-de-parfum,bee extrait de parfum,0,0,0,0,1,0,1,0,6,6,5,77280b9633
+og::belle-de-jour-eau-de-parfum,og_youtube,belle-de-jour-eau-de-parfum,belle de jour eau de parfum,1,0,0,0,0,0,1,0,7,6,5,e843cd2482
+og::bello-rabelo-eau-de-parfum,og_youtube,bello-rabelo-eau-de-parfum,bello rabelo eau de parfum,1,0,0,0,1,0,0,0,8,6,5,23364ce3a0
+og::bergamask-parfum,og_youtube,bergamask-parfum,bergamask parfum,1,0,0,0,1,0,0,0,8,6,5,3837d008f2
+og::bergamote-22-eau-de-parfum,og_youtube,bergamote-22-eau-de-parfum,bergamote 22 eau de parfum,1,0,0,0,1,0,0,0,8,5,6,f00e658ca7
+og::bergamote-eau-de-toilette,og_youtube,bergamote-eau-de-toilette,bergamote eau de toilette,0,0,0,0,1,0,0,0,7,6,6,b12b8966b8
+og::bergamotto-di-positano-eau-de-parfum,og_youtube,bergamotto-di-positano-eau-de-parfum,bergamotto di positano eau de parfum,1,1,0,0,0,0,1,0,5,6,5,14b6df37fd
+og::bertrand-duchaufour-eau-de-toilette,og_youtube,bertrand-duchaufour-eau-de-toilette,bertrand duchaufour eau de toilette,1,0,0,0,1,0,0,0,7,5,5,a9d157934d
+og::bijou-romantique-eau-de-parfum,og_youtube,bijou-romantique-eau-de-parfum,bijou romantique eau de parfum,1,0,0,0,1,0,1,0,8,7,6,8096a04b8c
+og::black-afgano-parfum-extrait,og_youtube,black-afgano-parfum-extrait,black afgano parfum extrait,1,0,0,0,0,0,1,0,7,6,5,21d7927ec5
+og::black-ambergris-parfum-extrait,og_youtube,black-ambergris-parfum-extrait,black ambergris parfum extrait,1,0,0,0,0,1,0,0,7,8,6,6543cfcbbf
+og::black-aoud-eau-de-parfum,og_youtube,black-aoud-eau-de-parfum,black aoud eau de parfum,0,0,0,0,0,0,0,0,5,5,5,c802e21e4d
+og::black-caviar-eau-de-parfum,og_youtube,black-caviar-eau-de-parfum,black caviar eau de parfum,1,0,0,0,1,0,1,0,8,6,6,8c90cca631
+og::black-tourmaline-eau-de-parfum,og_youtube,black-tourmaline-eau-de-parfum,black tourmaline eau de parfum,0,0,0,0,0,0,1,0,6,5,5,4b5839e1db
+og::black-uddu-eau-de-parfum,og_youtube,black-uddu-eau-de-parfum,black uddu eau de parfum,0,0,0,0,0,0,0,0,5,5,5,72598e7056
+og::blanche-eau-de-parfum,og_youtube,blanche-eau-de-parfum,blanche eau de parfum,1,0,0,0,1,0,0,0,7,5,6,c438199b95
+og::blenheim-bouquet-eau-de-toilette,og_youtube,blenheim-bouquet-eau-de-toilette,blenheim bouquet eau de toilette,1,0,0,0,1,0,0,0,7,5,6,6a7203a9d4
+og::blessing-silence-eau-de-parfum,og_youtube,blessing-silence-eau-de-parfum,blessing silence eau de parfum,1,0,0,0,1,0,1,0,8,6,7,5fd35d2298
+og::bloody-wood-eau-de-parfum,og_youtube,bloody-wood-eau-de-parfum,bloody wood eau de parfum,1,0,0,0,1,0,0,0,8,6,6,df2f10f196
+og::blossom-love-eau-de-parfum,og_youtube,blossom-love-eau-de-parfum,blossom love eau de parfum,0,0,0,0,0,0,1,0,6,5,5,876586d101
+og::blu-perfume-oil,og_youtube,blu-perfume-oil,blu perfume oil,1,0,0,0,1,0,0,0,8,8,8,6f28d2ccd1
+og::blue-hope-eau-de-parfum,og_youtube,blue-hope-eau-de-parfum,blue hope eau de parfum,1,0,0,0,0,0,0,0,7,5,6,92eeff657d
+og::blueberry-musk-eau-de-parfum,og_youtube,blueberry-musk-eau-de-parfum,blueberry musk eau de parfum,1,0,0,0,1,0,0,0,8,6,6,d98944fbd9
+og::boccanera-parfum,og_youtube,boccanera-parfum,boccanera parfum,1,0,0,0,0,0,1,0,7,6,5,2212c5f40b
+og::bohea-boheme-eau-de-parfum,og_youtube,bohea-boheme-eau-de-parfum,bohea boheme eau de parfum,1,0,0,0,0,0,1,0,7,6,6,8207b82d9e
+og::bois-blonds-cologne-absolue,og_youtube,bois-blonds-cologne-absolue,bois blonds cologne absolue,1,0,0,0,1,0,0,0,7,5,6,cbc85aecc0
+og::bois-de-borneo-oud,og_youtube,bois-de-borneo-oud,bois de borneo oud,1,0,0,0,1,0,1,0,8,6,6,cb817dfee3
+og::bois-farine-eau-de-toilette,og_youtube,bois-farine-eau-de-toilette,bois farine eau de toilette,1,0,0,0,1,0,0,0,7,4,6,a52a365dee
+og::bois-naufrage-eau-de-toilette,og_youtube,bois-naufrage-eau-de-toilette,bois naufrage eau de toilette,1,0,0,0,0,0,0,0,7,5,6,a5a2cb0cd7
+og::bouquet-ideale-eau-de-parfum,og_youtube,bouquet-ideale-eau-de-parfum,bouquet ideale eau de parfum,1,0,0,0,0,0,0,0,8,6,6,696d4c6fac
+og::bowmakers-eau-de-parfum,og_youtube,bowmakers-eau-de-parfum,bowmakers eau de parfum,1,0,0,0,0,0,1,0,7,6,6,75a65a5358
+og::bowmakers-pocket-perfume-perfume-oil,og_youtube,bowmakers-pocket-perfume-perfume-oil,bowmakers pocket perfume perfume oil,1,0,0,0,1,0,0,0,7,4,6,83812b020e
+og::bronze-eau-de-parfum,og_youtube,bronze-eau-de-parfum,bronze eau de parfum,1,0,0,0,0,1,0,0,7,6,5,8fcde1fdc0
+og::broom-ginestra-cologne,og_youtube,broom-ginestra-cologne,broom / ginestra cologne,0,0,0,0,0,0,1,0,6,5,5,580b37bc1b
+og::brulure-de-rose-eau-de-parfum,og_youtube,brulure-de-rose-eau-de-parfum,brulure de rose eau de parfum,1,0,0,0,0,0,0,0,6,6,6,4d9de0331c
+og::brutus-parfum,og_youtube,brutus-parfum,brutus parfum,1,0,0,0,1,0,0,0,8,6,6,b86358af3e
+og::bull-s-blood-eau-de-parfum,og_youtube,bull-s-blood-eau-de-parfum,bull's blood eau de parfum,1,0,0,0,0,0,1,0,7,6,5,0d08e91a34
+og::burning-barbershop-eau-de-parfum,og_youtube,burning-barbershop-eau-de-parfum,burning barbershop eau de parfum,1,0,0,0,0,1,1,0,7,6,5,1e110cd5b5
+og::by-any-other-name-eau-de-parfum,og_youtube,by-any-other-name-eau-de-parfum,by any other name eau de parfum,0,0,0,0,0,0,0,0,5,5,5,64a07df012
+og::camellia-eau-de-parfum,og_youtube,camellia-eau-de-parfum,camellia eau de parfum,1,0,0,0,0,0,0,0,6,6,5,3798de044d
+og::cannabis-blue-eau-de-parfum,og_youtube,cannabis-blue-eau-de-parfum,cannabis blue eau de parfum,1,0,0,0,0,0,0,0,7,5,6,107dd2bc6e
+og::cap-d-antibes-eau-de-parfum,og_youtube,cap-d-antibes-eau-de-parfum,cap d'antibes eau de parfum,1,0,0,0,0,0,0,0,7,5,5,fb9d1e228d
+og::cape-heartache-eau-de-parfum,og_youtube,cape-heartache-eau-de-parfum,cape heartache eau de parfum,1,0,0,0,0,0,1,0,8,6,6,6f709aaaf7
+og::capua-eau-de-parfum,og_youtube,capua-eau-de-parfum,capua eau de parfum,1,0,0,0,0,0,0,0,6,5,6,86eddfede5
+og::cardinal-eau-de-parfum,og_youtube,cardinal-eau-de-parfum,cardinal eau de parfum,1,0,0,0,1,0,1,0,8,6,6,2299f13bf0
+og::carnation-garofano-cologne-eau-de-cologne,og_youtube,carnation-garofano-cologne-eau-de-cologne,carnation / garofano cologne eau de cologne,1,0,0,0,1,0,0,0,7,5,6,1e79948299
+og::carved-oud-extrait-de-parfum,og_youtube,carved-oud-extrait-de-parfum,carved oud extrait de parfum,0,0,0,0,0,0,0,0,5,5,5,c0f2fdcf13
+og::cedar-woodpecker-eau-de-parfum,og_youtube,cedar-woodpecker-eau-de-parfum,cedar woodpecker eau de parfum,1,0,0,0,0,0,1,0,7,6,5,f73b14e66e
+og::celluloid-x-galbanum-eau-de-parfum,og_youtube,celluloid-x-galbanum-eau-de-parfum,celluloid x galbanum eau de parfum,1,0,0,0,1,0,0,0,7,5,6,192e308f8a
+og::centrepiece-eau-de-parfum,og_youtube,centrepiece-eau-de-parfum,centrepiece eau de parfum,1,0,0,0,0,0,0,0,6,5,5,75d725747b
+og::chambre-noire-eau-de-parfum,og_youtube,chambre-noire-eau-de-parfum,chambre noire eau de parfum,0,0,0,0,0,0,0,0,5,5,5,176c69764f
+og::charade-extrait-de-parfum,og_youtube,charade-extrait-de-parfum,charade extrait de parfum,1,0,0,0,0,0,0,0,7,5,6,11a39dd469
+og::chergui-eau-de-parfum,og_youtube,chergui-eau-de-parfum,chergui eau de parfum,1,0,0,0,1,0,0,0,8,6,6,fde0d6715d
+og::china-white-parfum-extrait,og_youtube,china-white-parfum-extrait,china white parfum extrait,1,0,0,0,0,0,1,0,7,6,5,034869a133
+og::chloe-sevigny-little-flower-eau-de-parfum,og_youtube,chloe-sevigny-little-flower-eau-de-parfum,chloe sevigny little flower eau de parfum,0,0,0,0,0,0,0,0,5,5,5,c481185f1f
+og::chlorophyll-x-gardenia-eau-de-parfum,og_youtube,chlorophyll-x-gardenia-eau-de-parfum,chlorophyll x gardenia eau de parfum,1,0,0,0,1,0,0,0,7,5,6,f837449d13
+og::chocolat-eau-de-parfum,og_youtube,chocolat-eau-de-parfum,chocolat eau de parfum,1,0,0,0,0,1,0,0,7,7,5,04af4ba64e
+og::chocolate-greedy-eau-de-parfum,og_youtube,chocolate-greedy-eau-de-parfum,chocolate greedy eau de parfum,1,0,0,0,1,0,0,0,7,5,6,42d939c954
+og::chypre-mousse-eau-de-parfum,og_youtube,chypre-mousse-eau-de-parfum,chypre mousse eau de parfum,0,0,0,0,0,0,1,0,6,5,5,09ba82e917
+og::chypre-siam-eau-de-toilette,og_youtube,chypre-siam-eau-de-toilette,chypre-siam eau de toilette,1,0,0,0,1,0,0,0,8,5,6,8ff560aa6e
+og::citta-di-kyoto-cologne-eau-de-cologne,og_youtube,citta-di-kyoto-cologne-eau-de-cologne,citta di kyoto cologne eau de cologne,1,0,0,0,1,0,0,0,7,5,6,4dfd7e113d
+og::clair-de-musc-eau-de-parfum,og_youtube,clair-de-musc-eau-de-parfum,clair de musc eau de parfum,1,0,0,0,1,0,0,0,8,6,6,d3eb3d1583
+og::coal-eau-de-parfum,og_youtube,coal-eau-de-parfum,coal eau de parfum,1,0,0,0,1,0,0,0,7,6,6,334788bd50
+og::cologne-cedrat-eau-de-cologne,og_youtube,cologne-cedrat-eau-de-cologne,cologne cedrat eau de cologne,0,0,0,0,0,0,0,0,5,5,5,98028d8529
+og::cologne-sologne-eau-de-cologne,og_youtube,cologne-sologne-eau-de-cologne,cologne sologne eau de cologne,0,0,0,0,0,0,1,0,6,5,5,b1d4a460b2
+og::colonia-no-1-eau-de-cologne,og_youtube,colonia-no-1-eau-de-cologne,colonia no. 1 eau de cologne,1,0,0,0,1,0,0,0,8,6,7,c08aa14bad
+og::colonia-no-4-eau-de-cologne,og_youtube,colonia-no-4-eau-de-cologne,colonia no. 4 eau de cologne,0,0,0,0,0,0,0,0,5,5,5,8f1dc5c58b
+og::comme-un-carrousel-eau-de-parfum,og_youtube,comme-un-carrousel-eau-de-parfum,comme un carrousel eau de parfum,0,0,0,0,0,0,1,0,6,5,5,ac3ab06a90
+og::complex-eau-de-parfum,og_youtube,complex-eau-de-parfum,complex eau de parfum,1,0,0,0,1,0,0,0,7,6,6,cfa22f0b7c
+og::confetto-body-cream-scented-body-cream,og_youtube,confetto-body-cream-scented-body-cream,confetto body cream scented body cream,1,0,0,0,0,0,0,0,7,5,5,12efac9533
+og::confetto-eau-de-parfum,og_youtube,confetto-eau-de-parfum,confetto eau de parfum,1,0,0,0,0,1,0,0,8,7,6,843393b81e
+og::copper-eau-de-parfum,og_youtube,copper-eau-de-parfum,copper eau de parfum,1,0,0,0,1,0,0,0,8,6,6,b2709ea2b2
+og::coquette-tropique,og_youtube,coquette-tropique,coquette tropique,0,0,0,0,0,0,0,0,5,5,5,bff6ba9ced
+og::coral-perfume-oil,og_youtube,coral-perfume-oil,coral perfume oil,1,0,0,0,1,0,0,0,8,8,8,ae3b008819
+og::coriander-eau-de-parfum,og_youtube,coriander-eau-de-parfum,coriander eau de parfum,1,0,0,0,0,0,0,0,7,6,5,6a43cb029c
+og::corpse-reviver-eau-de-parfum,og_youtube,corpse-reviver-eau-de-parfum,corpse reviver eau de parfum,1,0,0,0,0,0,1,0,7,6,6,317256355f
+og::corsica-furiosa-eau-de-parfum,og_youtube,corsica-furiosa-eau-de-parfum,corsica furiosa eau de parfum,1,0,0,0,1,0,0,0,7,5,6,33d20442b4
+og::costes-perfume-eau-de-toilette,og_youtube,costes-perfume-eau-de-toilette,costes perfume eau de toilette,0,0,0,0,0,0,0,0,5,5,5,b9e9cd9925
+og::covent-garden-eau-de-parfum,og_youtube,covent-garden-eau-de-parfum,covent garden eau de parfum,1,0,0,0,0,0,0,0,7,6,6,cd05527ea7
+og::cowboy-grass-eau-de-parfum,og_youtube,cowboy-grass-eau-de-parfum,cowboy grass eau de parfum,1,0,0,0,0,0,1,0,7,5,5,2187906f91
+og::coze-eau-de-parfum,og_youtube,coze-eau-de-parfum,coze eau de parfum,1,0,0,0,0,0,1,0,7,6,6,10f921010f
+og::creation-e-parfum-cologne,og_youtube,creation-e-parfum-cologne,creation-e parfum cologne,1,0,0,0,0,0,0,0,8,6,6,7dd8f7332b
+og::crystal-pistil-eau-de-parfum,og_youtube,crystal-pistil-eau-de-parfum,crystal pistil eau de parfum,1,0,0,0,0,1,0,0,8,7,5,5238ff8d95
+og::cuir-andalou-eau-de-parfum,og_youtube,cuir-andalou-eau-de-parfum,cuir andalou eau de parfum,1,0,0,0,0,0,0,0,7,5,5,f6070ebae6
+og::cuir-cuba-intense-eau-de-parfum,og_youtube,cuir-cuba-intense-eau-de-parfum,cuir cuba intense eau de parfum,1,0,0,0,1,0,0,0,7,5,6,40abfc9626
+og::cuir-les-nombres-d-or-eau-de-parfum,og_youtube,cuir-les-nombres-d-or-eau-de-parfum,cuir - les nombres d'or eau de parfum,1,0,0,0,1,0,1,0,8,6,6,a796ade057
+og::cuir-ottoman-eau-de-parfum,og_youtube,cuir-ottoman-eau-de-parfum,cuir ottoman eau de parfum,1,0,0,0,1,0,1,0,7,5,6,d433bf9c92
+og::cuir-velours-eau-de-parfum,og_youtube,cuir-velours-eau-de-parfum,cuir velours eau de parfum,1,0,0,0,1,0,0,0,7,5,6,25d3831cbf
+og::cuir-venenum-eau-de-parfum,og_youtube,cuir-venenum-eau-de-parfum,cuir venenum eau de parfum,1,0,0,0,1,0,0,0,7,5,6,80f42b1149
+og::cypress-shade-eau-de-parfum,og_youtube,cypress-shade-eau-de-parfum,cypress shade eau de parfum,1,0,0,0,0,0,0,0,7,6,5,d536951f38
+og::dama-bianca-eau-de-parfum,og_youtube,dama-bianca-eau-de-parfum,dama bianca eau de parfum,1,0,0,0,1,0,0,0,9,7,6,b3b8b693fa
+og::dambrosia-eau-de-parfum,og_youtube,dambrosia-eau-de-parfum,dambrosia eau de parfum,0,0,0,0,0,0,0,0,5,5,5,49048bc1cf
+og::danger-parfum-cologne,og_youtube,danger-parfum-cologne,danger parfum cologne,1,0,0,0,0,0,1,0,7,6,5,38b15e7a98
+og::dark-eau-de-parfum,og_youtube,dark-eau-de-parfum,dark eau de parfum,1,0,0,0,1,0,0,0,8,6,6,b5640b1d96
+og::dates-delight-eau-de-parfum,og_youtube,dates-delight-eau-de-parfum,dates delight eau de parfum,1,0,0,0,0,0,1,0,7,6,5,e646438850
+og::datura-noir-eau-de-parfum,og_youtube,datura-noir-eau-de-parfum,datura noir eau de parfum,1,0,0,0,1,0,0,0,8,6,6,7bd38b6ade
+og::de-bachmakov-eau-de-parfum,og_youtube,de-bachmakov-eau-de-parfum,de bachmakov eau de parfum,1,0,0,0,0,0,0,0,7,5,5,ba756c8d53
+og::debaser-eau-de-parfum,og_youtube,debaser-eau-de-parfum,debaser eau de parfum,0,0,0,0,0,0,0,0,5,5,5,1a015cb30c
+og::debaser-pocket-perfume-perfume-oil,og_youtube,debaser-pocket-perfume-perfume-oil,debaser pocket perfume perfume oil,0,0,0,0,0,1,0,0,5,5,5,c8505af8e7
+og::deja-le-printemps-eau-de-parfum,og_youtube,deja-le-printemps-eau-de-parfum,deja le printemps eau de parfum,0,0,0,0,0,0,0,0,5,5,5,58c43d6ab5
+og::dendera-extrait-de-parfum,og_youtube,dendera-extrait-de-parfum,dendera extrait de parfum,1,0,0,0,1,0,0,0,7,5,5,0c29191b3f
+og::derviche-eau-de-toilette,og_youtube,derviche-eau-de-toilette,derviche eau de toilette,0,0,0,0,0,0,1,0,6,5,5,d9bc12f17a
+og::devil-tender-eau-de-parfum,og_youtube,devil-tender-eau-de-parfum,devil tender eau de parfum,1,0,0,0,0,0,1,0,6,5,5,386953a228
+og::dia-man-eau-de-parfum,og_youtube,dia-man-eau-de-parfum,dia man eau de parfum,1,0,0,0,1,0,0,0,8,6,6,57806b4806
+og::dia-woman-eau-de-parfum,og_youtube,dia-woman-eau-de-parfum,dia woman eau de parfum,1,0,0,0,1,0,0,0,8,6,6,216916899f
+og::diaghilev-extrait-de-parfum,og_youtube,diaghilev-extrait-de-parfum,diaghilev extrait de parfum,1,0,0,0,1,0,0,0,8,6,6,7b71f866cf
+og::divine-vanille-eau-de-parfum,og_youtube,divine-vanille-eau-de-parfum,divine vanille eau de parfum,1,0,0,0,1,0,0,0,8,6,6,4b55148b86
+og::do-son-eau-de-parfum,og_youtube,do-son-eau-de-parfum,do son - eau de parfum,0,0,0,0,0,0,1,0,6,5,5,f08f5ded66
+og::do-son-eau-de-toilette,og_youtube,do-son-eau-de-toilette,do son - eau de toilette,1,0,0,0,0,0,1,0,6,5,5,7433778410
+og::doe-in-the-snow-eau-de-parfum,og_youtube,doe-in-the-snow-eau-de-parfum,doe in the snow eau de parfum,0,0,0,0,0,0,1,0,6,5,5,f9cac985a1
+og::dom-rosa-eau-de-parfum,og_youtube,dom-rosa-eau-de-parfum,dom rosa eau de parfum,1,0,0,0,0,0,0,0,7,5,5,fe4b51b71c
+og::domenico-caraceni-1913-eau-de-toilette,og_youtube,domenico-caraceni-1913-eau-de-toilette,domenico caraceni 1913 eau de toilette,1,0,0,0,1,0,1,0,7,6,6,6c93898d61
+og::don-eau-de-parfum,og_youtube,don-eau-de-parfum,don eau de parfum,1,0,0,0,1,0,0,0,7,6,6,70e65f965c
+og::drama-nuui-eau-de-parfum,og_youtube,drama-nuui-eau-de-parfum,drama nuui eau de parfum,1,1,0,0,0,0,1,0,5,5,4,8e3d1b2c5e
+og::dulcis-in-fundo-body-cream-scented-body-cream,og_youtube,dulcis-in-fundo-body-cream-scented-body-cream,dulcis in fundo body cream scented body cream,0,0,0,0,0,0,1,0,6,6,5,9c30f026f3
+og::dulcis-in-fundo-eau-de-parfum,og_youtube,dulcis-in-fundo-eau-de-parfum,dulcis in fundo eau de parfum,1,0,0,0,1,0,0,0,8,6,6,7cb18a20e3
+og::duro-parfum-extrait,og_youtube,duro-parfum-extrait,duro parfum extrait,1,0,0,0,1,0,0,0,8,7,8,11c9bc7601
+og::dzing-eau-de-toilette,og_youtube,dzing-eau-de-toilette,dzing! eau de toilette,1,0,0,0,0,0,0,0,6,5,5,5854c25cac
+og::dzongkha-eau-de-toilette,og_youtube,dzongkha-eau-de-toilette,dzongkha eau de toilette,1,0,0,0,0,0,0,0,7,6,5,6ab92e6282
+og::eau-d-ete-eau-fraiche,og_youtube,eau-d-ete-eau-fraiche,eau d'ete eau fraiche,0,0,0,0,1,0,0,0,6,5,6,6c5aa1fcf7
+og::eau-d-italie-eau-de-toilette-eau-de-toilette,og_youtube,eau-d-italie-eau-de-toilette-eau-de-toilette,eau d'italie - eau de toilette eau de toilette,1,0,0,0,0,0,1,0,6,5,5,95fe5959c2
+og::eau-de-hongrie-eau-de-parfum,og_youtube,eau-de-hongrie-eau-de-parfum,eau de hongrie eau de parfum,1,0,0,0,0,0,0,0,8,6,5,6eeaac33da
+og::eau-de-parfum-eau-de-parfum,og_youtube,eau-de-parfum-eau-de-parfum,eau de parfum eau de parfum,0,0,0,0,0,0,0,0,5,5,5,68aaf0d05e
+og::eau-des-sens-eau-de-toilette,og_youtube,eau-des-sens-eau-de-toilette,eau des sens eau de toilette,1,1,0,0,0,0,0,0,5,4,5,60c291d3ee
+og::eau-duelle-eau-de-toilette,og_youtube,eau-duelle-eau-de-toilette,eau duelle - eau de toilette,1,0,0,0,1,0,0,0,8,6,6,24e58dd451
+og::eau-sacree-extrait-de-parfum,og_youtube,eau-sacree-extrait-de-parfum,eau sacree extrait de parfum,1,0,0,0,1,0,0,0,8,7,6,01113d4be3
+og::eau-suave-eau-de-parfum,og_youtube,eau-suave-eau-de-parfum,eau suave eau de parfum,1,0,0,0,1,1,0,0,7,6,7,c3a085c973
+og::egypt-eau-de-toilette,og_youtube,egypt-eau-de-toilette,egypt eau de toilette,0,0,0,0,0,0,1,0,6,5,5,ece30fca06
+og::elysium-parfum-cologne,og_youtube,elysium-parfum-cologne,elysium parfum cologne,1,0,0,0,0,0,0,0,8,6,8,6be955bd7a
+og::empathy-eau-de-parfum,og_youtube,empathy-eau-de-parfum,empathy eau de parfum,1,0,0,0,1,0,0,0,8,7,7,e55d1f471d
+og::empressa-eau-de-toilette,og_youtube,empressa-eau-de-toilette,empressa eau de toilette,1,0,0,0,1,0,0,0,8,6,5,20c7ac95d2
+og::endymion-cologne,og_youtube,endymion-cologne,endymion cologne,0,0,0,0,0,0,1,0,6,5,5,a40d8ec295
+og::ennui-noir-parfum-extrait,og_youtube,ennui-noir-parfum-extrait,ennui noir parfum extrait,1,0,0,0,0,0,1,0,8,7,7,11fb681e6e
+og::epic-woman-eau-de-parfum,og_youtube,epic-woman-eau-de-parfum,epic woman eau de parfum,1,0,0,0,1,0,0,0,9,6,6,b6b4474757
+og::epidor-eau-de-parfum,og_youtube,epidor-eau-de-parfum,epidor eau de parfum,1,0,0,0,0,0,1,0,8,7,6,651f40592d
+og::equistrius-eau-de-parfum,og_youtube,equistrius-eau-de-parfum,equistrius eau de parfum,1,0,0,0,1,0,0,0,8,6,5,9509a3d676
+og::erdenstern-eau-de-parfum,og_youtube,erdenstern-eau-de-parfum,erdenstern eau de parfum,0,0,0,0,1,0,0,0,6,5,5,ae78943347
+og::essential-13-sample-pack-feminine,og_youtube,essential-13-sample-pack-feminine,essential 13 sample pack - feminine,0,0,0,0,0,0,0,0,4,5,6,26f88a11c1
+og::eternal-summer-eau-de-parfum,og_youtube,eternal-summer-eau-de-parfum,eternal summer eau de parfum,1,0,0,0,0,0,0,0,8,6,5,e1100470e4
+og::every-storm-a-serenade-eau-de-parfum,og_youtube,every-storm-a-serenade-eau-de-parfum,every storm a serenade eau de parfum,0,0,0,0,0,0,0,1,3,5,5,75d8b8ba33
+og::fall-into-stars-eau-de-parfum,og_youtube,fall-into-stars-eau-de-parfum,fall into stars eau de parfum,1,0,0,0,1,0,0,0,8,6,8,b7ce27a872
+og::falling-into-the-sea-eau-de-parfum,og_youtube,falling-into-the-sea-eau-de-parfum,falling into the sea eau de parfum,1,0,0,0,0,0,0,0,7,6,5,4c50b74336
+og::fat-electrician-eau-de-parfum,og_youtube,fat-electrician-eau-de-parfum,fat electrician eau de parfum,1,0,0,0,0,0,1,0,6,5,5,204e68295c
+og::felanilla-eau-de-parfum,og_youtube,felanilla-eau-de-parfum,felanilla eau de parfum,1,0,0,0,1,0,0,0,8,6,5,89a845e0fd
+og::female-christ-eau-de-parfum,og_youtube,female-christ-eau-de-parfum,female christ eau de parfum,0,0,0,0,0,1,1,0,6,6,5,0f08de4281
+og::feminite-du-bois-eau-de-parfum,og_youtube,feminite-du-bois-eau-de-parfum,feminite du bois eau de parfum,1,0,0,0,0,0,1,0,6,5,5,46273df11d
+og::fetes-persanes-eau-de-parfum,og_youtube,fetes-persanes-eau-de-parfum,fetes persanes eau de parfum,1,0,0,0,1,0,0,0,8,5,6,78af12fdfc
+og::feu-secret-eau-de-parfum,og_youtube,feu-secret-eau-de-parfum,feu secret eau de parfum,1,0,0,0,0,0,0,0,7,6,8,6c4ee057ef
+og::fiero-eau-de-parfum,og_youtube,fiero-eau-de-parfum,fiero eau de parfum,1,0,0,0,1,0,0,0,8,6,7,86251b7785
+og::fig-tea-eau-de-toilette,og_youtube,fig-tea-eau-de-toilette,fig tea eau de toilette,1,0,0,0,0,0,1,0,7,6,5,517090451c
+og::fils-de-dieu-eau-de-parfum,og_youtube,fils-de-dieu-eau-de-parfum,fils de dieu eau de parfum,0,0,0,0,0,0,1,0,5,5,6,7f15907163
+og::fiore-d-ambra-eau-de-parfum,og_youtube,fiore-d-ambra-eau-de-parfum,fiore d'ambra eau de parfum,1,0,0,0,1,0,0,0,7,4,5,39968f8e6c
+og::fiore-d-ulivo-eau-de-parfum,og_youtube,fiore-d-ulivo-eau-de-parfum,fiore d'ulivo eau de parfum,1,0,0,0,0,0,0,0,6,5,5,a594536c4c
+og::fiori-di-capri-parfum,og_youtube,fiori-di-capri-parfum,fiori di capri parfum,1,0,0,0,0,0,0,0,7,6,5,062abaff59
+og::five-o-clock-au-gingembre-eau-de-parfum,og_youtube,five-o-clock-au-gingembre-eau-de-parfum,five o'clock au gingembre eau de parfum,1,0,0,0,1,0,1,0,8,3,5,61e76eb060
+og::flaming-dandelion-eau-de-parfum,og_youtube,flaming-dandelion-eau-de-parfum,flaming dandelion eau de parfum,1,0,0,0,0,0,1,0,8,7,5,daceb30a6a
+og::flash-back-eau-de-parfum,og_youtube,flash-back-eau-de-parfum,flash back eau de parfum,1,0,0,0,0,1,0,0,7,7,5,3b66d79634
+og::flavia-vanilla-eau-de-parfum,og_youtube,flavia-vanilla-eau-de-parfum,flavia vanilla eau de parfum,1,0,0,0,0,1,0,0,8,7,6,6aeee3542b
+og::fleur-d-oranger-27-eau-de-parfum,og_youtube,fleur-d-oranger-27-eau-de-parfum,fleur d'oranger 27 eau de parfum,1,0,0,0,1,1,0,0,8,7,6,b7a00f59fd
+og::fleur-de-comores-eau-de-parfum,og_youtube,fleur-de-comores-eau-de-parfum,fleur de comores eau de parfum,1,0,0,0,1,0,0,0,8,6,5,f6796d3479
+og::fleur-nocturne-eau-de-parfum,og_youtube,fleur-nocturne-eau-de-parfum,fleur nocturne eau de parfum,1,0,0,0,0,0,0,0,8,7,5,261ad9db39
+og::fleurs-d-oranger-eau-de-parfum,og_youtube,fleurs-d-oranger-eau-de-parfum,fleurs d'oranger eau de parfum,1,0,0,0,0,1,0,0,8,7,5,138cbeb352
+og::flor-de-naranjo-eau-de-parfum,og_youtube,flor-de-naranjo-eau-de-parfum,flor de naranjo eau de parfum,1,0,0,0,0,0,0,0,7,6,5,33ab1eda76
+og::flos-mortis-eau-de-toilette,og_youtube,flos-mortis-eau-de-toilette,flos mortis eau de toilette,1,0,0,0,0,0,0,1,5,6,5,4bdf839d43
+og::flower-of-immortality-eau-de-parfum,og_youtube,flower-of-immortality-eau-de-parfum,flower of immortality eau de parfum,1,0,0,0,0,0,1,0,8,6,5,98e0d055d4
+og::foin-fraichement-coupe-eau-de-parfum,og_youtube,foin-fraichement-coupe-eau-de-parfum,foin fraichement coupe eau de parfum,1,0,0,0,1,0,0,0,7,5,6,c121c71b3c
+og::forbidden-games-eau-de-parfum,og_youtube,forbidden-games-eau-de-parfum,forbidden games eau de parfum,1,0,0,0,1,0,0,0,8,6,5,d959dc74af
+og::fortis-eau-de-parfum,og_youtube,fortis-eau-de-parfum,fortis eau de parfum,0,0,0,0,0,0,1,0,6,6,5,c0748c7b21
+og::fou-d-absinthe-eau-de-parfum,og_youtube,fou-d-absinthe-eau-de-parfum,fou d'absinthe eau de parfum,1,0,0,0,1,0,1,0,8,6,5,b3a1670c9e
+og::fougere-bengale-eau-de-parfum,og_youtube,fougere-bengale-eau-de-parfum,fougere bengale eau de parfum,1,0,0,0,1,0,0,0,9,6,6,a9b2df574f
+og::framboise-noire-eau-de-parfum,og_youtube,framboise-noire-eau-de-parfum,framboise noire eau de parfum,1,0,0,0,0,0,0,0,7,5,5,4df84551b5
+og::francois-charles-eau-de-parfum,og_youtube,francois-charles-eau-de-parfum,francois charles eau de parfum,1,0,0,0,0,0,0,0,6,5,6,e366469a28
+og::frank-no-1-eau-de-parfum,og_youtube,frank-no-1-eau-de-parfum,frank no. 1 eau de parfum,1,0,0,0,0,0,0,0,7,6,5,98043f634d
+og::frank-no-2-eau-de-parfum,og_youtube,frank-no-2-eau-de-parfum,frank no. 2 eau de parfum,1,0,0,0,1,0,0,0,8,6,6,7c3a863522
+og::frankincense-myrrh-rose-maroc-perfume-oil,og_youtube,frankincense-myrrh-rose-maroc-perfume-oil,frankincense - myrrh - rose maroc perfume oil,1,0,0,0,1,0,1,0,7,7,5,c6a35012cb
+og::freetrapper-eau-de-parfum,og_youtube,freetrapper-eau-de-parfum,freetrapper eau de parfum,1,0,0,0,0,0,0,0,6,5,5,621e4a20fb
+og::french-leather-eau-de-parfum,og_youtube,french-leather-eau-de-parfum,french leather eau de parfum,1,0,0,0,0,0,1,0,6,5,5,344d833aca
+og::fruitchouli-eau-de-parfum,og_youtube,fruitchouli-eau-de-parfum,fruitchouli eau de parfum,1,0,0,0,0,0,1,0,6,6,5,b6e683ebd0
+og::fumidus-eau-de-parfum,og_youtube,fumidus-eau-de-parfum,fumidus eau de parfum,0,0,0,0,0,1,0,1,3,6,5,14feae5e13
+og::gaea-eau-de-parfum,og_youtube,gaea-eau-de-parfum,gaea eau de parfum,1,0,0,0,0,0,0,0,7,7,5,08182f06ca
+og::galloway-eau-de-parfum,og_youtube,galloway-eau-de-parfum,galloway eau de parfum,1,0,0,0,1,0,0,0,7,6,6,4b9ec2a453
+og::gardenia-eau-de-parfum,og_youtube,gardenia-eau-de-parfum,gardenia eau de parfum,1,0,0,0,1,0,0,0,7,5,5,dbdff6c2ca
+og::gardenia-petale-eau-de-parfum,og_youtube,gardenia-petale-eau-de-parfum,gardenia petale eau de parfum,1,1,0,0,1,0,0,0,6,6,5,34083adc20
+og::garnet-perfume-oil,og_youtube,garnet-perfume-oil,garnet perfume oil,1,0,0,0,1,0,1,0,6,7,7,747221f6f6
+og::geisha-blanche-eau-de-parfum,og_youtube,geisha-blanche-eau-de-parfum,geisha blanche eau de parfum,1,0,0,0,0,0,1,0,7,5,5,9210035080
+og::geisha-green-roll-on-perfume-oil,og_youtube,geisha-green-roll-on-perfume-oil,geisha green roll-on perfume oil,0,0,0,0,1,1,0,0,6,5,6,fdf41df7a1
+og::geisha-noire-eau-de-parfum,og_youtube,geisha-noire-eau-de-parfum,geisha noire eau de parfum,0,0,0,0,1,0,0,0,6,6,7,03abaeeb91
+og::geisha-noire-roll-on-perfume-oil,og_youtube,geisha-noire-roll-on-perfume-oil,geisha noire roll-on perfume oil,0,0,0,0,1,0,0,0,6,5,6,503408aa65
+og::geisha-rouge-eau-de-parfum,og_youtube,geisha-rouge-eau-de-parfum,geisha rouge - eau de parfum,1,0,0,0,1,1,0,0,8,8,6,90c3903b8b
+og::geisha-vanilla-hinoki-eau-de-parfum,og_youtube,geisha-vanilla-hinoki-eau-de-parfum,geisha vanilla hinoki- eau de parfum,1,0,0,0,0,0,1,0,6,5,5,9862f5af8f
+og::geisha-vanilla-hinoki-roll-on-perfume-oil,og_youtube,geisha-vanilla-hinoki-roll-on-perfume-oil,geisha vanilla hinoki roll-on perfume oil,0,0,0,0,0,0,0,0,5,5,5,95b978e30d
+og::gendarme-eau-de-cologne,og_youtube,gendarme-eau-de-cologne,gendarme - eau de cologne,1,0,1,0,0,0,0,0,4,6,5,6749f6dad9
+og::geza-schoen-eau-de-toilette,og_youtube,geza-schoen-eau-de-toilette,geza schoen eau de toilette,1,0,0,0,0,0,1,0,6,6,6,adf9f4643b
+og::gheorghe-eau-de-parfum,og_youtube,gheorghe-eau-de-parfum,gheorghe eau de parfum,0,0,0,0,1,0,0,1,4,7,5,cc003bd150
+og::ginger-ciao-eau-de-parfum,og_youtube,ginger-ciao-eau-de-parfum,ginger ciao eau de parfum,1,0,0,0,1,0,1,0,8,8,6,d59dd95e81
+og::glorious-eau-de-parfum,og_youtube,glorious-eau-de-parfum,glorious eau de parfum,1,0,0,0,1,0,0,0,8,6,7,c99da29903
+og::godolphin-eau-de-parfum,og_youtube,godolphin-eau-de-parfum,godolphin eau de parfum,0,0,0,0,0,0,0,0,5,5,5,6a3f6ee67d
+og::gold-extrait-de-parfum,og_youtube,gold-extrait-de-parfum,gold extrait de parfum,1,0,0,0,1,0,1,0,8,7,6,8af2bfcda5
+og::gold-rose-oudh-extrait-de-parfum,og_youtube,gold-rose-oudh-extrait-de-parfum,gold rose oudh extrait de parfum,1,0,0,0,1,0,0,0,8,6,6,cd32bb7985
+og::gold-woman-eau-de-parfum,og_youtube,gold-woman-eau-de-parfum,gold woman eau de parfum,1,0,0,0,1,0,1,0,7,6,5,ef1d6945ae
+og::golden-powder-eau-de-parfum,og_youtube,golden-powder-eau-de-parfum,golden powder eau de parfum,1,0,0,0,1,1,1,0,8,8,7,a2739d5585
+og::good-girl-gone-bad-eau-de-parfum,og_youtube,good-girl-gone-bad-eau-de-parfum,good girl gone bad eau de parfum,0,0,0,0,1,0,1,0,5,5,6,ea696322bf
+og::gothic-i-eau-de-parfum,og_youtube,gothic-i-eau-de-parfum,gothic i - eau de parfum,1,0,0,0,1,0,0,0,7,6,6,2f9377ecde
+og::gothic-i-perfume-oil-roll-on-perfume-oil,og_youtube,gothic-i-perfume-oil-roll-on-perfume-oil,gothic i - perfume oil roll-on perfume oil,1,0,0,0,0,0,1,0,8,8,6,e714985c70
+og::gothic-ii-eau-de-parfum,og_youtube,gothic-ii-eau-de-parfum,gothic ii - eau de parfum,0,0,0,0,1,0,1,0,6,5,6,56d6bbb765
+og::gothic-ii-perfume-oil-roll-on-perfume-oil,og_youtube,gothic-ii-perfume-oil-roll-on-perfume-oil,gothic ii - perfume oil roll-on perfume oil,1,0,0,0,0,0,1,0,8,8,6,7c2de571e4
+og::gothic-iii-eau-de-parfum,og_youtube,gothic-iii-eau-de-parfum,gothic iii - eau de parfum,1,0,0,0,1,0,1,0,7,6,7,f0fdcf7e41
+og::gothic-iii-perfume-oil-roll-on-perfume-oil,og_youtube,gothic-iii-perfume-oil-roll-on-perfume-oil,gothic iii - perfume oil roll-on perfume oil,1,0,0,0,0,0,1,0,8,8,6,a1c81db9ea
+og::gothic-iv-perfume-oil-perfume-oil-roll-on,og_youtube,gothic-iv-perfume-oil-perfume-oil-roll-on,gothic iv- perfume oil perfume oil roll-on,1,0,0,0,1,0,1,0,7,6,7,14f78433ee
+og::gothic-v-perfume-oil-perfume-oil-roll-on,og_youtube,gothic-v-perfume-oil-perfume-oil-roll-on,gothic v- perfume oil perfume oil roll-on,1,0,0,0,1,0,1,0,7,6,7,b1b56bacfc
+og::graine-de-joie-eau-de-parfum,og_youtube,graine-de-joie-eau-de-parfum,graine de joie eau de parfum,1,0,0,0,1,0,0,0,9,7,6,cf5e9e6a84
+og::grand-neroli-cologne-absolue,og_youtube,grand-neroli-cologne-absolue,grand neroli cologne absolue,1,0,0,0,1,0,0,0,7,6,6,c2ae15079b
+og::grand-soir-eau-de-parfum,og_youtube,grand-soir-eau-de-parfum,grand soir eau de parfum,1,0,0,0,1,0,1,0,7,6,6,963d61a051
+og::grape-pearls-eau-de-parfum,og_youtube,grape-pearls-eau-de-parfum,grape pearls eau de parfum,1,0,0,0,0,0,1,0,8,7,6,46a98e162c
+og::graphite-eau-de-parfum,og_youtube,graphite-eau-de-parfum,graphite eau de parfum,1,0,0,0,1,0,1,0,7,6,6,92bbf9a1d2
+og::greek-keys-extrait-de-parfum,og_youtube,greek-keys-extrait-de-parfum,greek keys extrait de parfum,1,0,0,0,0,0,1,0,7,6,5,6ee9f69421
+og::green-eau-de-parfum,og_youtube,green-eau-de-parfum,green eau de parfum,0,0,0,0,0,0,1,0,6,5,5,6f90b10ca9
+og::green-irish-tweed-eau-de-parfum,og_youtube,green-irish-tweed-eau-de-parfum,green irish tweed eau de parfum ...,0,0,0,0,1,0,0,0,6,5,6,d78127395b
+og::green-pearl-eau-de-parfum,og_youtube,green-pearl-eau-de-parfum,green pearl eau de parfum,1,0,0,0,0,0,1,0,7,7,6,61f2e56e32
+og::habdan-eau-de-parfum,og_youtube,habdan-eau-de-parfum,habdan eau de parfum,1,0,0,0,0,0,1,0,8,7,6,ec4e8f89d5
+og::hakka-eau-de-parfum,og_youtube,hakka-eau-de-parfum,hakka eau de parfum,1,0,0,0,0,0,0,0,6,5,5,71df00d0cf
+og::harmatan-noir-eau-de-toilette,og_youtube,harmatan-noir-eau-de-toilette,harmatan noir eau de toilette,0,0,0,0,0,0,1,0,6,5,5,d34c307e0c
+og::haxan-eau-de-parfum,og_youtube,haxan-eau-de-parfum,haxan eau de parfum,1,0,0,0,0,0,1,0,8,8,6,e5249852f9
+og::heartless-helen-eau-de-parfum,og_youtube,heartless-helen-eau-de-parfum,heartless helen eau de parfum,1,0,1,0,1,0,0,0,6,6,6,17df5c8c84
+og::hedonist-eau-de-parfum,og_youtube,hedonist-eau-de-parfum,hedonist eau de parfum,1,0,0,0,0,0,0,0,7,6,6,b1bd197faa
+og::hedonist-iris-absolute-eau-de-parfum,og_youtube,hedonist-iris-absolute-eau-de-parfum,hedonist iris absolute eau de parfum,1,0,0,0,0,0,1,0,7,6,5,49929022cd
+og::hedonist-iris-eau-de-parfum,og_youtube,hedonist-iris-eau-de-parfum,hedonist iris eau de parfum,1,0,0,0,1,0,0,0,8,6,5,a7cd374a9f
+og::hedonist-rose-absolute-eau-de-parfum,og_youtube,hedonist-rose-absolute-eau-de-parfum,hedonist rose absolute eau de parfum,1,0,0,0,0,0,1,0,7,6,5,9109780980
+og::hedonist-rose-eau-de-parfum,og_youtube,hedonist-rose-eau-de-parfum,hedonist rose eau de parfum,1,0,0,0,1,0,0,0,7,6,5,e0e3d5686b
+og::heliotrope-eau-de-parfum,og_youtube,heliotrope-eau-de-parfum,heliotrope eau de parfum,1,0,0,0,0,0,1,0,7,7,6,613bc72f0c
+og::hermann-eau-de-parfum,og_youtube,hermann-eau-de-parfum,hermann eau de parfum,1,0,0,0,0,0,1,0,7,6,5,e3f7526766
+og::himalaya-eau-de-parfum,og_youtube,himalaya-eau-de-parfum,himalaya eau de parfum ...,1,0,0,0,1,0,0,0,8,6,6,b06830e847
+og::homme-eau-de-parfum,og_youtube,homme-eau-de-parfum,homme eau de parfum,1,0,0,0,0,0,1,0,7,6,6,9713d1058e
+og::honey-aoud-eau-de-parfum,og_youtube,honey-aoud-eau-de-parfum,honey aoud eau de parfum,0,0,0,0,0,0,0,0,5,5,5,12da313fca
+og::honeysuckle-caprifoglio-cologne-eau-de-cologne,og_youtube,honeysuckle-caprifoglio-cologne-eau-de-cologne,honeysuckle / caprifoglio cologne eau de cologne,1,0,0,0,1,0,0,0,8,6,5,84759ec662
+og::horizon-eau-de-parfum,og_youtube,horizon-eau-de-parfum,horizon eau de parfum,0,0,0,0,0,0,1,0,6,5,5,0db766eca8
+og::hundred-silent-ways-extrait-de-parfum,og_youtube,hundred-silent-ways-extrait-de-parfum,hundred silent ways extrait de parfum,1,0,0,0,1,0,1,0,8,8,6,46f3f71f4a
+og::ichnusa-eau-de-parfum,og_youtube,ichnusa-eau-de-parfum,ichnusa eau de parfum,1,0,0,0,0,0,1,0,8,8,6,1262869221
+og::if-by-rk-eau-de-parfum,og_youtube,if-by-rk-eau-de-parfum,if by rk eau de parfum,1,0,0,0,0,0,1,0,7,6,5,44e26e0949
+og::ile-pourpre-eau-de-parfum,og_youtube,ile-pourpre-eau-de-parfum,ile pourpre eau de parfum,0,0,0,0,0,0,1,0,6,5,5,78e800fa6e
+og::incense-extreme-eau-de-parfum,og_youtube,incense-extreme-eau-de-parfum,incense extreme eau de parfum,0,0,0,0,0,0,1,0,5,5,5,caec9f138b
+og::incense-flash-eau-de-parfum,og_youtube,incense-flash-eau-de-parfum,incense flash eau de parfum,1,0,0,0,0,0,1,0,6,6,5,a6b30a675d
+og::incense-oud-eau-de-parfum,og_youtube,incense-oud-eau-de-parfum,incense oud eau de parfum,1,0,0,0,0,0,1,0,8,8,8,d7fcf5531d
+og::incense-rose-eau-de-parfum,og_youtube,incense-rose-eau-de-parfum,incense rose eau de parfum,1,0,0,0,0,0,0,0,7,6,6,3a6a44d709
+og::indian-wood-eau-de-parfum,og_youtube,indian-wood-eau-de-parfum,indian wood eau de parfum,1,0,0,0,1,1,0,0,8,8,7,57c667f2a6
+og::intelligence-fantasy-eau-de-toilette,og_youtube,intelligence-fantasy-eau-de-toilette,intelligence & fantasy eau de toilette,1,0,0,0,0,0,1,0,7,5,5,b8660128eb
+og::intense-tiare-eau-de-parfum,og_youtube,intense-tiare-eau-de-parfum,intense tiare eau de parfum,1,0,0,0,0,1,1,0,6,7,5,9dd2db78be
+og::into-the-void-eau-de-parfum,og_youtube,into-the-void-eau-de-parfum,into the void eau de parfum,1,0,0,0,1,0,0,0,7,6,6,4dba11fa55
+og::invasion-barbare-eau-de-parfum,og_youtube,invasion-barbare-eau-de-parfum,invasion barbare eau de parfum,1,0,0,0,1,0,0,0,8,7,7,26626ed541
+og::iridescent-sky-eau-de-parfum,og_youtube,iridescent-sky-eau-de-parfum,iridescent sky eau de parfum,0,0,0,0,0,0,1,0,6,5,5,d873b0772f
+og::iris-bleu-gris-eau-de-parfum,og_youtube,iris-bleu-gris-eau-de-parfum,iris bleu gris eau de parfum,1,0,0,0,0,0,1,0,7,5,7,285630c8e4
+og::iris-de-nuit-eau-de-parfum,og_youtube,iris-de-nuit-eau-de-parfum,iris de nuit eau de parfum,0,0,0,0,0,0,0,0,5,5,5,bbabc30fa2
+og::iskander-eau-de-parfum,og_youtube,iskander-eau-de-parfum,iskander eau de parfum,0,0,0,0,1,0,0,0,6,5,5,bdbb2996b8
+og::issara-extrait-de-parfum,og_youtube,issara-extrait-de-parfum,issara extrait de parfum,1,0,0,0,0,0,1,0,8,7,6,d4288e2cfa
+og::italian-citrus-eau-de-parfum,og_youtube,italian-citrus-eau-de-parfum,italian citrus eau de parfum,1,0,0,0,1,0,0,0,8,6,5,23a5d8b430
+og::jack-eau-de-parfum,og_youtube,jack-eau-de-parfum,jack eau de parfum,0,1,0,0,0,0,0,0,3,4,4,bdb3e4ae45
+og::jade-eau-de-parfum,og_youtube,jade-eau-de-parfum,jade eau de parfum,1,0,0,0,1,0,0,0,7,5,6,17b06e86a3
+og::jardins-d-armide-eau-de-parfum,og_youtube,jardins-d-armide-eau-de-parfum,jardins d'armide eau de parfum,1,0,0,0,1,0,0,0,8,6,6,ce4bc84755
+og::jasmin-17-eau-de-parfum,og_youtube,jasmin-17-eau-de-parfum,jasmin 17 eau de parfum,0,0,0,0,0,0,1,0,6,5,5,bf1d7d8573
+og::jasmin-angelique-cologne-absolue,og_youtube,jasmin-angelique-cologne-absolue,jasmin angelique cologne absolue,0,0,0,0,0,0,1,0,5,5,5,222c9ebcb6
+og::jasmin-et-cigarette-eau-de-parfum,og_youtube,jasmin-et-cigarette-eau-de-parfum,jasmin et cigarette eau de parfum,0,0,0,0,0,0,1,1,3,6,5,9b370eb678
+og::jasmin-kama-eau-de-parfum,og_youtube,jasmin-kama-eau-de-parfum,jasmin kama eau de parfum,1,0,0,0,0,0,1,0,7,7,6,7ece43bb40
+og::jasmin-perfume-oil,og_youtube,jasmin-perfume-oil,jasmin perfume oil,1,0,0,0,0,0,0,0,6,5,5,a305c02ea4
+og::jubilation-25-eau-de-parfum,og_youtube,jubilation-25-eau-de-parfum,jubilation 25 eau de parfum,1,0,0,0,1,0,1,0,8,7,8,ffd4540d87
+og::jubilation-xxv-eau-de-parfum,og_youtube,jubilation-xxv-eau-de-parfum,jubilation xxv eau de parfum,1,0,0,0,1,0,1,0,8,7,8,3e7e306e05
+og::jungle-jezebel-extrait-de-parfum,og_youtube,jungle-jezebel-extrait-de-parfum,jungle jezebel extrait de parfum,1,0,0,0,0,1,1,0,8,8,7,4eaa336815
+og::jupiter-eau-de-parfum,og_youtube,jupiter-eau-de-parfum,jupiter eau de parfum,1,0,0,0,0,0,1,0,7,6,6,b2bc909910
+og::jus-d-amour-eau-de-parfum,og_youtube,jus-d-amour-eau-de-parfum,jus d'amour - eau de parfum,0,0,1,0,0,0,0,1,3,6,6,a401b7715c
+og::jus-d-amour-perfume-oil-perfume-oil,og_youtube,jus-d-amour-perfume-oil-perfume-oil,jus d'amour - perfume oil perfume oil,0,0,0,0,0,0,0,1,3,6,6,561acd8a14
+og::kai-eau-de-parfum-eau-de-parfum-spray,og_youtube,kai-eau-de-parfum-eau-de-parfum-spray,kai - eau de parfum eau de parfum spray,0,0,0,0,0,1,0,0,6,7,5,6a99ea8c38
+og::kai-perfume-oil-roll-on-perfume-oil,og_youtube,kai-perfume-oil-roll-on-perfume-oil,kai - perfume oil roll-on perfume oil,1,0,0,0,1,0,0,0,8,6,6,d9b97a3879
+og::karagoz-extrait-de-parfum,og_youtube,karagoz-extrait-de-parfum,karagoz extrait de parfum,1,0,0,0,0,0,0,0,8,7,6,fea0060e35
+og::kashan-rose-eau-de-toilette,og_youtube,kashan-rose-eau-de-toilette,kashan rose eau de toilette,1,0,0,0,0,0,0,0,7,5,5,c2520daa80
+og::keman-parfum,og_youtube,keman-parfum,keman parfum,1,0,0,0,0,0,1,0,8,7,6,cf81697b00
+og::kira-kira-eau-de-parfum,og_youtube,kira-kira-eau-de-parfum,kira kira eau de parfum,0,0,0,0,0,0,1,0,6,5,5,3c1fda84fa
+og::kiss-me-intense-eau-de-parfum,og_youtube,kiss-me-intense-eau-de-parfum,kiss me intense eau de parfum,1,0,0,0,0,0,0,0,7,5,6,118f1ce7de
+og::knize-ten-eau-de-toilette,og_youtube,knize-ten-eau-de-toilette,knize ten eau de toilette,1,0,0,0,1,0,0,0,8,6,7,770e450cea
+og::kobe-eau-de-parfum,og_youtube,kobe-eau-de-parfum,kobe eau de parfum,1,0,0,0,0,0,1,0,8,7,6,29e5fe2db6
+og::koiame-eau-de-parfum,og_youtube,koiame-eau-de-parfum,koiame eau de parfum,1,0,0,0,0,0,0,0,6,5,5,d13313d199
+og::l-air-du-desert-marocain-eau-de-toilette,og_youtube,l-air-du-desert-marocain-eau-de-toilette,l'air du desert marocain eau de toilette ...,1,0,0,0,1,1,0,0,8,7,6,ae1e5df21e
+og::l-attesa-eau-de-parfum,og_youtube,l-attesa-eau-de-parfum,l'attesa eau de parfum,1,0,0,0,0,0,1,0,8,6,5,41e511143d
+og::l-eau-d-ambre-eau-de-toilette,og_youtube,l-eau-d-ambre-eau-de-toilette,l'eau d'ambre eau de toilette,0,0,0,0,0,0,0,0,6,5,5,ab7e6c3654
+og::l-eau-de-circe-eau-de-parfum,og_youtube,l-eau-de-circe-eau-de-parfum,l'eau de circe eau de parfum,0,0,0,0,0,0,0,0,5,5,5,b41bc9f014
+og::l-eau-de-l-artisan-eau-de-toilette,og_youtube,l-eau-de-l-artisan-eau-de-toilette,l'eau de l'artisan eau de toilette,0,0,0,0,0,0,1,0,6,6,5,2b1e811bf6
+og::l-eau-eau-de-toilette,og_youtube,l-eau-eau-de-toilette,l'eau eau de toilette,0,0,0,0,0,0,1,0,5,5,5,3957f2f387
+og::l-eau-mixte-eau-fraiche,og_youtube,l-eau-mixte-eau-fraiche,l'eau mixte eau fraiche,1,0,0,0,0,0,1,0,7,6,5,75408b2542
+og::l-eau-rare-matale-eau-de-toilette,og_youtube,l-eau-rare-matale-eau-de-toilette,l'eau rare matale eau de toilette,1,0,0,0,0,0,1,0,8,6,6,b080e2d3a8
+og::l-ete-en-douce-eau-de-toilette,og_youtube,l-ete-en-douce-eau-de-toilette,l'ete en douce eau de toilette,1,0,0,0,0,0,1,0,7,7,6,b749daae17
+og::l-humaniste-eau-de-parfum,og_youtube,l-humaniste-eau-de-parfum,l'humaniste eau de parfum,1,0,0,0,1,0,1,0,8,7,6,a953fbd73f
+og::l-ombre-dans-l-eau-eau-de-parfum,og_youtube,l-ombre-dans-l-eau-eau-de-parfum,l'ombre dans l'eau - eau de parfum,1,0,0,0,0,0,1,0,7,6,6,589a042940
+og::l-ombre-dans-l-eau-eau-de-toilette,og_youtube,l-ombre-dans-l-eau-eau-de-toilette,l'ombre dans l'eau - eau de toilette,1,0,0,0,0,0,0,0,7,6,6,ea2cac0021
+og::la-capitale-parfum,og_youtube,la-capitale-parfum,la capitale parfum,1,0,0,0,0,0,1,0,8,7,6,06107c1cd4
+og::la-chasse-aux-papillons-eau-de-toilette,og_youtube,la-chasse-aux-papillons-eau-de-toilette,la chasse aux papillons eau de toilette,1,0,0,0,1,0,0,0,7,6,5,1acefa0391
+og::la-chasse-aux-papillons-extreme-eau-de-parfum,og_youtube,la-chasse-aux-papillons-extreme-eau-de-parfum,la chasse aux papillons extreme eau de parfum,1,0,0,0,0,0,1,0,6,5,5,b207b9f15d
+og::la-liturgie-des-heures-eau-de-parfum,og_youtube,la-liturgie-des-heures-eau-de-parfum,la liturgie des heures eau de parfum,0,0,0,0,0,0,1,0,6,5,5,ae5e12060d
+og::la-tulipe-eau-de-parfum,og_youtube,la-tulipe-eau-de-parfum,la tulipe eau de parfum,1,0,0,0,0,0,1,0,7,7,6,26419d0f18
+og::la-tulipe-hair-perfume,og_youtube,la-tulipe-hair-perfume,la tulipe hair perfume,0,0,0,0,0,0,0,1,3,6,6,47cec1390d
+og::la-vierge-de-fer-eau-de-parfum,og_youtube,la-vierge-de-fer-eau-de-parfum,la vierge de fer eau de parfum,1,0,0,0,0,0,0,0,6,5,5,5498ab20a2
+og::labdanum-18-eau-de-parfum,og_youtube,labdanum-18-eau-de-parfum,labdanum 18 eau de parfum,1,0,0,0,1,0,0,0,8,5,5,88bf67ae5b
+og::lace-extrait-de-parfum,og_youtube,lace-extrait-de-parfum,lace extrait de parfum,1,0,0,0,0,0,1,0,8,7,5,de4e8a4abc
+og::lady-vengeance-eau-de-parfum,og_youtube,lady-vengeance-eau-de-parfum,lady vengeance eau de parfum,0,0,0,0,0,0,1,0,6,6,5,b56518cc5f
+og::lalibela-eau-de-parfum,og_youtube,lalibela-eau-de-parfum,lalibela eau de parfum,0,0,0,0,1,0,1,0,6,5,5,eea0cfa39e
+og::lampblack-eau-de-parfum,og_youtube,lampblack-eau-de-parfum,lampblack eau de parfum,0,0,0,0,0,0,1,0,6,6,5,5d756181cc
+og::land-of-warriors-eau-de-parfum,og_youtube,land-of-warriors-eau-de-parfum,land of warriors eau de parfum,0,0,0,0,0,0,0,0,5,5,5,8cc00c009d
+og::larmes-du-desert-eau-de-parfum,og_youtube,larmes-du-desert-eau-de-parfum,larmes du desert eau de parfum,1,0,0,0,1,0,0,0,8,4,6,66b26b8cf1
+og::laudano-nero-extrait-de-parfum,og_youtube,laudano-nero-extrait-de-parfum,laudano nero extrait de parfum,1,0,0,0,0,1,0,0,8,7,7,30f9241dfb
+og::lavande-44-eau-de-parfum,og_youtube,lavande-44-eau-de-parfum,lavande 44 eau de parfum,1,0,0,0,0,0,0,0,8,5,5,c03d883f84
+og::layton-eau-de-parfum,og_youtube,layton-eau-de-parfum,layton eau de parfum,1,0,0,0,1,0,0,0,9,6,7,1830c3d1b2
+og::le-barbier-de-tanger-eau-de-parfum,og_youtube,le-barbier-de-tanger-eau-de-parfum,le barbier de tanger eau de parfum,1,0,0,0,1,0,1,0,8,7,7,7809111e84
+og::le-maroc-pour-elle-eau-de-parfum,og_youtube,le-maroc-pour-elle-eau-de-parfum,le maroc pour elle eau de parfum,0,0,0,0,0,0,1,0,6,5,5,4ef9d92eb3
+og::le-musc-la-peau-eau-de-parfum,og_youtube,le-musc-la-peau-eau-de-parfum,le musc & la peau eau de parfum,1,0,0,0,0,0,1,0,7,6,6,3b520f4178
+og::le-pavillon-d-or-eau-de-parfum,og_youtube,le-pavillon-d-or-eau-de-parfum,le pavillon d'or eau de parfum,1,0,0,0,1,0,1,0,7,6,6,a8d775badd
+og::le-roi-empereur-eau-de-parfum,og_youtube,le-roi-empereur-eau-de-parfum,le roi empereur eau de parfum,1,0,0,0,0,0,1,0,6,6,5,99142b13a1
+og::le-vainqueur-eau-de-parfum,og_youtube,le-vainqueur-eau-de-parfum,le vainqueur eau de parfum,1,0,0,0,1,0,1,0,8,7,6,e9ff852ca9
+og::leder-6-eau-de-parfum,og_youtube,leder-6-eau-de-parfum,leder 6 eau de parfum,1,0,0,0,1,0,0,0,7,5,5,a5ec0b727a
+og::lemon-line-eau-de-parfum,og_youtube,lemon-line-eau-de-parfum,lemon line eau de parfum,1,0,0,0,1,1,1,0,7,6,6,97441805dc
+og::leopard-extrait-de-parfum,og_youtube,leopard-extrait-de-parfum,leopard extrait de parfum,1,0,0,0,1,0,0,0,7,6,6,3567653bfb
+og::les-annees-25-bis-eau-de-parfum,og_youtube,les-annees-25-bis-eau-de-parfum,les annees 25 bis eau de parfum,1,0,0,0,1,0,1,0,8,6,6,823fb251b9
+og::les-jeux-sont-faits-eau-de-parfum,og_youtube,les-jeux-sont-faits-eau-de-parfum,les jeux sont faits eau de parfum,1,0,0,0,0,0,0,1,4,6,6,78a41ee50e
+og::les-nuits-d-izu-eau-de-parfum,og_youtube,les-nuits-d-izu-eau-de-parfum,les nuits d'izu eau de parfum,0,0,0,0,0,0,0,0,5,5,5,9ce1a932ab
+og::lilac-love-eau-de-parfum,og_youtube,lilac-love-eau-de-parfum,lilac love eau de parfum,1,0,0,0,1,0,1,0,8,6,5,bbb263141b
+og::lili-laa-eau-de-parfum,og_youtube,lili-laa-eau-de-parfum,lili laa eau de parfum,1,0,0,0,1,0,1,0,8,7,6,d2428f5d0c
+og::liquidnight-eau-de-parfum,og_youtube,liquidnight-eau-de-parfum,liquidnight eau de parfum,0,0,0,0,0,0,1,0,6,6,5,287c0f0382
+og::lira-eau-de-parfum,og_youtube,lira-eau-de-parfum,lira eau de parfum,1,0,0,0,1,0,1,0,9,8,6,f88ca1b473
+og::lonestar-memories-eau-de-toilette,og_youtube,lonestar-memories-eau-de-toilette,lonestar memories eau de toilette,1,0,0,0,1,0,1,0,8,6,6,b18cac2071
+og::love-in-white-eau-de-parfum,og_youtube,love-in-white-eau-de-parfum,love in white eau de parfum ...,1,0,0,0,1,0,0,0,7,6,6,cdece54849
+og::love-mimosa-eau-de-parfum,og_youtube,love-mimosa-eau-de-parfum,love mimosa eau de parfum,1,0,0,0,1,0,1,0,7,6,5,863d9c5a05
+og::love-shot-eau-de-parfum,og_youtube,love-shot-eau-de-parfum,love shot eau de parfum,1,0,0,0,1,0,0,0,8,6,6,0e2bef68a4
+og::luctor-et-emergo-eau-de-parfum,og_youtube,luctor-et-emergo-eau-de-parfum,luctor et emergo - eau de parfum,1,0,0,0,0,0,1,0,7,5,5,4f48d63444
+og::luctor-et-emergo-eau-de-toilette,og_youtube,luctor-et-emergo-eau-de-toilette,luctor et emergo - eau de toilette,1,0,0,0,0,0,1,0,7,5,5,1ade485155
+og::lumiere-blanche-eau-de-parfum,og_youtube,lumiere-blanche-eau-de-parfum,lumiere blanche eau de parfum,1,0,0,0,1,1,1,0,8,7,6,26cc7b3ea1
+og::lumiere-noire-pour-femme-eau-de-parfum,og_youtube,lumiere-noire-pour-femme-eau-de-parfum,lumiere noire pour femme eau de parfum,1,0,0,0,1,0,0,0,7,6,5,9884a9f0d0
+og::lumiere-noire-pour-homme-eau-de-toilette,og_youtube,lumiere-noire-pour-homme-eau-de-toilette,lumiere noire pour homme eau de toilette,1,0,0,0,1,0,0,0,8,7,6,25b1f637c3
+og::lune-feline-eau-de-parfum,og_youtube,lune-feline-eau-de-parfum,lune feline eau de parfum,1,0,0,0,1,0,0,0,8,6,6,8e31aa7e5b
+og::lust-in-paradise-x-reine-paradis-eau-de-parfum,og_youtube,lust-in-paradise-x-reine-paradis-eau-de-parfum,lust in paradise x reine paradis eau de parfum,1,0,0,0,1,0,0,0,8,6,5,ae68a43a90
+og::lux-eau-de-parfum,og_youtube,lux-eau-de-parfum,lux eau de parfum,1,0,0,0,1,0,1,0,7,6,6,9ab9ce18eb
+og::lyric-for-men-eau-de-parfum,og_youtube,lyric-for-men-eau-de-parfum,lyric for men eau de parfum,1,0,0,0,1,0,1,0,8,7,6,8fe5b5838e
+og::lyric-for-women-eau-de-parfum,og_youtube,lyric-for-women-eau-de-parfum,lyric for women eau de parfum,1,0,0,0,1,0,1,0,8,6,6,d3098f256d
+og::lys-noir-eau-de-parfum,og_youtube,lys-noir-eau-de-parfum,lys noir eau de parfum,0,0,0,0,1,0,0,1,3,6,5,2b879f4598
+og::ma-bete-eau-de-parfum,og_youtube,ma-bete-eau-de-parfum,ma bete eau de parfum,1,0,0,0,1,0,0,0,7,6,5,2e745a098c
+og::made-in-heaven-eau-de-parfum,og_youtube,made-in-heaven-eau-de-parfum,made in heaven eau de parfum,1,0,0,0,0,0,1,0,7,7,6,85bbfa8a8e
+og::maderas-eau-de-parfum,og_youtube,maderas-eau-de-parfum,maderas eau de parfum,1,0,0,0,1,0,1,0,8,6,6,f9d3bdc804
+og::magenta-pop-eau-de-parfum,og_youtube,magenta-pop-eau-de-parfum,magenta pop eau de parfum,1,0,0,0,1,0,1,0,8,6,5,3464b7d88a
+og::majaina-sin-eau-de-parfum,og_youtube,majaina-sin-eau-de-parfum,majaina sin eau de parfum,1,0,0,0,1,0,1,0,7,5,5,9dabfce3cc
+og::mamok-eau-de-parfum,og_youtube,mamok-eau-de-parfum,mamok eau de parfum,1,0,0,0,1,0,1,0,8,6,6,0c73708106
+og::mandodari-parfum,og_youtube,mandodari-parfum,mandodari parfum,1,0,0,0,1,0,1,0,7,6,6,bfae3a7f9a
+og::marfa-eau-de-parfum,og_youtube,marfa-eau-de-parfum,marfa eau de parfum,1,0,0,0,1,0,1,0,8,7,5,1b29469f6e
+og::mark-buxton-eau-de-toilette,og_youtube,mark-buxton-eau-de-toilette,mark buxton eau de toilette,1,0,0,0,1,0,0,0,7,5,6,075d52d021
+og::maruyama-eau-de-parfum,og_youtube,maruyama-eau-de-parfum,maruyama eau de parfum,1,0,0,0,0,0,0,0,6,5,5,9b44301bda
+og::mechant-loup-eau-de-toilette,og_youtube,mechant-loup-eau-de-toilette,mechant loup eau de toilette,1,0,0,0,1,0,1,0,7,6,6,b78b5ba79a
+og::mediterraneo-parfum,og_youtube,mediterraneo-parfum,mediterraneo parfum,1,0,0,0,1,0,0,0,8,6,6,121c23567c
+og::meet-me-on-the-corner-eau-de-parfum,og_youtube,meet-me-on-the-corner-eau-de-parfum,meet me on the corner eau de parfum,1,0,0,0,1,0,1,0,8,7,5,fdf45a7a15
+og::mefisto-eau-de-parfum,og_youtube,mefisto-eau-de-parfum,mefisto eau de parfum,1,0,0,0,1,0,0,0,9,7,6,aea77ad8ec
+og::meliora-eau-de-parfum,og_youtube,meliora-eau-de-parfum,meliora eau de parfum,1,0,0,0,1,0,0,0,8,6,6,127c8887e9
+og::melodie-de-l-amour-extrait-de-parfum,og_youtube,melodie-de-l-amour-extrait-de-parfum,melodie de l'amour extrait de parfum,1,0,0,0,1,0,1,0,8,6,6,949cad6ff0
+og::memoir-man-eau-de-parfum,og_youtube,memoir-man-eau-de-parfum,memoir man eau de parfum,1,0,0,0,1,0,1,0,8,6,6,8f4a7389e7
+og::memoirs-of-a-trespasser-eau-de-parfum,og_youtube,memoirs-of-a-trespasser-eau-de-parfum,memoirs of a trespasser eau de parfum,1,0,0,0,1,0,1,0,8,6,6,975e9db6bd
+og::menthe-fraiche-eau-de-parfum,og_youtube,menthe-fraiche-eau-de-parfum,menthe fraiche eau de parfum,1,0,0,0,1,0,0,0,7,5,5,191ff90a1c
+og::midnight-oud-eau-de-parfum,og_youtube,midnight-oud-eau-de-parfum,midnight oud eau de parfum,0,1,0,0,0,0,0,0,4,5,5,892802be7a
+og::milano-cento-deodorant-stick,og_youtube,milano-cento-deodorant-stick,milano cento deodorant stick,1,0,0,0,0,0,1,0,6,6,5,bd35bfc752
+og::mile-high-eau-de-parfum,og_youtube,mile-high-eau-de-parfum,mile high eau de parfum,1,0,0,0,1,0,1,0,8,6,6,f53e91f12c
+og::milky-musk-eau-de-parfum,og_youtube,milky-musk-eau-de-parfum,milky musk eau de parfum,1,0,0,0,0,0,1,0,6,5,5,9824752977
+og::millesime-imperial-eau-de-parfum,og_youtube,millesime-imperial-eau-de-parfum,millesime imperial eau de parfum ...,1,0,0,0,1,0,0,0,8,6,6,d0e0a4b598
+og::mimosa-pour-moi-eau-de-toilette,og_youtube,mimosa-pour-moi-eau-de-toilette,mimosa pour moi eau de toilette,1,0,0,0,1,0,0,0,7,6,5,81fe8b57d3
+og::miss-marisa-fragrance-oil,og_youtube,miss-marisa-fragrance-oil,miss marisa fragrance oil,1,0,0,0,1,0,0,0,7,6,5,e61fd0d927
+og::miss-marisa-perfume-spray-eau-de-parfum,og_youtube,miss-marisa-perfume-spray-eau-de-parfum,miss marisa perfume spray eau de parfum,0,0,0,0,0,0,1,1,4,6,5,ea6838d827
+og::miss-marisa-tropical-perfume-spray-eau-de-parfum,og_youtube,miss-marisa-tropical-perfume-spray-eau-de-parfum,miss marisa tropical perfume spray eau de parfum,1,0,0,0,1,0,1,0,8,6,6,52bbc4be8c
+og::mississippi-medicine-eau-de-parfum,og_youtube,mississippi-medicine-eau-de-parfum,mississippi medicine eau de parfum,1,0,0,0,1,0,1,0,7,6,6,7803895271
+og::mizunara-eau-de-parfum,og_youtube,mizunara-eau-de-parfum,mizunara eau de parfum,1,0,0,0,1,0,1,0,8,6,5,f41796b796
+og::mmmm-eau-de-parfum,og_youtube,mmmm-eau-de-parfum,mmmm... eau de parfum,1,0,0,0,1,0,0,0,7,5,5,ed080e1836
+og::mojave-ghost-hair-perfume,og_youtube,mojave-ghost-hair-perfume,mojave ghost hair perfume,1,0,0,0,1,0,1,0,8,7,6,7616292297
+og::mojave-ghost-roll-on-oil-perfume-oil,og_youtube,mojave-ghost-roll-on-oil-perfume-oil,mojave ghost roll-on oil perfume oil,1,0,0,0,1,0,0,0,8,6,6,80723a5026
+og::monyette-paris-eau-de-parfum-spray,og_youtube,monyette-paris-eau-de-parfum-spray,monyette paris eau de parfum spray,1,0,0,0,1,0,0,0,8,6,6,d126b6fe5a
+og::monyette-paris-fragrance-oil,og_youtube,monyette-paris-fragrance-oil,monyette paris fragrance oil,1,0,0,0,1,0,0,0,8,6,5,8fef03dae5
+og::moonlight-in-heaven-eau-de-parfum,og_youtube,moonlight-in-heaven-eau-de-parfum,moonlight in heaven eau de parfum,1,0,0,0,1,0,1,0,8,7,6,398eb9c85f
+og::moonstone-perfume-oil,og_youtube,moonstone-perfume-oil,moonstone perfume oil,1,0,0,0,1,0,0,0,8,6,5,507219f5bc
+og::mousse-ii-eau-de-parfum,og_youtube,mousse-ii-eau-de-parfum,mousse ii eau de parfum,1,0,0,0,0,0,0,1,4,6,5,ce0ede91fa
+og::mousse-illuminee-eau-de-toilette,og_youtube,mousse-illuminee-eau-de-toilette,mousse illuminee eau de toilette,1,0,0,0,0,0,1,0,6,5,5,9554b4b0fe
+og::mriga-parfum,og_youtube,mriga-parfum,mriga parfum,1,0,0,0,1,0,0,0,8,6,5,8d04515941
+og::much-ado-about-the-duke-eau-de-parfum,og_youtube,much-ado-about-the-duke-eau-de-parfum,much ado about the duke eau de parfum,0,0,0,0,0,0,1,0,6,5,5,24b3590cd0
+og::muguet-fleuri-eau-de-parfum,og_youtube,muguet-fleuri-eau-de-parfum,muguet fleuri eau de parfum,1,0,0,0,1,0,0,0,7,5,5,f3322e71e6
+og::mure-et-musc-eau-de-toilette,og_youtube,mure-et-musc-eau-de-toilette,mure et musc eau de toilette,1,0,0,0,1,0,0,0,7,5,5,6c0a0179c2
+og::mure-et-musc-extreme-eau-de-parfum,og_youtube,mure-et-musc-extreme-eau-de-parfum,mure et musc extreme eau de parfum,1,0,0,0,1,0,0,0,7,5,5,435ca3460e
+og::musc-bleu-eau-de-parfum,og_youtube,musc-bleu-eau-de-parfum,musc bleu eau de parfum,1,0,0,0,1,0,0,0,7,6,6,55e373718f
+og::musc-gold-extrait-parfum-extrait,og_youtube,musc-gold-extrait-parfum-extrait,musc gold extrait parfum extrait,1,0,0,0,0,1,0,0,7,6,6,1f59d14e69
+og::musc-gold-perfume-oil,og_youtube,musc-gold-perfume-oil,musc gold perfume oil,1,0,0,0,1,1,0,0,8,7,6,cf3969a5f5
+og::musc-intense-eau-de-parfum,og_youtube,musc-intense-eau-de-parfum,musc intense eau de parfum,1,0,0,0,1,0,0,0,8,6,6,dfc7c6d45c
+og::musc-les-nombres-d-or-eau-de-parfum,og_youtube,musc-les-nombres-d-or-eau-de-parfum,musc - les nombres d'or eau de parfum,1,0,0,0,1,1,0,0,8,6,6,4ccb2129b7
+og::musc-maori-eau-de-parfum,og_youtube,musc-maori-eau-de-parfum,musc maori eau de parfum,1,0,0,0,1,0,0,0,7,6,5,33f2cacd23
+og::musc-moschus-eau-de-parfum,og_youtube,musc-moschus-eau-de-parfum,musc moschus eau de parfum,1,0,0,0,1,0,1,0,8,7,6,b57171a26c
+og::musc-perfume-oil,og_youtube,musc-perfume-oil,musc perfume oil,1,0,0,0,1,0,0,0,8,6,5,55eb0a2f71
+og::musc-tonkin-eau-de-parfum,og_youtube,musc-tonkin-eau-de-parfum,musc tonkin eau de parfum,1,0,0,0,1,0,0,0,8,7,6,9d20f54d68
+og::musk-aoud-extrait-de-parfum,og_youtube,musk-aoud-extrait-de-parfum,musk aoud extrait de parfum,1,0,0,0,1,0,0,0,9,7,6,59b2666d64
+og::musk-muschio-cologne-eau-de-cologne,og_youtube,musk-muschio-cologne-eau-de-cologne,musk / muschio cologne eau de cologne,1,0,0,0,1,0,0,0,7,6,5,892117c03b
+og::musk-s-eau-de-parfum,og_youtube,musk-s-eau-de-parfum,musk s eau de parfum,1,0,0,0,1,0,0,0,7,5,5,5312f3b53f
+og::mutheer-attar-perfume-oil,og_youtube,mutheer-attar-perfume-oil,mutheer attar / perfume oil,1,0,0,0,1,0,0,0,6,5,5,89d11794e9
+og::mxxx-extrait-de-parfum,og_youtube,mxxx-extrait-de-parfum,mxxx. extrait de parfum,1,0,0,0,1,0,1,0,8,6,6,d22b43734c
+og::myrrh-casati-eau-de-parfum,og_youtube,myrrh-casati-eau-de-parfum,myrrh casati eau de parfum,1,0,0,0,1,0,0,0,7,5,5,9297dc7e2c
+og::mysterious-oud-attar-perfume-oil,og_youtube,mysterious-oud-attar-perfume-oil,mysterious oud attar perfume oil,1,0,0,0,1,0,0,0,8,6,6,25f4cc903b
+og::naga-layyen-organic-oud-pure-oud,og_youtube,naga-layyen-organic-oud-pure-oud,naga layyen organic oud pure oud,1,0,0,0,1,0,0,0,6,5,5,04a5cb7f24
+og::namasoma-organic-oud-pure-oud,og_youtube,namasoma-organic-oud-pure-oud,namasoma organic oud pure oud,1,0,0,0,1,0,1,0,8,6,6,e068d922ce
+og::narcotic-v-parfum-extrait,og_youtube,narcotic-v-parfum-extrait,narcotic v parfum extrait,1,0,0,0,1,0,0,0,8,6,5,cf969d4963
+og::natsumeku-eau-de-parfum,og_youtube,natsumeku-eau-de-parfum,natsumeku eau de parfum,0,0,0,0,0,0,0,0,5,5,5,74058b0e03
+og::neroli-36-eau-de-parfum,og_youtube,neroli-36-eau-de-parfum,neroli 36 eau de parfum,1,0,0,0,0,0,0,0,6,5,5,352676d15d
+og::neroli-eau-de-parfum,og_youtube,neroli-eau-de-parfum,neroli eau de parfum,1,0,0,0,1,0,1,0,7,6,5,fdd69990ae
+og::new-sibet-extrait-de-parfum,og_youtube,new-sibet-extrait-de-parfum,new sibet extrait de parfum,1,0,0,0,0,0,1,0,8,6,6,7976217da2
+og::new-york-5th-avenue-eau-de-parfum,og_youtube,new-york-5th-avenue-eau-de-parfum,new york 5th avenue eau de parfum,1,0,0,0,1,0,1,0,8,6,5,5136215cf9
+og::new-york-eau-de-toilette,og_youtube,new-york-eau-de-toilette,new york eau de toilette,1,0,0,0,1,0,1,0,8,6,5,68d37a7701
+og::new-york-intense-eau-de-parfum,og_youtube,new-york-intense-eau-de-parfum,new york intense eau de parfum,1,0,0,0,1,0,0,0,8,6,6,f13bd9b9a2
+og::night-flower-eau-de-parfum,og_youtube,night-flower-eau-de-parfum,night flower eau de parfum,1,0,0,0,1,0,0,0,8,6,5,bbbd0f2605
+og::nio-eau-de-parfum,og_youtube,nio-eau-de-parfum,nio eau de parfum,1,0,0,0,1,0,1,0,9,7,6,15e9f7b60d
+og::no-1-for-men-eau-de-parfum,og_youtube,no-1-for-men-eau-de-parfum,no. 1 for men eau de parfum,1,0,0,0,1,0,0,0,8,6,6,744b04fd41
+og::no-1-for-women-eau-de-parfum,og_youtube,no-1-for-women-eau-de-parfum,no. 1 for women eau de parfum,0,0,0,0,0,0,1,0,6,6,6,33264ad3e0
+og::no-4-eau-de-toilette,og_youtube,no-4-eau-de-toilette,no. 4 eau de toilette,1,0,0,0,0,1,1,0,7,8,5,b05a70d8ce
+og::no-6-eau-de-toilette,og_youtube,no-6-eau-de-toilette,no. 6 eau de toilette,1,0,0,0,1,0,0,0,7,5,6,daecaacacf
+og::no-7-eau-de-toilette,og_youtube,no-7-eau-de-toilette,no. 7 eau de toilette,0,0,0,0,1,0,0,0,7,5,7,71e6165a72
+og::no-89-eau-de-toilette,og_youtube,no-89-eau-de-toilette,no. 89 eau de toilette,1,0,0,0,1,0,0,0,7,4,5,b3075df371
+og::noble-vii-cosmos-flower-extrait-de-parfum,og_youtube,noble-vii-cosmos-flower-extrait-de-parfum,noble vii cosmos flower extrait de parfum,0,0,0,0,0,0,1,0,5,5,5,dbdd8b3964
+og::noble-vii-rock-rose-extrait-de-parfum,og_youtube,noble-vii-rock-rose-extrait-de-parfum,noble vii rock rose extrait de parfum,1,0,0,0,1,1,1,0,7,8,7,4a4f5abe9a
+og::noir-de-noir-body-spray-scented-body-spray,og_youtube,noir-de-noir-body-spray-scented-body-spray,noir de noir body spray scented body spray,1,0,0,0,0,0,0,0,7,6,6,f732adcd83
+og::noir-exquis-eau-de-parfum,og_youtube,noir-exquis-eau-de-parfum,noir exquis eau de parfum,1,0,0,0,1,0,1,0,8,6,5,098eb5cf97
+og::noir-patchouli-eau-de-parfum,og_youtube,noir-patchouli-eau-de-parfum,noir patchouli eau de parfum,1,0,0,0,1,0,0,0,8,6,7,90d8d80773
+og::noorolain-taif-eau-de-parfum,og_youtube,noorolain-taif-eau-de-parfum,noorolain taif eau de parfum,0,0,0,0,0,0,1,0,6,6,5,4d7ba62efd
+og::nordic-noir,og_youtube,nordic-noir,nordic noir,0,0,0,0,0,0,1,0,5,5,6,7119e5aee7
+og::nostalgia-cologne-eau-de-cologne,og_youtube,nostalgia-cologne-eau-de-cologne,nostalgia cologne eau de cologne,1,0,0,0,1,0,0,0,8,6,7,a26863edac
+og::nuit-de-cellophane-eau-de-parfum,og_youtube,nuit-de-cellophane-eau-de-parfum,nuit de cellophane eau de parfum,1,0,0,0,1,0,1,0,7,6,6,1adc793af5
+og::nuit-noire-eau-de-parfum,og_youtube,nuit-noire-eau-de-parfum,nuit noire eau de parfum,1,0,0,0,0,0,1,0,7,7,6,593273735d
+og::number-one-intense-eau-de-parfum,og_youtube,number-one-intense-eau-de-parfum,number one intense eau de parfum,1,0,0,0,1,0,1,0,7,6,8,952b7ebda3
+og::nuwa-extrait-de-parfum,og_youtube,nuwa-extrait-de-parfum,nuwa extrait de parfum,1,0,0,0,1,0,0,0,9,7,7,7c57902968
+og::octavian-parfum,og_youtube,octavian-parfum,octavian parfum,1,0,0,0,1,0,0,0,7,5,6,18262f9312
+og::odalisque-eau-de-parfum,og_youtube,odalisque-eau-de-parfum,odalisque eau de parfum,1,0,0,0,0,0,1,0,7,7,6,131670fc5e
+og::odeur-du-theatre-du-chatelet-acte-1-eau-de-toilette,og_youtube,odeur-du-theatre-du-chatelet-acte-1-eau-de-toilette,odeur du theatre du chatelet acte 1 eau de toilette,1,0,0,0,1,1,1,0,8,8,6,bf63c9eb07
+og::oeillet-louis-xv-eau-de-parfum,og_youtube,oeillet-louis-xv-eau-de-parfum,oeillet louis xv eau de parfum,1,0,0,0,0,0,1,0,7,7,7,e5d903f814
+og::olene-eau-de-toilette,og_youtube,olene-eau-de-toilette,olene eau de toilette,0,0,0,0,0,0,1,0,6,7,4,c148fef956
+og::oliban-eau-de-parfum,og_youtube,oliban-eau-de-parfum,oliban eau de parfum,1,0,0,0,1,0,1,0,7,6,6,c5e49b7bf5
+og::olibanum-eau-de-parfum,og_youtube,olibanum-eau-de-parfum,olibanum eau de parfum,0,0,0,0,0,0,1,0,5,6,6,31f96b5fe5
+og::ombre-indigo-eau-de-parfum,og_youtube,ombre-indigo-eau-de-parfum,ombre indigo eau de parfum,1,0,0,0,1,0,0,0,7,5,6,9fe6587935
+og::onyx-perfume-oil,og_youtube,onyx-perfume-oil,onyx perfume oil,1,0,0,0,0,0,1,0,7,7,6,479fdb6b24
+og::oolang-infini-cologne-absolue,og_youtube,oolang-infini-cologne-absolue,oolang infini cologne absolue,1,0,0,0,0,0,1,0,6,5,5,3879d2cb34
+og::opus-1870-eau-de-toilette,og_youtube,opus-1870-eau-de-toilette,opus 1870 eau de toilette,1,0,0,0,1,0,1,0,7,5,6,6c19b55402
+og::orange-blossom-zagara-cologne-eau-de-cologne,og_youtube,orange-blossom-zagara-cologne-eau-de-cologne,orange blossom / zagara cologne eau de cologne,1,1,0,0,1,0,1,0,6,6,5,aae4644155
+og::orange-sanguine-cologne-absolue,og_youtube,orange-sanguine-cologne-absolue,orange sanguine cologne absolue,0,0,0,0,1,0,1,0,6,5,6,7f792703f9
+og::orange-star-eau-de-parfum,og_youtube,orange-star-eau-de-parfum,orange star eau de parfum,0,0,0,0,1,0,1,0,6,5,7,c3a3d8ee0c
+og::oranges-and-lemons-say-the-bells-of-st-clements-eau-de-parfum,og_youtube,oranges-and-lemons-say-the-bells-of-st-clements-eau-de-parfum,oranges and lemons say the bells of st. clements eau de parfum,1,0,0,0,1,0,1,0,7,6,6,8d1d4008b2
+og::orchidee-vanille-eau-de-parfum,og_youtube,orchidee-vanille-eau-de-parfum,orchidee vanille eau de parfum,0,1,0,0,1,0,1,0,4,5,4,8f9d01e6c8
+og::osmanthus-interdite-eau-de-parfum,og_youtube,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,1,0,0,0,0,0,1,0,6,5,5,d0c22e20ba
+og::oud-assam-eau-de-parfum,og_youtube,oud-assam-eau-de-parfum,oud assam eau de parfum,1,0,0,0,0,0,1,0,7,7,6,d7d1301818
+og::oud-du-bois-attar-perfume-oil,og_youtube,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,1,0,0,0,0,0,1,0,7,7,6,b341155e6e
+og::oud-eau-de-parfum,og_youtube,oud-eau-de-parfum,oud - eau de parfum,0,0,0,0,1,0,1,0,6,6,8,5f697d6353
+og::oud-imperial-eau-de-parfum,og_youtube,oud-imperial-eau-de-parfum,oud imperial eau de parfum,0,0,0,0,1,0,1,0,6,5,5,0b2a3cb2b4
+og::oud-maximus-autumn-19-extrait-de-parfum,og_youtube,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,1,0,0,0,1,0,0,0,8,6,6,4625f3002c
+og::oud-silk-mood-extrait-de-parfum,og_youtube,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,1,0,0,0,1,0,0,0,8,5,6,da7559de45
+og::oud-stars-al-khatt-eau-de-parfum,og_youtube,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,1,0,0,0,1,0,1,0,7,5,5,1675397f72
+og::oud-stars-alexandria-iii-parfum,og_youtube,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,0,0,0,0,0,0,1,0,6,5,5,b215818d1d
+og::oud-stars-fars-eau-de-parfum,og_youtube,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,1,0,0,0,1,0,1,0,8,6,6,fedcc00351
+og::oud-stars-gao-eau-de-parfum,og_youtube,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,0,0,0,0,0,0,1,0,6,6,5,8c2b48fdb3
+og::oud-stars-mamluk-eau-de-parfum,og_youtube,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,0,0,0,0,0,0,1,0,6,5,5,c07182685c
+og::oud-sublime-elixir-de-parfum,og_youtube,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,1,0,0,0,1,0,1,0,8,6,6,46fc30483b
+og::oudh-infini-extrait-de-parfum,og_youtube,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,1,0,0,0,1,0,1,0,7,7,6,2fd4d62e1e
+og::oudmazing-eau-de-parfum,og_youtube,oudmazing-eau-de-parfum,oudmazing eau de parfum,0,0,0,0,0,0,1,0,6,5,6,ec3d1d4f1a
+og::oyedo-eau-de-toilette,og_youtube,oyedo-eau-de-toilette,oyedo eau de toilette,1,0,0,0,1,0,0,0,7,5,6,e5cd56f7ee
+og::parfums-de-nicolai-eau-de-yuzu-travel-spray,og_youtube,parfums-de-nicolai-eau-de-yuzu-travel-spray,parfums de nicolai - eau de yuzu travel spray,1,0,0,0,1,0,0,0,7,6,6,7d2e062885
+og::paris-la-eau-de-parfum,og_youtube,paris-la-eau-de-parfum,paris la eau de parfum,1,0,0,0,1,0,0,0,8,6,6,fa1085e4a8
+og::passage-d-enfer-eau-de-toilette,og_youtube,passage-d-enfer-eau-de-toilette,passage d'enfer eau de toilette,1,0,0,0,0,0,1,0,6,5,5,0cef769da5
+og::patchouli-absolu-eau-de-parfum,og_youtube,patchouli-absolu-eau-de-parfum,patchouli absolu eau de parfum,1,0,0,0,0,0,0,0,7,6,5,bf7a67611f
+og::patchouli-cologne,og_youtube,patchouli-cologne,patchouli cologne,0,0,0,0,0,1,1,0,6,6,5,8ddc7d5426
+og::patchouli-in-perfumery-magazine,og_youtube,patchouli-in-perfumery-magazine,patchouli in perfumery magazine,1,0,0,0,1,0,0,0,7,5,6,207371d830
+og::patchouli-intense-eau-de-parfum,og_youtube,patchouli-intense-eau-de-parfum,patchouli intense eau de parfum,1,0,0,0,0,1,1,0,7,7,6,3bbd69f2f7
+og::patchouli-leaves-eau-de-parfum,og_youtube,patchouli-leaves-eau-de-parfum,patchouli leaves eau de parfum,1,0,0,0,0,0,1,0,7,6,6,e923b449d4
+og::patchouli-noir-eau-de-parfum,og_youtube,patchouli-noir-eau-de-parfum,patchouli noir eau de parfum,1,0,0,0,1,0,1,0,8,6,6,63492e7d2d
+og::patchouli-patch-eau-de-toilette,og_youtube,patchouli-patch-eau-de-toilette,patchouli patch eau de toilette,1,0,0,0,1,0,0,0,8,6,6,4a0a3e7e10
+og::patchouli-perfume-oil,og_youtube,patchouli-perfume-oil,patchouli perfume oil,0,0,0,0,0,0,1,0,6,6,5,4530ca75c7
+og::patchouly-eau-de-parfum,og_youtube,patchouly-eau-de-parfum,patchouly eau de parfum,1,0,0,0,1,0,0,0,8,6,6,07a4c1fd2b
+og::peacock-throne-eau-de-parfum,og_youtube,peacock-throne-eau-de-parfum,peacock throne eau de parfum,1,0,0,0,1,0,1,0,7,6,6,b72c2bf5d4
+og::pearl-perfume-oil,og_youtube,pearl-perfume-oil,pearl perfume oil,0,0,0,0,1,0,1,0,6,6,7,2e371f00b9
+og::peche-cardinal-eau-de-parfum,og_youtube,peche-cardinal-eau-de-parfum,peche cardinal eau de parfum,1,0,0,0,0,0,1,0,7,5,5,d0353ac812
+og::people-s-kampot-organic-oud-pure-oud,og_youtube,people-s-kampot-organic-oud-pure-oud,people's kampot organic oud pure oud,1,0,0,0,0,0,1,0,7,6,5,99ad92d506
+og::perfect-kiss-eau-de-parfum,og_youtube,perfect-kiss-eau-de-parfum,perfect kiss eau de parfum,0,0,0,0,1,0,1,0,7,6,7,4a5467a58c
+og::perfect-nectar-eau-de-parfum,og_youtube,perfect-nectar-eau-de-parfum,perfect nectar eau de parfum,1,0,0,0,1,0,0,0,8,6,6,7e19a79f31
+og::perfect-vanilla-roll-on-perfume-oil,og_youtube,perfect-vanilla-roll-on-perfume-oil,perfect vanilla roll-on perfume oil,1,1,0,0,1,0,0,0,6,5,6,3fe3142e83
+og::perfect-veil-eau-de-parfum,og_youtube,perfect-veil-eau-de-parfum,perfect veil eau de parfum,1,0,0,0,1,0,0,0,7,5,5,a057e644bd
+og::petit-matin-eau-de-parfum,og_youtube,petit-matin-eau-de-parfum,petit matin eau de parfum,1,0,0,0,0,0,0,0,6,5,5,ec912f2ac6
+og::petra-eau-de-parfum,og_youtube,petra-eau-de-parfum,petra eau de parfum,1,0,0,0,1,0,0,0,8,6,6,dc7fcb07e0
+og::phi-une-rose-de-kandahar-eau-de-parfum,og_youtube,phi-une-rose-de-kandahar-eau-de-parfum,phi une rose de kandahar eau de parfum,0,0,0,0,0,0,1,0,6,5,5,e3a5cfd396
+og::philosykos-eau-de-toilette,og_youtube,philosykos-eau-de-toilette,philosykos - eau de toilette,1,0,0,0,1,0,1,0,8,6,6,d8bddad42d
+og::phtaloblue-eau-de-parfum,og_youtube,phtaloblue-eau-de-parfum,phtaloblue eau de parfum,1,0,0,0,0,0,1,0,7,6,6,5b5856a9b3
+og::picadilly-69-eau-de-parfum,og_youtube,picadilly-69-eau-de-parfum,picadilly '69 eau de parfum,1,0,0,0,1,0,1,0,6,5,5,5788299c4d
+og::pink-eau-de-parfum,og_youtube,pink-eau-de-parfum,pink eau de parfum,0,0,0,0,0,0,0,0,5,5,5,c62b21f312
+og::pink-quartz-eau-de-parfum,og_youtube,pink-quartz-eau-de-parfum,pink quartz eau de parfum,1,0,0,0,0,1,0,0,7,5,5,2b48d80f36
+og::pomegranate-melograno-cologne-eau-de-cologne,og_youtube,pomegranate-melograno-cologne-eau-de-cologne,pomegranate / melograno cologne eau de cologne,1,0,0,0,1,0,1,0,7,5,5,6889e0deb6
+og::pomelo-paradis-cologne-absolue,og_youtube,pomelo-paradis-cologne-absolue,pomelo paradis cologne absolue,1,0,0,0,1,0,0,0,7,5,5,863aee7226
+og::pomelo-riviera-eau-de-parfum,og_youtube,pomelo-riviera-eau-de-parfum,pomelo riviera eau de parfum,1,0,0,0,1,0,0,0,8,6,6,cea3c4d51f
+og::pot-pourri-cologne-eau-de-cologne,og_youtube,pot-pourri-cologne-eau-de-cologne,pot pourri cologne eau de cologne,1,0,0,0,1,0,0,0,7,5,6,6cfee00f8d
+og::precious-oud-eau-de-parfum,og_youtube,precious-oud-eau-de-parfum,precious oud eau de parfum,1,0,0,0,1,0,0,0,8,6,6,a7918f4e69
+og::premier-figuier-eau-de-toilette,og_youtube,premier-figuier-eau-de-toilette,premier figuier eau de toilette,1,0,0,0,1,0,0,0,7,5,5,248787e92c
+og::premier-figuier-extreme-eau-de-parfum,og_youtube,premier-figuier-extreme-eau-de-parfum,premier figuier extreme eau de parfum,1,0,0,0,1,0,0,0,7,5,5,3b10e4c2e3
+og::private-collection-l-eau-guerriere-eau-de-toilette,og_youtube,private-collection-l-eau-guerriere-eau-de-toilette,private collection: l'eau guerriere eau de toilette,1,0,0,0,1,0,0,0,7,5,5,7d5571c192
+og::private-collection-l-ombre-fauve-eau-de-parfum,og_youtube,private-collection-l-ombre-fauve-eau-de-parfum,private collection: l'ombre fauve eau de parfum,1,0,0,0,1,0,1,0,8,6,6,8c83df78a2
+og::private-label-eau-de-parfum,og_youtube,private-label-eau-de-parfum,private label eau de parfum,1,0,0,0,1,0,0,0,7,6,7,624376a6a3
+og::promesse-de-l-aube-eau-de-parfum,og_youtube,promesse-de-l-aube-eau-de-parfum,promesse de l'aube eau de parfum,1,0,0,0,0,0,1,0,7,5,5,d04da933ce
+og::proxima-eau-de-parfum,og_youtube,proxima-eau-de-parfum,proxima eau de parfum,1,0,0,0,1,0,1,0,7,6,6,c5bf1120df
+og::psychedelique-eau-de-parfum,og_youtube,psychedelique-eau-de-parfum,psychedelique eau de parfum,1,0,0,0,1,0,1,0,8,6,6,d19eb56b06
+og::putain-des-palaces-eau-de-parfum,og_youtube,putain-des-palaces-eau-de-parfum,putain des palaces eau de parfum,1,0,0,0,0,0,0,0,7,5,5,d2bd124978
+og::quercus-cologne,og_youtube,quercus-cologne,quercus cologne,1,0,0,0,1,0,1,0,7,6,5,1bf37ded08
+og::radio-bombay-eau-de-parfum,og_youtube,radio-bombay-eau-de-parfum,radio bombay eau de parfum,0,0,0,0,0,0,1,0,6,5,5,aa68a65360
+og::radish-x-vetiver-eau-de-parfum,og_youtube,radish-x-vetiver-eau-de-parfum,radish x vetiver eau de parfum,1,0,0,0,1,0,1,0,7,5,5,5c3961f53c
+og::rausch-eau-de-parfum,og_youtube,rausch-eau-de-parfum,rausch eau de parfum,1,0,0,0,1,0,0,0,7,5,5,a5fc56d76a
+og::ray-of-light-eau-de-parfum,og_youtube,ray-of-light-eau-de-parfum,ray of light eau de parfum,0,0,0,0,1,0,1,0,6,6,5,2d97df4919
+og::re-charge-black-pepper-deodorant-stick,og_youtube,re-charge-black-pepper-deodorant-stick,re-charge black pepper deodorant stick,0,0,0,0,1,0,1,0,6,5,5,52a3932e70
+og::red-aoud-eau-de-parfum,og_youtube,red-aoud-eau-de-parfum,red aoud eau de parfum,0,0,0,0,0,0,1,0,6,5,5,5f97be28d7
+og::red-hoba-eau-de-parfum,og_youtube,red-hoba-eau-de-parfum,red hoba eau de parfum,1,0,0,0,1,0,1,0,7,5,5,c9d10413bf
+og::red-musc-eau-de-parfum,og_youtube,red-musc-eau-de-parfum,red musc eau de parfum,1,0,0,0,1,0,1,0,7,5,5,f0eb6aac80
+og::reflection-man-eau-de-parfum,og_youtube,reflection-man-eau-de-parfum,reflection man eau de parfum,1,0,0,0,1,0,0,0,8,6,6,dabf4a6e2a
+og::regent-leather-eau-de-parfum,og_youtube,regent-leather-eau-de-parfum,regent leather eau de parfum,1,0,0,0,1,0,1,0,8,6,6,d034ad6958
+og::regio-eau-de-parfum,og_youtube,regio-eau-de-parfum,regio eau de parfum,1,0,0,0,1,0,0,0,8,6,6,f62af64733
+og::remarkable-people-eau-de-parfum,og_youtube,remarkable-people-eau-de-parfum,remarkable people eau de parfum,1,0,0,0,1,0,1,0,8,6,6,4170c3fe7e
+og::resina-eau-de-parfum,og_youtube,resina-eau-de-parfum,resina eau de parfum,1,0,0,0,1,0,0,0,7,5,5,575b802d50
+og::reve-d-ossian-eau-de-parfum,og_youtube,reve-d-ossian-eau-de-parfum,reve d'ossian eau de parfum,1,0,0,0,1,0,0,0,7,5,5,8102470595
+og::rhodanthe-eau-de-parfum,og_youtube,rhodanthe-eau-de-parfum,rhodanthe eau de parfum,1,0,0,0,1,0,1,0,7,6,6,8e27542d3a
+og::riviera-drive-eau-de-parfum,og_youtube,riviera-drive-eau-de-parfum,riviera drive eau de parfum,1,0,0,0,1,0,0,0,7,5,5,584a848bcf
+og::riviera-lazuli-eau-de-parfum,og_youtube,riviera-lazuli-eau-de-parfum,riviera lazuli eau de parfum,1,0,0,0,1,0,0,0,7,5,5,ef540c961b
+og::rock-crystal-eau-de-parfum,og_youtube,rock-crystal-eau-de-parfum,rock crystal eau de parfum,1,0,0,0,1,0,1,0,8,6,6,e9a758ebc2
+og::rosas-secas-eau-de-parfum,og_youtube,rosas-secas-eau-de-parfum,rosas secas eau de parfum,1,0,0,0,1,0,0,0,8,6,6,ae53c0d28b
+og::rose-31-eau-de-parfum,og_youtube,rose-31-eau-de-parfum,rose 31 eau de parfum,1,0,0,0,1,0,0,0,7,5,5,a7069c65ca
+og::rose-atlantic-eau-de-parfum,og_youtube,rose-atlantic-eau-de-parfum,rose atlantic eau de parfum,1,0,0,0,1,0,0,0,8,6,5,b01017aa72
+og::rose-de-siwa-eau-de-parfum,og_youtube,rose-de-siwa-eau-de-parfum,rose de siwa eau de parfum,1,0,0,0,1,0,0,0,7,6,6,b1f124a370
+og::rose-du-bois-attar-perfume-oil,og_youtube,rose-du-bois-attar-perfume-oil,rose du bois attar / perfume oil,1,0,0,0,0,0,1,0,7,6,6,c5a814f102
+og::rose-omeyyade-eau-de-parfum,og_youtube,rose-omeyyade-eau-de-parfum,rose omeyyade eau de parfum,1,0,0,0,1,0,1,0,8,6,6,9c6806ddc5
+og::rose-pivoine-eau-de-toilette,og_youtube,rose-pivoine-eau-de-toilette,rose pivoine eau de toilette,1,0,0,0,1,0,0,0,7,5,5,e3173737fe
+og::roses-musk-eau-de-parfum,og_youtube,roses-musk-eau-de-parfum,roses musk eau de parfum,1,0,0,0,1,0,0,0,8,5,5,3fe289bc40
+og::roses-vanille-eau-de-parfum,og_youtube,roses-vanille-eau-de-parfum,roses vanille eau de parfum,1,0,0,0,1,0,0,0,8,5,5,c2d2c3943e
+og::route-du-vetiver-eau-de-parfum,og_youtube,route-du-vetiver-eau-de-parfum,route du vetiver eau de parfum,1,0,0,0,1,0,1,0,7,5,5,c0117fa3b1
+og::royal-princess-oud-eau-de-parfum,og_youtube,royal-princess-oud-eau-de-parfum,royal princess oud eau de parfum,1,0,0,0,1,0,0,0,7,5,5,d68fe8fbc8
+og::rules-of-attraction-extrait-de-parfum,og_youtube,rules-of-attraction-extrait-de-parfum,rules of attraction extrait de parfum,0,0,0,0,0,0,1,0,6,5,5,940d9245cf
+og::russian-cologne-eau-de-cologne,og_youtube,russian-cologne-eau-de-cologne,russian cologne eau de cologne,1,0,0,0,1,0,0,0,8,6,5,5f80389151
+og::russian-leather-eau-de-parfum,og_youtube,russian-leather-eau-de-parfum,russian leather eau de parfum,1,0,0,0,1,0,0,0,8,5,5,bf017f8e47
+og::russian-tea-eau-de-parfum,og_youtube,russian-tea-eau-de-parfum,russian tea eau de parfum,1,0,0,0,1,0,1,0,7,5,5,5f8914358e
+og::s-ex-eau-de-parfum,og_youtube,s-ex-eau-de-parfum,s-ex eau de parfum,1,0,0,0,1,0,0,0,8,6,7,c4831f0073
+og::sable-soleil-eau-de-parfum,og_youtube,sable-soleil-eau-de-parfum,sable & soleil eau de parfum,1,0,0,0,1,0,1,0,8,6,7,7b248dcb5f
+og::safanad-eau-de-parfum,og_youtube,safanad-eau-de-parfum,safanad eau de parfum,1,0,0,0,1,0,0,0,8,5,5,3938ac412c
+og::sage-perfume-oil,og_youtube,sage-perfume-oil,sage perfume oil,1,0,0,0,0,0,1,0,7,5,5,c79025352c
+og::salt-caramel-eau-de-parfum,og_youtube,salt-caramel-eau-de-parfum,salt caramel eau de parfum,0,0,0,0,0,0,1,0,6,5,5,8188e214ce
+og::sancti-eau-de-parfum,og_youtube,sancti-eau-de-parfum,sancti eau de parfum,1,0,0,0,1,0,0,0,8,5,5,1047a8d7e3
+og::santa-maria-novella-cologne-eau-de-cologne,og_youtube,santa-maria-novella-cologne-eau-de-cologne,santa maria novella cologne eau de cologne,1,0,0,0,1,0,1,0,8,5,5,8cb2b4e19c
+og::santal-d-assam-perfume-oil,og_youtube,santal-d-assam-perfume-oil,santal d'assam perfume oil,0,0,0,0,0,0,1,0,6,5,5,a529694295
+og::santal-du-pacifique-eau-de-parfum,og_youtube,santal-du-pacifique-eau-de-parfum,santal du pacifique eau de parfum,1,0,0,0,1,0,1,0,7,6,6,89305337bb
+og::santal-eau-de-toilette,og_youtube,santal-eau-de-toilette,santal eau de toilette,1,0,0,0,1,0,1,0,8,6,6,eaa4c990df
+og::santal-majuscule-eau-de-parfum,og_youtube,santal-majuscule-eau-de-parfum,santal majuscule eau de parfum,1,0,0,0,1,0,1,0,8,6,6,18e272dbc3
+og::santalum-eau-de-parfum,og_youtube,santalum-eau-de-parfum,santalum eau de parfum,0,0,0,0,1,0,0,0,6,5,5,f20dfa858d
+og::sartorial-eau-de-toilette,og_youtube,sartorial-eau-de-toilette,sartorial eau de toilette,1,0,0,0,1,0,0,0,8,5,6,f41d1148d7
+og::satori-fusho-organic-oud,og_youtube,satori-fusho-organic-oud,satori fusho organic oud,1,0,0,0,1,1,1,0,8,7,6,58dda90392
+og::scandal-parfum-cologne,og_youtube,scandal-parfum-cologne,scandal parfum cologne,1,0,0,0,1,0,0,0,7,5,5,93ff09cb8f
+og::scent-eau-de-parfum,og_youtube,scent-eau-de-parfum,scent eau de parfum,1,0,0,0,0,0,1,0,7,5,5,2c5c6fd970
+og::scent-intense-eau-de-parfum,og_youtube,scent-intense-eau-de-parfum,scent intense eau de parfum,1,0,0,0,1,0,1,0,7,5,5,337d3a64a1
+og::scotch-peat-eau-de-parfum,og_youtube,scotch-peat-eau-de-parfum,scotch peat eau de parfum,0,0,0,0,0,0,1,0,6,5,5,cc32c95b56
+og::secretions-magnifiques-eau-de-parfum,og_youtube,secretions-magnifiques-eau-de-parfum,secretions magnifiques eau de parfum,1,0,0,0,1,1,1,1,6,8,5,2fecfda782
+og::sedley-eau-de-parfum,og_youtube,sedley-eau-de-parfum,sedley eau de parfum,1,0,0,0,1,0,0,0,8,5,6,9c8ad17e4c
+og::sel-de-vetiver-eau-de-toilette,og_youtube,sel-de-vetiver-eau-de-toilette,sel de  vetiver eau de toilette,1,0,0,0,1,0,1,0,7,5,5,b7f1c72faf
+og::sel-marin-eau-de-parfum,og_youtube,sel-marin-eau-de-parfum,sel marin eau de parfum,1,0,0,0,1,0,1,0,8,5,5,87af53aca3
+og::seminalis-parfum,og_youtube,seminalis-parfum,seminalis parfum,1,0,0,0,1,0,1,0,8,6,6,c5ca772893
+og::serendipitous-eau-de-parfum,og_youtube,serendipitous-eau-de-parfum,serendipitous eau de parfum,1,0,0,0,1,0,0,0,8,5,5,3c8566e13b
+og::shams-oud,og_youtube,shams-oud,shams oud,0,0,0,0,0,0,1,0,6,5,5,b953e18ba3
+og::sheiduna-parfum-extrait,og_youtube,sheiduna-parfum-extrait,sheiduna parfum extrait,1,0,0,0,1,0,0,0,7,5,5,f6d9366dd3
+og::sienne-l-hiver-eau-de-toilette,og_youtube,sienne-l-hiver-eau-de-toilette,sienne l'hiver eau de toilette,1,0,0,0,1,0,1,0,7,5,5,f6b528bca1
+og::silk-lace-chocolate-eau-de-parfum,og_youtube,silk-lace-chocolate-eau-de-parfum,"silk, lace & chocolate eau de parfum",1,0,0,0,1,0,0,0,7,5,5,c46ef967fc
+og::silk-perfume-oil,og_youtube,silk-perfume-oil,silk perfume oil,1,0,0,0,1,0,0,0,7,6,5,7c1d50d3be
+og::silver-man-eau-de-parfum,og_youtube,silver-man-eau-de-parfum,silver man eau de parfum,1,0,0,0,0,1,1,0,7,6,6,27b859d94f
+og::silver-mountain-water-eau-de-parfum,og_youtube,silver-mountain-water-eau-de-parfum,silver mountain water eau de parfum ...,1,0,0,0,1,0,1,0,8,6,6,7fb37e0d5f
+og::silver-musk-parfum-extrait,og_youtube,silver-musk-parfum-extrait,silver musk parfum extrait,1,0,0,0,1,0,0,0,7,6,5,f581a907fb
+og::sir-winston-attar-perfume-oil,og_youtube,sir-winston-attar-perfume-oil,sir winston attar perfume oil,1,0,0,0,1,0,1,0,8,6,6,7cb29c121c
+og::soavissima-eau-de-parfum,og_youtube,soavissima-eau-de-parfum,soavissima eau de parfum,1,0,0,0,1,0,0,0,7,6,5,5e87c24cfc
+og::soft-tension-eau-de-parfum,og_youtube,soft-tension-eau-de-parfum,soft tension eau de parfum,1,0,0,0,1,0,0,0,7,5,5,259fa04e1f
+og::sola-parfum,og_youtube,sola-parfum,sola parfum,1,0,0,0,1,0,0,0,7,6,5,06e7bee0ce
+og::sole-di-positano-eau-de-parfum,og_youtube,sole-di-positano-eau-de-parfum,sole di positano eau de parfum,1,0,0,0,1,0,0,0,7,6,6,ad1e39727f
+og::soleil-blanc-eau-de-parfum,og_youtube,soleil-blanc-eau-de-parfum,soleil blanc eau de parfum,0,0,0,0,1,0,1,0,6,5,5,5f37354940
+og::soleil-neige-eau-de-parfum,og_youtube,soleil-neige-eau-de-parfum,soleil neige eau de parfum,0,0,0,0,0,0,1,0,6,5,5,2f6ffe7c82
+og::sombre-negra-eau-de-parfum,og_youtube,sombre-negra-eau-de-parfum,sombre negra eau de parfum,0,0,0,0,1,0,0,0,6,5,5,cd1ebd3a69
+og::sotto-la-luna-tuberose-eau-de-parfum,og_youtube,sotto-la-luna-tuberose-eau-de-parfum,sotto la luna tuberose eau de parfum,0,0,0,0,1,0,1,0,6,5,5,37fcae5736
+og::spanish-leather-cologne-eau-de-cologne,og_youtube,spanish-leather-cologne-eau-de-cologne,spanish leather cologne eau de cologne,0,0,0,0,1,0,0,0,6,5,5,045fb84b5d
+og::spem-petram-eau-de-parfum,og_youtube,spem-petram-eau-de-parfum,spem petram eau de parfum,1,0,0,0,1,0,1,0,7,6,5,5334a214e4
+og::spicematic-eau-de-parfum,og_youtube,spicematic-eau-de-parfum,spicematic eau de parfum,0,0,0,0,1,0,1,0,6,5,5,1639ddb293
+og::stercus-parfum,og_youtube,stercus-parfum,stercus parfum,1,0,0,0,1,0,0,0,7,5,5,8a9e0cb8f7
+og::still-life-eau-de-parfum,og_youtube,still-life-eau-de-parfum,still life eau de parfum,1,0,0,0,1,0,0,0,8,6,6,2aa6533eda
+og::sublime-balkiss-eau-de-parfum,og_youtube,sublime-balkiss-eau-de-parfum,sublime balkiss eau de parfum,1,0,0,0,1,0,0,0,6,5,5,8ad4ef3733
+og::sublimes-essences-musc-perfume-oil,og_youtube,sublimes-essences-musc-perfume-oil,sublimes essences musc perfume oil,0,0,0,0,1,0,1,0,6,6,6,5a88d80cbc
+og::suede-hand-lotion,og_youtube,suede-hand-lotion,suede hand lotion,1,0,0,0,0,0,0,0,6,5,5,229f6e6f3b
+og::suede-hand-wash,og_youtube,suede-hand-wash,suede hand wash,1,0,0,0,1,0,0,0,7,5,5,d10cad2cfa
+og::sultan-musk-attar-perfume-oil,og_youtube,sultan-musk-attar-perfume-oil,sultan musk attar perfume oil,0,0,0,0,1,0,1,0,6,6,5,61f33e658e
+og::sunday-cologne-eau-de-parfum,og_youtube,sunday-cologne-eau-de-parfum,sunday cologne eau de parfum,0,1,0,0,0,0,1,0,4,5,5,640ec0ad64
+og::sunshine-and-pancakes-eau-de-parfum,og_youtube,sunshine-and-pancakes-eau-de-parfum,sunshine and pancakes eau de parfum,1,0,0,0,1,0,1,0,8,6,6,288b7f8552
+og::super-cedar-eau-de-parfum,og_youtube,super-cedar-eau-de-parfum,super cedar eau de parfum,1,0,0,0,1,0,1,0,7,5,5,f8e38b0430
+og::swan-princess-eau-de-parfum,og_youtube,swan-princess-eau-de-parfum,swan princess eau de parfum,1,0,0,0,1,0,0,0,7,5,5,f59f45f736
+og::sweet-morphine-eau-de-parfum,og_youtube,sweet-morphine-eau-de-parfum,sweet morphine eau de parfum,1,0,0,0,1,0,1,0,8,6,6,a602187334
+og::sweet-vanilla-eau-de-parfum,og_youtube,sweet-vanilla-eau-de-parfum,sweet vanilla eau de parfum,1,0,0,0,1,0,0,0,8,5,5,13c25c14ae
+og::t-habanero-eau-de-parfum,og_youtube,t-habanero-eau-de-parfum,t. habanero eau de parfum,1,0,0,0,1,0,1,0,8,6,7,a2c351f168
+og::tabac-vert-eau-de-toilette,og_youtube,tabac-vert-eau-de-toilette,tabac vert eau de toilette,0,0,0,0,0,0,1,0,5,5,5,64f54b9532
+og::tabacco-toscano-cologne-eau-de-cologne,og_youtube,tabacco-toscano-cologne-eau-de-cologne,tabacco toscano cologne eau de cologne,0,0,0,0,1,0,0,0,6,5,5,eef38d8999
+og::tabaco-eau-de-parfum,og_youtube,tabaco-eau-de-parfum,tabaco eau de parfum,1,0,0,0,1,0,1,0,7,6,6,ddaa277558
+og::tacit-eau-de-parfum,og_youtube,tacit-eau-de-parfum,tacit eau de parfum,1,0,0,0,1,0,1,0,8,5,5,fdc349e2c1
+og::tagete-eau-de-parfum,og_youtube,tagete-eau-de-parfum,tagete eau de parfum,1,0,0,0,1,0,0,0,7,5,5,1a5bbdb70c
+og::tam-dao-eau-de-toilette,og_youtube,tam-dao-eau-de-toilette,tam dao - eau de toilette,0,0,0,0,1,0,1,0,6,5,5,90d01c2c46
+og::tango-eau-de-parfum,og_youtube,tango-eau-de-parfum,tango eau de parfum,1,0,0,0,1,0,1,0,8,6,5,b8e033bfa6
+og::tart-s-knicker-drawer-eau-de-parfum,og_youtube,tart-s-knicker-drawer-eau-de-parfum,tart's knicker drawer eau de parfum,1,0,0,0,1,0,1,0,8,6,5,a9f2f18bd0
+og::tartan-extrait-de-parfum,og_youtube,tartan-extrait-de-parfum,tartan extrait de parfum,1,0,0,0,1,0,1,0,7,5,5,674c87a3a9
+og::telegrama-eau-de-parfum,og_youtube,telegrama-eau-de-parfum,telegrama eau de parfum,1,0,0,0,1,0,1,0,8,6,5,0948c14497
+og::tellus-eau-de-parfum,og_youtube,tellus-eau-de-parfum,tellus eau de parfum,1,0,0,0,1,0,0,0,6,5,5,40a97f32cb
+og::terre-noire-eau-de-parfum,og_youtube,terre-noire-eau-de-parfum,terre noire eau de parfum,1,0,0,0,1,0,0,0,7,5,5,db394e3806
+og::terrible-teddy-eau-de-parfum,og_youtube,terrible-teddy-eau-de-parfum,terrible teddy eau de parfum,1,0,0,0,1,1,0,0,8,6,6,0ed073eaa8
+og::the-cobra-the-canary-eau-de-parfum,og_youtube,the-cobra-the-canary-eau-de-parfum,the cobra & the canary eau de parfum,1,0,0,0,1,0,1,0,8,6,6,1ac22127a6
+og::the-coveted-duchess-rose-eau-de-parfum,og_youtube,the-coveted-duchess-rose-eau-de-parfum,the coveted duchess rose eau de parfum,1,0,0,0,1,0,1,0,8,5,5,852508ddbe
+og::the-exact-friction-of-stars-eau-de-parfum,og_youtube,the-exact-friction-of-stars-eau-de-parfum,the exact friction of stars eau de parfum,0,0,0,0,0,0,0,0,5,5,5,19e625a250
+og::the-exact-friction-of-stars-perfume-oil-roll-on,og_youtube,the-exact-friction-of-stars-perfume-oil-roll-on,the exact friction of stars perfume oil roll-on,0,0,0,1,0,0,1,0,4,6,5,c6c657bf95
+og::the-orchid-man-eau-de-parfum,og_youtube,the-orchid-man-eau-de-parfum,the orchid man eau de parfum,1,0,0,0,1,0,0,0,7,5,5,b53225b88f
+og::the-pour-un-ete-eau-de-toilette,og_youtube,the-pour-un-ete-eau-de-toilette,the pour un ete eau de toilette,1,0,0,0,1,0,1,0,7,5,5,36aed1f54c
+og::the-revenge-of-lady-blanche-eau-de-parfum,og_youtube,the-revenge-of-lady-blanche-eau-de-parfum,the revenge of lady blanche eau de parfum,1,0,0,0,0,0,0,0,6,5,5,bad0d152f0
+og::the-soft-lawn-eau-de-parfum,og_youtube,the-soft-lawn-eau-de-parfum,the soft lawn eau de parfum,1,0,0,0,1,0,0,0,7,5,5,38fed1343f
+og::the-tragedy-of-lord-george-eau-de-parfum,og_youtube,the-tragedy-of-lord-george-eau-de-parfum,the tragedy of lord george eau de parfum,1,0,0,0,1,0,0,0,8,6,6,bf5775e927
+og::thundra-eau-de-parfum,og_youtube,thundra-eau-de-parfum,thundra eau de parfum,1,0,0,0,1,0,0,0,8,5,5,596b7bbd7e
+og::tigerlust-pure-parfum,og_youtube,tigerlust-pure-parfum,tigerlust pure parfum,0,0,0,0,1,0,0,0,6,5,5,9edf492828
+og::tilda-swinton-like-this-eau-de-parfum,og_youtube,tilda-swinton-like-this-eau-de-parfum,tilda swinton like this eau de parfum,1,0,0,0,1,0,0,0,8,6,5,b3ebb151a9
+og::timbuktu-eau-de-toilette,og_youtube,timbuktu-eau-de-toilette,timbuktu eau de toilette,1,0,0,0,1,0,0,0,8,5,5,bde8fce066
+og::tiptoeing-through-chambers-of-the-moon-eau-de-parfum,og_youtube,tiptoeing-through-chambers-of-the-moon-eau-de-parfum,tiptoeing through chambers of the moon eau de parfum,0,0,0,1,0,0,1,0,4,6,4,870d7f09a0
+og::to-twirl-all-girly-eau-de-parfum,og_youtube,to-twirl-all-girly-eau-de-parfum,to twirl all girly eau de parfum,1,0,0,0,1,0,1,0,8,6,5,9ce9bd7891
+og::to-twirl-all-girly-perfume-oil-roll-on-perfume-oil,og_youtube,to-twirl-all-girly-perfume-oil-roll-on-perfume-oil,to twirl all girly perfume oil roll-on perfume oil,0,0,0,0,0,0,0,0,5,5,5,9b518b77c7
+og::tobacco-vanille-body-spray-scented-body-spray,og_youtube,tobacco-vanille-body-spray-scented-body-spray,tobacco vanille body spray scented body spray,1,0,0,0,1,0,0,0,8,6,6,61022c7bdb
+og::tom-of-finland-eau-de-parfum,og_youtube,tom-of-finland-eau-de-parfum,tom of finland eau de parfum,1,0,0,0,1,0,0,0,7,6,7,ee4e6e31e4
+og::tomboy-neroli-eau-de-parfum,og_youtube,tomboy-neroli-eau-de-parfum,tomboy neroli eau de parfum,0,0,0,0,0,0,1,0,6,5,5,4a68675953
+og::totally-white-eau-de-parfum,og_youtube,totally-white-eau-de-parfum,totally white eau de parfum,1,0,0,0,1,0,1,0,7,5,5,c55859f937
+og::trajan-eau-de-parfum,og_youtube,trajan-eau-de-parfum,trajan eau de parfum,1,0,0,0,1,0,1,0,8,6,6,0e3807ee1b
+og::tubereuse-couture-eau-de-parfum,og_youtube,tubereuse-couture-eau-de-parfum,tubereuse couture eau de parfum,1,0,0,0,1,0,0,0,7,5,5,ec270aaba4
+og::tuberosa-eau-de-parfum,og_youtube,tuberosa-eau-de-parfum,tuberosa eau de parfum,1,0,0,0,1,0,0,0,8,5,5,3784c00ed0
+og::turquoise-perfume-oil,og_youtube,turquoise-perfume-oil,turquoise perfume oil,1,0,0,0,1,0,0,0,7,5,5,a1d862ecd7
+og::tuscan-leather-body-spray-scented-body-spray,og_youtube,tuscan-leather-body-spray-scented-body-spray,tuscan leather body spray scented body spray,1,0,0,0,1,0,0,0,8,6,6,a7f7f52ee9
+og::uden-eau-de-parfum,og_youtube,uden-eau-de-parfum,uden eau de parfum,1,0,0,0,1,0,0,0,8,6,6,7bf4efb4a0
+og::ummo-eau-de-parfum,og_youtube,ummo-eau-de-parfum,ummo eau de parfum,1,0,0,0,1,0,1,0,8,6,6,cf06253123
+og::un-bois-vanille-eau-de-parfum,og_youtube,un-bois-vanille-eau-de-parfum,un bois vanille eau de parfum,1,0,0,0,1,0,1,0,8,6,5,da892c5f41
+og::une-rose-vermeille-eau-de-parfum,og_youtube,une-rose-vermeille-eau-de-parfum,une rose vermeille eau de parfum,1,0,0,0,1,0,0,0,7,5,5,5e6da8d1c5
+og::une-tonne-de-roses-eau-de-parfum,og_youtube,une-tonne-de-roses-eau-de-parfum,une tonne de roses eau de parfum,1,0,0,0,1,0,1,0,7,5,5,6220a8b15d
+og::vanilla-perfume-oil,og_youtube,vanilla-perfume-oil,vanilla perfume oil,1,0,0,0,1,0,1,0,8,6,5,b03527e8b1
+og::vanille-abricot-eau-de-toilette,og_youtube,vanille-abricot-eau-de-toilette,vanille abricot eau de toilette,0,0,0,0,0,0,0,0,5,5,5,cade6375aa
+og::vanille-blackberry,og_youtube,vanille-blackberry,vanille blackberry,1,0,0,0,1,0,0,0,7,6,6,d42f5aacd4
+og::vanille-bourbon-eau-de-parfum,og_youtube,vanille-bourbon-eau-de-parfum,vanille bourbon eau de parfum,1,0,0,0,1,0,0,0,8,5,5,a08480c5a4
+og::vanille-coco,og_youtube,vanille-coco,vanille coco,1,0,0,0,1,0,1,0,7,6,5,fe004fdc06
+og::vanille-extreme-eau-de-toilette,og_youtube,vanille-extreme-eau-de-toilette,vanille extreme eau de toilette,1,0,0,0,1,0,0,0,7,5,5,dc7a584237
+og::vanille-fleurie-de-tahiti-eau-de-toilette,og_youtube,vanille-fleurie-de-tahiti-eau-de-toilette,vanille fleurie de tahiti eau de toilette,1,0,0,0,1,0,0,0,7,5,5,719b5e6ee0
+og::vanille-givree-des-antilles-eau-de-toilette,og_youtube,vanille-givree-des-antilles-eau-de-toilette,vanille givree des antilles eau de toilette,1,0,0,0,1,1,1,0,8,6,6,2c98cfdf07
+og::vanille-noire-du-mexique-eau-de-toilette,og_youtube,vanille-noire-du-mexique-eau-de-toilette,vanille noire du mexique eau de toilette,1,0,0,0,1,0,1,0,7,6,5,ce4a26ba1a
+og::vanille-sauvage-de-madagascar-eau-de-toilette,og_youtube,vanille-sauvage-de-madagascar-eau-de-toilette,vanille sauvage de madagascar eau de toilette,1,0,0,0,1,0,0,0,8,5,5,ecf5a7bdbe
+og::vanille-tonka-eau-de-parfum,og_youtube,vanille-tonka-eau-de-parfum,vanille tonka eau de parfum,1,0,0,0,1,0,1,0,7,5,5,3355d27f20
+og::vanitas-body-cream-scented-body-cream,og_youtube,vanitas-body-cream-scented-body-cream,vanitas body cream scented body cream,1,0,0,0,1,0,1,0,7,6,5,0aeec86c99
+og::vanitas-eau-de-parfum,og_youtube,vanitas-eau-de-parfum,vanitas eau de parfum,0,1,0,0,0,0,0,0,4,5,4,92e34c57fd
+og::venetian-bergamot-eau-de-parfum,og_youtube,venetian-bergamot-eau-de-parfum,venetian bergamot eau de parfum,1,0,0,0,1,0,0,0,7,5,5,db812e5c3f
+og::vepres-siciliennes-eau-de-parfum,og_youtube,vepres-siciliennes-eau-de-parfum,vepres siciliennes eau de parfum,1,0,0,0,0,0,1,0,6,5,5,f36e7b732b
+og::verveine-d-eugene-eau-de-parfum,og_youtube,verveine-d-eugene-eau-de-parfum,verveine d'eugene eau de parfum,1,0,0,0,0,0,1,0,6,5,5,271992e421
+og::vetiver-46-eau-de-parfum,og_youtube,vetiver-46-eau-de-parfum,vetiver 46 eau de parfum,1,0,0,0,1,0,0,0,8,6,6,781c8c0550
+og::vetiver-cologne-eau-de-cologne,og_youtube,vetiver-cologne-eau-de-cologne,vetiver cologne eau de cologne,1,0,0,0,1,0,0,0,7,5,5,a605216348
+og::vetiver-dance-eau-de-toilette,og_youtube,vetiver-dance-eau-de-toilette,vetiver dance eau de toilette,1,0,0,0,1,0,0,0,7,5,5,88a534e1aa
+og::vetiver-nocturne-absolu-extrait-de-parfum,og_youtube,vetiver-nocturne-absolu-extrait-de-parfum,vetiver nocturne absolu extrait de parfum,1,0,0,0,1,0,1,0,7,5,5,f146220afa
+og::vetiver-nocturne-autumn-19-extrait-de-parfum,og_youtube,vetiver-nocturne-autumn-19-extrait-de-parfum,vetiver nocturne autumn 19 extrait de parfum,0,0,0,0,1,0,0,0,6,5,5,48d0469859
+og::vetiver-oriental-eau-de-parfum,og_youtube,vetiver-oriental-eau-de-parfum,vetiver oriental eau de parfum,1,0,0,0,1,0,0,0,7,5,5,72d754fc87
+og::vetiver-parfum-cologne,og_youtube,vetiver-parfum-cologne,vetiver parfum cologne,1,0,0,0,1,0,0,0,8,6,6,ec3f12b044
+og::vetiverus-eau-de-parfum,og_youtube,vetiverus-eau-de-parfum,vetiverus eau de parfum,1,0,0,0,0,0,1,0,7,5,5,828e350fa9
+og::vettiveru-2,og_youtube,vettiveru-2,vettiveru 2,1,0,0,0,1,0,0,0,7,5,5,1078112db2
+og::vetyver-eau-de-toilette,og_youtube,vetyver-eau-de-toilette,vetyver eau de toilette,0,0,0,0,1,0,0,0,6,5,5,0550182ad1
+og::vetyverio-eau-de-toilette,og_youtube,vetyverio-eau-de-toilette,vetyverio eau de toilette,0,0,0,0,0,0,1,0,6,5,5,25f9b5e085
+og::victrix-eau-de-parfum,og_youtube,victrix-eau-de-parfum,victrix eau de parfum,1,0,0,0,1,0,0,0,7,6,6,ea3eefc1e6
+og::violette-in-love-eau-de-toilette,og_youtube,violette-in-love-eau-de-toilette,violette in love eau de toilette,0,0,0,0,0,0,0,1,4,6,4,1a3e2617a5
+og::violettes-du-czar-eau-de-parfum,og_youtube,violettes-du-czar-eau-de-parfum,violettes du czar eau de parfum,1,0,0,0,1,0,1,0,6,5,5,1876d8ab21
+og::virgin-island-water-eau-de-parfum,og_youtube,virgin-island-water-eau-de-parfum,virgin island water eau de parfum ...,1,0,0,0,1,0,1,0,8,5,5,760e22be2c
+og::viride-parfum,og_youtube,viride-parfum,viride parfum,1,0,0,0,1,0,0,0,7,6,7,6eb0623265
+og::vivacious-eau-de-parfum,og_youtube,vivacious-eau-de-parfum,vivacious eau de parfum,1,0,0,0,1,0,1,0,8,6,6,adf99bf8f9
+og::vixere-eau-de-parfum,og_youtube,vixere-eau-de-parfum,vixere eau de parfum,1,0,0,0,1,0,1,0,7,6,5,c640a1877d
+og::vodka-on-the-rocks-eau-de-parfum,og_youtube,vodka-on-the-rocks-eau-de-parfum,vodka on the rocks eau de parfum,1,0,0,0,1,0,1,0,8,6,5,b2ce034c93
+og::voleur-de-roses-eau-de-toilette,og_youtube,voleur-de-roses-eau-de-toilette,voleur de roses eau de toilette,1,0,0,0,1,0,0,0,8,6,5,828943083b
+og::war-and-peace-ii-extrait-de-parfum,og_youtube,war-and-peace-ii-extrait-de-parfum,war and peace ii extrait de parfum,1,0,0,0,1,1,1,0,7,6,5,42779fec04
+og::wazamba-eau-de-parfum,og_youtube,wazamba-eau-de-parfum,wazamba eau de parfum,1,0,0,0,1,0,0,0,7,5,5,3beeab9aef
+og::what-about-pop-eau-de-parfum,og_youtube,what-about-pop-eau-de-parfum,what about pop eau de parfum,1,0,0,0,1,0,1,0,7,5,5,9781c10b1c
+og::what-i-did-on-my-holidays-eau-de-parfum,og_youtube,what-i-did-on-my-holidays-eau-de-parfum,what i did on my holidays eau de parfum,1,0,0,0,1,0,1,0,8,5,5,4eea6f3333
+og::what-we-do-in-paris-is-secret-eau-de-parfum,og_youtube,what-we-do-in-paris-is-secret-eau-de-parfum,what we do in paris is secret eau de parfum,1,0,0,0,1,0,1,0,8,6,5,fb2f3ce1b9
+og::white-aoud-eau-de-parfum,og_youtube,white-aoud-eau-de-parfum,white aoud eau de parfum,0,0,1,0,0,0,0,0,4,6,6,71ea4ef24e
+og::white-peacock-lily-eau-de-parfum,og_youtube,white-peacock-lily-eau-de-parfum,white peacock lily eau de parfum,1,0,0,0,1,0,1,0,8,5,5,a7f22e3134
+og::white-zagora-eau-de-toilette,og_youtube,white-zagora-eau-de-toilette,white zagora eau de toilette,1,0,0,0,1,0,0,0,8,5,5,a218c7d6a2
+og::wild-rose-aoud-eau-de-parfum,og_youtube,wild-rose-aoud-eau-de-parfum,wild rose aoud eau de parfum,1,0,0,0,1,0,0,0,8,5,5,6cb7b37055
+og::wonder-of-you-eau-de-parfum,og_youtube,wonder-of-you-eau-de-parfum,wonder of you eau de parfum,1,0,0,0,1,1,1,0,8,6,5,cbab046c44
+og::wood-flake-eau-de-parfum,og_youtube,wood-flake-eau-de-parfum,wood flake eau de parfum,1,0,0,0,1,0,0,0,7,5,5,9a18df238c
+og::xj-homme-eau-de-parfum,og_youtube,xj-homme-eau-de-parfum,xj homme eau de parfum,1,0,0,0,1,0,0,0,7,6,6,677512f45c
+og::xj-irisss-eau-de-parfum,og_youtube,xj-irisss-eau-de-parfum,xj irisss eau de parfum,1,0,0,0,1,0,0,0,7,5,5,fdb70b19dd
+og::yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum,og_youtube,yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum,yes i do (formerly don't get me wrong baby) eau de parfum,0,0,0,0,1,0,0,0,6,5,5,092a16761f
+og::yesterday-haze-eau-de-parfum,og_youtube,yesterday-haze-eau-de-parfum,yesterday haze eau de parfum,1,0,0,0,1,0,0,0,8,5,5,0c0adf252e
+og::ylang-49-eau-de-parfum,og_youtube,ylang-49-eau-de-parfum,ylang 49 eau de parfum,1,0,0,0,1,0,1,0,8,6,6,27f67f1907
+og::yoyogi-eau-de-toilette,og_youtube,yoyogi-eau-de-toilette,yoyogi eau de toilette,0,0,0,0,1,0,0,0,6,5,5,e31058cc5c
+og::yu-son-eau-de-parfum,og_youtube,yu-son-eau-de-parfum,yu son eau de parfum,0,0,0,0,1,0,1,0,6,5,5,8c878a9040
+og::zdravetz-eau-de-parfum,og_youtube,zdravetz-eau-de-parfum,zdravetz eau de parfum,0,0,0,0,1,0,0,0,6,5,5,dc75758557
+og::zeitgeist-eau-de-parfum,og_youtube,zeitgeist-eau-de-parfum,zeitgeist eau de parfum,1,0,0,0,1,0,1,0,8,6,6,fe6fae569a
+og::zenne-extrait-de-parfum,og_youtube,zenne-extrait-de-parfum,zenne extrait de parfum,1,0,0,0,1,0,0,0,8,6,6,a47cd0e8e4

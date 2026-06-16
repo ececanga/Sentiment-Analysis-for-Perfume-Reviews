@@ -1,0 +1,44 @@
+{
+  "generated_at_utc": "2026-06-15T10:00:04.763160+00:00",
+  "output_tag": "gemini_browser_labels_og784_v1",
+  "last_ingested_batch": 8,
+  "completed_rows": 784,
+  "completed_batches": 8,
+  "target_rows": 784,
+  "remaining_rows": 0,
+  "emotion_positive_counts": {
+    "joy": 622,
+    "sadness": 11,
+    "anger": 7,
+    "fear": 3,
+    "trust": 476,
+    "surprise": 44,
+    "anticipation": 366,
+    "disgust": 19
+  },
+  "vad_summary": {
+    "valence": {
+      "mean": 6.92984693877551,
+      "min": 2,
+      "max": 9
+    },
+    "arousal": {
+      "mean": 5.729591836734694,
+      "min": 3,
+      "max": 8
+    },
+    "dominance": {
+      "mean": 5.561224489795919,
+      "min": 4,
+      "max": 8
+    }
+  },
+  "outputs": {
+    "raw_batch": "labels/gemini_browser_og784/raw_batches/gemini_browser_labels_og784_v1_batch_008_part_04.txt",
+    "batch_csv": "labels/gemini_browser_og784/batch_csv/gemini_browser_labels_og784_v1_batch_008.csv",
+    "combined_csv": "labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv",
+    "pipeline_csv": "labels/gemini_browser_og784/gemini_browser_labels_og784_v1_pipeline.csv",
+    "report": "labels/gemini_browser_og784/gemini_browser_labels_og784_v1_report.json"
+  },
+  "note": "Browser Gemini Pro pseudo-labels for frozen OG 784 perfume-level review excerpts."
+}

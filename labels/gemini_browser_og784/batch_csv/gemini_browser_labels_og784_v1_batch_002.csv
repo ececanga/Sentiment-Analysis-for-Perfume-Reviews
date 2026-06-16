@@ -1,0 +1,101 @@
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::black-aoud-eau-de-parfum,og_youtube,black-aoud-eau-de-parfum,black aoud eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::black-caviar-eau-de-parfum,og_youtube,black-caviar-eau-de-parfum,black caviar eau de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::black-tourmaline-eau-de-parfum,og_youtube,black-tourmaline-eau-de-parfum,black tourmaline eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::black-uddu-eau-de-parfum,og_youtube,black-uddu-eau-de-parfum,black uddu eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::blanche-eau-de-parfum,og_youtube,blanche-eau-de-parfum,blanche eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::blenheim-bouquet-eau-de-toilette,og_youtube,blenheim-bouquet-eau-de-toilette,blenheim bouquet eau de toilette,1,0,0,0,1,0,0,0,7,5,6
+og::blessing-silence-eau-de-parfum,og_youtube,blessing-silence-eau-de-parfum,blessing silence eau de parfum,1,0,0,0,1,0,1,0,8,6,7
+og::bloody-wood-eau-de-parfum,og_youtube,bloody-wood-eau-de-parfum,bloody wood eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::blossom-love-eau-de-parfum,og_youtube,blossom-love-eau-de-parfum,blossom love eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::blu-perfume-oil,og_youtube,blu-perfume-oil,blu perfume oil,1,0,0,0,1,0,0,0,8,8,8
+og::blue-hope-eau-de-parfum,og_youtube,blue-hope-eau-de-parfum,blue hope eau de parfum,1,0,0,0,0,0,0,0,7,5,6
+og::blueberry-musk-eau-de-parfum,og_youtube,blueberry-musk-eau-de-parfum,blueberry musk eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::boccanera-parfum,og_youtube,boccanera-parfum,boccanera parfum,1,0,0,0,0,0,1,0,7,6,5
+og::bohea-boheme-eau-de-parfum,og_youtube,bohea-boheme-eau-de-parfum,bohea boheme eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::bois-blonds-cologne-absolue,og_youtube,bois-blonds-cologne-absolue,bois blonds cologne absolue,1,0,0,0,1,0,0,0,7,5,6
+og::bois-de-borneo-oud,og_youtube,bois-de-borneo-oud,bois de borneo oud,1,0,0,0,1,0,1,0,8,6,6
+og::bois-farine-eau-de-toilette,og_youtube,bois-farine-eau-de-toilette,bois farine eau de toilette,1,0,0,0,1,0,0,0,7,4,6
+og::bois-naufrage-eau-de-toilette,og_youtube,bois-naufrage-eau-de-toilette,bois naufrage eau de toilette,1,0,0,0,0,0,0,0,7,5,6
+og::bouquet-ideale-eau-de-parfum,og_youtube,bouquet-ideale-eau-de-parfum,bouquet ideale eau de parfum,1,0,0,0,0,0,0,0,8,6,6
+og::bowmakers-eau-de-parfum,og_youtube,bowmakers-eau-de-parfum,bowmakers eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::bowmakers-pocket-perfume-perfume-oil,og_youtube,bowmakers-pocket-perfume-perfume-oil,bowmakers pocket perfume perfume oil,1,0,0,0,1,0,0,0,7,4,6
+og::bronze-eau-de-parfum,og_youtube,bronze-eau-de-parfum,bronze eau de parfum,1,0,0,0,0,1,0,0,7,6,5
+og::broom-ginestra-cologne,og_youtube,broom-ginestra-cologne,broom / ginestra cologne,0,0,0,0,0,0,1,0,6,5,5
+og::brulure-de-rose-eau-de-parfum,og_youtube,brulure-de-rose-eau-de-parfum,brulure de rose eau de parfum,1,0,0,0,0,0,0,0,6,6,6
+og::brutus-parfum,og_youtube,brutus-parfum,brutus parfum,1,0,0,0,1,0,0,0,8,6,6
+og::bull-s-blood-eau-de-parfum,og_youtube,bull-s-blood-eau-de-parfum,bull's blood eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::burning-barbershop-eau-de-parfum,og_youtube,burning-barbershop-eau-de-parfum,burning barbershop eau de parfum,1,0,0,0,0,1,1,0,7,6,5
+og::by-any-other-name-eau-de-parfum,og_youtube,by-any-other-name-eau-de-parfum,by any other name eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::camellia-eau-de-parfum,og_youtube,camellia-eau-de-parfum,camellia eau de parfum,1,0,0,0,0,0,0,0,6,6,5
+og::cannabis-blue-eau-de-parfum,og_youtube,cannabis-blue-eau-de-parfum,cannabis blue eau de parfum,1,0,0,0,0,0,0,0,7,5,6
+og::cap-d-antibes-eau-de-parfum,og_youtube,cap-d-antibes-eau-de-parfum,cap d'antibes eau de parfum,1,0,0,0,0,0,0,0,7,5,5
+og::cape-heartache-eau-de-parfum,og_youtube,cape-heartache-eau-de-parfum,cape heartache eau de parfum,1,0,0,0,0,0,1,0,8,6,6
+og::capua-eau-de-parfum,og_youtube,capua-eau-de-parfum,capua eau de parfum,1,0,0,0,0,0,0,0,6,5,6
+og::cardinal-eau-de-parfum,og_youtube,cardinal-eau-de-parfum,cardinal eau de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::carnation-garofano-cologne-eau-de-cologne,og_youtube,carnation-garofano-cologne-eau-de-cologne,carnation / garofano cologne eau de cologne,1,0,0,0,1,0,0,0,7,5,6
+og::carved-oud-extrait-de-parfum,og_youtube,carved-oud-extrait-de-parfum,carved oud extrait de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::cedar-woodpecker-eau-de-parfum,og_youtube,cedar-woodpecker-eau-de-parfum,cedar woodpecker eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::celluloid-x-galbanum-eau-de-parfum,og_youtube,celluloid-x-galbanum-eau-de-parfum,celluloid x galbanum eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::centrepiece-eau-de-parfum,og_youtube,centrepiece-eau-de-parfum,centrepiece eau de parfum,1,0,0,0,0,0,0,0,6,5,5
+og::chambre-noire-eau-de-parfum,og_youtube,chambre-noire-eau-de-parfum,chambre noire eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::charade-extrait-de-parfum,og_youtube,charade-extrait-de-parfum,charade extrait de parfum,1,0,0,0,0,0,0,0,7,5,6
+og::chergui-eau-de-parfum,og_youtube,chergui-eau-de-parfum,chergui eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::china-white-parfum-extrait,og_youtube,china-white-parfum-extrait,china white parfum extrait,1,0,0,0,0,0,1,0,7,6,5
+og::chloe-sevigny-little-flower-eau-de-parfum,og_youtube,chloe-sevigny-little-flower-eau-de-parfum,chloe sevigny little flower eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::chlorophyll-x-gardenia-eau-de-parfum,og_youtube,chlorophyll-x-gardenia-eau-de-parfum,chlorophyll x gardenia eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::chocolat-eau-de-parfum,og_youtube,chocolat-eau-de-parfum,chocolat eau de parfum,1,0,0,0,0,1,0,0,7,7,5
+og::chocolate-greedy-eau-de-parfum,og_youtube,chocolate-greedy-eau-de-parfum,chocolate greedy eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::chypre-mousse-eau-de-parfum,og_youtube,chypre-mousse-eau-de-parfum,chypre mousse eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::chypre-siam-eau-de-toilette,og_youtube,chypre-siam-eau-de-toilette,chypre-siam eau de toilette,1,0,0,0,1,0,0,0,8,5,6
+og::citta-di-kyoto-cologne-eau-de-cologne,og_youtube,citta-di-kyoto-cologne-eau-de-cologne,citta di kyoto cologne eau de cologne,1,0,0,0,1,0,0,0,7,5,6
+og::clair-de-musc-eau-de-parfum,og_youtube,clair-de-musc-eau-de-parfum,clair de musc eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::coal-eau-de-parfum,og_youtube,coal-eau-de-parfum,coal eau de parfum,1,0,0,0,1,0,0,0,7,6,6
+og::cologne-cedrat-eau-de-cologne,og_youtube,cologne-cedrat-eau-de-cologne,cologne cedrat eau de cologne,0,0,0,0,0,0,0,0,5,5,5
+og::cologne-sologne-eau-de-cologne,og_youtube,cologne-sologne-eau-de-cologne,cologne sologne eau de cologne,0,0,0,0,0,0,1,0,6,5,5
+og::colonia-no-1-eau-de-cologne,og_youtube,colonia-no-1-eau-de-cologne,colonia no. 1 eau de cologne,1,0,0,0,1,0,0,0,8,6,7
+og::colonia-no-4-eau-de-cologne,og_youtube,colonia-no-4-eau-de-cologne,colonia no. 4 eau de cologne,0,0,0,0,0,0,0,0,5,5,5
+og::comme-un-carrousel-eau-de-parfum,og_youtube,comme-un-carrousel-eau-de-parfum,comme un carrousel eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::complex-eau-de-parfum,og_youtube,complex-eau-de-parfum,complex eau de parfum,1,0,0,0,1,0,0,0,7,6,6
+og::confetto-body-cream-scented-body-cream,og_youtube,confetto-body-cream-scented-body-cream,confetto body cream scented body cream,1,0,0,0,0,0,0,0,7,5,5
+og::confetto-eau-de-parfum,og_youtube,confetto-eau-de-parfum,confetto eau de parfum,1,0,0,0,0,1,0,0,8,7,6
+og::copper-eau-de-parfum,og_youtube,copper-eau-de-parfum,copper eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::coquette-tropique,og_youtube,coquette-tropique,coquette tropique,0,0,0,0,0,0,0,0,5,5,5
+og::coral-perfume-oil,og_youtube,coral-perfume-oil,coral perfume oil,1,0,0,0,1,0,0,0,8,8,8
+og::coriander-eau-de-parfum,og_youtube,coriander-eau-de-parfum,coriander eau de parfum,1,0,0,0,0,0,0,0,7,6,5
+og::corpse-reviver-eau-de-parfum,og_youtube,corpse-reviver-eau-de-parfum,corpse reviver eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::corsica-furiosa-eau-de-parfum,og_youtube,corsica-furiosa-eau-de-parfum,corsica furiosa eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::costes-perfume-eau-de-toilette,og_youtube,costes-perfume-eau-de-toilette,costes perfume eau de toilette,0,0,0,0,0,0,0,0,5,5,5
+og::covent-garden-eau-de-parfum,og_youtube,covent-garden-eau-de-parfum,covent garden eau de parfum,1,0,0,0,0,0,0,0,7,6,6
+og::cowboy-grass-eau-de-parfum,og_youtube,cowboy-grass-eau-de-parfum,cowboy grass eau de parfum,1,0,0,0,0,0,1,0,7,5,5
+og::coze-eau-de-parfum,og_youtube,coze-eau-de-parfum,coze eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::creation-e-parfum-cologne,og_youtube,creation-e-parfum-cologne,creation-e parfum cologne,1,0,0,0,0,0,0,0,8,6,6
+og::crystal-pistil-eau-de-parfum,og_youtube,crystal-pistil-eau-de-parfum,crystal pistil eau de parfum,1,0,0,0,0,1,0,0,8,7,5
+og::cuir-andalou-eau-de-parfum,og_youtube,cuir-andalou-eau-de-parfum,cuir andalou eau de parfum,1,0,0,0,0,0,0,0,7,5,5
+og::cuir-cuba-intense-eau-de-parfum,og_youtube,cuir-cuba-intense-eau-de-parfum,cuir cuba intense eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::cuir-les-nombres-d-or-eau-de-parfum,og_youtube,cuir-les-nombres-d-or-eau-de-parfum,cuir - les nombres d'or eau de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::cuir-ottoman-eau-de-parfum,og_youtube,cuir-ottoman-eau-de-parfum,cuir ottoman eau de parfum,1,0,0,0,1,0,1,0,7,5,6
+og::cuir-velours-eau-de-parfum,og_youtube,cuir-velours-eau-de-parfum,cuir velours eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::cuir-venenum-eau-de-parfum,og_youtube,cuir-venenum-eau-de-parfum,cuir venenum eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::cypress-shade-eau-de-parfum,og_youtube,cypress-shade-eau-de-parfum,cypress shade eau de parfum,1,0,0,0,0,0,0,0,7,6,5
+og::dama-bianca-eau-de-parfum,og_youtube,dama-bianca-eau-de-parfum,dama bianca eau de parfum,1,0,0,0,1,0,0,0,9,7,6
+og::dambrosia-eau-de-parfum,og_youtube,dambrosia-eau-de-parfum,dambrosia eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::danger-parfum-cologne,og_youtube,danger-parfum-cologne,danger parfum cologne,1,0,0,0,0,0,1,0,7,6,5
+og::dark-eau-de-parfum,og_youtube,dark-eau-de-parfum,dark eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::dates-delight-eau-de-parfum,og_youtube,dates-delight-eau-de-parfum,dates delight eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::datura-noir-eau-de-parfum,og_youtube,datura-noir-eau-de-parfum,datura noir eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::de-bachmakov-eau-de-parfum,og_youtube,de-bachmakov-eau-de-parfum,de bachmakov eau de parfum,1,0,0,0,0,0,0,0,7,5,5
+og::debaser-eau-de-parfum,og_youtube,debaser-eau-de-parfum,debaser eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::debaser-pocket-perfume-perfume-oil,og_youtube,debaser-pocket-perfume-perfume-oil,debaser pocket perfume perfume oil,0,0,0,0,0,1,0,0,5,5,5
+og::deja-le-printemps-eau-de-parfum,og_youtube,deja-le-printemps-eau-de-parfum,deja le printemps eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::dendera-extrait-de-parfum,og_youtube,dendera-extrait-de-parfum,dendera extrait de parfum,1,0,0,0,1,0,0,0,7,5,5
+og::derviche-eau-de-toilette,og_youtube,derviche-eau-de-toilette,derviche eau de toilette,0,0,0,0,0,0,1,0,6,5,5
+og::devil-tender-eau-de-parfum,og_youtube,devil-tender-eau-de-parfum,devil tender eau de parfum,1,0,0,0,0,0,1,0,6,5,5
+og::dia-man-eau-de-parfum,og_youtube,dia-man-eau-de-parfum,dia man eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::dia-woman-eau-de-parfum,og_youtube,dia-woman-eau-de-parfum,dia woman eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::diaghilev-extrait-de-parfum,og_youtube,diaghilev-extrait-de-parfum,diaghilev extrait de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::divine-vanille-eau-de-parfum,og_youtube,divine-vanille-eau-de-parfum,divine vanille eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::do-son-eau-de-parfum,og_youtube,do-son-eau-de-parfum,do son - eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::do-son-eau-de-toilette,og_youtube,do-son-eau-de-toilette,do son - eau de toilette,1,0,0,0,0,0,1,0,6,5,5
+og::doe-in-the-snow-eau-de-parfum,og_youtube,doe-in-the-snow-eau-de-parfum,doe in the snow eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::dom-rosa-eau-de-parfum,og_youtube,dom-rosa-eau-de-parfum,dom rosa eau de parfum,1,0,0,0,0,0,0,0,7,5,5

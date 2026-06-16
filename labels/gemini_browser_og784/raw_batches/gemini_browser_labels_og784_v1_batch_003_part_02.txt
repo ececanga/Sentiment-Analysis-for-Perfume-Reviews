@@ -1,0 +1,27 @@
+OG Batch 3 output:
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::geisha-noire-eau-de-parfum,og_youtube,geisha-noire-eau-de-parfum,geisha noire eau de parfum,0,0,0,0,1,0,0,0,6,6,7
+og::geisha-noire-roll-on-perfume-oil,og_youtube,geisha-noire-roll-on-perfume-oil,geisha noire roll-on perfume oil,0,0,0,0,1,0,0,0,6,5,6
+og::geisha-rouge-eau-de-parfum,og_youtube,geisha-rouge-eau-de-parfum,geisha rouge - eau de parfum,1,0,0,0,1,1,0,0,8,8,6
+og::geisha-vanilla-hinoki-eau-de-parfum,og_youtube,geisha-vanilla-hinoki-eau-de-parfum,geisha vanilla hinoki- eau de parfum,1,0,0,0,0,0,1,0,6,5,5
+og::geisha-vanilla-hinoki-roll-on-perfume-oil,og_youtube,geisha-vanilla-hinoki-roll-on-perfume-oil,geisha vanilla hinoki roll-on perfume oil,0,0,0,0,0,0,0,0,5,5,5
+og::gendarme-eau-de-cologne,og_youtube,gendarme-eau-de-cologne,gendarme - eau de cologne,1,0,1,0,0,0,0,0,4,6,5
+og::geza-schoen-eau-de-toilette,og_youtube,geza-schoen-eau-de-toilette,geza schoen eau de toilette,1,0,0,0,0,0,1,0,6,6,6
+og::gheorghe-eau-de-parfum,og_youtube,gheorghe-eau-de-parfum,gheorghe eau de parfum,0,0,0,0,1,0,0,1,4,7,5
+og::ginger-ciao-eau-de-parfum,og_youtube,ginger-ciao-eau-de-parfum,ginger ciao eau de parfum,1,0,0,0,1,0,1,0,8,8,6
+og::glorious-eau-de-parfum,og_youtube,glorious-eau-de-parfum,glorious eau de parfum,1,0,0,0,1,0,0,0,8,6,7
+og::godolphin-eau-de-parfum,og_youtube,godolphin-eau-de-parfum,godolphin eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::gold-extrait-de-parfum,og_youtube,gold-extrait-de-parfum,gold extrait de parfum,1,0,0,0,1,0,1,0,8,7,6
+og::gold-rose-oudh-extrait-de-parfum,og_youtube,gold-rose-oudh-extrait-de-parfum,gold rose oudh extrait de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::gold-woman-eau-de-parfum,og_youtube,gold-woman-eau-de-parfum,gold woman eau de parfum,1,0,0,0,1,0,1,0,7,6,5
+og::golden-powder-eau-de-parfum,og_youtube,golden-powder-eau-de-parfum,golden powder eau de parfum,1,0,0,0,1,1,1,0,8,8,7
+og::good-girl-gone-bad-eau-de-parfum,og_youtube,good-girl-gone-bad-eau-de-parfum,good girl gone bad eau de parfum,0,0,0,0,1,0,1,0,5,5,6
+og::gothic-i-eau-de-parfum,og_youtube,gothic-i-eau-de-parfum,gothic i - eau de parfum,1,0,0,0,1,0,0,0,7,6,6
+og::gothic-i-perfume-oil-roll-on-perfume-oil,og_youtube,gothic-i-perfume-oil-roll-on-perfume-oil,gothic i - perfume oil roll-on perfume oil,1,0,0,0,0,0,1,0,8,8,6
+og::gothic-ii-eau-de-parfum,og_youtube,gothic-ii-eau-de-parfum,gothic ii - eau de parfum,0,0,0,0,1,0,1,0,6,5,6
+og::gothic-ii-perfume-oil-roll-on-perfume-oil,og_youtube,gothic-ii-perfume-oil-roll-on-perfume-oil,gothic ii - perfume oil roll-on perfume oil,1,0,0,0,0,0,1,0,8,8,6
+og::gothic-iii-eau-de-parfum,og_youtube,gothic-iii-eau-de-parfum,gothic iii - eau de parfum,1,0,0,0,1,0,1,0,7,6,7
+og::gothic-iii-perfume-oil-roll-on-perfume-oil,og_youtube,gothic-iii-perfume-oil-roll-on-perfume-oil,gothic iii - perfume oil roll-on perfume oil,1,0,0,0,0,0,1,0,8,8,6
+og::gothic-iv-perfume-oil-perfume-oil-roll-on,og_youtube,gothic-iv-perfume-oil-perfume-oil-roll-on,gothic iv- perfume oil perfume oil roll-on,1,0,0,0,1,0,1,0,7,6,7
+og::gothic-v-perfume-oil-perfume-oil-roll-on,og_youtube,gothic-v-perfume-oil-perfume-oil-roll-on,gothic v- perfume oil perfume oil roll-on,1,0,0,0,1,0,1,0,7,6,7
+og::graine-de-joie-eau-de-parfum,og_youtube,graine-de-joie-eau-de-parfum,graine de joie eau de parfum,1,0,0,0,1,0,0,0,9,7,6

@@ -1,0 +1,24 @@
+{
+  "base_path": "outputs/gemini_judge/judge_g25pro_v1/analysis_out/gemini_unified_merged.csv",
+  "labels_path": "labels/gemini_browser_og784/gemini_browser_labels_og784_v1_pipeline.csv",
+  "output_path": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+  "rows": 784,
+  "unique_perfume_id": 784,
+  "hash_mismatch_count": 0,
+  "emotion_positive_counts": {
+    "joy": 622,
+    "sadness": 11,
+    "anger": 7,
+    "fear": 3,
+    "trust": 476,
+    "surprise": 44,
+    "anticipation": 366,
+    "disgust": 19
+  },
+  "vad_mean": {
+    "valence": 6.92984693877551,
+    "arousal": 5.729591836734694,
+    "dominance": 5.561224489795919
+  },
+  "note": "Feature columns copied from frozen OG feature matrix; target/VAD columns replaced with Gemini browser-Pro OG labels."
+}

@@ -1,0 +1,103 @@
+{
+  "generated_at_utc": "2026-06-15T10:22:11.061340+00:00",
+  "model_id": "xgboost",
+  "model_family": "XGBoost",
+  "inputs": {
+    "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "synthetic_metrics": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/logistic_regression_review_level_metrics.json",
+    "og_features": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "og_metrics": "outputs/gemini_browser_og784/model_benchmark/metrics/xgboost.json",
+    "fold_assignments": "outputs/gemini_browser_og784/model_benchmark/tables/fold_assignments.csv"
+  },
+  "rows": {
+    "og": 784,
+    "synthetic": 2352,
+    "combined": 3136
+  },
+  "unique_perfumes": {
+    "og": 784,
+    "synthetic": 784,
+    "combined": 784
+  },
+  "feature_count": 58,
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "threshold": 0.3,
+  "metrics": [
+    {
+      "model_id": "xgboost",
+      "model_family": "XGBoost",
+      "experiment": "og_only_reference",
+      "train_rows": 784,
+      "eval_rows": 784,
+      "macro_f1": 0.383950309681656,
+      "macro_roc_auc": 0.6218160562573887,
+      "macro_pr_auc": 0.34488941148989083,
+      "micro_f1": 0.7388499298737727,
+      "hamming_loss": 0.16964285714285715
+    },
+    {
+      "model_id": "xgboost",
+      "model_family": "XGBoost",
+      "experiment": "synthetic_only_review_level",
+      "train_rows": 2352,
+      "eval_rows": 2352,
+      "macro_f1": 0.6646575479839212,
+      "macro_roc_auc": 0.9471048401866132,
+      "macro_pr_auc": 0.6720831137850782,
+      "micro_f1": 0.8363715751555507,
+      "hamming_loss": 0.09104713313896988,
+      "label_cardinality": 1.7674319727891157,
+      "predicted_label_cardinality": 2.127551020408163
+    },
+    {
+      "model_id": "xgboost",
+      "model_family": "XGBoost",
+      "experiment": "og_plus_synthetic_all_rows_oof",
+      "train_rows": 3136,
+      "eval_rows": 3136,
+      "macro_f1": 0.6675737622506246,
+      "macro_roc_auc": 0.9302258506151416,
+      "macro_pr_auc": 0.6730192514716983,
+      "micro_f1": 0.8099575938432543,
+      "hamming_loss": 0.11024052478134111,
+      "label_cardinality": 1.8169642857142858,
+      "predicted_label_cardinality": 2.243622448979592
+    },
+    {
+      "model_id": "xgboost",
+      "model_family": "XGBoost",
+      "experiment": "og_plus_synthetic_eval_og_rows",
+      "train_rows": 3136,
+      "eval_rows": 784,
+      "macro_f1": 0.3724734488972706,
+      "macro_roc_auc": 0.6380873684981438,
+      "macro_pr_auc": 0.3580058125528778,
+      "micro_f1": 0.739841986455982,
+      "hamming_loss": 0.16800291545189505,
+      "label_cardinality": 1.965561224489796,
+      "predicted_label_cardinality": 2.55484693877551
+    }
+  ],
+  "outputs": {
+    "combined_features": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/og_plus_synthetic_labeled_features.csv",
+    "metric_comparison": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/metric_comparison.csv",
+    "label_distribution": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/label_distribution.csv",
+    "synthetic_oof": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/synthetic_only_review_level_oof.csv",
+    "synthetic_per_label": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/synthetic_only_review_level_per_label.csv",
+    "combined_oof": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/og_plus_synthetic_all_rows_oof.csv",
+    "combined_per_label": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/og_plus_synthetic_all_rows_per_label.csv",
+    "augmented_og_oof": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/og_plus_synthetic_eval_og_rows_oof.csv",
+    "augmented_og_per_label": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/og_plus_synthetic_eval_og_rows_per_label.csv",
+    "report_md": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/comparison_report.md",
+    "report_json": "outputs/review_level_synthetic_augmentation_gemini_browser_og784_xgboost/comparison_report.json"
+  },
+  "note": "OG rows are perfume-level while synthetic rows are review-level. The OG-eval augmentation result is the most relevant check for whether synthetic rows help the real-review benchmark."
+}

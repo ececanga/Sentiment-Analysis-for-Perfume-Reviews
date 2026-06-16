@@ -1,0 +1,102 @@
+OG Batch 4 output:
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::grand-neroli-cologne-absolue,og_youtube,grand-neroli-cologne-absolue,grand neroli cologne absolue,1,0,0,0,1,0,0,0,7,6,6
+og::grand-soir-eau-de-parfum,og_youtube,grand-soir-eau-de-parfum,grand soir eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::grape-pearls-eau-de-parfum,og_youtube,grape-pearls-eau-de-parfum,grape pearls eau de parfum,1,0,0,0,0,0,1,0,8,7,6
+og::graphite-eau-de-parfum,og_youtube,graphite-eau-de-parfum,graphite eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::greek-keys-extrait-de-parfum,og_youtube,greek-keys-extrait-de-parfum,greek keys extrait de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::green-eau-de-parfum,og_youtube,green-eau-de-parfum,green eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::green-irish-tweed-eau-de-parfum,og_youtube,green-irish-tweed-eau-de-parfum,green irish tweed eau de parfum ...,0,0,0,0,1,0,0,0,6,5,6
+og::green-pearl-eau-de-parfum,og_youtube,green-pearl-eau-de-parfum,green pearl eau de parfum,1,0,0,0,0,0,1,0,7,7,6
+og::habdan-eau-de-parfum,og_youtube,habdan-eau-de-parfum,habdan eau de parfum,1,0,0,0,0,0,1,0,8,7,6
+og::hakka-eau-de-parfum,og_youtube,hakka-eau-de-parfum,hakka eau de parfum,1,0,0,0,0,0,0,0,6,5,5
+og::harmatan-noir-eau-de-toilette,og_youtube,harmatan-noir-eau-de-toilette,harmatan noir eau de toilette,0,0,0,0,0,0,1,0,6,5,5
+og::haxan-eau-de-parfum,og_youtube,haxan-eau-de-parfum,haxan eau de parfum,1,0,0,0,0,0,1,0,8,8,6
+og::heartless-helen-eau-de-parfum,og_youtube,heartless-helen-eau-de-parfum,heartless helen eau de parfum,1,0,1,0,1,0,0,0,6,6,6
+og::hedonist-eau-de-parfum,og_youtube,hedonist-eau-de-parfum,hedonist eau de parfum,1,0,0,0,0,0,0,0,7,6,6
+og::hedonist-iris-absolute-eau-de-parfum,og_youtube,hedonist-iris-absolute-eau-de-parfum,hedonist iris absolute eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::hedonist-iris-eau-de-parfum,og_youtube,hedonist-iris-eau-de-parfum,hedonist iris eau de parfum,1,0,0,0,1,0,0,0,8,6,5
+og::hedonist-rose-absolute-eau-de-parfum,og_youtube,hedonist-rose-absolute-eau-de-parfum,hedonist rose absolute eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::hedonist-rose-eau-de-parfum,og_youtube,hedonist-rose-eau-de-parfum,hedonist rose eau de parfum,1,0,0,0,1,0,0,0,7,6,5
+og::heliotrope-eau-de-parfum,og_youtube,heliotrope-eau-de-parfum,heliotrope eau de parfum,1,0,0,0,0,0,1,0,7,7,6
+og::hermann-eau-de-parfum,og_youtube,hermann-eau-de-parfum,hermann eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::himalaya-eau-de-parfum,og_youtube,himalaya-eau-de-parfum,himalaya eau de parfum ...,1,0,0,0,1,0,0,0,8,6,6
+og::homme-eau-de-parfum,og_youtube,homme-eau-de-parfum,homme eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::honey-aoud-eau-de-parfum,og_youtube,honey-aoud-eau-de-parfum,honey aoud eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::honeysuckle-caprifoglio-cologne-eau-de-cologne,og_youtube,honeysuckle-caprifoglio-cologne-eau-de-cologne,honeysuckle / caprifoglio cologne eau de cologne,1,0,0,0,1,0,0,0,8,6,5
+og::horizon-eau-de-parfum,og_youtube,horizon-eau-de-parfum,horizon eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::hundred-silent-ways-extrait-de-parfum,og_youtube,hundred-silent-ways-extrait-de-parfum,hundred silent ways extrait de parfum,1,0,0,0,1,0,1,0,8,8,6
+og::ichnusa-eau-de-parfum,og_youtube,ichnusa-eau-de-parfum,ichnusa eau de parfum,1,0,0,0,0,0,1,0,8,8,6
+og::if-by-rk-eau-de-parfum,og_youtube,if-by-rk-eau-de-parfum,if by rk eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::ile-pourpre-eau-de-parfum,og_youtube,ile-pourpre-eau-de-parfum,ile pourpre eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::incense-extreme-eau-de-parfum,og_youtube,incense-extreme-eau-de-parfum,incense extreme eau de parfum,0,0,0,0,0,0,1,0,5,5,5
+og::incense-flash-eau-de-parfum,og_youtube,incense-flash-eau-de-parfum,incense flash eau de parfum,1,0,0,0,0,0,1,0,6,6,5
+og::incense-oud-eau-de-parfum,og_youtube,incense-oud-eau-de-parfum,incense oud eau de parfum,1,0,0,0,0,0,1,0,8,8,8
+og::incense-rose-eau-de-parfum,og_youtube,incense-rose-eau-de-parfum,incense rose eau de parfum,1,0,0,0,0,0,0,0,7,6,6
+og::indian-wood-eau-de-parfum,og_youtube,indian-wood-eau-de-parfum,indian wood eau de parfum,1,0,0,0,1,1,0,0,8,8,7
+og::intelligence-fantasy-eau-de-toilette,og_youtube,intelligence-fantasy-eau-de-toilette,intelligence & fantasy eau de toilette,1,0,0,0,0,0,1,0,7,5,5
+og::intense-tiare-eau-de-parfum,og_youtube,intense-tiare-eau-de-parfum,intense tiare eau de parfum,1,0,0,0,0,1,1,0,6,7,5
+og::into-the-void-eau-de-parfum,og_youtube,into-the-void-eau-de-parfum,into the void eau de parfum,1,0,0,0,1,0,0,0,7,6,6
+og::invasion-barbare-eau-de-parfum,og_youtube,invasion-barbare-eau-de-parfum,invasion barbare eau de parfum,1,0,0,0,1,0,0,0,8,7,7
+og::iridescent-sky-eau-de-parfum,og_youtube,iridescent-sky-eau-de-parfum,iridescent sky eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::iris-bleu-gris-eau-de-parfum,og_youtube,iris-bleu-gris-eau-de-parfum,iris bleu gris eau de parfum,1,0,0,0,0,0,1,0,7,5,7
+og::iris-de-nuit-eau-de-parfum,og_youtube,iris-de-nuit-eau-de-parfum,iris de nuit eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::iskander-eau-de-parfum,og_youtube,iskander-eau-de-parfum,iskander eau de parfum,0,0,0,0,1,0,0,0,6,5,5
+og::issara-extrait-de-parfum,og_youtube,issara-extrait-de-parfum,issara extrait de parfum,1,0,0,0,0,0,1,0,8,7,6
+og::italian-citrus-eau-de-parfum,og_youtube,italian-citrus-eau-de-parfum,italian citrus eau de parfum,1,0,0,0,1,0,0,0,8,6,5
+og::jack-eau-de-parfum,og_youtube,jack-eau-de-parfum,jack eau de parfum,0,1,0,0,0,0,0,0,3,4,4
+og::jade-eau-de-parfum,og_youtube,jade-eau-de-parfum,jade eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::jardins-d-armide-eau-de-parfum,og_youtube,jardins-d-armide-eau-de-parfum,jardins d'armide eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::jasmin-17-eau-de-parfum,og_youtube,jasmin-17-eau-de-parfum,jasmin 17 eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::jasmin-angelique-cologne-absolue,og_youtube,jasmin-angelique-cologne-absolue,jasmin angelique cologne absolue,0,0,0,0,0,0,1,0,5,5,5
+og::jasmin-et-cigarette-eau-de-parfum,og_youtube,jasmin-et-cigarette-eau-de-parfum,jasmin et cigarette eau de parfum,0,0,0,0,0,0,1,1,3,6,5
+og::jasmin-kama-eau-de-parfum,og_youtube,jasmin-kama-eau-de-parfum,jasmin kama eau de parfum,1,0,0,0,0,0,1,0,7,7,6
+og::jasmin-perfume-oil,og_youtube,jasmin-perfume-oil,jasmin perfume oil,1,0,0,0,0,0,0,0,6,5,5
+og::jubilation-25-eau-de-parfum,og_youtube,jubilation-25-eau-de-parfum,jubilation 25 eau de parfum,1,0,0,0,1,0,1,0,8,7,8
+og::jubilation-xxv-eau-de-parfum,og_youtube,jubilation-xxv-eau-de-parfum,jubilation xxv eau de parfum,1,0,0,0,1,0,1,0,8,7,8
+og::jungle-jezebel-extrait-de-parfum,og_youtube,jungle-jezebel-extrait-de-parfum,jungle jezebel extrait de parfum,1,0,0,0,0,1,1,0,8,8,7
+og::jupiter-eau-de-parfum,og_youtube,jupiter-eau-de-parfum,jupiter eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::jus-d-amour-eau-de-parfum,og_youtube,jus-d-amour-eau-de-parfum,jus d'amour - eau de parfum,0,0,1,0,0,0,0,1,3,6,6
+og::jus-d-amour-perfume-oil-perfume-oil,og_youtube,jus-d-amour-perfume-oil-perfume-oil,jus d'amour - perfume oil perfume oil,0,0,0,0,0,0,0,1,3,6,6
+og::kai-eau-de-parfum-eau-de-parfum-spray,og_youtube,kai-eau-de-parfum-eau-de-parfum-spray,kai - eau de parfum eau de parfum spray,0,0,0,0,0,1,0,0,6,7,5
+og::kai-perfume-oil-roll-on-perfume-oil,og_youtube,kai-perfume-oil-roll-on-perfume-oil,kai - perfume oil roll-on perfume oil,1,0,0,0,1,0,0,0,8,6,6
+og::karagoz-extrait-de-parfum,og_youtube,karagoz-extrait-de-parfum,karagoz extrait de parfum,1,0,0,0,0,0,0,0,8,7,6
+og::kashan-rose-eau-de-toilette,og_youtube,kashan-rose-eau-de-toilette,kashan rose eau de toilette,1,0,0,0,0,0,0,0,7,5,5
+og::keman-parfum,og_youtube,keman-parfum,keman parfum,1,0,0,0,0,0,1,0,8,7,6
+og::kira-kira-eau-de-parfum,og_youtube,kira-kira-eau-de-parfum,kira kira eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::kiss-me-intense-eau-de-parfum,og_youtube,kiss-me-intense-eau-de-parfum,kiss me intense eau de parfum,1,0,0,0,0,0,0,0,7,5,6
+og::knize-ten-eau-de-toilette,og_youtube,knize-ten-eau-de-toilette,knize ten eau de toilette,1,0,0,0,1,0,0,0,8,6,7
+og::kobe-eau-de-parfum,og_youtube,kobe-eau-de-parfum,kobe eau de parfum,1,0,0,0,0,0,1,0,8,7,6
+og::koiame-eau-de-parfum,og_youtube,koiame-eau-de-parfum,koiame eau de parfum,1,0,0,0,0,0,0,0,6,5,5
+og::l-air-du-desert-marocain-eau-de-toilette,og_youtube,l-air-du-desert-marocain-eau-de-toilette,l'air du desert marocain eau de toilette ...,1,0,0,0,1,1,0,0,8,7,6
+og::l-attesa-eau-de-parfum,og_youtube,l-attesa-eau-de-parfum,l'attesa eau de parfum,1,0,0,0,0,0,1,0,8,6,5
+og::l-eau-d-ambre-eau-de-toilette,og_youtube,l-eau-d-ambre-eau-de-toilette,l'eau d'ambre eau de toilette,0,0,0,0,0,0,0,0,6,5,5
+og::l-eau-de-circe-eau-de-parfum,og_youtube,l-eau-de-circe-eau-de-parfum,l'eau de circe eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::l-eau-de-l-artisan-eau-de-toilette,og_youtube,l-eau-de-l-artisan-eau-de-toilette,l'eau de l'artisan eau de toilette,0,0,0,0,0,0,1,0,6,6,5
+og::l-eau-eau-de-toilette,og_youtube,l-eau-eau-de-toilette,l'eau eau de toilette,0,0,0,0,0,0,1,0,5,5,5
+og::l-eau-mixte-eau-fraiche,og_youtube,l-eau-mixte-eau-fraiche,l'eau mixte eau fraiche,1,0,0,0,0,0,1,0,7,6,5
+og::l-eau-rare-matale-eau-de-toilette,og_youtube,l-eau-rare-matale-eau-de-toilette,l'eau rare matale eau de toilette,1,0,0,0,0,0,1,0,8,6,6
+og::l-ete-en-douce-eau-de-toilette,og_youtube,l-ete-en-douce-eau-de-toilette,l'ete en douce eau de toilette,1,0,0,0,0,0,1,0,7,7,6
+og::l-humaniste-eau-de-parfum,og_youtube,l-humaniste-eau-de-parfum,l'humaniste eau de parfum,1,0,0,0,1,0,1,0,8,7,6
+og::l-ombre-dans-l-eau-eau-de-parfum,og_youtube,l-ombre-dans-l-eau-eau-de-parfum,l'ombre dans l'eau - eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::l-ombre-dans-l-eau-eau-de-toilette,og_youtube,l-ombre-dans-l-eau-eau-de-toilette,l'ombre dans l'eau - eau de toilette,1,0,0,0,0,0,0,0,7,6,6
+og::la-capitale-parfum,og_youtube,la-capitale-parfum,la capitale parfum,1,0,0,0,0,0,1,0,8,7,6
+og::la-chasse-aux-papillons-eau-de-toilette,og_youtube,la-chasse-aux-papillons-eau-de-toilette,la chasse aux papillons eau de toilette,1,0,0,0,1,0,0,0,7,6,5
+og::la-chasse-aux-papillons-extreme-eau-de-parfum,og_youtube,la-chasse-aux-papillons-extreme-eau-de-parfum,la chasse aux papillons extreme eau de parfum,1,0,0,0,0,0,1,0,6,5,5
+og::la-liturgie-des-heures-eau-de-parfum,og_youtube,la-liturgie-des-heures-eau-de-parfum,la liturgie des heures eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::la-tulipe-eau-de-parfum,og_youtube,la-tulipe-eau-de-parfum,la tulipe eau de parfum,1,0,0,0,0,0,1,0,7,7,6
+og::la-tulipe-hair-perfume,og_youtube,la-tulipe-hair-perfume,la tulipe hair perfume,0,0,0,0,0,0,0,1,3,6,6
+og::la-vierge-de-fer-eau-de-parfum,og_youtube,la-vierge-de-fer-eau-de-parfum,la vierge de fer eau de parfum,1,0,0,0,0,0,0,0,6,5,5
+og::labdanum-18-eau-de-parfum,og_youtube,labdanum-18-eau-de-parfum,labdanum 18 eau de parfum,1,0,0,0,1,0,0,0,8,5,5
+og::lace-extrait-de-parfum,og_youtube,lace-extrait-de-parfum,lace extrait de parfum,1,0,0,0,0,0,1,0,8,7,5
+og::lady-vengeance-eau-de-parfum,og_youtube,lady-vengeance-eau-de-parfum,lady vengeance eau de parfum,0,0,0,0,0,0,1,0,6,6,5
+og::lalibela-eau-de-parfum,og_youtube,lalibela-eau-de-parfum,lalibela eau de parfum,0,0,0,0,1,0,1,0,6,5,5
+og::lampblack-eau-de-parfum,og_youtube,lampblack-eau-de-parfum,lampblack eau de parfum,0,0,0,0,0,0,1,0,6,6,5
+og::land-of-warriors-eau-de-parfum,og_youtube,land-of-warriors-eau-de-parfum,land of warriors eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::larmes-du-desert-eau-de-parfum,og_youtube,larmes-du-desert-eau-de-parfum,larmes du desert eau de parfum,1,0,0,0,1,0,0,0,8,4,6
+og::laudano-nero-extrait-de-parfum,og_youtube,laudano-nero-extrait-de-parfum,laudano nero extrait de parfum,1,0,0,0,0,1,0,0,8,7,7
+og::lavande-44-eau-de-parfum,og_youtube,lavande-44-eau-de-parfum,lavande 44 eau de parfum,1,0,0,0,0,0,0,0,8,5,5
+og::layton-eau-de-parfum,og_youtube,layton-eau-de-parfum,layton eau de parfum,1,0,0,0,1,0,0,0,9,6,7
+og::le-barbier-de-tanger-eau-de-parfum,og_youtube,le-barbier-de-tanger-eau-de-parfum,le barbier de tanger eau de parfum,1,0,0,0,1,0,1,0,8,7,7
+og::le-maroc-pour-elle-eau-de-parfum,og_youtube,le-maroc-pour-elle-eau-de-parfum,le maroc pour elle eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::le-musc-la-peau-eau-de-parfum,og_youtube,le-musc-la-peau-eau-de-parfum,le musc & la peau eau de parfum,1,0,0,0,0,0,1,0,7,6,6

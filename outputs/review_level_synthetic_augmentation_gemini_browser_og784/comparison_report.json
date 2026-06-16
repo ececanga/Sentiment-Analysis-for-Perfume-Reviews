@@ -1,0 +1,103 @@
+{
+  "generated_at_utc": "2026-06-15T10:23:14.782717+00:00",
+  "model_id": "logistic_regression",
+  "model_family": "Logistic Regression",
+  "inputs": {
+    "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "synthetic_metrics": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/logistic_regression_review_level_metrics.json",
+    "og_features": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "og_metrics": "outputs/gemini_browser_og784/model_benchmark/metrics/logistic_regression.json",
+    "fold_assignments": "outputs/gemini_browser_og784/model_benchmark/tables/fold_assignments.csv"
+  },
+  "rows": {
+    "og": 784,
+    "synthetic": 2352,
+    "combined": 3136
+  },
+  "unique_perfumes": {
+    "og": 784,
+    "synthetic": 784,
+    "combined": 784
+  },
+  "feature_count": 58,
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "threshold": 0.3,
+  "metrics": [
+    {
+      "model_id": "logistic_regression",
+      "model_family": "Logistic Regression",
+      "experiment": "og_only_reference",
+      "train_rows": 784,
+      "eval_rows": 784,
+      "macro_f1": 0.3601920567143257,
+      "macro_roc_auc": 0.5629659716117218,
+      "macro_pr_auc": 0.3269819502987939,
+      "micro_f1": 0.6470588235294118,
+      "hamming_loss": 0.27113702623906705
+    },
+    {
+      "model_id": "logistic_regression",
+      "model_family": "Logistic Regression",
+      "experiment": "synthetic_only_review_level",
+      "train_rows": 2352,
+      "eval_rows": 2352,
+      "macro_f1": 0.6277084519160325,
+      "macro_roc_auc": 0.9424264975642211,
+      "macro_pr_auc": 0.649685393014283,
+      "micro_f1": 0.7806515301085883,
+      "hamming_loss": 0.1349611273080661,
+      "label_cardinality": 1.7674319727891157,
+      "predicted_label_cardinality": 2.5395408163265305
+    },
+    {
+      "model_id": "logistic_regression",
+      "model_family": "Logistic Regression",
+      "experiment": "og_plus_synthetic_all_rows_oof",
+      "train_rows": 3136,
+      "eval_rows": 3136,
+      "macro_f1": 0.5848549194232581,
+      "macro_roc_auc": 0.9017633973936557,
+      "macro_pr_auc": 0.6294249959180791,
+      "micro_f1": 0.7196912261355021,
+      "hamming_loss": 0.18526785714285715,
+      "label_cardinality": 1.8169642857142858,
+      "predicted_label_cardinality": 2.8096301020408165
+    },
+    {
+      "model_id": "logistic_regression",
+      "model_family": "Logistic Regression",
+      "experiment": "og_plus_synthetic_eval_og_rows",
+      "train_rows": 3136,
+      "eval_rows": 784,
+      "macro_f1": 0.3743675425726773,
+      "macro_roc_auc": 0.5952123749236333,
+      "macro_pr_auc": 0.33123524992986547,
+      "micro_f1": 0.6483488782455256,
+      "hamming_loss": 0.25419096209912534,
+      "label_cardinality": 1.965561224489796,
+      "predicted_label_cardinality": 3.0943877551020407
+    }
+  ],
+  "outputs": {
+    "combined_features": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/og_plus_synthetic_labeled_features.csv",
+    "metric_comparison": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/metric_comparison.csv",
+    "label_distribution": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/label_distribution.csv",
+    "synthetic_oof": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/synthetic_only_review_level_oof.csv",
+    "synthetic_per_label": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/synthetic_only_review_level_per_label.csv",
+    "combined_oof": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/og_plus_synthetic_all_rows_oof.csv",
+    "combined_per_label": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/og_plus_synthetic_all_rows_per_label.csv",
+    "augmented_og_oof": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/og_plus_synthetic_eval_og_rows_oof.csv",
+    "augmented_og_per_label": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/og_plus_synthetic_eval_og_rows_per_label.csv",
+    "report_md": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/comparison_report.md",
+    "report_json": "outputs/review_level_synthetic_augmentation_gemini_browser_og784/comparison_report.json"
+  },
+  "note": "OG rows are perfume-level while synthetic rows are review-level. The OG-eval augmentation result is the most relevant check for whether synthetic rows help the real-review benchmark."
+}

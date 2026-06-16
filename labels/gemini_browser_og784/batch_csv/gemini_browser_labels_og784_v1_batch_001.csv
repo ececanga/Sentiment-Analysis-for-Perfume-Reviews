@@ -1,0 +1,101 @@
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::00-auriel-eau-de-parfum,og_youtube,00-auriel-eau-de-parfum,00 auriel eau de parfum,1,0,0,0,1,0,1,0,7,6,5
+og::01-nomad-eau-de-parfum,og_youtube,01-nomad-eau-de-parfum,01 nomad eau de parfum,1,0,0,0,1,0,1,0,8,7,7
+og::02-owari-eau-de-parfum,og_youtube,02-owari-eau-de-parfum,02 owari eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::03-apr-1968-eau-de-parfum,og_youtube,03-apr-1968-eau-de-parfum,03. apr. 1968 eau de parfum,1,0,0,0,1,0,0,0,7,5,5
+og::03-century-eau-de-parfum,og_youtube,03-century-eau-de-parfum,03 century eau de parfum,1,0,0,0,1,0,0,0,7,6,6
+og::08-seylon-eau-de-parfum,og_youtube,08-seylon-eau-de-parfum,08 - seylon eau de parfum,1,0,0,1,0,1,0,1,4,6,7
+og::100-love-eau-de-parfum,og_youtube,100-love-eau-de-parfum,100% love eau de parfum,1,0,1,0,1,0,0,0,6,7,8
+og::1499-eau-de-parfum,og_youtube,1499-eau-de-parfum,1499 eau de parfum,1,0,0,0,1,0,0,0,6,5,5
+og::1725-casanova-eau-de-parfum,og_youtube,1725-casanova-eau-de-parfum,1725 casanova eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::1740-marquis-de-sade-eau-de-parfum,og_youtube,1740-marquis-de-sade-eau-de-parfum,1740 marquis de sade eau de parfum,0,0,0,0,0,0,1,0,5,5,5
+og::1804-george-sand-eau-de-parfum,og_youtube,1804-george-sand-eau-de-parfum,1804 george sand eau de parfum,1,0,0,0,0,0,0,0,6,4,5
+og::1828-jules-verne-eau-de-parfum,og_youtube,1828-jules-verne-eau-de-parfum,1828 jules verne eau de parfum,1,0,0,0,1,0,0,0,7,5,5
+og::1872-for-men-eau-de-parfum,og_youtube,1872-for-men-eau-de-parfum,1872 for men eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::1872-for-women-eau-de-parfum,og_youtube,1872-for-women-eau-de-parfum,1872 for women eau de parfum,1,0,0,0,1,0,0,0,8,5,5
+og::1888-eau-de-parfum,og_youtube,1888-eau-de-parfum,1888 eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::1962-eau-de-parfum,og_youtube,1962-eau-de-parfum,1962 eau de parfum,1,0,0,0,0,0,1,0,6,5,5
+og::1976-eau-de-parfum,og_youtube,1976-eau-de-parfum,1976 eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::21-eau-de-parfum,og_youtube,21-eau-de-parfum,21 eau de parfum,1,0,0,0,1,0,0,0,8,7,6
+og::40-rogue-eau-de-toilette,og_youtube,40-rogue-eau-de-toilette,40 rogue eau de toilette,0,0,0,0,0,0,1,0,5,5,6
+og::a-la-rose-eau-de-parfum,og_youtube,a-la-rose-eau-de-parfum,a la rose eau de parfum,1,0,0,0,1,0,0,0,8,5,6
+og::a-la-rose-scented-hair-mist,og_youtube,a-la-rose-scented-hair-mist,a la rose scented hair mist,0,0,0,0,0,0,1,0,6,6,5
+og::absinth-parfum-extrait,og_youtube,absinth-parfum-extrait,absinth parfum extrait,0,0,0,0,0,0,1,0,5,5,5
+og::absolue-d-osmanthe-eau-de-parfum,og_youtube,absolue-d-osmanthe-eau-de-parfum,absolue d'osmanthe eau de parfum,0,0,0,0,0,0,1,0,5,5,5
+og::acqua-di-sale-body-cream-scented-body-cream,og_youtube,acqua-di-sale-body-cream-scented-body-cream,acqua di sale body cream scented body cream,0,0,1,0,0,0,0,1,2,7,8
+og::acqua-di-sale-eau-de-parfum,og_youtube,acqua-di-sale-eau-de-parfum,acqua di sale eau de parfum,1,0,0,0,1,0,0,0,8,6,5
+og::acqua-di-scandola-eau-de-parfum,og_youtube,acqua-di-scandola-eau-de-parfum,acqua di scandola eau de parfum,1,0,0,0,1,0,0,0,7,5,5
+og::acqua-e-zucchero-eau-de-parfum,og_youtube,acqua-e-zucchero-eau-de-parfum,acqua e zucchero eau de parfum,0,0,0,0,0,0,1,0,4,4,5
+og::acqua-fiorentina-eau-de-parfum,og_youtube,acqua-fiorentina-eau-de-parfum,acqua fiorentina eau de parfum ...,0,0,0,0,0,0,0,0,5,5,5
+og::acqua-viva-body-cream-scented-body-cream,og_youtube,acqua-viva-body-cream-scented-body-cream,acqua viva body cream scented body cream,1,0,0,0,0,0,0,0,6,6,6
+og::acqua-viva-eau-de-parfum,og_youtube,acqua-viva-eau-de-parfum,acqua viva eau de parfum,1,0,0,0,1,0,0,1,5,5,6
+og::across-the-ocean-eau-de-parfum,og_youtube,across-the-ocean-eau-de-parfum,across the ocean eau de parfum,1,0,0,0,1,0,0,0,8,6,7
+og::al-oudh-eau-de-parfum,og_youtube,al-oudh-eau-de-parfum,al oudh eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::alba-di-seoul-cologne-eau-de-cologne,og_youtube,alba-di-seoul-cologne-eau-de-cologne,alba di seoul cologne eau de cologne,1,0,0,0,1,0,1,0,8,7,5
+og::almond-harmony-eau-de-parfum,og_youtube,almond-harmony-eau-de-parfum,almond harmony eau de parfum,0,0,0,0,0,0,1,0,6,6,5
+og::altruist-eau-de-parfum,og_youtube,altruist-eau-de-parfum,altruist eau de parfum,1,0,0,0,1,0,0,0,8,6,5
+og::amber-aoud-extrait-de-parfum,og_youtube,amber-aoud-extrait-de-parfum,amber aoud extrait de parfum,1,0,0,0,0,0,0,0,8,5,5
+og::amber-aquilaria-parfum,og_youtube,amber-aquilaria-parfum,amber aquilaria parfum,1,0,0,0,0,0,0,0,7,7,8
+og::amber-perfume-oil,og_youtube,amber-perfume-oil,amber perfume oil,1,0,0,0,0,0,0,0,7,7,6
+og::amber-room-eau-de-parfum,og_youtube,amber-room-eau-de-parfum,amber room eau de parfum,1,0,0,0,0,0,0,0,6,6,6
+og::amber-roses-eau-de-parfum,og_youtube,amber-roses-eau-de-parfum,amber & roses eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::amber-sky-eau-de-parfum,og_youtube,amber-sky-eau-de-parfum,amber sky eau de parfum,1,0,0,0,1,0,0,0,8,7,6
+og::amber-vanilla-perfume-oil,og_youtube,amber-vanilla-perfume-oil,amber vanilla perfume oil,1,0,0,0,1,0,0,0,9,8,8
+og::ambra-aurea-eau-de-parfum,og_youtube,ambra-aurea-eau-de-parfum,ambra aurea eau de parfum,1,0,0,0,1,0,1,0,9,7,6
+og::ambre-114-eau-de-parfum,og_youtube,ambre-114-eau-de-parfum,ambre 114 eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::ambre-loup-eau-de-parfum,og_youtube,ambre-loup-eau-de-parfum,ambre loup eau de parfum,1,0,0,0,1,0,0,0,8,5,5
+og::ambre-mythique-eau-de-parfum,og_youtube,ambre-mythique-eau-de-parfum,ambre mythique eau de parfum,1,0,0,0,0,0,0,0,7,5,5
+og::ambre-premier-eau-de-parfum,og_youtube,ambre-premier-eau-de-parfum,ambre premier eau de parfum,1,0,1,0,0,0,1,1,4,6,6
+og::ambre-russe-eau-de-parfum,og_youtube,ambre-russe-eau-de-parfum,ambre russe eau de parfum,1,0,0,0,0,0,0,0,7,7,6
+og::ambre-sultan-eau-de-parfum,og_youtube,ambre-sultan-eau-de-parfum,ambre sultan eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::ambre-topkapi-eau-de-parfum,og_youtube,ambre-topkapi-eau-de-parfum,ambre topkapi eau de parfum,0,0,0,0,1,0,0,0,6,5,5
+og::american-oud,og_youtube,american-oud,american oud,1,0,0,0,1,1,0,0,8,8,7
+og::amour-de-cacao-eau-de-toilette,og_youtube,amour-de-cacao-eau-de-toilette,amour de cacao eau de toilette,1,0,0,0,1,0,0,0,8,7,5
+og::amyris-pour-femme-eau-de-parfum,og_youtube,amyris-pour-femme-eau-de-parfum,amyris pour femme eau de parfum,0,0,0,0,0,0,1,0,5,5,5
+og::amyris-pour-homme-eau-de-toilette,og_youtube,amyris-pour-homme-eau-de-toilette,amyris pour homme eau de toilette,0,0,0,0,0,0,1,0,5,5,5
+og::amyris-pour-homme-travel-set,og_youtube,amyris-pour-homme-travel-set,amyris pour homme travel set,0,0,0,0,1,0,0,0,5,5,7
+og::anatolia-parfum,og_youtube,anatolia-parfum,anatolia parfum,1,0,0,0,0,0,0,0,6,5,6
+og::anbar,og_youtube,anbar,anbar,1,0,0,0,1,0,0,0,7,5,6
+og::angels-of-florence-cologne-eau-de-cologne,og_youtube,angels-of-florence-cologne-eau-de-cologne,angels of florence cologne eau de cologne,1,0,0,0,1,0,1,0,8,8,8
+og::anne-pliska-eau-de-parfum,og_youtube,anne-pliska-eau-de-parfum,anne pliska - eau de parfum,1,0,0,0,1,0,1,0,7,5,6
+og::another-oud-eau-de-parfum,og_youtube,another-oud-eau-de-parfum,another oud eau de parfum,1,0,0,0,1,0,1,0,9,8,7
+og::antico-caruso-eau-de-parfum,og_youtube,antico-caruso-eau-de-parfum,antico caruso eau de parfum,1,0,0,0,0,0,1,0,5,5,6
+og::aoud-cuir-d-arabie-eau-de-parfum,og_youtube,aoud-cuir-d-arabie-eau-de-parfum,aoud cuir d'arabie eau de parfum,1,0,0,0,1,0,1,0,7,6,7
+og::aoud-queen-roses-eau-de-parfum,og_youtube,aoud-queen-roses-eau-de-parfum,aoud queen roses eau de parfum,0,0,0,0,0,0,1,1,3,7,6
+og::aqaba-eau-de-parfum,og_youtube,aqaba-eau-de-parfum,aqaba eau de parfum,1,0,0,0,1,0,1,0,8,6,7
+og::aqua-universalis-eau-de-toilette,og_youtube,aqua-universalis-eau-de-toilette,aqua universalis eau de toilette,1,0,0,0,0,0,1,0,7,7,6
+og::aqua-universalis-scented-hair-mist,og_youtube,aqua-universalis-scented-hair-mist,aqua universalis scented hair mist,1,0,0,0,1,0,1,0,7,7,6
+og::aquae-nobilis-eau-de-parfum,og_youtube,aquae-nobilis-eau-de-parfum,aquae nobilis eau de parfum,1,0,0,0,1,0,1,0,8,6,5
+og::arabesque-attar-perfume-oil,og_youtube,arabesque-attar-perfume-oil,arabesque attar / perfume oil,0,0,0,0,1,0,1,0,6,5,7
+og::arabian-horse-eau-de-parfum,og_youtube,arabian-horse-eau-de-parfum,arabian horse eau de parfum,0,0,0,0,1,0,1,0,6,4,5
+og::aran-parfum,og_youtube,aran-parfum,aran parfum,1,0,0,0,1,0,0,0,6,6,7
+og::arbole-eau-de-parfum,og_youtube,arbole-eau-de-parfum,arbole eau de parfum,1,0,0,0,1,0,0,0,7,6,5
+og::areej-attar-perfume-oil,og_youtube,areej-attar-perfume-oil,areej attar / perfume oil,1,0,0,0,1,0,0,0,7,6,7
+og::artemisia-eau-de-parfum,og_youtube,artemisia-eau-de-parfum,artemisia eau de parfum,1,0,0,0,1,1,1,0,9,7,5
+og::aseel-attar-perfume-oil,og_youtube,aseel-attar-perfume-oil,aseel attar / perfume oil,1,0,0,0,1,0,0,0,7,6,6
+og::atlante-extrait-de-parfum,og_youtube,atlante-extrait-de-parfum,atlante extrait de parfum,1,0,0,0,0,0,0,0,7,6,8
+og::atlas-fever-eau-de-parfum,og_youtube,atlas-fever-eau-de-parfum,atlas fever eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::atomic-rose-eau-de-parfum,og_youtube,atomic-rose-eau-de-parfum,atomic rose eau de parfum,1,0,0,0,1,0,0,0,8,6,7
+og::au-coeur-du-desert-parfum-extrait,og_youtube,au-coeur-du-desert-parfum-extrait,au coeur du desert parfum extrait,1,0,0,0,0,0,1,0,7,5,5
+og::aurora-eau-de-parfum,og_youtube,aurora-eau-de-parfum,aurora eau de parfum,1,0,0,0,1,0,0,0,8,5,5
+og::aurum-eau-de-parfum,og_youtube,aurum-eau-de-parfum,aurum eau de parfum,1,0,0,0,0,0,1,0,8,7,6
+og::auster-eau-de-parfum,og_youtube,auster-eau-de-parfum,auster eau de parfum,0,0,0,0,0,0,1,0,5,5,5
+og::autoportrait-eau-de-parfum,og_youtube,autoportrait-eau-de-parfum,autoportrait eau de parfum,1,0,0,0,0,0,0,0,7,6,6
+og::aziyade-eau-de-parfum,og_youtube,aziyade-eau-de-parfum,aziyade eau de parfum,1,0,0,0,1,0,1,0,8,5,5
+og::azzurro-di-capri-extrait-parfum-extrait,og_youtube,azzurro-di-capri-extrait-parfum-extrait,azzurro di capri extrait parfum extrait,0,0,0,0,0,0,0,0,5,5,5
+og::baie-19-eau-de-parfum,og_youtube,baie-19-eau-de-parfum,baie 19 eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::bamboo-harmony-eau-de-parfum,og_youtube,bamboo-harmony-eau-de-parfum,bamboo harmony eau de parfum,1,0,0,0,0,0,1,0,6,5,5
+og::bapteme-du-feu-eau-de-parfum,og_youtube,bapteme-du-feu-eau-de-parfum,bapteme du feu eau de parfum,1,0,0,0,0,0,0,0,8,6,6
+og::baudelaire-eau-de-parfum,og_youtube,baudelaire-eau-de-parfum,baudelaire eau de parfum,1,0,0,0,1,0,0,0,8,5,6
+og::bay-rum-cologne,og_youtube,bay-rum-cologne,bay rum cologne,1,0,0,0,0,0,1,0,7,5,6
+og::bee-extrait-de-parfum,og_youtube,bee-extrait-de-parfum,bee extrait de parfum,0,0,0,0,1,0,1,0,6,6,5
+og::belle-de-jour-eau-de-parfum,og_youtube,belle-de-jour-eau-de-parfum,belle de jour eau de parfum,1,0,0,0,0,0,1,0,7,6,5
+og::bello-rabelo-eau-de-parfum,og_youtube,bello-rabelo-eau-de-parfum,bello rabelo eau de parfum,1,0,0,0,1,0,0,0,8,6,5
+og::bergamask-parfum,og_youtube,bergamask-parfum,bergamask parfum,1,0,0,0,1,0,0,0,8,6,5
+og::bergamote-22-eau-de-parfum,og_youtube,bergamote-22-eau-de-parfum,bergamote 22 eau de parfum,1,0,0,0,1,0,0,0,8,5,6
+og::bergamote-eau-de-toilette,og_youtube,bergamote-eau-de-toilette,bergamote eau de toilette,0,0,0,0,1,0,0,0,7,6,6
+og::bergamotto-di-positano-eau-de-parfum,og_youtube,bergamotto-di-positano-eau-de-parfum,bergamotto di positano eau de parfum,1,1,0,0,0,0,1,0,5,6,5
+og::bertrand-duchaufour-eau-de-toilette,og_youtube,bertrand-duchaufour-eau-de-toilette,bertrand duchaufour eau de toilette,1,0,0,0,1,0,0,0,7,5,5
+og::bijou-romantique-eau-de-parfum,og_youtube,bijou-romantique-eau-de-parfum,bijou romantique eau de parfum,1,0,0,0,1,0,1,0,8,7,6
+og::black-afgano-parfum-extrait,og_youtube,black-afgano-parfum-extrait,black afgano parfum extrait,1,0,0,0,0,0,1,0,7,6,5
+og::black-ambergris-parfum-extrait,og_youtube,black-ambergris-parfum-extrait,black ambergris parfum extrait,1,0,0,0,0,1,0,0,7,8,6

@@ -1,0 +1,108 @@
+OG Batch 6 output:
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::no-1-for-men-eau-de-parfum,og_youtube,no-1-for-men-eau-de-parfum,no. 1 for men eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::no-1-for-women-eau-de-parfum,og_youtube,no-1-for-women-eau-de-parfum,no. 1 for women eau de parfum,0,0,0,0,0,0,1,0,6,6,6
+og::no-4-eau-de-toilette,og_youtube,no-4-eau-de-toilette,no. 4 eau de toilette,1,0,0,0,0,1,1,0,7,8,5
+og::no-6-eau-de-toilette,og_youtube,no-6-eau-de-toilette,no. 6 eau de toilette,1,0,0,0,1,0,0,0,7,5,6
+og::no-7-eau-de-toilette,og_youtube,no-7-eau-de-toilette,no. 7 eau de toilette,0,0,0,0,1,0,0,0,7,5,7
+og::no-89-eau-de-toilette,og_youtube,no-89-eau-de-toilette,no. 89 eau de toilette,1,0,0,0,1,0,0,0,7,4,5
+og::noble-vii-cosmos-flower-extrait-de-parfum,og_youtube,noble-vii-cosmos-flower-extrait-de-parfum,noble vii cosmos flower extrait de parfum,0,0,0,0,0,0,1,0,5,5,5
+og::noble-vii-rock-rose-extrait-de-parfum,og_youtube,noble-vii-rock-rose-extrait-de-parfum,noble vii rock rose extrait de parfum,1,0,0,0,1,1,1,0,7,8,7
+og::noir-de-noir-body-spray-scented-body-spray,og_youtube,noir-de-noir-body-spray-scented-body-spray,noir de noir body spray scented body spray,1,0,0,0,0,0,0,0,7,6,6
+og::noir-exquis-eau-de-parfum,og_youtube,noir-exquis-eau-de-parfum,noir exquis eau de parfum,1,0,0,0,1,0,1,0,8,6,5
+og::noir-patchouli-eau-de-parfum,og_youtube,noir-patchouli-eau-de-parfum,noir patchouli eau de parfum,1,0,0,0,1,0,0,0,8,6,7
+og::noorolain-taif-eau-de-parfum,og_youtube,noorolain-taif-eau-de-parfum,noorolain taif eau de parfum,0,0,0,0,0,0,1,0,6,6,5
+og::nordic-noir,og_youtube,nordic-noir,nordic noir,0,0,0,0,0,0,1,0,5,5,6
+og::nostalgia-cologne-eau-de-cologne,og_youtube,nostalgia-cologne-eau-de-cologne,nostalgia cologne eau de cologne,1,0,0,0,1,0,0,0,8,6,7
+og::nuit-de-cellophane-eau-de-parfum,og_youtube,nuit-de-cellophane-eau-de-parfum,nuit de cellophane eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::nuit-noire-eau-de-parfum,og_youtube,nuit-noire-eau-de-parfum,nuit noire eau de parfum,1,0,0,0,0,0,1,0,7,7,6
+og::number-one-intense-eau-de-parfum,og_youtube,number-one-intense-eau-de-parfum,number one intense eau de parfum,1,0,0,0,1,0,1,0,7,6,8
+og::nuwa-extrait-de-parfum,og_youtube,nuwa-extrait-de-parfum,nuwa extrait de parfum,1,0,0,0,1,0,0,0,9,7,7
+og::octavian-parfum,og_youtube,octavian-parfum,octavian parfum,1,0,0,0,1,0,0,0,7,5,6
+og::odalisque-eau-de-parfum,og_youtube,odalisque-eau-de-parfum,odalisque eau de parfum,1,0,0,0,0,0,1,0,7,7,6
+og::odeur-du-theatre-du-chatelet-acte-1-eau-de-toilette,og_youtube,odeur-du-theatre-du-chatelet-acte-1-eau-de-toilette,odeur du theatre du chatelet acte 1 eau de toilette,1,0,0,0,1,1,1,0,8,8,6
+og::oeillet-louis-xv-eau-de-parfum,og_youtube,oeillet-louis-xv-eau-de-parfum,oeillet louis xv eau de parfum,1,0,0,0,0,0,1,0,7,7,7
+og::olene-eau-de-toilette,og_youtube,olene-eau-de-toilette,olene eau de toilette,0,0,0,0,0,0,1,0,6,7,4
+og::oliban-eau-de-parfum,og_youtube,oliban-eau-de-parfum,oliban eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::olibanum-eau-de-parfum,og_youtube,olibanum-eau-de-parfum,olibanum eau de parfum,0,0,0,0,0,0,1,0,5,6,6
+OG Batch 6 output:
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::ombre-indigo-eau-de-parfum,og_youtube,ombre-indigo-eau-de-parfum,ombre indigo eau de parfum,1,0,0,0,1,0,0,0,7,5,6
+og::onyx-perfume-oil,og_youtube,onyx-perfume-oil,onyx perfume oil,1,0,0,0,0,0,1,0,7,7,6
+og::oolang-infini-cologne-absolue,og_youtube,oolang-infini-cologne-absolue,oolang infini cologne absolue,1,0,0,0,0,0,1,0,6,5,5
+og::opus-1870-eau-de-toilette,og_youtube,opus-1870-eau-de-toilette,opus 1870 eau de toilette,1,0,0,0,1,0,1,0,7,5,6
+og::orange-blossom-zagara-cologne-eau-de-cologne,og_youtube,orange-blossom-zagara-cologne-eau-de-cologne,orange blossom / zagara cologne eau de cologne,1,1,0,0,1,0,1,0,6,6,5
+og::orange-sanguine-cologne-absolue,og_youtube,orange-sanguine-cologne-absolue,orange sanguine cologne absolue,0,0,0,0,1,0,1,0,6,5,6
+og::orange-star-eau-de-parfum,og_youtube,orange-star-eau-de-parfum,orange star eau de parfum,0,0,0,0,1,0,1,0,6,5,7
+og::oranges-and-lemons-say-the-bells-of-st-clements-eau-de-parfum,og_youtube,oranges-and-lemons-say-the-bells-of-st-clements-eau-de-parfum,oranges and lemons say the bells of st. clements eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::orchidee-vanille-eau-de-parfum,og_youtube,orchidee-vanille-eau-de-parfum,orchidee vanille eau de parfum,0,1,0,0,1,0,1,0,4,5,4
+og::osmanthus-interdite-eau-de-parfum,og_youtube,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,1,0,0,0,0,0,1,0,6,5,5
+og::oud-assam-eau-de-parfum,og_youtube,oud-assam-eau-de-parfum,oud assam eau de parfum,1,0,0,0,0,0,1,0,7,7,6
+og::oud-du-bois-attar-perfume-oil,og_youtube,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,1,0,0,0,0,0,1,0,7,7,6
+og::oud-eau-de-parfum,og_youtube,oud-eau-de-parfum,oud - eau de parfum,0,0,0,0,1,0,1,0,6,6,8
+og::oud-imperial-eau-de-parfum,og_youtube,oud-imperial-eau-de-parfum,oud imperial eau de parfum,0,0,0,0,1,0,1,0,6,5,5
+og::oud-maximus-autumn-19-extrait-de-parfum,og_youtube,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::oud-silk-mood-extrait-de-parfum,og_youtube,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,1,0,0,0,1,0,0,0,8,5,6
+og::oud-stars-al-khatt-eau-de-parfum,og_youtube,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,1,0,0,0,1,0,1,0,7,5,5
+og::oud-stars-alexandria-iii-parfum,og_youtube,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,0,0,0,0,0,0,1,0,6,5,5
+og::oud-stars-fars-eau-de-parfum,og_youtube,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::oud-stars-gao-eau-de-parfum,og_youtube,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,0,0,0,0,0,0,1,0,6,6,5
+og::oud-stars-mamluk-eau-de-parfum,og_youtube,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::oud-sublime-elixir-de-parfum,og_youtube,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::oudh-infini-extrait-de-parfum,og_youtube,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,1,0,0,0,1,0,1,0,7,7,6
+og::oudmazing-eau-de-parfum,og_youtube,oudmazing-eau-de-parfum,oudmazing eau de parfum,0,0,0,0,0,0,1,0,6,5,6
+og::oyedo-eau-de-toilette,og_youtube,oyedo-eau-de-toilette,oyedo eau de toilette,1,0,0,0,1,0,0,0,7,5,6
+OG Batch 6 output:
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::parfums-de-nicolai-eau-de-yuzu-travel-spray,og_youtube,parfums-de-nicolai-eau-de-yuzu-travel-spray,parfums de nicolai - eau de yuzu travel spray,1,0,0,0,1,0,0,0,7,6,6
+og::paris-la-eau-de-parfum,og_youtube,paris-la-eau-de-parfum,paris la eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::passage-d-enfer-eau-de-toilette,og_youtube,passage-d-enfer-eau-de-toilette,passage d'enfer eau de toilette,1,0,0,0,0,0,1,0,6,5,5
+og::patchouli-absolu-eau-de-parfum,og_youtube,patchouli-absolu-eau-de-parfum,patchouli absolu eau de parfum,1,0,0,0,0,0,0,0,7,6,5
+og::patchouli-cologne,og_youtube,patchouli-cologne,patchouli cologne,0,0,0,0,0,1,1,0,6,6,5
+og::patchouli-in-perfumery-magazine,og_youtube,patchouli-in-perfumery-magazine,patchouli in perfumery magazine,1,0,0,0,1,0,0,0,7,5,6
+og::patchouli-intense-eau-de-parfum,og_youtube,patchouli-intense-eau-de-parfum,patchouli intense eau de parfum,1,0,0,0,0,1,1,0,7,7,6
+og::patchouli-leaves-eau-de-parfum,og_youtube,patchouli-leaves-eau-de-parfum,patchouli leaves eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+og::patchouli-noir-eau-de-parfum,og_youtube,patchouli-noir-eau-de-parfum,patchouli noir eau de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::patchouli-patch-eau-de-toilette,og_youtube,patchouli-patch-eau-de-toilette,patchouli patch eau de toilette,1,0,0,0,1,0,0,0,8,6,6
+og::patchouli-perfume-oil,og_youtube,patchouli-perfume-oil,patchouli perfume oil,0,0,0,0,0,0,1,0,6,6,5
+og::patchouly-eau-de-parfum,og_youtube,patchouly-eau-de-parfum,patchouly eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::peacock-throne-eau-de-parfum,og_youtube,peacock-throne-eau-de-parfum,peacock throne eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::pearl-perfume-oil,og_youtube,pearl-perfume-oil,pearl perfume oil,0,0,0,0,1,0,1,0,6,6,7
+og::peche-cardinal-eau-de-parfum,og_youtube,peche-cardinal-eau-de-parfum,peche cardinal eau de parfum,1,0,0,0,0,0,1,0,7,5,5
+og::people-s-kampot-organic-oud-pure-oud,og_youtube,people-s-kampot-organic-oud-pure-oud,people's kampot organic oud pure oud,1,0,0,0,0,0,1,0,7,6,5
+og::perfect-kiss-eau-de-parfum,og_youtube,perfect-kiss-eau-de-parfum,perfect kiss eau de parfum,0,0,0,0,1,0,1,0,7,6,7
+og::perfect-nectar-eau-de-parfum,og_youtube,perfect-nectar-eau-de-parfum,perfect nectar eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::perfect-vanilla-roll-on-perfume-oil,og_youtube,perfect-vanilla-roll-on-perfume-oil,perfect vanilla roll-on perfume oil,1,1,0,0,1,0,0,0,6,5,6
+og::perfect-veil-eau-de-parfum,og_youtube,perfect-veil-eau-de-parfum,perfect veil eau de parfum,1,0,0,0,1,0,0,0,7,5,5
+og::petit-matin-eau-de-parfum,og_youtube,petit-matin-eau-de-parfum,petit matin eau de parfum,1,0,0,0,0,0,0,0,6,5,5
+og::petra-eau-de-parfum,og_youtube,petra-eau-de-parfum,petra eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::phi-une-rose-de-kandahar-eau-de-parfum,og_youtube,phi-une-rose-de-kandahar-eau-de-parfum,phi une rose de kandahar eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::philosykos-eau-de-toilette,og_youtube,philosykos-eau-de-toilette,philosykos - eau de toilette,1,0,0,0,1,0,1,0,8,6,6
+og::phtaloblue-eau-de-parfum,og_youtube,phtaloblue-eau-de-parfum,phtaloblue eau de parfum,1,0,0,0,0,0,1,0,7,6,6
+OG Batch 6 output:
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::picadilly-69-eau-de-parfum,og_youtube,picadilly-69-eau-de-parfum,picadilly '69 eau de parfum,1,0,0,0,1,0,1,0,6,5,5
+og::pink-eau-de-parfum,og_youtube,pink-eau-de-parfum,pink eau de parfum,0,0,0,0,0,0,0,0,5,5,5
+og::pink-quartz-eau-de-parfum,og_youtube,pink-quartz-eau-de-parfum,pink quartz eau de parfum,1,0,0,0,0,1,0,0,7,5,5
+og::pomegranate-melograno-cologne-eau-de-cologne,og_youtube,pomegranate-melograno-cologne-eau-de-cologne,pomegranate / melograno cologne eau de cologne,1,0,0,0,1,0,1,0,7,5,5
+og::pomelo-paradis-cologne-absolue,og_youtube,pomelo-paradis-cologne-absolue,pomelo paradis cologne absolue,1,0,0,0,1,0,0,0,7,5,5
+og::pomelo-riviera-eau-de-parfum,og_youtube,pomelo-riviera-eau-de-parfum,pomelo riviera eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::pot-pourri-cologne-eau-de-cologne,og_youtube,pot-pourri-cologne-eau-de-cologne,pot pourri cologne eau de cologne,1,0,0,0,1,0,0,0,7,5,6
+og::precious-oud-eau-de-parfum,og_youtube,precious-oud-eau-de-parfum,precious oud eau de parfum,1,0,0,0,1,0,0,0,8,6,6
+og::premier-figuier-eau-de-toilette,og_youtube,premier-figuier-eau-de-toilette,premier figuier eau de toilette,1,0,0,0,1,0,0,0,7,5,5
+og::premier-figuier-extreme-eau-de-parfum,og_youtube,premier-figuier-extreme-eau-de-parfum,premier figuier extreme eau de parfum,1,0,0,0,1,0,0,0,7,5,5
+og::private-collection-l-eau-guerriere-eau-de-toilette,og_youtube,private-collection-l-eau-guerriere-eau-de-toilette,private collection: l'eau guerriere eau de toilette,1,0,0,0,1,0,0,0,7,5,5
+og::private-collection-l-ombre-fauve-eau-de-parfum,og_youtube,private-collection-l-ombre-fauve-eau-de-parfum,private collection: l'ombre fauve eau de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::private-label-eau-de-parfum,og_youtube,private-label-eau-de-parfum,private label eau de parfum,1,0,0,0,1,0,0,0,7,6,7
+og::promesse-de-l-aube-eau-de-parfum,og_youtube,promesse-de-l-aube-eau-de-parfum,promesse de l'aube eau de parfum,1,0,0,0,0,0,1,0,7,5,5
+og::proxima-eau-de-parfum,og_youtube,proxima-eau-de-parfum,proxima eau de parfum,1,0,0,0,1,0,1,0,7,6,6
+og::psychedelique-eau-de-parfum,og_youtube,psychedelique-eau-de-parfum,psychedelique eau de parfum,1,0,0,0,1,0,1,0,8,6,6
+og::putain-des-palaces-eau-de-parfum,og_youtube,putain-des-palaces-eau-de-parfum,putain des palaces eau de parfum,1,0,0,0,0,0,0,0,7,5,5
+og::quercus-cologne,og_youtube,quercus-cologne,quercus cologne,1,0,0,0,1,0,1,0,7,6,5
+og::radio-bombay-eau-de-parfum,og_youtube,radio-bombay-eau-de-parfum,radio bombay eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::radish-x-vetiver-eau-de-parfum,og_youtube,radish-x-vetiver-eau-de-parfum,radish x vetiver eau de parfum,1,0,0,0,1,0,1,0,7,5,5
+og::rausch-eau-de-parfum,og_youtube,rausch-eau-de-parfum,rausch eau de parfum,1,0,0,0,1,0,0,0,7,5,5
+og::ray-of-light-eau-de-parfum,og_youtube,ray-of-light-eau-de-parfum,ray of light eau de parfum,0,0,0,0,1,0,1,0,6,6,5
+og::re-charge-black-pepper-deodorant-stick,og_youtube,re-charge-black-pepper-deodorant-stick,re-charge black pepper deodorant stick,0,0,0,0,1,0,1,0,6,5,5
+og::red-aoud-eau-de-parfum,og_youtube,red-aoud-eau-de-parfum,red aoud eau de parfum,0,0,0,0,0,0,1,0,6,5,5
+og::red-hoba-eau-de-parfum,og_youtube,red-hoba-eau-de-parfum,red hoba eau de parfum,1,0,0,0,1,0,1,0,7,5,5

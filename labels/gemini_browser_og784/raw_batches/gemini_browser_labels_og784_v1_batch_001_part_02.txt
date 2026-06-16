@@ -1,0 +1,16 @@
+OG Batch 1 output:
+item_id,source_type,perfume_id,perfume_name,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+og::anbar,og_youtube,anbar,anbar,1,0,0,0,1,0,0,0,7,5,6
+og::angels-of-florence-cologne-eau-de-cologne,og_youtube,angels-of-florence-cologne-eau-de-cologne,angels of florence cologne eau de cologne,1,0,0,0,1,0,1,0,8,8,8
+og::anne-pliska-eau-de-parfum,og_youtube,anne-pliska-eau-de-parfum,anne pliska - eau de parfum,1,0,0,0,1,0,1,0,7,5,6
+og::another-oud-eau-de-parfum,og_youtube,another-oud-eau-de-parfum,another oud eau de parfum,1,0,0,0,1,0,1,0,9,8,7
+og::antico-caruso-eau-de-parfum,og_youtube,antico-caruso-eau-de-parfum,antico caruso eau de parfum,1,0,0,0,0,0,1,0,5,5,6
+og::aoud-cuir-d-arabie-eau-de-parfum,og_youtube,aoud-cuir-d-arabie-eau-de-parfum,aoud cuir d'arabie eau de parfum,1,0,0,0,1,0,1,0,7,6,7
+og::aoud-queen-roses-eau-de-parfum,og_youtube,aoud-queen-roses-eau-de-parfum,aoud queen roses eau de parfum,0,0,0,0,0,0,1,1,3,7,6
+og::aqaba-eau-de-parfum,og_youtube,aqaba-eau-de-parfum,aqaba eau de parfum,1,0,0,0,1,0,1,0,8,6,7
+og::aqua-universalis-eau-de-toilette,og_youtube,aqua-universalis-eau-de-toilette,aqua universalis eau de toilette,1,0,0,0,0,0,1,0,7,7,6
+og::aqua-universalis-scented-hair-mist,og_youtube,aqua-universalis-scented-hair-mist,aqua universalis scented hair mist,1,0,0,0,1,0,1,0,7,7,6
+og::aquae-nobilis-eau-de-parfum,og_youtube,aquae-nobilis-eau-de-parfum,aquae nobilis eau de parfum,1,0,0,0,1,0,1,0,8,6,5
+og::arabesque-attar-perfume-oil,og_youtube,arabesque-attar-perfume-oil,arabesque attar / perfume oil,0,0,0,0,1,0,1,0,6,5,7
+og::arabian-horse-eau-de-parfum,og_youtube,arabian-horse-eau-de-parfum,arabian horse eau de parfum,0,0,0,0,1,0,1,0,6,4,5
+og::aran-parfum,og_youtube,aran-parfum,aran parfum,1,0,0,0,1,0,0,0,6,6,7
