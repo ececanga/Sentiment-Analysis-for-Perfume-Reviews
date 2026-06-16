@@ -1,5 +1,5 @@
 # Date Created: 2026-06-12
-# Date Last Modified: 2026-06-12
+# Date Last Modified: 2026-06-14
 
 """Prepare browser LLM labeling packets for review-level synthetic data."""
 
@@ -53,8 +53,9 @@ valence: 1 very negative, 5 neutral, 9 very positive
 arousal: 1 very calm, 5 neutral, 9 highly activated
 dominance: 1 passive/gentle, 5 neutral, 9 commanding/confident
 
-Return ONLY valid CSV. No markdown, no explanation.
-Use exactly this header:
+Return no markdown, no explanation, and no code fences.
+Apart from the batch tracking line requested below, return only the CSV header and rows.
+Use exactly this CSV header:
 synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
 
 Return exactly one output row per input review.
@@ -87,8 +88,17 @@ def require_columns(df: pd.DataFrame, path: Path) -> None:
         raise ValueError(f"{path} is missing required columns: {missing}")
 
 
-def write_batch(path: Path, batch: Sequence[dict]) -> None:
-    lines = [PROMPT_TEXT.strip(), "", "INPUT BATCH", ""]
+def write_batch(path: Path, batch: Sequence[dict], batch_label: str) -> None:
+    lines = [
+        PROMPT_TEXT.strip(),
+        "",
+        "RESPONSE FORMAT",
+        f"Start your response with exactly this tracking line: {batch_label} output:",
+        "Then immediately output the CSV header and one CSV row per input review.",
+        "",
+        "INPUT BATCH",
+        "",
+    ]
     for item in batch:
         lines.extend(
             [
@@ -196,9 +206,10 @@ def main() -> None:
         first = (batch_index - 1) * args.batch_size + 1
         last = first + len(batch) - 1
         batch_file = f"v2_review_batch_{batch_index:02d}_reviews_{first:03d}-{last:03d}.txt"
+        batch_label = f"Batch {batch_index}"
         for item in batch:
             item["batch_file"] = batch_file
-        write_batch(args.out_dir / batch_file, batch)
+        write_batch(args.out_dir / batch_file, batch, batch_label)
 
     write_manifest(args.out_dir / "manifest.csv", items)
     write_output_template(args.out_dir / "output_template.csv", items)
@@ -225,6 +236,9 @@ Paste one batch file at a time into the browser LLM.
 - Prompt only: `prompt.md`
 - Manifest: `manifest.csv`
 - Empty output template: `output_template.csv`
+
+Each batch asks the browser LLM to start with `Batch N output:` and then return the CSV rows.
+You can paste that whole response back into Codex for validation and file writing.
 
 Expected output schema:
 

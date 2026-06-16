@@ -231,7 +231,7 @@ def build_report(
         "vad_summary": vad_summary,
         "loaded_env_keys": loaded_env_keys,
         "outputs": {key: stringify_path(value) for key, value in paths.items()},
-        "note": "Review-level Gemini labels. These are pseudo-labels from gemini-2.5-pro for comparability with the OG judge run.",
+        "note": f"Review-level Gemini labels. These are pseudo-labels from {cfg.model}.",
     }
 
 
