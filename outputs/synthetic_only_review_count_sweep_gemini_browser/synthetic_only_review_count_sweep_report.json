@@ -1,0 +1,43 @@
+{
+  "generated_at_utc": "2026-06-16T08:12:08.056483+00:00",
+  "inputs": {
+    "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv"
+  },
+  "review_counts": [
+    99,
+    201,
+    300,
+    501,
+    1002,
+    2001,
+    2352
+  ],
+  "models": [
+    "logistic_regression",
+    "xgboost"
+  ],
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "threshold": 0.3,
+  "n_splits": 5,
+  "seed": 42,
+  "feature_count": 58,
+  "outputs": {
+    "summary_csv": "outputs/synthetic_only_review_count_sweep_gemini_browser/synthetic_only_review_count_sweep_summary.csv",
+    "summary_md": "outputs/synthetic_only_review_count_sweep_gemini_browser/synthetic_only_review_count_sweep_summary.md",
+    "report_json": "outputs/synthetic_only_review_count_sweep_gemini_browser/synthetic_only_review_count_sweep_report.json",
+    "metrics_plot_svg": "outputs/synthetic_only_review_count_sweep_gemini_browser/figures/synthetic_only_review_count_sweep_metrics.svg",
+    "metrics_plot_png": "outputs/synthetic_only_review_count_sweep_gemini_browser/figures/synthetic_only_review_count_sweep_metrics.png",
+    "metrics_table_svg": "outputs/synthetic_only_review_count_sweep_gemini_browser/figures/synthetic_only_review_count_sweep_table.svg",
+    "metrics_table_png": "outputs/synthetic_only_review_count_sweep_gemini_browser/figures/synthetic_only_review_count_sweep_table.png",
+    "per_label_dir": "outputs/synthetic_only_review_count_sweep_gemini_browser/per_label"
+  },
+  "note": "Synthetic-only learning curve. Each count is selected as complete 3-review perfume blocks. Cross-validation is grouped by perfume_id. At small counts, rare labels can have only one class; macro ROC-AUC uses labels with finite ROC-AUC values."
+}

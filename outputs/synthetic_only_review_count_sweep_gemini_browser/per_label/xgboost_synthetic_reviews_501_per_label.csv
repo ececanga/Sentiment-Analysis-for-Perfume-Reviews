@@ -1,0 +1,8 @@
+label,support_pos,support_neg,positive_rate,predicted_positive_count,predicted_positive_rate,mean_probability,f1,roc_auc,pr_auc,training_status
+joy,35,466,0.06986027944111776,35,0.06986027944111776,0.07021836625637966,0.9714285714285714,0.98749233599019,0.97554379776602,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+sadness,78,423,0.15568862275449102,82,0.16367265469061876,0.15877536624048333,0.9,0.9954234103170274,0.9767165628920746,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+fear,72,429,0.1437125748502994,76,0.15169660678642716,0.14720377149744687,0.918918918918919,0.9977013727013727,0.987113137549887,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+trust,173,328,0.34530938123752497,189,0.3772455089820359,0.3495612943150194,0.8839779005524862,0.9787114056111659,0.9623478763481301,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+surprise,189,312,0.3772455089820359,210,0.41916167664670656,0.396320133343069,0.9022556390977443,0.9769705603038936,0.9491953526705315,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+anticipation,406,95,0.810379241516966,402,0.8023952095808383,0.7983421329360088,0.9925742574257426,0.9934664246823957,0.9986649851158149,fold_1:trained;fold_2:trained;fold_3:trained;fold_4:trained;fold_5:trained
+disgust,0,501,0.0,0,0.0,0.0,0.0,,0.0,fold_1:single_class_train_fallback;fold_2:single_class_train_fallback;fold_3:single_class_train_fallback;fold_4:single_class_train_fallback;fold_5:single_class_train_fallback
