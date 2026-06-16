@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1278" viewBox="0 0 1280 1278">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34" y="42" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="start">Summarized Synthetic + YouTube Reviews Results</text>
+<text x="34" y="66" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Gemini 3.1 Pro (browser) labels; Gemini 2.5 Pro (API) shown only for comparable YouTube Review results.</text>
+<text x="34" y="90" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">1. Data Used</text>
+<rect x="34" y="118" width="1190" height="34" fill="#e8eef8"/>
+<rect x="34" y="118" width="220" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="144" y="138" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Source</text>
+<rect x="254" y="118" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="319" y="138" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Perfumes</text>
+<rect x="384" y="118" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="449" y="138" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Rows</text>
+<rect x="514" y="118" width="710" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="869" y="138" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Meaning</text>
+<rect x="34" y="152" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="152" width="220" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="144" y="172" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">YouTube Reviews</text>
+<rect x="254" y="152" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="319" y="172" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="384" y="152" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="449" y="172" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="514" y="152" width="710" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="869" y="172" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Perfume-level aggregated documents</text>
+<rect x="34" y="186" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="186" width="220" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="144" y="206" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Mixed experiment</text>
+<rect x="254" y="186" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="319" y="206" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="384" y="186" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="449" y="206" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">3136</text>
+<rect x="514" y="186" width="710" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="869" y="206" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">YouTube + synthetic rows, grouped by perfume</text>
+<rect x="34" y="220" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="220" width="220" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="144" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Synthetic v2</text>
+<rect x="254" y="220" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="319" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="384" y="220" width="130" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="449" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">2352</text>
+<rect x="514" y="220" width="710" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="869" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">784 perfumes x 3 review-level documents</text>
+<text x="34" y="288" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">2. Label Distribution</text>
+<rect x="34" y="316" width="1190" height="34" fill="#e8eef8"/>
+<rect x="34" y="316" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="336" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Label</text>
+<rect x="284" y="316" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="336" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">YouTube positives</text>
+<rect x="754" y="316" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="336" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Synthetic positives</text>
+<rect x="34" y="350" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="350" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="370" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">joy</text>
+<rect x="284" y="350" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="370" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">622 (79.3%)</text>
+<rect x="754" y="350" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="370" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">312 (13.3%)</text>
+<rect x="34" y="384" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="384" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="404" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">sadness</text>
+<rect x="284" y="384" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="404" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">11 (1.4%)</text>
+<rect x="754" y="384" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="404" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">159 (6.8%)</text>
+<rect x="34" y="418" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="418" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="438" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">fear</text>
+<rect x="284" y="418" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="438" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">3 (0.4%)</text>
+<rect x="754" y="418" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="438" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">221 (9.4%)</text>
+<rect x="34" y="452" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="452" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="472" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">trust</text>
+<rect x="284" y="452" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="472" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">476 (60.7%)</text>
+<rect x="754" y="452" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="472" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">834 (35.5%)</text>
+<rect x="34" y="486" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="486" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="506" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">surprise</text>
+<rect x="284" y="486" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="506" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">44 (5.6%)</text>
+<rect x="754" y="486" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="506" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">774 (32.9%)</text>
+<rect x="34" y="520" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="520" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="540" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">anticipation</text>
+<rect x="284" y="520" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="540" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">366 (46.7%)</text>
+<rect x="754" y="520" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="540" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">1834 (78.0%)</text>
+<rect x="34" y="554" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="554" width="250" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="159" y="574" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">disgust</text>
+<rect x="284" y="554" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="519" y="574" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">19 (2.4%)</text>
+<rect x="754" y="554" width="470" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="989" y="574" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">23 (1.0%)</text>
+<text x="34" y="622" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">3. Labeler Comparison on YouTube Reviews</text>
+<rect x="34" y="650" width="1190" height="34" fill="#e8eef8"/>
+<rect x="34" y="650" width="360" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="214" y="670" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Model</text>
+<rect x="394" y="650" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="524" y="670" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">2.5 Pro API F1</text>
+<rect x="654" y="650" width="310" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="809" y="670" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">3.1 Pro browser F1</text>
+<rect x="964" y="650" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1094" y="670" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Change</text>
+<rect x="34" y="684" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="684" width="360" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="214" y="704" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Logistic Regression</text>
+<rect x="394" y="684" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="524" y="704" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3178</text>
+<rect x="654" y="684" width="310" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="809" y="704" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3602</text>
+<rect x="964" y="684" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1094" y="704" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">+0.0424</text>
+<rect x="34" y="718" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="718" width="360" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="214" y="738" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">XGBoost</text>
+<rect x="394" y="718" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="524" y="738" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3184</text>
+<rect x="654" y="718" width="310" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="809" y="738" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3840</text>
+<rect x="964" y="718" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1094" y="738" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">+0.0655</text>
+<text x="34" y="786" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">4. Main Result</text>
+<rect x="34" y="814" width="1190" height="34" fill="#e8eef8"/>
+<rect x="34" y="814" width="185" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="834" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Model</text>
+<rect x="219" y="814" width="165" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="301" y="834" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Role</text>
+<rect x="384" y="814" width="145" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="456" y="834" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">YouTube-only F1</text>
+<rect x="529" y="814" width="145" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="601" y="834" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Synthetic-only F1</text>
+<rect x="674" y="814" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="834" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Augmented YouTube F1</text>
+<rect x="844" y="814" width="105" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="896" y="834" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Change</text>
+<rect x="949" y="814" width="275" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1086" y="834" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Reading</text>
+<rect x="34" y="848" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="848" width="185" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Logistic Regression</text>
+<rect x="219" y="848" width="165" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="301" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Main thesis model</text>
+<rect x="384" y="848" width="145" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="456" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3602</text>
+<rect x="529" y="848" width="145" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="601" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.6277</text>
+<rect x="674" y="848" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3744</text>
+<rect x="844" y="848" width="105" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="896" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">+0.0142</text>
+<rect x="949" y="848" width="275" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1086" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Small improvement</text>
+<rect x="34" y="882" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="882" width="185" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="902" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">XGBoost</text>
+<rect x="219" y="882" width="165" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="301" y="902" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Secondary benchmark</text>
+<rect x="384" y="882" width="145" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="456" y="902" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3840</text>
+<rect x="529" y="882" width="145" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="601" y="902" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.6647</text>
+<rect x="674" y="882" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="759" y="902" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3725</text>
+<rect x="844" y="882" width="105" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="896" y="902" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">-0.0115</text>
+<rect x="949" y="882" width="275" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1086" y="902" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Slight drop</text>
+<text x="34" y="950" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">5. ROC-AUC and PR-AUC Changes</text>
+<rect x="34" y="978" width="1190" height="34" fill="#e8eef8"/>
+<rect x="34" y="978" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Model</text>
+<rect x="294" y="978" width="150" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="369" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">YouTube ROC</text>
+<rect x="444" y="978" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="529" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Augmented ROC</text>
+<rect x="614" y="978" width="135" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="681" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">ROC change</text>
+<rect x="749" y="978" width="150" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="824" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">YouTube PR</text>
+<rect x="899" y="978" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="984" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Augmented PR</text>
+<rect x="1069" y="978" width="155" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1146" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">PR change</text>
+<rect x="34" y="1012" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="1012" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="1032" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Logistic Regression</text>
+<rect x="294" y="1012" width="150" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="369" y="1032" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5630</text>
+<rect x="444" y="1012" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="529" y="1032" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5952</text>
+<rect x="614" y="1012" width="135" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="681" y="1032" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">+0.0322</text>
+<rect x="749" y="1012" width="150" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="824" y="1032" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3270</text>
+<rect x="899" y="1012" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="984" y="1032" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3312</text>
+<rect x="1069" y="1012" width="155" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1146" y="1032" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">+0.0043</text>
+<rect x="34" y="1046" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="1046" width="260" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="164" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">XGBoost</text>
+<rect x="294" y="1046" width="150" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="369" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.6218</text>
+<rect x="444" y="1046" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="529" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.6381</text>
+<rect x="614" y="1046" width="135" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="681" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">+0.0163</text>
+<rect x="749" y="1046" width="150" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="824" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3449</text>
+<rect x="899" y="1046" width="170" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="984" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.3580</text>
+<rect x="1069" y="1046" width="155" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1146" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">+0.0131</text>
+<text x="34" y="1114" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">6. How v2 Synthetic Reviews Were Made</text>
+<rect x="34" y="1142" width="1190" height="34" fill="#e8eef8"/>
+<rect x="34" y="1142" width="180" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="124" y="1162" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Version</text>
+<rect x="214" y="1142" width="350" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="389" y="1162" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Main inputs</text>
+<rect x="564" y="1142" width="300" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="1162" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Review style</text>
+<rect x="864" y="1142" width="360" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1044" y="1162" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">Result</text>
+<rect x="34" y="1176" width="1190" height="34" fill="#ffffff"/>
+<rect x="34" y="1176" width="180" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="124" y="1196" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">v1 synthetic</text>
+<rect x="214" y="1176" width="350" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="389" y="1196" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Perfume identity, persona, tone</text>
+<rect x="564" y="1176" width="300" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="1196" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Safer descriptions</text>
+<rect x="864" y="1176" width="360" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1044" y="1196" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Labels looked mostly neutral</text>
+<rect x="34" y="1210" width="1190" height="34" fill="#f8fafc"/>
+<rect x="34" y="1210" width="180" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="124" y="1230" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">v2 synthetic</text>
+<rect x="214" y="1210" width="350" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="389" y="1230" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Notes, scenarios, Fragrantica phrasing</text>
+<rect x="564" y="1210" width="300" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="714" y="1230" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Human reactions</text>
+<rect x="864" y="1210" width="360" height="34" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1044" y="1230" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">Labels became more varied</text>
+</svg>
