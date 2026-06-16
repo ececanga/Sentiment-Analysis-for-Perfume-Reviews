@@ -2,6 +2,11 @@
 
 Held-out YouTube evaluation with fixed perfume-level folds. Synthetic rows are added as complete 3-review perfume blocks.
 
+Plot:
+
+- `figures/synthetic_review_count_sweep_metrics.svg`
+- `figures/synthetic_review_count_sweep_metrics.png`
+
 | model_family | synthetic_reviews | synthetic_perfumes | macro_f1 | macro_roc_auc | macro_pr_auc | delta_f1_vs_youtube | delta_roc_auc_vs_youtube | delta_pr_auc_vs_youtube |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Logistic Regression | 0 | 0 | 0.3602 | 0.5630 | 0.3270 | 0.0000 | 0.0000 | 0.0000 |
