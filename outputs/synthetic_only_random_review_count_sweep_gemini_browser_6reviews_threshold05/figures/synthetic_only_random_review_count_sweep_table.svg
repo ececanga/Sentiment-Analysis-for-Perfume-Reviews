@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1168" height="662" viewBox="0 0 1168 662">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34.0" y="52.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="start">Randomized Synthetic-Only Review Count Sweep Metrics</text>
+<text x="34.0" y="80.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Top number is the mean across random perfume orders; the smaller gray value is SD. Folds are grouped by perfume_id.</text>
+<rect x="34.0" y="114.0" width="536.0" height="504.0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="48.0" y="142.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#2563eb" text-anchor="start">Logistic Regression</text>
+<text x="556.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end">5 random orders</text>
+<rect x="34" y="162.0" width="536" height="38" fill="#e8eef8"/>
+<rect x="34.0" y="162.0" width="86" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="44.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="start">Reviews</text>
+<rect x="120.0" y="162.0" width="82" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="161.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Perfumes</text>
+<rect x="202.0" y="162.0" width="112" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="258.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">F1</text>
+<rect x="314.0" y="162.0" width="128" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="378.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">ROC-AUC</text>
+<rect x="442.0" y="162.0" width="128" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="506.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">PR-AUC</text>
+<rect x="34.0" y="200.0" width="536" height="54" fill="#ffffff"/>
+<rect x="34.0" y="200.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="231.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">198</text>
+<rect x="120.0" y="200.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="161.0" y="231.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">33</text>
+<rect x="202.0" y="200.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="258.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5442</text>
+<text x="258.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0610</text>
+<rect x="314.0" y="200.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="378.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8060</text>
+<text x="378.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0321</text>
+<rect x="442.0" y="200.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="506.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5521</text>
+<text x="506.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0629</text>
+<rect x="34.0" y="254.0" width="536" height="54" fill="#f8fafc"/>
+<rect x="34.0" y="254.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="285.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">402</text>
+<rect x="120.0" y="254.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="161.0" y="285.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">67</text>
+<rect x="202.0" y="254.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="258.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5464</text>
+<text x="258.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0279</text>
+<rect x="314.0" y="254.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="378.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8362</text>
+<text x="378.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0265</text>
+<rect x="442.0" y="254.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="506.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5489</text>
+<text x="506.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0349</text>
+<rect x="34.0" y="308.0" width="536" height="54" fill="#ffffff"/>
+<rect x="34.0" y="308.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="339.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">600</text>
+<rect x="120.0" y="308.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="161.0" y="339.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">100</text>
+<rect x="202.0" y="308.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="258.0" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5673</text>
+<text x="258.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0146</text>
+<rect x="314.0" y="308.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="378.0" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8705</text>
+<text x="378.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0109</text>
+<rect x="442.0" y="308.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="506.0" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5523</text>
+<text x="506.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0267</text>
+<rect x="34.0" y="362.0" width="536" height="54" fill="#f8fafc"/>
+<rect x="34.0" y="362.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">1002</text>
+<rect x="120.0" y="362.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="161.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">167</text>
+<rect x="202.0" y="362.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="258.0" y="385.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5730</text>
+<text x="258.0" y="404.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0131</text>
+<rect x="314.0" y="362.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="378.0" y="385.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8784</text>
+<text x="378.0" y="404.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0033</text>
+<rect x="442.0" y="362.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="506.0" y="385.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5685</text>
+<text x="506.0" y="404.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0168</text>
+<rect x="34.0" y="416.0" width="536" height="54" fill="#ffffff"/>
+<rect x="34.0" y="416.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="447.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">2004</text>
+<rect x="120.0" y="416.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="161.0" y="447.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">334</text>
+<rect x="202.0" y="416.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="258.0" y="439.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">0.5795</text>
+<text x="258.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0024</text>
+<rect x="314.0" y="416.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="378.0" y="439.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8928</text>
+<text x="378.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0040</text>
+<rect x="442.0" y="416.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="506.0" y="439.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5763</text>
+<text x="506.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0054</text>
+<rect x="34.0" y="470.0" width="536" height="54" fill="#f8fafc"/>
+<rect x="34.0" y="470.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="501.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">4002</text>
+<rect x="120.0" y="470.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="161.0" y="501.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">667</text>
+<rect x="202.0" y="470.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="258.0" y="493.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5780</text>
+<text x="258.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0011</text>
+<rect x="314.0" y="470.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="378.0" y="493.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8999</text>
+<text x="378.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0011</text>
+<rect x="442.0" y="470.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="506.0" y="493.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5834</text>
+<text x="506.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0016</text>
+<rect x="34.0" y="524.0" width="536" height="54" fill="#ffffff"/>
+<rect x="34.0" y="524.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="44.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">4704</text>
+<rect x="120.0" y="524.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="161.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="202.0" y="524.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="258.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5787</text>
+<text x="258.0" y="566.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0000</text>
+<rect x="314.0" y="524.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="378.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">0.9018</text>
+<text x="378.0" y="566.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0000</text>
+<rect x="442.0" y="524.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="506.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">0.5884</text>
+<text x="506.0" y="566.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0000</text>
+<text x="48.0" y="602.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#374151" text-anchor="start">Bold = best mean for this model.</text>
+<rect x="598.0" y="114.0" width="536.0" height="504.0" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="612.0" y="142.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#dc2626" text-anchor="start">XGBoost</text>
+<text x="1120.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end">5 random orders</text>
+<rect x="598" y="162.0" width="536" height="38" fill="#e8eef8"/>
+<rect x="598.0" y="162.0" width="86" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="608.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="start">Reviews</text>
+<rect x="684.0" y="162.0" width="82" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="725.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">Perfumes</text>
+<rect x="766.0" y="162.0" width="112" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="822.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">F1</text>
+<rect x="878.0" y="162.0" width="128" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="942.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">ROC-AUC</text>
+<rect x="1006.0" y="162.0" width="128" height="38" fill="none" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1070.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">PR-AUC</text>
+<rect x="598.0" y="200.0" width="536" height="54" fill="#ffffff"/>
+<rect x="598.0" y="200.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="608.0" y="231.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">198</text>
+<rect x="684.0" y="200.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="725.0" y="231.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">33</text>
+<rect x="766.0" y="200.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="822.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5719</text>
+<text x="822.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0902</text>
+<rect x="878.0" y="200.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="942.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8397</text>
+<text x="942.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0433</text>
+<rect x="1006.0" y="200.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1070.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">0.6147</text>
+<text x="1070.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0629</text>
+<rect x="598.0" y="254.0" width="536" height="54" fill="#f8fafc"/>
+<rect x="598.0" y="254.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="608.0" y="285.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">402</text>
+<rect x="684.0" y="254.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="725.0" y="285.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">67</text>
+<rect x="766.0" y="254.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="822.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5527</text>
+<text x="822.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0417</text>
+<rect x="878.0" y="254.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="942.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8813</text>
+<text x="942.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0130</text>
+<rect x="1006.0" y="254.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1070.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5856</text>
+<text x="1070.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0185</text>
+<rect x="598.0" y="308.0" width="536" height="54" fill="#ffffff"/>
+<rect x="598.0" y="308.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="608.0" y="339.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">600</text>
+<rect x="684.0" y="308.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="725.0" y="339.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">100</text>
+<rect x="766.0" y="308.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="822.0" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5614</text>
+<text x="822.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0266</text>
+<rect x="878.0" y="308.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="942.0" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8868</text>
+<text x="942.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0119</text>
+<rect x="1006.0" y="308.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1070.0" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.6081</text>
+<text x="1070.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0181</text>
+<rect x="598.0" y="362.0" width="536" height="54" fill="#f8fafc"/>
+<rect x="598.0" y="362.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="608.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">1002</text>
+<rect x="684.0" y="362.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="725.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">167</text>
+<rect x="766.0" y="362.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="822.0" y="385.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5650</text>
+<text x="822.0" y="404.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0159</text>
+<rect x="878.0" y="362.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="942.0" y="385.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8884</text>
+<text x="942.0" y="404.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0073</text>
+<rect x="1006.0" y="362.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1070.0" y="385.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5927</text>
+<text x="1070.0" y="404.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0214</text>
+<rect x="598.0" y="416.0" width="536" height="54" fill="#ffffff"/>
+<rect x="598.0" y="416.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="608.0" y="447.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">2004</text>
+<rect x="684.0" y="416.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="725.0" y="447.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">334</text>
+<rect x="766.0" y="416.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="822.0" y="439.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5678</text>
+<text x="822.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0124</text>
+<rect x="878.0" y="416.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="942.0" y="439.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8951</text>
+<text x="942.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0046</text>
+<rect x="1006.0" y="416.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1070.0" y="439.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5920</text>
+<text x="1070.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0078</text>
+<rect x="598.0" y="470.0" width="536" height="54" fill="#f8fafc"/>
+<rect x="598.0" y="470.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="608.0" y="501.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">4002</text>
+<rect x="684.0" y="470.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="725.0" y="501.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">667</text>
+<rect x="766.0" y="470.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="822.0" y="493.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5902</text>
+<text x="822.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0042</text>
+<rect x="878.0" y="470.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="942.0" y="493.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">0.9004</text>
+<text x="942.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0012</text>
+<rect x="1006.0" y="470.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1070.0" y="493.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5986</text>
+<text x="1070.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0048</text>
+<rect x="598.0" y="524.0" width="536" height="54" fill="#ffffff"/>
+<rect x="598.0" y="524.0" width="86" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="608.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start">4704</text>
+<rect x="684.0" y="524.0" width="82" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="725.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="766.0" y="524.0" width="112" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="822.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">0.5953</text>
+<text x="822.0" y="566.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0018</text>
+<rect x="878.0" y="524.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="942.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.8994</text>
+<text x="942.0" y="566.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0008</text>
+<rect x="1006.0" y="524.0" width="128" height="54" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<text x="1070.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">0.5982</text>
+<text x="1070.0" y="566.0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0013</text>
+<text x="612.0" y="602.0" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#374151" text-anchor="start">Bold = best mean for this model.</text>
+</svg>

@@ -1,0 +1,43 @@
+{
+  "generated_at_utc": "2026-06-20T17:47:24.410352+00:00",
+  "source_threshold_sweep": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds",
+  "threshold": 0.5,
+  "review_counts": [
+    198,
+    402,
+    600,
+    1002,
+    2004,
+    4002,
+    4704
+  ],
+  "reviews_per_perfume": 6,
+  "permutation_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "models": [
+    "logistic_regression",
+    "xgboost"
+  ],
+  "validation": {
+    "runs_rows": 70,
+    "summary_rows": 14,
+    "per_label_rows": 490,
+    "thresholds": [
+      0.5
+    ],
+    "max_reviews": 4704,
+    "max_perfumes": 784
+  },
+  "outputs": {
+    "runs_csv": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_threshold05/synthetic_only_random_review_count_sweep_runs.csv",
+    "summary_csv": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_threshold05/synthetic_only_random_review_count_sweep_summary.csv",
+    "per_label_csv": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_threshold05/synthetic_only_random_review_count_sweep_per_label.csv",
+    "summary_md": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_threshold05/synthetic_only_random_review_count_sweep_summary.md"
+  },
+  "note": "Focused threshold-0.5 subset extracted from the 784x6 synthetic-only threshold sensitivity sweep."
+}
