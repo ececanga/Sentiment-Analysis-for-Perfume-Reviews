@@ -1,0 +1,58 @@
+{
+  "generated_at_utc": "2026-06-20T16:33:39.843812+00:00",
+  "inputs": {
+    "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_6reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv"
+  },
+  "review_counts": [
+    198,
+    402,
+    600,
+    1002,
+    2004,
+    4002,
+    4704
+  ],
+  "reviews_per_perfume": 6,
+  "permutation_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "models": [
+    "logistic_regression",
+    "xgboost"
+  ],
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "threshold": 0.3,
+  "thresholds": [
+    0.25,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "n_splits": 5,
+  "model_seed": 42,
+  "feature_count": 58,
+  "outputs": {
+    "runs_csv": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/synthetic_only_random_review_count_sweep_runs.csv",
+    "summary_csv": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/synthetic_only_random_review_count_sweep_summary.csv",
+    "per_label_csv": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/synthetic_only_random_review_count_sweep_per_label.csv",
+    "summary_md": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/synthetic_only_random_review_count_sweep_summary.md",
+    "report_json": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/synthetic_only_random_review_count_sweep_report.json",
+    "metrics_plot_svg": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/figures/synthetic_only_random_review_count_sweep_metrics.svg",
+    "metrics_plot_png": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/figures/synthetic_only_random_review_count_sweep_metrics.png",
+    "metrics_table_svg": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/figures/synthetic_only_random_review_count_sweep_table.svg",
+    "metrics_table_png": "outputs/synthetic_only_random_review_count_sweep_gemini_browser_6reviews_thresholds/figures/synthetic_only_random_review_count_sweep_table.png"
+  },
+  "note": "Randomized synthetic-only learning-curve pilot. Each permutation shuffles perfumes, then selects complete 6-review perfume blocks for each count. Cross-validation remains grouped by perfume_id. The maximum review-count condition uses all perfumes, so random ordering does not change its subset composition."
+}
