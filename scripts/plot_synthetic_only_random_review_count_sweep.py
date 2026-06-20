@@ -150,7 +150,7 @@ def render_panel(
         parts.append(line(x, grid_y, x + width, grid_y, color="#e5e7eb"))
         parts.append(text(x=x - 8, y=grid_y + 4, value=f"{grid_value:.3f}", size=10, color="#4b5563", anchor="end"))
 
-    x_ticks = [99, 201, 300, 501, 1002, 2001, 2352]
+    x_ticks = sorted({int(row["synthetic_reviews"]) for row in all_rows})
     for tick in x_ticks:
         tick_x = sx(tick)
         parts.append(line(tick_x, y + height, tick_x, y + height + 5, color="#9ca3af"))

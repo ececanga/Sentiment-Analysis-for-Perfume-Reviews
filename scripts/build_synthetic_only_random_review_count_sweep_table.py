@@ -183,9 +183,10 @@ def build_svg(rows: list[dict[str, str]]) -> str:
     table_w = sum(width for _, _, width in TABLE_COLUMNS)
     panel_w = table_w
     width = margin_x * 2 + panel_w * 2 + panel_gap
-    panel_h = 48 + header_h + 7 * row_h + 40
-    height = top + title_h + panel_h + 44
     grouped_rows = rows_by_model(rows)
+    max_rows = max(len(model_rows) for model_rows in grouped_rows.values())
+    panel_h = 48 + header_h + max_rows * row_h + 40
+    height = top + title_h + panel_h + 44
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',

@@ -33,12 +33,20 @@ DEFAULT_REVIEW_COUNTS = [99, 201, 300, 501, 1002, 2001, 2352]
 DEFAULT_PERMUTATION_SEEDS = [101, 202, 303, 404, 505]
 
 
-def validate_three_reviews_per_perfume(synthetic_df: pd.DataFrame) -> None:
+def infer_or_validate_reviews_per_perfume(synthetic_df: pd.DataFrame, reviews_per_perfume: int | None) -> int:
     per_perfume_counts = synthetic_df.groupby(synthetic_df["perfume_id"].astype(str)).size()
-    bad_counts = per_perfume_counts[per_perfume_counts.ne(3)]
+    observed_counts = sorted(int(value) for value in per_perfume_counts.unique().tolist())
+    if reviews_per_perfume is None:
+        if len(observed_counts) != 1:
+            raise ValueError(f"Could not infer one reviews-per-perfume value. Observed counts: {observed_counts}")
+        reviews_per_perfume = observed_counts[0]
+    if reviews_per_perfume <= 0:
+        raise ValueError("reviews_per_perfume must be positive.")
+    bad_counts = per_perfume_counts[per_perfume_counts.ne(reviews_per_perfume)]
     if not bad_counts.empty:
         preview = ", ".join(f"{perfume_id}={count}" for perfume_id, count in bad_counts.head(10).items())
-        raise ValueError(f"Expected exactly 3 reviews per perfume. Bad counts: {preview}")
+        raise ValueError(f"Expected exactly {reviews_per_perfume} reviews per perfume. Bad counts: {preview}")
+    return reviews_per_perfume
 
 
 def shuffled_perfume_order(synthetic_df: pd.DataFrame, seed: int) -> list[str]:
@@ -52,15 +60,19 @@ def select_random_complete_perfume_blocks(
     *,
     shuffled_perfumes: list[str],
     review_count: int,
+    reviews_per_perfume: int,
 ) -> pd.DataFrame:
     if review_count <= 0:
         raise ValueError("Synthetic-only review counts must be positive.")
-    if review_count % 3 != 0:
-        raise ValueError(f"{review_count} is not divisible by 3; expected whole 3-review perfume blocks.")
+    if review_count % reviews_per_perfume != 0:
+        raise ValueError(
+            f"{review_count} is not divisible by {reviews_per_perfume}; "
+            f"expected whole {reviews_per_perfume}-review perfume blocks."
+        )
     if review_count > len(synthetic_df):
         raise ValueError(f"{review_count} exceeds available synthetic rows ({len(synthetic_df)}).")
 
-    perfume_count = review_count // 3
+    perfume_count = review_count // reviews_per_perfume
     selected_perfumes = set(shuffled_perfumes[:perfume_count])
     order_lookup = {perfume_id: index for index, perfume_id in enumerate(shuffled_perfumes)}
     subset = synthetic_df[synthetic_df["perfume_id"].astype(str).isin(selected_perfumes)].copy()
@@ -72,8 +84,8 @@ def select_random_complete_perfume_blocks(
     if len(subset) != review_count:
         raise ValueError(f"Expected {review_count} rows, found {len(subset)}.")
     per_perfume_counts = subset.groupby(subset["perfume_id"].astype(str)).size()
-    if per_perfume_counts.min() != 3 or per_perfume_counts.max() != 3:
-        raise ValueError("Selected subset does not have exactly 3 synthetic reviews per perfume.")
+    if per_perfume_counts.min() != reviews_per_perfume or per_perfume_counts.max() != reviews_per_perfume:
+        raise ValueError(f"Selected subset does not have exactly {reviews_per_perfume} synthetic reviews per perfume.")
     return subset
 
 
@@ -107,7 +119,7 @@ def aggregate_runs(run_df: pd.DataFrame) -> pd.DataFrame:
     return summary
 
 
-def write_markdown_report(path: Path, summary: pd.DataFrame, seeds: list[int]) -> None:
+def write_markdown_report(path: Path, summary: pd.DataFrame, seeds: list[int], reviews_per_perfume: int) -> None:
     metric_cols = [
         "model_family",
         "synthetic_reviews",
@@ -125,7 +137,7 @@ def write_markdown_report(path: Path, summary: pd.DataFrame, seeds: list[int]) -
         "",
         (
             "Synthetic-only grouped cross-validation with random perfume-order subsets. "
-            "Each count is a complete 3-review perfume block."
+            f"Each count is a complete {reviews_per_perfume}-review perfume block."
         ),
         "",
         f"Permutation seeds: {', '.join(str(seed) for seed in seeds)}",
@@ -170,6 +182,12 @@ def parse_args() -> argparse.Namespace:
         default=PROJECT_ROOT / "outputs" / "synthetic_only_random_review_count_sweep_gemini_browser",
     )
     parser.add_argument("--review-counts", type=int, nargs="+", default=DEFAULT_REVIEW_COUNTS)
+    parser.add_argument(
+        "--reviews-per-perfume",
+        type=int,
+        default=None,
+        help="Expected synthetic reviews per perfume. Defaults to the uniform count inferred from the input file.",
+    )
     parser.add_argument("--permutation-seeds", type=int, nargs="+", default=DEFAULT_PERMUTATION_SEEDS)
     parser.add_argument("--model-id", choices=sorted(MODEL_SPECS), nargs="+", default=sorted(MODEL_SPECS))
     parser.add_argument("--threshold", type=float, default=0.3)
@@ -184,7 +202,7 @@ def main() -> None:
 
     target_cols = DEFAULT_TARGETS
     synthetic_df = coerce_targets(load_synthetic_frame(args.synthetic_labeled_features, target_cols), target_cols)
-    validate_three_reviews_per_perfume(synthetic_df)
+    reviews_per_perfume = infer_or_validate_reviews_per_perfume(synthetic_df, args.reviews_per_perfume)
     feature_cols = select_feature_columns(synthetic_df)
     if not feature_cols:
         raise ValueError("No numeric synthetic feature columns found.")
@@ -209,6 +227,7 @@ def main() -> None:
                 synthetic_df,
                 shuffled_perfumes=perfume_order,
                 review_count=review_count,
+                reviews_per_perfume=reviews_per_perfume,
             )
             eval_df = subset[keep_cols].copy()
             for model_id in args.model_id:
@@ -229,7 +248,7 @@ def main() -> None:
                 per_label.insert(1, "model_family", model_spec.model_family)
                 per_label.insert(2, "permutation_seed", permutation_seed)
                 per_label.insert(3, "synthetic_reviews", review_count)
-                per_label.insert(4, "synthetic_perfumes", review_count // 3)
+                per_label.insert(4, "synthetic_perfumes", review_count // reviews_per_perfume)
                 per_label_frames.append(per_label)
 
                 row = {
@@ -237,7 +256,7 @@ def main() -> None:
                     "model_family": model_spec.model_family,
                     "permutation_seed": permutation_seed,
                     "synthetic_reviews": review_count,
-                    "synthetic_perfumes": review_count // 3,
+                    "synthetic_perfumes": review_count // reviews_per_perfume,
                     "train_rows": int(len(eval_df)),
                     "eval_rows": int(len(eval_df)),
                     "macro_f1": float(metrics["macro_f1"]),
@@ -269,7 +288,7 @@ def main() -> None:
     runs.to_csv(runs_path, index=False)
     summary.to_csv(summary_path, index=False)
     per_label.to_csv(per_label_path, index=False)
-    write_markdown_report(report_md_path, summary, args.permutation_seeds)
+    write_markdown_report(report_md_path, summary, args.permutation_seeds, reviews_per_perfume)
 
     report = {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -277,6 +296,7 @@ def main() -> None:
             "synthetic_labeled_features": stringify_path(args.synthetic_labeled_features),
         },
         "review_counts": args.review_counts,
+        "reviews_per_perfume": reviews_per_perfume,
         "permutation_seeds": args.permutation_seeds,
         "models": args.model_id,
         "target_columns": target_cols,
@@ -290,12 +310,16 @@ def main() -> None:
             "per_label_csv": stringify_path(per_label_path),
             "summary_md": stringify_path(report_md_path),
             "report_json": stringify_path(report_json_path),
+            "metrics_plot_svg": stringify_path(args.out_root / "figures" / "synthetic_only_random_review_count_sweep_metrics.svg"),
+            "metrics_plot_png": stringify_path(args.out_root / "figures" / "synthetic_only_random_review_count_sweep_metrics.png"),
+            "metrics_table_svg": stringify_path(args.out_root / "figures" / "synthetic_only_random_review_count_sweep_table.svg"),
+            "metrics_table_png": stringify_path(args.out_root / "figures" / "synthetic_only_random_review_count_sweep_table.png"),
         },
         "note": (
             "Randomized synthetic-only learning-curve pilot. Each permutation shuffles perfumes, "
-            "then selects complete 3-review perfume blocks for each count. Cross-validation remains "
-            "grouped by perfume_id. The full 2352-review condition uses all perfumes, so random "
-            "ordering does not change its subset composition."
+            f"then selects complete {reviews_per_perfume}-review perfume blocks for each count. Cross-validation remains "
+            "grouped by perfume_id. The maximum review-count condition uses all perfumes, so random ordering "
+            "does not change its subset composition."
         ),
     }
     report_json_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

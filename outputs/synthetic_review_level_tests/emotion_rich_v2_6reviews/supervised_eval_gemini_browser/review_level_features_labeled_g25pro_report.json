@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-06-20T16:06:13.265824+00:00",
+  "inputs": {
+    "first3_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "reviews4x6_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_reviews4x6/features/review_level_features_unlabeled.csv",
+    "reviews4x6_labels": "labels/gemini_browser_review_level_reviews4x6/gemini_browser_labels_emotion_rich_v2_reviews4x6_v1_pipeline.csv"
+  },
+  "outputs": {
+    "combined_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_6reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "report_json": "outputs/synthetic_review_level_tests/emotion_rich_v2_6reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro_report.json"
+  },
+  "validation": {
+    "rows": 4704,
+    "unique_synthetic_review_ids": 4704,
+    "unique_perfumes": 784,
+    "review_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "per_perfume_counts": [
+      6
+    ],
+    "missing_label_values": 0
+  },
+  "note": "Combined emotion-rich v2 synthetic review-level features for reviews 1 through 6."
+}
