@@ -28,3 +28,11 @@ Figures:
 | XGBoost | 2004 | 334 | 5 | 0.5678 | 0.0124 | 0.8951 | 0.0046 | 0.5920 | 0.0078 |
 | XGBoost | 4002 | 667 | 5 | 0.5902 | 0.0042 | 0.9004 | 0.0012 | 0.5986 | 0.0048 |
 | XGBoost | 4704 | 784 | 5 | 0.5953 | 0.0018 | 0.8994 | 0.0008 | 0.5982 | 0.0013 |
+
+## Interpretation
+
+This threshold-0.5 sweep is the focused advisor-facing version of the 784x6 synthetic-only experiment. It uses only synthetic rows and complete six-review perfume blocks.
+
+At threshold 0.5, Logistic Regression has its best mean Macro F1 at 2,004 reviews, but the full 4,704-review condition is essentially tied and has the best ROC-AUC and PR-AUC. XGBoost has its best mean Macro F1 at the full 4,704-review condition.
+
+The high-count rows have very small SD, so they are more stable across random perfume-order seeds. This should be presented as an advisor-response / supplementary analysis, not as the main thesis benchmark.
