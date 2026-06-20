@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-fruitchouli-eau-de-parfum-06,synthetic,fruitchouli-eau-de-parfum,fruitchouli eau de parfum,6,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-fumidus-eau-de-parfum-04,synthetic,fumidus-eau-de-parfum,fumidus eau de parfum,4,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-fumidus-eau-de-parfum-05,synthetic,fumidus-eau-de-parfum,fumidus eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-fumidus-eau-de-parfum-06,synthetic,fumidus-eau-de-parfum,fumidus eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gaea-eau-de-parfum-04,synthetic,gaea-eau-de-parfum,gaea eau de parfum,4,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-gaea-eau-de-parfum-05,synthetic,gaea-eau-de-parfum,gaea eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-gaea-eau-de-parfum-06,synthetic,gaea-eau-de-parfum,gaea eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-galloway-eau-de-parfum-04,synthetic,galloway-eau-de-parfum,galloway eau de parfum,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-galloway-eau-de-parfum-05,synthetic,galloway-eau-de-parfum,galloway eau de parfum,5,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-galloway-eau-de-parfum-06,synthetic,galloway-eau-de-parfum,galloway eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gardenia-eau-de-parfum-04,synthetic,gardenia-eau-de-parfum,gardenia eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gardenia-eau-de-parfum-05,synthetic,gardenia-eau-de-parfum,gardenia eau de parfum,5,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-gardenia-eau-de-parfum-06,synthetic,gardenia-eau-de-parfum,gardenia eau de parfum,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-gardenia-petale-eau-de-parfum-04,synthetic,gardenia-petale-eau-de-parfum,gardenia petale eau de parfum,4,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-gardenia-petale-eau-de-parfum-05,synthetic,gardenia-petale-eau-de-parfum,gardenia petale eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gardenia-petale-eau-de-parfum-06,synthetic,gardenia-petale-eau-de-parfum,gardenia petale eau de parfum,6,0,0,0,0,1,1,1,0,6,4,5
+emotion-rich-v2-garnet-perfume-oil-04,synthetic,garnet-perfume-oil,garnet perfume oil,4,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-garnet-perfume-oil-05,synthetic,garnet-perfume-oil,garnet perfume oil,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-garnet-perfume-oil-06,synthetic,garnet-perfume-oil,garnet perfume oil,6,0,0,0,0,1,1,1,0,6,4,5
+emotion-rich-v2-geisha-blanche-eau-de-parfum-04,synthetic,geisha-blanche-eau-de-parfum,geisha blanche eau de parfum,4,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-geisha-blanche-eau-de-parfum-05,synthetic,geisha-blanche-eau-de-parfum,geisha blanche eau de parfum,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-geisha-blanche-eau-de-parfum-06,synthetic,geisha-blanche-eau-de-parfum,geisha blanche eau de parfum,6,0,1,0,0,0,0,0,0,4,4,5
+emotion-rich-v2-geisha-green-roll-on-perfume-oil-04,synthetic,geisha-green-roll-on-perfume-oil,geisha green roll-on perfume oil,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-geisha-green-roll-on-perfume-oil-05,synthetic,geisha-green-roll-on-perfume-oil,geisha green roll-on perfume oil,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-geisha-green-roll-on-perfume-oil-06,synthetic,geisha-green-roll-on-perfume-oil,geisha green roll-on perfume oil,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-geisha-noire-eau-de-parfum-04,synthetic,geisha-noire-eau-de-parfum,geisha noire eau de parfum,4,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-geisha-noire-eau-de-parfum-05,synthetic,geisha-noire-eau-de-parfum,geisha noire eau de parfum,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-geisha-noire-eau-de-parfum-06,synthetic,geisha-noire-eau-de-parfum,geisha noire eau de parfum,6,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-geisha-noire-roll-on-perfume-oil-04,synthetic,geisha-noire-roll-on-perfume-oil,geisha noire roll-on perfume oil,4,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-geisha-noire-roll-on-perfume-oil-05,synthetic,geisha-noire-roll-on-perfume-oil,geisha noire roll-on perfume oil,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-geisha-noire-roll-on-perfume-oil-06,synthetic,geisha-noire-roll-on-perfume-oil,geisha noire roll-on perfume oil,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-geisha-rouge-eau-de-parfum-04,synthetic,geisha-rouge-eau-de-parfum,geisha rouge - eau de parfum,4,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-geisha-rouge-eau-de-parfum-05,synthetic,geisha-rouge-eau-de-parfum,geisha rouge - eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-geisha-rouge-eau-de-parfum-06,synthetic,geisha-rouge-eau-de-parfum,geisha rouge - eau de parfum,6,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-geisha-vanilla-hinoki-eau-de-parfum-04,synthetic,geisha-vanilla-hinoki-eau-de-parfum,geisha vanilla hinoki- eau de parfum,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-geisha-vanilla-hinoki-eau-de-parfum-05,synthetic,geisha-vanilla-hinoki-eau-de-parfum,geisha vanilla hinoki- eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-geisha-vanilla-hinoki-eau-de-parfum-06,synthetic,geisha-vanilla-hinoki-eau-de-parfum,geisha vanilla hinoki- eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-geisha-vanilla-hinoki-roll-on-perfume-oil-04,synthetic,geisha-vanilla-hinoki-roll-on-perfume-oil,geisha vanilla hinoki roll-on perfume oil,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-geisha-vanilla-hinoki-roll-on-perfume-oil-05,synthetic,geisha-vanilla-hinoki-roll-on-perfume-oil,geisha vanilla hinoki roll-on perfume oil,5,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-geisha-vanilla-hinoki-roll-on-perfume-oil-06,synthetic,geisha-vanilla-hinoki-roll-on-perfume-oil,geisha vanilla hinoki roll-on perfume oil,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-gendarme-eau-de-cologne-04,synthetic,gendarme-eau-de-cologne,gendarme - eau de cologne,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gendarme-eau-de-cologne-05,synthetic,gendarme-eau-de-cologne,gendarme - eau de cologne,5,0,0,0,0,1,0,1,0,6,4,5
+emotion-rich-v2-gendarme-eau-de-cologne-06,synthetic,gendarme-eau-de-cologne,gendarme - eau de cologne,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-geza-schoen-eau-de-toilette-04,synthetic,geza-schoen-eau-de-toilette,geza schoen eau de toilette,4,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-geza-schoen-eau-de-toilette-05,synthetic,geza-schoen-eau-de-toilette,geza schoen eau de toilette,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-geza-schoen-eau-de-toilette-06,synthetic,geza-schoen-eau-de-toilette,geza schoen eau de toilette,6,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-gheorghe-eau-de-parfum-04,synthetic,gheorghe-eau-de-parfum,gheorghe eau de parfum,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gheorghe-eau-de-parfum-05,synthetic,gheorghe-eau-de-parfum,gheorghe eau de parfum,5,0,1,0,0,0,0,0,0,4,4,5
+emotion-rich-v2-gheorghe-eau-de-parfum-06,synthetic,gheorghe-eau-de-parfum,gheorghe eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-ginger-ciao-eau-de-parfum-04,synthetic,ginger-ciao-eau-de-parfum,ginger ciao eau de parfum,4,0,0,0,1,0,1,1,0,3,6,4

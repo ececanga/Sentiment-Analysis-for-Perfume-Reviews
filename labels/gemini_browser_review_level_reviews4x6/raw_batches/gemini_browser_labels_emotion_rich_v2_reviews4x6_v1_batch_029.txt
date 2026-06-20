@@ -1,0 +1,52 @@
+Batch 29 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-mousse-illuminee-eau-de-toilette-06,synthetic,mousse-illuminee-eau-de-toilette,mousse illuminee eau de toilette,6,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-mriga-parfum-04,synthetic,mriga-parfum,mriga parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-mriga-parfum-05,synthetic,mriga-parfum,mriga parfum,5,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-mriga-parfum-06,synthetic,mriga-parfum,mriga parfum,6,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-much-ado-about-the-duke-eau-de-parfum-04,synthetic,much-ado-about-the-duke-eau-de-parfum,much ado about the duke eau de parfum,4,0,0,0,0,0,1,0,0,7,4,5
+emotion-rich-v2-much-ado-about-the-duke-eau-de-parfum-05,synthetic,much-ado-about-the-duke-eau-de-parfum,much ado about the duke eau de parfum,5,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-much-ado-about-the-duke-eau-de-parfum-06,synthetic,much-ado-about-the-duke-eau-de-parfum,much ado about the duke eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-muguet-fleuri-eau-de-parfum-04,synthetic,muguet-fleuri-eau-de-parfum,muguet fleuri eau de parfum,4,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-muguet-fleuri-eau-de-parfum-05,synthetic,muguet-fleuri-eau-de-parfum,muguet fleuri eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-muguet-fleuri-eau-de-parfum-06,synthetic,muguet-fleuri-eau-de-parfum,muguet fleuri eau de parfum,6,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-mure-et-musc-eau-de-toilette-04,synthetic,mure-et-musc-eau-de-toilette,mure et musc eau de toilette,4,0,0,0,1,0,0,1,0,4,6,3
+emotion-rich-v2-mure-et-musc-eau-de-toilette-05,synthetic,mure-et-musc-eau-de-toilette,mure et musc eau de toilette,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-mure-et-musc-eau-de-toilette-06,synthetic,mure-et-musc-eau-de-toilette,mure et musc eau de toilette,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-mure-et-musc-extreme-eau-de-parfum-04,synthetic,mure-et-musc-extreme-eau-de-parfum,mure et musc extreme eau de parfum,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mure-et-musc-extreme-eau-de-parfum-05,synthetic,mure-et-musc-extreme-eau-de-parfum,mure et musc extreme eau de parfum,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-mure-et-musc-extreme-eau-de-parfum-06,synthetic,mure-et-musc-extreme-eau-de-parfum,mure et musc extreme eau de parfum,6,0,0,0,0,0,0,1,0,4,6,3
+emotion-rich-v2-musc-bleu-eau-de-parfum-04,synthetic,musc-bleu-eau-de-parfum,musc bleu eau de parfum,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-musc-bleu-eau-de-parfum-05,synthetic,musc-bleu-eau-de-parfum,musc bleu eau de parfum,5,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-musc-bleu-eau-de-parfum-06,synthetic,musc-bleu-eau-de-parfum,musc bleu eau de parfum,6,0,0,0,1,0,0,0,0,3,7,3
+emotion-rich-v2-musc-gold-extrait-parfum-extrait-04,synthetic,musc-gold-extrait-parfum-extrait,musc gold extrait parfum extrait,4,0,0,0,0,0,0,0,0,6,4,5
+emotion-rich-v2-musc-gold-extrait-parfum-extrait-05,synthetic,musc-gold-extrait-parfum-extrait,musc gold extrait parfum extrait,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-musc-gold-extrait-parfum-extrait-06,synthetic,musc-gold-extrait-parfum-extrait,musc gold extrait parfum extrait,6,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-musc-gold-perfume-oil-04,synthetic,musc-gold-perfume-oil,musc gold perfume oil,4,0,0,0,0,0,1,1,0,5,5,5
+emotion-rich-v2-musc-gold-perfume-oil-05,synthetic,musc-gold-perfume-oil,musc gold perfume oil,5,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-musc-gold-perfume-oil-06,synthetic,musc-gold-perfume-oil,musc gold perfume oil,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-musc-intense-eau-de-parfum-04,synthetic,musc-intense-eau-de-parfum,musc intense eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-musc-intense-eau-de-parfum-05,synthetic,musc-intense-eau-de-parfum,musc intense eau de parfum,5,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-musc-intense-eau-de-parfum-06,synthetic,musc-intense-eau-de-parfum,musc intense eau de parfum,6,0,0,0,0,0,1,0,0,6,5,5
+emotion-rich-v2-musc-les-nombres-d-or-eau-de-parfum-04,synthetic,musc-les-nombres-d-or-eau-de-parfum,musc - les nombres d'or eau de parfum,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-musc-les-nombres-d-or-eau-de-parfum-05,synthetic,musc-les-nombres-d-or-eau-de-parfum,musc - les nombres d'or eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-musc-les-nombres-d-or-eau-de-parfum-06,synthetic,musc-les-nombres-d-or-eau-de-parfum,musc - les nombres d'or eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-musc-maori-eau-de-parfum-04,synthetic,musc-maori-eau-de-parfum,musc maori eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-musc-maori-eau-de-parfum-05,synthetic,musc-maori-eau-de-parfum,musc maori eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-musc-maori-eau-de-parfum-06,synthetic,musc-maori-eau-de-parfum,musc maori eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-musc-moschus-eau-de-parfum-04,synthetic,musc-moschus-eau-de-parfum,musc moschus eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-musc-moschus-eau-de-parfum-05,synthetic,musc-moschus-eau-de-parfum,musc moschus eau de parfum,5,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-musc-moschus-eau-de-parfum-06,synthetic,musc-moschus-eau-de-parfum,musc moschus eau de parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-musc-perfume-oil-04,synthetic,musc-perfume-oil,musc perfume oil,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-musc-perfume-oil-05,synthetic,musc-perfume-oil,musc perfume oil,5,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-musc-perfume-oil-06,synthetic,musc-perfume-oil,musc perfume oil,6,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-musc-tonkin-eau-de-parfum-04,synthetic,musc-tonkin-eau-de-parfum,musc tonkin eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-musc-tonkin-eau-de-parfum-05,synthetic,musc-tonkin-eau-de-parfum,musc tonkin eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-musc-tonkin-eau-de-parfum-06,synthetic,musc-tonkin-eau-de-parfum,musc tonkin eau de parfum,6,0,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-musk-aoud-extrait-de-parfum-04,synthetic,musk-aoud-extrait-de-parfum,musk aoud extrait de parfum,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-musk-aoud-extrait-de-parfum-05,synthetic,musk-aoud-extrait-de-parfum,musk aoud extrait de parfum,5,0,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-musk-aoud-extrait-de-parfum-06,synthetic,musk-aoud-extrait-de-parfum,musk aoud extrait de parfum,6,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-musk-muschio-cologne-eau-de-cologne-04,synthetic,musk-muschio-cologne-eau-de-cologne,musk / muschio cologne eau de cologne,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-musk-muschio-cologne-eau-de-cologne-05,synthetic,musk-muschio-cologne-eau-de-cologne,musk / muschio cologne eau de cologne,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-musk-muschio-cologne-eau-de-cologne-06,synthetic,musk-muschio-cologne-eau-de-cologne,musk / muschio cologne eau de cologne,6,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-musk-s-eau-de-parfum-04,synthetic,musk-s-eau-de-parfum,musk s eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3

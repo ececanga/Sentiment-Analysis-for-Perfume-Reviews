@@ -1,0 +1,4 @@
+Batch 48 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-zenne-extrait-de-parfum-05,synthetic,zenne-extrait-de-parfum,zenne extrait de parfum,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-zenne-extrait-de-parfum-06,synthetic,zenne-extrait-de-parfum,zenne extrait de parfum,6,0,0,0,0,0,0,0,0,6,5,5

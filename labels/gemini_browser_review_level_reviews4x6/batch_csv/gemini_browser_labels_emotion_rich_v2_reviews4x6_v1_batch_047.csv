@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-what-i-did-on-my-holidays-eau-de-parfum-06,synthetic,what-i-did-on-my-holidays-eau-de-parfum,what i did on my holidays eau de parfum,6,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-what-we-do-in-paris-is-secret-eau-de-parfum-04,synthetic,what-we-do-in-paris-is-secret-eau-de-parfum,what we do in paris is secret eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-what-we-do-in-paris-is-secret-eau-de-parfum-05,synthetic,what-we-do-in-paris-is-secret-eau-de-parfum,what we do in paris is secret eau de parfum,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-what-we-do-in-paris-is-secret-eau-de-parfum-06,synthetic,what-we-do-in-paris-is-secret-eau-de-parfum,what we do in paris is secret eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-white-aoud-eau-de-parfum-04,synthetic,white-aoud-eau-de-parfum,white aoud eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-white-aoud-eau-de-parfum-05,synthetic,white-aoud-eau-de-parfum,white aoud eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-white-aoud-eau-de-parfum-06,synthetic,white-aoud-eau-de-parfum,white aoud eau de parfum,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-white-peacock-lily-eau-de-parfum-04,synthetic,white-peacock-lily-eau-de-parfum,white peacock lily eau de parfum,4,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-white-peacock-lily-eau-de-parfum-05,synthetic,white-peacock-lily-eau-de-parfum,white peacock lily eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-white-peacock-lily-eau-de-parfum-06,synthetic,white-peacock-lily-eau-de-parfum,white peacock lily eau de parfum,6,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-white-zagora-eau-de-toilette-04,synthetic,white-zagora-eau-de-toilette,white zagora eau de toilette,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-white-zagora-eau-de-toilette-05,synthetic,white-zagora-eau-de-toilette,white zagora eau de toilette,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-white-zagora-eau-de-toilette-06,synthetic,white-zagora-eau-de-toilette,white zagora eau de toilette,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-wild-rose-aoud-eau-de-parfum-04,synthetic,wild-rose-aoud-eau-de-parfum,wild rose aoud eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-wild-rose-aoud-eau-de-parfum-05,synthetic,wild-rose-aoud-eau-de-parfum,wild rose aoud eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-wild-rose-aoud-eau-de-parfum-06,synthetic,wild-rose-aoud-eau-de-parfum,wild rose aoud eau de parfum,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-wonder-of-you-eau-de-parfum-04,synthetic,wonder-of-you-eau-de-parfum,wonder of you eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-wonder-of-you-eau-de-parfum-05,synthetic,wonder-of-you-eau-de-parfum,wonder of you eau de parfum,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-wonder-of-you-eau-de-parfum-06,synthetic,wonder-of-you-eau-de-parfum,wonder of you eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-wood-flake-eau-de-parfum-04,synthetic,wood-flake-eau-de-parfum,wood flake eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-wood-flake-eau-de-parfum-05,synthetic,wood-flake-eau-de-parfum,wood flake eau de parfum,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-wood-flake-eau-de-parfum-06,synthetic,wood-flake-eau-de-parfum,wood flake eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-xj-homme-eau-de-parfum-04,synthetic,xj-homme-eau-de-parfum,xj homme eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-xj-homme-eau-de-parfum-05,synthetic,xj-homme-eau-de-parfum,xj homme eau de parfum,5,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-xj-homme-eau-de-parfum-06,synthetic,xj-homme-eau-de-parfum,xj homme eau de parfum,6,1,0,0,0,0,0,0,0,7,3,4
+emotion-rich-v2-xj-irisss-eau-de-parfum-04,synthetic,xj-irisss-eau-de-parfum,xj irisss eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-xj-irisss-eau-de-parfum-05,synthetic,xj-irisss-eau-de-parfum,xj irisss eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-xj-irisss-eau-de-parfum-06,synthetic,xj-irisss-eau-de-parfum,xj irisss eau de parfum,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum-04,synthetic,yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum,yes i do (formerly don't get me wrong baby) eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum-05,synthetic,yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum,yes i do (formerly don't get me wrong baby) eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum-06,synthetic,yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum,yes i do (formerly don't get me wrong baby) eau de parfum,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-yesterday-haze-eau-de-parfum-04,synthetic,yesterday-haze-eau-de-parfum,yesterday haze eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-yesterday-haze-eau-de-parfum-05,synthetic,yesterday-haze-eau-de-parfum,yesterday haze eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-yesterday-haze-eau-de-parfum-06,synthetic,yesterday-haze-eau-de-parfum,yesterday haze eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-ylang-49-eau-de-parfum-04,synthetic,ylang-49-eau-de-parfum,ylang 49 eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-ylang-49-eau-de-parfum-05,synthetic,ylang-49-eau-de-parfum,ylang 49 eau de parfum,5,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-ylang-49-eau-de-parfum-06,synthetic,ylang-49-eau-de-parfum,ylang 49 eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-yoyogi-eau-de-toilette-04,synthetic,yoyogi-eau-de-toilette,yoyogi eau de toilette,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-yoyogi-eau-de-toilette-05,synthetic,yoyogi-eau-de-toilette,yoyogi eau de toilette,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-yoyogi-eau-de-toilette-06,synthetic,yoyogi-eau-de-toilette,yoyogi eau de toilette,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-yu-son-eau-de-parfum-04,synthetic,yu-son-eau-de-parfum,yu son eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-yu-son-eau-de-parfum-05,synthetic,yu-son-eau-de-parfum,yu son eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-yu-son-eau-de-parfum-06,synthetic,yu-son-eau-de-parfum,yu son eau de parfum,6,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-zdravetz-eau-de-parfum-04,synthetic,zdravetz-eau-de-parfum,zdravetz eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-zdravetz-eau-de-parfum-05,synthetic,zdravetz-eau-de-parfum,zdravetz eau de parfum,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-zdravetz-eau-de-parfum-06,synthetic,zdravetz-eau-de-parfum,zdravetz eau de parfum,6,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-zeitgeist-eau-de-parfum-04,synthetic,zeitgeist-eau-de-parfum,zeitgeist eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-zeitgeist-eau-de-parfum-05,synthetic,zeitgeist-eau-de-parfum,zeitgeist eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-zeitgeist-eau-de-parfum-06,synthetic,zeitgeist-eau-de-parfum,zeitgeist eau de parfum,6,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-zenne-extrait-de-parfum-04,synthetic,zenne-extrait-de-parfum,zenne extrait de parfum,4,0,0,0,1,0,0,0,0,3,6,4

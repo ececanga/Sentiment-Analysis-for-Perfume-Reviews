@@ -1,0 +1,52 @@
+Batch 4 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-american-oud-04,synthetic,american-oud,american oud,4,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-american-oud-05,synthetic,american-oud,american oud,5,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-american-oud-06,synthetic,american-oud,american oud,6,0,0,0,0,0,0,1,0,6,5,7
+emotion-rich-v2-amour-de-cacao-eau-de-toilette-04,synthetic,amour-de-cacao-eau-de-toilette,amour de cacao eau de toilette,4,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-amour-de-cacao-eau-de-toilette-05,synthetic,amour-de-cacao-eau-de-toilette,amour de cacao eau de toilette,5,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-amour-de-cacao-eau-de-toilette-06,synthetic,amour-de-cacao-eau-de-toilette,amour de cacao eau de toilette,6,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-amyris-pour-femme-eau-de-parfum-04,synthetic,amyris-pour-femme-eau-de-parfum,amyris pour femme eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-amyris-pour-femme-eau-de-parfum-05,synthetic,amyris-pour-femme-eau-de-parfum,amyris pour femme eau de parfum,5,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-amyris-pour-femme-eau-de-parfum-06,synthetic,amyris-pour-femme-eau-de-parfum,amyris pour femme eau de parfum,6,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-amyris-pour-homme-eau-de-toilette-04,synthetic,amyris-pour-homme-eau-de-toilette,amyris pour homme eau de toilette,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-amyris-pour-homme-eau-de-toilette-05,synthetic,amyris-pour-homme-eau-de-toilette,amyris pour homme eau de toilette,5,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-amyris-pour-homme-eau-de-toilette-06,synthetic,amyris-pour-homme-eau-de-toilette,amyris pour homme eau de toilette,6,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-amyris-pour-homme-travel-set-04,synthetic,amyris-pour-homme-travel-set,amyris pour homme travel set,4,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-amyris-pour-homme-travel-set-05,synthetic,amyris-pour-homme-travel-set,amyris pour homme travel set,5,0,0,0,0,0,1,1,0,4,6,4
+emotion-rich-v2-amyris-pour-homme-travel-set-06,synthetic,amyris-pour-homme-travel-set,amyris pour homme travel set,6,0,0,0,0,0,0,1,0,6,5,7
+emotion-rich-v2-anatolia-parfum-04,synthetic,anatolia-parfum,anatolia parfum,4,0,0,0,0,0,0,1,0,6,5,7
+emotion-rich-v2-anatolia-parfum-05,synthetic,anatolia-parfum,anatolia parfum,5,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-anatolia-parfum-06,synthetic,anatolia-parfum,anatolia parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-anbar-04,synthetic,anbar,anbar,4,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-anbar-05,synthetic,anbar,anbar,5,0,0,0,0,0,0,1,0,6,5,5
+emotion-rich-v2-anbar-06,synthetic,anbar,anbar,6,0,0,0,0,0,1,1,0,4,6,4
+emotion-rich-v2-angels-of-florence-cologne-eau-de-cologne-04,synthetic,angels-of-florence-cologne-eau-de-cologne,angels of florence cologne eau de cologne,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-angels-of-florence-cologne-eau-de-cologne-05,synthetic,angels-of-florence-cologne-eau-de-cologne,angels of florence cologne eau de cologne,5,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-angels-of-florence-cologne-eau-de-cologne-06,synthetic,angels-of-florence-cologne-eau-de-cologne,angels of florence cologne eau de cologne,6,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-anne-pliska-eau-de-parfum-04,synthetic,anne-pliska-eau-de-parfum,anne pliska - eau de parfum,4,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-anne-pliska-eau-de-parfum-05,synthetic,anne-pliska-eau-de-parfum,anne pliska - eau de parfum,5,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-anne-pliska-eau-de-parfum-06,synthetic,anne-pliska-eau-de-parfum,anne pliska - eau de parfum,6,0,0,0,0,1,1,0,0,6,4,5
+emotion-rich-v2-another-oud-eau-de-parfum-04,synthetic,another-oud-eau-de-parfum,another oud eau de parfum,4,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-another-oud-eau-de-parfum-05,synthetic,another-oud-eau-de-parfum,another oud eau de parfum,5,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-another-oud-eau-de-parfum-06,synthetic,another-oud-eau-de-parfum,another oud eau de parfum,6,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-antico-caruso-eau-de-parfum-04,synthetic,antico-caruso-eau-de-parfum,antico caruso eau de parfum,4,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-antico-caruso-eau-de-parfum-05,synthetic,antico-caruso-eau-de-parfum,antico caruso eau de parfum,5,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-antico-caruso-eau-de-parfum-06,synthetic,antico-caruso-eau-de-parfum,antico caruso eau de parfum,6,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-aoud-cuir-d-arabie-eau-de-parfum-04,synthetic,aoud-cuir-d-arabie-eau-de-parfum,aoud cuir d'arabie eau de parfum,4,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-aoud-cuir-d-arabie-eau-de-parfum-05,synthetic,aoud-cuir-d-arabie-eau-de-parfum,aoud cuir d'arabie eau de parfum,5,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-aoud-cuir-d-arabie-eau-de-parfum-06,synthetic,aoud-cuir-d-arabie-eau-de-parfum,aoud cuir d'arabie eau de parfum,6,0,0,0,0,0,0,1,0,6,5,6
+emotion-rich-v2-aoud-queen-roses-eau-de-parfum-04,synthetic,aoud-queen-roses-eau-de-parfum,aoud queen roses eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-aoud-queen-roses-eau-de-parfum-05,synthetic,aoud-queen-roses-eau-de-parfum,aoud queen roses eau de parfum,5,1,0,0,0,0,1,1,0,7,6,5
+emotion-rich-v2-aoud-queen-roses-eau-de-parfum-06,synthetic,aoud-queen-roses-eau-de-parfum,aoud queen roses eau de parfum,6,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-aqaba-eau-de-parfum-04,synthetic,aqaba-eau-de-parfum,aqaba eau de parfum,4,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-aqaba-eau-de-parfum-05,synthetic,aqaba-eau-de-parfum,aqaba eau de parfum,5,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-aqaba-eau-de-parfum-06,synthetic,aqaba-eau-de-parfum,aqaba eau de parfum,6,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-aqua-universalis-eau-de-toilette-04,synthetic,aqua-universalis-eau-de-toilette,aqua universalis eau de toilette,4,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-aqua-universalis-eau-de-toilette-05,synthetic,aqua-universalis-eau-de-toilette,aqua universalis eau de toilette,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-aqua-universalis-eau-de-toilette-06,synthetic,aqua-universalis-eau-de-toilette,aqua universalis eau de toilette,6,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-aqua-universalis-scented-hair-mist-04,synthetic,aqua-universalis-scented-hair-mist,aqua universalis scented hair mist,4,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-aqua-universalis-scented-hair-mist-05,synthetic,aqua-universalis-scented-hair-mist,aqua universalis scented hair mist,5,0,0,0,1,0,1,1,0,4,6,4
+emotion-rich-v2-aqua-universalis-scented-hair-mist-06,synthetic,aqua-universalis-scented-hair-mist,aqua universalis scented hair mist,6,0,0,0,0,0,0,1,0,6,5,8
+emotion-rich-v2-aquae-nobilis-eau-de-parfum-04,synthetic,aquae-nobilis-eau-de-parfum,aquae nobilis eau de parfum,4,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-aquae-nobilis-eau-de-parfum-05,synthetic,aquae-nobilis-eau-de-parfum,aquae nobilis eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5

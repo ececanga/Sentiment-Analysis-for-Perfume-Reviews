@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-love-shot-eau-de-parfum-06,synthetic,love-shot-eau-de-parfum,love shot eau de parfum,6,0,0,0,0,1,0,0,0,6,5,8
+emotion-rich-v2-luctor-et-emergo-eau-de-parfum-04,synthetic,luctor-et-emergo-eau-de-parfum,luctor et emergo - eau de parfum,4,0,0,0,0,0,0,0,0,5,5,8
+emotion-rich-v2-luctor-et-emergo-eau-de-parfum-05,synthetic,luctor-et-emergo-eau-de-parfum,luctor et emergo - eau de parfum,5,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-luctor-et-emergo-eau-de-parfum-06,synthetic,luctor-et-emergo-eau-de-parfum,luctor et emergo - eau de parfum,6,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-luctor-et-emergo-eau-de-toilette-04,synthetic,luctor-et-emergo-eau-de-toilette,luctor et emergo - eau de toilette,4,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-luctor-et-emergo-eau-de-toilette-05,synthetic,luctor-et-emergo-eau-de-toilette,luctor et emergo - eau de toilette,5,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-luctor-et-emergo-eau-de-toilette-06,synthetic,luctor-et-emergo-eau-de-toilette,luctor et emergo - eau de toilette,6,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-lumiere-blanche-eau-de-parfum-04,synthetic,lumiere-blanche-eau-de-parfum,lumiere blanche eau de parfum,4,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-lumiere-blanche-eau-de-parfum-05,synthetic,lumiere-blanche-eau-de-parfum,lumiere blanche eau de parfum,5,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-lumiere-blanche-eau-de-parfum-06,synthetic,lumiere-blanche-eau-de-parfum,lumiere blanche eau de parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-lumiere-noire-pour-femme-eau-de-parfum-04,synthetic,lumiere-noire-pour-femme-eau-de-parfum,lumiere noire pour femme eau de parfum,4,0,0,0,0,1,1,1,0,6,5,5
+emotion-rich-v2-lumiere-noire-pour-femme-eau-de-parfum-05,synthetic,lumiere-noire-pour-femme-eau-de-parfum,lumiere noire pour femme eau de parfum,5,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-lumiere-noire-pour-femme-eau-de-parfum-06,synthetic,lumiere-noire-pour-femme-eau-de-parfum,lumiere noire pour femme eau de parfum,6,0,0,0,0,0,0,0,0,5,5,8
+emotion-rich-v2-lumiere-noire-pour-homme-eau-de-toilette-04,synthetic,lumiere-noire-pour-homme-eau-de-toilette,lumiere noire pour homme eau de toilette,4,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-lumiere-noire-pour-homme-eau-de-toilette-05,synthetic,lumiere-noire-pour-homme-eau-de-toilette,lumiere noire pour homme eau de toilette,5,0,0,0,0,1,0,0,0,6,4,5
+emotion-rich-v2-lumiere-noire-pour-homme-eau-de-toilette-06,synthetic,lumiere-noire-pour-homme-eau-de-toilette,lumiere noire pour homme eau de toilette,6,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-lune-feline-eau-de-parfum-04,synthetic,lune-feline-eau-de-parfum,lune feline eau de parfum,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-lune-feline-eau-de-parfum-05,synthetic,lune-feline-eau-de-parfum,lune feline eau de parfum,5,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-lune-feline-eau-de-parfum-06,synthetic,lune-feline-eau-de-parfum,lune feline eau de parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-lust-in-paradise-x-reine-paradis-eau-de-parfum-04,synthetic,lust-in-paradise-x-reine-paradis-eau-de-parfum,lust in paradise x reine paradis eau de parfum,4,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-lust-in-paradise-x-reine-paradis-eau-de-parfum-05,synthetic,lust-in-paradise-x-reine-paradis-eau-de-parfum,lust in paradise x reine paradis eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-lust-in-paradise-x-reine-paradis-eau-de-parfum-06,synthetic,lust-in-paradise-x-reine-paradis-eau-de-parfum,lust in paradise x reine paradis eau de parfum,6,1,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-lux-eau-de-parfum-04,synthetic,lux-eau-de-parfum,lux eau de parfum,4,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-lux-eau-de-parfum-05,synthetic,lux-eau-de-parfum,lux eau de parfum,5,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-lux-eau-de-parfum-06,synthetic,lux-eau-de-parfum,lux eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-lyric-for-men-eau-de-parfum-04,synthetic,lyric-for-men-eau-de-parfum,lyric for men eau de parfum,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-lyric-for-men-eau-de-parfum-05,synthetic,lyric-for-men-eau-de-parfum,lyric for men eau de parfum,5,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-lyric-for-men-eau-de-parfum-06,synthetic,lyric-for-men-eau-de-parfum,lyric for men eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-lyric-for-women-eau-de-parfum-04,synthetic,lyric-for-women-eau-de-parfum,lyric for women eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-lyric-for-women-eau-de-parfum-05,synthetic,lyric-for-women-eau-de-parfum,lyric for women eau de parfum,5,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-lyric-for-women-eau-de-parfum-06,synthetic,lyric-for-women-eau-de-parfum,lyric for women eau de parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-lys-noir-eau-de-parfum-04,synthetic,lys-noir-eau-de-parfum,lys noir eau de parfum,4,0,0,0,1,0,0,0,0,3,7,3
+emotion-rich-v2-lys-noir-eau-de-parfum-05,synthetic,lys-noir-eau-de-parfum,lys noir eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-lys-noir-eau-de-parfum-06,synthetic,lys-noir-eau-de-parfum,lys noir eau de parfum,6,0,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-ma-bete-eau-de-parfum-04,synthetic,ma-bete-eau-de-parfum,ma bete eau de parfum,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-ma-bete-eau-de-parfum-05,synthetic,ma-bete-eau-de-parfum,ma bete eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-ma-bete-eau-de-parfum-06,synthetic,ma-bete-eau-de-parfum,ma bete eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-made-in-heaven-eau-de-parfum-04,synthetic,made-in-heaven-eau-de-parfum,made in heaven eau de parfum,4,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-made-in-heaven-eau-de-parfum-05,synthetic,made-in-heaven-eau-de-parfum,made in heaven eau de parfum,5,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-made-in-heaven-eau-de-parfum-06,synthetic,made-in-heaven-eau-de-parfum,made in heaven eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-maderas-eau-de-parfum-04,synthetic,maderas-eau-de-parfum,maderas eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-maderas-eau-de-parfum-05,synthetic,maderas-eau-de-parfum,maderas eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-maderas-eau-de-parfum-06,synthetic,maderas-eau-de-parfum,maderas eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-magenta-pop-eau-de-parfum-04,synthetic,magenta-pop-eau-de-parfum,magenta pop eau de parfum,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-magenta-pop-eau-de-parfum-05,synthetic,magenta-pop-eau-de-parfum,magenta pop eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-magenta-pop-eau-de-parfum-06,synthetic,magenta-pop-eau-de-parfum,magenta pop eau de parfum,6,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-majaina-sin-eau-de-parfum-04,synthetic,majaina-sin-eau-de-parfum,majaina sin eau de parfum,4,1,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-majaina-sin-eau-de-parfum-05,synthetic,majaina-sin-eau-de-parfum,majaina sin eau de parfum,5,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-majaina-sin-eau-de-parfum-06,synthetic,majaina-sin-eau-de-parfum,majaina sin eau de parfum,6,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-mamok-eau-de-parfum-04,synthetic,mamok-eau-de-parfum,mamok eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3

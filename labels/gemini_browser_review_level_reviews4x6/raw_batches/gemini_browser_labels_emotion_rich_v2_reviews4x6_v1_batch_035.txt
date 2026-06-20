@@ -1,0 +1,52 @@
+Batch 35 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-perfect-kiss-eau-de-parfum-06,synthetic,perfect-kiss-eau-de-parfum,perfect kiss eau de parfum,6,0,0,0,0,0,0,1,0,3,6,4
+emotion-rich-v2-perfect-nectar-eau-de-parfum-04,synthetic,perfect-nectar-eau-de-parfum,perfect nectar eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-perfect-nectar-eau-de-parfum-05,synthetic,perfect-nectar-eau-de-parfum,perfect nectar eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-perfect-nectar-eau-de-parfum-06,synthetic,perfect-nectar-eau-de-parfum,perfect nectar eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-perfect-vanilla-roll-on-perfume-oil-04,synthetic,perfect-vanilla-roll-on-perfume-oil,perfect vanilla roll-on perfume oil,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-perfect-vanilla-roll-on-perfume-oil-05,synthetic,perfect-vanilla-roll-on-perfume-oil,perfect vanilla roll-on perfume oil,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-perfect-vanilla-roll-on-perfume-oil-06,synthetic,perfect-vanilla-roll-on-perfume-oil,perfect vanilla roll-on perfume oil,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-perfect-veil-eau-de-parfum-04,synthetic,perfect-veil-eau-de-parfum,perfect veil eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-perfect-veil-eau-de-parfum-05,synthetic,perfect-veil-eau-de-parfum,perfect veil eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-perfect-veil-eau-de-parfum-06,synthetic,perfect-veil-eau-de-parfum,perfect veil eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-petit-matin-eau-de-parfum-04,synthetic,petit-matin-eau-de-parfum,petit matin eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-petit-matin-eau-de-parfum-05,synthetic,petit-matin-eau-de-parfum,petit matin eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-petit-matin-eau-de-parfum-06,synthetic,petit-matin-eau-de-parfum,petit matin eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-petra-eau-de-parfum-04,synthetic,petra-eau-de-parfum,petra eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-petra-eau-de-parfum-05,synthetic,petra-eau-de-parfum,petra eau de parfum,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-petra-eau-de-parfum-06,synthetic,petra-eau-de-parfum,petra eau de parfum,6,1,0,0,0,0,0,0,0,7,3,4
+emotion-rich-v2-phi-une-rose-de-kandahar-eau-de-parfum-04,synthetic,phi-une-rose-de-kandahar-eau-de-parfum,phi une rose de kandahar eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-phi-une-rose-de-kandahar-eau-de-parfum-05,synthetic,phi-une-rose-de-kandahar-eau-de-parfum,phi une rose de kandahar eau de parfum,5,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-phi-une-rose-de-kandahar-eau-de-parfum-06,synthetic,phi-une-rose-de-kandahar-eau-de-parfum,phi une rose de kandahar eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-philosykos-eau-de-toilette-04,synthetic,philosykos-eau-de-toilette,philosykos - eau de toilette,4,0,0,0,0,0,0,0,0,6,5,4
+emotion-rich-v2-philosykos-eau-de-toilette-05,synthetic,philosykos-eau-de-toilette,philosykos - eau de toilette,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-philosykos-eau-de-toilette-06,synthetic,philosykos-eau-de-toilette,philosykos - eau de toilette,6,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-phtaloblue-eau-de-parfum-04,synthetic,phtaloblue-eau-de-parfum,phtaloblue eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-phtaloblue-eau-de-parfum-05,synthetic,phtaloblue-eau-de-parfum,phtaloblue eau de parfum,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-phtaloblue-eau-de-parfum-06,synthetic,phtaloblue-eau-de-parfum,phtaloblue eau de parfum,6,0,0,0,0,0,0,0,0,6,5,4
+emotion-rich-v2-picadilly-69-eau-de-parfum-04,synthetic,picadilly-69-eau-de-parfum,picadilly '69 eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-picadilly-69-eau-de-parfum-05,synthetic,picadilly-69-eau-de-parfum,picadilly '69 eau de parfum,5,0,0,0,0,0,0,0,0,6,5,4
+emotion-rich-v2-picadilly-69-eau-de-parfum-06,synthetic,picadilly-69-eau-de-parfum,picadilly '69 eau de parfum,6,1,0,0,0,0,0,0,0,7,3,4
+emotion-rich-v2-pink-eau-de-parfum-04,synthetic,pink-eau-de-parfum,pink eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-pink-eau-de-parfum-05,synthetic,pink-eau-de-parfum,pink eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-pink-eau-de-parfum-06,synthetic,pink-eau-de-parfum,pink eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-pink-quartz-eau-de-parfum-04,synthetic,pink-quartz-eau-de-parfum,pink quartz eau de parfum,4,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-pink-quartz-eau-de-parfum-05,synthetic,pink-quartz-eau-de-parfum,pink quartz eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-pink-quartz-eau-de-parfum-06,synthetic,pink-quartz-eau-de-parfum,pink quartz eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-pomegranate-melograno-cologne-eau-de-cologne-04,synthetic,pomegranate-melograno-cologne-eau-de-cologne,pomegranate / melograno cologne eau de cologne,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-pomegranate-melograno-cologne-eau-de-cologne-05,synthetic,pomegranate-melograno-cologne-eau-de-cologne,pomegranate / melograno cologne eau de cologne,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-pomegranate-melograno-cologne-eau-de-cologne-06,synthetic,pomegranate-melograno-cologne-eau-de-cologne,pomegranate / melograno cologne eau de cologne,6,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-pomelo-paradis-cologne-absolue-04,synthetic,pomelo-paradis-cologne-absolue,pomelo paradis cologne absolue,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-pomelo-paradis-cologne-absolue-05,synthetic,pomelo-paradis-cologne-absolue,pomelo paradis cologne absolue,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-pomelo-paradis-cologne-absolue-06,synthetic,pomelo-paradis-cologne-absolue,pomelo paradis cologne absolue,6,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-pomelo-riviera-eau-de-parfum-04,synthetic,pomelo-riviera-eau-de-parfum,pomelo riviera eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-pomelo-riviera-eau-de-parfum-05,synthetic,pomelo-riviera-eau-de-parfum,pomelo riviera eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-pomelo-riviera-eau-de-parfum-06,synthetic,pomelo-riviera-eau-de-parfum,pomelo riviera eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-pot-pourri-cologne-eau-de-cologne-04,synthetic,pot-pourri-cologne-eau-de-cologne,pot pourri cologne eau de cologne,4,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-pot-pourri-cologne-eau-de-cologne-05,synthetic,pot-pourri-cologne-eau-de-cologne,pot pourri cologne eau de cologne,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-pot-pourri-cologne-eau-de-cologne-06,synthetic,pot-pourri-cologne-eau-de-cologne,pot pourri cologne eau de cologne,6,0,0,0,0,0,0,0,0,6,4,4
+emotion-rich-v2-precious-oud-eau-de-parfum-04,synthetic,precious-oud-eau-de-parfum,precious oud eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-precious-oud-eau-de-parfum-05,synthetic,precious-oud-eau-de-parfum,precious oud eau de parfum,5,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-precious-oud-eau-de-parfum-06,synthetic,precious-oud-eau-de-parfum,precious oud eau de parfum,6,0,0,0,0,1,1,1,0,7,4,4
+emotion-rich-v2-premier-figuier-eau-de-toilette-04,synthetic,premier-figuier-eau-de-toilette,premier figuier eau de toilette,4,0,0,0,0,0,0,0,0,5,5,5

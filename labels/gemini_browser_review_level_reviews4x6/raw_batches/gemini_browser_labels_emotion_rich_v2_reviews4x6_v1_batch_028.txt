@@ -1,0 +1,52 @@
+Batch 28 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-milky-musk-eau-de-parfum-04,synthetic,milky-musk-eau-de-parfum,milky musk eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-milky-musk-eau-de-parfum-05,synthetic,milky-musk-eau-de-parfum,milky musk eau de parfum,5,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-milky-musk-eau-de-parfum-06,synthetic,milky-musk-eau-de-parfum,milky musk eau de parfum,6,0,0,0,0,0,0,0,0,6,4,5
+emotion-rich-v2-millesime-imperial-eau-de-parfum-04,synthetic,millesime-imperial-eau-de-parfum,millesime imperial eau de parfum ...,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-millesime-imperial-eau-de-parfum-05,synthetic,millesime-imperial-eau-de-parfum,millesime imperial eau de parfum ...,5,1,0,0,0,0,0,0,0,7,3,5
+emotion-rich-v2-millesime-imperial-eau-de-parfum-06,synthetic,millesime-imperial-eau-de-parfum,millesime imperial eau de parfum ...,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mimosa-pour-moi-eau-de-toilette-04,synthetic,mimosa-pour-moi-eau-de-toilette,mimosa pour moi eau de toilette,4,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-mimosa-pour-moi-eau-de-toilette-05,synthetic,mimosa-pour-moi-eau-de-toilette,mimosa pour moi eau de toilette,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mimosa-pour-moi-eau-de-toilette-06,synthetic,mimosa-pour-moi-eau-de-toilette,mimosa pour moi eau de toilette,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-miss-marisa-fragrance-oil-04,synthetic,miss-marisa-fragrance-oil,miss marisa fragrance oil,4,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-miss-marisa-fragrance-oil-05,synthetic,miss-marisa-fragrance-oil,miss marisa fragrance oil,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-miss-marisa-fragrance-oil-06,synthetic,miss-marisa-fragrance-oil,miss marisa fragrance oil,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-miss-marisa-perfume-spray-eau-de-parfum-04,synthetic,miss-marisa-perfume-spray-eau-de-parfum,miss marisa perfume spray eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-miss-marisa-perfume-spray-eau-de-parfum-05,synthetic,miss-marisa-perfume-spray-eau-de-parfum,miss marisa perfume spray eau de parfum,5,0,0,0,0,0,0,1,0,3,7,3
+emotion-rich-v2-miss-marisa-perfume-spray-eau-de-parfum-06,synthetic,miss-marisa-perfume-spray-eau-de-parfum,miss marisa perfume spray eau de parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-miss-marisa-tropical-perfume-spray-eau-de-parfum-04,synthetic,miss-marisa-tropical-perfume-spray-eau-de-parfum,miss marisa tropical perfume spray eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-miss-marisa-tropical-perfume-spray-eau-de-parfum-05,synthetic,miss-marisa-tropical-perfume-spray-eau-de-parfum,miss marisa tropical perfume spray eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-miss-marisa-tropical-perfume-spray-eau-de-parfum-06,synthetic,miss-marisa-tropical-perfume-spray-eau-de-parfum,miss marisa tropical perfume spray eau de parfum,6,1,0,0,0,0,0,0,0,7,3,5
+emotion-rich-v2-mississippi-medicine-eau-de-parfum-04,synthetic,mississippi-medicine-eau-de-parfum,mississippi medicine eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-mississippi-medicine-eau-de-parfum-05,synthetic,mississippi-medicine-eau-de-parfum,mississippi medicine eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mississippi-medicine-eau-de-parfum-06,synthetic,mississippi-medicine-eau-de-parfum,mississippi medicine eau de parfum,6,0,0,0,0,0,1,0,0,7,4,5
+emotion-rich-v2-mizunara-eau-de-parfum-04,synthetic,mizunara-eau-de-parfum,mizunara eau de parfum,4,0,0,0,0,0,0,0,0,6,5,6
+emotion-rich-v2-mizunara-eau-de-parfum-05,synthetic,mizunara-eau-de-parfum,mizunara eau de parfum,5,0,0,0,0,0,1,0,0,7,4,5
+emotion-rich-v2-mizunara-eau-de-parfum-06,synthetic,mizunara-eau-de-parfum,mizunara eau de parfum,6,0,0,0,0,0,0,1,0,3,7,3
+emotion-rich-v2-mmmm-eau-de-parfum-04,synthetic,mmmm-eau-de-parfum,mmmm... eau de parfum,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-mmmm-eau-de-parfum-05,synthetic,mmmm-eau-de-parfum,mmmm... eau de parfum,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-mmmm-eau-de-parfum-06,synthetic,mmmm-eau-de-parfum,mmmm... eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mojave-ghost-hair-perfume-04,synthetic,mojave-ghost-hair-perfume,mojave ghost hair perfume,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mojave-ghost-hair-perfume-05,synthetic,mojave-ghost-hair-perfume,mojave ghost hair perfume,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-mojave-ghost-hair-perfume-06,synthetic,mojave-ghost-hair-perfume,mojave ghost hair perfume,6,0,0,0,0,0,0,1,0,3,6,4
+emotion-rich-v2-mojave-ghost-roll-on-oil-perfume-oil-04,synthetic,mojave-ghost-roll-on-oil-perfume-oil,mojave ghost roll-on oil perfume oil,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-mojave-ghost-roll-on-oil-perfume-oil-05,synthetic,mojave-ghost-roll-on-oil-perfume-oil,mojave ghost roll-on oil perfume oil,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mojave-ghost-roll-on-oil-perfume-oil-06,synthetic,mojave-ghost-roll-on-oil-perfume-oil,mojave ghost roll-on oil perfume oil,6,0,0,0,0,0,1,0,0,7,4,5
+emotion-rich-v2-monyette-paris-eau-de-parfum-spray-04,synthetic,monyette-paris-eau-de-parfum-spray,monyette paris eau de parfum spray,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-monyette-paris-eau-de-parfum-spray-05,synthetic,monyette-paris-eau-de-parfum-spray,monyette paris eau de parfum spray,5,0,0,0,0,0,0,1,0,4,6,3
+emotion-rich-v2-monyette-paris-eau-de-parfum-spray-06,synthetic,monyette-paris-eau-de-parfum-spray,monyette paris eau de parfum spray,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-monyette-paris-fragrance-oil-04,synthetic,monyette-paris-fragrance-oil,monyette paris fragrance oil,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-monyette-paris-fragrance-oil-05,synthetic,monyette-paris-fragrance-oil,monyette paris fragrance oil,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-monyette-paris-fragrance-oil-06,synthetic,monyette-paris-fragrance-oil,monyette paris fragrance oil,6,0,0,0,0,0,0,1,0,4,6,3
+emotion-rich-v2-moonlight-in-heaven-eau-de-parfum-04,synthetic,moonlight-in-heaven-eau-de-parfum,moonlight in heaven eau de parfum,4,0,0,0,0,0,1,0,0,6,5,5
+emotion-rich-v2-moonlight-in-heaven-eau-de-parfum-05,synthetic,moonlight-in-heaven-eau-de-parfum,moonlight in heaven eau de parfum,5,0,0,0,0,0,0,1,0,3,7,3
+emotion-rich-v2-moonlight-in-heaven-eau-de-parfum-06,synthetic,moonlight-in-heaven-eau-de-parfum,moonlight in heaven eau de parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-moonstone-perfume-oil-04,synthetic,moonstone-perfume-oil,moonstone perfume oil,4,0,0,0,0,0,1,0,0,7,4,5
+emotion-rich-v2-moonstone-perfume-oil-05,synthetic,moonstone-perfume-oil,moonstone perfume oil,5,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-moonstone-perfume-oil-06,synthetic,moonstone-perfume-oil,moonstone perfume oil,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-mousse-ii-eau-de-parfum-04,synthetic,mousse-ii-eau-de-parfum,mousse ii eau de parfum,4,1,0,0,0,0,0,0,0,7,3,5
+emotion-rich-v2-mousse-ii-eau-de-parfum-05,synthetic,mousse-ii-eau-de-parfum,mousse ii eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mousse-ii-eau-de-parfum-06,synthetic,mousse-ii-eau-de-parfum,mousse ii eau de parfum,6,0,0,0,0,0,1,0,0,7,4,5
+emotion-rich-v2-mousse-illuminee-eau-de-toilette-04,synthetic,mousse-illuminee-eau-de-toilette,mousse illuminee eau de toilette,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-mousse-illuminee-eau-de-toilette-05,synthetic,mousse-illuminee-eau-de-toilette,mousse illuminee eau de toilette,5,0,0,0,0,1,1,0,0,7,4,5

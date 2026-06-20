@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-premier-figuier-eau-de-toilette-05,synthetic,premier-figuier-eau-de-toilette,premier figuier eau de toilette,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-premier-figuier-eau-de-toilette-06,synthetic,premier-figuier-eau-de-toilette,premier figuier eau de toilette,6,0,0,0,0,0,1,0,0,7,4,5
+emotion-rich-v2-premier-figuier-extreme-eau-de-parfum-04,synthetic,premier-figuier-extreme-eau-de-parfum,premier figuier extreme eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-premier-figuier-extreme-eau-de-parfum-05,synthetic,premier-figuier-extreme-eau-de-parfum,premier figuier extreme eau de parfum,5,0,0,0,0,0,0,0,0,5,5,6
+emotion-rich-v2-premier-figuier-extreme-eau-de-parfum-06,synthetic,premier-figuier-extreme-eau-de-parfum,premier figuier extreme eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-private-collection-l-eau-guerriere-eau-de-toilette-04,synthetic,private-collection-l-eau-guerriere-eau-de-toilette,private collection: l'eau guerriere eau de toilette,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-private-collection-l-eau-guerriere-eau-de-toilette-05,synthetic,private-collection-l-eau-guerriere-eau-de-toilette,private collection: l'eau guerriere eau de toilette,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-private-collection-l-eau-guerriere-eau-de-toilette-06,synthetic,private-collection-l-eau-guerriere-eau-de-toilette,private collection: l'eau guerriere eau de toilette,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-private-collection-l-ombre-fauve-eau-de-parfum-04,synthetic,private-collection-l-ombre-fauve-eau-de-parfum,private collection: l'ombre fauve eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-private-collection-l-ombre-fauve-eau-de-parfum-05,synthetic,private-collection-l-ombre-fauve-eau-de-parfum,private collection: l'ombre fauve eau de parfum,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-private-collection-l-ombre-fauve-eau-de-parfum-06,synthetic,private-collection-l-ombre-fauve-eau-de-parfum,private collection: l'ombre fauve eau de parfum,6,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-private-label-eau-de-parfum-04,synthetic,private-label-eau-de-parfum,private label eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-private-label-eau-de-parfum-05,synthetic,private-label-eau-de-parfum,private label eau de parfum,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-private-label-eau-de-parfum-06,synthetic,private-label-eau-de-parfum,private label eau de parfum,6,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-promesse-de-l-aube-eau-de-parfum-04,synthetic,promesse-de-l-aube-eau-de-parfum,promesse de l'aube eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-promesse-de-l-aube-eau-de-parfum-05,synthetic,promesse-de-l-aube-eau-de-parfum,promesse de l'aube eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-promesse-de-l-aube-eau-de-parfum-06,synthetic,promesse-de-l-aube-eau-de-parfum,promesse de l'aube eau de parfum,6,0,0,0,0,0,0,0,0,5,5,6
+emotion-rich-v2-proxima-eau-de-parfum-04,synthetic,proxima-eau-de-parfum,proxima eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-proxima-eau-de-parfum-05,synthetic,proxima-eau-de-parfum,proxima eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-proxima-eau-de-parfum-06,synthetic,proxima-eau-de-parfum,proxima eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-psychedelique-eau-de-parfum-04,synthetic,psychedelique-eau-de-parfum,psychedelique eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-psychedelique-eau-de-parfum-05,synthetic,psychedelique-eau-de-parfum,psychedelique eau de parfum,5,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-psychedelique-eau-de-parfum-06,synthetic,psychedelique-eau-de-parfum,psychedelique eau de parfum,6,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-putain-des-palaces-eau-de-parfum-04,synthetic,putain-des-palaces-eau-de-parfum,putain des palaces eau de parfum,4,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-putain-des-palaces-eau-de-parfum-05,synthetic,putain-des-palaces-eau-de-parfum,putain des palaces eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-putain-des-palaces-eau-de-parfum-06,synthetic,putain-des-palaces-eau-de-parfum,putain des palaces eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-quercus-cologne-04,synthetic,quercus-cologne,quercus cologne,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-quercus-cologne-05,synthetic,quercus-cologne,quercus cologne,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-quercus-cologne-06,synthetic,quercus-cologne,quercus cologne,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-radio-bombay-eau-de-parfum-04,synthetic,radio-bombay-eau-de-parfum,radio bombay eau de parfum,4,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-radio-bombay-eau-de-parfum-05,synthetic,radio-bombay-eau-de-parfum,radio bombay eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-radio-bombay-eau-de-parfum-06,synthetic,radio-bombay-eau-de-parfum,radio bombay eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-radish-x-vetiver-eau-de-parfum-04,synthetic,radish-x-vetiver-eau-de-parfum,radish x vetiver eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-radish-x-vetiver-eau-de-parfum-05,synthetic,radish-x-vetiver-eau-de-parfum,radish x vetiver eau de parfum,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-radish-x-vetiver-eau-de-parfum-06,synthetic,radish-x-vetiver-eau-de-parfum,radish x vetiver eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-rausch-eau-de-parfum-04,synthetic,rausch-eau-de-parfum,rausch eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-rausch-eau-de-parfum-05,synthetic,rausch-eau-de-parfum,rausch eau de parfum,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-rausch-eau-de-parfum-06,synthetic,rausch-eau-de-parfum,rausch eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-ray-of-light-eau-de-parfum-04,synthetic,ray-of-light-eau-de-parfum,ray of light eau de parfum,4,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-ray-of-light-eau-de-parfum-05,synthetic,ray-of-light-eau-de-parfum,ray of light eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-ray-of-light-eau-de-parfum-06,synthetic,ray-of-light-eau-de-parfum,ray of light eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-re-charge-black-pepper-deodorant-stick-04,synthetic,re-charge-black-pepper-deodorant-stick,re-charge black pepper deodorant stick,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-re-charge-black-pepper-deodorant-stick-05,synthetic,re-charge-black-pepper-deodorant-stick,re-charge black pepper deodorant stick,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-re-charge-black-pepper-deodorant-stick-06,synthetic,re-charge-black-pepper-deodorant-stick,re-charge black pepper deodorant stick,6,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-red-aoud-eau-de-parfum-04,synthetic,red-aoud-eau-de-parfum,red aoud eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-red-aoud-eau-de-parfum-05,synthetic,red-aoud-eau-de-parfum,red aoud eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-red-aoud-eau-de-parfum-06,synthetic,red-aoud-eau-de-parfum,red aoud eau de parfum,6,1,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-red-hoba-eau-de-parfum-04,synthetic,red-hoba-eau-de-parfum,red hoba eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-red-hoba-eau-de-parfum-05,synthetic,red-hoba-eau-de-parfum,red hoba eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-red-hoba-eau-de-parfum-06,synthetic,red-hoba-eau-de-parfum,red hoba eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7

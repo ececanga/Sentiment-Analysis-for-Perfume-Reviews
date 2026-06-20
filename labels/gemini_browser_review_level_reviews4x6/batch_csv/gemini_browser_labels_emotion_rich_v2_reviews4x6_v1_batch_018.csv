@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-ginger-ciao-eau-de-parfum-05,synthetic,ginger-ciao-eau-de-parfum,ginger ciao eau de parfum,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-ginger-ciao-eau-de-parfum-06,synthetic,ginger-ciao-eau-de-parfum,ginger ciao eau de parfum,6,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-glorious-eau-de-parfum-04,synthetic,glorious-eau-de-parfum,glorious eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-glorious-eau-de-parfum-05,synthetic,glorious-eau-de-parfum,glorious eau de parfum,5,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-glorious-eau-de-parfum-06,synthetic,glorious-eau-de-parfum,glorious eau de parfum,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-godolphin-eau-de-parfum-04,synthetic,godolphin-eau-de-parfum,godolphin eau de parfum,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-godolphin-eau-de-parfum-05,synthetic,godolphin-eau-de-parfum,godolphin eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-godolphin-eau-de-parfum-06,synthetic,godolphin-eau-de-parfum,godolphin eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gold-extrait-de-parfum-04,synthetic,gold-extrait-de-parfum,gold extrait de parfum,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gold-extrait-de-parfum-05,synthetic,gold-extrait-de-parfum,gold extrait de parfum,5,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-gold-extrait-de-parfum-06,synthetic,gold-extrait-de-parfum,gold extrait de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gold-rose-oudh-extrait-de-parfum-04,synthetic,gold-rose-oudh-extrait-de-parfum,gold rose oudh extrait de parfum,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gold-rose-oudh-extrait-de-parfum-05,synthetic,gold-rose-oudh-extrait-de-parfum,gold rose oudh extrait de parfum,5,0,0,0,0,1,0,1,0,6,4,5
+emotion-rich-v2-gold-rose-oudh-extrait-de-parfum-06,synthetic,gold-rose-oudh-extrait-de-parfum,gold rose oudh extrait de parfum,6,0,1,0,0,0,0,0,0,4,4,5
+emotion-rich-v2-gold-woman-eau-de-parfum-04,synthetic,gold-woman-eau-de-parfum,gold woman eau de parfum,4,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-gold-woman-eau-de-parfum-05,synthetic,gold-woman-eau-de-parfum,gold woman eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-gold-woman-eau-de-parfum-06,synthetic,gold-woman-eau-de-parfum,gold woman eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-golden-powder-eau-de-parfum-04,synthetic,golden-powder-eau-de-parfum,golden powder eau de parfum,4,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-golden-powder-eau-de-parfum-05,synthetic,golden-powder-eau-de-parfum,golden powder eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-golden-powder-eau-de-parfum-06,synthetic,golden-powder-eau-de-parfum,golden powder eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-good-girl-gone-bad-eau-de-parfum-04,synthetic,good-girl-gone-bad-eau-de-parfum,good girl gone bad eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-good-girl-gone-bad-eau-de-parfum-05,synthetic,good-girl-gone-bad-eau-de-parfum,good girl gone bad eau de parfum,5,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-good-girl-gone-bad-eau-de-parfum-06,synthetic,good-girl-gone-bad-eau-de-parfum,good girl gone bad eau de parfum,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-gothic-i-eau-de-parfum-04,synthetic,gothic-i-eau-de-parfum,gothic i - eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gothic-i-eau-de-parfum-05,synthetic,gothic-i-eau-de-parfum,gothic i - eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-gothic-i-eau-de-parfum-06,synthetic,gothic-i-eau-de-parfum,gothic i - eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gothic-i-perfume-oil-roll-on-perfume-oil-04,synthetic,gothic-i-perfume-oil-roll-on-perfume-oil,gothic i - perfume oil roll-on perfume oil,4,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-gothic-i-perfume-oil-roll-on-perfume-oil-05,synthetic,gothic-i-perfume-oil-roll-on-perfume-oil,gothic i - perfume oil roll-on perfume oil,5,0,1,0,0,0,0,0,0,4,4,5
+emotion-rich-v2-gothic-i-perfume-oil-roll-on-perfume-oil-06,synthetic,gothic-i-perfume-oil-roll-on-perfume-oil,gothic i - perfume oil roll-on perfume oil,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gothic-ii-eau-de-parfum-04,synthetic,gothic-ii-eau-de-parfum,gothic ii - eau de parfum,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gothic-ii-eau-de-parfum-05,synthetic,gothic-ii-eau-de-parfum,gothic ii - eau de parfum,5,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-gothic-ii-eau-de-parfum-06,synthetic,gothic-ii-eau-de-parfum,gothic ii - eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gothic-ii-perfume-oil-roll-on-perfume-oil-04,synthetic,gothic-ii-perfume-oil-roll-on-perfume-oil,gothic ii - perfume oil roll-on perfume oil,4,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-gothic-ii-perfume-oil-roll-on-perfume-oil-05,synthetic,gothic-ii-perfume-oil-roll-on-perfume-oil,gothic ii - perfume oil roll-on perfume oil,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gothic-ii-perfume-oil-roll-on-perfume-oil-06,synthetic,gothic-ii-perfume-oil-roll-on-perfume-oil,gothic ii - perfume oil roll-on perfume oil,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-gothic-iii-eau-de-parfum-04,synthetic,gothic-iii-eau-de-parfum,gothic iii - eau de parfum,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gothic-iii-eau-de-parfum-05,synthetic,gothic-iii-eau-de-parfum,gothic iii - eau de parfum,5,0,1,0,0,0,0,0,0,4,4,5
+emotion-rich-v2-gothic-iii-eau-de-parfum-06,synthetic,gothic-iii-eau-de-parfum,gothic iii - eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gothic-iii-perfume-oil-roll-on-perfume-oil-04,synthetic,gothic-iii-perfume-oil-roll-on-perfume-oil,gothic iii - perfume oil roll-on perfume oil,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gothic-iii-perfume-oil-roll-on-perfume-oil-05,synthetic,gothic-iii-perfume-oil-roll-on-perfume-oil,gothic iii - perfume oil roll-on perfume oil,5,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-gothic-iii-perfume-oil-roll-on-perfume-oil-06,synthetic,gothic-iii-perfume-oil-roll-on-perfume-oil,gothic iii - perfume oil roll-on perfume oil,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gothic-iv-perfume-oil-perfume-oil-roll-on-04,synthetic,gothic-iv-perfume-oil-perfume-oil-roll-on,gothic iv- perfume oil perfume oil roll-on,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gothic-iv-perfume-oil-perfume-oil-roll-on-05,synthetic,gothic-iv-perfume-oil-perfume-oil-roll-on,gothic iv- perfume oil perfume oil roll-on,5,0,0,0,0,1,0,1,0,6,4,5
+emotion-rich-v2-gothic-iv-perfume-oil-perfume-oil-roll-on-06,synthetic,gothic-iv-perfume-oil-perfume-oil-roll-on,gothic iv- perfume oil perfume oil roll-on,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-gothic-v-perfume-oil-perfume-oil-roll-on-04,synthetic,gothic-v-perfume-oil-perfume-oil-roll-on,gothic v- perfume oil perfume oil roll-on,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-gothic-v-perfume-oil-perfume-oil-roll-on-05,synthetic,gothic-v-perfume-oil-perfume-oil-roll-on,gothic v- perfume oil perfume oil roll-on,5,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-gothic-v-perfume-oil-perfume-oil-roll-on-06,synthetic,gothic-v-perfume-oil-perfume-oil-roll-on,gothic v- perfume oil perfume oil roll-on,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-graine-de-joie-eau-de-parfum-04,synthetic,graine-de-joie-eau-de-parfum,graine de joie eau de parfum,4,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-graine-de-joie-eau-de-parfum-05,synthetic,graine-de-joie-eau-de-parfum,graine de joie eau de parfum,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-graine-de-joie-eau-de-parfum-06,synthetic,graine-de-joie-eau-de-parfum,graine de joie eau de parfum,6,0,0,0,0,1,0,1,0,6,5,6

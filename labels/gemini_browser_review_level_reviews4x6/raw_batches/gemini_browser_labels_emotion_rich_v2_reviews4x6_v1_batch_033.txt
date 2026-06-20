@@ -1,0 +1,52 @@
+Batch 33 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-orchidee-vanille-eau-de-parfum-05,synthetic,orchidee-vanille-eau-de-parfum,orchidee vanille eau de parfum,5,0,0,0,0,0,1,0,0,6,5,5
+emotion-rich-v2-orchidee-vanille-eau-de-parfum-06,synthetic,orchidee-vanille-eau-de-parfum,orchidee vanille eau de parfum,6,0,0,0,0,0,0,1,0,3,7,3
+emotion-rich-v2-osmanthus-interdite-eau-de-parfum-04,synthetic,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-osmanthus-interdite-eau-de-parfum-05,synthetic,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-osmanthus-interdite-eau-de-parfum-06,synthetic,osmanthus-interdite-eau-de-parfum,osmanthus interdite eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-assam-eau-de-parfum-04,synthetic,oud-assam-eau-de-parfum,oud assam eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-assam-eau-de-parfum-05,synthetic,oud-assam-eau-de-parfum,oud assam eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-oud-assam-eau-de-parfum-06,synthetic,oud-assam-eau-de-parfum,oud assam eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-du-bois-attar-perfume-oil-04,synthetic,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,4,0,0,0,0,0,0,0,0,5,5,8
+emotion-rich-v2-oud-du-bois-attar-perfume-oil-05,synthetic,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,5,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-oud-du-bois-attar-perfume-oil-06,synthetic,oud-du-bois-attar-perfume-oil,oud du bois attar / perfume oil,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-eau-de-parfum-04,synthetic,oud-eau-de-parfum,oud - eau de parfum,4,0,0,0,0,0,0,1,0,3,7,3
+emotion-rich-v2-oud-eau-de-parfum-05,synthetic,oud-eau-de-parfum,oud - eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-oud-eau-de-parfum-06,synthetic,oud-eau-de-parfum,oud - eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-oud-imperial-eau-de-parfum-04,synthetic,oud-imperial-eau-de-parfum,oud imperial eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-imperial-eau-de-parfum-05,synthetic,oud-imperial-eau-de-parfum,oud imperial eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-imperial-eau-de-parfum-06,synthetic,oud-imperial-eau-de-parfum,oud imperial eau de parfum,6,0,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-04,synthetic,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,4,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-05,synthetic,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,5,0,0,0,0,0,0,0,0,5,5,8
+emotion-rich-v2-oud-maximus-autumn-19-extrait-de-parfum-06,synthetic,oud-maximus-autumn-19-extrait-de-parfum,oud maximus autumn 19 extrait de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-oud-silk-mood-extrait-de-parfum-04,synthetic,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-silk-mood-extrait-de-parfum-05,synthetic,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-silk-mood-extrait-de-parfum-06,synthetic,oud-silk-mood-extrait-de-parfum,oud silk mood - extrait de parfum,6,0,0,0,0,1,0,1,0,6,5,5
+emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-04,synthetic,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-05,synthetic,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-stars-al-khatt-eau-de-parfum-06,synthetic,oud-stars-al-khatt-eau-de-parfum,oud stars - al khatt eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-stars-alexandria-iii-parfum-04,synthetic,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,4,0,0,0,0,1,0,0,0,6,5,5
+emotion-rich-v2-oud-stars-alexandria-iii-parfum-05,synthetic,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,5,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-stars-alexandria-iii-parfum-06,synthetic,oud-stars-alexandria-iii-parfum,oud stars - alexandria iii parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-oud-stars-fars-eau-de-parfum-04,synthetic,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-oud-stars-fars-eau-de-parfum-05,synthetic,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-stars-fars-eau-de-parfum-06,synthetic,oud-stars-fars-eau-de-parfum,oud stars - fars eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-oud-stars-gao-eau-de-parfum-04,synthetic,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-oud-stars-gao-eau-de-parfum-05,synthetic,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-stars-gao-eau-de-parfum-06,synthetic,oud-stars-gao-eau-de-parfum,oud stars - gao eau de parfum,6,0,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-04,synthetic,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-05,synthetic,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,5,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-stars-mamluk-eau-de-parfum-06,synthetic,oud-stars-mamluk-eau-de-parfum,oud stars - mamluk eau de parfum,6,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-oud-sublime-elixir-de-parfum-04,synthetic,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,4,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oud-sublime-elixir-de-parfum-05,synthetic,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-oud-sublime-elixir-de-parfum-06,synthetic,oud-sublime-elixir-de-parfum,oud sublime elixir de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oudh-infini-extrait-de-parfum-04,synthetic,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-oudh-infini-extrait-de-parfum-05,synthetic,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oudh-infini-extrait-de-parfum-06,synthetic,oudh-infini-extrait-de-parfum,oudh infini extrait de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oudmazing-eau-de-parfum-04,synthetic,oudmazing-eau-de-parfum,oudmazing eau de parfum,4,0,0,0,0,0,0,1,0,4,6,4
+emotion-rich-v2-oudmazing-eau-de-parfum-05,synthetic,oudmazing-eau-de-parfum,oudmazing eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oudmazing-eau-de-parfum-06,synthetic,oudmazing-eau-de-parfum,oudmazing eau de parfum,6,0,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-oyedo-eau-de-toilette-04,synthetic,oyedo-eau-de-toilette,oyedo eau de toilette,4,0,0,0,0,1,0,0,0,7,4,5
+emotion-rich-v2-oyedo-eau-de-toilette-05,synthetic,oyedo-eau-de-toilette,oyedo eau de toilette,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-oyedo-eau-de-toilette-06,synthetic,oyedo-eau-de-toilette,oyedo eau de toilette,6,0,0,0,0,1,0,0,0,7,4,5

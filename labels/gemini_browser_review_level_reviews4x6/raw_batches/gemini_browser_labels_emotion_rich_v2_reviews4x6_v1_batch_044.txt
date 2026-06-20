@@ -1,0 +1,52 @@
+Batch 44 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-totally-white-eau-de-parfum-06,synthetic,totally-white-eau-de-parfum,totally white eau de parfum,6,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-trajan-eau-de-parfum-04,synthetic,trajan-eau-de-parfum,trajan eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-trajan-eau-de-parfum-05,synthetic,trajan-eau-de-parfum,trajan eau de parfum,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-trajan-eau-de-parfum-06,synthetic,trajan-eau-de-parfum,trajan eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-tubereuse-couture-eau-de-parfum-04,synthetic,tubereuse-couture-eau-de-parfum,tubereuse couture eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-tubereuse-couture-eau-de-parfum-05,synthetic,tubereuse-couture-eau-de-parfum,tubereuse couture eau de parfum,5,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-tubereuse-couture-eau-de-parfum-06,synthetic,tubereuse-couture-eau-de-parfum,tubereuse couture eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-tuberosa-eau-de-parfum-04,synthetic,tuberosa-eau-de-parfum,tuberosa eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-tuberosa-eau-de-parfum-05,synthetic,tuberosa-eau-de-parfum,tuberosa eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-tuberosa-eau-de-parfum-06,synthetic,tuberosa-eau-de-parfum,tuberosa eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-turquoise-perfume-oil-04,synthetic,turquoise-perfume-oil,turquoise perfume oil,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-turquoise-perfume-oil-05,synthetic,turquoise-perfume-oil,turquoise perfume oil,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-turquoise-perfume-oil-06,synthetic,turquoise-perfume-oil,turquoise perfume oil,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-tuscan-leather-body-spray-scented-body-spray-04,synthetic,tuscan-leather-body-spray-scented-body-spray,tuscan leather body spray scented body spray,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-tuscan-leather-body-spray-scented-body-spray-05,synthetic,tuscan-leather-body-spray-scented-body-spray,tuscan leather body spray scented body spray,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-tuscan-leather-body-spray-scented-body-spray-06,synthetic,tuscan-leather-body-spray-scented-body-spray,tuscan leather body spray scented body spray,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-uden-eau-de-parfum-04,synthetic,uden-eau-de-parfum,uden eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-uden-eau-de-parfum-05,synthetic,uden-eau-de-parfum,uden eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-uden-eau-de-parfum-06,synthetic,uden-eau-de-parfum,uden eau de parfum,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-ummo-eau-de-parfum-04,synthetic,ummo-eau-de-parfum,ummo eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-ummo-eau-de-parfum-05,synthetic,ummo-eau-de-parfum,ummo eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-ummo-eau-de-parfum-06,synthetic,ummo-eau-de-parfum,ummo eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-un-bois-vanille-eau-de-parfum-04,synthetic,un-bois-vanille-eau-de-parfum,un bois vanille eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-un-bois-vanille-eau-de-parfum-05,synthetic,un-bois-vanille-eau-de-parfum,un bois vanille eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-un-bois-vanille-eau-de-parfum-06,synthetic,un-bois-vanille-eau-de-parfum,un bois vanille eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-une-rose-vermeille-eau-de-parfum-04,synthetic,une-rose-vermeille-eau-de-parfum,une rose vermeille eau de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-une-rose-vermeille-eau-de-parfum-05,synthetic,une-rose-vermeille-eau-de-parfum,une rose vermeille eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-une-rose-vermeille-eau-de-parfum-06,synthetic,une-rose-vermeille-eau-de-parfum,une rose vermeille eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-une-tonne-de-roses-eau-de-parfum-04,synthetic,une-tonne-de-roses-eau-de-parfum,une tonne de roses eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-une-tonne-de-roses-eau-de-parfum-05,synthetic,une-tonne-de-roses-eau-de-parfum,une tonne de roses eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-une-tonne-de-roses-eau-de-parfum-06,synthetic,une-tonne-de-roses-eau-de-parfum,une tonne de roses eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vanilla-perfume-oil-04,synthetic,vanilla-perfume-oil,vanilla perfume oil,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-vanilla-perfume-oil-05,synthetic,vanilla-perfume-oil,vanilla perfume oil,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vanilla-perfume-oil-06,synthetic,vanilla-perfume-oil,vanilla perfume oil,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vanille-abricot-eau-de-toilette-04,synthetic,vanille-abricot-eau-de-toilette,vanille abricot eau de toilette,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vanille-abricot-eau-de-toilette-05,synthetic,vanille-abricot-eau-de-toilette,vanille abricot eau de toilette,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vanille-abricot-eau-de-toilette-06,synthetic,vanille-abricot-eau-de-toilette,vanille abricot eau de toilette,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vanille-blackberry-04,synthetic,vanille-blackberry,vanille blackberry,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vanille-blackberry-05,synthetic,vanille-blackberry,vanille blackberry,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vanille-blackberry-06,synthetic,vanille-blackberry,vanille blackberry,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vanille-bourbon-eau-de-parfum-04,synthetic,vanille-bourbon-eau-de-parfum,vanille bourbon eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vanille-bourbon-eau-de-parfum-05,synthetic,vanille-bourbon-eau-de-parfum,vanille bourbon eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-vanille-bourbon-eau-de-parfum-06,synthetic,vanille-bourbon-eau-de-parfum,vanille bourbon eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vanille-coco-04,synthetic,vanille-coco,vanille coco,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vanille-coco-05,synthetic,vanille-coco,vanille coco,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vanille-coco-06,synthetic,vanille-coco,vanille coco,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vanille-extreme-eau-de-toilette-04,synthetic,vanille-extreme-eau-de-toilette,vanille extreme eau de toilette,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vanille-extreme-eau-de-toilette-05,synthetic,vanille-extreme-eau-de-toilette,vanille extreme eau de toilette,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vanille-extreme-eau-de-toilette-06,synthetic,vanille-extreme-eau-de-toilette,vanille extreme eau de toilette,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vanille-fleurie-de-tahiti-eau-de-toilette-04,synthetic,vanille-fleurie-de-tahiti-eau-de-toilette,vanille fleurie de tahiti eau de toilette,4,0,0,0,0,0,0,0,0,5,5,5

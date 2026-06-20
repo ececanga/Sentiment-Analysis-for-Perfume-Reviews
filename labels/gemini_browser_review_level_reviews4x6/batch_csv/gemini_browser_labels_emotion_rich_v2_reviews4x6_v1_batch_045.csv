@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-vanille-fleurie-de-tahiti-eau-de-toilette-05,synthetic,vanille-fleurie-de-tahiti-eau-de-toilette,vanille fleurie de tahiti eau de toilette,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vanille-fleurie-de-tahiti-eau-de-toilette-06,synthetic,vanille-fleurie-de-tahiti-eau-de-toilette,vanille fleurie de tahiti eau de toilette,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vanille-givree-des-antilles-eau-de-toilette-04,synthetic,vanille-givree-des-antilles-eau-de-toilette,vanille givree des antilles eau de toilette,4,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-vanille-givree-des-antilles-eau-de-toilette-05,synthetic,vanille-givree-des-antilles-eau-de-toilette,vanille givree des antilles eau de toilette,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vanille-givree-des-antilles-eau-de-toilette-06,synthetic,vanille-givree-des-antilles-eau-de-toilette,vanille givree des antilles eau de toilette,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vanille-noire-du-mexique-eau-de-toilette-04,synthetic,vanille-noire-du-mexique-eau-de-toilette,vanille noire du mexique eau de toilette,4,0,0,0,1,0,0,0,0,3,6,4
+emotion-rich-v2-vanille-noire-du-mexique-eau-de-toilette-05,synthetic,vanille-noire-du-mexique-eau-de-toilette,vanille noire du mexique eau de toilette,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vanille-noire-du-mexique-eau-de-toilette-06,synthetic,vanille-noire-du-mexique-eau-de-toilette,vanille noire du mexique eau de toilette,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vanille-sauvage-de-madagascar-eau-de-toilette-04,synthetic,vanille-sauvage-de-madagascar-eau-de-toilette,vanille sauvage de madagascar eau de toilette,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vanille-sauvage-de-madagascar-eau-de-toilette-05,synthetic,vanille-sauvage-de-madagascar-eau-de-toilette,vanille sauvage de madagascar eau de toilette,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vanille-sauvage-de-madagascar-eau-de-toilette-06,synthetic,vanille-sauvage-de-madagascar-eau-de-toilette,vanille sauvage de madagascar eau de toilette,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vanille-tonka-eau-de-parfum-04,synthetic,vanille-tonka-eau-de-parfum,vanille tonka eau de parfum,4,0,0,0,0,0,0,1,0,7,4,4
+emotion-rich-v2-vanille-tonka-eau-de-parfum-05,synthetic,vanille-tonka-eau-de-parfum,vanille tonka eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vanille-tonka-eau-de-parfum-06,synthetic,vanille-tonka-eau-de-parfum,vanille tonka eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vanitas-body-cream-scented-body-cream-04,synthetic,vanitas-body-cream-scented-body-cream,vanitas body cream scented body cream,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vanitas-body-cream-scented-body-cream-05,synthetic,vanitas-body-cream-scented-body-cream,vanitas body cream scented body cream,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vanitas-body-cream-scented-body-cream-06,synthetic,vanitas-body-cream-scented-body-cream,vanitas body cream scented body cream,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vanitas-eau-de-parfum-04,synthetic,vanitas-eau-de-parfum,vanitas eau de parfum,4,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vanitas-eau-de-parfum-05,synthetic,vanitas-eau-de-parfum,vanitas eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-vanitas-eau-de-parfum-06,synthetic,vanitas-eau-de-parfum,vanitas eau de parfum,6,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-venetian-bergamot-eau-de-parfum-04,synthetic,venetian-bergamot-eau-de-parfum,venetian bergamot eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-venetian-bergamot-eau-de-parfum-05,synthetic,venetian-bergamot-eau-de-parfum,venetian bergamot eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-venetian-bergamot-eau-de-parfum-06,synthetic,venetian-bergamot-eau-de-parfum,venetian bergamot eau de parfum,6,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vepres-siciliennes-eau-de-parfum-04,synthetic,vepres-siciliennes-eau-de-parfum,vepres siciliennes eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vepres-siciliennes-eau-de-parfum-05,synthetic,vepres-siciliennes-eau-de-parfum,vepres siciliennes eau de parfum,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vepres-siciliennes-eau-de-parfum-06,synthetic,vepres-siciliennes-eau-de-parfum,vepres siciliennes eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-verveine-d-eugene-eau-de-parfum-04,synthetic,verveine-d-eugene-eau-de-parfum,verveine d'eugene eau de parfum,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-verveine-d-eugene-eau-de-parfum-05,synthetic,verveine-d-eugene-eau-de-parfum,verveine d'eugene eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-verveine-d-eugene-eau-de-parfum-06,synthetic,verveine-d-eugene-eau-de-parfum,verveine d'eugene eau de parfum,6,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vetiver-46-eau-de-parfum-04,synthetic,vetiver-46-eau-de-parfum,vetiver 46 eau de parfum,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vetiver-46-eau-de-parfum-05,synthetic,vetiver-46-eau-de-parfum,vetiver 46 eau de parfum,5,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-vetiver-46-eau-de-parfum-06,synthetic,vetiver-46-eau-de-parfum,vetiver 46 eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vetiver-cologne-eau-de-cologne-04,synthetic,vetiver-cologne-eau-de-cologne,vetiver cologne eau de cologne,4,0,0,0,0,0,1,0,0,7,4,4
+emotion-rich-v2-vetiver-cologne-eau-de-cologne-05,synthetic,vetiver-cologne-eau-de-cologne,vetiver cologne eau de cologne,5,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vetiver-cologne-eau-de-cologne-06,synthetic,vetiver-cologne-eau-de-cologne,vetiver cologne eau de cologne,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vetiver-dance-eau-de-toilette-04,synthetic,vetiver-dance-eau-de-toilette,vetiver dance eau de toilette,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vetiver-dance-eau-de-toilette-05,synthetic,vetiver-dance-eau-de-toilette,vetiver dance eau de toilette,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vetiver-dance-eau-de-toilette-06,synthetic,vetiver-dance-eau-de-toilette,vetiver dance eau de toilette,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vetiver-nocturne-absolu-extrait-de-parfum-04,synthetic,vetiver-nocturne-absolu-extrait-de-parfum,vetiver nocturne absolu extrait de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vetiver-nocturne-absolu-extrait-de-parfum-05,synthetic,vetiver-nocturne-absolu-extrait-de-parfum,vetiver nocturne absolu extrait de parfum,5,0,0,0,0,1,0,0,0,7,3,4
+emotion-rich-v2-vetiver-nocturne-absolu-extrait-de-parfum-06,synthetic,vetiver-nocturne-absolu-extrait-de-parfum,vetiver nocturne absolu extrait de parfum,6,0,0,0,0,0,0,0,0,7,4,4
+emotion-rich-v2-vetiver-nocturne-autumn-19-extrait-de-parfum-04,synthetic,vetiver-nocturne-autumn-19-extrait-de-parfum,vetiver nocturne autumn 19 extrait de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vetiver-nocturne-autumn-19-extrait-de-parfum-05,synthetic,vetiver-nocturne-autumn-19-extrait-de-parfum,vetiver nocturne autumn 19 extrait de parfum,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vetiver-nocturne-autumn-19-extrait-de-parfum-06,synthetic,vetiver-nocturne-autumn-19-extrait-de-parfum,vetiver nocturne autumn 19 extrait de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vetiver-oriental-eau-de-parfum-04,synthetic,vetiver-oriental-eau-de-parfum,vetiver oriental eau de parfum,4,0,0,0,0,0,0,0,1,3,6,4
+emotion-rich-v2-vetiver-oriental-eau-de-parfum-05,synthetic,vetiver-oriental-eau-de-parfum,vetiver oriental eau de parfum,5,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vetiver-oriental-eau-de-parfum-06,synthetic,vetiver-oriental-eau-de-parfum,vetiver oriental eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-vetiver-parfum-cologne-04,synthetic,vetiver-parfum-cologne,vetiver parfum cologne,4,0,0,0,0,0,0,0,0,6,5,7
+emotion-rich-v2-vetiver-parfum-cologne-05,synthetic,vetiver-parfum-cologne,vetiver parfum cologne,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-vetiver-parfum-cologne-06,synthetic,vetiver-parfum-cologne,vetiver parfum cologne,6,0,0,0,0,0,0,0,0,6,5,5

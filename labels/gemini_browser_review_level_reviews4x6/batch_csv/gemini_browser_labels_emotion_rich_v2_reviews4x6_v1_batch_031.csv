@@ -1,0 +1,51 @@
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-no-1-for-men-eau-de-parfum-04,synthetic,no-1-for-men-eau-de-parfum,no. 1 for men eau de parfum,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-no-1-for-men-eau-de-parfum-05,synthetic,no-1-for-men-eau-de-parfum,no. 1 for men eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-no-1-for-men-eau-de-parfum-06,synthetic,no-1-for-men-eau-de-parfum,no. 1 for men eau de parfum,6,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-no-1-for-women-eau-de-parfum-04,synthetic,no-1-for-women-eau-de-parfum,no. 1 for women eau de parfum,4,0,0,0,0,0,0,0,0,6,4,5
+emotion-rich-v2-no-1-for-women-eau-de-parfum-05,synthetic,no-1-for-women-eau-de-parfum,no. 1 for women eau de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-no-1-for-women-eau-de-parfum-06,synthetic,no-1-for-women-eau-de-parfum,no. 1 for women eau de parfum,6,0,0,0,0,0,1,1,0,5,5,5
+emotion-rich-v2-no-4-eau-de-toilette-04,synthetic,no-4-eau-de-toilette,no. 4 eau de toilette,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-no-4-eau-de-toilette-05,synthetic,no-4-eau-de-toilette,no. 4 eau de toilette,5,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-no-4-eau-de-toilette-06,synthetic,no-4-eau-de-toilette,no. 4 eau de toilette,6,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-no-6-eau-de-toilette-04,synthetic,no-6-eau-de-toilette,no. 6 eau de toilette,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-no-6-eau-de-toilette-05,synthetic,no-6-eau-de-toilette,no. 6 eau de toilette,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-no-6-eau-de-toilette-06,synthetic,no-6-eau-de-toilette,no. 6 eau de toilette,6,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-no-7-eau-de-toilette-04,synthetic,no-7-eau-de-toilette,no. 7 eau de toilette,4,0,0,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-no-7-eau-de-toilette-05,synthetic,no-7-eau-de-toilette,no. 7 eau de toilette,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-no-7-eau-de-toilette-06,synthetic,no-7-eau-de-toilette,no. 7 eau de toilette,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-no-89-eau-de-toilette-04,synthetic,no-89-eau-de-toilette,no. 89 eau de toilette,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-no-89-eau-de-toilette-05,synthetic,no-89-eau-de-toilette,no. 89 eau de toilette,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-no-89-eau-de-toilette-06,synthetic,no-89-eau-de-toilette,no. 89 eau de toilette,6,0,0,0,0,0,0,1,0,3,6,3
+emotion-rich-v2-noble-vii-cosmos-flower-extrait-de-parfum-04,synthetic,noble-vii-cosmos-flower-extrait-de-parfum,noble vii cosmos flower extrait de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-noble-vii-cosmos-flower-extrait-de-parfum-05,synthetic,noble-vii-cosmos-flower-extrait-de-parfum,noble vii cosmos flower extrait de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-noble-vii-cosmos-flower-extrait-de-parfum-06,synthetic,noble-vii-cosmos-flower-extrait-de-parfum,noble vii cosmos flower extrait de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-noble-vii-rock-rose-extrait-de-parfum-04,synthetic,noble-vii-rock-rose-extrait-de-parfum,noble vii rock rose extrait de parfum,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-noble-vii-rock-rose-extrait-de-parfum-05,synthetic,noble-vii-rock-rose-extrait-de-parfum,noble vii rock rose extrait de parfum,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-noble-vii-rock-rose-extrait-de-parfum-06,synthetic,noble-vii-rock-rose-extrait-de-parfum,noble vii rock rose extrait de parfum,6,0,0,0,0,0,1,0,0,6,4,5
+emotion-rich-v2-noir-de-noir-body-spray-scented-body-spray-04,synthetic,noir-de-noir-body-spray-scented-body-spray,noir de noir body spray scented body spray,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-noir-de-noir-body-spray-scented-body-spray-05,synthetic,noir-de-noir-body-spray-scented-body-spray,noir de noir body spray scented body spray,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-noir-de-noir-body-spray-scented-body-spray-06,synthetic,noir-de-noir-body-spray-scented-body-spray,noir de noir body spray scented body spray,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-noir-exquis-eau-de-parfum-04,synthetic,noir-exquis-eau-de-parfum,noir exquis eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-noir-exquis-eau-de-parfum-05,synthetic,noir-exquis-eau-de-parfum,noir exquis eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-noir-exquis-eau-de-parfum-06,synthetic,noir-exquis-eau-de-parfum,noir exquis eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-noir-patchouli-eau-de-parfum-04,synthetic,noir-patchouli-eau-de-parfum,noir patchouli eau de parfum,4,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-noir-patchouli-eau-de-parfum-05,synthetic,noir-patchouli-eau-de-parfum,noir patchouli eau de parfum,5,0,0,0,0,0,1,0,0,6,5,5
+emotion-rich-v2-noir-patchouli-eau-de-parfum-06,synthetic,noir-patchouli-eau-de-parfum,noir patchouli eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-noorolain-taif-eau-de-parfum-04,synthetic,noorolain-taif-eau-de-parfum,noorolain taif eau de parfum,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-noorolain-taif-eau-de-parfum-05,synthetic,noorolain-taif-eau-de-parfum,noorolain taif eau de parfum,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-noorolain-taif-eau-de-parfum-06,synthetic,noorolain-taif-eau-de-parfum,noorolain taif eau de parfum,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-nordic-noir-04,synthetic,nordic-noir,nordic noir,4,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-nordic-noir-05,synthetic,nordic-noir,nordic noir,5,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-nordic-noir-06,synthetic,nordic-noir,nordic noir,6,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-nostalgia-cologne-eau-de-cologne-04,synthetic,nostalgia-cologne-eau-de-cologne,nostalgia cologne eau de cologne,4,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-nostalgia-cologne-eau-de-cologne-05,synthetic,nostalgia-cologne-eau-de-cologne,nostalgia cologne eau de cologne,5,0,0,0,0,1,0,0,0,7,3,5
+emotion-rich-v2-nostalgia-cologne-eau-de-cologne-06,synthetic,nostalgia-cologne-eau-de-cologne,nostalgia cologne eau de cologne,6,0,0,0,0,0,1,1,0,5,5,5
+emotion-rich-v2-nuit-de-cellophane-eau-de-parfum-04,synthetic,nuit-de-cellophane-eau-de-parfum,nuit de cellophane eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-nuit-de-cellophane-eau-de-parfum-05,synthetic,nuit-de-cellophane-eau-de-parfum,nuit de cellophane eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-nuit-de-cellophane-eau-de-parfum-06,synthetic,nuit-de-cellophane-eau-de-parfum,nuit de cellophane eau de parfum,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-nuit-noire-eau-de-parfum-04,synthetic,nuit-noire-eau-de-parfum,nuit noire eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-nuit-noire-eau-de-parfum-05,synthetic,nuit-noire-eau-de-parfum,nuit noire eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8
+emotion-rich-v2-nuit-noire-eau-de-parfum-06,synthetic,nuit-noire-eau-de-parfum,nuit noire eau de parfum,6,0,0,0,0,0,0,0,0,6,5,5
+emotion-rich-v2-number-one-intense-eau-de-parfum-04,synthetic,number-one-intense-eau-de-parfum,number one intense eau de parfum,4,0,0,0,1,0,0,1,0,3,7,3
+emotion-rich-v2-number-one-intense-eau-de-parfum-05,synthetic,number-one-intense-eau-de-parfum,number one intense eau de parfum,5,0,0,0,0,0,0,0,0,6,5,8

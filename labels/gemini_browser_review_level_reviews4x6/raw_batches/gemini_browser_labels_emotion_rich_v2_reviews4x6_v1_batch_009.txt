@@ -1,0 +1,52 @@
+Batch 9 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-cardinal-eau-de-parfum-05,synthetic,cardinal-eau-de-parfum,cardinal eau de parfum,5,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-cardinal-eau-de-parfum-06,synthetic,cardinal-eau-de-parfum,cardinal eau de parfum,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-carnation-garofano-cologne-eau-de-cologne-04,synthetic,carnation-garofano-cologne-eau-de-cologne,carnation / garofano cologne eau de cologne,4,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-carnation-garofano-cologne-eau-de-cologne-05,synthetic,carnation-garofano-cologne-eau-de-cologne,carnation / garofano cologne eau de cologne,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-carnation-garofano-cologne-eau-de-cologne-06,synthetic,carnation-garofano-cologne-eau-de-cologne,carnation / garofano cologne eau de cologne,6,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-carved-oud-extrait-de-parfum-04,synthetic,carved-oud-extrait-de-parfum,carved oud extrait de parfum,4,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-carved-oud-extrait-de-parfum-05,synthetic,carved-oud-extrait-de-parfum,carved oud extrait de parfum,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-carved-oud-extrait-de-parfum-06,synthetic,carved-oud-extrait-de-parfum,carved oud extrait de parfum,6,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-cedar-woodpecker-eau-de-parfum-04,synthetic,cedar-woodpecker-eau-de-parfum,cedar woodpecker eau de parfum,4,0,0,0,0,1,0,0,0,6,5,6
+emotion-rich-v2-cedar-woodpecker-eau-de-parfum-05,synthetic,cedar-woodpecker-eau-de-parfum,cedar woodpecker eau de parfum,5,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-cedar-woodpecker-eau-de-parfum-06,synthetic,cedar-woodpecker-eau-de-parfum,cedar woodpecker eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-celluloid-x-galbanum-eau-de-parfum-04,synthetic,celluloid-x-galbanum-eau-de-parfum,celluloid x galbanum eau de parfum,4,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-celluloid-x-galbanum-eau-de-parfum-05,synthetic,celluloid-x-galbanum-eau-de-parfum,celluloid x galbanum eau de parfum,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-celluloid-x-galbanum-eau-de-parfum-06,synthetic,celluloid-x-galbanum-eau-de-parfum,celluloid x galbanum eau de parfum,6,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-centrepiece-eau-de-parfum-04,synthetic,centrepiece-eau-de-parfum,centrepiece eau de parfum,4,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-centrepiece-eau-de-parfum-05,synthetic,centrepiece-eau-de-parfum,centrepiece eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-centrepiece-eau-de-parfum-06,synthetic,centrepiece-eau-de-parfum,centrepiece eau de parfum,6,0,0,0,0,1,0,1,0,6,6,7
+emotion-rich-v2-chambre-noire-eau-de-parfum-04,synthetic,chambre-noire-eau-de-parfum,chambre noire eau de parfum,4,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-chambre-noire-eau-de-parfum-05,synthetic,chambre-noire-eau-de-parfum,chambre noire eau de parfum,5,0,0,0,0,1,0,0,0,7,2,5
+emotion-rich-v2-chambre-noire-eau-de-parfum-06,synthetic,chambre-noire-eau-de-parfum,chambre noire eau de parfum,6,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-charade-extrait-de-parfum-04,synthetic,charade-extrait-de-parfum,charade extrait de parfum,4,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-charade-extrait-de-parfum-05,synthetic,charade-extrait-de-parfum,charade extrait de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-charade-extrait-de-parfum-06,synthetic,charade-extrait-de-parfum,charade extrait de parfum,6,0,0,0,0,0,1,1,0,6,4,5
+emotion-rich-v2-chergui-eau-de-parfum-04,synthetic,chergui-eau-de-parfum,chergui eau de parfum,4,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-chergui-eau-de-parfum-05,synthetic,chergui-eau-de-parfum,chergui eau de parfum,5,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-chergui-eau-de-parfum-06,synthetic,chergui-eau-de-parfum,chergui eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-china-white-parfum-extrait-04,synthetic,china-white-parfum-extrait,china white parfum extrait,4,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-china-white-parfum-extrait-05,synthetic,china-white-parfum-extrait,china white parfum extrait,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-china-white-parfum-extrait-06,synthetic,china-white-parfum-extrait,china white parfum extrait,6,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-chloe-sevigny-little-flower-eau-de-parfum-04,synthetic,chloe-sevigny-little-flower-eau-de-parfum,chloe sevigny little flower eau de parfum,4,0,1,0,0,0,0,0,0,4,4,5
+emotion-rich-v2-chloe-sevigny-little-flower-eau-de-parfum-05,synthetic,chloe-sevigny-little-flower-eau-de-parfum,chloe sevigny little flower eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-chloe-sevigny-little-flower-eau-de-parfum-06,synthetic,chloe-sevigny-little-flower-eau-de-parfum,chloe sevigny little flower eau de parfum,6,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-chlorophyll-x-gardenia-eau-de-parfum-04,synthetic,chlorophyll-x-gardenia-eau-de-parfum,chlorophyll x gardenia eau de parfum,4,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-chlorophyll-x-gardenia-eau-de-parfum-05,synthetic,chlorophyll-x-gardenia-eau-de-parfum,chlorophyll x gardenia eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-chlorophyll-x-gardenia-eau-de-parfum-06,synthetic,chlorophyll-x-gardenia-eau-de-parfum,chlorophyll x gardenia eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-chocolat-eau-de-parfum-04,synthetic,chocolat-eau-de-parfum,chocolat eau de parfum,4,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-chocolat-eau-de-parfum-05,synthetic,chocolat-eau-de-parfum,chocolat eau de parfum,5,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-chocolat-eau-de-parfum-06,synthetic,chocolat-eau-de-parfum,chocolat eau de parfum,6,0,1,0,0,0,0,0,0,4,4,5
+emotion-rich-v2-chocolate-greedy-eau-de-parfum-04,synthetic,chocolate-greedy-eau-de-parfum,chocolate greedy eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-chocolate-greedy-eau-de-parfum-05,synthetic,chocolate-greedy-eau-de-parfum,chocolate greedy eau de parfum,5,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-chocolate-greedy-eau-de-parfum-06,synthetic,chocolate-greedy-eau-de-parfum,chocolate greedy eau de parfum,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-chypre-mousse-eau-de-parfum-04,synthetic,chypre-mousse-eau-de-parfum,chypre mousse eau de parfum,4,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-chypre-mousse-eau-de-parfum-05,synthetic,chypre-mousse-eau-de-parfum,chypre mousse eau de parfum,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-chypre-mousse-eau-de-parfum-06,synthetic,chypre-mousse-eau-de-parfum,chypre mousse eau de parfum,6,0,0,0,0,0,0,1,0,6,6,8
+emotion-rich-v2-chypre-siam-eau-de-toilette-04,synthetic,chypre-siam-eau-de-toilette,chypre-siam eau de toilette,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-chypre-siam-eau-de-toilette-05,synthetic,chypre-siam-eau-de-toilette,chypre-siam eau de toilette,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-chypre-siam-eau-de-toilette-06,synthetic,chypre-siam-eau-de-toilette,chypre-siam eau de toilette,6,0,0,0,0,1,0,1,0,6,5,6
+emotion-rich-v2-citta-di-kyoto-cologne-eau-de-cologne-04,synthetic,citta-di-kyoto-cologne-eau-de-cologne,citta di kyoto cologne eau de cologne,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-citta-di-kyoto-cologne-eau-de-cologne-05,synthetic,citta-di-kyoto-cologne-eau-de-cologne,citta di kyoto cologne eau de cologne,5,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-citta-di-kyoto-cologne-eau-de-cologne-06,synthetic,citta-di-kyoto-cologne-eau-de-cologne,citta di kyoto cologne eau de cologne,6,0,0,0,1,0,1,1,0,3,6,4

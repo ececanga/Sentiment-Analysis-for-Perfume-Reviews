@@ -1,0 +1,52 @@
+Batch 7 output:
+synthetic_review_id,source_type,perfume_id,perfume_name,review_index,joy,sadness,anger,fear,trust,surprise,anticipation,disgust,valence,arousal,dominance
+emotion-rich-v2-black-aoud-eau-de-parfum-04,synthetic,black-aoud-eau-de-parfum,black aoud eau de parfum,4,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-black-aoud-eau-de-parfum-05,synthetic,black-aoud-eau-de-parfum,black aoud eau de parfum,5,0,0,0,0,1,0,1,0,6,2,5
+emotion-rich-v2-black-aoud-eau-de-parfum-06,synthetic,black-aoud-eau-de-parfum,black aoud eau de parfum,6,0,0,0,0,0,1,1,0,5,5,5
+emotion-rich-v2-black-caviar-eau-de-parfum-04,synthetic,black-caviar-eau-de-parfum,black caviar eau de parfum,4,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-black-caviar-eau-de-parfum-05,synthetic,black-caviar-eau-de-parfum,black caviar eau de parfum,5,0,0,0,0,1,0,0,0,5,5,5
+emotion-rich-v2-black-caviar-eau-de-parfum-06,synthetic,black-caviar-eau-de-parfum,black caviar eau de parfum,6,0,0,0,0,1,0,1,0,7,2,6
+emotion-rich-v2-black-tourmaline-eau-de-parfum-04,synthetic,black-tourmaline-eau-de-parfum,black tourmaline eau de parfum,4,0,0,0,0,0,0,1,0,6,6,7
+emotion-rich-v2-black-tourmaline-eau-de-parfum-05,synthetic,black-tourmaline-eau-de-parfum,black tourmaline eau de parfum,5,0,0,0,0,1,1,0,0,7,5,5
+emotion-rich-v2-black-tourmaline-eau-de-parfum-06,synthetic,black-tourmaline-eau-de-parfum,black tourmaline eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-black-uddu-eau-de-parfum-04,synthetic,black-uddu-eau-de-parfum,black uddu eau de parfum,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-black-uddu-eau-de-parfum-05,synthetic,black-uddu-eau-de-parfum,black uddu eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-black-uddu-eau-de-parfum-06,synthetic,black-uddu-eau-de-parfum,black uddu eau de parfum,6,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-blanche-eau-de-parfum-04,synthetic,blanche-eau-de-parfum,blanche eau de parfum,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-blanche-eau-de-parfum-05,synthetic,blanche-eau-de-parfum,blanche eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-blanche-eau-de-parfum-06,synthetic,blanche-eau-de-parfum,blanche eau de parfum,6,0,0,0,0,1,1,1,0,6,4,5
+emotion-rich-v2-blenheim-bouquet-eau-de-toilette-04,synthetic,blenheim-bouquet-eau-de-toilette,blenheim bouquet eau de toilette,4,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-blenheim-bouquet-eau-de-toilette-05,synthetic,blenheim-bouquet-eau-de-toilette,blenheim bouquet eau de toilette,5,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-blenheim-bouquet-eau-de-toilette-06,synthetic,blenheim-bouquet-eau-de-toilette,blenheim bouquet eau de toilette,6,0,0,0,0,1,0,1,0,7,3,5
+emotion-rich-v2-blessing-silence-eau-de-parfum-04,synthetic,blessing-silence-eau-de-parfum,blessing silence eau de parfum,4,0,1,0,0,0,0,0,0,5,4,5
+emotion-rich-v2-blessing-silence-eau-de-parfum-05,synthetic,blessing-silence-eau-de-parfum,blessing silence eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-blessing-silence-eau-de-parfum-06,synthetic,blessing-silence-eau-de-parfum,blessing silence eau de parfum,6,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-bloody-wood-eau-de-parfum-04,synthetic,bloody-wood-eau-de-parfum,bloody wood eau de parfum,4,0,0,0,0,1,0,1,0,6,2,5
+emotion-rich-v2-bloody-wood-eau-de-parfum-05,synthetic,bloody-wood-eau-de-parfum,bloody wood eau de parfum,5,0,0,0,0,0,1,1,0,5,5,5
+emotion-rich-v2-bloody-wood-eau-de-parfum-06,synthetic,bloody-wood-eau-de-parfum,bloody wood eau de parfum,6,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-blossom-love-eau-de-parfum-04,synthetic,blossom-love-eau-de-parfum,blossom love eau de parfum,4,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-blossom-love-eau-de-parfum-05,synthetic,blossom-love-eau-de-parfum,blossom love eau de parfum,5,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-blossom-love-eau-de-parfum-06,synthetic,blossom-love-eau-de-parfum,blossom love eau de parfum,6,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-blu-perfume-oil-04,synthetic,blu-perfume-oil,blu perfume oil,4,0,0,0,0,0,1,1,0,5,5,5
+emotion-rich-v2-blu-perfume-oil-05,synthetic,blu-perfume-oil,blu perfume oil,5,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-blu-perfume-oil-06,synthetic,blu-perfume-oil,blu perfume oil,6,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-blue-hope-eau-de-parfum-04,synthetic,blue-hope-eau-de-parfum,blue hope eau de parfum,4,0,0,0,0,1,1,0,0,7,4,5
+emotion-rich-v2-blue-hope-eau-de-parfum-05,synthetic,blue-hope-eau-de-parfum,blue hope eau de parfum,5,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-blue-hope-eau-de-parfum-06,synthetic,blue-hope-eau-de-parfum,blue hope eau de parfum,6,0,0,0,0,0,1,1,0,5,5,5
+emotion-rich-v2-blueberry-musk-eau-de-parfum-04,synthetic,blueberry-musk-eau-de-parfum,blueberry musk eau de parfum,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-blueberry-musk-eau-de-parfum-05,synthetic,blueberry-musk-eau-de-parfum,blueberry musk eau de parfum,5,0,0,0,0,1,1,1,0,7,4,5
+emotion-rich-v2-blueberry-musk-eau-de-parfum-06,synthetic,blueberry-musk-eau-de-parfum,blueberry musk eau de parfum,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-boccanera-parfum-04,synthetic,boccanera-parfum,boccanera parfum,4,0,0,0,0,0,1,1,0,6,5,5
+emotion-rich-v2-boccanera-parfum-05,synthetic,boccanera-parfum,boccanera parfum,5,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-boccanera-parfum-06,synthetic,boccanera-parfum,boccanera parfum,6,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-bohea-boheme-eau-de-parfum-04,synthetic,bohea-boheme-eau-de-parfum,bohea boheme eau de parfum,4,0,0,0,0,1,0,1,0,6,4,6
+emotion-rich-v2-bohea-boheme-eau-de-parfum-05,synthetic,bohea-boheme-eau-de-parfum,bohea boheme eau de parfum,5,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-bohea-boheme-eau-de-parfum-06,synthetic,bohea-boheme-eau-de-parfum,bohea boheme eau de parfum,6,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-bois-blonds-cologne-absolue-04,synthetic,bois-blonds-cologne-absolue,bois blonds cologne absolue,4,0,0,0,0,1,0,1,0,7,2,5
+emotion-rich-v2-bois-blonds-cologne-absolue-05,synthetic,bois-blonds-cologne-absolue,bois blonds cologne absolue,5,1,0,0,0,0,1,1,0,8,6,5
+emotion-rich-v2-bois-blonds-cologne-absolue-06,synthetic,bois-blonds-cologne-absolue,bois blonds cologne absolue,6,0,0,0,1,0,1,1,0,3,6,4
+emotion-rich-v2-bois-de-borneo-oud-04,synthetic,bois-de-borneo-oud,bois de borneo oud,4,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-bois-de-borneo-oud-05,synthetic,bois-de-borneo-oud,bois de borneo oud,5,0,0,0,0,1,0,1,0,7,5,8
+emotion-rich-v2-bois-de-borneo-oud-06,synthetic,bois-de-borneo-oud,bois de borneo oud,6,0,0,0,0,0,0,0,0,5,5,5
+emotion-rich-v2-bois-farine-eau-de-toilette-04,synthetic,bois-farine-eau-de-toilette,bois farine eau de toilette,4,0,0,0,1,0,1,1,0,3,6,3
+emotion-rich-v2-bois-farine-eau-de-toilette-05,synthetic,bois-farine-eau-de-toilette,bois farine eau de toilette,5,0,0,0,0,1,0,1,0,6,4,6
