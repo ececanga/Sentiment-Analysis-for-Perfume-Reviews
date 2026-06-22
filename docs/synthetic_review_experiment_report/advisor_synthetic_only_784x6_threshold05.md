@@ -23,6 +23,7 @@ The experiment uses only synthetic reviews. It does not mix YouTube review rows 
 
 ## Figures
 
+- [Full compact report](table_images/05_synthetic_only_784x6_threshold05_compact_report.png)
 - [Metric plot](table_images/03_synthetic_only_784x6_threshold05_metrics.png)
 - [Readable table](table_images/04_synthetic_only_784x6_threshold05_table.png)
 
@@ -51,4 +52,3 @@ ROC-AUC and PR-AUC are unchanged by the threshold choice because they are rankin
 ## Recommended Wording
 
 > We ran a synthetic-only review-count sweep using the completed 784x6 synthetic corpus. Perfumes were randomly shuffled across five seeds, and each count used complete six-review perfume blocks. After checking threshold sensitivity, we used 0.5 as the single reporting threshold. The results suggest that adding more synthetic reviews improves stability and generally strengthens ranking metrics, but Macro F1 is not perfectly monotonic. This analysis is best treated as advisor-response evidence about the synthetic corpus, not as the main thesis benchmark.
-
