@@ -52,6 +52,19 @@ OFFICIAL_TARGETS = ["joy", "sadness", "fear", "trust", "surprise", "anticipation
 ALL_EMOTIONS = ["joy", "sadness", "anger", "fear", "trust", "surprise", "anticipation", "disgust"]
 VAD_DIMS = ["valence", "arousal", "dominance"]
 
+PAGE_W = 1500
+MARGIN = 34
+CONTENT_W = 1432
+BLUE = "#1d4ed8"
+NAVY = "#172554"
+TEAL = "#0f766e"
+AMBER = "#d97706"
+RED = "#dc2626"
+TEXT = "#111827"
+MUTED = "#475569"
+BORDER = "#cbd5e1"
+SOFT_BG = "#f8fafc"
+
 
 def require(path: Path) -> Path:
     if not path.exists():
@@ -87,6 +100,10 @@ def pct(numerator: int, denominator: int) -> str:
     return f"{100.0 * numerator / denominator:.1f}%"
 
 
+def mean_sd(mean: Any, sd: Any) -> str:
+    return f"Mean {fmt(mean)}\nSD {fmt(sd)}"
+
+
 def wrap_text(value: str, width: int) -> list[str]:
     lines: list[str] = []
     for part in str(value).splitlines():
@@ -111,6 +128,47 @@ def text_element(
     )
 
 
+def metric_style(line: str, default_color: str = TEXT) -> tuple[int, str, str]:
+    if line.startswith("Mean "):
+        return 13, "700", TEXT
+    if line.startswith("SD "):
+        return 11, "400", "#64748b"
+    if line == "Yes":
+        return 13, "700", "#047857"
+    if line.startswith("No"):
+        return 13, "700", "#b45309"
+    return 13, "400", default_color
+
+
+def model_color(value: str) -> str:
+    if value == "Logistic Regression":
+        return BLUE
+    if value == "XGBoost":
+        return RED
+    return TEXT
+
+
+def render_kpi_cards(cards: list[tuple[str, str, str]], y_start: int) -> tuple[list[str], int]:
+    gap = 18
+    card_w = (CONTENT_W - gap * (len(cards) - 1)) // len(cards)
+    card_h = 88
+    colors = [BLUE, TEAL, AMBER, RED]
+    parts: list[str] = []
+    x = MARGIN
+    for index, (label, value, detail) in enumerate(cards):
+        color = colors[index % len(colors)]
+        parts.append(
+            f'<rect x="{x}" y="{y_start}" width="{card_w}" height="{card_h}" rx="10" '
+            f'fill="#ffffff" stroke="{BORDER}" stroke-width="1.2"/>'
+        )
+        parts.append(f'<rect x="{x}" y="{y_start}" width="8" height="{card_h}" rx="4" fill="{color}"/>')
+        parts.append(text_element(x=x + 24, y=y_start + 26, text=label.upper(), size=11, weight="700", color=color))
+        parts.append(text_element(x=x + 24, y=y_start + 55, text=value, size=24, weight="700", color=TEXT))
+        parts.append(text_element(x=x + 24, y=y_start + 76, text=detail, size=12, color=MUTED))
+        x += card_w + gap
+    return parts, y_start + card_h
+
+
 def render_table(
     *,
     title: str,
@@ -121,10 +179,11 @@ def render_table(
     y_start: int,
     x_start: int = 34,
     center_cols: set[int] | None = None,
+    accent: str = BLUE,
 ) -> tuple[list[str], int]:
     center_cols = center_cols or set()
-    pad_x = 9
-    pad_y = 7
+    pad_x = 10
+    pad_y = 9
     line_h = 16
     table_w = sum(widths)
     x_positions = [x_start]
@@ -139,45 +198,68 @@ def render_table(
             wrapped_row.append(wrap_text(str(cell), chars))
         wrapped_rows.append(wrapped_row)
 
-    row_heights = [
-        max(34, max(len(lines) for lines in row) * line_h + 2 * pad_y)
-        for row in wrapped_rows
-    ]
+    row_heights = []
+    for row_idx, row in enumerate(wrapped_rows):
+        min_h = 38 if row_idx == 0 else 42
+        row_heights.append(max(min_h, max(len(lines) for lines in row) * line_h + 2 * pad_y))
 
-    parts = [text_element(x=x_start, y=y_start, text=title, size=18, weight="700")]
-    y = y_start + 28
+    table_y = y_start + 32
+    total_h = sum(row_heights)
+    parts = [
+        f'<rect x="{x_start}" y="{y_start - 21}" width="{table_w}" height="36" rx="7" fill="#ffffff" '
+        f'stroke="#d7e1ef" stroke-width="1"/>',
+        f'<rect x="{x_start}" y="{y_start - 21}" width="8" height="36" rx="4" fill="{accent}"/>',
+        text_element(x=x_start + 20, y=y_start + 2, text=title, size=18, weight="700", color=TEXT),
+        f'<rect x="{x_start}" y="{table_y}" width="{table_w}" height="{total_h}" rx="8" '
+        f'fill="#ffffff" stroke="{BORDER}" stroke-width="1.2"/>',
+    ]
+    y = table_y
     for row_idx, row in enumerate(wrapped_rows):
         row_h = row_heights[row_idx]
-        fill = "#e8eef8" if row_idx == 0 else ("#ffffff" if row_idx % 2 else "#f8fafc")
+        raw_row = ([headers] + rows)[row_idx]
+        first_value = raw_row[0] if raw_row else ""
+        if row_idx == 0:
+            fill = NAVY
+        elif first_value == "Logistic Regression":
+            fill = "#eff6ff" if row_idx % 2 else "#dbeafe"
+        elif first_value == "XGBoost":
+            fill = "#fff7ed" if row_idx % 2 else "#ffedd5"
+        else:
+            fill = "#ffffff" if row_idx % 2 else SOFT_BG
         parts.append(f'<rect x="{x_start}" y="{y}" width="{table_w}" height="{row_h}" fill="{fill}"/>')
         for col_idx, lines in enumerate(row):
             x = x_positions[col_idx]
             width = widths[col_idx]
             parts.append(
                 f'<rect x="{x}" y="{y}" width="{width}" height="{row_h}" '
-                'fill="none" stroke="#cbd5e1" stroke-width="1"/>'
+                f'fill="none" stroke="{BORDER}" stroke-width="0.8"/>'
             )
             is_header = row_idx == 0
             is_numeric = col_idx in numeric_cols
             is_centered = col_idx in center_cols
-            if is_centered:
+            if is_header or is_centered or is_numeric:
                 anchor = "middle"
                 text_x = x + width // 2
-            elif is_numeric:
-                anchor = "end"
-                text_x = x + width - pad_x
             else:
                 anchor = "start"
                 text_x = x + pad_x
-            text_y = y + pad_y + 13
+            block_h = len(lines) * line_h
+            text_y = y + (row_h - block_h) / 2 + 12
+            base_color = "#ffffff" if is_header else (model_color(str(first_value)) if col_idx == 0 else TEXT)
             for line in lines:
+                size, weight, line_color = metric_style(line, base_color)
+                if is_header:
+                    size, weight, line_color = 12, "700", "#ffffff"
+                elif col_idx == 0 and first_value in {"Logistic Regression", "XGBoost"}:
+                    weight = "700"
                 parts.append(
                     text_element(
                         x=text_x,
                         y=text_y,
                         text=line,
-                        size=13,
-                        weight="700" if is_header else "400",
+                        size=size,
+                        weight=weight,
+                        color=line_color,
                         anchor=anchor,
                     )
                 )
@@ -194,22 +276,24 @@ def render_note(
     y_start: int,
     x_start: int = 34,
     width: int = 1432,
+    accent: str = BLUE,
 ) -> tuple[list[str], int]:
-    pad = 12
-    line_h = 16
+    pad = 16
+    line_h = 17
     wrapped: list[str] = []
     for line in lines:
         wrapped.extend(wrap_text(line, max(40, (width - 2 * pad) // 7)))
     box_h = (len(wrapped) + 1) * line_h + 2 * pad
     parts = [
         f'<rect x="{x_start}" y="{y_start}" width="{width}" height="{box_h}" '
-        'rx="4" fill="#f8fafc" stroke="#d6dee9" stroke-width="1"/>'
+        f'rx="9" fill="#ffffff" stroke="#d6dee9" stroke-width="1"/>',
+        f'<rect x="{x_start}" y="{y_start}" width="7" height="{box_h}" rx="4" fill="{accent}"/>',
     ]
     y = y_start + pad + 13
-    parts.append(text_element(x=x_start + pad, y=y, text=title, size=12, weight="700", color="#374151"))
+    parts.append(text_element(x=x_start + pad + 6, y=y, text=title, size=13, weight="700", color=accent))
     y += line_h
     for line in wrapped:
-        parts.append(text_element(x=x_start + pad, y=y, text=line, size=12, color="#374151"))
+        parts.append(text_element(x=x_start + pad + 6, y=y, text=line, size=12, color=MUTED))
         y += line_h
     return parts, y_start + box_h
 
@@ -251,9 +335,9 @@ def threshold05_metric_rows(summary_rows: list[dict[str, str]]) -> list[list[str
                 row["model_family"],
                 row["synthetic_reviews"],
                 row["synthetic_perfumes"],
-                f"{fmt(row['macro_f1_mean'])} +/- {fmt(row['macro_f1_std'])}",
-                f"{fmt(row['macro_roc_auc_mean'])} +/- {fmt(row['macro_roc_auc_std'])}",
-                f"{fmt(row['macro_pr_auc_mean'])} +/- {fmt(row['macro_pr_auc_std'])}",
+                mean_sd(row["macro_f1_mean"], row["macro_f1_std"]),
+                mean_sd(row["macro_roc_auc_mean"], row["macro_roc_auc_std"]),
+                mean_sd(row["macro_pr_auc_mean"], row["macro_pr_auc_std"]),
             ]
         )
     return rows
@@ -266,7 +350,7 @@ def threshold_sensitivity_rows(threshold_rows: list[dict[str, str]]) -> list[lis
             [
                 row["model_family"],
                 fmt(row["threshold"], 2),
-                f"{fmt(row['macro_f1_mean'])} +/- {fmt(row['macro_f1_std'])}",
+                mean_sd(row["macro_f1_mean"], row["macro_f1_std"]),
                 fmt(row["macro_roc_auc_mean"]),
                 fmt(row["macro_pr_auc_mean"]),
             ]
@@ -381,24 +465,50 @@ def main() -> None:
     ]
 
     parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="2400" viewBox="0 0 1500 2400">',
-        '<rect width="100%" height="100%" fill="#ffffff"/>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{PAGE_W}" height="2400" viewBox="0 0 {PAGE_W} 2400">',
+        '<rect width="100%" height="100%" fill="#f4f7fb"/>',
+        f'<rect x="{MARGIN}" y="24" width="{CONTENT_W}" height="126" rx="14" fill="{NAVY}"/>',
+        f'<rect x="{MARGIN}" y="128" width="{CONTENT_W}" height="28" rx="12" fill="#dbeafe"/>',
         text_element(
-            x=34,
-            y=44,
+            x=PAGE_W // 2,
+            y=66,
             text="Advisor Compact Report: Synthetic-Only 784x6 Review Count Sweep",
-            size=25,
+            size=27,
             weight="700",
+            color="#ffffff",
+            anchor="middle",
         ),
         text_element(
-            x=34,
-            y=72,
+            x=PAGE_W // 2,
+            y=96,
             text="Final reporting threshold: 0.5 | Synthetic-only, grouped by perfume_id | Advisor-response / supplementary analysis",
-            size=13,
-            color="#374151",
+            size=14,
+            color="#bfdbfe",
+            anchor="middle",
+        ),
+        text_element(
+            x=PAGE_W // 2,
+            y=146,
+            text="784 perfumes | 4,704 labeled synthetic reviews | complete six-review perfume blocks",
+            size=12,
+            weight="700",
+            color=NAVY,
+            anchor="middle",
         ),
     ]
-    y = 98
+    y = 182
+
+    kpi_parts, y = render_kpi_cards(
+        [
+            ("Rows", "4,704", "labeled synthetic reviews"),
+            ("Perfumes", "784", "unique perfume identities"),
+            ("Reviews", "6 each", "indices 1 through 6"),
+            ("Threshold", "0.5", "final reporting setting"),
+        ],
+        y_start=y,
+    )
+    parts.extend(kpi_parts)
+    y += 26
 
     note_parts, y = render_note(
         title="Executive summary",
@@ -407,6 +517,7 @@ def main() -> None:
             "Perfumes were shuffled first, then complete six-review perfume blocks were selected for each count. Threshold sensitivity was checked; threshold 0.5 is used here as the single reporting threshold.",
         ],
         y_start=y,
+        accent=TEAL,
     )
     parts.extend(note_parts)
     y += 24
@@ -419,6 +530,7 @@ def main() -> None:
         numeric_cols=set(),
         y_start=y,
         center_cols={0},
+        accent=BLUE,
     )
     parts.extend(table_parts)
     y += 24
@@ -431,7 +543,8 @@ def main() -> None:
         numeric_cols={1},
         y_start=y,
         x_start=34,
-        center_cols={0},
+        center_cols={0, 1},
+        accent=TEAL,
     )
     right_parts, right_y = render_table(
         title="3. Evaluation Method",
@@ -442,6 +555,7 @@ def main() -> None:
         y_start=y,
         x_start=716,
         center_cols={0},
+        accent=AMBER,
     )
     parts.extend(left_parts)
     parts.extend(right_parts)
@@ -455,6 +569,7 @@ def main() -> None:
         numeric_cols={0, 1},
         y_start=y,
         center_cols={0, 1, 2},
+        accent=BLUE,
     )
     parts.extend(table_parts)
     y += 24
@@ -467,7 +582,8 @@ def main() -> None:
         numeric_cols={1, 2},
         y_start=y,
         x_start=34,
-        center_cols={0, 3},
+        center_cols={0, 1, 2, 3},
+        accent=TEAL,
     )
     right_parts, right_y = render_table(
         title="6. Combined VAD Labels",
@@ -477,20 +593,22 @@ def main() -> None:
         numeric_cols={1, 2, 3},
         y_start=y,
         x_start=746,
-        center_cols={0},
+        center_cols={0, 1, 2, 3},
+        accent=AMBER,
     )
     parts.extend(left_parts)
     parts.extend(right_parts)
     y = max(left_y, right_y) + 24
 
     table_parts, y = render_table(
-        title="7. Main Threshold-0.5 Metrics, Mean +/- SD Across 5 Random Perfume Orders",
+        title="7. Main Threshold-0.5 Metrics, Mean and SD Across 5 Random Perfume Orders",
         headers=["Model", "Reviews", "Perfumes", "Macro F1", "ROC-AUC", "PR-AUC"],
         rows=threshold05_metric_rows(threshold05_rows),
         widths=[210, 130, 130, 260, 260, 260],
         numeric_cols={1, 2, 3, 4, 5},
         y_start=y,
-        center_cols={0},
+        center_cols={0, 1, 2, 3, 4, 5},
+        accent=RED,
     )
     parts.extend(table_parts)
     y += 24
@@ -502,7 +620,8 @@ def main() -> None:
         widths=[260, 170, 310, 240, 240],
         numeric_cols={1, 2, 3, 4},
         y_start=y,
-        center_cols={0},
+        center_cols={0, 1, 2, 3, 4},
+        accent=BLUE,
     )
     parts.extend(table_parts)
     y += 24
@@ -516,6 +635,7 @@ def main() -> None:
             "Recommended advisor wording: This is synthetic-only advisor-response evidence about the synthetic corpus, not the main thesis benchmark.",
         ],
         y_start=y,
+        accent=TEAL,
     )
     parts.extend(note_parts)
     y += 24
@@ -527,7 +647,8 @@ def main() -> None:
         widths=[185, 250, 120, 130, 180, 180, 180],
         numeric_cols={2, 3, 4, 5, 6},
         y_start=y,
-        center_cols={0, 1},
+        center_cols={0, 1, 2, 3, 4, 5, 6},
+        accent=AMBER,
     )
     parts.extend(table_parts)
     y += 24
@@ -538,6 +659,7 @@ def main() -> None:
             "The 784x3 pilot and 784x6 reporting run are not a direct replacement comparison. The 784x6 corpus adds review indices 4-6 with additional labeled text diversity, and the final reporting threshold is 0.5 rather than 0.3. Lower F1 in 784x6 should be read as a harder and broader synthetic corpus, not as failed generation.",
         ],
         y_start=y,
+        accent=AMBER,
     )
     parts.extend(note_parts)
     y += 24
@@ -550,17 +672,24 @@ def main() -> None:
         numeric_cols=set(),
         y_start=y,
         center_cols={0},
+        accent=BLUE,
     )
     parts.extend(table_parts)
     y += 36
 
     parts.append(
+        f'<rect x="{MARGIN}" y="{y - 18}" width="{CONTENT_W}" height="38" rx="9" fill="#ecfdf5" '
+        'stroke="#bbf7d0" stroke-width="1"/>'
+    )
+    parts.append(
         text_element(
-            x=34,
-            y=y,
+            x=PAGE_W // 2,
+            y=y + 6,
             text="Status: committed outputs exist for labels, 784x6 combined features, threshold sensitivity, focused threshold-0.5 sweep, and advisor-facing report images.",
             size=12,
-            color="#374151",
+            weight="700",
+            color="#047857",
+            anchor="middle",
         )
     )
     y += 30

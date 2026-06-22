@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1380" height="640" viewBox="0 0 1380 640">
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="690.0" y="44.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="middle" >Randomized Synthetic-Only Review Count Sweep</text>
-<text x="690.0" y="70.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#374151" text-anchor="middle" >Grouped cross-validation by perfume_id; points show mean across 5 random perfume orders, whiskers show +/- 1 SD.</text>
+<text x="690.0" y="70.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#374151" text-anchor="middle" >Grouped cross-validation by perfume_id; points show mean across 5 random perfume orders, whiskers show one SD.</text>
 <circle cx="520.0" cy="105.0" r="4.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
 <text x="534.0" y="109.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="start" >Logistic Regression</text>
 <rect x="736.0" y="101.0" width="8" height="8" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>

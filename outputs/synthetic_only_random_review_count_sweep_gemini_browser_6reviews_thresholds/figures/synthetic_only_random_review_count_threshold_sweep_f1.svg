@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1360" height="650" viewBox="0 0 1360 650">
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="680.0" y="44.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="middle" >Synthetic-Only Threshold Sensitivity</text>
-<text x="680.0" y="72.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#374151" text-anchor="middle" >Macro F1 by review count and threshold; points show mean across 5 random perfume orders, whiskers show +/- 1 SD.</text>
+<text x="680.0" y="72.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#374151" text-anchor="middle" >Macro F1 by review count and threshold; points show mean across 5 random perfume orders, whiskers show one SD.</text>
 <circle cx="430.0" cy="112.0" r="4.2" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
 <text x="444.0" y="116.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#111827" text-anchor="start" >threshold 0.25</text>
 <circle cx="570.0" cy="112.0" r="4.2" fill="#059669" stroke="#059669" stroke-width="1"/>

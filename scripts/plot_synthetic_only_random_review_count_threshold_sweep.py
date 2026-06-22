@@ -179,7 +179,7 @@ def build_svg(rows: list[dict[str, str]]) -> str:
         text(
             x=width / 2,
             y=72,
-            value="Macro F1 by review count and threshold; points show mean across 5 random perfume orders, whiskers show +/- 1 SD.",
+            value="Macro F1 by review count and threshold; points show mean across 5 random perfume orders, whiskers show one SD.",
             size=13,
             color="#374151",
             anchor="middle",

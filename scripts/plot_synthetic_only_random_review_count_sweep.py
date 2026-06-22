@@ -214,7 +214,7 @@ def build_svg(rows: list[dict[str, str]]) -> str:
         text(
             x=width / 2,
             y=70,
-            value=f"Grouped cross-validation by perfume_id; points show mean across {run_label} random perfume orders, whiskers show +/- 1 SD.",
+            value=f"Grouped cross-validation by perfume_id; points show mean across {run_label} random perfume orders, whiskers show one SD.",
             size=13,
             color="#374151",
             anchor="middle",
