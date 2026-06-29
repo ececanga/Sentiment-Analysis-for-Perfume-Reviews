@@ -1,0 +1,88 @@
+{
+  "generated_at_utc": "2026-06-23T11:57:10.121957+00:00",
+  "inputs": {
+    "og_features": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "synthetic_3_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "synthetic_6_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_6reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "fold_assignments": "outputs/gemini_browser_og784/model_benchmark/tables/fold_assignments.csv"
+  },
+  "thresholds": [
+    0.3,
+    0.5
+  ],
+  "seed": 42,
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "feature_count": 58,
+  "imbalanced_learn_version": "0.14.2",
+  "validation": {
+    "og": {
+      "rows": 784,
+      "unique_perfumes": 784,
+      "review_indices": [
+        0
+      ],
+      "unique_synthetic_review_ids": 784,
+      "missing_label_values": 0,
+      "fold_rows": 784,
+      "fold_unique_perfumes": 784,
+      "fold_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "synthetic_3": {
+      "rows": 2352,
+      "unique_perfumes": 784,
+      "reviews_per_perfume": 3,
+      "review_indices": [
+        1,
+        2,
+        3
+      ],
+      "per_perfume_counts": [
+        3
+      ],
+      "unique_synthetic_review_ids": 2352,
+      "missing_label_values": 0
+    },
+    "synthetic_6": {
+      "rows": 4704,
+      "unique_perfumes": 784,
+      "reviews_per_perfume": 6,
+      "review_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "per_perfume_counts": [
+        6
+      ],
+      "unique_synthetic_review_ids": 4704,
+      "missing_label_values": 0
+    }
+  },
+  "outputs": {
+    "runs_csv": "outputs/og_synthetic_balancing_ablation_gemini_browser_thresholds/og_synthetic_balancing_ablation_runs.csv",
+    "summary_csv": "outputs/og_synthetic_balancing_ablation_gemini_browser_thresholds/og_synthetic_balancing_ablation_summary.csv",
+    "balanced_winners_csv": "outputs/og_synthetic_balancing_ablation_gemini_browser_thresholds/og_synthetic_balancing_ablation_balanced_winners.csv",
+    "per_label_csv": "outputs/og_synthetic_balancing_ablation_gemini_browser_thresholds/og_synthetic_balancing_ablation_per_label.csv",
+    "label_distribution_csv": "outputs/og_synthetic_balancing_ablation_gemini_browser_thresholds/og_synthetic_balancing_ablation_label_distribution.csv",
+    "summary_md": "outputs/og_synthetic_balancing_ablation_gemini_browser_thresholds/og_synthetic_balancing_ablation_summary.md",
+    "report_json": "outputs/og_synthetic_balancing_ablation_gemini_browser_thresholds/og_synthetic_balancing_ablation_report.json"
+  },
+  "note": "Primary evaluation scope is heldout_og_rows. all_rows_diagnostic is secondary because synthetic rows dominate mixed row counts. Resampling is fold-local and label-local."
+}

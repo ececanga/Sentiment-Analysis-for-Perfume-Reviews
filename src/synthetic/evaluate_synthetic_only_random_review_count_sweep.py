@@ -30,10 +30,31 @@ from src.synthetic.evaluate_review_level_augmentation import (
     select_feature_columns,
     stringify_path,
 )
+from src.synthetic.evaluate_synthetic_only_balancing_ablation import (
+    build_unbalanced_logistic,
+    build_unbalanced_xgboost,
+)
+from src.training.model_benchmark_runner import BenchmarkModelSpec
 from src.utils.paths import PROJECT_ROOT
 
 DEFAULT_REVIEW_COUNTS = [99, 201, 300, 501, 1002, 2001, 2352]
 DEFAULT_PERMUTATION_SEEDS = [101, 202, 303, 404, 505]
+UNWEIGHTED_MODEL_SPECS = {
+    "logistic_regression": BenchmarkModelSpec(
+        model_id="logistic_regression",
+        model_family="Logistic Regression",
+        build_model=build_unbalanced_logistic,
+        model_params={"classifier": {"class_weight": None}},
+        package_names=(),
+    ),
+    "xgboost": BenchmarkModelSpec(
+        model_id="xgboost",
+        model_family="XGBoost",
+        build_model=build_unbalanced_xgboost,
+        model_params={"classifier": {"scale_pos_weight": 1.0}},
+        package_names=("xgboost",),
+    ),
+}
 
 
 def infer_or_validate_reviews_per_perfume(synthetic_df: pd.DataFrame, reviews_per_perfume: int | None) -> int:
@@ -261,6 +282,15 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--permutation-seeds", type=int, nargs="+", default=DEFAULT_PERMUTATION_SEEDS)
     parser.add_argument("--model-id", choices=sorted(MODEL_SPECS), nargs="+", default=sorted(MODEL_SPECS))
+    parser.add_argument(
+        "--model-defaults",
+        choices=["unweighted", "weighted"],
+        default="unweighted",
+        help=(
+            "Use plain unweighted LR/XGBoost defaults, or the older benchmark-weighted "
+            "LR class_weight / XGBoost scale_pos_weight settings."
+        ),
+    )
     parser.add_argument("--threshold", type=float, default=0.3)
     parser.add_argument(
         "--thresholds",
@@ -289,6 +319,7 @@ def main() -> None:
     invalid_thresholds = [threshold for threshold in threshold_values if threshold < 0.0 or threshold > 1.0]
     if invalid_thresholds:
         raise ValueError(f"Thresholds must be between 0 and 1. Invalid values: {invalid_thresholds}")
+    model_specs = UNWEIGHTED_MODEL_SPECS if args.model_defaults == "unweighted" else MODEL_SPECS
 
     keep_cols = [
         "synthetic_review_id",
@@ -314,7 +345,7 @@ def main() -> None:
             )
             eval_df = subset[keep_cols].copy()
             for model_id in args.model_id:
-                model_spec = MODEL_SPECS[model_id]
+                model_spec = model_specs[model_id]
                 predictions, per_label_template, _ = evaluate_grouped_oof(
                     eval_df,
                     model_spec=model_spec,
@@ -360,7 +391,7 @@ def main() -> None:
                         "hamming_loss": float(metrics["hamming_loss"]),
                         "label_cardinality": float(metrics["label_cardinality"]),
                         "predicted_label_cardinality": float(metrics["predicted_label_cardinality"]),
-                        "experiment": "synthetic_only_random_perfume_order_grouped_cv",
+                        "experiment": f"synthetic_only_random_perfume_order_grouped_cv_{args.model_defaults}",
                     }
                     run_rows.append(row)
                     print(
@@ -400,6 +431,7 @@ def main() -> None:
         "reviews_per_perfume": reviews_per_perfume,
         "permutation_seeds": args.permutation_seeds,
         "models": args.model_id,
+        "model_defaults": args.model_defaults,
         "target_columns": target_cols,
         "threshold": args.threshold,
         "thresholds": threshold_values,

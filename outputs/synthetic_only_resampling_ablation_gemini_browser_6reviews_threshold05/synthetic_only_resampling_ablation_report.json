@@ -1,0 +1,54 @@
+{
+  "generated_at_utc": "2026-06-22T17:29:56.254403+00:00",
+  "inputs": {
+    "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_6reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv"
+  },
+  "validation": {
+    "rows": 4704,
+    "unique_perfumes": 784,
+    "review_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "per_perfume_counts": [
+      6
+    ],
+    "unique_synthetic_review_ids": 4704,
+    "missing_label_values": 0
+  },
+  "threshold": 0.5,
+  "n_splits": 5,
+  "model_seed": 42,
+  "permutation_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "imbalanced_learn_version": "0.14.2",
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "feature_count": 58,
+  "outputs": {
+    "runs_csv": "outputs/synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05/synthetic_only_resampling_ablation_runs.csv",
+    "summary_csv": "outputs/synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05/synthetic_only_resampling_ablation_summary.csv",
+    "per_label_runs_csv": "outputs/synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05/synthetic_only_resampling_ablation_per_label_runs.csv",
+    "per_label_csv": "outputs/synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05/synthetic_only_resampling_ablation_per_label.csv",
+    "label_distribution_csv": "outputs/synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05/synthetic_only_resampling_ablation_label_distribution.csv",
+    "summary_md": "outputs/synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05/synthetic_only_resampling_ablation_summary.md",
+    "report_json": "outputs/synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05/synthetic_only_resampling_ablation_report.json"
+  },
+  "note": "Data-level resampling is applied only to each training fold and each binary label classifier. Held-out test folds are never resampled."
+}
