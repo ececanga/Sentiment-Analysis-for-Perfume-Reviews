@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-22T17:48:09.179644+00:00",
+  "generated_at_utc": "2026-06-30T09:05:38.299809+00:00",
   "inputs": {
     "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv"
   },
@@ -28,6 +28,10 @@
     404,
     505
   ],
+  "strategies_run": [
+    "hybrid"
+  ],
+  "merged_existing_outputs": true,
   "imbalanced_learn_version": "0.14.2",
   "target_columns": [
     "joy",

@@ -47,6 +47,7 @@ from src.utils.paths import PROJECT_ROOT
 
 
 DEFAULT_OUT_ROOT = PROJECT_ROOT / "outputs" / "synthetic_only_resampling_ablation_gemini_browser_6reviews_threshold05"
+LABEL_HYBRID_CACHE: dict[tuple[int, int, int], tuple[pd.DataFrame, dict[str, Any]]] = {}
 
 
 def validate_resampling_input(
@@ -91,6 +92,125 @@ def validate_resampling_input(
     if validation["missing_label_values"] != 0:
         raise ValueError(f"Found {validation['missing_label_values']} missing label values.")
     return validation
+
+
+def label_counts(df: pd.DataFrame, target_cols: list[str]) -> pd.Series:
+    return df[target_cols].sum().astype(int)
+
+
+def balance_target(counts: pd.Series) -> int:
+    return max(1, int(round(float(np.median(counts.to_numpy(dtype=float))))))
+
+
+def balance_stats(df: pd.DataFrame, target_cols: list[str], *, prefix: str) -> dict[str, Any]:
+    counts = label_counts(df, target_cols)
+    min_count = int(counts.min())
+    max_count = int(counts.max())
+    return {
+        f"{prefix}_rows": int(len(df)),
+        f"{prefix}_label_min": min_count,
+        f"{prefix}_label_max": max_count,
+        f"{prefix}_label_median": float(np.median(counts.to_numpy(dtype=float))),
+        f"{prefix}_label_sd": float(counts.std(ddof=0)),
+        f"{prefix}_label_max_min_ratio": float(max_count / min_count) if min_count else float("inf"),
+        **{f"{prefix}_count_{label}": int(counts[label]) for label in target_cols},
+    }
+
+
+def row_gain(row: pd.Series, deficits: pd.Series, excesses: pd.Series, target_cols: list[str]) -> float:
+    labels = row[target_cols].astype(int)
+    rare_gain = float((labels * deficits.clip(lower=0)).sum())
+    common_penalty = float((labels * excesses.clip(lower=0)).sum())
+    return rare_gain - 0.25 * common_penalty
+
+
+def oversample_labels_to_target(
+    df: pd.DataFrame,
+    target_cols: list[str],
+    *,
+    target: int,
+    rng: np.random.Generator,
+) -> pd.DataFrame:
+    base = df.reset_index(drop=True).copy()
+    label_matrix = base[target_cols].astype(int).to_numpy()
+    counts_arr = label_matrix.sum(axis=0).astype(int)
+    max_additions = max(0, int(np.clip(target - counts_arr, a_min=0, a_max=None).sum()) * 4)
+    additions: list[pd.Series] = []
+    for _ in range(max_additions):
+        deficits_arr = target - counts_arr
+        if not (deficits_arr > 0).any():
+            break
+        excesses_arr = counts_arr - target
+        label_idx = int(np.argmax(deficits_arr))
+        candidate_positions = np.flatnonzero(label_matrix[:, label_idx] == 1)
+        if len(candidate_positions) == 0:
+            break
+        sample_positions = (
+            rng.choice(candidate_positions, size=100, replace=False)
+            if len(candidate_positions) > 100
+            else candidate_positions
+        )
+        sample_labels = label_matrix[sample_positions]
+        scores = (
+            sample_labels @ np.clip(deficits_arr, a_min=0, a_max=None)
+            - 0.25 * (sample_labels @ np.clip(excesses_arr, a_min=0, a_max=None))
+        )
+        chosen_position = int(sample_positions[int(np.argmax(scores))])
+        chosen = base.iloc[chosen_position].copy()
+        additions.append(chosen)
+        counts_arr = counts_arr + label_matrix[chosen_position]
+    if not additions:
+        return base
+    return pd.concat([base, pd.DataFrame(additions)], ignore_index=True)
+
+
+def undersample_labels_to_target(df: pd.DataFrame, target_cols: list[str], *, target: int) -> pd.DataFrame:
+    out = df.reset_index(drop=True).copy()
+    label_matrix = out[target_cols].astype(int).to_numpy()
+    counts_arr = label_matrix.sum(axis=0).astype(int)
+    excesses_arr = counts_arr - target
+    if not (excesses_arr > 0).any():
+        return out
+    scores = label_matrix @ np.clip(excesses_arr, a_min=0, a_max=None)
+    candidate_indices = np.argsort(-scores).tolist()
+    keep = np.ones(len(out), dtype=bool)
+    for idx in candidate_indices:
+        if scores[idx] <= 0:
+            break
+        positive_label_indices = np.flatnonzero(label_matrix[idx] == 1)
+        if len(positive_label_indices) == 0:
+            keep[idx] = False
+            continue
+        if ((counts_arr[positive_label_indices] - 1) >= target).all():
+            keep[idx] = False
+            counts_arr[positive_label_indices] = counts_arr[positive_label_indices] - 1
+        if not ((counts_arr - target) > 0).any():
+            break
+    return out.loc[keep].reset_index(drop=True)
+
+
+def balance_training_frame(
+    df: pd.DataFrame,
+    target_cols: list[str],
+    *,
+    seed: int,
+) -> tuple[pd.DataFrame, dict[str, Any]]:
+    before = df.reset_index(drop=True).copy()
+    counts = label_counts(before, target_cols)
+    target = balance_target(counts)
+    rng = np.random.default_rng(seed)
+    after = oversample_labels_to_target(
+        undersample_labels_to_target(before, target_cols, target=target),
+        target_cols,
+        target=target,
+        rng=rng,
+    )
+    report = {
+        "label_balance_target": int(target),
+        **balance_stats(before, target_cols, prefix="before"),
+        **balance_stats(after, target_cols, prefix="after"),
+    }
+    return after, report
 
 
 def model_variants() -> list[dict[str, Any]]:
@@ -139,6 +259,20 @@ def model_variants() -> list[dict[str, Any]]:
             "resampling_method": "undersampling",
             "spec": BenchmarkModelSpec(
                 model_id="logistic_regression_undersampling",
+                model_family="Logistic Regression",
+                build_model=build_unbalanced_logistic,
+                model_params={},
+                package_names=(),
+            ),
+        },
+        {
+            "model_id": "logistic_regression_hybrid",
+            "model_family": "Logistic Regression",
+            "strategy": "hybrid",
+            "strategy_detail": "label-distribution undersampling plus oversampling per fold",
+            "resampling_method": "label_hybrid",
+            "spec": BenchmarkModelSpec(
+                model_id="logistic_regression_hybrid",
                 model_family="Logistic Regression",
                 build_model=build_unbalanced_logistic,
                 model_params={},
@@ -203,6 +337,20 @@ def model_variants() -> list[dict[str, Any]]:
             "resampling_method": "undersampling",
             "spec": BenchmarkModelSpec(
                 model_id="xgboost_undersampling",
+                model_family="XGBoost",
+                build_model=build_unbalanced_xgboost,
+                model_params={},
+                package_names=("xgboost",),
+            ),
+        },
+        {
+            "model_id": "xgboost_hybrid",
+            "model_family": "XGBoost",
+            "strategy": "hybrid",
+            "strategy_detail": "label-distribution undersampling plus oversampling per fold",
+            "resampling_method": "label_hybrid",
+            "spec": BenchmarkModelSpec(
+                model_id="xgboost_hybrid",
                 model_family="XGBoost",
                 build_model=build_unbalanced_xgboost,
                 model_params={},
@@ -340,10 +488,33 @@ def evaluate_grouped_oof_with_resampling(
     X = df[feature_cols]
     for fold_id, (train_idx, test_idx) in enumerate(splitter.split(X, groups=groups), start=1):
         predictions.loc[test_idx, "fold_id"] = fold_id
-        X_train = X.iloc[train_idx].reset_index(drop=True)
+        if resampling_method == "label_hybrid":
+            fold_train = df.iloc[train_idx].reset_index(drop=True)
+            cache_key = (id(df), int(seed), int(fold_id))
+            if cache_key in LABEL_HYBRID_CACHE:
+                cached_train, cached_report = LABEL_HYBRID_CACHE[cache_key]
+                balanced_train = cached_train.copy()
+                balance_report = dict(cached_report)
+            else:
+                balanced_train, balance_report = balance_training_frame(
+                    fold_train,
+                    target_cols,
+                    seed=seed + fold_id * 1009,
+                )
+                LABEL_HYBRID_CACHE[cache_key] = (balanced_train.copy(), dict(balance_report))
+            X_train = balanced_train[feature_cols].reset_index(drop=True)
+            y_source = balanced_train
+            fold_resample_status = (
+                f"label_hybrid_train_rows_{len(fold_train)}_to_{len(balanced_train)}"
+                f"_sd_{float(balance_report['after_label_sd']):.2f}"
+            )
+        else:
+            X_train = X.iloc[train_idx].reset_index(drop=True)
+            y_source = df.iloc[train_idx].reset_index(drop=True)
+            fold_resample_status = ""
         X_test = X.iloc[test_idx]
         for target_index, target in enumerate(target_cols):
-            y_train = df[target].iloc[train_idx].astype(int).reset_index(drop=True)
+            y_train = y_source[target].astype(int).reset_index(drop=True)
             if y_train.nunique() < 2:
                 fallback = float(y_train.mean())
                 predictions.loc[test_idx, f"prob_{target}"] = fallback
@@ -352,12 +523,17 @@ def evaluate_grouped_oof_with_resampling(
                 continue
 
             resample_seed = seed + fold_id * 1009 + target_index * 9173
-            X_fit, y_fit, resample_status = resample_training_data(
-                X_train,
-                y_train,
-                method=resampling_method,
-                seed=resample_seed,
-            )
+            if resampling_method == "label_hybrid":
+                X_fit = X_train.copy()
+                y_fit = y_train.copy()
+                resample_status = fold_resample_status
+            else:
+                X_fit, y_fit, resample_status = resample_training_data(
+                    X_train,
+                    y_train,
+                    method=resampling_method,
+                    seed=resample_seed,
+                )
             model = model_spec.build_model(seed, y_fit.to_numpy())
             model.fit(X_fit, y_fit)
             probs = positive_class_probability(model, X_test)
@@ -531,7 +707,7 @@ def write_markdown_report(
     lines = [
         f"# Synthetic-Only {corpus_label} Data-Level Resampling Ablation",
         "",
-        "This compares imbalanced-learn random oversampling, random undersampling, and SMOTE against unbalanced and model-weighted baselines.",
+        "This compares imbalanced-learn random oversampling, random undersampling, SMOTE, and fold-local label-distribution hybrid balancing against unbalanced and model-weighted baselines.",
         "",
         f"- Rows: {validation['rows']}",
         f"- Unique perfumes: {validation['unique_perfumes']}",
@@ -592,6 +768,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--n-splits", type=int, default=5)
     parser.add_argument("--model-seed", type=int, default=42)
     parser.add_argument("--permutation-seeds", type=int, nargs="+", default=DEFAULT_PERMUTATION_SEEDS)
+    parser.add_argument(
+        "--strategies",
+        nargs="+",
+        default=None,
+        help="Optional strategy subset to run, e.g. hybrid. Defaults to all strategies.",
+    )
+    parser.add_argument(
+        "--merge-existing",
+        action="store_true",
+        help="Merge the selected strategy results into existing output CSVs before summarizing.",
+    )
     parser.add_argument("--expected-unique-perfumes", type=int, default=784)
     parser.add_argument("--expected-reviews-per-perfume", type=int, default=None)
     return parser.parse_args()
@@ -627,10 +814,15 @@ def main() -> None:
     labels = label_distribution(base_eval_df, target_cols)
     run_rows: list[dict[str, Any]] = []
     per_label_frames: list[pd.DataFrame] = []
+    selected_strategies = set(args.strategies or [variant["strategy"] for variant in model_variants()])
+    variants = [variant for variant in model_variants() if variant["strategy"] in selected_strategies]
+    missing_strategies = selected_strategies.difference({variant["strategy"] for variant in variants})
+    if missing_strategies:
+        raise ValueError(f"Unknown strategies requested: {sorted(missing_strategies)}")
 
     for permutation_seed in args.permutation_seeds:
         eval_df = reorder_by_perfume_seed(base_eval_df, permutation_seed)
-        for variant in model_variants():
+        for variant in variants:
             _, per_label, metrics = evaluate_grouped_oof_with_resampling(
                 eval_df,
                 model_spec=variant["spec"],
@@ -681,9 +873,7 @@ def main() -> None:
             )
 
     runs = pd.DataFrame(run_rows)
-    summary = add_deltas_vs_unbalanced(aggregate_runs(runs))
     per_label_runs = pd.concat(per_label_frames, ignore_index=True)
-    per_label = add_per_label_deltas_vs_unbalanced(aggregate_per_label(per_label_runs))
 
     runs_path = args.out_root / "synthetic_only_resampling_ablation_runs.csv"
     summary_path = args.out_root / "synthetic_only_resampling_ablation_summary.csv"
@@ -692,6 +882,21 @@ def main() -> None:
     labels_path = args.out_root / "synthetic_only_resampling_ablation_label_distribution.csv"
     report_md_path = args.out_root / "synthetic_only_resampling_ablation_summary.md"
     report_json_path = args.out_root / "synthetic_only_resampling_ablation_report.json"
+
+    if args.merge_existing:
+        if runs_path.exists():
+            existing_runs = pd.read_csv(runs_path)
+            existing_runs = existing_runs[~existing_runs["strategy"].isin(selected_strategies)]
+            runs = pd.concat([existing_runs, runs], ignore_index=True)
+        if per_label_runs_path.exists():
+            existing_per_label_runs = pd.read_csv(per_label_runs_path)
+            existing_per_label_runs = existing_per_label_runs[
+                ~existing_per_label_runs["strategy"].isin(selected_strategies)
+            ]
+            per_label_runs = pd.concat([existing_per_label_runs, per_label_runs], ignore_index=True)
+
+    summary = add_deltas_vs_unbalanced(aggregate_runs(runs))
+    per_label = add_per_label_deltas_vs_unbalanced(aggregate_per_label(per_label_runs))
 
     runs.to_csv(runs_path, index=False)
     summary.to_csv(summary_path, index=False)
@@ -715,6 +920,8 @@ def main() -> None:
         "n_splits": args.n_splits,
         "model_seed": args.model_seed,
         "permutation_seeds": args.permutation_seeds,
+        "strategies_run": sorted(selected_strategies),
+        "merged_existing_outputs": bool(args.merge_existing),
         "imbalanced_learn_version": imblearn.__version__,
         "target_columns": target_cols,
         "feature_count": len(feature_cols),

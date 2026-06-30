@@ -157,7 +157,9 @@ def bold_cell(value: Any) -> str:
 
 def strip_bold(value: Any) -> str:
     text = str(value)
-    return text[len(BOLD_PREFIX) :] if text.startswith(BOLD_PREFIX) else text
+    while text.startswith(BOLD_PREFIX):
+        text = text[len(BOLD_PREFIX) :]
+    return text
 
 
 def parse_score(value: Any) -> float:
@@ -389,6 +391,165 @@ def render_table(
     return parts, y
 
 
+def render_section20_table(
+    *,
+    title: str,
+    rows: list[list[str]],
+    widths: list[int],
+    y_start: int,
+    accent: str,
+    x_start: int = MARGIN,
+) -> tuple[list[str], int]:
+    """Render Section 2.0 with model-family header groups."""
+    pad_x = 10
+    table_w = sum(widths)
+    x_positions = [x_start]
+    for width in widths[:-1]:
+        x_positions.append(x_positions[-1] + width)
+
+    group_h = 34
+    sub_h = 34
+    header_h = group_h + sub_h
+    row_pad_y = 8
+    line_h = 18
+    body_min_h = 42
+    title_gap = 26
+
+    wrapped_rows: list[list[list[str]]] = []
+    bold_cells: list[list[bool]] = []
+    for row in rows:
+        wrapped_row = []
+        bold_row = []
+        for idx, cell in enumerate(row):
+            cell_text = str(cell)
+            is_bold = cell_text.startswith(BOLD_PREFIX)
+            cell_text = strip_bold(cell_text)
+            chars = max(8, (widths[idx] - 2 * pad_x) // 7)
+            wrapped_row.append(wrap_text(cell_text, chars))
+            bold_row.append(is_bold)
+        wrapped_rows.append(wrapped_row)
+        bold_cells.append(bold_row)
+
+    body_heights = [
+        max(body_min_h, max(len(lines) for lines in row) * line_h + 2 * row_pad_y)
+        for row in wrapped_rows
+    ]
+    table_y = y_start + title_gap
+    total_h = header_h + sum(body_heights)
+    parts = [
+        f'<line x1="{x_start}" y1="{y_start - 12}" x2="{x_start}" y2="{y_start + 6}" '
+        f'stroke="{accent}" stroke-width="5" stroke-linecap="round"/>',
+        text_element(x=x_start + 16, y=y_start + 3, text=title, size=16, weight="700"),
+        f'<rect x="{x_start}" y="{table_y}" width="{table_w}" height="{total_h}" rx="8" '
+        f'fill="#ffffff" stroke="{BORDER}" stroke-width="1.2"/>',
+    ]
+
+    # Left header spans both header rows.
+    parts.append(
+        f'<rect x="{x_positions[0]}" y="{table_y}" width="{widths[0]}" height="{header_h}" '
+        f'fill="{NAVY}" stroke="{BORDER}" stroke-width="0.75"/>'
+    )
+    parts.append(
+        text_element(
+            x=x_positions[0] + widths[0] // 2,
+            y=table_y + header_h / 2 + 5,
+            text="Training data",
+            size=13,
+            weight="700",
+            color="#ffffff",
+            anchor="middle",
+        )
+    )
+
+    group_specs = [
+        ("Logistic Regression", 1, 3),
+        ("XGBoost", 4, 6),
+    ]
+    for label, start_col, end_col in group_specs:
+        x = x_positions[start_col]
+        width = sum(widths[start_col : end_col + 1])
+        parts.append(
+            f'<rect x="{x}" y="{table_y}" width="{width}" height="{group_h}" '
+            f'fill="{NAVY}" stroke="{BORDER}" stroke-width="0.75"/>'
+        )
+        parts.append(
+            text_element(
+                x=x + width / 2,
+                y=table_y + 22,
+                text=label,
+                size=13,
+                weight="700",
+                color="#ffffff",
+                anchor="middle",
+            )
+        )
+
+    subheaders = ["No balancing", "Hybrid", "SMOTE", "No balancing", "Hybrid", "SMOTE"]
+    for idx, label in enumerate(subheaders, start=1):
+        x = x_positions[idx]
+        width = widths[idx]
+        parts.append(
+            f'<rect x="{x}" y="{table_y + group_h}" width="{width}" height="{sub_h}" '
+            f'fill="{NAVY}" stroke="{BORDER}" stroke-width="0.75"/>'
+        )
+        parts.append(
+            text_element(
+                x=x + width / 2,
+                y=table_y + group_h + 22,
+                text=label,
+                size=13,
+                weight="700",
+                color="#ffffff",
+                anchor="middle",
+            )
+        )
+
+    y = table_y + header_h
+    for row_idx, row in enumerate(wrapped_rows):
+        raw = rows[row_idx]
+        row_h = body_heights[row_idx]
+        fill = row_fill(raw, row_idx + 1)
+        parts.append(f'<rect x="{x_start}" y="{y}" width="{table_w}" height="{row_h}" fill="{fill}"/>')
+        for col_idx, lines in enumerate(row):
+            x = x_positions[col_idx]
+            width = widths[col_idx]
+            is_best_cell = bold_cells[row_idx][col_idx]
+            cell_fill = "#bbf7d0" if is_best_cell else "none"
+            parts.append(
+                f'<rect x="{x}" y="{y}" width="{width}" height="{row_h}" '
+                f'fill="{cell_fill}" stroke="{BORDER}" stroke-width="0.75"/>'
+            )
+            anchor = "middle" if col_idx != 0 else "start"
+            text_x = x + width // 2 if anchor == "middle" else x + pad_x
+            block_h = len(lines) * line_h
+            text_y = y + (row_h - block_h) / 2 + 12
+            for line in lines:
+                size, weight, color = metric_style(line)
+                if is_best_cell:
+                    weight = "800"
+                    color = "#065f46"
+                parts.append(
+                    text_element(
+                        x=text_x,
+                        y=text_y,
+                        text=line,
+                        size=size,
+                        weight=weight,
+                        color=color,
+                        anchor=anchor,
+                    )
+                )
+                text_y += line_h
+        y += row_h
+
+    separator_x = x_start + sum(widths[:4])
+    parts.append(
+        f'<line x1="{separator_x}" y1="{table_y}" x2="{separator_x}" y2="{table_y + total_h}" '
+        f'stroke="#334155" stroke-width="3" stroke-linecap="square"/>'
+    )
+    return parts, y
+
+
 def render_kpis(cards: list[tuple[str, str, str, str]], y_start: int) -> tuple[list[str], int]:
     gap = 18
     card_w = (CONTENT_W - gap * (len(cards) - 1)) // len(cards)
@@ -488,6 +649,7 @@ def clean_strategy(value: str) -> str:
         "scale_pos_weight": "class weighting",
         "oversampling": "oversampling",
         "undersampling": "undersampling",
+        "hybrid": "hybrid",
         "smote": "SMOTE",
     }
     return mapping.get(str(value), str(value))
@@ -541,9 +703,16 @@ def rows_for_model(rows: list[list[str]], model: str, *, model_col: int = 1) -> 
 def merge_review_count_rows(rows: list[list[str]]) -> list[list[str]]:
     lr_rows = {tuple(row[idx] for idx in [0, 2, 3]): row for row in rows if row[1] == "LR"}
     xgb_rows = {tuple(row[idx] for idx in [0, 2, 3]): row for row in rows if row[1] == "XGBoost"}
+    corpus_order = {
+        "Synthetic 784x3": 0,
+        "Synthetic 784x6": 1,
+        "YouTube only": 2,
+        "YouTube + synthetic 784x3": 3,
+        "YouTube + synthetic 784x6": 4,
+    }
     keys = sorted(
         lr_rows.keys() | xgb_rows.keys(),
-        key=lambda key: (key[0], int(key[1])),
+        key=lambda key: (corpus_order.get(key[0], 99), int(key[1])),
     )
     merged: list[list[str]] = []
     for key in keys:
@@ -899,6 +1068,27 @@ def load_review_count_rows() -> list[list[str]]:
                 fmt(row["macro_pr_auc_mean"]),
             ]
         )
+    mixed = pd.read_csv(require(LABEL_DIST_BAL_SUMMARY)).copy()
+    mixed = mixed[
+        mixed["threshold"].eq(0.3)
+        & mixed["method"].eq("unbalanced")
+        & mixed["data_setup"].isin(
+            ["og_only", "og_plus_synthetic_3reviews", "og_plus_synthetic_6reviews"]
+        )
+    ].copy()
+    mixed = mixed.sort_values(["data_setup", "model_family"])
+    for _, row in mixed.iterrows():
+        rows.append(
+            [
+                display_data_label(str(row["data_label"])),
+                model_short(row["model_family"]),
+                str(int(row["train_rows_original"])),
+                str(int(row["og_train_rows"])),
+                fmt(row["macro_f1"]),
+                fmt(row["macro_roc_auc"]),
+                fmt(row["macro_pr_auc"]),
+            ]
+        )
     return mark_best_scores(rows, group_cols=[0, 1], metric_cols=[4, 5, 6])
 
 
@@ -919,7 +1109,8 @@ def load_synthetic_balancing_rows() -> list[list[str]]:
         "scale_pos_weight": 1,
         "oversampling": 2,
         "undersampling": 3,
-        "smote": 4,
+        "hybrid": 4,
+        "smote": 5,
     }
     data["strategy_order"] = data["strategy"].map(strategy_order)
     data = data.sort_values(["corpus", "model_family", "strategy_order", "strategy"])
@@ -1143,6 +1334,61 @@ def group_label_distribution_balancing_by_method() -> list[tuple[str, list[list[
     return grouped
 
 
+def build_section20_method_snapshot(
+    grouped_tables: list[tuple[str, list[list[str]]]],
+) -> list[list[str]]:
+    """Compare the key Section 2 methods in one compact table."""
+    methods = ["No balancing method", "hybrid", "SMOTE"]
+    setups = ["YouTube only", "YouTube + synthetic 784x3", "YouTube + synthetic 784x6"]
+    by_method = {method: {row[0]: row for row in rows} for method, rows in grouped_tables if method in methods}
+
+    rows: list[list[str]] = []
+    for corpus, path in [("Synthetic 784x3", SYNTH_3_BAL), ("Synthetic 784x6", SYNTH_6_BAL)]:
+        synthetic = pd.read_csv(require(path)).copy()
+        synthetic = synthetic[synthetic["threshold"].eq(0.3)]
+
+        def synthetic_score(model_family: str, strategy: str) -> str:
+            match = synthetic[synthetic["model_family"].eq(model_family) & synthetic["strategy"].eq(strategy)]
+            return "NA" if match.empty else fmt(match.iloc[0]["macro_f1_mean"])
+
+        rows.append(
+            [
+                corpus,
+                synthetic_score("Logistic Regression", "unbalanced"),
+                synthetic_score("Logistic Regression", "hybrid"),
+                synthetic_score("Logistic Regression", "smote"),
+                synthetic_score("XGBoost", "unbalanced"),
+                synthetic_score("XGBoost", "hybrid"),
+                synthetic_score("XGBoost", "smote"),
+            ]
+        )
+    for setup in setups:
+        rows.append(
+            [
+                setup,
+                by_method["No balancing method"][setup][1],
+                by_method["hybrid"][setup][1],
+                by_method["SMOTE"][setup][1],
+                by_method["No balancing method"][setup][3],
+                by_method["hybrid"][setup][3],
+                by_method["SMOTE"][setup][3],
+            ]
+        )
+
+    for row in rows:
+        lr_cols = [1, 2, 3]
+        xgb_cols = [4, 5, 6]
+        best_lr = max(parse_score(row[col]) for col in lr_cols)
+        best_xgb = max(parse_score(row[col]) for col in xgb_cols)
+        for col in lr_cols:
+            if best_lr > float("-inf") and parse_score(row[col]) == best_lr:
+                row[col] = bold_cell(row[col])
+        for col in xgb_cols:
+            if best_xgb > float("-inf") and parse_score(row[col]) == best_xgb:
+                row[col] = bold_cell(row[col])
+    return rows
+
+
 def load_emotion_count_rows() -> list[list[str]]:
     folds = pd.read_csv(require(LABEL_DIST_BAL_FOLDS))
     # The resampled training counts are model-independent; keep one model family
@@ -1291,7 +1537,7 @@ def main() -> None:
 
     count_headers = [
         "Corpus",
-        "Reviews",
+        "Rows",
         "Perfumes",
         "LR F1",
         "XGBoost F1",
@@ -1309,7 +1555,11 @@ def main() -> None:
         merge_cols={0},
     )
     parts.extend(table_parts)
-    note_parts, y = render_method_note("Plain LR/XGBoost defaults; rows are unchanged.", y, MUTED)
+    note_parts, y = render_method_note(
+        "No balancing method; mixed rows are evaluated on YouTube rows.",
+        y,
+        MUTED,
+    )
     parts.extend(note_parts)
     y += SECTION_GAP
 
@@ -1320,6 +1570,20 @@ def main() -> None:
         AMBER,
     )
     parts.extend(heading_parts)
+
+    section20_rows = build_section20_method_snapshot(label_distribution_balance_tables)
+    section20_widths = [170, 112, 112, 112, 135, 135, 135]
+    table_parts, y = render_section20_table(
+        title="2.0 Summary: No Balancing vs Hybrid vs SMOTE",
+        rows=section20_rows,
+        widths=section20_widths,
+        y_start=y,
+        accent=AMBER,
+    )
+    parts.extend(table_parts)
+    note_parts, y = render_method_note("Best F1 in each row/model is shaded.", y, MUTED)
+    parts.extend(note_parts)
+    y += 18
 
     label_distribution_headers = [
         "Training data",

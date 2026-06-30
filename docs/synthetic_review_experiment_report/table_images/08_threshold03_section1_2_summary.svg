@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1544" viewBox="0 0 1000 1544">
+<rect width="100%" height="100%" fill="#f4f7fb"/>
+<text x="38" y="46" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#111827" text-anchor="start">Review Count and Balancing Summary</text>
+<text x="38" y="74" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="start">Threshold 0.3</text>
+<line x1="38" y1="88" x2="38" y2="106" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+<text x="54" y="103" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start">1. Review Count Effect: No Balancing Method</text>
+<rect x="38" y="126" width="625" height="894" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<rect x="38" y="126" width="625" height="40" fill="#172554"/>
+<rect x="38" y="126" width="170" height="40" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="123" y="149.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Corpus</text>
+<rect x="208" y="126" width="75" height="40" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="149.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Rows</text>
+<rect x="283" y="126" width="80" height="40" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="149.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Perfumes</text>
+<rect x="363" y="126" width="150" height="40" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="149.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">LR F1</text>
+<rect x="513" y="126" width="150" height="40" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="149.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">XGBoost F1</text>
+<rect x="38" y="166" width="625" height="52" fill="#eff6ff"/>
+<rect x="208" y="166" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="195.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">99</text>
+<rect x="283" y="166" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="195.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">33</text>
+<rect x="363" y="166" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5931</text>
+<text x="438" y="204.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0491</text>
+<rect x="513" y="166" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5830</text>
+<text x="588" y="204.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0906</text>
+<rect x="38" y="218" width="625" height="52" fill="#dbeafe"/>
+<rect x="208" y="218" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="247.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">201</text>
+<rect x="283" y="218" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="247.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">67</text>
+<rect x="363" y="218" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="238.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5998</text>
+<text x="438" y="256.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0276</text>
+<rect x="513" y="218" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="238.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5877</text>
+<text x="588" y="256.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0533</text>
+<rect x="38" y="270" width="625" height="52" fill="#eff6ff"/>
+<rect x="208" y="270" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="299.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">300</text>
+<rect x="283" y="270" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="299.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">100</text>
+<rect x="363" y="270" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="290.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6043</text>
+<text x="438" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0141</text>
+<rect x="513" y="270" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="290.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6087</text>
+<text x="588" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0202</text>
+<rect x="38" y="322" width="625" height="52" fill="#dbeafe"/>
+<rect x="208" y="322" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">501</text>
+<rect x="283" y="322" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">167</text>
+<rect x="363" y="322" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="342.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6320</text>
+<text x="438" y="360.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0389</text>
+<rect x="513" y="322" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="342.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6055</text>
+<text x="588" y="360.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0140</text>
+<rect x="38" y="374" width="625" height="52" fill="#eff6ff"/>
+<rect x="208" y="374" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="403.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">1002</text>
+<rect x="283" y="374" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="403.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">334</text>
+<rect x="363" y="374" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="394.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6385</text>
+<text x="438" y="412.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0142</text>
+<rect x="513" y="374" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="394.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6251</text>
+<text x="588" y="412.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0157</text>
+<rect x="38" y="426" width="625" height="52" fill="#dbeafe"/>
+<rect x="208" y="426" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="455.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">2001</text>
+<rect x="283" y="426" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="455.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">667</text>
+<rect x="363" y="426" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="446.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6307</text>
+<text x="438" y="464.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0072</text>
+<rect x="513" y="426" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="446.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.6318</text>
+<text x="588" y="464.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0095</text>
+<rect x="38" y="478" width="625" height="52" fill="#eff6ff"/>
+<rect x="208" y="478" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="507.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">2352</text>
+<rect x="283" y="478" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="507.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="363" y="478" width="150" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#065f46" text-anchor="middle">Mean 0.6514</text>
+<text x="438" y="516.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0000</text>
+<rect x="513" y="478" width="150" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#065f46" text-anchor="middle">Mean 0.6576</text>
+<text x="588" y="516.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0056</text>
+<rect x="38" y="530" width="625" height="52" fill="#dcfce7"/>
+<rect x="208" y="530" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="559.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">198</text>
+<rect x="283" y="530" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="559.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">33</text>
+<rect x="363" y="530" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="550.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5524</text>
+<text x="438" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0622</text>
+<rect x="513" y="530" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="550.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5495</text>
+<text x="588" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0675</text>
+<rect x="38" y="582" width="625" height="52" fill="#f0fdf4"/>
+<rect x="208" y="582" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="611.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">402</text>
+<rect x="283" y="582" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="611.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">67</text>
+<rect x="363" y="582" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="602.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5556</text>
+<text x="438" y="620.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0264</text>
+<rect x="513" y="582" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="602.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5494</text>
+<text x="588" y="620.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0173</text>
+<rect x="38" y="634" width="625" height="52" fill="#dcfce7"/>
+<rect x="208" y="634" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="663.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">600</text>
+<rect x="283" y="634" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="663.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">100</text>
+<rect x="363" y="634" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="654.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5744</text>
+<text x="438" y="672.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0167</text>
+<rect x="513" y="634" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="654.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5638</text>
+<text x="588" y="672.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0282</text>
+<rect x="38" y="686" width="625" height="52" fill="#f0fdf4"/>
+<rect x="208" y="686" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="715.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">1002</text>
+<rect x="283" y="686" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="715.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">167</text>
+<rect x="363" y="686" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="706.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5790</text>
+<text x="438" y="724.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0112</text>
+<rect x="513" y="686" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="706.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5616</text>
+<text x="588" y="724.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0096</text>
+<rect x="38" y="738" width="625" height="52" fill="#dcfce7"/>
+<rect x="208" y="738" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="767.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">2004</text>
+<rect x="283" y="738" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="767.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">334</text>
+<rect x="363" y="738" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="758.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5874</text>
+<text x="438" y="776.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0079</text>
+<rect x="513" y="738" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="758.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5596</text>
+<text x="588" y="776.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0124</text>
+<rect x="38" y="790" width="625" height="52" fill="#f0fdf4"/>
+<rect x="208" y="790" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="819.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">4002</text>
+<rect x="283" y="790" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="819.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">667</text>
+<rect x="363" y="790" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="810.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5829</text>
+<text x="438" y="828.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0054</text>
+<rect x="513" y="790" width="150" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="810.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#111827" text-anchor="middle">Mean 0.5797</text>
+<text x="588" y="828.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0052</text>
+<rect x="38" y="842" width="625" height="52" fill="#dcfce7"/>
+<rect x="208" y="842" width="75" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="871.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">4704</text>
+<rect x="283" y="842" width="80" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="871.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="363" y="842" width="150" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="862.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#065f46" text-anchor="middle">Mean 0.5876</text>
+<text x="438" y="880.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0000</text>
+<rect x="513" y="842" width="150" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="862.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#065f46" text-anchor="middle">Mean 0.5800</text>
+<text x="588" y="880.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">SD 0.0018</text>
+<rect x="38" y="894" width="625" height="42" fill="#ffffff"/>
+<rect x="208" y="894" width="75" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="918.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="283" y="894" width="80" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="918.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="363" y="894" width="150" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="918.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.3964</text>
+<rect x="513" y="894" width="150" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="918.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.3601</text>
+<rect x="38" y="936" width="625" height="42" fill="#dbeafe"/>
+<rect x="208" y="936" width="75" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="960.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">3136</text>
+<rect x="283" y="936" width="80" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="960.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="363" y="936" width="150" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="960.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.4131</text>
+<rect x="513" y="936" width="150" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="960.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.3609</text>
+<rect x="38" y="978" width="625" height="42" fill="#f0fdf4"/>
+<rect x="208" y="978" width="75" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="245" y="1002.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">5488</text>
+<rect x="283" y="978" width="80" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="323" y="1002.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">784</text>
+<rect x="363" y="978" width="150" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="438" y="1002.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.3526</text>
+<rect x="513" y="978" width="150" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="588" y="1002.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.4171</text>
+<rect x="38" y="166" width="170" height="364" fill="#eff6ff" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Synthetic 784x3</text>
+<rect x="38" y="530" width="170" height="364" fill="#dcfce7" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="715.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Synthetic 784x6</text>
+<rect x="38" y="894" width="170" height="42" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="918.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">YouTube only</text>
+<rect x="38" y="936" width="170" height="42" fill="#dbeafe" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="951.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">YouTube + synthetic</text>
+<text x="48" y="969.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">784x3</text>
+<rect x="38" y="978" width="170" height="42" fill="#f0fdf4" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="993.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">YouTube + synthetic</text>
+<text x="48" y="1011.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">784x6</text>
+<line x1="513" y1="126" x2="513" y2="1020" stroke="#334155" stroke-width="3" stroke-linecap="square"/>
+<text x="38" y="1037" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">No balancing method; mixed rows are evaluated on YouTube rows.</text>
+<text x="38" y="1116" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#d97706" text-anchor="start">Emotion-count balancing</text>
+<text x="38" y="1136" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">Main comparison: no balancing, hybrid, and SMOTE.</text>
+<line x1="38" y1="1148" x2="38" y2="1166" stroke="#d97706" stroke-width="5" stroke-linecap="round"/>
+<text x="54" y="1163" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start">2.0 Summary: No Balancing vs Hybrid vs SMOTE</text>
+<rect x="38" y="1186" width="911" height="298" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+<rect x="38" y="1186" width="170" height="68" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="123" y="1225.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Training data</text>
+<rect x="208" y="1186" width="336" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="376.0" y="1208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Logistic Regression</text>
+<rect x="544" y="1186" width="405" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="746.5" y="1208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">XGBoost</text>
+<rect x="208" y="1220" width="112" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="264.0" y="1242" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">No balancing</text>
+<rect x="320" y="1220" width="112" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="376.0" y="1242" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Hybrid</text>
+<rect x="432" y="1220" width="112" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="488.0" y="1242" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">SMOTE</text>
+<rect x="544" y="1220" width="135" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="611.5" y="1242" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">No balancing</text>
+<rect x="679" y="1220" width="135" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="746.5" y="1242" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Hybrid</text>
+<rect x="814" y="1220" width="135" height="34" fill="#172554" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="881.5" y="1242" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">SMOTE</text>
+<rect x="38" y="1254" width="911" height="42" fill="#eff6ff"/>
+<rect x="38" y="1254" width="170" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="1278.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Synthetic 784x3</text>
+<rect x="208" y="1254" width="112" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="264" y="1278.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.6514</text>
+<rect x="320" y="1254" width="112" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="376" y="1278.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.6022</text>
+<rect x="432" y="1254" width="112" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="488" y="1278.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.6358</text>
+<rect x="544" y="1254" width="135" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="611" y="1278.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.6576</text>
+<rect x="679" y="1254" width="135" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="746" y="1278.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.6130</text>
+<rect x="814" y="1254" width="135" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="881" y="1278.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.6577</text>
+<rect x="38" y="1296" width="911" height="42" fill="#dcfce7"/>
+<rect x="38" y="1296" width="170" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="1320.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Synthetic 784x6</text>
+<rect x="208" y="1296" width="112" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="264" y="1320.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.5876</text>
+<rect x="320" y="1296" width="112" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="376" y="1320.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.5456</text>
+<rect x="432" y="1296" width="112" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="488" y="1320.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.5731</text>
+<rect x="544" y="1296" width="135" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="611" y="1320.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.5800</text>
+<rect x="679" y="1296" width="135" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="746" y="1320.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.5472</text>
+<rect x="814" y="1296" width="135" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="881" y="1320.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.5967</text>
+<rect x="38" y="1338" width="911" height="42" fill="#ffffff"/>
+<rect x="38" y="1338" width="170" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="1362.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">YouTube only</text>
+<rect x="208" y="1338" width="112" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="264" y="1362.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.3964</text>
+<rect x="320" y="1338" width="112" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="376" y="1362.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.2735</text>
+<rect x="432" y="1338" width="112" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="488" y="1362.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3812</text>
+<rect x="544" y="1338" width="135" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="611" y="1362.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3601</text>
+<rect x="679" y="1338" width="135" height="42" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="746" y="1362.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.2346</text>
+<rect x="814" y="1338" width="135" height="42" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="881" y="1362.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.3695</text>
+<rect x="38" y="1380" width="911" height="52" fill="#dbeafe"/>
+<rect x="38" y="1380" width="170" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="1400.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">YouTube + synthetic</text>
+<text x="48" y="1418.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">784x3</text>
+<rect x="208" y="1380" width="112" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="264" y="1409.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.4131</text>
+<rect x="320" y="1380" width="112" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="376" y="1409.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3323</text>
+<rect x="432" y="1380" width="112" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="488" y="1409.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3787</text>
+<rect x="544" y="1380" width="135" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="611" y="1409.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3609</text>
+<rect x="679" y="1380" width="135" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="746" y="1409.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.3684</text>
+<rect x="814" y="1380" width="135" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="881" y="1409.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3445</text>
+<rect x="38" y="1432" width="911" height="52" fill="#f0fdf4"/>
+<rect x="38" y="1432" width="170" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="48" y="1452.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">YouTube + synthetic</text>
+<text x="48" y="1470.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">784x6</text>
+<rect x="208" y="1432" width="112" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="264" y="1461.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3526</text>
+<rect x="320" y="1432" width="112" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="376" y="1461.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3483</text>
+<rect x="432" y="1432" width="112" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="488" y="1461.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.4051</text>
+<rect x="544" y="1432" width="135" height="52" fill="#bbf7d0" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="611" y="1461.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#065f46" text-anchor="middle">0.4171</text>
+<rect x="679" y="1432" width="135" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="746" y="1461.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.4058</text>
+<rect x="814" y="1432" width="135" height="52" fill="none" stroke="#cbd5e1" stroke-width="0.75"/>
+<text x="881" y="1461.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="middle">0.3662</text>
+<line x1="544" y1="1186" x2="544" y2="1484" stroke="#334155" stroke-width="3" stroke-linecap="square"/>
+<text x="38" y="1501" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">Best F1 in each row/model is shaded.</text>
+</svg>
