@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2026-07-13T20:27:45+00:00",
+  "python_version": "3.13.5",
+  "model_id": "tfidf_logistic_regression",
+  "threshold": 0.3,
+  "input_sha256": {
+    "text_jsonl": "48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f",
+    "label_csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "manifest_csv": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+  }
+}

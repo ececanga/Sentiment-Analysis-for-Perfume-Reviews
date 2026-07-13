@@ -30,6 +30,11 @@ MODEL_INPUTS = {
         PROJECT_ROOT
         / "outputs/logistic_regression_unweighted_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv",
     ),
+    "tfidf_logistic_regression": (
+        "TF-IDF + Logistic Regression (text baseline)",
+        PROJECT_ROOT
+        / "outputs/tfidf_logistic_regression_source_grouped_v1/tfidf_logistic_regression_oof.csv",
+    ),
     "random_forest": (
         "Random Forest",
         PROJECT_ROOT
@@ -193,7 +198,7 @@ def write_report(detail: pd.DataFrame, summary: pd.DataFrame, wide: pd.DataFrame
     lines = [
         "# Source-Grouped OOF Confusion and Prediction Diagnostics",
         "",
-        "All counts use the fixed threshold-0.3 OOF predictions for the same 784 perfumes and repaired source-grouped folds. The unweighted LR is a post-hoc sensitivity row; the other five rows are the accepted benchmark models.",
+        "All counts use the fixed threshold-0.3 OOF predictions for the same 784 perfumes and repaired source-grouped folds. The five accepted models are supplemented by a post-hoc unweighted-LR sensitivity row and a simple TF-IDF text-baseline row.",
         "",
         "## Predicted-positive counts by emotion",
         "",

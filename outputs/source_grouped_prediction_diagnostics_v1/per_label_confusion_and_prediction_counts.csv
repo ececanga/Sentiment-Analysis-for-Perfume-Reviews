@@ -13,6 +13,13 @@ logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),trus
 logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),surprise,784,44,0.05612244897959184,25,0.03188775510204082,5,20,720,39,0.2,0.11363636363636363,0.972972972972973,0.14492753623188406
 logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),anticipation,784,366,0.46683673469387754,642,0.8188775510204082,317,325,93,49,0.4937694704049844,0.8661202185792349,0.22248803827751196,0.628968253968254
 logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),disgust,784,19,0.02423469387755102,21,0.026785714285714284,1,20,745,18,0.047619047619047616,0.05263157894736842,0.9738562091503268,0.05
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),joy,784,622,0.7933673469387755,784,1.0,622,162,0,0,0.7933673469387755,1.0,0.0,0.8847795163584637
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),sadness,784,11,0.01403061224489796,0,0.0,0,0,773,11,,0.0,1.0,0.0
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),fear,784,3,0.003826530612244898,0,0.0,0,0,781,3,,0.0,1.0,0.0
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),trust,784,476,0.6071428571428571,784,1.0,476,308,0,0,0.6071428571428571,1.0,0.0,0.7555555555555555
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),surprise,784,44,0.05612244897959184,0,0.0,0,0,740,44,,0.0,1.0,0.0
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),anticipation,784,366,0.46683673469387754,782,0.9974489795918368,366,416,2,0,0.4680306905370844,1.0,0.004784688995215311,0.6376306620209059
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),disgust,784,19,0.02423469387755102,0,0.0,0,0,765,19,,0.0,1.0,0.0
 random_forest,Random Forest,joy,784,622,0.7933673469387755,784,1.0,622,162,0,0,0.7933673469387755,1.0,0.0,0.8847795163584637
 random_forest,Random Forest,sadness,784,11,0.01403061224489796,0,0.0,0,0,773,11,,0.0,1.0,0.0
 random_forest,Random Forest,fear,784,3,0.003826530612244898,1,0.0012755102040816326,0,1,780,3,0.0,0.0,0.998719590268886,0.0

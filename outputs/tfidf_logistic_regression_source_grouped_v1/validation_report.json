@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "rows": 784,
+  "unique_perfumes": 784,
+  "source_groups": 359,
+  "cross_fold_source_groups": 0,
+  "fold_sizes": {
+    "1": 334,
+    "2": 113,
+    "3": 113,
+    "4": 112,
+    "5": 112
+  },
+  "probability_range_valid": true,
+  "stored_predictions_match_threshold": true,
+  "input_sha256": {
+    "text_jsonl": "48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f",
+    "label_csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "manifest_csv": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+  },
+  "metrics": {
+    "macro_f1": 0.3254236762764179,
+    "macro_roc_auc": 0.54088737388743,
+    "macro_average_precision": 0.30954994193648727,
+    "micro_f1": 0.7525057825751735,
+    "hamming_loss": 0.17547376093294462,
+    "total_predicted_positive": 2350,
+    "mean_predicted_labels_per_perfume": 2.997448979591837
+  }
+}

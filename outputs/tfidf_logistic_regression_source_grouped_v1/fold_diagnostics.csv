@@ -1,0 +1,6 @@
+fold_id,train_perfumes,test_perfumes,train_source_groups,test_source_groups,tfidf_features,train_nonzero_values,test_nonzero_values
+1,450,334,358,1,20000,312424,233016
+2,671,113,269,90,20000,488087,71917
+3,671,113,269,90,20000,479277,79631
+4,672,112,270,89,20000,485945,73097
+5,672,112,270,89,20000,489471,68214

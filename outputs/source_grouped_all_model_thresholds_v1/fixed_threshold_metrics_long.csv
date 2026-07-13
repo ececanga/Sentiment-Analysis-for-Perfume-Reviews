@@ -7,6 +7,10 @@ logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,
 logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,0.36803491692522516,0.7420042643923241,0.17638483965014579,2211,2.82015306122449
 logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,0.34835044282134453,0.7139824082499242,0.17182944606413994,1756,2.239795918367347
 logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,0.23463372084318593,0.5758051846032993,0.1967930029154519,1005,1.281887755102041
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),0.2,diagnostic,0.32526525872063633,0.7521191882866683,0.17583819241982507,2352,3.0
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),0.3,official,0.3254236762764179,0.7525057825751735,0.17547376093294462,2350,2.997448979591837
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),0.5,diagnostic,0.29994050282151746,0.7398739873987399,0.15798104956268222,1792,2.2857142857142856
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),0.7,diagnostic,0.1309771392243058,0.5387580299785867,0.19624635568513119,794,1.0127551020408163
 random_forest,Random Forest,0.2,diagnostic,0.35264732370912455,0.7528205128205128,0.17565597667638483,2359,3.0089285714285716
 random_forest,Random Forest,0.3,official,0.33059648121107,0.7514270887389725,0.17456268221574345,2313,2.9502551020408165
 random_forest,Random Forest,0.5,diagnostic,0.2952102878573467,0.7223557692307693,0.1683673469387755,1787,2.2793367346938775

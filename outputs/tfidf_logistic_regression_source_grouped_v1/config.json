@@ -1,0 +1,39 @@
+{
+  "model_id": "tfidf_logistic_regression",
+  "model_name": "TF-IDF + Logistic Regression",
+  "analysis_role": "simple_text_baseline_not_primary_five_model_benchmark",
+  "threshold": 0.3,
+  "seed": 42,
+  "text_input": "transcript-only perfume-level document_text",
+  "vectorizer": {
+    "type": "TfidfVectorizer",
+    "lowercase": true,
+    "strip_accents": "unicode",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.98,
+    "max_features": 20000,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "fit_scope": "outer-training-fold only"
+  },
+  "classifier": {
+    "type": "LogisticRegression",
+    "max_iter": 2000,
+    "class_weight": null,
+    "solver": "liblinear"
+  },
+  "input_paths": {
+    "text_jsonl": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/datasets/perfume_text_dataset_v1.jsonl",
+    "label_csv": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "manifest": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv"
+  },
+  "input_sha256": {
+    "text_jsonl": "48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f",
+    "label_csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "manifest_csv": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+  }
+}

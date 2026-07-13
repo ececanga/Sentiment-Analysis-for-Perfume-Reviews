@@ -1,6 +1,7 @@
 model_id,model_name,best_diagnostic_threshold,best_macro_f1,official_threshold,official_macro_f1,best_minus_official_macro_f1,selection_note
 logistic_regression_weighted,Logistic Regression (class-weighted),0.3,0.3592487768979632,0.3,0.3592487768979632,0.0,diagnostic_only; official reporting remains threshold 0.3
 logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,0.37985060153233574,0.3,0.36803491692522516,0.011815684607110577,diagnostic_only; official reporting remains threshold 0.3
+tfidf_logistic_regression,TF-IDF + Logistic Regression (text baseline),0.3,0.3254236762764179,0.3,0.3254236762764179,0.0,diagnostic_only; official reporting remains threshold 0.3
 random_forest,Random Forest,0.2,0.35264732370912455,0.3,0.33059648121107,0.022050842498054557,diagnostic_only; official reporting remains threshold 0.3
 xgboost,XGBoost,0.2,0.3409468109692182,0.3,0.3259744723367426,0.014972338632475601,diagnostic_only; official reporting remains threshold 0.3
 bert,BERT,0.3,0.40290501027343134,0.3,0.40290501027343134,0.0,diagnostic_only; official reporting remains threshold 0.3

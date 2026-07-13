@@ -11,6 +11,7 @@ The same saved OOF probability matrix for each model is thresholded at 0.2, 0.3,
 | Logistic Regression (unweighted sensitivity) | 0.3799 | 0.3680 | 0.3484 | 0.2346 |
 | Logistic Regression (class-weighted) | 0.3590 | 0.3592 | 0.2985 | 0.1690 |
 | Random Forest | 0.3526 | 0.3306 | 0.2952 | 0.1669 |
+| TF-IDF + Logistic Regression (text baseline) | 0.3253 | 0.3254 | 0.2999 | 0.1310 |
 | XGBoost | 0.3409 | 0.3260 | 0.2950 | 0.2248 |
 
 ## Threshold-independent ranking metrics
@@ -21,6 +22,7 @@ ROC-AUC and average precision are reported once because changing a cutoff does n
 | --- | --- | --- |
 | Logistic Regression (class-weighted) | 0.5473 | 0.3145 |
 | Logistic Regression (unweighted sensitivity) | 0.5826 | 0.3285 |
+| TF-IDF + Logistic Regression (text baseline) | 0.5409 | 0.3095 |
 | Random Forest | 0.5638 | 0.3346 |
 | XGBoost | 0.5683 | 0.3094 |
 | BERT | 0.5533 | 0.3590 |
@@ -32,9 +34,10 @@ ROC-AUC and average precision are reported once because changing a cutoff does n
 | --- | --- | --- | --- | --- |
 | Logistic Regression (class-weighted) | 0.3000 | 0.3592 | 0.3592 | 0.0000 |
 | Logistic Regression (unweighted sensitivity) | 0.2000 | 0.3799 | 0.3680 | 0.0118 |
+| TF-IDF + Logistic Regression (text baseline) | 0.3000 | 0.3254 | 0.3254 | 0.0000 |
 | Random Forest | 0.2000 | 0.3526 | 0.3306 | 0.0221 |
 | XGBoost | 0.2000 | 0.3409 | 0.3260 | 0.0150 |
 | BERT | 0.3000 | 0.4029 | 0.4029 | 0.0000 |
 | BiLSTM + Attention | 0.2000 | 0.3515 | 0.3486 | 0.0029 |
 
-The unweighted LR is a post-hoc sensitivity model and is not a sixth primary benchmark row.
+The unweighted LR is a post-hoc sensitivity model and TF-IDF + LR is a simple text baseline; neither is an additional primary benchmark row.

@@ -221,7 +221,7 @@ def write_report(
         "",
         dataframe_to_markdown(display_best, float_digits=4),
         "",
-        "The unweighted LR is a post-hoc sensitivity model and is not a sixth primary benchmark row.",
+        "The unweighted LR is a post-hoc sensitivity model and TF-IDF + LR is a simple text baseline; neither is an additional primary benchmark row.",
         "",
     ]
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -301,6 +301,7 @@ def main() -> None:
                 "model_count": len(MODEL_INPUTS),
                 "primary_model_count": 5,
                 "sensitivity_model_count": 1,
+                "simple_text_baseline_count": 1,
                 "thresholds": THRESHOLDS,
                 "official_threshold": OFFICIAL_THRESHOLD,
                 "perfumes_per_model": 784,
