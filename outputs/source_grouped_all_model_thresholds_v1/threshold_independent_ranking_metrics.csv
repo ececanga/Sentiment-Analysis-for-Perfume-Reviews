@@ -1,0 +1,7 @@
+model_id,model_name,macro_roc_auc,macro_average_precision,ranking_metrics_threshold_independent
+logistic_regression_weighted,Logistic Regression (class-weighted),0.547251423837486,0.3144693825465339,True
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5826393197496395,0.3285029554922551,True
+random_forest,Random Forest,0.5637711096919518,0.3345664711619894,True
+xgboost,XGBoost,0.5682939462541757,0.30943262292347656,True
+bert,BERT,0.5532734838046054,0.35896998377082323,True
+bilstm_attention,BiLSTM + Attention,0.4507392074416957,0.2753228902645707,True

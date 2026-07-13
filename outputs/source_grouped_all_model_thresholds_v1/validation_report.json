@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "model_count": 6,
+  "primary_model_count": 5,
+  "sensitivity_model_count": 1,
+  "thresholds": [
+    0.2,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "official_threshold": 0.3,
+  "perfumes_per_model": 784,
+  "long_table_rows": 24,
+  "per_label_table_rows": 168,
+  "shared_truth_verified": true,
+  "shared_fold_assignments_verified": true,
+  "stored_threshold_0_3_predictions_verified": true,
+  "probability_matrix_reused_across_thresholds": true,
+  "ranking_metrics_reported_once_per_model": true,
+  "manifest_sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+  "input_oof_sha256": {
+    "logistic_regression_weighted": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1",
+    "logistic_regression_unweighted": "73ebe945705aa87b719f6e64276b8dab268864e460b2503c52f2c6eddf5f0718",
+    "random_forest": "3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32",
+    "xgboost": "310055d3283c7c6ccf5b26b17516587e74b31d3dfc49b9d00cea911f3918b949",
+    "bert": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d",
+    "bilstm_attention": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624"
+  }
+}

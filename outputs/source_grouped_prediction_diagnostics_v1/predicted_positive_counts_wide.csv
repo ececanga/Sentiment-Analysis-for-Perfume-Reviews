@@ -1,0 +1,8 @@
+label,actual_positive_count,logistic_regression_weighted,logistic_regression_unweighted,random_forest,xgboost,bert,bilstm_attention
+joy,622,706,763,784,757,784,784
+sadness,11,127,5,0,1,0,526
+fear,3,21,3,1,4,1,182
+trust,476,709,752,784,683,784,784
+surprise,44,270,25,1,14,2,780
+anticipation,366,681,642,743,567,784,784
+disgust,19,151,21,0,2,2,489

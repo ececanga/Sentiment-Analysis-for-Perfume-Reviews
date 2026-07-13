@@ -1,0 +1,169 @@
+model_id,model_name,threshold,threshold_role,label,f1,actual_positive_count,predicted_positive_count,true_positive,false_positive,true_negative,false_negative
+logistic_regression_weighted,Logistic Regression (class-weighted),0.2,diagnostic,joy,0.8701393983859135,622,741,593,148,14,29
+logistic_regression_weighted,Logistic Regression (class-weighted),0.2,diagnostic,sadness,0.037267080745341616,11,150,3,147,626,8
+logistic_regression_weighted,Logistic Regression (class-weighted),0.2,diagnostic,fear,0.06666666666666667,3,27,1,26,755,2
+logistic_regression_weighted,Logistic Regression (class-weighted),0.2,diagnostic,trust,0.7520259319286872,476,758,464,294,14,12
+logistic_regression_weighted,Logistic Regression (class-weighted),0.2,diagnostic,surprise,0.12121212121212122,44,352,24,328,412,20
+logistic_regression_weighted,Logistic Regression (class-weighted),0.2,diagnostic,anticipation,0.6467931345980127,366,741,358,383,35,8
+logistic_regression_weighted,Logistic Regression (class-weighted),0.2,diagnostic,disgust,0.019138755980861243,19,190,2,188,577,17
+logistic_regression_weighted,Logistic Regression (class-weighted),0.3,official,joy,0.8614457831325302,622,706,572,134,28,50
+logistic_regression_weighted,Logistic Regression (class-weighted),0.3,official,sadness,0.043478260869565216,11,127,3,124,649,8
+logistic_regression_weighted,Logistic Regression (class-weighted),0.3,official,fear,0.08333333333333333,3,21,1,20,761,2
+logistic_regression_weighted,Logistic Regression (class-weighted),0.3,official,trust,0.7375527426160338,476,709,437,272,36,39
+logistic_regression_weighted,Logistic Regression (class-weighted),0.3,official,surprise,0.12738853503184713,44,270,20,250,490,24
+logistic_regression_weighted,Logistic Regression (class-weighted),0.3,official,anticipation,0.6380133715377269,366,681,334,347,71,32
+logistic_regression_weighted,Logistic Regression (class-weighted),0.3,official,disgust,0.023529411764705882,19,151,2,149,616,17
+logistic_regression_weighted,Logistic Regression (class-weighted),0.5,diagnostic,joy,0.7421052631578947,622,518,423,95,67,199
+logistic_regression_weighted,Logistic Regression (class-weighted),0.5,diagnostic,sadness,0.019417475728155338,11,92,1,91,682,10
+logistic_regression_weighted,Logistic Regression (class-weighted),0.5,diagnostic,fear,0.0,3,12,0,12,769,3
+logistic_regression_weighted,Logistic Regression (class-weighted),0.5,diagnostic,trust,0.5861297539149888,476,418,262,156,152,214
+logistic_regression_weighted,Logistic Regression (class-weighted),0.5,diagnostic,surprise,0.1553398058252427,44,162,16,146,594,28
+logistic_regression_weighted,Logistic Regression (class-weighted),0.5,diagnostic,anticipation,0.5528662420382165,366,419,217,202,216,149
+logistic_regression_weighted,Logistic Regression (class-weighted),0.5,diagnostic,disgust,0.03389830508474576,19,99,2,97,668,17
+logistic_regression_weighted,Logistic Regression (class-weighted),0.7,diagnostic,joy,0.44807467911318555,622,235,192,43,119,430
+logistic_regression_weighted,Logistic Regression (class-weighted),0.7,diagnostic,sadness,0.029411764705882353,11,57,1,56,717,10
+logistic_regression_weighted,Logistic Regression (class-weighted),0.7,diagnostic,fear,0.0,3,9,0,9,772,3
+logistic_regression_weighted,Logistic Regression (class-weighted),0.7,diagnostic,trust,0.2222222222222222,476,100,64,36,272,412
+logistic_regression_weighted,Logistic Regression (class-weighted),0.7,diagnostic,surprise,0.2222222222222222,44,82,14,68,672,30
+logistic_regression_weighted,Logistic Regression (class-weighted),0.7,diagnostic,anticipation,0.23700623700623702,366,115,57,58,360,309
+logistic_regression_weighted,Logistic Regression (class-weighted),0.7,diagnostic,disgust,0.024096385542168676,19,64,1,63,702,18
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,diagnostic,joy,0.8776978417266187,622,768,610,158,4,12
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,diagnostic,sadness,0.09090909090909091,11,11,1,10,763,10
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,diagnostic,fear,0.0,3,4,0,4,777,3
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,diagnostic,trust,0.7514078841512469,476,767,467,300,8,9
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,diagnostic,surprise,0.25,44,44,11,33,707,33
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,diagnostic,anticipation,0.6472727272727272,366,734,356,378,40,10
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.2,diagnostic,disgust,0.041666666666666664,19,29,1,28,737,18
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,joy,0.8765342960288809,622,763,607,156,6,15
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,sadness,0.125,11,5,1,4,769,10
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,fear,0.0,3,3,0,3,778,3
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,trust,0.750814332247557,476,752,461,291,17,15
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,surprise,0.14492753623188406,44,25,5,20,720,39
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,anticipation,0.628968253968254,366,642,317,325,93,49
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.3,official,disgust,0.05,19,21,1,20,745,18
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,joy,0.8682284040995608,622,744,593,151,11,29
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,sadness,0.16666666666666666,11,1,1,0,773,10
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,fear,0.0,3,3,0,3,778,3
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,trust,0.7088607594936709,476,630,392,238,70,84
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,surprise,0.10526315789473684,44,13,3,10,730,41
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,anticipation,0.518005540166205,366,356,187,169,249,179
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.5,diagnostic,disgust,0.07142857142857142,19,9,1,8,757,18
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,joy,0.8396591789310612,622,669,542,127,35,80
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,sadness,0.0,11,0,0,0,773,11
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,fear,0.0,3,2,0,2,779,3
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,trust,0.4,476,229,141,88,220,335
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,surprise,0.11538461538461539,44,8,3,5,735,41
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,anticipation,0.20043572984749455,366,93,46,47,371,320
+logistic_regression_unweighted,Logistic Regression (unweighted sensitivity),0.7,diagnostic,disgust,0.08695652173913043,19,4,1,3,762,18
+random_forest,Random Forest,0.2,diagnostic,joy,0.8847795163584637,622,784,622,162,0,0
+random_forest,Random Forest,0.2,diagnostic,sadness,0.0,11,0,0,0,773,11
+random_forest,Random Forest,0.2,diagnostic,fear,0.0,3,1,0,1,780,3
+random_forest,Random Forest,0.2,diagnostic,trust,0.7555555555555555,476,784,476,308,0,0
+random_forest,Random Forest,0.2,diagnostic,surprise,0.19230769230769232,44,8,5,3,737,39
+random_forest,Random Forest,0.2,diagnostic,anticipation,0.6358885017421603,366,782,365,417,1,1
+random_forest,Random Forest,0.2,diagnostic,disgust,0.0,19,0,0,0,765,19
+random_forest,Random Forest,0.3,official,joy,0.8847795163584637,622,784,622,162,0,0
+random_forest,Random Forest,0.3,official,sadness,0.0,11,0,0,0,773,11
+random_forest,Random Forest,0.3,official,fear,0.0,3,1,0,1,780,3
+random_forest,Random Forest,0.3,official,trust,0.7555555555555555,476,784,476,308,0,0
+random_forest,Random Forest,0.3,official,surprise,0.044444444444444446,44,1,1,0,740,43
+random_forest,Random Forest,0.3,official,anticipation,0.6293958521190262,366,743,349,394,24,17
+random_forest,Random Forest,0.3,official,disgust,0.0,19,0,0,0,765,19
+random_forest,Random Forest,0.5,diagnostic,joy,0.8846153846153846,622,782,621,161,1,1
+random_forest,Random Forest,0.5,diagnostic,sadness,0.0,11,0,0,0,773,11
+random_forest,Random Forest,0.5,diagnostic,fear,0.0,3,0,0,0,781,3
+random_forest,Random Forest,0.5,diagnostic,trust,0.7263513513513513,476,708,430,278,30,46
+random_forest,Random Forest,0.5,diagnostic,surprise,0.0,44,0,0,0,740,44
+random_forest,Random Forest,0.5,diagnostic,anticipation,0.4555052790346908,366,297,151,146,272,215
+random_forest,Random Forest,0.5,diagnostic,disgust,0.0,19,0,0,0,765,19
+random_forest,Random Forest,0.7,diagnostic,joy,0.8580106302201974,622,695,565,130,32,57
+random_forest,Random Forest,0.7,diagnostic,sadness,0.0,11,0,0,0,773,11
+random_forest,Random Forest,0.7,diagnostic,fear,0.0,3,0,0,0,781,3
+random_forest,Random Forest,0.7,diagnostic,trust,0.2730263157894737,476,132,83,49,259,393
+random_forest,Random Forest,0.7,diagnostic,surprise,0.0,44,0,0,0,740,44
+random_forest,Random Forest,0.7,diagnostic,anticipation,0.037333333333333336,366,9,7,2,416,359
+random_forest,Random Forest,0.7,diagnostic,disgust,0.0,19,0,0,0,765,19
+xgboost,XGBoost,0.2,diagnostic,joy,0.8847530422333572,622,775,618,157,5,4
+xgboost,XGBoost,0.2,diagnostic,sadness,0.0,11,4,0,4,769,11
+xgboost,XGBoost,0.2,diagnostic,fear,0.0,3,5,0,5,776,3
+xgboost,XGBoost,0.2,diagnostic,trust,0.7438825448613376,476,750,456,294,14,20
+xgboost,XGBoost,0.2,diagnostic,surprise,0.15151515151515152,44,22,5,17,723,39
+xgboost,XGBoost,0.2,diagnostic,anticipation,0.6064769381746811,366,653,309,344,74,57
+xgboost,XGBoost,0.2,diagnostic,disgust,0.0,19,3,0,3,762,19
+xgboost,XGBoost,0.3,official,joy,0.8774474256707759,622,757,605,152,10,17
+xgboost,XGBoost,0.3,official,sadness,0.0,11,1,0,1,772,11
+xgboost,XGBoost,0.3,official,fear,0.0,3,4,0,4,777,3
+xgboost,XGBoost,0.3,official,trust,0.7178602243313201,476,683,416,267,41,60
+xgboost,XGBoost,0.3,official,surprise,0.10344827586206896,44,14,3,11,729,41
+xgboost,XGBoost,0.3,official,anticipation,0.5830653804930332,366,567,272,295,123,94
+xgboost,XGBoost,0.3,official,disgust,0.0,19,2,0,2,763,19
+xgboost,XGBoost,0.5,diagnostic,joy,0.8467374810318664,622,696,558,138,24,64
+xgboost,XGBoost,0.5,diagnostic,sadness,0.0,11,0,0,0,773,11
+xgboost,XGBoost,0.5,diagnostic,fear,0.0,3,1,0,1,780,3
+xgboost,XGBoost,0.5,diagnostic,trust,0.6204819277108434,476,520,309,211,97,167
+xgboost,XGBoost,0.5,diagnostic,surprise,0.1111111111111111,44,10,3,7,733,41
+xgboost,XGBoost,0.5,diagnostic,anticipation,0.48686030428769017,366,357,176,181,237,190
+xgboost,XGBoost,0.5,diagnostic,disgust,0.0,19,1,0,1,764,19
+xgboost,XGBoost,0.7,diagnostic,joy,0.7791563275434243,622,587,471,116,46,151
+xgboost,XGBoost,0.7,diagnostic,sadness,0.0,11,0,0,0,773,11
+xgboost,XGBoost,0.7,diagnostic,fear,0.0,3,1,0,1,780,3
+xgboost,XGBoost,0.7,diagnostic,trust,0.43636363636363634,476,294,168,126,182,308
+xgboost,XGBoost,0.7,diagnostic,surprise,0.044444444444444446,44,1,1,0,740,43
+xgboost,XGBoost,0.7,diagnostic,anticipation,0.31365313653136534,366,176,85,91,327,281
+xgboost,XGBoost,0.7,diagnostic,disgust,0.0,19,0,0,0,765,19
+bert,BERT,0.2,diagnostic,joy,0.8847795163584637,622,784,622,162,0,0
+bert,BERT,0.2,diagnostic,sadness,0.0,11,2,0,2,771,11
+bert,BERT,0.2,diagnostic,fear,0.4,3,2,1,1,780,2
+bert,BERT,0.2,diagnostic,trust,0.7555555555555555,476,784,476,308,0,0
+bert,BERT,0.2,diagnostic,surprise,0.07142857142857142,44,68,4,64,676,40
+bert,BERT,0.2,diagnostic,anticipation,0.6365217391304347,366,784,366,418,0,0
+bert,BERT,0.2,diagnostic,disgust,0.0,19,4,0,4,761,19
+bert,BERT,0.3,official,joy,0.8847795163584637,622,784,622,162,0,0
+bert,BERT,0.3,official,sadness,0.0,11,0,0,0,773,11
+bert,BERT,0.3,official,fear,0.5,3,1,1,0,781,2
+bert,BERT,0.3,official,trust,0.7555555555555555,476,784,476,308,0,0
+bert,BERT,0.3,official,surprise,0.043478260869565216,44,2,1,1,739,43
+bert,BERT,0.3,official,anticipation,0.6365217391304347,366,784,366,418,0,0
+bert,BERT,0.3,official,disgust,0.0,19,2,0,2,763,19
+bert,BERT,0.5,diagnostic,joy,0.8792480115690527,622,761,608,153,9,14
+bert,BERT,0.5,diagnostic,sadness,0.0,11,0,0,0,773,11
+bert,BERT,0.5,diagnostic,fear,0.0,3,0,0,0,781,3
+bert,BERT,0.5,diagnostic,trust,0.5663082437275986,476,361,237,124,184,239
+bert,BERT,0.5,diagnostic,surprise,0.0,44,0,0,0,740,44
+bert,BERT,0.5,diagnostic,anticipation,0.5839243498817966,366,480,247,233,185,119
+bert,BERT,0.5,diagnostic,disgust,0.0,19,0,0,0,765,19
+bert,BERT,0.7,diagnostic,joy,0.0,622,0,0,0,162,622
+bert,BERT,0.7,diagnostic,sadness,0.0,11,0,0,0,773,11
+bert,BERT,0.7,diagnostic,fear,0.0,3,0,0,0,781,3
+bert,BERT,0.7,diagnostic,trust,0.0,476,0,0,0,308,476
+bert,BERT,0.7,diagnostic,surprise,0.0,44,0,0,0,740,44
+bert,BERT,0.7,diagnostic,anticipation,0.0,366,0,0,0,418,366
+bert,BERT,0.7,diagnostic,disgust,0.0,19,0,0,0,765,19
+bilstm_attention,BiLSTM + Attention,0.2,diagnostic,joy,0.8847795163584637,622,784,622,162,0,0
+bilstm_attention,BiLSTM + Attention,0.2,diagnostic,sadness,0.028795811518324606,11,753,11,742,31,0
+bilstm_attention,BiLSTM + Attention,0.2,diagnostic,fear,0.006349206349206349,3,312,1,311,470,2
+bilstm_attention,BiLSTM + Attention,0.2,diagnostic,trust,0.7555555555555555,476,784,476,308,0,0
+bilstm_attention,BiLSTM + Attention,0.2,diagnostic,surprise,0.10628019323671498,44,784,44,740,0,0
+bilstm_attention,BiLSTM + Attention,0.2,diagnostic,anticipation,0.6365217391304347,366,784,366,418,0,0
+bilstm_attention,BiLSTM + Attention,0.2,diagnostic,disgust,0.04201680672268908,19,695,15,680,85,4
+bilstm_attention,BiLSTM + Attention,0.3,official,joy,0.8847795163584637,622,784,622,162,0,0
+bilstm_attention,BiLSTM + Attention,0.3,official,sadness,0.0260707635009311,11,526,7,519,254,4
+bilstm_attention,BiLSTM + Attention,0.3,official,fear,0.010810810810810811,3,182,1,181,600,2
+bilstm_attention,BiLSTM + Attention,0.3,official,trust,0.7555555555555555,476,784,476,308,0,0
+bilstm_attention,BiLSTM + Attention,0.3,official,surprise,0.10679611650485436,44,780,44,736,4,0
+bilstm_attention,BiLSTM + Attention,0.3,official,anticipation,0.6365217391304347,366,784,366,418,0,0
+bilstm_attention,BiLSTM + Attention,0.3,official,disgust,0.01968503937007874,19,489,5,484,281,14
+bilstm_attention,BiLSTM + Attention,0.5,diagnostic,joy,0.5426515930113053,622,351,264,87,75,358
+bilstm_attention,BiLSTM + Attention,0.5,diagnostic,sadness,0.02197802197802198,11,80,1,79,694,10
+bilstm_attention,BiLSTM + Attention,0.5,diagnostic,fear,0.0,3,6,0,6,775,3
+bilstm_attention,BiLSTM + Attention,0.5,diagnostic,trust,0.5112960760998811,476,365,215,150,158,261
+bilstm_attention,BiLSTM + Attention,0.5,diagnostic,surprise,0.07058823529411765,44,126,6,120,620,38
+bilstm_attention,BiLSTM + Attention,0.5,diagnostic,anticipation,0.2138364779874214,366,111,51,60,358,315
+bilstm_attention,BiLSTM + Attention,0.5,diagnostic,disgust,0.0,19,119,0,119,646,19
+bilstm_attention,BiLSTM + Attention,0.7,diagnostic,joy,0.0,622,0,0,0,162,622
+bilstm_attention,BiLSTM + Attention,0.7,diagnostic,sadness,0.0,11,0,0,0,773,11
+bilstm_attention,BiLSTM + Attention,0.7,diagnostic,fear,0.0,3,1,0,1,780,3
+bilstm_attention,BiLSTM + Attention,0.7,diagnostic,trust,0.0,476,0,0,0,308,476
+bilstm_attention,BiLSTM + Attention,0.7,diagnostic,surprise,0.0,44,0,0,0,740,44
+bilstm_attention,BiLSTM + Attention,0.7,diagnostic,anticipation,0.0,366,0,0,0,418,366
+bilstm_attention,BiLSTM + Attention,0.7,diagnostic,disgust,0.0,19,0,0,0,765,19

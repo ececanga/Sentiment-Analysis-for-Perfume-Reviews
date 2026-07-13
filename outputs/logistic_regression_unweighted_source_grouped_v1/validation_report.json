@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "rows": 784,
+  "unique_perfumes": 784,
+  "source_groups": 359,
+  "cross_fold_source_groups": 0,
+  "shared_split_provenance_verified": true,
+  "outer_manifest_sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+  "inner_manifest_sha256": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d",
+  "source_audit_sha256": "e232f96b6ee42c8961b4037caa1b1b1cd50ee8b8595b564d84f2a9a346ac9d1a",
+  "class_weight": null,
+  "threshold": 0.3,
+  "metrics": {
+    "macro_f1": 0.36803491692522516,
+    "macro_roc_auc": 0.5826393197496395,
+    "macro_pr_auc": 0.3285029554922551
+  }
+}
