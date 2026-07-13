@@ -1,0 +1,1 @@
+Random Forest completed under the frozen 7-label perfume benchmark with macro-F1 0.3368, macro ROC-AUC 0.6231, and macro PR-AUC 0.3602. It is strongest on joy, trust, while sadness, fear remain unstable because positive support is very limited. The row is benchmark-ready for classical model comparison.

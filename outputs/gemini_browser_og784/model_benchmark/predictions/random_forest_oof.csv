@@ -1,0 +1,785 @@
+perfume_id,fold_id,Perfume,true_joy,prob_joy,pred_joy,pred_tuned_global_joy,pred_tuned_per_label_joy,true_sadness,prob_sadness,pred_sadness,pred_tuned_global_sadness,pred_tuned_per_label_sadness,true_fear,prob_fear,pred_fear,pred_tuned_global_fear,pred_tuned_per_label_fear,true_trust,prob_trust,pred_trust,pred_tuned_global_trust,pred_tuned_per_label_trust,true_surprise,prob_surprise,pred_surprise,pred_tuned_global_surprise,pred_tuned_per_label_surprise,true_anticipation,prob_anticipation,pred_anticipation,pred_tuned_global_anticipation,pred_tuned_per_label_anticipation,true_disgust,prob_disgust,pred_disgust,pred_tuned_global_disgust,pred_tuned_per_label_disgust
+00-auriel-eau-de-parfum,3,00 auriel eau de parfum,1,0.9,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.812,1,1,1,0,0.014,0,0,0,1,0.238,0,1,0,0,0.018,0,0,0
+01-nomad-eau-de-parfum,5,01 nomad eau de parfum,1,0.834,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.582,1,1,1,0,0.054,0,0,0,1,0.358,1,1,1,0,0.022,0,0,0
+02-owari-eau-de-parfum,1,02 owari eau de parfum,0,0.808,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.646,1,1,1,0,0.038,0,0,0,0,0.424,1,1,1,0,0.012,0,0,0
+03-apr-1968-eau-de-parfum,4,03. apr. 1968 eau de parfum,1,0.842,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.632,1,1,1,0,0.09,0,0,0,0,0.478,1,1,1,0,0.01,0,0,0
+03-century-eau-de-parfum,5,03 century eau de parfum,1,0.664,1,1,0,0,0.008,0,0,0,0,0.0,0,0,0,1,0.612,1,1,1,0,0.032,0,0,0,0,0.596,1,1,1,0,0.02,0,0,0
+08-seylon-eau-de-parfum,4,08 - seylon eau de parfum,1,0.804,1,1,1,0,0.05,0,0,0,1,0.0,0,0,0,0,0.614,1,1,1,1,0.052,0,0,0,0,0.344,1,1,1,1,0.032,0,0,0
+100-love-eau-de-parfum,2,100% love eau de parfum,1,0.48,1,1,1,0,0.09,0,0,0,0,0.0,0,0,0,1,0.562,1,1,1,0,0.068,0,0,0,0,0.4,1,1,1,0,0.11,0,1,0
+1499-eau-de-parfum,1,1499 eau de parfum,1,0.656,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.652,1,1,1,0,0.09,0,0,0,0,0.316,1,1,1,0,0.024,0,0,0
+1725-casanova-eau-de-parfum,4,1725 casanova eau de parfum,1,0.924,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,0,0.5,1,1,1,0,0.118,0,0,0,1,0.518,1,1,1,0,0.004,0,0,0
+1740-marquis-de-sade-eau-de-parfum,3,1740 marquis de sade eau de parfum,0,0.854,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.582,1,1,1,0,0.118,0,1,1,1,0.58,1,1,1,0,0.008,0,0,0
+1804-george-sand-eau-de-parfum,1,1804 george sand eau de parfum,1,0.738,1,1,1,0,0.042,0,0,0,0,0.0,0,0,0,0,0.506,1,1,0,0,0.026,0,0,0,0,0.486,1,1,1,0,0.02,0,0,0
+1828-jules-verne-eau-de-parfum,2,1828 jules verne eau de parfum,1,0.842,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,1,0.674,1,1,1,0,0.022,0,0,0,0,0.338,1,1,1,0,0.008,0,0,0
+1872-for-men-eau-de-parfum,3,1872 for men eau de parfum,1,0.688,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.592,1,1,1,0,0.082,0,1,1,0,0.458,1,1,1,0,0.01,0,0,0
+1872-for-women-eau-de-parfum,5,1872 for women eau de parfum,1,0.908,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.782,1,1,1,0,0.02,0,0,0,0,0.292,0,1,0,0,0.002,0,0,0
+1888-eau-de-parfum,5,1888 eau de parfum,1,0.932,1,1,1,0,0.012,0,0,0,0,0.024,0,0,0,1,0.814,1,1,1,0,0.064,0,0,0,0,0.294,0,1,0,0,0.002,0,0,0
+1962-eau-de-parfum,2,1962 eau de parfum,1,0.868,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.488,1,1,1,0,0.068,0,0,0,1,0.598,1,1,1,0,0.026,0,0,0
+1976-eau-de-parfum,4,1976 eau de parfum,0,0.798,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.556,1,1,1,0,0.048,0,0,0,0,0.552,1,1,1,0,0.022,0,0,0
+21-eau-de-parfum,3,21 eau de parfum,1,0.86,1,1,1,0,0.072,0,1,0,0,0.0,0,0,0,1,0.464,1,1,1,0,0.042,0,0,0,0,0.662,1,1,1,0,0.006,0,0,0
+40-rogue-eau-de-toilette,2,40 rogue eau de toilette,0,0.706,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,0,0.634,1,1,1,0,0.062,0,0,0,1,0.466,1,1,1,0,0.018,0,0,0
+a-la-rose-eau-de-parfum,3,a la rose eau de parfum,1,0.788,1,1,1,0,0.046,0,0,0,0,0.0,0,0,0,1,0.558,1,1,1,0,0.05,0,1,1,0,0.482,1,1,1,0,0.002,0,0,0
+a-la-rose-scented-hair-mist,5,a la rose scented hair mist,0,0.834,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.566,1,1,1,0,0.018,0,0,0,1,0.468,1,1,1,0,0.008,0,0,0
+absinth-parfum-extrait,5,absinth parfum extrait,0,0.772,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,0,0.55,1,1,1,0,0.024,0,0,0,1,0.594,1,1,1,0,0.042,0,0,0
+absolue-d-osmanthe-eau-de-parfum,3,absolue d'osmanthe eau de parfum,0,0.706,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.5,1,1,1,0,0.046,0,0,0,1,0.636,1,1,1,0,0.002,0,0,0
+acqua-di-sale-body-cream-scented-body-cream,1,acqua di sale body cream scented body cream,0,0.45,1,1,0,0,0.018,0,0,0,0,0.01,0,0,0,0,0.574,1,1,1,0,0.032,0,0,0,0,0.444,1,1,1,1,0.152,0,0,0
+acqua-di-sale-eau-de-parfum,2,acqua di sale eau de parfum,1,0.88,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.712,1,1,1,0,0.064,0,0,0,0,0.348,1,1,1,0,0.012,0,0,0
+acqua-di-scandola-eau-de-parfum,3,acqua di scandola eau de parfum,1,0.884,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.636,1,1,1,0,0.068,0,1,1,0,0.474,1,1,1,0,0.004,0,0,0
+acqua-e-zucchero-eau-de-parfum,4,acqua e zucchero eau de parfum,0,0.842,1,1,1,0,0.034,0,0,0,0,0.0,0,0,0,0,0.494,1,1,1,0,0.054,0,0,0,1,0.44,1,1,1,0,0.004,0,0,0
+acqua-fiorentina-eau-de-parfum,5,acqua fiorentina eau de parfum ...,0,0.824,1,1,1,0,0.002,0,0,0,0,0.006,0,0,0,0,0.73,1,1,1,0,0.022,0,0,0,0,0.362,1,1,1,0,0.022,0,0,0
+acqua-viva-body-cream-scented-body-cream,2,acqua viva body cream scented body cream,1,0.896,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.554,1,1,1,0,0.234,0,1,1,0,0.414,1,1,1,0,0.022,0,0,0
+acqua-viva-eau-de-parfum,1,acqua viva eau de parfum,1,0.902,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.724,1,1,1,0,0.052,0,0,0,0,0.326,1,1,1,1,0.016,0,0,0
+across-the-ocean-eau-de-parfum,1,across the ocean eau de parfum,1,0.798,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.672,1,1,1,0,0.076,0,0,0,0,0.334,1,1,1,0,0.018,0,0,0
+al-oudh-eau-de-parfum,1,al oudh eau de parfum,1,0.864,1,1,1,0,0.072,0,0,0,0,0.0,0,0,0,1,0.68,1,1,1,0,0.008,0,0,0,0,0.422,1,1,1,0,0.012,0,0,0
+alba-di-seoul-cologne-eau-de-cologne,5,alba di seoul cologne eau de cologne,1,0.856,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,1,0.632,1,1,1,0,0.098,0,0,0,1,0.574,1,1,1,0,0.024,0,0,0
+almond-harmony-eau-de-parfum,1,almond harmony eau de parfum,0,0.844,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.692,1,1,1,0,0.02,0,0,0,1,0.448,1,1,1,0,0.03,0,0,0
+altruist-eau-de-parfum,5,altruist eau de parfum,1,0.848,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.706,1,1,1,0,0.012,0,0,0,0,0.286,0,1,0,0,0.012,0,0,0
+amber-aoud-extrait-de-parfum,5,amber aoud extrait de parfum,1,0.822,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.498,1,1,1,0,0.036,0,0,0,0,0.652,1,1,1,0,0.016,0,0,0
+amber-aquilaria-parfum,4,amber aquilaria parfum,1,0.776,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.576,1,1,1,0,0.048,0,0,0,0,0.392,1,1,1,0,0.034,0,0,0
+amber-perfume-oil,4,amber perfume oil,1,0.802,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.594,1,1,1,0,0.166,0,0,0,0,0.432,1,1,1,0,0.034,0,0,0
+amber-room-eau-de-parfum,3,amber room eau de parfum,1,0.754,1,1,1,0,0.002,0,0,0,0,0.038,0,0,0,0,0.636,1,1,1,0,0.07,0,1,1,0,0.444,1,1,1,0,0.018,0,0,0
+amber-roses-eau-de-parfum,1,amber & roses eau de parfum,1,0.952,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.922,1,1,1,0,0.02,0,0,0,0,0.074,0,0,0,0,0.004,0,0,0
+amber-sky-eau-de-parfum,5,amber sky eau de parfum,1,0.878,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.582,1,1,1,0,0.046,0,0,0,0,0.55,1,1,1,0,0.004,0,0,0
+amber-vanilla-perfume-oil,2,amber vanilla perfume oil,1,0.828,1,1,1,0,0.002,0,0,0,0,0.004,0,0,0,1,0.428,1,1,1,0,0.094,0,0,0,0,0.476,1,1,1,0,0.038,0,0,0
+ambra-aurea-eau-de-parfum,2,ambra aurea eau de parfum,1,0.854,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.654,1,1,1,0,0.044,0,0,0,1,0.448,1,1,1,0,0.018,0,0,0
+ambre-114-eau-de-parfum,2,ambre 114 eau de parfum,1,0.8,1,1,1,0,0.028,0,0,0,0,0.002,0,0,0,1,0.46,1,1,1,0,0.06,0,0,0,0,0.58,1,1,1,0,0.044,0,0,0
+ambre-loup-eau-de-parfum,2,ambre loup eau de parfum,1,0.836,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.59,1,1,1,0,0.076,0,0,0,0,0.52,1,1,1,0,0.014,0,0,0
+ambre-mythique-eau-de-parfum,4,ambre mythique eau de parfum,1,0.766,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.55,1,1,1,0,0.06,0,0,0,0,0.736,1,1,1,0,0.002,0,0,0
+ambre-premier-eau-de-parfum,3,ambre premier eau de parfum,1,0.828,1,1,1,0,0.058,0,1,0,0,0.002,0,0,0,0,0.484,1,1,1,0,0.06,0,1,1,1,0.492,1,1,1,1,0.014,0,0,0
+ambre-russe-eau-de-parfum,5,ambre russe eau de parfum,1,0.754,1,1,1,0,0.0,0,0,0,0,0.004,0,0,0,0,0.656,1,1,1,0,0.076,0,0,0,0,0.586,1,1,1,0,0.024,0,0,0
+ambre-sultan-eau-de-parfum,4,ambre sultan eau de parfum,1,0.902,1,1,1,0,0.034,0,0,0,0,0.0,0,0,0,0,0.536,1,1,1,0,0.082,0,0,0,1,0.476,1,1,1,0,0.004,0,0,0
+ambre-topkapi-eau-de-parfum,1,ambre topkapi eau de parfum,0,0.888,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.708,1,1,1,0,0.03,0,0,0,0,0.35,1,1,1,0,0.0,0,0,0
+american-oud,3,american oud,1,0.872,1,1,1,0,0.028,0,0,0,0,0.002,0,0,0,1,0.638,1,1,1,1,0.132,0,1,1,0,0.378,1,1,1,0,0.0,0,0,0
+amour-de-cacao-eau-de-toilette,2,amour de cacao eau de toilette,1,0.89,1,1,1,0,0.05,0,0,0,0,0.0,0,0,0,1,0.65,1,1,1,0,0.016,0,0,0,0,0.398,1,1,1,0,0.01,0,0,0
+amyris-pour-femme-eau-de-parfum,5,amyris pour femme eau de parfum,0,0.928,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.752,1,1,1,0,0.116,0,0,0,1,0.538,1,1,1,0,0.002,0,0,0
+amyris-pour-homme-eau-de-toilette,4,amyris pour homme eau de toilette,0,0.886,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.53,1,1,1,0,0.044,0,0,0,1,0.678,1,1,1,0,0.002,0,0,0
+amyris-pour-homme-travel-set,1,amyris pour homme travel set,0,0.634,1,1,0,0,0.018,0,0,0,0,0.0,0,0,0,1,0.606,1,1,1,0,0.088,0,0,0,0,0.352,1,1,1,0,0.038,0,0,0
+anatolia-parfum,2,anatolia parfum,1,0.438,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.5,1,1,1,0,0.044,0,0,0,0,0.39,1,1,1,0,0.008,0,0,0
+anbar,2,anbar,1,0.732,1,1,1,0,0.054,0,0,0,0,0.0,0,0,0,1,0.608,1,1,1,0,0.018,0,0,0,0,0.382,1,1,1,0,0.008,0,0,0
+angels-of-florence-cologne-eau-de-cologne,3,angels of florence cologne eau de cologne,1,0.916,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.56,1,1,1,0,0.218,0,1,1,1,0.304,1,1,1,0,0.05,0,1,0
+anne-pliska-eau-de-parfum,5,anne pliska - eau de parfum,1,0.746,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.522,1,1,1,0,0.01,0,0,0,1,0.692,1,1,1,0,0.012,0,0,0
+another-oud-eau-de-parfum,3,another oud eau de parfum,1,0.854,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.668,1,1,1,0,0.058,0,1,1,1,0.364,1,1,1,0,0.006,0,0,0
+antico-caruso-eau-de-parfum,2,antico caruso eau de parfum,1,0.706,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.628,1,1,1,0,0.02,0,0,0,1,0.484,1,1,1,0,0.044,0,0,0
+aoud-cuir-d-arabie-eau-de-parfum,2,aoud cuir d'arabie eau de parfum,1,0.812,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.516,1,1,1,0,0.05,0,0,0,1,0.694,1,1,1,0,0.008,0,0,0
+aoud-queen-roses-eau-de-parfum,5,aoud queen roses eau de parfum,0,0.852,1,1,1,0,0.04,0,0,0,0,0.0,0,0,0,0,0.646,1,1,1,0,0.234,0,1,0,1,0.32,1,1,0,1,0.036,0,0,0
+aqaba-eau-de-parfum,1,aqaba eau de parfum,1,0.808,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.618,1,1,1,0,0.034,0,0,0,1,0.582,1,1,1,0,0.038,0,0,0
+aqua-universalis-eau-de-toilette,5,aqua universalis eau de toilette,1,0.81,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.56,1,1,1,0,0.006,0,0,0,1,0.64,1,1,1,0,0.014,0,0,0
+aqua-universalis-scented-hair-mist,1,aqua universalis scented hair mist,1,0.832,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.49,1,1,0,0,0.138,0,0,0,1,0.746,1,1,1,0,0.092,0,0,0
+aquae-nobilis-eau-de-parfum,1,aquae nobilis eau de parfum,1,0.668,1,1,1,0,0.002,0,0,0,0,0.054,0,0,0,1,0.496,1,1,0,0,0.02,0,0,0,1,0.476,1,1,1,0,0.024,0,0,0
+arabesque-attar-perfume-oil,1,arabesque attar / perfume oil,0,0.67,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.636,1,1,1,0,0.048,0,0,0,1,0.286,0,1,1,0,0.014,0,0,0
+arabian-horse-eau-de-parfum,3,arabian horse eau de parfum,0,0.84,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.536,1,1,1,0,0.098,0,1,1,1,0.59,1,1,1,0,0.006,0,0,0
+aran-parfum,2,aran parfum,1,0.546,1,1,1,0,0.022,0,0,0,0,0.008,0,0,0,1,0.548,1,1,1,0,0.106,0,1,1,0,0.53,1,1,1,0,0.078,0,0,0
+arbole-eau-de-parfum,2,arbole eau de parfum,1,0.788,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.59,1,1,1,0,0.152,0,1,1,0,0.408,1,1,1,0,0.054,0,0,0
+areej-attar-perfume-oil,5,areej attar / perfume oil,1,0.662,1,1,0,0,0.024,0,0,0,0,0.002,0,0,0,1,0.614,1,1,1,0,0.048,0,0,0,0,0.494,1,1,1,0,0.048,0,0,0
+artemisia-eau-de-parfum,1,artemisia eau de parfum,1,0.822,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,1,0.7,1,1,1,1,0.022,0,0,0,1,0.322,1,1,1,0,0.006,0,0,0
+aseel-attar-perfume-oil,2,aseel attar / perfume oil,1,0.648,1,1,1,0,0.032,0,0,0,0,0.002,0,0,0,1,0.52,1,1,1,0,0.038,0,0,0,0,0.372,1,1,1,0,0.018,0,0,0
+atlante-extrait-de-parfum,2,atlante extrait de parfum,1,0.812,1,1,1,0,0.006,0,0,0,0,0.008,0,0,0,0,0.728,1,1,1,0,0.032,0,0,0,0,0.462,1,1,1,0,0.006,0,0,0
+atlas-fever-eau-de-parfum,3,atlas fever eau de parfum,1,0.794,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.416,1,1,1,0,0.006,0,0,0,0,0.606,1,1,1,0,0.004,0,0,0
+atomic-rose-eau-de-parfum,1,atomic rose eau de parfum,1,0.792,1,1,1,0,0.004,0,0,0,0,0.01,0,0,0,1,0.534,1,1,0,0,0.058,0,0,0,0,0.468,1,1,1,0,0.044,0,0,0
+au-coeur-du-desert-parfum-extrait,1,au coeur du desert parfum extrait,1,0.724,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.522,1,1,0,0,0.116,0,0,0,1,0.588,1,1,1,0,0.048,0,0,0
+aurora-eau-de-parfum,1,aurora eau de parfum,1,0.812,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.672,1,1,1,0,0.062,0,0,0,0,0.334,1,1,1,0,0.012,0,0,0
+aurum-eau-de-parfum,1,aurum eau de parfum,1,0.826,1,1,1,0,0.006,0,0,0,0,0.004,0,0,0,0,0.666,1,1,1,0,0.146,0,0,0,1,0.36,1,1,1,0,0.01,0,0,0
+auster-eau-de-parfum,5,auster eau de parfum,0,0.846,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.596,1,1,1,0,0.058,0,0,0,1,0.488,1,1,1,0,0.006,0,0,0
+autoportrait-eau-de-parfum,1,autoportrait eau de parfum,1,0.832,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.696,1,1,1,0,0.042,0,0,0,0,0.538,1,1,1,0,0.014,0,0,0
+aziyade-eau-de-parfum,2,aziyade eau de parfum,1,0.742,1,1,1,0,0.006,0,0,0,0,0.002,0,0,0,1,0.536,1,1,1,0,0.078,0,0,0,1,0.506,1,1,1,0,0.014,0,0,0
+azzurro-di-capri-extrait-parfum-extrait,2,azzurro di capri extrait parfum extrait,0,0.77,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.52,1,1,1,0,0.036,0,0,0,0,0.534,1,1,1,0,0.01,0,0,0
+baie-19-eau-de-parfum,1,baie 19 eau de parfum,1,0.734,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.506,1,1,0,0,0.09,0,0,0,1,0.522,1,1,1,0,0.014,0,0,0
+bamboo-harmony-eau-de-parfum,5,bamboo harmony eau de parfum,1,0.774,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.5,1,1,1,0,0.102,0,0,0,1,0.676,1,1,1,0,0.01,0,0,0
+bapteme-du-feu-eau-de-parfum,1,bapteme du feu eau de parfum,1,0.8,1,1,1,0,0.0,0,0,0,0,0.004,0,0,0,0,0.64,1,1,1,0,0.06,0,0,0,0,0.556,1,1,1,0,0.008,0,0,0
+baudelaire-eau-de-parfum,5,baudelaire eau de parfum,1,0.804,1,1,1,0,0.048,0,0,0,0,0.0,0,0,0,1,0.592,1,1,1,0,0.042,0,0,0,0,0.53,1,1,1,0,0.022,0,0,0
+bay-rum-cologne,3,bay rum cologne,1,0.742,1,1,1,0,0.034,0,0,0,0,0.0,0,0,0,0,0.584,1,1,1,0,0.086,0,1,1,1,0.524,1,1,1,0,0.022,0,0,0
+bee-extrait-de-parfum,2,bee extrait de parfum,0,0.896,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.67,1,1,1,0,0.006,0,0,0,1,0.622,1,1,1,0,0.008,0,0,0
+belle-de-jour-eau-de-parfum,2,belle de jour eau de parfum,1,0.64,1,1,1,0,0.006,0,0,0,0,0.042,0,0,0,0,0.528,1,1,1,0,0.034,0,0,0,1,0.466,1,1,1,0,0.02,0,0,0
+bello-rabelo-eau-de-parfum,5,bello rabelo eau de parfum,1,0.748,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.702,1,1,1,0,0.038,0,0,0,0,0.376,1,1,1,0,0.006,0,0,0
+bergamask-parfum,2,bergamask parfum,1,0.88,1,1,1,0,0.008,0,0,0,0,0.008,0,0,0,1,0.618,1,1,1,0,0.102,0,1,1,0,0.47,1,1,1,0,0.02,0,0,0
+bergamote-22-eau-de-parfum,3,bergamote 22 eau de parfum,1,0.778,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.71,1,1,1,0,0.044,0,0,0,0,0.276,0,1,1,0,0.01,0,0,0
+bergamote-eau-de-toilette,4,bergamote eau de toilette,0,0.874,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.684,1,1,1,0,0.044,0,0,0,0,0.466,1,1,1,0,0.006,0,0,0
+bergamotto-di-positano-eau-de-parfum,5,bergamotto di positano eau de parfum,1,0.868,1,1,1,1,0.002,0,0,0,0,0.0,0,0,0,0,0.63,1,1,1,0,0.056,0,0,0,1,0.598,1,1,1,0,0.004,0,0,0
+bertrand-duchaufour-eau-de-toilette,4,bertrand duchaufour eau de toilette,1,0.874,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.662,1,1,1,0,0.034,0,0,0,0,0.414,1,1,1,0,0.01,0,0,0
+bijou-romantique-eau-de-parfum,1,bijou romantique eau de parfum,1,0.876,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.61,1,1,1,0,0.042,0,0,0,1,0.502,1,1,1,0,0.05,0,0,0
+black-afgano-parfum-extrait,5,black afgano parfum extrait,1,0.582,1,1,0,0,0.004,0,0,0,0,0.006,0,0,0,0,0.612,1,1,1,0,0.038,0,0,0,1,0.34,1,1,0,0,0.018,0,0,0
+black-ambergris-parfum-extrait,5,black ambergris parfum extrait,1,0.612,1,1,0,0,0.006,0,0,0,0,0.002,0,0,0,0,0.528,1,1,1,1,0.052,0,0,0,0,0.622,1,1,1,0,0.012,0,0,0
+black-aoud-eau-de-parfum,3,black aoud eau de parfum,0,0.874,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.734,1,1,1,0,0.014,0,0,0,0,0.498,1,1,1,0,0.006,0,0,0
+black-caviar-eau-de-parfum,1,black caviar eau de parfum,1,0.688,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.568,1,1,1,0,0.03,0,0,0,1,0.47,1,1,1,0,0.02,0,0,0
+black-tourmaline-eau-de-parfum,5,black tourmaline eau de parfum,0,0.836,1,1,1,0,0.006,0,0,0,0,0.002,0,0,0,0,0.48,1,1,1,0,0.04,0,0,0,1,0.436,1,1,1,0,0.014,0,0,0
+black-uddu-eau-de-parfum,4,black uddu eau de parfum,0,0.77,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.494,1,1,1,0,0.11,0,0,0,0,0.462,1,1,1,0,0.032,0,0,0
+blanche-eau-de-parfum,2,blanche eau de parfum,1,0.806,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.784,1,1,1,0,0.07,0,0,0,0,0.362,1,1,1,0,0.002,0,0,0
+blenheim-bouquet-eau-de-toilette,5,blenheim bouquet eau de toilette,1,0.936,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.702,1,1,1,0,0.008,0,0,0,0,0.316,1,1,0,0,0.002,0,0,0
+blessing-silence-eau-de-parfum,5,blessing silence eau de parfum,1,0.84,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.612,1,1,1,0,0.02,0,0,0,1,0.458,1,1,1,0,0.01,0,0,0
+bloody-wood-eau-de-parfum,3,bloody wood eau de parfum,1,0.73,1,1,1,0,0.002,0,0,0,0,0.016,0,0,0,1,0.632,1,1,1,0,0.112,0,1,1,0,0.5,1,1,1,0,0.014,0,0,0
+blossom-love-eau-de-parfum,2,blossom love eau de parfum,0,0.89,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.718,1,1,1,0,0.026,0,0,0,1,0.534,1,1,1,0,0.016,0,0,0
+blu-perfume-oil,1,blu perfume oil,1,0.828,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.578,1,1,1,0,0.172,0,0,0,0,0.452,1,1,1,0,0.092,0,0,0
+blue-hope-eau-de-parfum,2,blue hope eau de parfum,1,0.728,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.574,1,1,1,0,0.066,0,0,0,0,0.408,1,1,1,0,0.022,0,0,0
+blueberry-musk-eau-de-parfum,4,blueberry musk eau de parfum,1,0.786,1,1,1,0,0.042,0,0,0,0,0.0,0,0,0,1,0.654,1,1,1,0,0.044,0,0,0,0,0.492,1,1,1,0,0.018,0,0,0
+boccanera-parfum,4,boccanera parfum,1,0.74,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.51,1,1,1,0,0.048,0,0,0,1,0.548,1,1,1,0,0.048,0,0,0
+bohea-boheme-eau-de-parfum,3,bohea boheme eau de parfum,1,0.89,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.466,1,1,1,0,0.064,0,1,1,1,0.682,1,1,1,0,0.018,0,0,0
+bois-blonds-cologne-absolue,2,bois blonds cologne absolue,1,0.774,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.604,1,1,1,0,0.074,0,0,0,0,0.45,1,1,1,0,0.032,0,0,0
+bois-de-borneo-oud,4,bois de borneo oud,1,0.832,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.524,1,1,1,0,0.042,0,0,0,1,0.772,1,1,1,0,0.008,0,0,0
+bois-farine-eau-de-toilette,3,bois farine eau de toilette,1,0.872,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.532,1,1,1,0,0.07,0,1,1,0,0.49,1,1,1,0,0.002,0,0,0
+bois-naufrage-eau-de-toilette,3,bois naufrage eau de toilette,1,0.812,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,0,0.71,1,1,1,0,0.026,0,0,0,0,0.504,1,1,1,0,0.036,0,0,0
+bouquet-ideale-eau-de-parfum,1,bouquet ideale eau de parfum,1,0.796,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.64,1,1,1,0,0.036,0,0,0,0,0.518,1,1,1,0,0.008,0,0,0
+bowmakers-eau-de-parfum,4,bowmakers eau de parfum,1,0.934,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.556,1,1,1,0,0.088,0,0,0,1,0.488,1,1,1,0,0.0,0,0,0
+bowmakers-pocket-perfume-perfume-oil,1,bowmakers pocket perfume perfume oil,1,0.778,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.64,1,1,1,0,0.022,0,0,0,0,0.392,1,1,1,0,0.008,0,0,0
+bronze-eau-de-parfum,5,bronze eau de parfum,1,0.748,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.646,1,1,1,1,0.018,0,0,0,0,0.336,1,1,0,0,0.004,0,0,0
+broom-ginestra-cologne,4,broom / ginestra cologne,0,0.826,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.642,1,1,1,0,0.036,0,0,0,1,0.564,1,1,1,0,0.024,0,0,0
+brulure-de-rose-eau-de-parfum,4,brulure de rose eau de parfum,1,0.79,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,0,0.628,1,1,1,0,0.052,0,0,0,0,0.506,1,1,1,0,0.012,0,0,0
+brutus-parfum,3,brutus parfum,1,0.796,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.612,1,1,1,0,0.068,0,1,1,0,0.43,1,1,1,0,0.004,0,0,0
+bull-s-blood-eau-de-parfum,3,bull's blood eau de parfum,1,0.68,1,1,1,0,0.006,0,0,0,0,0.05,0,1,0,0,0.464,1,1,1,0,0.108,0,1,1,1,0.574,1,1,1,0,0.014,0,0,0
+burning-barbershop-eau-de-parfum,3,burning barbershop eau de parfum,1,0.89,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,0,0.646,1,1,1,1,0.072,0,1,1,1,0.496,1,1,1,0,0.038,0,0,0
+by-any-other-name-eau-de-parfum,3,by any other name eau de parfum,0,0.79,1,1,1,0,0.004,0,0,0,0,0.092,0,1,0,0,0.53,1,1,1,0,0.04,0,0,0,0,0.426,1,1,1,0,0.052,0,1,0
+camellia-eau-de-parfum,5,camellia eau de parfum,1,0.946,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.674,1,1,1,0,0.016,0,0,0,0,0.39,1,1,1,0,0.004,0,0,0
+cannabis-blue-eau-de-parfum,4,cannabis blue eau de parfum,1,0.864,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.69,1,1,1,0,0.082,0,0,0,0,0.378,1,1,1,0,0.02,0,0,0
+cap-d-antibes-eau-de-parfum,5,cap d'antibes eau de parfum,1,0.922,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.718,1,1,1,0,0.02,0,0,0,0,0.52,1,1,1,0,0.012,0,0,0
+cape-heartache-eau-de-parfum,2,cape heartache eau de parfum,1,0.876,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.522,1,1,1,0,0.01,0,0,0,1,0.58,1,1,1,0,0.012,0,0,0
+capua-eau-de-parfum,2,capua eau de parfum,1,0.916,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.698,1,1,1,0,0.14,0,1,1,0,0.442,1,1,1,0,0.004,0,0,0
+cardinal-eau-de-parfum,2,cardinal eau de parfum,1,0.58,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,1,0.432,1,1,1,0,0.036,0,0,0,1,0.568,1,1,1,0,0.026,0,0,0
+carnation-garofano-cologne-eau-de-cologne,5,carnation / garofano cologne eau de cologne,1,0.84,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.656,1,1,1,0,0.02,0,0,0,0,0.584,1,1,1,0,0.02,0,0,0
+carved-oud-extrait-de-parfum,2,carved oud extrait de parfum,0,0.774,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.678,1,1,1,0,0.034,0,0,0,0,0.28,0,1,1,0,0.034,0,0,0
+cedar-woodpecker-eau-de-parfum,2,cedar woodpecker eau de parfum,1,0.868,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.672,1,1,1,0,0.028,0,0,0,1,0.276,0,1,1,0,0.014,0,0,0
+celluloid-x-galbanum-eau-de-parfum,1,celluloid x galbanum eau de parfum,1,0.816,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.586,1,1,1,0,0.038,0,0,0,0,0.552,1,1,1,0,0.028,0,0,0
+centrepiece-eau-de-parfum,5,centrepiece eau de parfum,1,0.844,1,1,1,0,0.006,0,0,0,0,0.002,0,0,0,0,0.528,1,1,1,0,0.06,0,0,0,0,0.684,1,1,1,0,0.0,0,0,0
+chambre-noire-eau-de-parfum,2,chambre noire eau de parfum,0,0.85,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.69,1,1,1,0,0.052,0,0,0,0,0.652,1,1,1,0,0.018,0,0,0
+charade-extrait-de-parfum,2,charade extrait de parfum,1,0.838,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.75,1,1,1,0,0.022,0,0,0,0,0.546,1,1,1,0,0.014,0,0,0
+chergui-eau-de-parfum,3,chergui eau de parfum,1,0.782,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.706,1,1,1,0,0.014,0,0,0,0,0.452,1,1,1,0,0.006,0,0,0
+china-white-parfum-extrait,3,china white parfum extrait,1,0.712,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.542,1,1,1,0,0.092,0,1,1,1,0.624,1,1,1,0,0.002,0,0,0
+chloe-sevigny-little-flower-eau-de-parfum,4,chloe sevigny little flower eau de parfum,0,0.862,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,0,0.576,1,1,1,0,0.028,0,0,0,0,0.452,1,1,1,0,0.008,0,0,0
+chlorophyll-x-gardenia-eau-de-parfum,3,chlorophyll x gardenia eau de parfum,1,0.724,1,1,1,0,0.006,0,0,0,0,0.07,0,1,0,1,0.548,1,1,1,0,0.078,0,1,1,0,0.644,1,1,1,0,0.028,0,0,0
+chocolat-eau-de-parfum,2,chocolat eau de parfum,1,0.836,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,0,0.558,1,1,1,1,0.094,0,0,0,0,0.486,1,1,1,0,0.008,0,0,0
+chocolate-greedy-eau-de-parfum,4,chocolate greedy eau de parfum,1,0.874,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.652,1,1,1,0,0.066,0,0,0,0,0.436,1,1,1,0,0.002,0,0,0
+chypre-mousse-eau-de-parfum,4,chypre mousse eau de parfum,0,0.814,1,1,1,0,0.008,0,0,0,0,0.006,0,0,0,0,0.566,1,1,1,0,0.022,0,0,0,1,0.422,1,1,1,0,0.044,0,0,0
+chypre-siam-eau-de-toilette,1,chypre-siam eau de toilette,1,0.908,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.576,1,1,1,0,0.084,0,0,0,0,0.446,1,1,1,0,0.038,0,0,0
+citta-di-kyoto-cologne-eau-de-cologne,3,citta di kyoto cologne eau de cologne,1,0.802,1,1,1,0,0.0,0,0,0,0,0.004,0,0,0,1,0.708,1,1,1,0,0.032,0,0,0,0,0.476,1,1,1,0,0.01,0,0,0
+clair-de-musc-eau-de-parfum,4,clair de musc eau de parfum,1,0.794,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.706,1,1,1,0,0.04,0,0,0,0,0.508,1,1,1,0,0.008,0,0,0
+coal-eau-de-parfum,4,coal eau de parfum,1,0.802,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,0,0.082,0,0,0,0,0.486,1,1,1,0,0.018,0,0,0
+cologne-cedrat-eau-de-cologne,4,cologne cedrat eau de cologne,0,0.842,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,0,0.718,1,1,1,0,0.028,0,0,0,0,0.386,1,1,1,0,0.05,0,0,0
+cologne-sologne-eau-de-cologne,3,cologne sologne eau de cologne,0,0.672,1,1,1,0,0.002,0,0,0,0,0.01,0,0,0,0,0.506,1,1,1,0,0.04,0,0,0,1,0.564,1,1,1,0,0.004,0,0,0
+colonia-no-1-eau-de-cologne,3,colonia no. 1 eau de cologne,1,0.718,1,1,1,0,0.074,0,1,0,0,0.0,0,0,0,1,0.646,1,1,1,0,0.074,0,1,1,0,0.288,0,1,1,0,0.088,0,1,0
+colonia-no-4-eau-de-cologne,1,colonia no. 4 eau de cologne,0,0.7,1,1,1,0,0.044,0,0,0,0,0.0,0,0,0,0,0.606,1,1,1,0,0.08,0,0,0,0,0.336,1,1,1,0,0.074,0,0,0
+comme-un-carrousel-eau-de-parfum,5,comme un carrousel eau de parfum,0,0.662,1,1,0,0,0.006,0,0,0,0,0.0,0,0,0,0,0.558,1,1,1,0,0.022,0,0,0,1,0.306,1,1,0,0,0.0,0,0,0
+complex-eau-de-parfum,4,complex eau de parfum,1,0.864,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.56,1,1,1,0,0.058,0,0,0,0,0.582,1,1,1,0,0.018,0,0,0
+confetto-body-cream-scented-body-cream,2,confetto body cream scented body cream,1,0.802,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,0,0.568,1,1,1,0,0.056,0,0,0,0,0.438,1,1,1,0,0.012,0,0,0
+confetto-eau-de-parfum,5,confetto eau de parfum,1,0.872,1,1,1,0,0.048,0,0,0,0,0.0,0,0,0,0,0.724,1,1,1,1,0.286,0,1,0,0,0.336,1,1,0,0,0.006,0,0,0
+copper-eau-de-parfum,5,copper eau de parfum,1,0.682,1,1,0,0,0.012,0,0,0,0,0.0,0,0,0,1,0.61,1,1,1,0,0.032,0,0,0,0,0.59,1,1,1,0,0.016,0,0,0
+coquette-tropique,5,coquette tropique,0,0.706,1,1,1,0,0.068,0,0,0,0,0.0,0,0,0,0,0.632,1,1,1,0,0.036,0,0,0,0,0.342,1,1,0,0,0.056,0,0,0
+coral-perfume-oil,4,coral perfume oil,1,0.858,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.672,1,1,1,0,0.214,0,1,1,0,0.422,1,1,1,0,0.014,0,0,0
+coriander-eau-de-parfum,2,coriander eau de parfum,1,0.674,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.566,1,1,1,0,0.058,0,0,0,0,0.574,1,1,1,0,0.012,0,0,0
+corpse-reviver-eau-de-parfum,2,corpse reviver eau de parfum,1,0.852,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,0,0.638,1,1,1,0,0.088,0,0,0,1,0.486,1,1,1,0,0.008,0,0,0
+corsica-furiosa-eau-de-parfum,2,corsica furiosa eau de parfum,1,0.686,1,1,1,0,0.0,0,0,0,0,0.01,0,0,0,1,0.568,1,1,1,0,0.054,0,0,0,0,0.646,1,1,1,0,0.054,0,0,0
+costes-perfume-eau-de-toilette,5,costes perfume eau de toilette,0,0.78,1,1,1,0,0.006,0,0,0,0,0.002,0,0,0,0,0.536,1,1,1,0,0.07,0,0,0,0,0.526,1,1,1,0,0.028,0,0,0
+covent-garden-eau-de-parfum,2,covent garden eau de parfum,1,0.894,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,0,0.638,1,1,1,0,0.088,0,0,0,0,0.46,1,1,1,0,0.028,0,0,0
+cowboy-grass-eau-de-parfum,1,cowboy grass eau de parfum,1,0.846,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,0,0.648,1,1,1,0,0.246,0,0,0,1,0.544,1,1,1,0,0.032,0,0,0
+coze-eau-de-parfum,3,coze eau de parfum,1,0.89,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,0,0.594,1,1,1,0,0.174,0,1,1,1,0.536,1,1,1,0,0.0,0,0,0
+creation-e-parfum-cologne,5,creation-e parfum cologne,1,0.912,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,0,0.754,1,1,1,0,0.024,0,0,0,0,0.378,1,1,1,0,0.006,0,0,0
+crystal-pistil-eau-de-parfum,4,crystal pistil eau de parfum,1,0.88,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.624,1,1,1,1,0.136,0,0,0,0,0.454,1,1,1,0,0.0,0,0,0
+cuir-andalou-eau-de-parfum,3,cuir andalou eau de parfum,1,0.674,1,1,1,0,0.0,0,0,0,0,0.014,0,0,0,0,0.58,1,1,1,0,0.06,0,1,1,0,0.428,1,1,1,0,0.032,0,0,0
+cuir-cuba-intense-eau-de-parfum,3,cuir cuba intense eau de parfum,1,0.764,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.546,1,1,1,0,0.042,0,0,0,0,0.6,1,1,1,0,0.014,0,0,0
+cuir-les-nombres-d-or-eau-de-parfum,1,cuir - les nombres d'or eau de parfum,1,0.864,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.58,1,1,1,0,0.068,0,0,0,1,0.522,1,1,1,0,0.04,0,0,0
+cuir-ottoman-eau-de-parfum,3,cuir ottoman eau de parfum,1,0.73,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.464,1,1,1,0,0.018,0,0,0,1,0.614,1,1,1,0,0.01,0,0,0
+cuir-velours-eau-de-parfum,2,cuir velours eau de parfum,1,0.762,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.522,1,1,1,0,0.068,0,0,0,0,0.476,1,1,1,0,0.02,0,0,0
+cuir-venenum-eau-de-parfum,2,cuir venenum eau de parfum,1,0.868,1,1,1,0,0.064,0,0,0,0,0.0,0,0,0,1,0.592,1,1,1,0,0.032,0,0,0,0,0.482,1,1,1,0,0.004,0,0,0
+cypress-shade-eau-de-parfum,2,cypress shade eau de parfum,1,0.862,1,1,1,0,0.006,0,0,0,0,0.006,0,0,0,0,0.582,1,1,1,0,0.024,0,0,0,0,0.634,1,1,1,0,0.016,0,0,0
+dama-bianca-eau-de-parfum,3,dama bianca eau de parfum,1,0.884,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.682,1,1,1,0,0.072,0,1,1,0,0.462,1,1,1,0,0.014,0,0,0
+dambrosia-eau-de-parfum,4,dambrosia eau de parfum,0,0.788,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.576,1,1,1,0,0.024,0,0,0,0,0.446,1,1,1,0,0.006,0,0,0
+danger-parfum-cologne,2,danger parfum cologne,1,0.754,1,1,1,0,0.0,0,0,0,0,0.022,0,0,0,0,0.466,1,1,1,0,0.076,0,0,0,1,0.48,1,1,1,0,0.032,0,0,0
+dark-eau-de-parfum,2,dark eau de parfum,1,0.76,1,1,1,0,0.004,0,0,0,0,0.004,0,0,0,1,0.506,1,1,1,0,0.07,0,0,0,0,0.484,1,1,1,0,0.052,0,0,0
+dates-delight-eau-de-parfum,4,dates delight eau de parfum,1,0.918,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.8,1,1,1,0,0.018,0,0,0,1,0.352,1,1,1,0,0.0,0,0,0
+datura-noir-eau-de-parfum,3,datura noir eau de parfum,1,0.864,1,1,1,0,0.09,0,1,0,0,0.004,0,0,0,1,0.586,1,1,1,0,0.078,0,1,1,0,0.52,1,1,1,0,0.036,0,0,0
+de-bachmakov-eau-de-parfum,3,de bachmakov eau de parfum,1,0.918,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,0,0.704,1,1,1,0,0.11,0,1,1,0,0.256,0,1,1,0,0.008,0,0,0
+debaser-eau-de-parfum,4,debaser eau de parfum,0,0.71,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.63,1,1,1,0,0.024,0,0,0,0,0.382,1,1,1,0,0.012,0,0,0
+debaser-pocket-perfume-perfume-oil,5,debaser pocket perfume perfume oil,0,0.878,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.664,1,1,1,1,0.012,0,0,0,0,0.518,1,1,1,0,0.004,0,0,0
+deja-le-printemps-eau-de-parfum,3,deja le printemps eau de parfum,0,0.746,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.59,1,1,1,0,0.05,0,1,1,0,0.394,1,1,1,0,0.06,0,1,0
+dendera-extrait-de-parfum,5,dendera extrait de parfum,1,0.686,1,1,0,0,0.0,0,0,0,0,0.0,0,0,0,1,0.416,1,1,1,0,0.018,0,0,0,0,0.57,1,1,1,0,0.008,0,0,0
+derviche-eau-de-toilette,4,derviche eau de toilette,0,0.866,1,1,1,0,0.0,0,0,0,0,0.004,0,0,0,0,0.504,1,1,1,0,0.042,0,0,0,1,0.46,1,1,1,0,0.026,0,0,0
+devil-tender-eau-de-parfum,5,devil tender eau de parfum,1,0.906,1,1,1,0,0.046,0,0,0,0,0.002,0,0,0,0,0.646,1,1,1,0,0.052,0,0,0,1,0.38,1,1,1,0,0.016,0,0,0
+dia-man-eau-de-parfum,1,dia man eau de parfum,1,0.762,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.514,1,1,0,0,0.042,0,0,0,0,0.612,1,1,1,0,0.012,0,0,0
+dia-woman-eau-de-parfum,2,dia woman eau de parfum,1,0.856,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.692,1,1,1,0,0.032,0,0,0,0,0.508,1,1,1,0,0.002,0,0,0
+diaghilev-extrait-de-parfum,4,diaghilev extrait de parfum,1,0.872,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.77,1,1,1,0,0.036,0,0,0,0,0.576,1,1,1,0,0.018,0,0,0
+divine-vanille-eau-de-parfum,3,divine vanille eau de parfum,1,0.922,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.546,1,1,1,0,0.014,0,0,0,0,0.51,1,1,1,0,0.0,0,0,0
+do-son-eau-de-parfum,1,do son - eau de parfum,0,0.864,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.716,1,1,1,0,0.014,0,0,0,1,0.564,1,1,1,0,0.036,0,0,0
+do-son-eau-de-toilette,4,do son - eau de toilette,1,0.886,1,1,1,0,0.154,0,0,0,0,0.0,0,0,0,0,0.57,1,1,1,0,0.054,0,0,0,1,0.636,1,1,1,0,0.004,0,0,0
+doe-in-the-snow-eau-de-parfum,2,doe in the snow eau de parfum,0,0.682,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.576,1,1,1,0,0.024,0,0,0,1,0.464,1,1,1,0,0.024,0,0,0
+dom-rosa-eau-de-parfum,1,dom rosa eau de parfum,1,0.896,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.602,1,1,1,0,0.04,0,0,0,0,0.414,1,1,1,0,0.014,0,0,0
+domenico-caraceni-1913-eau-de-toilette,5,domenico caraceni 1913 eau de toilette,1,0.838,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.604,1,1,1,0,0.066,0,0,0,1,0.436,1,1,1,0,0.018,0,0,0
+don-eau-de-parfum,5,don eau de parfum,1,0.606,1,1,0,0,0.004,0,0,0,0,0.0,0,0,0,1,0.568,1,1,1,0,0.004,0,0,0,0,0.406,1,1,1,0,0.02,0,0,0
+drama-nuui-eau-de-parfum,4,drama nuui eau de parfum,1,0.692,1,1,1,1,0.004,0,0,0,0,0.0,0,0,0,0,0.66,1,1,1,0,0.026,0,0,0,1,0.254,0,1,1,0,0.054,0,0,0
+dulcis-in-fundo-body-cream-scented-body-cream,3,dulcis in fundo body cream scented body cream,0,0.844,1,1,1,0,0.028,0,0,0,0,0.002,0,0,0,0,0.668,1,1,1,0,0.02,0,0,0,1,0.534,1,1,1,0,0.016,0,0,0
+dulcis-in-fundo-eau-de-parfum,1,dulcis in fundo eau de parfum,1,0.8,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.748,1,1,1,0,0.068,0,0,0,0,0.36,1,1,1,0,0.18,0,0,0
+duro-parfum-extrait,5,duro parfum extrait,1,0.746,1,1,1,0,0.024,0,0,0,0,0.004,0,0,0,1,0.562,1,1,1,0,0.078,0,0,0,0,0.414,1,1,1,0,0.032,0,0,0
+dzing-eau-de-toilette,5,dzing! eau de toilette,1,0.8,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.554,1,1,1,0,0.15,0,0,0,0,0.442,1,1,1,0,0.034,0,0,0
+dzongkha-eau-de-toilette,4,dzongkha eau de toilette,1,0.888,1,1,1,0,0.03,0,0,0,0,0.0,0,0,0,0,0.582,1,1,1,0,0.112,0,0,0,0,0.49,1,1,1,0,0.008,0,0,0
+eau-d-ete-eau-fraiche,1,eau d'ete eau fraiche,0,0.522,1,1,0,0,0.024,0,0,0,0,0.002,0,0,0,1,0.618,1,1,1,0,0.096,0,0,0,0,0.402,1,1,1,0,0.086,0,0,0
+eau-d-italie-eau-de-toilette-eau-de-toilette,1,eau d'italie - eau de toilette eau de toilette,1,0.948,1,1,1,0,0.036,0,0,0,0,0.0,0,0,0,0,0.762,1,1,1,0,0.006,0,0,0,1,0.384,1,1,1,0,0.0,0,0,0
+eau-de-hongrie-eau-de-parfum,2,eau de hongrie eau de parfum,1,0.904,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.77,1,1,1,0,0.022,0,0,0,0,0.386,1,1,1,0,0.014,0,0,0
+eau-de-parfum-eau-de-parfum,1,eau de parfum eau de parfum,0,0.7,1,1,1,0,0.01,0,0,0,0,0.002,0,0,0,0,0.508,1,1,0,0,0.028,0,0,0,0,0.318,1,1,1,0,0.004,0,0,0
+eau-des-sens-eau-de-toilette,2,eau des sens eau de toilette,1,0.85,1,1,1,1,0.008,0,0,0,0,0.002,0,0,0,0,0.586,1,1,1,0,0.07,0,0,0,0,0.482,1,1,1,0,0.01,0,0,0
+eau-duelle-eau-de-toilette,1,eau duelle - eau de toilette,1,0.84,1,1,1,0,0.05,0,0,0,0,0.0,0,0,0,1,0.588,1,1,1,0,0.044,0,0,0,0,0.584,1,1,1,0,0.012,0,0,0
+eau-sacree-extrait-de-parfum,5,eau sacree extrait de parfum,1,0.864,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.53,1,1,1,0,0.052,0,0,0,0,0.472,1,1,1,0,0.018,0,0,0
+eau-suave-eau-de-parfum,1,eau suave eau de parfum,1,0.782,1,1,1,0,0.036,0,0,0,0,0.0,0,0,0,1,0.534,1,1,0,1,0.076,0,0,0,0,0.41,1,1,1,0,0.008,0,0,0
+egypt-eau-de-toilette,5,egypt eau de toilette,0,0.868,1,1,1,0,0.052,0,0,0,0,0.0,0,0,0,0,0.714,1,1,1,0,0.044,0,0,0,1,0.42,1,1,1,0,0.004,0,0,0
+elysium-parfum-cologne,5,elysium parfum cologne,1,0.798,1,1,1,0,0.022,0,0,0,0,0.002,0,0,0,0,0.534,1,1,1,0,0.02,0,0,0,0,0.554,1,1,1,0,0.02,0,0,0
+empathy-eau-de-parfum,1,empathy eau de parfum,1,0.924,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.74,1,1,1,0,0.018,0,0,0,0,0.28,0,1,1,0,0.002,0,0,0
+empressa-eau-de-toilette,4,empressa eau de toilette,1,0.822,1,1,1,0,0.034,0,0,0,0,0.0,0,0,0,1,0.476,1,1,1,0,0.088,0,0,0,0,0.43,1,1,1,0,0.002,0,0,0
+endymion-cologne,2,endymion cologne,0,0.92,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.694,1,1,1,0,0.018,0,0,0,1,0.524,1,1,1,0,0.004,0,0,0
+ennui-noir-parfum-extrait,3,ennui noir parfum extrait,1,0.802,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.54,1,1,1,0,0.038,0,0,0,1,0.504,1,1,1,0,0.016,0,0,0
+epic-woman-eau-de-parfum,3,epic woman eau de parfum,1,0.67,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,1,0.48,1,1,1,0,0.056,0,1,1,0,0.626,1,1,1,0,0.016,0,0,0
+epidor-eau-de-parfum,2,epidor eau de parfum,1,0.842,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.552,1,1,1,0,0.048,0,0,0,1,0.67,1,1,1,0,0.006,0,0,0
+equistrius-eau-de-parfum,4,equistrius eau de parfum,1,0.76,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.554,1,1,1,0,0.042,0,0,0,0,0.45,1,1,1,0,0.02,0,0,0
+erdenstern-eau-de-parfum,4,erdenstern eau de parfum,0,0.876,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.558,1,1,1,0,0.056,0,0,0,0,0.48,1,1,1,0,0.002,0,0,0
+essential-13-sample-pack-feminine,4,essential 13 sample pack - feminine,0,0.558,1,1,1,0,0.036,0,0,0,0,0.0,0,0,0,0,0.608,1,1,1,0,0.09,0,0,0,0,0.376,1,1,1,0,0.144,0,0,0
+eternal-summer-eau-de-parfum,2,eternal summer eau de parfum,1,0.844,1,1,1,0,0.022,0,0,0,0,0.004,0,0,0,0,0.694,1,1,1,0,0.06,0,0,0,0,0.384,1,1,1,0,0.04,0,0,0
+every-storm-a-serenade-eau-de-parfum,3,every storm a serenade eau de parfum,0,0.866,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.58,1,1,1,0,0.034,0,0,0,0,0.642,1,1,1,1,0.0,0,0,0
+fall-into-stars-eau-de-parfum,4,fall into stars eau de parfum,1,0.84,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.744,1,1,1,0,0.05,0,0,0,0,0.464,1,1,1,0,0.022,0,0,0
+falling-into-the-sea-eau-de-parfum,5,falling into the sea eau de parfum,1,0.904,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.714,1,1,1,0,0.034,0,0,0,0,0.566,1,1,1,0,0.004,0,0,0
+fat-electrician-eau-de-parfum,1,fat electrician eau de parfum,1,0.712,1,1,1,0,0.03,0,0,0,0,0.01,0,0,0,0,0.47,1,1,0,0,0.08,0,0,0,1,0.45,1,1,1,0,0.028,0,0,0
+felanilla-eau-de-parfum,4,felanilla eau de parfum,1,0.854,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.618,1,1,1,0,0.196,0,0,0,0,0.438,1,1,1,0,0.014,0,0,0
+female-christ-eau-de-parfum,4,female christ eau de parfum,0,0.9,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.666,1,1,1,1,0.19,0,0,0,1,0.536,1,1,1,0,0.012,0,0,0
+feminite-du-bois-eau-de-parfum,1,feminite du bois eau de parfum,1,0.872,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.554,1,1,1,0,0.108,0,0,0,1,0.452,1,1,1,0,0.028,0,0,0
+fetes-persanes-eau-de-parfum,1,fetes persanes eau de parfum,1,0.83,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.606,1,1,1,0,0.046,0,0,0,0,0.472,1,1,1,0,0.018,0,0,0
+feu-secret-eau-de-parfum,3,feu secret eau de parfum,1,0.714,1,1,1,0,0.004,0,0,0,0,0.014,0,0,0,0,0.574,1,1,1,0,0.024,0,0,0,0,0.528,1,1,1,0,0.014,0,0,0
+fiero-eau-de-parfum,3,fiero eau de parfum,1,0.958,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.932,1,1,1,0,0.018,0,0,0,0,0.088,0,1,0,0,0.0,0,0,0
+fig-tea-eau-de-toilette,3,fig tea eau de toilette,1,0.888,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,0,0.754,1,1,1,0,0.01,0,0,0,1,0.554,1,1,1,0,0.006,0,0,0
+fils-de-dieu-eau-de-parfum,1,fils de dieu eau de parfum,0,0.886,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.608,1,1,1,0,0.158,0,0,0,1,0.43,1,1,1,0,0.05,0,0,0
+fiore-d-ambra-eau-de-parfum,5,fiore d'ambra eau de parfum,1,0.862,1,1,1,0,0.002,0,0,0,0,0.008,0,0,0,1,0.492,1,1,1,0,0.044,0,0,0,0,0.526,1,1,1,0,0.03,0,0,0
+fiore-d-ulivo-eau-de-parfum,5,fiore d'ulivo eau de parfum,1,0.836,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,0,0.564,1,1,1,0,0.008,0,0,0,0,0.444,1,1,1,0,0.004,0,0,0
+fiori-di-capri-parfum,5,fiori di capri parfum,1,0.484,1,1,0,0,0.002,0,0,0,0,0.0,0,0,0,0,0.494,1,1,1,0,0.002,0,0,0,0,0.388,1,1,1,0,0.018,0,0,0
+five-o-clock-au-gingembre-eau-de-parfum,5,five o'clock au gingembre eau de parfum,1,0.928,1,1,1,0,0.034,0,0,0,0,0.0,0,0,0,1,0.634,1,1,1,0,0.036,0,0,0,1,0.366,1,1,1,0,0.014,0,0,0
+flaming-dandelion-eau-de-parfum,1,flaming dandelion eau de parfum,1,0.802,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,0,0.654,1,1,1,0,0.036,0,0,0,1,0.604,1,1,1,0,0.018,0,0,0
+flash-back-eau-de-parfum,3,flash back eau de parfum,1,0.896,1,1,1,0,0.064,0,1,0,0,0.0,0,0,0,0,0.648,1,1,1,1,0.108,0,1,1,0,0.442,1,1,1,0,0.046,0,0,0
+flavia-vanilla-eau-de-parfum,4,flavia vanilla eau de parfum,1,0.808,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.694,1,1,1,1,0.088,0,0,0,0,0.364,1,1,1,0,0.038,0,0,0
+fleur-d-oranger-27-eau-de-parfum,1,fleur d'oranger 27 eau de parfum,1,0.85,1,1,1,0,0.04,0,0,0,0,0.0,0,0,0,1,0.594,1,1,1,1,0.03,0,0,0,0,0.654,1,1,1,0,0.0,0,0,0
+fleur-de-comores-eau-de-parfum,2,fleur de comores eau de parfum,1,0.894,1,1,1,0,0.026,0,0,0,0,0.0,0,0,0,1,0.532,1,1,1,0,0.008,0,0,0,0,0.608,1,1,1,0,0.004,0,0,0
+fleur-nocturne-eau-de-parfum,3,fleur nocturne eau de parfum,1,0.794,1,1,1,0,0.012,0,0,0,0,0.008,0,0,0,0,0.588,1,1,1,0,0.04,0,0,0,0,0.446,1,1,1,0,0.042,0,0,0
+fleurs-d-oranger-eau-de-parfum,2,fleurs d'oranger eau de parfum,1,0.828,1,1,1,0,0.002,0,0,0,0,0.012,0,0,0,0,0.55,1,1,1,1,0.034,0,0,0,0,0.484,1,1,1,0,0.012,0,0,0
+flor-de-naranjo-eau-de-parfum,5,flor de naranjo eau de parfum,1,0.856,1,1,1,0,0.016,0,0,0,0,0.002,0,0,0,0,0.806,1,1,1,0,0.072,0,0,0,0,0.34,1,1,0,0,0.01,0,0,0
+flos-mortis-eau-de-toilette,5,flos mortis eau de toilette,1,0.752,1,1,1,0,0.01,0,0,0,0,0.046,0,0,0,0,0.516,1,1,1,0,0.032,0,0,0,0,0.464,1,1,1,1,0.03,0,0,0
+flower-of-immortality-eau-de-parfum,4,flower of immortality eau de parfum,1,0.71,1,1,1,0,0.122,0,0,0,0,0.0,0,0,0,0,0.642,1,1,1,0,0.03,0,0,0,1,0.478,1,1,1,0,0.02,0,0,0
+foin-fraichement-coupe-eau-de-parfum,1,foin fraichement coupe eau de parfum,1,0.864,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.648,1,1,1,0,0.07,0,0,0,0,0.578,1,1,1,0,0.008,0,0,0
+forbidden-games-eau-de-parfum,3,forbidden games eau de parfum,1,0.91,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.696,1,1,1,0,0.102,0,1,1,0,0.446,1,1,1,0,0.008,0,0,0
+fortis-eau-de-parfum,3,fortis eau de parfum,0,0.928,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.71,1,1,1,0,0.018,0,0,0,1,0.37,1,1,1,0,0.002,0,0,0
+fou-d-absinthe-eau-de-parfum,2,fou d'absinthe eau de parfum,1,0.794,1,1,1,0,0.012,0,0,0,0,0.004,0,0,0,1,0.672,1,1,1,0,0.022,0,0,0,1,0.402,1,1,1,0,0.054,0,0,0
+fougere-bengale-eau-de-parfum,4,fougere bengale eau de parfum,1,0.762,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.588,1,1,1,0,0.026,0,0,0,0,0.508,1,1,1,0,0.024,0,0,0
+framboise-noire-eau-de-parfum,1,framboise noire eau de parfum,1,0.75,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.596,1,1,1,0,0.114,0,0,0,0,0.448,1,1,1,0,0.008,0,0,0
+francois-charles-eau-de-parfum,1,francois charles eau de parfum,1,0.732,1,1,1,0,0.012,0,0,0,0,0.002,0,0,0,0,0.626,1,1,1,0,0.054,0,0,0,0,0.422,1,1,1,0,0.006,0,0,0
+frank-no-1-eau-de-parfum,3,frank no. 1 eau de parfum,1,0.942,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.666,1,1,1,0,0.028,0,0,0,0,0.538,1,1,1,0,0.0,0,0,0
+frank-no-2-eau-de-parfum,4,frank no. 2 eau de parfum,1,0.85,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.674,1,1,1,0,0.004,0,0,0,0,0.486,1,1,1,0,0.016,0,0,0
+frankincense-myrrh-rose-maroc-perfume-oil,4,frankincense - myrrh - rose maroc perfume oil,1,0.764,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.514,1,1,1,0,0.056,0,0,0,1,0.452,1,1,1,0,0.02,0,0,0
+freetrapper-eau-de-parfum,1,freetrapper eau de parfum,1,0.888,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,0,0.57,1,1,1,0,0.05,0,0,0,0,0.456,1,1,1,0,0.034,0,0,0
+french-leather-eau-de-parfum,1,french leather eau de parfum,1,0.768,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,0,0.576,1,1,1,0,0.06,0,0,0,1,0.502,1,1,1,0,0.024,0,0,0
+fruitchouli-eau-de-parfum,1,fruitchouli eau de parfum,1,0.814,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.696,1,1,1,0,0.016,0,0,0,1,0.618,1,1,1,0,0.012,0,0,0
+fumidus-eau-de-parfum,4,fumidus eau de parfum,0,0.836,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.512,1,1,1,1,0.026,0,0,0,0,0.59,1,1,1,1,0.018,0,0,0
+gaea-eau-de-parfum,3,gaea eau de parfum,1,0.764,1,1,1,0,0.008,0,0,0,0,0.006,0,0,0,0,0.584,1,1,1,0,0.104,0,1,1,0,0.442,1,1,1,0,0.052,0,1,0
+galloway-eau-de-parfum,5,galloway eau de parfum,1,0.866,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.886,1,1,1,0,0.036,0,0,0,0,0.282,0,1,0,0,0.012,0,0,0
+gardenia-eau-de-parfum,5,gardenia eau de parfum,1,0.906,1,1,1,0,0.018,0,0,0,0,0.002,0,0,0,1,0.828,1,1,1,0,0.07,0,0,0,0,0.36,1,1,1,0,0.0,0,0,0
+gardenia-petale-eau-de-parfum,3,gardenia petale eau de parfum,1,0.806,1,1,1,1,0.008,0,0,0,0,0.0,0,0,0,1,0.648,1,1,1,0,0.012,0,0,0,0,0.534,1,1,1,0,0.0,0,0,0
+garnet-perfume-oil,3,garnet perfume oil,1,0.838,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.57,1,1,1,0,0.024,0,0,0,1,0.486,1,1,1,0,0.016,0,0,0
+geisha-blanche-eau-de-parfum,5,geisha blanche eau de parfum,1,0.844,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,0,0.692,1,1,1,0,0.038,0,0,0,1,0.384,1,1,1,0,0.03,0,0,0
+geisha-green-roll-on-perfume-oil,3,geisha green roll-on perfume oil,0,0.642,1,1,0,0,0.124,0,1,0,0,0.024,0,0,0,1,0.676,1,1,1,1,0.064,0,1,1,0,0.364,1,1,1,0,0.074,0,1,0
+geisha-noire-eau-de-parfum,2,geisha noire eau de parfum,0,0.672,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.482,1,1,1,0,0.056,0,0,0,0,0.448,1,1,1,0,0.026,0,0,0
+geisha-noire-roll-on-perfume-oil,5,geisha noire roll-on perfume oil,0,0.558,1,1,0,0,0.036,0,0,0,0,0.002,0,0,0,1,0.666,1,1,1,0,0.22,0,1,0,0,0.428,1,1,1,0,0.094,0,0,0
+geisha-rouge-eau-de-parfum,3,geisha rouge - eau de parfum,1,0.816,1,1,1,0,0.036,0,0,0,0,0.0,0,0,0,1,0.684,1,1,1,1,0.066,0,1,1,0,0.536,1,1,1,0,0.016,0,0,0
+geisha-vanilla-hinoki-eau-de-parfum,3,geisha vanilla hinoki- eau de parfum,1,0.862,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.67,1,1,1,0,0.148,0,1,1,1,0.514,1,1,1,0,0.002,0,0,0
+geisha-vanilla-hinoki-roll-on-perfume-oil,4,geisha vanilla hinoki roll-on perfume oil,0,0.69,1,1,1,0,0.044,0,0,0,0,0.008,0,0,0,0,0.464,1,1,1,0,0.086,0,0,0,0,0.348,1,1,1,0,0.028,0,0,0
+gendarme-eau-de-cologne,3,gendarme - eau de cologne,1,0.866,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.55,1,1,1,0,0.066,0,1,1,0,0.464,1,1,1,0,0.06,0,1,0
+geza-schoen-eau-de-toilette,2,geza schoen eau de toilette,1,0.804,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.584,1,1,1,0,0.032,0,0,0,1,0.482,1,1,1,0,0.004,0,0,0
+gheorghe-eau-de-parfum,4,gheorghe eau de parfum,0,0.644,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.612,1,1,1,0,0.034,0,0,0,0,0.44,1,1,1,1,0.01,0,0,0
+ginger-ciao-eau-de-parfum,4,ginger ciao eau de parfum,1,0.848,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.65,1,1,1,0,0.02,0,0,0,1,0.494,1,1,1,0,0.02,0,0,0
+glorious-eau-de-parfum,3,glorious eau de parfum,1,0.776,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.7,1,1,1,0,0.074,0,1,1,0,0.168,0,1,0,0,0.018,0,0,0
+godolphin-eau-de-parfum,4,godolphin eau de parfum,0,0.644,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.594,1,1,1,0,0.014,0,0,0,0,0.478,1,1,1,0,0.012,0,0,0
+gold-extrait-de-parfum,2,gold extrait de parfum,1,0.818,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.55,1,1,1,0,0.04,0,0,0,1,0.378,1,1,1,0,0.024,0,0,0
+gold-rose-oudh-extrait-de-parfum,3,gold rose oudh extrait de parfum,1,0.742,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.46,1,1,1,0,0.022,0,0,0,0,0.58,1,1,1,0,0.006,0,0,0
+gold-woman-eau-de-parfum,5,gold woman eau de parfum,1,0.864,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.746,1,1,1,0,0.04,0,0,0,1,0.446,1,1,1,0,0.004,0,0,0
+golden-powder-eau-de-parfum,3,golden powder eau de parfum,1,0.872,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,1,0.18,0,1,1,1,0.51,1,1,1,0,0.026,0,0,0
+good-girl-gone-bad-eau-de-parfum,2,good girl gone bad eau de parfum,0,0.88,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.58,1,1,1,0,0.038,0,0,0,1,0.534,1,1,1,0,0.032,0,0,0
+gothic-i-eau-de-parfum,1,gothic i - eau de parfum,1,0.708,1,1,1,0,0.034,0,0,0,0,0.004,0,0,0,1,0.576,1,1,1,0,0.028,0,0,0,0,0.558,1,1,1,0,0.014,0,0,0
+gothic-i-perfume-oil-roll-on-perfume-oil,2,gothic i - perfume oil roll-on perfume oil,1,0.894,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.486,1,1,1,0,0.046,0,0,0,1,0.758,1,1,1,0,0.016,0,0,0
+gothic-ii-eau-de-parfum,4,gothic ii - eau de parfum,0,0.748,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.526,1,1,1,0,0.038,0,0,0,1,0.528,1,1,1,0,0.006,0,0,0
+gothic-ii-perfume-oil-roll-on-perfume-oil,1,gothic ii - perfume oil roll-on perfume oil,1,0.886,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.394,1,1,0,0,0.018,0,0,0,1,0.758,1,1,1,0,0.012,0,0,0
+gothic-iii-eau-de-parfum,5,gothic iii - eau de parfum,1,0.524,1,1,0,0,0.052,0,0,0,0,0.008,0,0,0,1,0.662,1,1,1,0,0.018,0,0,0,1,0.438,1,1,1,0,0.024,0,0,0
+gothic-iii-perfume-oil-roll-on-perfume-oil,2,gothic iii - perfume oil roll-on perfume oil,1,0.894,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.486,1,1,1,0,0.046,0,0,0,1,0.758,1,1,1,0,0.016,0,0,0
+gothic-iv-perfume-oil-perfume-oil-roll-on,4,gothic iv- perfume oil perfume oil roll-on,1,0.756,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.36,1,1,0,0,0.0,0,0,0,1,0.604,1,1,1,0,0.132,0,0,0
+gothic-v-perfume-oil-perfume-oil-roll-on,3,gothic v- perfume oil perfume oil roll-on,1,0.876,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,1,0.446,1,1,1,0,0.068,0,1,1,1,0.582,1,1,1,0,0.01,0,0,0
+graine-de-joie-eau-de-parfum,2,graine de joie eau de parfum,1,0.82,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.624,1,1,1,0,0.036,0,0,0,0,0.446,1,1,1,0,0.002,0,0,0
+grand-neroli-cologne-absolue,2,grand neroli cologne absolue,1,0.832,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.622,1,1,1,0,0.012,0,0,0,0,0.53,1,1,1,0,0.004,0,0,0
+grand-soir-eau-de-parfum,4,grand soir eau de parfum,1,0.932,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.706,1,1,1,0,0.06,0,0,0,1,0.37,1,1,1,0,0.004,0,0,0
+grape-pearls-eau-de-parfum,1,grape pearls eau de parfum,1,0.92,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,0,0.612,1,1,1,0,0.034,0,0,0,1,0.43,1,1,1,0,0.004,0,0,0
+graphite-eau-de-parfum,4,graphite eau de parfum,1,0.744,1,1,1,0,0.07,0,0,0,0,0.0,0,0,0,1,0.626,1,1,1,0,0.092,0,0,0,1,0.458,1,1,1,0,0.054,0,0,0
+greek-keys-extrait-de-parfum,3,greek keys extrait de parfum,1,0.778,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,0,0.574,1,1,1,0,0.032,0,0,0,1,0.6,1,1,1,0,0.002,0,0,0
+green-eau-de-parfum,3,green eau de parfum,0,0.502,1,1,0,0,0.004,0,0,0,0,0.008,0,0,0,0,0.336,1,1,1,0,0.052,0,1,1,1,0.222,0,1,0,0,0.026,0,0,0
+green-irish-tweed-eau-de-parfum,2,green irish tweed eau de parfum ...,0,0.586,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.616,1,1,1,0,0.02,0,0,0,0,0.374,1,1,1,0,0.016,0,0,0
+green-pearl-eau-de-parfum,3,green pearl eau de parfum,1,0.824,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.686,1,1,1,0,0.02,0,0,0,1,0.436,1,1,1,0,0.0,0,0,0
+habdan-eau-de-parfum,5,habdan eau de parfum,1,0.714,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.626,1,1,1,0,0.032,0,0,0,1,0.606,1,1,1,0,0.008,0,0,0
+hakka-eau-de-parfum,1,hakka eau de parfum,1,0.706,1,1,1,0,0.034,0,0,0,0,0.002,0,0,0,0,0.596,1,1,1,0,0.044,0,0,0,0,0.364,1,1,1,0,0.018,0,0,0
+harmatan-noir-eau-de-toilette,3,harmatan noir eau de toilette,0,0.872,1,1,1,0,0.006,0,0,0,0,0.004,0,0,0,0,0.622,1,1,1,0,0.028,0,0,0,1,0.522,1,1,1,0,0.01,0,0,0
+haxan-eau-de-parfum,1,haxan eau de parfum,1,0.688,1,1,1,0,0.04,0,0,0,0,0.0,0,0,0,0,0.542,1,1,0,0,0.042,0,0,0,1,0.53,1,1,1,0,0.03,0,0,0
+heartless-helen-eau-de-parfum,3,heartless helen eau de parfum,1,0.762,1,1,1,0,0.004,0,0,0,0,0.002,0,0,0,1,0.502,1,1,1,0,0.036,0,0,0,0,0.48,1,1,1,0,0.02,0,0,0
+hedonist-eau-de-parfum,5,hedonist eau de parfum,1,0.792,1,1,1,0,0.056,0,0,0,0,0.0,0,0,0,0,0.572,1,1,1,0,0.034,0,0,0,0,0.576,1,1,1,0,0.052,0,0,0
+hedonist-iris-absolute-eau-de-parfum,1,hedonist iris absolute eau de parfum,1,0.75,1,1,1,0,0.004,0,0,0,0,0.008,0,0,0,0,0.658,1,1,1,0,0.012,0,0,0,1,0.658,1,1,1,0,0.04,0,0,0
+hedonist-iris-eau-de-parfum,5,hedonist iris eau de parfum,1,0.694,1,1,0,0,0.01,0,0,0,0,0.0,0,0,0,1,0.524,1,1,1,0,0.022,0,0,0,0,0.612,1,1,1,0,0.022,0,0,0
+hedonist-rose-absolute-eau-de-parfum,4,hedonist rose absolute eau de parfum,1,0.746,1,1,1,0,0.046,0,0,0,0,0.0,0,0,0,0,0.562,1,1,1,0,0.034,0,0,0,1,0.564,1,1,1,0,0.012,0,0,0
+hedonist-rose-eau-de-parfum,4,hedonist rose eau de parfum,1,0.726,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.604,1,1,1,0,0.008,0,0,0,0,0.52,1,1,1,0,0.012,0,0,0
+heliotrope-eau-de-parfum,3,heliotrope eau de parfum,1,0.838,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.562,1,1,1,0,0.024,0,0,0,1,0.54,1,1,1,0,0.008,0,0,0
+hermann-eau-de-parfum,2,hermann eau de parfum,1,0.674,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.628,1,1,1,0,0.01,0,0,0,1,0.626,1,1,1,0,0.034,0,0,0
+himalaya-eau-de-parfum,3,himalaya eau de parfum ...,1,0.804,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.648,1,1,1,0,0.064,0,1,1,0,0.374,1,1,1,0,0.066,0,1,0
+homme-eau-de-parfum,3,homme eau de parfum,1,0.7,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.536,1,1,1,0,0.058,0,1,1,1,0.378,1,1,1,0,0.04,0,0,0
+honey-aoud-eau-de-parfum,3,honey aoud eau de parfum,0,0.634,1,1,0,0,0.006,0,0,0,0,0.0,0,0,0,0,0.518,1,1,1,0,0.026,0,0,0,0,0.34,1,1,1,0,0.006,0,0,0
+honeysuckle-caprifoglio-cologne-eau-de-cologne,1,honeysuckle / caprifoglio cologne eau de cologne,1,0.806,1,1,1,0,0.03,0,0,0,0,0.0,0,0,0,1,0.676,1,1,1,0,0.034,0,0,0,0,0.522,1,1,1,0,0.036,0,0,0
+horizon-eau-de-parfum,3,horizon eau de parfum,0,0.822,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,0,0.66,1,1,1,0,0.044,0,0,0,1,0.428,1,1,1,0,0.008,0,0,0
+hundred-silent-ways-extrait-de-parfum,4,hundred silent ways extrait de parfum,1,0.886,1,1,1,0,0.044,0,0,0,0,0.0,0,0,0,1,0.644,1,1,1,0,0.044,0,0,0,1,0.55,1,1,1,0,0.0,0,0,0
+ichnusa-eau-de-parfum,1,ichnusa eau de parfum,1,0.79,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,0,0.494,1,1,0,0,0.022,0,0,0,1,0.518,1,1,1,0,0.018,0,0,0
+if-by-rk-eau-de-parfum,2,if by rk eau de parfum,1,0.846,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,0,0.574,1,1,1,0,0.044,0,0,0,1,0.702,1,1,1,0,0.008,0,0,0
+ile-pourpre-eau-de-parfum,2,ile pourpre eau de parfum,0,0.886,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.64,1,1,1,0,0.088,0,0,0,1,0.484,1,1,1,0,0.006,0,0,0
+incense-extreme-eau-de-parfum,3,incense extreme eau de parfum,0,0.752,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.558,1,1,1,0,0.092,0,1,1,1,0.57,1,1,1,0,0.028,0,0,0
+incense-flash-eau-de-parfum,5,incense flash eau de parfum,1,0.912,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.66,1,1,1,0,0.06,0,0,0,1,0.448,1,1,1,0,0.006,0,0,0
+incense-oud-eau-de-parfum,1,incense oud eau de parfum,1,0.764,1,1,1,0,0.052,0,0,0,0,0.006,0,0,0,0,0.632,1,1,1,0,0.068,0,0,0,1,0.406,1,1,1,0,0.032,0,0,0
+incense-rose-eau-de-parfum,1,incense rose eau de parfum,1,0.704,1,1,1,0,0.004,0,0,0,0,0.008,0,0,0,0,0.448,1,1,0,0,0.086,0,0,0,0,0.474,1,1,1,0,0.036,0,0,0
+indian-wood-eau-de-parfum,1,indian wood eau de parfum,1,0.858,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.764,1,1,1,1,0.118,0,0,0,0,0.426,1,1,1,0,0.0,0,0,0
+intelligence-fantasy-eau-de-toilette,1,intelligence & fantasy eau de toilette,1,0.616,1,1,0,0,0.012,0,0,0,0,0.0,0,0,0,0,0.66,1,1,1,0,0.156,0,0,0,1,0.412,1,1,1,0,0.006,0,0,0
+intense-tiare-eau-de-parfum,1,intense tiare eau de parfum,1,0.806,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.586,1,1,1,1,0.076,0,0,0,1,0.532,1,1,1,0,0.012,0,0,0
+into-the-void-eau-de-parfum,2,into the void eau de parfum,1,0.86,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.65,1,1,1,0,0.018,0,0,0,0,0.462,1,1,1,0,0.004,0,0,0
+invasion-barbare-eau-de-parfum,5,invasion barbare eau de parfum,1,0.828,1,1,1,0,0.02,0,0,0,0,0.004,0,0,0,1,0.562,1,1,1,0,0.054,0,0,0,0,0.418,1,1,1,0,0.032,0,0,0
+iridescent-sky-eau-de-parfum,2,iridescent sky eau de parfum,0,0.954,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.586,1,1,1,0,0.02,0,0,0,1,0.406,1,1,1,0,0.004,0,0,0
+iris-bleu-gris-eau-de-parfum,5,iris bleu gris eau de parfum,1,0.78,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.604,1,1,1,0,0.03,0,0,0,1,0.57,1,1,1,0,0.018,0,0,0
+iris-de-nuit-eau-de-parfum,2,iris de nuit eau de parfum,0,0.804,1,1,1,0,0.018,0,0,0,0,0.004,0,0,0,0,0.504,1,1,1,0,0.044,0,0,0,0,0.488,1,1,1,0,0.086,0,0,0
+iskander-eau-de-parfum,3,iskander eau de parfum,0,0.846,1,1,1,0,0.056,0,1,0,0,0.0,0,0,0,1,0.63,1,1,1,0,0.06,0,1,1,0,0.452,1,1,1,0,0.028,0,0,0
+issara-extrait-de-parfum,1,issara extrait de parfum,1,0.912,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.796,1,1,1,0,0.004,0,0,0,1,0.522,1,1,1,0,0.004,0,0,0
+italian-citrus-eau-de-parfum,5,italian citrus eau de parfum,1,0.71,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,1,0.57,1,1,1,0,0.026,0,0,0,0,0.538,1,1,1,0,0.006,0,0,0
+jack-eau-de-parfum,2,jack eau de parfum,0,0.838,1,1,1,1,0.018,0,0,0,0,0.0,0,0,0,0,0.614,1,1,1,0,0.098,0,0,0,0,0.56,1,1,1,0,0.014,0,0,0
+jade-eau-de-parfum,5,jade eau de parfum,1,0.936,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.714,1,1,1,0,0.048,0,0,0,0,0.234,0,1,0,0,0.018,0,0,0
+jardins-d-armide-eau-de-parfum,3,jardins d'armide eau de parfum,1,0.852,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.604,1,1,1,0,0.052,0,1,1,0,0.624,1,1,1,0,0.002,0,0,0
+jasmin-17-eau-de-parfum,4,jasmin 17 eau de parfum,0,0.772,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.732,1,1,1,0,0.04,0,0,0,1,0.268,0,1,1,0,0.016,0,0,0
+jasmin-angelique-cologne-absolue,4,jasmin angelique cologne absolue,0,0.814,1,1,1,0,0.03,0,0,0,0,0.002,0,0,0,0,0.554,1,1,1,0,0.052,0,0,0,1,0.476,1,1,1,0,0.026,0,0,0
+jasmin-et-cigarette-eau-de-parfum,3,jasmin et cigarette eau de parfum,0,0.758,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.65,1,1,1,0,0.034,0,0,0,1,0.522,1,1,1,1,0.016,0,0,0
+jasmin-kama-eau-de-parfum,1,jasmin kama eau de parfum,1,0.83,1,1,1,0,0.006,0,0,0,0,0.014,0,0,0,0,0.62,1,1,1,0,0.046,0,0,0,1,0.39,1,1,1,0,0.048,0,0,0
+jasmin-perfume-oil,1,jasmin perfume oil,1,0.78,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,0,0.638,1,1,1,0,0.054,0,0,0,0,0.544,1,1,1,0,0.028,0,0,0
+jubilation-25-eau-de-parfum,1,jubilation 25 eau de parfum,1,0.846,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.692,1,1,1,0,0.042,0,0,0,1,0.422,1,1,1,0,0.032,0,0,0
+jubilation-xxv-eau-de-parfum,3,jubilation xxv eau de parfum,1,0.86,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.766,1,1,1,0,0.014,0,0,0,1,0.38,1,1,1,0,0.04,0,0,0
+jungle-jezebel-extrait-de-parfum,3,jungle jezebel extrait de parfum,1,0.808,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.488,1,1,1,1,0.028,0,0,0,1,0.616,1,1,1,0,0.006,0,0,0
+jupiter-eau-de-parfum,3,jupiter eau de parfum,1,0.908,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.598,1,1,1,0,0.032,0,0,0,1,0.542,1,1,1,0,0.0,0,0,0
+jus-d-amour-eau-de-parfum,3,jus d'amour - eau de parfum,0,0.45,1,1,0,0,0.006,0,0,0,0,0.0,0,0,0,0,0.658,1,1,1,0,0.02,0,0,0,0,0.28,0,1,1,1,0.188,0,1,0
+jus-d-amour-perfume-oil-perfume-oil,1,jus d'amour - perfume oil perfume oil,0,0.394,1,1,0,0,0.01,0,0,0,0,0.002,0,0,0,0,0.524,1,1,0,0,0.062,0,0,0,0,0.394,1,1,1,1,0.222,0,0,0
+kai-eau-de-parfum-eau-de-parfum-spray,4,kai - eau de parfum eau de parfum spray,0,0.646,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.648,1,1,1,1,0.148,0,0,0,0,0.448,1,1,1,0,0.016,0,0,0
+kai-perfume-oil-roll-on-perfume-oil,3,kai - perfume oil roll-on perfume oil,1,0.618,1,1,0,0,0.012,0,0,0,0,0.008,0,0,0,1,0.444,1,1,1,0,0.034,0,0,0,0,0.442,1,1,1,0,0.022,0,0,0
+karagoz-extrait-de-parfum,2,karagoz extrait de parfum,1,0.758,1,1,1,0,0.02,0,0,0,0,0.006,0,0,0,0,0.64,1,1,1,0,0.118,0,1,1,0,0.476,1,1,1,0,0.124,0,1,0
+kashan-rose-eau-de-toilette,1,kashan rose eau de toilette,1,0.864,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,0,0.626,1,1,1,0,0.082,0,0,0,0,0.368,1,1,1,0,0.024,0,0,0
+keman-parfum,2,keman parfum,1,0.824,1,1,1,0,0.034,0,0,0,0,0.002,0,0,0,0,0.674,1,1,1,0,0.066,0,0,0,1,0.502,1,1,1,0,0.022,0,0,0
+kira-kira-eau-de-parfum,1,kira kira eau de parfum,0,0.682,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.666,1,1,1,0,0.05,0,0,0,1,0.402,1,1,1,0,0.008,0,0,0
+kiss-me-intense-eau-de-parfum,4,kiss me intense eau de parfum,1,0.854,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.626,1,1,1,0,0.018,0,0,0,0,0.574,1,1,1,0,0.074,0,0,0
+knize-ten-eau-de-toilette,2,knize ten eau de toilette,1,0.878,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.59,1,1,1,0,0.024,0,0,0,0,0.508,1,1,1,0,0.002,0,0,0
+kobe-eau-de-parfum,5,kobe eau de parfum,1,0.676,1,1,0,0,0.01,0,0,0,0,0.0,0,0,0,0,0.616,1,1,1,0,0.008,0,0,0,1,0.506,1,1,1,0,0.01,0,0,0
+koiame-eau-de-parfum,1,koiame eau de parfum,1,0.818,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,0,0.544,1,1,0,0,0.058,0,0,0,0,0.544,1,1,1,0,0.04,0,0,0
+l-air-du-desert-marocain-eau-de-toilette,3,l'air du desert marocain eau de toilette ...,1,0.866,1,1,1,0,0.002,0,0,0,0,0.006,0,0,0,1,0.532,1,1,1,1,0.07,0,1,1,0,0.59,1,1,1,0,0.01,0,0,0
+l-attesa-eau-de-parfum,3,l'attesa eau de parfum,1,0.874,1,1,1,0,0.012,0,0,0,0,0.002,0,0,0,0,0.672,1,1,1,0,0.064,0,1,1,1,0.456,1,1,1,0,0.008,0,0,0
+l-eau-d-ambre-eau-de-toilette,3,l'eau d'ambre eau de toilette,0,0.72,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.666,1,1,1,0,0.022,0,0,0,0,0.428,1,1,1,0,0.006,0,0,0
+l-eau-de-circe-eau-de-parfum,3,l'eau de circe eau de parfum,0,0.534,1,1,0,0,0.012,0,0,0,0,0.002,0,0,0,0,0.47,1,1,1,0,0.06,0,1,1,0,0.338,1,1,1,0,0.02,0,0,0
+l-eau-de-l-artisan-eau-de-toilette,5,l'eau de l'artisan eau de toilette,0,0.852,1,1,1,0,0.03,0,0,0,0,0.0,0,0,0,0,0.674,1,1,1,0,0.028,0,0,0,1,0.464,1,1,1,0,0.022,0,0,0
+l-eau-eau-de-toilette,4,l'eau eau de toilette,0,0.736,1,1,1,0,0.042,0,0,0,0,0.0,0,0,0,0,0.648,1,1,1,0,0.024,0,0,0,1,0.402,1,1,1,0,0.026,0,0,0
+l-eau-mixte-eau-fraiche,4,l'eau mixte eau fraiche,1,0.812,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.534,1,1,1,0,0.086,0,0,0,1,0.554,1,1,1,0,0.018,0,0,0
+l-eau-rare-matale-eau-de-toilette,1,l'eau rare matale eau de toilette,1,0.842,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.608,1,1,1,0,0.01,0,0,0,1,0.574,1,1,1,0,0.0,0,0,0
+l-ete-en-douce-eau-de-toilette,4,l'ete en douce eau de toilette,1,0.718,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,0,0.648,1,1,1,0,0.034,0,0,0,1,0.416,1,1,1,0,0.008,0,0,0
+l-humaniste-eau-de-parfum,1,l'humaniste eau de parfum,1,0.818,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.654,1,1,1,0,0.028,0,0,0,1,0.472,1,1,1,0,0.034,0,0,0
+l-ombre-dans-l-eau-eau-de-parfum,5,l'ombre dans l'eau - eau de parfum,1,0.818,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,0,0.698,1,1,1,0,0.02,0,0,0,1,0.488,1,1,1,0,0.024,0,0,0
+l-ombre-dans-l-eau-eau-de-toilette,5,l'ombre dans l'eau - eau de toilette,1,0.802,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.504,1,1,1,0,0.028,0,0,0,0,0.584,1,1,1,0,0.008,0,0,0
+la-capitale-parfum,3,la capitale parfum,1,0.856,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.786,1,1,1,0,0.032,0,0,0,1,0.242,0,1,0,0,0.008,0,0,0
+la-chasse-aux-papillons-eau-de-toilette,2,la chasse aux papillons eau de toilette,1,0.86,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.714,1,1,1,0,0.076,0,0,0,0,0.514,1,1,1,0,0.058,0,0,0
+la-chasse-aux-papillons-extreme-eau-de-parfum,2,la chasse aux papillons extreme eau de parfum,1,0.804,1,1,1,0,0.042,0,0,0,0,0.002,0,0,0,0,0.776,1,1,1,0,0.174,0,1,1,1,0.408,1,1,1,0,0.12,0,1,0
+la-liturgie-des-heures-eau-de-parfum,2,la liturgie des heures eau de parfum,0,0.622,1,1,1,0,0.022,0,0,0,0,0.006,0,0,0,0,0.674,1,1,1,0,0.046,0,0,0,1,0.474,1,1,1,0,0.056,0,0,0
+la-tulipe-eau-de-parfum,4,la tulipe eau de parfum,1,0.772,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.636,1,1,1,0,0.032,0,0,0,1,0.322,1,1,1,0,0.016,0,0,0
+la-tulipe-hair-perfume,5,la tulipe hair perfume,0,0.746,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,0,0.554,1,1,1,0,0.022,0,0,0,0,0.45,1,1,1,1,0.17,0,0,0
+la-vierge-de-fer-eau-de-parfum,4,la vierge de fer eau de parfum,1,0.684,1,1,1,0,0.01,0,0,0,0,0.018,0,0,0,0,0.578,1,1,1,0,0.022,0,0,0,0,0.45,1,1,1,0,0.034,0,0,0
+labdanum-18-eau-de-parfum,5,labdanum 18 eau de parfum,1,0.858,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.606,1,1,1,0,0.03,0,0,0,0,0.65,1,1,1,0,0.02,0,0,0
+lace-extrait-de-parfum,1,lace extrait de parfum,1,0.89,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.746,1,1,1,0,0.01,0,0,0,1,0.324,1,1,1,0,0.002,0,0,0
+lady-vengeance-eau-de-parfum,5,lady vengeance eau de parfum,0,0.914,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,0,0.676,1,1,1,0,0.056,0,0,0,1,0.492,1,1,1,0,0.014,0,0,0
+lalibela-eau-de-parfum,3,lalibela eau de parfum,0,0.82,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.704,1,1,1,0,0.034,0,0,0,1,0.506,1,1,1,0,0.012,0,0,0
+lampblack-eau-de-parfum,5,lampblack eau de parfum,0,0.874,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.794,1,1,1,0,0.01,0,0,0,1,0.298,0,1,0,0,0.024,0,0,0
+land-of-warriors-eau-de-parfum,5,land of warriors eau de parfum,0,0.884,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.542,1,1,1,0,0.026,0,0,0,0,0.542,1,1,1,0,0.004,0,0,0
+larmes-du-desert-eau-de-parfum,1,larmes du desert eau de parfum,1,0.746,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.506,1,1,0,0,0.022,0,0,0,0,0.566,1,1,1,0,0.014,0,0,0
+laudano-nero-extrait-de-parfum,2,laudano nero extrait de parfum,1,0.81,1,1,1,0,0.028,0,0,0,0,0.002,0,0,0,0,0.55,1,1,1,1,0.046,0,0,0,0,0.61,1,1,1,0,0.004,0,0,0
+lavande-44-eau-de-parfum,2,lavande 44 eau de parfum,1,0.822,1,1,1,0,0.004,0,0,0,0,0.004,0,0,0,0,0.624,1,1,1,0,0.048,0,0,0,0,0.4,1,1,1,0,0.048,0,0,0
+layton-eau-de-parfum,2,layton eau de parfum,1,0.792,1,1,1,0,0.036,0,0,0,0,0.0,0,0,0,1,0.688,1,1,1,0,0.018,0,0,0,0,0.298,0,1,1,0,0.016,0,0,0
+le-barbier-de-tanger-eau-de-parfum,5,le barbier de tanger eau de parfum,1,0.806,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.586,1,1,1,0,0.016,0,0,0,1,0.448,1,1,1,0,0.026,0,0,0
+le-maroc-pour-elle-eau-de-parfum,1,le maroc pour elle eau de parfum,0,0.712,1,1,1,0,0.002,0,0,0,0,0.004,0,0,0,0,0.508,1,1,0,0,0.066,0,0,0,1,0.472,1,1,1,0,0.028,0,0,0
+le-musc-la-peau-eau-de-parfum,3,le musc & la peau eau de parfum,1,0.832,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.658,1,1,1,0,0.018,0,0,0,1,0.46,1,1,1,0,0.0,0,0,0
+le-pavillon-d-or-eau-de-parfum,4,le pavillon d'or eau de parfum,1,0.914,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.536,1,1,1,0,0.076,0,0,0,1,0.53,1,1,1,0,0.008,0,0,0
+le-roi-empereur-eau-de-parfum,5,le roi empereur eau de parfum,1,0.666,1,1,0,0,0.012,0,0,0,0,0.02,0,0,0,0,0.492,1,1,1,0,0.048,0,0,0,1,0.522,1,1,1,0,0.034,0,0,0
+le-vainqueur-eau-de-parfum,4,le vainqueur eau de parfum,1,0.82,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.52,1,1,1,0,0.036,0,0,0,1,0.46,1,1,1,0,0.022,0,0,0
+leder-6-eau-de-parfum,4,leder 6 eau de parfum,1,0.846,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.778,1,1,1,0,0.036,0,0,0,0,0.342,1,1,1,0,0.0,0,0,0
+lemon-line-eau-de-parfum,3,lemon line eau de parfum,1,0.874,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,1,0.066,0,1,1,1,0.49,1,1,1,0,0.006,0,0,0
+leopard-extrait-de-parfum,1,leopard extrait de parfum,1,0.934,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.608,1,1,1,0,0.016,0,0,0,0,0.41,1,1,1,0,0.006,0,0,0
+les-annees-25-bis-eau-de-parfum,5,les annees 25 bis eau de parfum,1,0.918,1,1,1,0,0.01,0,0,0,0,0.004,0,0,0,1,0.634,1,1,1,0,0.008,0,0,0,1,0.54,1,1,1,0,0.004,0,0,0
+les-jeux-sont-faits-eau-de-parfum,3,les jeux sont faits eau de parfum,1,0.774,1,1,1,0,0.0,0,0,0,0,0.006,0,0,0,0,0.678,1,1,1,0,0.068,0,1,1,0,0.464,1,1,1,1,0.014,0,0,0
+les-nuits-d-izu-eau-de-parfum,3,les nuits d'izu eau de parfum,0,0.456,1,1,0,0,0.008,0,0,0,0,0.172,0,1,0,0,0.44,1,1,1,0,0.02,0,0,0,0,0.548,1,1,1,0,0.022,0,0,0
+lilac-love-eau-de-parfum,1,lilac love eau de parfum,1,0.788,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.636,1,1,1,0,0.018,0,0,0,1,0.534,1,1,1,0,0.006,0,0,0
+lili-laa-eau-de-parfum,4,lili laa eau de parfum,1,0.828,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.562,1,1,1,0,0.058,0,0,0,1,0.514,1,1,1,0,0.01,0,0,0
+liquidnight-eau-de-parfum,2,liquidnight eau de parfum,0,0.838,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.522,1,1,1,0,0.046,0,0,0,1,0.582,1,1,1,0,0.05,0,0,0
+lira-eau-de-parfum,1,lira eau de parfum,1,0.792,1,1,1,0,0.01,0,0,0,0,0.002,0,0,0,1,0.608,1,1,1,0,0.108,0,0,0,1,0.476,1,1,1,0,0.026,0,0,0
+lonestar-memories-eau-de-toilette,5,lonestar memories eau de toilette,1,0.682,1,1,0,0,0.004,0,0,0,0,0.002,0,0,0,1,0.45,1,1,1,0,0.016,0,0,0,1,0.676,1,1,1,0,0.038,0,0,0
+love-in-white-eau-de-parfum,4,love in white eau de parfum ...,1,0.876,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.71,1,1,1,0,0.128,0,0,0,0,0.562,1,1,1,0,0.008,0,0,0
+love-mimosa-eau-de-parfum,4,love mimosa eau de parfum,1,0.906,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.62,1,1,1,0,0.048,0,0,0,1,0.378,1,1,1,0,0.006,0,0,0
+love-shot-eau-de-parfum,3,love shot eau de parfum,1,0.876,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.706,1,1,1,0,0.04,0,0,0,0,0.446,1,1,1,0,0.028,0,0,0
+luctor-et-emergo-eau-de-parfum,1,luctor et emergo - eau de parfum,1,0.878,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.204,0,0,0,0,0.034,0,0,0,1,0.816,1,1,1,0,0.006,0,0,0
+luctor-et-emergo-eau-de-toilette,5,luctor et emergo - eau de toilette,1,0.89,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.204,0,1,0,0,0.02,0,0,0,1,0.812,1,1,1,0,0.002,0,0,0
+lumiere-blanche-eau-de-parfum,4,lumiere blanche eau de parfum,1,0.758,1,1,1,0,0.062,0,0,0,0,0.0,0,0,0,1,0.526,1,1,1,1,0.034,0,0,0,1,0.38,1,1,1,0,0.014,0,0,0
+lumiere-noire-pour-femme-eau-de-parfum,2,lumiere noire pour femme eau de parfum,1,0.926,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.6,1,1,1,0,0.02,0,0,0,0,0.442,1,1,1,0,0.014,0,0,0
+lumiere-noire-pour-homme-eau-de-toilette,4,lumiere noire pour homme eau de toilette,1,0.794,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.514,1,1,1,0,0.054,0,0,0,0,0.394,1,1,1,0,0.09,0,0,0
+lune-feline-eau-de-parfum,1,lune feline eau de parfum,1,0.826,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.544,1,1,0,0,0.084,0,0,0,0,0.43,1,1,1,0,0.086,0,0,0
+lust-in-paradise-x-reine-paradis-eau-de-parfum,3,lust in paradise x reine paradis eau de parfum,1,0.776,1,1,1,0,0.0,0,0,0,0,0.214,0,1,0,1,0.532,1,1,1,0,0.11,0,1,1,0,0.502,1,1,1,0,0.016,0,0,0
+lux-eau-de-parfum,2,lux eau de parfum,1,0.876,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.616,1,1,1,0,0.054,0,0,0,1,0.462,1,1,1,0,0.01,0,0,0
+lyric-for-men-eau-de-parfum,1,lyric for men eau de parfum,1,0.924,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.668,1,1,1,0,0.062,0,0,0,1,0.524,1,1,1,0,0.006,0,0,0
+lyric-for-women-eau-de-parfum,2,lyric for women eau de parfum,1,0.866,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.632,1,1,1,0,0.004,0,0,0,1,0.454,1,1,1,0,0.01,0,0,0
+lys-noir-eau-de-parfum,5,lys noir eau de parfum,0,0.594,1,1,0,0,0.112,0,0,0,0,0.0,0,0,0,1,0.62,1,1,1,0,0.08,0,0,0,0,0.338,1,1,0,1,0.124,0,0,0
+ma-bete-eau-de-parfum,1,ma bete eau de parfum,1,0.794,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.692,1,1,1,0,0.022,0,0,0,0,0.48,1,1,1,0,0.04,0,0,0
+made-in-heaven-eau-de-parfum,1,made in heaven eau de parfum,1,0.712,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.646,1,1,1,0,0.042,0,0,0,1,0.304,1,1,1,0,0.028,0,0,0
+maderas-eau-de-parfum,3,maderas eau de parfum,1,0.9,1,1,1,0,0.002,0,0,0,0,0.008,0,0,0,1,0.618,1,1,1,0,0.034,0,0,0,1,0.462,1,1,1,0,0.01,0,0,0
+magenta-pop-eau-de-parfum,2,magenta pop eau de parfum,1,0.862,1,1,1,0,0.0,0,0,0,0,0.01,0,0,0,1,0.658,1,1,1,0,0.04,0,0,0,1,0.568,1,1,1,0,0.042,0,0,0
+majaina-sin-eau-de-parfum,1,majaina sin eau de parfum,1,0.76,1,1,1,0,0.004,0,0,0,0,0.026,0,0,0,1,0.612,1,1,1,0,0.044,0,0,0,1,0.468,1,1,1,0,0.026,0,0,0
+mamok-eau-de-parfum,2,mamok eau de parfum,1,0.788,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,1,0.582,1,1,1,0,0.044,0,0,0,1,0.416,1,1,1,0,0.024,0,0,0
+mandodari-parfum,2,mandodari parfum,1,0.826,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.53,1,1,1,0,0.036,0,0,0,1,0.492,1,1,1,0,0.022,0,0,0
+marfa-eau-de-parfum,5,marfa eau de parfum,1,0.886,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.732,1,1,1,0,0.008,0,0,0,1,0.656,1,1,1,0,0.0,0,0,0
+mark-buxton-eau-de-toilette,1,mark buxton eau de toilette,1,0.812,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.682,1,1,1,0,0.012,0,0,0,0,0.398,1,1,1,0,0.04,0,0,0
+maruyama-eau-de-parfum,4,maruyama eau de parfum,1,0.722,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.55,1,1,1,0,0.02,0,0,0,0,0.414,1,1,1,0,0.01,0,0,0
+mechant-loup-eau-de-toilette,4,mechant loup eau de toilette,1,0.828,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.606,1,1,1,0,0.028,0,0,0,1,0.544,1,1,1,0,0.006,0,0,0
+mediterraneo-parfum,3,mediterraneo parfum,1,0.702,1,1,1,0,0.022,0,0,0,0,0.002,0,0,0,1,0.556,1,1,1,0,0.03,0,0,0,0,0.398,1,1,1,0,0.03,0,0,0
+meet-me-on-the-corner-eau-de-parfum,2,meet me on the corner eau de parfum,1,0.746,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.694,1,1,1,0,0.036,0,0,0,1,0.456,1,1,1,0,0.018,0,0,0
+mefisto-eau-de-parfum,4,mefisto eau de parfum,1,0.902,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.712,1,1,1,0,0.082,0,0,0,0,0.476,1,1,1,0,0.01,0,0,0
+meliora-eau-de-parfum,1,meliora eau de parfum,1,0.9,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.786,1,1,1,0,0.03,0,0,0,0,0.106,0,0,0,0,0.004,0,0,0
+melodie-de-l-amour-extrait-de-parfum,2,melodie de l'amour extrait de parfum,1,0.844,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.614,1,1,1,0,0.034,0,0,0,1,0.324,1,1,1,0,0.026,0,0,0
+memoir-man-eau-de-parfum,2,memoir man eau de parfum,1,0.818,1,1,1,0,0.046,0,0,0,0,0.0,0,0,0,1,0.622,1,1,1,0,0.096,0,0,0,1,0.478,1,1,1,0,0.056,0,0,0
+memoirs-of-a-trespasser-eau-de-parfum,1,memoirs of a trespasser eau de parfum,1,0.7,1,1,1,0,0.01,0,0,0,0,0.002,0,0,0,1,0.474,1,1,0,0,0.036,0,0,0,1,0.486,1,1,1,0,0.006,0,0,0
+menthe-fraiche-eau-de-parfum,2,menthe fraiche eau de parfum,1,0.736,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.584,1,1,1,0,0.04,0,0,0,0,0.51,1,1,1,0,0.038,0,0,0
+midnight-oud-eau-de-parfum,4,midnight oud eau de parfum,0,0.882,1,1,1,1,0.01,0,0,0,0,0.0,0,0,0,0,0.704,1,1,1,0,0.086,0,0,0,0,0.372,1,1,1,0,0.0,0,0,0
+milano-cento-deodorant-stick,1,milano cento deodorant stick,1,0.704,1,1,1,0,0.008,0,0,0,0,0.014,0,0,0,0,0.572,1,1,1,0,0.06,0,0,0,1,0.462,1,1,1,0,0.024,0,0,0
+mile-high-eau-de-parfum,3,mile high eau de parfum,1,0.776,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.49,1,1,1,0,0.108,0,1,1,1,0.576,1,1,1,0,0.008,0,0,0
+milky-musk-eau-de-parfum,3,milky musk eau de parfum,1,0.78,1,1,1,0,0.006,0,0,0,0,0.006,0,0,0,0,0.676,1,1,1,0,0.032,0,0,0,1,0.55,1,1,1,0,0.012,0,0,0
+millesime-imperial-eau-de-parfum,2,millesime imperial eau de parfum ...,1,0.844,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.672,1,1,1,0,0.048,0,0,0,0,0.366,1,1,1,0,0.01,0,0,0
+mimosa-pour-moi-eau-de-toilette,4,mimosa pour moi eau de toilette,1,0.752,1,1,1,0,0.09,0,0,0,0,0.0,0,0,0,1,0.566,1,1,1,0,0.008,0,0,0,0,0.532,1,1,1,0,0.002,0,0,0
+miss-marisa-fragrance-oil,2,miss marisa fragrance oil,1,0.812,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.592,1,1,1,0,0.046,0,0,0,0,0.51,1,1,1,0,0.032,0,0,0
+miss-marisa-perfume-spray-eau-de-parfum,5,miss marisa perfume spray eau de parfum,0,0.796,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.626,1,1,1,0,0.02,0,0,0,1,0.678,1,1,1,1,0.004,0,0,0
+miss-marisa-tropical-perfume-spray-eau-de-parfum,5,miss marisa tropical perfume spray eau de parfum,1,0.876,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.674,1,1,1,0,0.012,0,0,0,1,0.412,1,1,1,0,0.02,0,0,0
+mississippi-medicine-eau-de-parfum,2,mississippi medicine eau de parfum,1,0.724,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.418,1,1,1,0,0.168,0,1,1,1,0.586,1,1,1,0,0.038,0,0,0
+mizunara-eau-de-parfum,2,mizunara eau de parfum,1,0.82,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.634,1,1,1,0,0.006,0,0,0,1,0.474,1,1,1,0,0.002,0,0,0
+mmmm-eau-de-parfum,5,mmmm... eau de parfum,1,0.972,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.756,1,1,1,0,0.068,0,0,0,0,0.422,1,1,1,0,0.002,0,0,0
+mojave-ghost-hair-perfume,5,mojave ghost hair perfume,1,0.816,1,1,1,0,0.06,0,0,0,0,0.0,0,0,0,1,0.632,1,1,1,0,0.218,0,1,0,1,0.456,1,1,1,0,0.014,0,0,0
+mojave-ghost-roll-on-oil-perfume-oil,5,mojave ghost roll-on oil perfume oil,1,0.654,1,1,0,0,0.008,0,0,0,0,0.0,0,0,0,1,0.428,1,1,1,0,0.034,0,0,0,0,0.546,1,1,1,0,0.014,0,0,0
+monyette-paris-eau-de-parfum-spray,5,monyette paris eau de parfum spray,1,0.838,1,1,1,0,0.05,0,0,0,0,0.0,0,0,0,1,0.62,1,1,1,0,0.012,0,0,0,0,0.492,1,1,1,0,0.014,0,0,0
+monyette-paris-fragrance-oil,3,monyette paris fragrance oil,1,0.926,1,1,1,0,0.054,0,1,0,0,0.0,0,0,0,1,0.682,1,1,1,0,0.024,0,0,0,0,0.51,1,1,1,0,0.016,0,0,0
+moonlight-in-heaven-eau-de-parfum,4,moonlight in heaven eau de parfum,1,0.846,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.61,1,1,1,0,0.054,0,0,0,1,0.462,1,1,1,0,0.004,0,0,0
+moonstone-perfume-oil,1,moonstone perfume oil,1,0.652,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.542,1,1,0,0,0.03,0,0,0,0,0.432,1,1,1,0,0.01,0,0,0
+mousse-ii-eau-de-parfum,2,mousse ii eau de parfum,1,0.686,1,1,1,0,0.05,0,0,0,0,0.0,0,0,0,0,0.656,1,1,1,0,0.062,0,0,0,0,0.438,1,1,1,1,0.058,0,0,0
+mousse-illuminee-eau-de-toilette,5,mousse illuminee eau de toilette,1,0.882,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,0,0.608,1,1,1,0,0.114,0,0,0,1,0.484,1,1,1,0,0.008,0,0,0
+mriga-parfum,2,mriga parfum,1,0.684,1,1,1,0,0.008,0,0,0,0,0.004,0,0,0,1,0.518,1,1,1,0,0.072,0,0,0,0,0.484,1,1,1,0,0.062,0,0,0
+much-ado-about-the-duke-eau-de-parfum,3,much ado about the duke eau de parfum,0,0.89,1,1,1,0,0.004,0,0,0,0,0.004,0,0,0,0,0.624,1,1,1,0,0.11,0,1,1,1,0.452,1,1,1,0,0.05,0,1,0
+muguet-fleuri-eau-de-parfum,4,muguet fleuri eau de parfum,1,0.822,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.542,1,1,1,0,0.052,0,0,0,0,0.46,1,1,1,0,0.022,0,0,0
+mure-et-musc-eau-de-toilette,1,mure et musc eau de toilette,1,0.764,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.52,1,1,0,0,0.114,0,0,0,0,0.5,1,1,1,0,0.034,0,0,0
+mure-et-musc-extreme-eau-de-parfum,5,mure et musc extreme eau de parfum,1,0.74,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.534,1,1,1,0,0.014,0,0,0,0,0.6,1,1,1,0,0.01,0,0,0
+musc-bleu-eau-de-parfum,4,musc bleu eau de parfum,1,0.818,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.646,1,1,1,0,0.192,0,0,0,0,0.374,1,1,1,0,0.002,0,0,0
+musc-gold-extrait-parfum-extrait,1,musc gold extrait parfum extrait,1,0.75,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.642,1,1,1,1,0.14,0,0,0,0,0.506,1,1,1,0,0.032,0,0,0
+musc-gold-perfume-oil,5,musc gold perfume oil,1,0.896,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.688,1,1,1,1,0.338,1,1,1,0,0.406,1,1,1,0,0.036,0,0,0
+musc-intense-eau-de-parfum,5,musc intense eau de parfum,1,0.938,1,1,1,0,0.038,0,0,0,0,0.002,0,0,0,1,0.658,1,1,1,0,0.022,0,0,0,0,0.46,1,1,1,0,0.032,0,0,0
+musc-les-nombres-d-or-eau-de-parfum,5,musc - les nombres d'or eau de parfum,1,0.876,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,1,0.558,1,1,1,1,0.016,0,0,0,0,0.448,1,1,1,0,0.014,0,0,0
+musc-maori-eau-de-parfum,2,musc maori eau de parfum,1,0.864,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.558,1,1,1,0,0.028,0,0,0,0,0.584,1,1,1,0,0.03,0,0,0
+musc-moschus-eau-de-parfum,2,musc moschus eau de parfum,1,0.854,1,1,1,0,0.002,0,0,0,0,0.01,0,0,0,1,0.568,1,1,1,0,0.022,0,0,0,1,0.496,1,1,1,0,0.032,0,0,0
+musc-perfume-oil,2,musc perfume oil,1,0.76,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.628,1,1,1,0,0.22,0,1,1,0,0.386,1,1,1,0,0.032,0,0,0
+musc-tonkin-eau-de-parfum,4,musc tonkin eau de parfum,1,0.604,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.53,1,1,1,0,0.004,0,0,0,0,0.594,1,1,1,0,0.058,0,0,0
+musk-aoud-extrait-de-parfum,2,musk aoud extrait de parfum,1,0.884,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.576,1,1,1,0,0.012,0,0,0,0,0.52,1,1,1,0,0.012,0,0,0
+musk-muschio-cologne-eau-de-cologne,2,musk / muschio cologne eau de cologne,1,0.842,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.516,1,1,1,0,0.032,0,0,0,0,0.44,1,1,1,0,0.008,0,0,0
+musk-s-eau-de-parfum,1,musk s eau de parfum,1,0.658,1,1,1,0,0.024,0,0,0,0,0.006,0,0,0,1,0.58,1,1,1,0,0.078,0,0,0,0,0.456,1,1,1,0,0.014,0,0,0
+mutheer-attar-perfume-oil,5,mutheer attar / perfume oil,1,0.622,1,1,0,0,0.014,0,0,0,0,0.0,0,0,0,1,0.528,1,1,1,0,0.1,0,0,0,0,0.476,1,1,1,0,0.04,0,0,0
+mxxx-extrait-de-parfum,1,mxxx. extrait de parfum,1,0.774,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.63,1,1,1,0,0.01,0,0,0,1,0.55,1,1,1,0,0.024,0,0,0
+myrrh-casati-eau-de-parfum,1,myrrh casati eau de parfum,1,0.892,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.644,1,1,1,0,0.166,0,0,0,0,0.466,1,1,1,0,0.004,0,0,0
+mysterious-oud-attar-perfume-oil,1,mysterious oud attar perfume oil,1,0.654,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.606,1,1,1,0,0.234,0,0,0,0,0.496,1,1,1,0,0.014,0,0,0
+naga-layyen-organic-oud-pure-oud,4,naga layyen organic oud pure oud,1,0.714,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.486,1,1,1,0,0.086,0,0,0,0,0.518,1,1,1,0,0.014,0,0,0
+namasoma-organic-oud-pure-oud,5,namasoma organic oud pure oud,1,0.816,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.64,1,1,1,0,0.136,0,0,0,1,0.602,1,1,1,0,0.018,0,0,0
+narcotic-v-parfum-extrait,3,narcotic v parfum extrait,1,0.836,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.654,1,1,1,0,0.012,0,0,0,0,0.422,1,1,1,0,0.004,0,0,0
+natsumeku-eau-de-parfum,5,natsumeku eau de parfum,0,0.786,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.524,1,1,1,0,0.034,0,0,0,0,0.324,1,1,0,0,0.01,0,0,0
+neroli-36-eau-de-parfum,5,neroli 36 eau de parfum,1,0.918,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.766,1,1,1,0,0.026,0,0,0,0,0.322,1,1,0,0,0.018,0,0,0
+neroli-eau-de-parfum,1,neroli eau de parfum,1,0.78,1,1,1,0,0.01,0,0,0,0,0.002,0,0,0,1,0.644,1,1,1,0,0.04,0,0,0,1,0.334,1,1,1,0,0.02,0,0,0
+new-sibet-extrait-de-parfum,3,new sibet extrait de parfum,1,0.77,1,1,1,0,0.014,0,0,0,0,0.008,0,0,0,0,0.574,1,1,1,0,0.046,0,0,0,1,0.518,1,1,1,0,0.048,0,0,0
+new-york-5th-avenue-eau-de-parfum,2,new york 5th avenue eau de parfum,1,0.856,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.604,1,1,1,0,0.036,0,0,0,1,0.574,1,1,1,0,0.002,0,0,0
+new-york-eau-de-toilette,4,new york eau de toilette,1,0.752,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.492,1,1,1,0,0.098,0,0,0,1,0.486,1,1,1,0,0.018,0,0,0
+new-york-intense-eau-de-parfum,3,new york intense eau de parfum,1,0.894,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.734,1,1,1,0,0.042,0,0,0,0,0.426,1,1,1,0,0.012,0,0,0
+night-flower-eau-de-parfum,5,night flower eau de parfum,1,0.822,1,1,1,0,0.002,0,0,0,0,0.008,0,0,0,1,0.506,1,1,1,0,0.03,0,0,0,0,0.528,1,1,1,0,0.038,0,0,0
+nio-eau-de-parfum,2,nio eau de parfum,1,0.89,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,1,0.74,1,1,1,0,0.046,0,0,0,1,0.386,1,1,1,0,0.004,0,0,0
+no-1-for-men-eau-de-parfum,3,no. 1 for men eau de parfum,1,0.874,1,1,1,0,0.048,0,0,0,0,0.0,0,0,0,1,0.708,1,1,1,0,0.094,0,1,1,0,0.316,1,1,1,0,0.004,0,0,0
+no-1-for-women-eau-de-parfum,3,no. 1 for women eau de parfum,0,0.822,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,0,0.47,1,1,1,0,0.052,0,1,1,1,0.4,1,1,1,0,0.01,0,0,0
+no-4-eau-de-toilette,5,no. 4 eau de toilette,1,0.874,1,1,1,0,0.004,0,0,0,0,0.002,0,0,0,0,0.67,1,1,1,1,0.134,0,0,0,1,0.268,0,1,0,0,0.032,0,0,0
+no-6-eau-de-toilette,4,no. 6 eau de toilette,1,0.928,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.698,1,1,1,0,0.092,0,0,0,0,0.512,1,1,1,0,0.004,0,0,0
+no-7-eau-de-toilette,5,no. 7 eau de toilette,0,0.848,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.696,1,1,1,0,0.002,0,0,0,0,0.368,1,1,1,0,0.018,0,0,0
+no-89-eau-de-toilette,4,no. 89 eau de toilette,1,0.796,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.71,1,1,1,0,0.034,0,0,0,0,0.366,1,1,1,0,0.0,0,0,0
+noble-vii-cosmos-flower-extrait-de-parfum,1,noble vii cosmos flower extrait de parfum,0,0.696,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.672,1,1,1,0,0.036,0,0,0,1,0.32,1,1,1,0,0.012,0,0,0
+noble-vii-rock-rose-extrait-de-parfum,2,noble vii rock rose extrait de parfum,1,0.85,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.592,1,1,1,1,0.028,0,0,0,1,0.436,1,1,1,0,0.008,0,0,0
+noir-de-noir-body-spray-scented-body-spray,5,noir de noir body spray scented body spray,1,0.908,1,1,1,0,0.0,0,0,0,0,0.004,0,0,0,0,0.64,1,1,1,0,0.014,0,0,0,0,0.372,1,1,1,0,0.01,0,0,0
+noir-exquis-eau-de-parfum,4,noir exquis eau de parfum,1,0.792,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.658,1,1,1,0,0.04,0,0,0,1,0.452,1,1,1,0,0.018,0,0,0
+noir-patchouli-eau-de-parfum,5,noir patchouli eau de parfum,1,0.912,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.724,1,1,1,0,0.002,0,0,0,0,0.698,1,1,1,0,0.014,0,0,0
+noorolain-taif-eau-de-parfum,3,noorolain taif eau de parfum,0,0.872,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,0,0.516,1,1,1,0,0.03,0,0,0,1,0.528,1,1,1,0,0.008,0,0,0
+nordic-noir,3,nordic noir,0,0.788,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.54,1,1,1,0,0.024,0,0,0,1,0.568,1,1,1,0,0.026,0,0,0
+nostalgia-cologne-eau-de-cologne,3,nostalgia cologne eau de cologne,1,0.894,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.686,1,1,1,0,0.022,0,0,0,0,0.446,1,1,1,0,0.002,0,0,0
+nuit-de-cellophane-eau-de-parfum,1,nuit de cellophane eau de parfum,1,0.672,1,1,1,0,0.0,0,0,0,0,0.014,0,0,0,1,0.534,1,1,0,0,0.014,0,0,0,1,0.492,1,1,1,0,0.042,0,0,0
+nuit-noire-eau-de-parfum,1,nuit noire eau de parfum,1,0.79,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,0,0.592,1,1,1,0,0.076,0,0,0,1,0.45,1,1,1,0,0.008,0,0,0
+number-one-intense-eau-de-parfum,1,number one intense eau de parfum,1,0.844,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.65,1,1,1,0,0.238,0,0,0,1,0.39,1,1,1,0,0.022,0,0,0
+nuwa-extrait-de-parfum,3,nuwa extrait de parfum,1,0.9,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,1,0.558,1,1,1,0,0.212,0,1,1,0,0.342,1,1,1,0,0.004,0,0,0
+octavian-parfum,1,octavian parfum,1,0.812,1,1,1,0,0.06,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,0,0.048,0,0,0,0,0.5,1,1,1,0,0.004,0,0,0
+odalisque-eau-de-parfum,1,odalisque eau de parfum,1,0.788,1,1,1,0,0.004,0,0,0,0,0.004,0,0,0,0,0.64,1,1,1,0,0.068,0,0,0,1,0.458,1,1,1,0,0.044,0,0,0
+odeur-du-theatre-du-chatelet-acte-1-eau-de-toilette,5,odeur du theatre du chatelet acte 1 eau de toilette,1,0.88,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.71,1,1,1,1,0.09,0,0,0,1,0.496,1,1,1,0,0.016,0,0,0
+oeillet-louis-xv-eau-de-parfum,2,oeillet louis xv eau de parfum,1,0.838,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.682,1,1,1,0,0.018,0,0,0,1,0.448,1,1,1,0,0.06,0,0,0
+olene-eau-de-toilette,1,olene eau de toilette,0,0.862,1,1,1,0,0.042,0,0,0,0,0.0,0,0,0,0,0.714,1,1,1,0,0.02,0,0,0,1,0.46,1,1,1,0,0.01,0,0,0
+oliban-eau-de-parfum,1,oliban eau de parfum,1,0.828,1,1,1,0,0.008,0,0,0,0,0.002,0,0,0,1,0.56,1,1,1,0,0.052,0,0,0,1,0.468,1,1,1,0,0.016,0,0,0
+olibanum-eau-de-parfum,5,olibanum eau de parfum,0,0.734,1,1,1,0,0.002,0,0,0,0,0.004,0,0,0,0,0.458,1,1,1,0,0.042,0,0,0,1,0.618,1,1,1,0,0.004,0,0,0
+ombre-indigo-eau-de-parfum,1,ombre indigo eau de parfum,1,0.888,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.81,1,1,1,0,0.026,0,0,0,0,0.296,0,1,1,0,0.01,0,0,0
+onyx-perfume-oil,4,onyx perfume oil,1,0.784,1,1,1,0,0.012,0,0,0,0,0.004,0,0,0,0,0.548,1,1,1,0,0.072,0,0,0,1,0.484,1,1,1,0,0.022,0,0,0
+oolang-infini-cologne-absolue,1,oolang infini cologne absolue,1,0.838,1,1,1,0,0.028,0,0,0,0,0.002,0,0,0,0,0.572,1,1,1,0,0.044,0,0,0,1,0.43,1,1,1,0,0.004,0,0,0
+opus-1870-eau-de-toilette,3,opus 1870 eau de toilette,1,0.912,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.62,1,1,1,0,0.05,0,1,1,1,0.57,1,1,1,0,0.014,0,0,0
+orange-blossom-zagara-cologne-eau-de-cologne,2,orange blossom / zagara cologne eau de cologne,1,0.746,1,1,1,1,0.002,0,0,0,0,0.002,0,0,0,1,0.514,1,1,1,0,0.034,0,0,0,1,0.43,1,1,1,0,0.062,0,0,0
+orange-sanguine-cologne-absolue,1,orange sanguine cologne absolue,0,0.814,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.568,1,1,1,0,0.032,0,0,0,1,0.504,1,1,1,0,0.014,0,0,0
+orange-star-eau-de-parfum,3,orange star eau de parfum,0,0.624,1,1,0,0,0.046,0,0,0,0,0.0,0,0,0,1,0.584,1,1,1,0,0.078,0,1,1,1,0.23,0,1,0,0,0.16,0,1,0
+oranges-and-lemons-say-the-bells-of-st-clements-eau-de-parfum,4,oranges and lemons say the bells of st. clements eau de parfum,1,0.802,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.586,1,1,1,0,0.01,0,0,0,1,0.452,1,1,1,0,0.028,0,0,0
+orchidee-vanille-eau-de-parfum,1,orchidee vanille eau de parfum,0,0.852,1,1,1,1,0.038,0,0,0,0,0.002,0,0,0,1,0.602,1,1,1,0,0.054,0,0,0,1,0.364,1,1,1,0,0.048,0,0,0
+osmanthus-interdite-eau-de-parfum,2,osmanthus interdite eau de parfum,1,0.876,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.62,1,1,1,0,0.008,0,0,0,1,0.508,1,1,1,0,0.018,0,0,0
+oud-assam-eau-de-parfum,1,oud assam eau de parfum,1,0.814,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,0,0.536,1,1,0,0,0.082,0,0,0,1,0.556,1,1,1,0,0.05,0,0,0
+oud-du-bois-attar-perfume-oil,2,oud du bois attar / perfume oil,1,0.852,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.624,1,1,1,0,0.23,0,1,1,1,0.514,1,1,1,0,0.008,0,0,0
+oud-eau-de-parfum,3,oud - eau de parfum,0,0.71,1,1,1,0,0.076,0,1,0,0,0.0,0,0,0,1,0.528,1,1,1,0,0.062,0,1,1,1,0.404,1,1,1,0,0.008,0,0,0
+oud-imperial-eau-de-parfum,3,oud imperial eau de parfum,0,0.532,1,1,0,0,0.148,0,1,0,0,0.026,0,0,0,1,0.508,1,1,1,0,0.024,0,0,0,1,0.354,1,1,1,0,0.072,0,1,0
+oud-maximus-autumn-19-extrait-de-parfum,2,oud maximus autumn 19 extrait de parfum,1,0.754,1,1,1,0,0.0,0,0,0,0,0.004,0,0,0,1,0.668,1,1,1,0,0.058,0,0,0,0,0.544,1,1,1,0,0.022,0,0,0
+oud-silk-mood-extrait-de-parfum,5,oud silk mood - extrait de parfum,1,0.814,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.658,1,1,1,0,0.03,0,0,0,0,0.392,1,1,1,0,0.012,0,0,0
+oud-stars-al-khatt-eau-de-parfum,3,oud stars - al khatt eau de parfum,1,0.674,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.49,1,1,1,0,0.016,0,0,0,1,0.57,1,1,1,0,0.008,0,0,0
+oud-stars-alexandria-iii-parfum,3,oud stars - alexandria iii parfum,0,0.908,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.674,1,1,1,0,0.014,0,0,0,1,0.5,1,1,1,0,0.012,0,0,0
+oud-stars-fars-eau-de-parfum,2,oud stars - fars eau de parfum,1,0.95,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.612,1,1,1,0,0.018,0,0,0,1,0.416,1,1,1,0,0.014,0,0,0
+oud-stars-gao-eau-de-parfum,2,oud stars - gao eau de parfum,0,0.834,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.662,1,1,1,0,0.072,0,0,0,1,0.452,1,1,1,0,0.058,0,0,0
+oud-stars-mamluk-eau-de-parfum,2,oud stars - mamluk eau de parfum,0,0.684,1,1,1,0,0.002,0,0,0,0,0.004,0,0,0,0,0.496,1,1,1,0,0.044,0,0,0,1,0.414,1,1,1,0,0.038,0,0,0
+oud-sublime-elixir-de-parfum,5,oud sublime elixir de parfum,1,0.956,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.694,1,1,1,0,0.022,0,0,0,1,0.22,0,1,0,0,0.04,0,0,0
+oudh-infini-extrait-de-parfum,4,oudh infini extrait de parfum,1,0.824,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.564,1,1,1,0,0.096,0,0,0,1,0.546,1,1,1,0,0.008,0,0,0
+oudmazing-eau-de-parfum,4,oudmazing eau de parfum,0,0.692,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.52,1,1,1,0,0.022,0,0,0,1,0.514,1,1,1,0,0.01,0,0,0
+oyedo-eau-de-toilette,2,oyedo eau de toilette,1,0.74,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,1,0.606,1,1,1,0,0.062,0,0,0,0,0.49,1,1,1,0,0.002,0,0,0
+parfums-de-nicolai-eau-de-yuzu-travel-spray,4,parfums de nicolai - eau de yuzu travel spray,1,0.896,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.594,1,1,1,0,0.022,0,0,0,0,0.51,1,1,1,0,0.012,0,0,0
+paris-la-eau-de-parfum,4,paris la eau de parfum,1,0.744,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.514,1,1,1,0,0.04,0,0,0,0,0.496,1,1,1,0,0.024,0,0,0
+passage-d-enfer-eau-de-toilette,4,passage d'enfer eau de toilette,1,0.874,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.556,1,1,1,0,0.068,0,0,0,1,0.43,1,1,1,0,0.014,0,0,0
+patchouli-absolu-eau-de-parfum,5,patchouli absolu eau de parfum,1,0.878,1,1,1,0,0.042,0,0,0,0,0.0,0,0,0,0,0.714,1,1,1,0,0.016,0,0,0,0,0.486,1,1,1,0,0.034,0,0,0
+patchouli-cologne,4,patchouli cologne,0,0.69,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.506,1,1,1,1,0.018,0,0,0,1,0.478,1,1,1,0,0.0,0,0,0
+patchouli-in-perfumery-magazine,5,patchouli in perfumery magazine,1,0.872,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.61,1,1,1,0,0.046,0,0,0,0,0.58,1,1,1,0,0.012,0,0,0
+patchouli-intense-eau-de-parfum,5,patchouli intense eau de parfum,1,0.872,1,1,1,0,0.0,0,0,0,0,0.012,0,0,0,0,0.596,1,1,1,1,0.046,0,0,0,1,0.456,1,1,1,0,0.036,0,0,0
+patchouli-leaves-eau-de-parfum,3,patchouli leaves eau de parfum,1,0.714,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,0,0.532,1,1,1,0,0.102,0,1,1,1,0.566,1,1,1,0,0.008,0,0,0
+patchouli-noir-eau-de-parfum,1,patchouli noir eau de parfum,1,0.884,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.832,1,1,1,0,0.022,0,0,0,1,0.252,0,1,1,0,0.008,0,0,0
+patchouli-patch-eau-de-toilette,1,patchouli patch eau de toilette,1,0.748,1,1,1,0,0.046,0,0,0,0,0.0,0,0,0,1,0.502,1,1,0,0,0.036,0,0,0,0,0.552,1,1,1,0,0.016,0,0,0
+patchouli-perfume-oil,5,patchouli perfume oil,0,0.524,1,1,0,0,0.02,0,0,0,0,0.0,0,0,0,0,0.632,1,1,1,0,0.02,0,0,0,1,0.41,1,1,1,0,0.01,0,0,0
+patchouly-eau-de-parfum,5,patchouly eau de parfum,1,0.888,1,1,1,0,0.004,0,0,0,0,0.006,0,0,0,1,0.682,1,1,1,0,0.008,0,0,0,0,0.562,1,1,1,0,0.022,0,0,0
+peacock-throne-eau-de-parfum,5,peacock throne eau de parfum,1,0.748,1,1,1,0,0.026,0,0,0,0,0.004,0,0,0,1,0.578,1,1,1,0,0.048,0,0,0,1,0.452,1,1,1,0,0.016,0,0,0
+pearl-perfume-oil,5,pearl perfume oil,0,0.654,1,1,0,0,0.004,0,0,0,0,0.002,0,0,0,1,0.69,1,1,1,0,0.052,0,0,0,1,0.422,1,1,1,0,0.052,0,0,0
+peche-cardinal-eau-de-parfum,5,peche cardinal eau de parfum,1,0.746,1,1,1,0,0.072,0,0,0,0,0.0,0,0,0,0,0.582,1,1,1,0,0.044,0,0,0,1,0.506,1,1,1,0,0.05,0,0,0
+people-s-kampot-organic-oud-pure-oud,5,people's kampot organic oud pure oud,1,0.806,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.588,1,1,1,0,0.316,1,1,1,1,0.514,1,1,1,0,0.008,0,0,0
+perfect-kiss-eau-de-parfum,5,perfect kiss eau de parfum,0,0.686,1,1,0,0,0.01,0,0,0,0,0.0,0,0,0,1,0.602,1,1,1,0,0.04,0,0,0,1,0.398,1,1,1,0,0.028,0,0,0
+perfect-nectar-eau-de-parfum,4,perfect nectar eau de parfum,1,0.868,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.584,1,1,1,0,0.228,0,1,1,0,0.528,1,1,1,0,0.02,0,0,0
+perfect-vanilla-roll-on-perfume-oil,1,perfect vanilla roll-on perfume oil,1,0.746,1,1,1,1,0.018,0,0,0,0,0.0,0,0,0,1,0.7,1,1,1,0,0.194,0,0,0,0,0.414,1,1,1,0,0.02,0,0,0
+perfect-veil-eau-de-parfum,4,perfect veil eau de parfum,1,0.872,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.572,1,1,1,0,0.038,0,0,0,0,0.456,1,1,1,0,0.016,0,0,0
+petit-matin-eau-de-parfum,1,petit matin eau de parfum,1,0.802,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.644,1,1,1,0,0.012,0,0,0,0,0.676,1,1,1,0,0.024,0,0,0
+petra-eau-de-parfum,4,petra eau de parfum,1,0.65,1,1,1,0,0.054,0,0,0,0,0.002,0,0,0,1,0.576,1,1,1,0,0.056,0,0,0,0,0.276,0,1,1,0,0.014,0,0,0
+phi-une-rose-de-kandahar-eau-de-parfum,2,phi une rose de kandahar eau de parfum,0,0.54,1,1,1,0,0.056,0,0,0,0,0.004,0,0,0,0,0.626,1,1,1,0,0.114,0,1,1,1,0.474,1,1,1,0,0.014,0,0,0
+philosykos-eau-de-toilette,5,philosykos - eau de toilette,1,0.646,1,1,0,0,0.006,0,0,0,0,0.0,0,0,0,1,0.512,1,1,1,0,0.072,0,0,0,1,0.286,0,1,0,0,0.006,0,0,0
+phtaloblue-eau-de-parfum,5,phtaloblue eau de parfum,1,0.85,1,1,1,0,0.02,0,0,0,0,0.004,0,0,0,0,0.698,1,1,1,0,0.03,0,0,0,1,0.478,1,1,1,0,0.044,0,0,0
+picadilly-69-eau-de-parfum,3,picadilly '69 eau de parfum,1,0.782,1,1,1,0,0.156,0,1,0,0,0.0,0,0,0,1,0.574,1,1,1,0,0.064,0,1,1,1,0.41,1,1,1,0,0.072,0,1,0
+pink-eau-de-parfum,1,pink eau de parfum,0,0.702,1,1,1,0,0.008,0,0,0,0,0.082,0,0,0,0,0.52,1,1,0,0,0.086,0,0,0,0,0.38,1,1,1,0,0.028,0,0,0
+pink-quartz-eau-de-parfum,5,pink quartz eau de parfum,1,0.702,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,0,0.676,1,1,1,1,0.02,0,0,0,0,0.28,0,1,0,0,0.004,0,0,0
+pomegranate-melograno-cologne-eau-de-cologne,4,pomegranate / melograno cologne eau de cologne,1,0.866,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.552,1,1,1,0,0.144,0,0,0,1,0.486,1,1,1,0,0.004,0,0,0
+pomelo-paradis-cologne-absolue,1,pomelo paradis cologne absolue,1,0.834,1,1,1,0,0.03,0,0,0,0,0.0,0,0,0,1,0.612,1,1,1,0,0.02,0,0,0,0,0.462,1,1,1,0,0.0,0,0,0
+pomelo-riviera-eau-de-parfum,4,pomelo riviera eau de parfum,1,0.852,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.6,1,1,1,0,0.05,0,0,0,0,0.562,1,1,1,0,0.006,0,0,0
+pot-pourri-cologne-eau-de-cologne,1,pot pourri cologne eau de cologne,1,0.848,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.6,1,1,1,0,0.178,0,0,0,0,0.606,1,1,1,0,0.014,0,0,0
+precious-oud-eau-de-parfum,4,precious oud eau de parfum,1,0.882,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.614,1,1,1,0,0.042,0,0,0,0,0.45,1,1,1,0,0.022,0,0,0
+premier-figuier-eau-de-toilette,2,premier figuier eau de toilette,1,0.704,1,1,1,0,0.0,0,0,0,0,0.012,0,0,0,1,0.456,1,1,1,0,0.03,0,0,0,0,0.466,1,1,1,0,0.022,0,0,0
+premier-figuier-extreme-eau-de-parfum,2,premier figuier extreme eau de parfum,1,0.698,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,1,0.556,1,1,1,0,0.014,0,0,0,0,0.45,1,1,1,0,0.056,0,0,0
+private-collection-l-eau-guerriere-eau-de-toilette,1,private collection: l'eau guerriere eau de toilette,1,0.618,1,1,0,0,0.0,0,0,0,0,0.276,0,1,0,1,0.55,1,1,1,0,0.058,0,0,0,0,0.54,1,1,1,0,0.028,0,0,0
+private-collection-l-ombre-fauve-eau-de-parfum,3,private collection: l'ombre fauve eau de parfum,1,0.792,1,1,1,0,0.0,0,0,0,0,0.002,0,0,0,1,0.638,1,1,1,0,0.05,0,1,1,1,0.52,1,1,1,0,0.008,0,0,0
+private-label-eau-de-parfum,3,private label eau de parfum,1,0.88,1,1,1,0,0.002,0,0,0,0,0.002,0,0,0,1,0.638,1,1,1,0,0.04,0,0,0,0,0.576,1,1,1,0,0.006,0,0,0
+promesse-de-l-aube-eau-de-parfum,3,promesse de l'aube eau de parfum,1,0.902,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.702,1,1,1,0,0.038,0,0,0,1,0.45,1,1,1,0,0.002,0,0,0
+proxima-eau-de-parfum,3,proxima eau de parfum,1,0.896,1,1,1,0,0.044,0,0,0,0,0.0,0,0,0,1,0.536,1,1,1,0,0.05,0,1,1,1,0.426,1,1,1,0,0.018,0,0,0
+psychedelique-eau-de-parfum,1,psychedelique eau de parfum,1,0.844,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.566,1,1,1,0,0.05,0,0,0,1,0.432,1,1,1,0,0.024,0,0,0
+putain-des-palaces-eau-de-parfum,4,putain des palaces eau de parfum,1,0.754,1,1,1,0,0.07,0,0,0,0,0.0,0,0,0,0,0.52,1,1,1,0,0.034,0,0,0,0,0.514,1,1,1,0,0.018,0,0,0
+quercus-cologne,5,quercus cologne,1,0.888,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.56,1,1,1,0,0.01,0,0,0,1,0.398,1,1,1,0,0.0,0,0,0
+radio-bombay-eau-de-parfum,1,radio bombay eau de parfum,0,0.64,1,1,0,0,0.014,0,0,0,0,0.0,0,0,0,0,0.566,1,1,1,0,0.09,0,0,0,1,0.606,1,1,1,0,0.066,0,0,0
+radish-x-vetiver-eau-de-parfum,2,radish x vetiver eau de parfum,1,0.778,1,1,1,0,0.006,0,0,0,0,0.004,0,0,0,1,0.632,1,1,1,0,0.048,0,0,0,1,0.582,1,1,1,0,0.018,0,0,0
+rausch-eau-de-parfum,4,rausch eau de parfum,1,0.56,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.414,1,1,0,0,0.04,0,0,0,0,0.392,1,1,1,0,0.004,0,0,0
+ray-of-light-eau-de-parfum,4,ray of light eau de parfum,0,0.546,1,1,0,0,0.034,0,0,0,0,0.006,0,0,0,1,0.54,1,1,1,0,0.044,0,0,0,1,0.368,1,1,1,0,0.17,0,0,0
+re-charge-black-pepper-deodorant-stick,2,re-charge black pepper deodorant stick,0,0.362,1,1,1,0,0.028,0,0,0,0,0.002,0,0,0,1,0.584,1,1,1,0,0.016,0,0,0,1,0.338,1,1,1,0,0.068,0,0,0
+red-aoud-eau-de-parfum,1,red aoud eau de parfum,0,0.854,1,1,1,0,0.004,0,0,0,0,0.002,0,0,0,0,0.75,1,1,1,0,0.014,0,0,0,1,0.312,1,1,1,0,0.036,0,0,0
+red-hoba-eau-de-parfum,4,red hoba eau de parfum,1,0.87,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.506,1,1,1,0,0.036,0,0,0,1,0.47,1,1,1,0,0.012,0,0,0
+red-musc-eau-de-parfum,5,red musc eau de parfum,1,0.89,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.622,1,1,1,0,0.27,0,1,0,1,0.444,1,1,1,0,0.034,0,0,0
+reflection-man-eau-de-parfum,3,reflection man eau de parfum,1,0.926,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.636,1,1,1,0,0.07,0,1,1,0,0.51,1,1,1,0,0.008,0,0,0
+regent-leather-eau-de-parfum,4,regent leather eau de parfum,1,0.766,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.536,1,1,1,0,0.058,0,0,0,1,0.36,1,1,1,0,0.014,0,0,0
+regio-eau-de-parfum,2,regio eau de parfum,1,0.936,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.928,1,1,1,0,0.018,0,0,0,0,0.11,0,1,0,0,0.0,0,0,0
+remarkable-people-eau-de-parfum,4,remarkable people eau de parfum,1,0.776,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.562,1,1,1,0,0.09,0,0,0,1,0.538,1,1,1,0,0.034,0,0,0
+resina-eau-de-parfum,3,resina eau de parfum,1,0.686,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.67,1,1,1,0,0.034,0,0,0,0,0.392,1,1,1,0,0.082,0,1,0
+reve-d-ossian-eau-de-parfum,2,reve d'ossian eau de parfum,1,0.736,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.572,1,1,1,0,0.052,0,0,0,0,0.528,1,1,1,0,0.008,0,0,0
+rhodanthe-eau-de-parfum,4,rhodanthe eau de parfum,1,0.868,1,1,1,0,0.004,0,0,0,0,0.002,0,0,0,1,0.534,1,1,1,0,0.082,0,0,0,1,0.434,1,1,1,0,0.028,0,0,0
+riviera-drive-eau-de-parfum,4,riviera drive eau de parfum,1,0.76,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.658,1,1,1,0,0.034,0,0,0,0,0.422,1,1,1,0,0.0,0,0,0
+riviera-lazuli-eau-de-parfum,2,riviera lazuli eau de parfum,1,0.908,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.78,1,1,1,0,0.04,0,0,0,0,0.38,1,1,1,0,0.01,0,0,0
+rock-crystal-eau-de-parfum,4,rock crystal eau de parfum,1,0.812,1,1,1,0,0.02,0,0,0,0,0.002,0,0,0,1,0.624,1,1,1,0,0.168,0,0,0,1,0.364,1,1,1,0,0.012,0,0,0
+rosas-secas-eau-de-parfum,2,rosas secas eau de parfum,1,0.852,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.824,1,1,1,0,0.036,0,0,0,0,0.384,1,1,1,0,0.002,0,0,0
+rose-31-eau-de-parfum,5,rose 31 eau de parfum,1,0.67,1,1,0,0,0.002,0,0,0,0,0.0,0,0,0,1,0.58,1,1,1,0,0.024,0,0,0,0,0.588,1,1,1,0,0.008,0,0,0
+rose-atlantic-eau-de-parfum,4,rose atlantic eau de parfum,1,0.864,1,1,1,0,0.022,0,0,0,0,0.0,0,0,0,1,0.622,1,1,1,0,0.006,0,0,0,0,0.554,1,1,1,0,0.018,0,0,0
+rose-de-siwa-eau-de-parfum,5,rose de siwa eau de parfum,1,0.916,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.816,1,1,1,0,0.118,0,0,0,0,0.502,1,1,1,0,0.002,0,0,0
+rose-du-bois-attar-perfume-oil,2,rose du bois attar / perfume oil,1,0.804,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.558,1,1,1,0,0.098,0,0,0,1,0.574,1,1,1,0,0.044,0,0,0
+rose-omeyyade-eau-de-parfum,2,rose omeyyade eau de parfum,1,0.83,1,1,1,0,0.032,0,0,0,0,0.0,0,0,0,1,0.516,1,1,1,0,0.028,0,0,0,1,0.614,1,1,1,0,0.012,0,0,0
+rose-pivoine-eau-de-toilette,2,rose pivoine eau de toilette,1,0.856,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.616,1,1,1,0,0.024,0,0,0,0,0.51,1,1,1,0,0.002,0,0,0
+roses-musk-eau-de-parfum,2,roses musk eau de parfum,1,0.922,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.692,1,1,1,0,0.006,0,0,0,0,0.308,1,1,1,0,0.006,0,0,0
+roses-vanille-eau-de-parfum,5,roses vanille eau de parfum,1,0.812,1,1,1,0,0.018,0,0,0,0,0.004,0,0,0,1,0.59,1,1,1,0,0.024,0,0,0,0,0.554,1,1,1,0,0.016,0,0,0
+route-du-vetiver-eau-de-parfum,1,route du vetiver eau de parfum,1,0.736,1,1,1,0,0.008,0,0,0,0,0.018,0,0,0,1,0.508,1,1,0,0,0.074,0,0,0,1,0.514,1,1,1,0,0.028,0,0,0
+royal-princess-oud-eau-de-parfum,4,royal princess oud eau de parfum,1,0.806,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.544,1,1,1,0,0.032,0,0,0,0,0.46,1,1,1,0,0.026,0,0,0
+rules-of-attraction-extrait-de-parfum,4,rules of attraction extrait de parfum,0,0.754,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,0,0.472,1,1,1,0,0.026,0,0,0,1,0.618,1,1,1,0,0.022,0,0,0
+russian-cologne-eau-de-cologne,3,russian cologne eau de cologne,1,0.864,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.718,1,1,1,0,0.032,0,0,0,0,0.306,1,1,1,0,0.036,0,0,0
+russian-leather-eau-de-parfum,1,russian leather eau de parfum,1,0.728,1,1,1,0,0.098,0,0,0,0,0.0,0,0,0,1,0.554,1,1,1,0,0.044,0,0,0,0,0.448,1,1,1,0,0.014,0,0,0
+russian-tea-eau-de-parfum,4,russian tea eau de parfum,1,0.826,1,1,1,0,0.05,0,0,0,0,0.002,0,0,0,1,0.554,1,1,1,0,0.084,0,0,0,1,0.472,1,1,1,0,0.016,0,0,0
+s-ex-eau-de-parfum,2,s-ex eau de parfum,1,0.694,1,1,1,0,0.008,0,0,0,0,0.004,0,0,0,1,0.584,1,1,1,0,0.098,0,0,0,0,0.406,1,1,1,0,0.036,0,0,0
+sable-soleil-eau-de-parfum,1,sable & soleil eau de parfum,1,0.81,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.514,1,1,0,0,0.112,0,0,0,1,0.46,1,1,1,0,0.0,0,0,0
+safanad-eau-de-parfum,2,safanad eau de parfum,1,0.892,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.716,1,1,1,0,0.03,0,0,0,0,0.178,0,1,0,0,0.012,0,0,0
+sage-perfume-oil,1,sage perfume oil,1,0.774,1,1,1,0,0.054,0,0,0,0,0.0,0,0,0,0,0.518,1,1,0,0,0.052,0,0,0,1,0.586,1,1,1,0,0.01,0,0,0
+salt-caramel-eau-de-parfum,1,salt caramel eau de parfum,0,0.634,1,1,0,0,0.018,0,0,0,0,0.0,0,0,0,0,0.53,1,1,0,0,0.054,0,0,0,1,0.318,1,1,1,0,0.002,0,0,0
+sancti-eau-de-parfum,4,sancti eau de parfum,1,0.91,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.714,1,1,1,0,0.12,0,0,0,0,0.414,1,1,1,0,0.018,0,0,0
+santa-maria-novella-cologne-eau-de-cologne,2,santa maria novella cologne eau de cologne,1,0.824,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.554,1,1,1,0,0.026,0,0,0,1,0.44,1,1,1,0,0.008,0,0,0
+santal-d-assam-perfume-oil,3,santal d'assam perfume oil,0,0.908,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.596,1,1,1,0,0.028,0,0,0,1,0.546,1,1,1,0,0.0,0,0,0
+santal-du-pacifique-eau-de-parfum,3,santal du pacifique eau de parfum,1,0.806,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.51,1,1,1,0,0.024,0,0,0,1,0.57,1,1,1,0,0.006,0,0,0
+santal-eau-de-toilette,4,santal eau de toilette,1,0.85,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.578,1,1,1,0,0.074,0,0,0,1,0.624,1,1,1,0,0.026,0,0,0
+santal-majuscule-eau-de-parfum,3,santal majuscule eau de parfum,1,0.898,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.622,1,1,1,0,0.014,0,0,0,1,0.464,1,1,1,0,0.002,0,0,0
+santalum-eau-de-parfum,1,santalum eau de parfum,0,0.66,1,1,1,0,0.048,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,0,0.042,0,0,0,0,0.292,0,1,1,0,0.032,0,0,0
+sartorial-eau-de-toilette,4,sartorial eau de toilette,1,0.898,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.792,1,1,1,0,0.018,0,0,0,0,0.388,1,1,1,0,0.002,0,0,0
+satori-fusho-organic-oud,2,satori fusho organic oud,1,0.9,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,1,0.078,0,0,0,1,0.546,1,1,1,0,0.006,0,0,0
+scandal-parfum-cologne,3,scandal parfum cologne,1,0.862,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.746,1,1,1,0,0.018,0,0,0,0,0.36,1,1,1,0,0.01,0,0,0
+scent-eau-de-parfum,1,scent eau de parfum,1,0.674,1,1,1,0,0.056,0,0,0,0,0.0,0,0,0,0,0.63,1,1,1,0,0.042,0,0,0,1,0.484,1,1,1,0,0.01,0,0,0
+scent-intense-eau-de-parfum,5,scent intense eau de parfum,1,0.862,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.628,1,1,1,0,0.08,0,0,0,1,0.392,1,1,1,0,0.014,0,0,0
+scotch-peat-eau-de-parfum,4,scotch peat eau de parfum,0,0.79,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,0,0.568,1,1,1,0,0.018,0,0,0,1,0.486,1,1,1,0,0.0,0,0,0
+secretions-magnifiques-eau-de-parfum,1,secretions magnifiques eau de parfum,1,0.576,1,1,0,0,0.006,0,0,0,0,0.104,0,0,0,1,0.588,1,1,1,1,0.066,0,0,0,1,0.554,1,1,1,1,0.018,0,0,0
+sedley-eau-de-parfum,4,sedley eau de parfum,1,0.52,1,1,0,0,0.028,0,0,0,0,0.004,0,0,0,1,0.568,1,1,1,0,0.012,0,0,0,0,0.34,1,1,1,0,0.088,0,0,0
+sel-de-vetiver-eau-de-toilette,5,sel de  vetiver eau de toilette,1,0.894,1,1,1,0,0.03,0,0,0,0,0.0,0,0,0,1,0.696,1,1,1,0,0.086,0,0,0,1,0.352,1,1,1,0,0.014,0,0,0
+sel-marin-eau-de-parfum,5,sel marin eau de parfum,1,0.92,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.584,1,1,1,0,0.04,0,0,0,1,0.478,1,1,1,0,0.018,0,0,0
+seminalis-parfum,2,seminalis parfum,1,0.808,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.602,1,1,1,0,0.022,0,0,0,1,0.33,1,1,1,0,0.024,0,0,0
+serendipitous-eau-de-parfum,2,serendipitous eau de parfum,1,0.806,1,1,1,0,0.012,0,0,0,0,0.002,0,0,0,1,0.702,1,1,1,0,0.064,0,0,0,0,0.55,1,1,1,0,0.024,0,0,0
+shams-oud,3,shams oud,0,0.67,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.646,1,1,1,0,0.074,0,1,1,1,0.278,0,1,1,0,0.004,0,0,0
+sheiduna-parfum-extrait,4,sheiduna parfum extrait,1,0.878,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.708,1,1,1,0,0.066,0,0,0,0,0.542,1,1,1,0,0.002,0,0,0
+sienne-l-hiver-eau-de-toilette,1,sienne l'hiver eau de toilette,1,0.704,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.556,1,1,1,0,0.03,0,0,0,1,0.39,1,1,1,0,0.012,0,0,0
+silk-lace-chocolate-eau-de-parfum,1,"silk, lace & chocolate eau de parfum",1,0.744,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.698,1,1,1,0,0.024,0,0,0,0,0.43,1,1,1,0,0.012,0,0,0
+silk-perfume-oil,3,silk perfume oil,1,0.732,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.68,1,1,1,0,0.024,0,0,0,0,0.242,0,1,0,0,0.02,0,0,0
+silver-man-eau-de-parfum,4,silver man eau de parfum,1,0.748,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,0,0.638,1,1,1,1,0.064,0,0,0,1,0.408,1,1,1,0,0.048,0,0,0
+silver-mountain-water-eau-de-parfum,1,silver mountain water eau de parfum ...,1,0.864,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.754,1,1,1,0,0.008,0,0,0,1,0.29,0,1,1,0,0.012,0,0,0
+silver-musk-parfum-extrait,3,silver musk parfum extrait,1,0.868,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,1,0.768,1,1,1,0,0.028,0,0,0,0,0.288,0,1,1,0,0.104,0,1,0
+sir-winston-attar-perfume-oil,3,sir winston attar perfume oil,1,0.924,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.564,1,1,1,0,0.012,0,0,0,1,0.536,1,1,1,0,0.002,0,0,0
+soavissima-eau-de-parfum,1,soavissima eau de parfum,1,0.734,1,1,1,0,0.004,0,0,0,0,0.02,0,0,0,1,0.552,1,1,1,0,0.054,0,0,0,0,0.398,1,1,1,0,0.032,0,0,0
+soft-tension-eau-de-parfum,3,soft tension eau de parfum,1,0.934,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.53,1,1,1,0,0.016,0,0,0,0,0.51,1,1,1,0,0.0,0,0,0
+sola-parfum,5,sola parfum,1,0.348,1,1,0,0,0.044,0,0,0,0,0.01,0,0,0,1,0.49,1,1,1,0,0.026,0,0,0,0,0.38,1,1,1,0,0.062,0,0,0
+sole-di-positano-eau-de-parfum,2,sole di positano eau de parfum,1,0.78,1,1,1,0,0.03,0,0,0,0,0.0,0,0,0,1,0.684,1,1,1,0,0.058,0,0,0,0,0.5,1,1,1,0,0.01,0,0,0
+soleil-blanc-eau-de-parfum,5,soleil blanc eau de parfum,0,0.596,1,1,0,0,0.0,0,0,0,0,0.0,0,0,0,1,0.638,1,1,1,0,0.044,0,0,0,1,0.478,1,1,1,0,0.014,0,0,0
+soleil-neige-eau-de-parfum,5,soleil neige eau de parfum,0,0.91,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,0,0.71,1,1,1,0,0.066,0,0,0,1,0.394,1,1,1,0,0.01,0,0,0
+sombre-negra-eau-de-parfum,5,sombre negra eau de parfum,0,0.78,1,1,1,0,0.012,0,0,0,0,0.006,0,0,0,1,0.442,1,1,1,0,0.032,0,0,0,0,0.602,1,1,1,0,0.022,0,0,0
+sotto-la-luna-tuberose-eau-de-parfum,5,sotto la luna tuberose eau de parfum,0,0.896,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.708,1,1,1,0,0.04,0,0,0,1,0.306,1,1,0,0,0.004,0,0,0
+spanish-leather-cologne-eau-de-cologne,3,spanish leather cologne eau de cologne,0,0.722,1,1,1,0,0.004,0,0,0,0,0.002,0,0,0,1,0.432,1,1,1,0,0.114,0,1,1,0,0.576,1,1,1,0,0.008,0,0,0
+spem-petram-eau-de-parfum,4,spem petram eau de parfum,1,0.762,1,1,1,0,0.012,0,0,0,0,0.002,0,0,0,1,0.584,1,1,1,0,0.054,0,0,0,1,0.414,1,1,1,0,0.044,0,0,0
+spicematic-eau-de-parfum,4,spicematic eau de parfum,0,0.914,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.546,1,1,1,0,0.066,0,0,0,1,0.464,1,1,1,0,0.004,0,0,0
+stercus-parfum,4,stercus parfum,1,0.796,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.608,1,1,1,0,0.02,0,0,0,0,0.41,1,1,1,0,0.006,0,0,0
+still-life-eau-de-parfum,5,still life eau de parfum,1,0.826,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.708,1,1,1,0,0.006,0,0,0,0,0.616,1,1,1,0,0.004,0,0,0
+sublime-balkiss-eau-de-parfum,1,sublime balkiss eau de parfum,1,0.886,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.67,1,1,1,0,0.1,0,0,0,0,0.398,1,1,1,0,0.01,0,0,0
+sublimes-essences-musc-perfume-oil,5,sublimes essences musc perfume oil,0,0.61,1,1,0,0,0.014,0,0,0,0,0.002,0,0,0,1,0.618,1,1,1,0,0.036,0,0,0,1,0.334,1,1,0,0,0.064,0,0,0
+suede-hand-lotion,5,suede hand lotion,1,0.622,1,1,0,0,0.088,0,0,0,0,0.0,0,0,0,0,0.636,1,1,1,0,0.044,0,0,0,0,0.432,1,1,1,0,0.03,0,0,0
+suede-hand-wash,2,suede hand wash,1,0.684,1,1,1,0,0.03,0,0,0,0,0.0,0,0,0,1,0.632,1,1,1,0,0.088,0,0,0,0,0.362,1,1,1,0,0.042,0,0,0
+sultan-musk-attar-perfume-oil,3,sultan musk attar perfume oil,0,0.602,1,1,0,0,0.01,0,0,0,0,0.0,0,0,0,1,0.544,1,1,1,0,0.118,0,1,1,1,0.364,1,1,1,0,0.032,0,0,0
+sunday-cologne-eau-de-parfum,3,sunday cologne eau de parfum,0,0.818,1,1,1,1,0.012,0,0,0,0,0.0,0,0,0,0,0.71,1,1,1,0,0.058,0,1,1,1,0.424,1,1,1,0,0.028,0,0,0
+sunshine-and-pancakes-eau-de-parfum,3,sunshine and pancakes eau de parfum,1,0.774,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.696,1,1,1,0,0.04,0,0,0,1,0.414,1,1,1,0,0.004,0,0,0
+super-cedar-eau-de-parfum,4,super cedar eau de parfum,1,0.836,1,1,1,0,0.06,0,0,0,0,0.0,0,0,0,1,0.672,1,1,1,0,0.02,0,0,0,1,0.464,1,1,1,0,0.002,0,0,0
+swan-princess-eau-de-parfum,3,swan princess eau de parfum,1,0.852,1,1,1,0,0.042,0,0,0,0,0.0,0,0,0,1,0.734,1,1,1,0,0.036,0,0,0,0,0.428,1,1,1,0,0.0,0,0,0
+sweet-morphine-eau-de-parfum,5,sweet morphine eau de parfum,1,0.75,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.594,1,1,1,0,0.008,0,0,0,1,0.592,1,1,1,0,0.008,0,0,0
+sweet-vanilla-eau-de-parfum,1,sweet vanilla eau de parfum,1,0.884,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.746,1,1,1,0,0.034,0,0,0,0,0.372,1,1,1,0,0.002,0,0,0
+t-habanero-eau-de-parfum,3,t. habanero eau de parfum,1,0.796,1,1,1,0,0.002,0,0,0,0,0.018,0,0,0,1,0.632,1,1,1,0,0.092,0,1,1,1,0.538,1,1,1,0,0.016,0,0,0
+tabac-vert-eau-de-toilette,4,tabac vert eau de toilette,0,0.798,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,0,0.54,1,1,1,0,0.032,0,0,0,1,0.514,1,1,1,0,0.072,0,0,0
+tabacco-toscano-cologne-eau-de-cologne,4,tabacco toscano cologne eau de cologne,0,0.732,1,1,1,0,0.0,0,0,0,0,0.002,0,0,0,1,0.546,1,1,1,0,0.036,0,0,0,0,0.386,1,1,1,0,0.012,0,0,0
+tabaco-eau-de-parfum,5,tabaco eau de parfum,1,0.918,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.764,1,1,1,0,0.008,0,0,0,1,0.296,0,1,0,0,0.022,0,0,0
+tacit-eau-de-parfum,2,tacit eau de parfum,1,0.854,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.602,1,1,1,0,0.026,0,0,0,1,0.366,1,1,1,0,0.06,0,0,0
+tagete-eau-de-parfum,2,tagete eau de parfum,1,0.704,1,1,1,0,0.026,0,0,0,0,0.0,0,0,0,1,0.566,1,1,1,0,0.06,0,0,0,0,0.326,1,1,1,0,0.022,0,0,0
+tam-dao-eau-de-toilette,2,tam dao - eau de toilette,0,0.828,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.578,1,1,1,0,0.088,0,0,0,1,0.534,1,1,1,0,0.006,0,0,0
+tango-eau-de-parfum,5,tango eau de parfum,1,0.902,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.68,1,1,1,0,0.044,0,0,0,1,0.396,1,1,1,0,0.022,0,0,0
+tart-s-knicker-drawer-eau-de-parfum,1,tart's knicker drawer eau de parfum,1,0.796,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.702,1,1,1,0,0.02,0,0,0,1,0.456,1,1,1,0,0.014,0,0,0
+tartan-extrait-de-parfum,5,tartan extrait de parfum,1,0.764,1,1,1,0,0.014,0,0,0,0,0.004,0,0,0,1,0.492,1,1,1,0,0.01,0,0,0,1,0.512,1,1,1,0,0.008,0,0,0
+telegrama-eau-de-parfum,1,telegrama eau de parfum,1,0.868,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.766,1,1,1,0,0.022,0,0,0,1,0.482,1,1,1,0,0.012,0,0,0
+tellus-eau-de-parfum,4,tellus eau de parfum,1,0.69,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.504,1,1,1,0,0.03,0,0,0,0,0.464,1,1,1,0,0.054,0,0,0
+terre-noire-eau-de-parfum,4,terre noire eau de parfum,1,0.72,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.738,1,1,1,0,0.016,0,0,0,0,0.276,0,1,1,0,0.112,0,0,0
+terrible-teddy-eau-de-parfum,2,terrible teddy eau de parfum,1,0.816,1,1,1,0,0.002,0,0,0,0,0.01,0,0,0,1,0.556,1,1,1,1,0.176,0,1,1,0,0.512,1,1,1,0,0.034,0,0,0
+the-cobra-the-canary-eau-de-parfum,4,the cobra & the canary eau de parfum,1,0.866,1,1,1,0,0.026,0,0,0,0,0.0,0,0,0,1,0.478,1,1,1,0,0.38,1,1,1,1,0.572,1,1,1,0,0.03,0,0,0
+the-coveted-duchess-rose-eau-de-parfum,4,the coveted duchess rose eau de parfum,1,0.838,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.738,1,1,1,0,0.024,0,0,0,1,0.406,1,1,1,0,0.008,0,0,0
+the-exact-friction-of-stars-eau-de-parfum,5,the exact friction of stars eau de parfum,0,0.764,1,1,1,0,0.026,0,0,0,0,0.026,0,0,0,0,0.548,1,1,1,0,0.026,0,0,0,0,0.442,1,1,1,0,0.078,0,0,0
+the-exact-friction-of-stars-perfume-oil-roll-on,5,the exact friction of stars perfume oil roll-on,0,0.624,1,1,0,0,0.008,0,0,0,1,0.08,0,0,0,0,0.54,1,1,1,0,0.074,0,0,0,1,0.416,1,1,1,0,0.058,0,0,0
+the-orchid-man-eau-de-parfum,5,the orchid man eau de parfum,1,0.852,1,1,1,0,0.004,0,0,0,0,0.002,0,0,0,1,0.7,1,1,1,0,0.108,0,0,0,0,0.406,1,1,1,0,0.034,0,0,0
+the-pour-un-ete-eau-de-toilette,5,the pour un ete eau de toilette,1,0.628,1,1,0,0,0.004,0,0,0,0,0.002,0,0,0,1,0.578,1,1,1,0,0.018,0,0,0,1,0.358,1,1,1,0,0.012,0,0,0
+the-revenge-of-lady-blanche-eau-de-parfum,3,the revenge of lady blanche eau de parfum,1,0.952,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,0,0.664,1,1,1,0,0.02,0,0,0,0,0.356,1,1,1,0,0.0,0,0,0
+the-soft-lawn-eau-de-parfum,2,the soft lawn eau de parfum,1,0.856,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.542,1,1,1,0,0.026,0,0,0,0,0.702,1,1,1,0,0.01,0,0,0
+the-tragedy-of-lord-george-eau-de-parfum,1,the tragedy of lord george eau de parfum,1,0.81,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.518,1,1,0,0,0.014,0,0,0,0,0.394,1,1,1,0,0.008,0,0,0
+thundra-eau-de-parfum,1,thundra eau de parfum,1,0.864,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.71,1,1,1,0,0.03,0,0,0,0,0.472,1,1,1,0,0.038,0,0,0
+tigerlust-pure-parfum,5,tigerlust pure parfum,0,0.818,1,1,1,0,0.0,0,0,0,0,0.002,0,0,0,1,0.572,1,1,1,0,0.036,0,0,0,0,0.558,1,1,1,0,0.024,0,0,0
+tilda-swinton-like-this-eau-de-parfum,3,tilda swinton like this eau de parfum,1,0.804,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.74,1,1,1,0,0.008,0,0,0,0,0.416,1,1,1,0,0.002,0,0,0
+timbuktu-eau-de-toilette,4,timbuktu eau de toilette,1,0.836,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.568,1,1,1,0,0.062,0,0,0,0,0.45,1,1,1,0,0.048,0,0,0
+tiptoeing-through-chambers-of-the-moon-eau-de-parfum,4,tiptoeing through chambers of the moon eau de parfum,0,0.506,1,1,0,0,0.03,0,0,0,1,0.014,0,0,0,0,0.638,1,1,1,0,0.062,0,0,0,1,0.36,1,1,1,0,0.06,0,0,0
+to-twirl-all-girly-eau-de-parfum,3,to twirl all girly eau de parfum,1,0.814,1,1,1,0,0.016,0,0,0,0,0.002,0,0,0,1,0.53,1,1,1,0,0.112,0,1,1,1,0.454,1,1,1,0,0.062,0,1,0
+to-twirl-all-girly-perfume-oil-roll-on-perfume-oil,4,to twirl all girly perfume oil roll-on perfume oil,0,0.572,1,1,1,0,0.008,0,0,0,0,0.014,0,0,0,0,0.424,1,1,0,0,0.04,0,0,0,0,0.44,1,1,1,0,0.052,0,0,0
+tobacco-vanille-body-spray-scented-body-spray,2,tobacco vanille body spray scented body spray,1,0.86,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,0,0.048,0,0,0,0,0.516,1,1,1,0,0.054,0,0,0
+tom-of-finland-eau-de-parfum,4,tom of finland eau de parfum,1,0.894,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.666,1,1,1,0,0.104,0,0,0,0,0.432,1,1,1,0,0.02,0,0,0
+tomboy-neroli-eau-de-parfum,1,tomboy neroli eau de parfum,0,0.732,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,0,0.52,1,1,0,0,0.122,0,0,0,1,0.446,1,1,1,0,0.032,0,0,0
+totally-white-eau-de-parfum,3,totally white eau de parfum,1,0.902,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.668,1,1,1,0,0.172,0,1,1,1,0.402,1,1,1,0,0.02,0,0,0
+trajan-eau-de-parfum,4,trajan eau de parfum,1,0.816,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.514,1,1,1,0,0.042,0,0,0,1,0.366,1,1,1,0,0.012,0,0,0
+tubereuse-couture-eau-de-parfum,2,tubereuse couture eau de parfum,1,0.822,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.638,1,1,1,0,0.044,0,0,0,0,0.556,1,1,1,0,0.03,0,0,0
+tuberosa-eau-de-parfum,4,tuberosa eau de parfum,1,0.77,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.63,1,1,1,0,0.032,0,0,0,0,0.542,1,1,1,0,0.058,0,0,0
+turquoise-perfume-oil,2,turquoise perfume oil,1,0.82,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.696,1,1,1,0,0.06,0,0,0,0,0.33,1,1,1,0,0.004,0,0,0
+tuscan-leather-body-spray-scented-body-spray,2,tuscan leather body spray scented body spray,1,0.778,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.512,1,1,1,0,0.024,0,0,0,0,0.5,1,1,1,0,0.05,0,0,0
+uden-eau-de-parfum,3,uden eau de parfum,1,0.826,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.666,1,1,1,0,0.032,0,0,0,0,0.408,1,1,1,0,0.008,0,0,0
+ummo-eau-de-parfum,4,ummo eau de parfum,1,0.714,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.584,1,1,1,0,0.02,0,0,0,1,0.498,1,1,1,0,0.048,0,0,0
+un-bois-vanille-eau-de-parfum,3,un bois vanille eau de parfum,1,0.902,1,1,1,0,0.002,0,0,0,0,0.0,0,0,0,1,0.628,1,1,1,0,0.058,0,1,1,1,0.522,1,1,1,0,0.006,0,0,0
+une-rose-vermeille-eau-de-parfum,5,une rose vermeille eau de parfum,1,0.822,1,1,1,0,0.0,0,0,0,0,0.004,0,0,0,1,0.672,1,1,1,0,0.012,0,0,0,0,0.484,1,1,1,0,0.004,0,0,0
+une-tonne-de-roses-eau-de-parfum,2,une tonne de roses eau de parfum,1,0.834,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.586,1,1,1,0,0.094,0,0,0,1,0.44,1,1,1,0,0.008,0,0,0
+vanilla-perfume-oil,4,vanilla perfume oil,1,0.816,1,1,1,0,0.056,0,0,0,0,0.0,0,0,0,1,0.658,1,1,1,0,0.096,0,0,0,1,0.324,1,1,1,0,0.08,0,0,0
+vanille-abricot-eau-de-toilette,2,vanille abricot eau de toilette,0,0.832,1,1,1,0,0.026,0,0,0,0,0.004,0,0,0,0,0.604,1,1,1,0,0.11,0,1,1,0,0.438,1,1,1,0,0.006,0,0,0
+vanille-blackberry,1,vanille blackberry,1,0.92,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.728,1,1,1,0,0.066,0,0,0,0,0.406,1,1,1,0,0.01,0,0,0
+vanille-bourbon-eau-de-parfum,3,vanille bourbon eau de parfum,1,0.91,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.812,1,1,1,0,0.038,0,0,0,0,0.388,1,1,1,0,0.006,0,0,0
+vanille-coco,2,vanille coco,1,0.866,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.534,1,1,1,0,0.034,0,0,0,1,0.568,1,1,1,0,0.012,0,0,0
+vanille-extreme-eau-de-toilette,5,vanille extreme eau de toilette,1,0.752,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.608,1,1,1,0,0.028,0,0,0,0,0.322,1,1,0,0,0.024,0,0,0
+vanille-fleurie-de-tahiti-eau-de-toilette,2,vanille fleurie de tahiti eau de toilette,1,0.7,1,1,1,0,0.008,0,0,0,0,0.028,0,0,0,1,0.506,1,1,1,0,0.022,0,0,0,0,0.394,1,1,1,0,0.038,0,0,0
+vanille-givree-des-antilles-eau-de-toilette,2,vanille givree des antilles eau de toilette,1,0.844,1,1,1,0,0.026,0,0,0,0,0.0,0,0,0,1,0.538,1,1,1,1,0.068,0,0,0,1,0.572,1,1,1,0,0.022,0,0,0
+vanille-noire-du-mexique-eau-de-toilette,1,vanille noire du mexique eau de toilette,1,0.81,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.654,1,1,1,0,0.032,0,0,0,1,0.462,1,1,1,0,0.034,0,0,0
+vanille-sauvage-de-madagascar-eau-de-toilette,3,vanille sauvage de madagascar eau de toilette,1,0.9,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.566,1,1,1,0,0.088,0,1,1,0,0.646,1,1,1,0,0.016,0,0,0
+vanille-tonka-eau-de-parfum,5,vanille tonka eau de parfum,1,0.826,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.56,1,1,1,0,0.01,0,0,0,1,0.53,1,1,1,0,0.018,0,0,0
+vanitas-body-cream-scented-body-cream,4,vanitas body cream scented body cream,1,0.798,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.524,1,1,1,0,0.064,0,0,0,1,0.544,1,1,1,0,0.014,0,0,0
+vanitas-eau-de-parfum,1,vanitas eau de parfum,0,0.488,1,1,0,1,0.01,0,0,0,0,0.082,0,0,0,0,0.572,1,1,1,0,0.096,0,0,0,0,0.436,1,1,1,0,0.022,0,0,0
+venetian-bergamot-eau-de-parfum,2,venetian bergamot eau de parfum,1,0.884,1,1,1,0,0.01,0,0,0,0,0.0,0,0,0,1,0.826,1,1,1,0,0.026,0,0,0,0,0.302,1,1,1,0,0.008,0,0,0
+vepres-siciliennes-eau-de-parfum,2,vepres siciliennes eau de parfum,1,0.882,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,0,0.642,1,1,1,0,0.022,0,0,0,1,0.568,1,1,1,0,0.02,0,0,0
+verveine-d-eugene-eau-de-parfum,4,verveine d'eugene eau de parfum,1,0.822,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,0,0.744,1,1,1,0,0.03,0,0,0,1,0.474,1,1,1,0,0.008,0,0,0
+vetiver-46-eau-de-parfum,3,vetiver 46 eau de parfum,1,0.86,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.684,1,1,1,0,0.108,0,1,1,0,0.25,0,1,1,0,0.006,0,0,0
+vetiver-cologne-eau-de-cologne,4,vetiver cologne eau de cologne,1,0.864,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.78,1,1,1,0,0.024,0,0,0,0,0.326,1,1,1,0,0.038,0,0,0
+vetiver-dance-eau-de-toilette,1,vetiver dance eau de toilette,1,0.8,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.654,1,1,1,0,0.01,0,0,0,0,0.408,1,1,1,0,0.01,0,0,0
+vetiver-nocturne-absolu-extrait-de-parfum,2,vetiver nocturne absolu extrait de parfum,1,0.728,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.528,1,1,1,0,0.008,0,0,0,1,0.552,1,1,1,0,0.03,0,0,0
+vetiver-nocturne-autumn-19-extrait-de-parfum,5,vetiver nocturne autumn 19 extrait de parfum,0,0.896,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.708,1,1,1,0,0.01,0,0,0,0,0.558,1,1,1,0,0.006,0,0,0
+vetiver-oriental-eau-de-parfum,4,vetiver oriental eau de parfum,1,0.71,1,1,1,0,0.05,0,0,0,0,0.01,0,0,0,1,0.492,1,1,1,0,0.034,0,0,0,0,0.446,1,1,1,0,0.044,0,0,0
+vetiver-parfum-cologne,1,vetiver parfum cologne,1,0.868,1,1,1,0,0.018,0,0,0,0,0.0,0,0,0,1,0.794,1,1,1,0,0.022,0,0,0,0,0.318,1,1,1,0,0.014,0,0,0
+vetiverus-eau-de-parfum,1,vetiverus eau de parfum,1,0.802,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,0,0.708,1,1,1,0,0.016,0,0,0,1,0.482,1,1,1,0,0.032,0,0,0
+vettiveru-2,2,vettiveru 2,1,0.566,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.544,1,1,1,0,0.064,0,0,0,0,0.586,1,1,1,0,0.012,0,0,0
+vetyver-eau-de-toilette,1,vetyver eau de toilette,0,0.754,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.58,1,1,1,0,0.046,0,0,0,0,0.486,1,1,1,0,0.026,0,0,0
+vetyverio-eau-de-toilette,4,vetyverio eau de toilette,0,0.814,1,1,1,0,0.008,0,0,0,0,0.008,0,0,0,0,0.562,1,1,1,0,0.036,0,0,0,1,0.47,1,1,1,0,0.032,0,0,0
+victrix-eau-de-parfum,4,victrix eau de parfum,1,0.852,1,1,1,0,0.02,0,0,0,0,0.0,0,0,0,1,0.642,1,1,1,0,0.056,0,0,0,0,0.432,1,1,1,0,0.016,0,0,0
+violette-in-love-eau-de-toilette,3,violette in love eau de toilette,0,0.62,1,1,0,0,0.008,0,0,0,0,0.0,0,0,0,0,0.636,1,1,1,0,0.014,0,0,0,0,0.296,0,1,1,1,0.18,0,1,0
+violettes-du-czar-eau-de-parfum,4,violettes du czar eau de parfum,1,0.768,1,1,1,0,0.004,0,0,0,0,0.0,0,0,0,1,0.52,1,1,1,0,0.014,0,0,0,1,0.516,1,1,1,0,0.064,0,0,0
+virgin-island-water-eau-de-parfum,4,virgin island water eau de parfum ...,1,0.928,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.746,1,1,1,0,0.024,0,0,0,1,0.356,1,1,1,0,0.004,0,0,0
+viride-parfum,4,viride parfum,1,0.878,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.664,1,1,1,0,0.032,0,0,0,0,0.476,1,1,1,0,0.002,0,0,0
+vivacious-eau-de-parfum,4,vivacious eau de parfum,1,0.82,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.598,1,1,1,0,0.026,0,0,0,1,0.522,1,1,1,0,0.0,0,0,0
+vixere-eau-de-parfum,4,vixere eau de parfum,1,0.852,1,1,1,0,0.024,0,0,0,0,0.0,0,0,0,1,0.626,1,1,1,0,0.018,0,0,0,1,0.508,1,1,1,0,0.022,0,0,0
+vodka-on-the-rocks-eau-de-parfum,3,vodka on the rocks eau de parfum,1,0.886,1,1,1,0,0.016,0,0,0,0,0.0,0,0,0,1,0.726,1,1,1,0,0.026,0,0,0,1,0.396,1,1,1,0,0.022,0,0,0
+voleur-de-roses-eau-de-toilette,2,voleur de roses eau de toilette,1,0.9,1,1,1,0,0.026,0,0,0,0,0.0,0,0,0,1,0.698,1,1,1,0,0.084,0,0,0,0,0.408,1,1,1,0,0.024,0,0,0
+war-and-peace-ii-extrait-de-parfum,5,war and peace ii extrait de parfum,1,0.752,1,1,1,0,0.006,0,0,0,0,0.016,0,0,0,1,0.454,1,1,1,1,0.072,0,0,0,1,0.482,1,1,1,0,0.052,0,0,0
+wazamba-eau-de-parfum,1,wazamba eau de parfum,1,0.75,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.566,1,1,1,0,0.066,0,0,0,0,0.508,1,1,1,0,0.012,0,0,0
+what-about-pop-eau-de-parfum,1,what about pop eau de parfum,1,0.888,1,1,1,0,0.012,0,0,0,0,0.002,0,0,0,1,0.72,1,1,1,0,0.004,0,0,0,1,0.398,1,1,1,0,0.008,0,0,0
+what-i-did-on-my-holidays-eau-de-parfum,5,what i did on my holidays eau de parfum,1,0.642,1,1,0,0,0.008,0,0,0,0,0.002,0,0,0,1,0.374,1,1,1,0,0.01,0,0,0,1,0.566,1,1,1,0,0.012,0,0,0
+what-we-do-in-paris-is-secret-eau-de-parfum,4,what we do in paris is secret eau de parfum,1,0.898,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.648,1,1,1,0,0.094,0,0,0,1,0.602,1,1,1,0,0.004,0,0,0
+white-aoud-eau-de-parfum,3,white aoud eau de parfum,0,0.908,1,1,1,0,0.038,0,0,0,0,0.0,0,0,0,0,0.684,1,1,1,0,0.108,0,1,1,0,0.468,1,1,1,0,0.004,0,0,0
+white-peacock-lily-eau-de-parfum,4,white peacock lily eau de parfum,1,0.78,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.626,1,1,1,0,0.03,0,0,0,1,0.57,1,1,1,0,0.03,0,0,0
+white-zagora-eau-de-toilette,1,white zagora eau de toilette,1,0.894,1,1,1,0,0.006,0,0,0,0,0.002,0,0,0,1,0.642,1,1,1,0,0.074,0,0,0,0,0.342,1,1,1,0,0.004,0,0,0
+wild-rose-aoud-eau-de-parfum,2,wild rose aoud eau de parfum,1,0.97,1,1,1,0,0.0,0,0,0,0,0.0,0,0,0,1,0.896,1,1,1,0,0.012,0,0,0,0,0.108,0,1,0,0,0.002,0,0,0
+wonder-of-you-eau-de-parfum,5,wonder of you eau de parfum,1,0.834,1,1,1,0,0.006,0,0,0,0,0.002,0,0,0,1,0.648,1,1,1,1,0.308,1,1,1,1,0.38,1,1,1,0,0.04,0,0,0
+wood-flake-eau-de-parfum,3,wood flake eau de parfum,1,0.658,1,1,1,0,0.008,0,0,0,0,0.004,0,0,0,1,0.428,1,1,1,0,0.054,0,1,1,0,0.414,1,1,1,0,0.03,0,0,0
+xj-homme-eau-de-parfum,3,xj homme eau de parfum,1,0.738,1,1,1,0,0.078,0,1,0,0,0.0,0,0,0,1,0.548,1,1,1,0,0.038,0,0,0,0,0.324,1,1,1,0,0.044,0,0,0
+xj-irisss-eau-de-parfum,3,xj irisss eau de parfum,1,0.69,1,1,1,0,0.008,0,0,0,0,0.0,0,0,0,1,0.518,1,1,1,0,0.064,0,1,1,0,0.354,1,1,1,0,0.06,0,1,0
+yes-i-do-formerly-don-t-get-me-wrong-baby-eau-de-parfum,3,yes i do (formerly don't get me wrong baby) eau de parfum,0,0.698,1,1,1,0,0.022,0,0,0,0,0.356,1,1,1,1,0.46,1,1,1,0,0.038,0,0,0,0,0.546,1,1,1,0,0.046,0,0,0
+yesterday-haze-eau-de-parfum,5,yesterday haze eau de parfum,1,0.754,1,1,1,0,0.014,0,0,0,0,0.0,0,0,0,1,0.51,1,1,1,0,0.024,0,0,0,0,0.604,1,1,1,0,0.032,0,0,0
+ylang-49-eau-de-parfum,2,ylang 49 eau de parfum,1,0.7,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.658,1,1,1,0,0.068,0,0,0,1,0.374,1,1,1,0,0.004,0,0,0
+yoyogi-eau-de-toilette,1,yoyogi eau de toilette,0,0.81,1,1,1,0,0.01,0,0,0,0,0.002,0,0,0,1,0.65,1,1,1,0,0.016,0,0,0,0,0.458,1,1,1,0,0.038,0,0,0
+yu-son-eau-de-parfum,1,yu son eau de parfum,0,0.874,1,1,1,0,0.028,0,0,0,0,0.0,0,0,0,1,0.66,1,1,1,0,0.062,0,0,0,1,0.534,1,1,1,0,0.008,0,0,0
+zdravetz-eau-de-parfum,5,zdravetz eau de parfum,0,0.806,1,1,1,0,0.016,0,0,0,0,0.008,0,0,0,1,0.536,1,1,1,0,0.016,0,0,0,0,0.476,1,1,1,0,0.006,0,0,0
+zeitgeist-eau-de-parfum,3,zeitgeist eau de parfum,1,0.884,1,1,1,0,0.006,0,0,0,0,0.0,0,0,0,1,0.65,1,1,1,0,0.048,0,0,0,1,0.472,1,1,1,0,0.006,0,0,0
+zenne-extrait-de-parfum,3,zenne extrait de parfum,1,0.896,1,1,1,0,0.012,0,0,0,0,0.0,0,0,0,1,0.668,1,1,1,0,0.008,0,0,0,0,0.438,1,1,1,0,0.004,0,0,0
