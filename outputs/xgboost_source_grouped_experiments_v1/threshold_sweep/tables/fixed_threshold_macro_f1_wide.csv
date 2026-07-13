@@ -1,0 +1,2 @@
+model_id,model_name,macro_f1_t02,macro_f1_t03,macro_f1_t05,macro_f1_t07,best_threshold,best_macro_f1
+xgboost,XGBoost,0.340947,0.325974,0.295027,0.224803,0.2,0.340947

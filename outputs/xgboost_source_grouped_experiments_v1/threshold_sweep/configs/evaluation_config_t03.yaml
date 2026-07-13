@@ -1,0 +1,350 @@
+benchmark:
+  name: gemini_browser_og784_source_grouped_v1
+  task_type: multi_label_emotion_classification
+  status: prospective_source_grouped_rerun
+  interpretation: candidate_final_benchmark_only_after_contract_completion
+  experiment_root: outputs/xgboost_source_grouped_experiments_v1
+  benchmark_root: outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t03
+  overwrite_policy: legacy roots are protected; explicit Phase-2 reruns may replace
+    only the model-specific artifacts under this configured benchmark root and must
+    refresh their hashes and run manifests
+  supersedes_for_final_evidence: outputs/gemini_browser_og784/model_benchmark
+  preserves_as_non_final_history: outputs/gemini_browser_og784/model_benchmark
+provenance:
+  config_status: prespecified_before_source_grouped_rerun
+  phase1_snapshot: archive/thesis_current_draft_benchmark_2026-07-13
+  hash_algorithm: sha256_binary_file_bytes
+  hash_mismatch_policy: fail_before_writing_benchmark_artifacts
+  audit_amendments:
+  - date: 2026-07-13
+    trigger: pre-acceptance scientific audit before completion of the deep-model rerun
+    change: Restricted deep-model input to transcript excerpts only, added trivial
+      baselines and component-aware sensitivity diagnostics, and strengthened artifact
+      recomputation gates. No deep-model result from the superseded title/description-inclusive
+      attempt was accepted.
+  frozen_input_paths:
+    raw_csv: data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv
+    labels_csv: labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv
+    feature_label_csv: outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv
+  frozen_input_sha256:
+    raw_csv: dc439566a60653939321fcd4b3cbe874320a436396530837cd1be24d84174782
+    labels_csv: d69318ea2ad04f574ccbe8d6b348041551a4762379673ec2e8cba0d2b0ad461e
+    feature_label_csv: 518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976
+  frozen_input_rows:
+    raw_csv: 4881
+    labels_csv: 784
+    feature_label_csv: 784
+  annotation:
+    recorded_labeler: Gemini 3.1 Pro in the browser
+    identity_verification: not_machine_verifiable_from_preserved_browser_responses
+    prompt_path: data/annotation_packets/og784_gemini_browser_pro_review_level/prompt.md
+    packet_manifest_path: data/annotation_packets/og784_gemini_browser_pro_review_level/manifest.csv
+    defense_safe_description: The project log records the browser labeler as Gemini
+      3.1 Pro. The fixed prompt, input packets, pasted responses, validation outputs,
+      and final label table are preserved, but the browser responses do not contain
+      machine-verifiable model-version or session metadata.
+data:
+  canonical_input_csv: outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv
+  canonical_feature_label_csv: outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv
+  canonical_raw_transcript_csv: data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv
+  canonical_label_csv: labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv
+  sample_granularity: perfume_level
+  unit_id_column: perfume_id
+  raw_perfume_column: Perfume
+  raw_perfume_id_normalization: normalize_perfume_id
+  raw_text_column: Final Transcript
+  display_name_columns:
+  - Perfume
+  - perfume_name
+  - perfume_name_unified
+  - perfume_name_gemini
+  feature_prefixes:
+  - NRC_
+  - VAD_
+  - Hartmann_
+  - Savani_
+  - GoEmotions_
+  - Cardiff_
+  deep_text_source_csv: data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv
+  deep_text_source_text_column: Final Transcript
+  deep_text_model_input_fields:
+  - Final Transcript
+  deep_text_audit_only_fields:
+  - Title
+  - Description
+  - URL
+  - Channel Title
+  deep_text_metadata_exclusion_reason: Exact normalized descriptions repeat across
+    source-grouped folds and can carry reviewer or channel boilerplate. These fields
+    remain in source audit records but cannot enter chunk_text or document_text.
+  residual_dependence_disclosure: Channel/reviewer identity is not an atomic split
+    key because connecting by channel would collapse nearly the full corpus. Transcript
+    language can therefore retain reviewer-style dependence; claims are limited to
+    exact video/transcript isolation and component-aware sensitivity is required.
+  deep_text_dataset_jsonl: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/datasets/perfume_text_dataset_v1.jsonl
+  deep_text_dataset_chunks_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/datasets/perfume_text_dataset_v1_chunks.csv
+  deep_text_dataset_summary_json: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/datasets/perfume_text_dataset_v1_summary.json
+  deep_text_rebuild_required: true
+  forbidden_deep_text_input: outputs/gemini_browser_og784/model_benchmark/datasets/perfume_text_dataset_v1.jsonl
+source_identity:
+  version: source_identity_v1
+  node_type: perfume_id
+  evidence_keys:
+    video_id:
+      column: Video ID
+      normalization:
+      - strip_surrounding_whitespace
+      validation_regex: ^[A-Za-z0-9_-]{11}$
+      case_sensitive: true
+      ignore_invalid_or_empty: true
+    transcript_sha256:
+      column: Final Transcript
+      encoding: utf-8
+      hash_algorithm: sha256
+      normalization_order:
+      - html_unescape
+      - unicode_nfkc
+      - unicode_casefold
+      - replace_non_alphanumeric_runs_with_single_space
+      - collapse_whitespace
+      - strip_surrounding_whitespace
+      ignore_empty_after_normalization: true
+  graph_rule:
+    connect_when_any_evidence_key_is_shared: true
+    component_algorithm: undirected_transitive_connected_components
+    atomic_split_unit: connected_component
+    group_column: source_group_id
+    group_id_rule: Deterministic SHA-256-derived identifier over the grouping version
+      and sorted component member and source-key identities.
+  ambiguity_policy:
+    unresolved_perfume_id: fail
+    duplicate_membership_rows: deduplicate_and_report
+    empty_source_keys: ignore_and_report
+  audit_outputs:
+    memberships_csv: outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_memberships.csv
+    components_csv: outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_components.csv
+    audit_json: outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_group_audit.json
+targets:
+  official_emotion_columns:
+  - joy
+  - sadness
+  - fear
+  - trust
+  - surprise
+  - anticipation
+  - disgust
+  excluded_emotion_columns:
+    anger: excluded_from_the_prespecified_seven_label_benchmark
+  frozen_positive_support:
+    joy: 622
+    sadness: 11
+    fear: 3
+    trust: 476
+    surprise: 44
+    anticipation: 366
+    disgust: 19
+  rare_label_policy:
+    grouping_constraint_precedes_label_balance: true
+    fear_interpretation: exploratory
+    require_fold_support_table: true
+    undefined_fold_metric_representation: null
+    silently_drop_undefined_metrics: false
+  secondary_vad_columns:
+  - valence
+  - arousal
+  - dominance
+models:
+  prespecified_model_set:
+  - logistic_regression
+  - xgboost
+  - random_forest
+  - bert
+  - bilstm_attention
+  bert:
+    checkpoint: monologg/bert-base-cased-goemotions-original
+    local_files_only: true
+    max_length: 96
+    aggregation_strategy: mean_probability
+    train_batch_size: 8
+    eval_batch_size: 16
+    learning_rate: 2.0e-05
+    weight_decay: 0.01
+    max_epochs: 3
+    patience: 1
+    min_delta: 0.0001
+    warmup_ratio: 0.1
+    gradient_accumulation_steps: 1
+    max_grad_norm: 1.0
+    selection_metric: macro_f1
+  bilstm_attention:
+    aggregation_strategy: mean_probability
+    lowercase_tokens: true
+    min_token_freq: 2
+    max_vocab_size: 20000
+    max_tokens: 208
+    embedding_dim: 96
+    hidden_size: 64
+    attention_dim: 64
+    lstm_layers: 1
+    dropout: 0.3
+    train_batch_size: 64
+    eval_batch_size: 128
+    learning_rate: 0.001
+    weight_decay: 0.0001
+    max_epochs: 12
+    patience: 2
+    min_delta: 0.0001
+    max_grad_norm: 1.0
+    selection_metric: macro_f1
+evaluation:
+  main_table_metrics:
+  - macro_f1
+  - macro_roc_auc
+  - macro_average_precision
+  recorded_artifact_field_for_macro_average_precision: macro_pr_auc
+  official_aggregation: pooled_out_of_fold_predictions
+  macro_average_over: all_seven_official_labels
+  probability_threshold: 0.3
+  threshold_tuning:
+    enabled: true
+    status: secondary_diagnostic
+    selection_metric: macro_f1
+    strategies:
+    - global
+    - per_label
+    threshold_grid:
+      start: 0.05
+      end: 0.95
+      step: 0.05
+    tie_break: closest_to_baseline
+    outer_test_data_may_influence_threshold: false
+  secondary_metrics:
+  - per_label_f1
+  - per_label_roc_auc
+  - per_label_average_precision
+  - per_label_precision
+  - per_label_recall
+  - micro_f1
+  - subset_accuracy
+  - hamming_loss
+  vad_in_main_table: false
+  per_fold_metrics_status: diagnostics_with_explicit_undefined_values
+  trivial_baselines:
+    status: required_separate_diagnostic_not_one_of_five_models
+    definitions:
+    - all_negative
+    - all_positive
+    - train_fold_prevalence
+    threshold: 0.3
+  component_sensitivity:
+    status: required_before_model_superiority_claims
+    row_weight: inverse_source_component_size
+    paired_component_cluster_bootstrap_seed: 42
+    paired_component_cluster_bootstrap_repetitions: 2000
+splits:
+  outer_cv:
+    type: source_component_groupkfold
+    n_splits: 5
+    shuffle: false
+    random_state: 42
+    require_prebuilt_manifest: true
+    manifest_path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv
+    fold_balance_path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_balance.csv
+    audit_report_path: outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_group_audit.json
+    group_column: source_group_id
+    grouping_version: source_identity_v1
+    split_design_label: 5-fold source-component grouped CV
+    hard_constraints:
+    - every_perfume_id_appears_exactly_once
+    - every_source_group_id_appears_in_exactly_one_outer_fold
+    - no_shared_valid_video_id_crosses_outer_folds
+    - no_shared_normalized_transcript_sha256_crosses_outer_folds
+    soft_constraints:
+    - approximate_fold_row_balance
+    - approximate_per_label_positive_support_balance
+    giant_component_policy: keep_atomic_report_imbalance_and_effective_group_count
+  inner_validation:
+    applies_to:
+    - logistic_regression
+    - xgboost
+    - random_forest
+    - bert
+    - bilstm_attention
+    type: deterministic_source_group_holdout
+    n_splits: 10
+    random_state: 42
+    candidate_partition: groupkfold_over_outer_training_source_groups
+    validation_candidate_selection: Choose the GroupKFold candidate whose perfume-row
+      count is closest to outer-training rows divided by the effective number of inner
+      folds; break ties by smaller candidate size and a SHA-256 ordering derived from
+      seed, outer fold ID, and candidate ID.
+    require_prebuilt_manifest: true
+    manifest_path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv
+    group_column: source_group_id
+    outer_fold_column: outer_fold_id
+    role_column: inner_role
+    allowed_roles:
+    - train
+    - val
+    outer_test_groups_may_appear: false
+    source_group_may_cross_inner_train_validation: false
+seeds:
+  data_seed: 42
+  model_seed: 42
+  repeated_cv: false
+  multi_seed_averaging: false
+  best_seed_selection: false
+artifacts:
+  experiment_root: outputs/gemini_browser_og784_source_grouped_v1
+  source_audit_root: outputs/gemini_browser_og784_source_grouped_v1/source_audit
+  root_dir: outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t03
+  required_per_model:
+    metrics_json: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/{model_id}.json
+    per_label_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/{model_id}_per_label.csv
+    predictions_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/{model_id}_oof.csv
+    per_label_plot: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/figures/{model_id}_per_label_metrics.png
+    roc_pr_plot: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/figures/{model_id}_roc_pr_curves.png
+    run_log: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/{model_id}.log
+    run_manifest: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/{model_id}_run.json
+    interpretation_note: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/{model_id}_note.md
+  benchmark_wide:
+    comparison_table_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/comparison_table.csv
+    fold_manifest_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv
+    inner_validation_manifest_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv
+    fold_balance_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_balance.csv
+    baseline_root: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/dummy_prevalence_baselines
+    inner_fold_balance_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_fold_balance.csv
+    outer_fold_per_label_metrics_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/outer_fold_per_label_metrics.csv
+    component_weighted_metrics_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/component_weighted_model_metrics.csv
+    component_bootstrap_differences_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/paired_component_bootstrap_macro_f1.csv
+    thesis_comparison_csv: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/final_model_comparison_for_thesis.csv
+completion_rule:
+  split_ready_requires:
+  - all_three_frozen_input_hashes_match
+  - source_identity_v1_audit_artifacts_exist
+  - outer_and_inner_manifests_are_prebuilt
+  - outer_manifest_covers_exactly_784_unique_perfume_ids
+  - zero_source_group_overlap_across_outer_folds
+  - zero_source_group_overlap_across_inner_train_validation
+  - giant_component_and_fold_imbalance_are_reported
+  - per_fold_label_support_is_reported
+  - transcript_only_deep_model_input_is_verified
+  - trivial_baseline_diagnostics_exist
+  row_complete_requires:
+  - frozen_input_hashes_recorded
+  - split_manifest_hashes_recorded
+  - source_audit_hash_recorded
+  - reproducible_run
+  - saved_oof_predictions
+  - saved_metrics
+  - comparable_plots
+  - interpretation_note
+  - fixed_threshold_metrics_recomputed_from_oof_predictions
+  final_table_requires:
+  - all_five_prespecified_model_rows_complete
+  - one_shared_outer_manifest_for_all_models
+  - one_shared_inner_manifest_for_all_models
+  - no_artifact_copied_from_the_archived_non_final_benchmark
+  - outer_and_inner_rare_label_diagnostics_exist
+  - component_weighted_and_cluster_bootstrap_sensitivities_exist
+  - thesis_facing_average_precision_terminology_is_used

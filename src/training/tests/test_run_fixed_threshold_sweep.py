@@ -1,5 +1,5 @@
 # Date Created: 2026-05-06 15:46:46+03:00
-# Date Last Modified: 2026-05-15
+# Date Last Modified: 2026-07-13
 
 """Tests for the fixed-threshold sweep runner."""
 
@@ -128,6 +128,26 @@ class RunFixedThresholdSweepTests(unittest.TestCase):
             generated = yaml.safe_load(out_config.read_text(encoding="utf-8"))
             original["evaluation"]["probability_threshold"] = 0.5
             self.assertEqual(generated, original)
+
+    def test_write_threshold_config_binds_source_grouped_artifact_root(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            base_config = tmp / "config" / "evaluation_config.yaml"
+            out_config = tmp / "generated" / "evaluation_config_t05.yaml"
+            artifact_root = tmp / "outputs" / "threshold_t05"
+            _write_base_config(base_config)
+
+            write_threshold_config(
+                base_config_path=base_config,
+                destination_path=out_config,
+                threshold=0.5,
+                artifact_root=artifact_root,
+            )
+
+            generated = yaml.safe_load(out_config.read_text(encoding="utf-8"))
+            self.assertEqual(generated["artifacts"]["root_dir"], str(artifact_root))
+            self.assertEqual(generated["benchmark"]["benchmark_root"], str(artifact_root))
+            self.assertEqual(generated["benchmark"]["experiment_root"], str(artifact_root.parent))
 
     def test_normalize_models_preserves_canonical_order(self) -> None:
         self.assertEqual(

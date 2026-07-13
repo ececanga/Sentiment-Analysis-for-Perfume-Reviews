@@ -1,5 +1,5 @@
 # Date Created: 2026-05-06 15:46:46+03:00
-# Date Last Modified: 2026-05-15
+# Date Last Modified: 2026-07-13
 
 from __future__ import annotations
 
@@ -146,10 +146,22 @@ def threshold_config_path(summary_root: Path, threshold: float) -> Path:
     return summary_root / "configs" / f"evaluation_config_{threshold_to_tag(threshold)}.yaml"
 
 
-def write_threshold_config(*, base_config_path: Path, destination_path: Path, threshold: float) -> Path:
+def write_threshold_config(
+    *,
+    base_config_path: Path,
+    destination_path: Path,
+    threshold: float,
+    artifact_root: Path | None = None,
+) -> Path:
     config = load_config(base_config_path)
     evaluation_cfg = config.setdefault("evaluation", {})
     evaluation_cfg["probability_threshold"] = float(threshold)
+    if artifact_root is not None:
+        configured_root = stringify_path(Path(artifact_root))
+        config.setdefault("artifacts", {})["root_dir"] = configured_root
+        benchmark_cfg = config.setdefault("benchmark", {})
+        benchmark_cfg["benchmark_root"] = configured_root
+        benchmark_cfg["experiment_root"] = stringify_path(Path(artifact_root).parent)
     destination_path.parent.mkdir(parents=True, exist_ok=True)
     destination_path.write_text(yaml.safe_dump(config, sort_keys=False), encoding="utf-8")
     return destination_path
@@ -398,6 +410,7 @@ def run_fixed_threshold_sweep(
             base_config_path=base_config_path,
             destination_path=threshold_config_path(summary_root, threshold),
             threshold=threshold,
+            artifact_root=out_root,
         )
         threshold_record: Dict[str, Any] = {
             "threshold": threshold,

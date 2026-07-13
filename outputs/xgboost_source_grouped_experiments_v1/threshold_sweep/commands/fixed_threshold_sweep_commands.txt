@@ -1,0 +1,13 @@
+# threshold=0.2
+.venv/bin/python -m src.training.run_xgboost_benchmark --config outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t02.yaml --input-csv outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv --out-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t02
+
+# threshold=0.3
+.venv/bin/python -m src.training.run_xgboost_benchmark --config outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t03.yaml --input-csv outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv --out-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t03
+
+# threshold=0.5
+.venv/bin/python -m src.training.run_xgboost_benchmark --config outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t05.yaml --input-csv outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv --out-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t05
+
+# threshold=0.7
+.venv/bin/python -m src.training.run_xgboost_benchmark --config outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t07.yaml --input-csv outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv --out-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t07
+
+.venv/bin/python -m src.training.generate_threshold_sweep_summary --summary-root outputs/xgboost_source_grouped_experiments_v1/threshold_sweep --threshold-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t02 --threshold-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t03 --threshold-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t05 --threshold-root outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t07 --models xgboost

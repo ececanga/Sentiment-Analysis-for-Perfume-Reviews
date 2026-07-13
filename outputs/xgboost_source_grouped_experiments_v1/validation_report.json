@@ -1,0 +1,242 @@
+{
+  "status": "passed",
+  "manifest_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+  "manifest_sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+  "source_group_count": 359,
+  "cross_fold_source_group_count": 0,
+  "review_count": {
+    "condition_count": 7,
+    "conditions": [
+      {
+        "synthetic_reviews": 99,
+        "rows": 784,
+        "unique_perfumes": 784,
+        "fold_sizes": {
+          "1": 334,
+          "2": 113,
+          "3": 113,
+          "4": 112,
+          "5": 112
+        },
+        "macro_f1": 0.32509246834209177,
+        "macro_roc_auc": 0.594530302683146,
+        "macro_pr_auc": 0.3060522462473992
+      },
+      {
+        "synthetic_reviews": 201,
+        "rows": 784,
+        "unique_perfumes": 784,
+        "fold_sizes": {
+          "1": 334,
+          "2": 113,
+          "3": 113,
+          "4": 112,
+          "5": 112
+        },
+        "macro_f1": 0.3241400326593759,
+        "macro_roc_auc": 0.5991232741739178,
+        "macro_pr_auc": 0.3083813990678418
+      },
+      {
+        "synthetic_reviews": 300,
+        "rows": 784,
+        "unique_perfumes": 784,
+        "fold_sizes": {
+          "1": 334,
+          "2": 113,
+          "3": 113,
+          "4": 112,
+          "5": 112
+        },
+        "macro_f1": 0.32173764699047364,
+        "macro_roc_auc": 0.5779921827942075,
+        "macro_pr_auc": 0.30582322945647367
+      },
+      {
+        "synthetic_reviews": 501,
+        "rows": 784,
+        "unique_perfumes": 784,
+        "fold_sizes": {
+          "1": 334,
+          "2": 113,
+          "3": 113,
+          "4": 112,
+          "5": 112
+        },
+        "macro_f1": 0.32773448327609583,
+        "macro_roc_auc": 0.594059108553025,
+        "macro_pr_auc": 0.30278832526177857
+      },
+      {
+        "synthetic_reviews": 1002,
+        "rows": 784,
+        "unique_perfumes": 784,
+        "fold_sizes": {
+          "1": 334,
+          "2": 113,
+          "3": 113,
+          "4": 112,
+          "5": 112
+        },
+        "macro_f1": 0.322629160473969,
+        "macro_roc_auc": 0.561682561024983,
+        "macro_pr_auc": 0.3015162417042663
+      },
+      {
+        "synthetic_reviews": 2001,
+        "rows": 784,
+        "unique_perfumes": 784,
+        "fold_sizes": {
+          "1": 334,
+          "2": 113,
+          "3": 113,
+          "4": 112,
+          "5": 112
+        },
+        "macro_f1": 0.32348852627540037,
+        "macro_roc_auc": 0.5838063475637494,
+        "macro_pr_auc": 0.3020353628944707
+      },
+      {
+        "synthetic_reviews": 2352,
+        "rows": 784,
+        "unique_perfumes": 784,
+        "fold_sizes": {
+          "1": 334,
+          "2": 113,
+          "3": 113,
+          "4": 112,
+          "5": 112
+        },
+        "macro_f1": 0.3268608925498488,
+        "macro_roc_auc": 0.588981745485335,
+        "macro_pr_auc": 0.30661741309965335
+      }
+    ]
+  },
+  "threshold_sweep": {
+    "condition_count": 4,
+    "probabilities_identical_across_thresholds": true,
+    "conditions": [
+      {
+        "threshold": 0.2,
+        "macro_f1": 0.3409468109692182,
+        "macro_roc_auc": 0.5682939462541757,
+        "macro_pr_auc": 0.30943262292347656
+      },
+      {
+        "threshold": 0.3,
+        "macro_f1": 0.3259744723367426,
+        "macro_roc_auc": 0.5682939462541757,
+        "macro_pr_auc": 0.30943262292347656
+      },
+      {
+        "threshold": 0.5,
+        "macro_f1": 0.29502726059164447,
+        "macro_roc_auc": 0.5682939462541757,
+        "macro_pr_auc": 0.30943262292347656
+      },
+      {
+        "threshold": 0.7,
+        "macro_f1": 0.22480250641183863,
+        "macro_roc_auc": 0.5682939462541757,
+        "macro_pr_auc": 0.30943262292347656
+      }
+    ]
+  },
+  "balancing": {
+    "condition_count": 9,
+    "conditions": [
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_only",
+        "threshold": 0.3,
+        "model_id": "xgboost_hybrid",
+        "strategy": "hybrid",
+        "macro_f1": 0.22297090237867415,
+        "macro_roc_auc": 0.5327593131753829,
+        "macro_pr_auc": 0.30488384260977064
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_only",
+        "threshold": 0.3,
+        "model_id": "xgboost_smote",
+        "strategy": "smote",
+        "macro_f1": 0.34040016650951194,
+        "macro_roc_auc": 0.5668197926462858,
+        "macro_pr_auc": 0.31502507707887817
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_only",
+        "threshold": 0.3,
+        "model_id": "xgboost_unbalanced",
+        "strategy": "unbalanced",
+        "macro_f1": 0.3242045718345721,
+        "macro_roc_auc": 0.5350597042922617,
+        "macro_pr_auc": 0.297896089787447
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_plus_synthetic_3reviews",
+        "threshold": 0.3,
+        "model_id": "xgboost_hybrid",
+        "strategy": "hybrid",
+        "macro_f1": 0.3139849028936147,
+        "macro_roc_auc": 0.5669403745054814,
+        "macro_pr_auc": 0.31307159863632245
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_plus_synthetic_3reviews",
+        "threshold": 0.3,
+        "model_id": "xgboost_smote",
+        "strategy": "smote",
+        "macro_f1": 0.3257904359979183,
+        "macro_roc_auc": 0.6012503952126736,
+        "macro_pr_auc": 0.3059090708975315
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_plus_synthetic_3reviews",
+        "threshold": 0.3,
+        "model_id": "xgboost_unbalanced",
+        "strategy": "unbalanced",
+        "macro_f1": 0.33033934881622123,
+        "macro_roc_auc": 0.5769814140765944,
+        "macro_pr_auc": 0.3086017348092144
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_plus_synthetic_6reviews",
+        "threshold": 0.3,
+        "model_id": "xgboost_hybrid",
+        "strategy": "hybrid",
+        "macro_f1": 0.37942804535570607,
+        "macro_roc_auc": 0.5899909847701511,
+        "macro_pr_auc": 0.3531169271048088
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_plus_synthetic_6reviews",
+        "threshold": 0.3,
+        "model_id": "xgboost_smote",
+        "strategy": "smote",
+        "macro_f1": 0.3516542931726963,
+        "macro_roc_auc": 0.581878504877958,
+        "macro_pr_auc": 0.3073868764801082
+      },
+      {
+        "eval_scope": "heldout_og_rows",
+        "data_setup": "og_plus_synthetic_6reviews",
+        "threshold": 0.3,
+        "model_id": "xgboost_unbalanced",
+        "strategy": "unbalanced",
+        "macro_f1": 0.32974143954836777,
+        "macro_roc_auc": 0.6051316949825681,
+        "macro_pr_auc": 0.3651484750799478
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+XGBoost completed under the frozen 7-label perfume benchmark with macro-F1 0.3260, macro ROC-AUC 0.5683, and macro average precision 0.3094. It is strongest on joy, trust, while sadness, fear remain unstable because positive support is very limited. The row is benchmark-ready for classical model comparison.

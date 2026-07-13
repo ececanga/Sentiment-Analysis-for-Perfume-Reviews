@@ -1,5 +1,5 @@
 # Date Created: 2026-06-16
-# Date Last Modified: 2026-06-16
+# Date Last Modified: 2026-07-13
 
 """Evaluate held-out YouTube performance across synthetic review counts."""
 
@@ -28,6 +28,7 @@ from src.synthetic.evaluate_review_level_augmentation import (
     select_feature_columns,
     stringify_path,
 )
+from src.training.source_grouped_folds import load_and_validate_outer_fold_manifest, sha256_file
 from src.utils.paths import PROJECT_ROOT
 
 DEFAULT_REVIEW_COUNTS = [99, 201, 300, 501, 1002, 2001, 2352]
@@ -155,6 +156,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model-id", choices=sorted(MODEL_SPECS), nargs="+", default=sorted(MODEL_SPECS))
     parser.add_argument("--threshold", type=float, default=0.3)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--expected-folds",
+        type=int,
+        default=5,
+        help="Required number of source-grouped outer folds.",
+    )
     return parser.parse_args()
 
 
@@ -162,11 +169,16 @@ def main() -> None:
     args = parse_args()
     args.out_root.mkdir(parents=True, exist_ok=True)
     (args.out_root / "per_label").mkdir(exist_ok=True)
+    (args.out_root / "predictions").mkdir(exist_ok=True)
 
     target_cols = DEFAULT_TARGETS
     synthetic_df = coerce_targets(load_synthetic_frame(args.synthetic_labeled_features, target_cols), target_cols)
     og_df = coerce_targets(load_og_frame(args.og_features, target_cols), target_cols)
-    fold_df = pd.read_csv(args.fold_assignments)
+    fold_df = load_and_validate_outer_fold_manifest(
+        args.fold_assignments,
+        expected_ids=og_df["perfume_id"].astype(str).tolist(),
+        n_splits=args.expected_folds,
+    )
     feature_cols = select_feature_columns(og_df, synthetic_df)
     if not feature_cols:
         raise ValueError("No common numeric feature columns found between OG and synthetic frames.")
@@ -190,7 +202,7 @@ def main() -> None:
         for review_count in args.review_counts:
             subset = select_complete_perfume_blocks(synthetic_df, review_count)
             combined = pd.concat([og_eval_df, subset[keep_cols]], ignore_index=True)
-            _, per_label, metrics = evaluate_fixed_og_folds(
+            predictions, per_label, metrics = evaluate_fixed_og_folds(
                 combined,
                 og_eval_df,
                 model_spec=model_spec,
@@ -201,7 +213,11 @@ def main() -> None:
                 seed=args.seed,
             )
             per_label_path = args.out_root / "per_label" / f"{model_id}_synthetic_reviews_{review_count}_per_label.csv"
+            predictions_path = (
+                args.out_root / "predictions" / f"{model_id}_synthetic_reviews_{review_count}_oof.csv"
+            )
             per_label.to_csv(per_label_path, index=False)
+            predictions.to_csv(predictions_path, index=False)
 
             row = {
                 "model_id": model_id,
@@ -222,6 +238,7 @@ def main() -> None:
                 "delta_roc_auc_vs_previous_count": float(metrics["macro_roc_auc"] - previous_roc),
                 "delta_pr_auc_vs_previous_count": float(metrics["macro_pr_auc"] - previous_pr),
                 "per_label_csv": stringify_path(per_label_path),
+                "predictions_csv": stringify_path(predictions_path),
                 "experiment": "youtube_eval_with_synthetic_count",
             }
             rows.append(row)
@@ -266,16 +283,28 @@ def main() -> None:
         "target_columns": target_cols,
         "threshold": args.threshold,
         "seed": args.seed,
+        "split_provenance": {
+            "design": "source_component_groupkfold",
+            "manifest_sha256": sha256_file(args.fold_assignments),
+            "expected_folds": int(args.expected_folds),
+            "source_group_count": int(fold_df["source_group_id"].nunique()),
+            "fold_sizes": {
+                str(int(fold_id)): int(count)
+                for fold_id, count in fold_df.groupby("fold_id").size().items()
+            },
+        },
         "feature_count": len(feature_cols),
         "outputs": {
             "summary_csv": stringify_path(summary_path),
             "summary_md": stringify_path(report_md_path),
             "report_json": stringify_path(report_json_path),
             "per_label_dir": stringify_path(args.out_root / "per_label"),
+            "predictions_dir": stringify_path(args.out_root / "predictions"),
         },
         "note": (
             "Each synthetic review count is selected as complete 3-review perfume blocks. "
-            "Metrics are evaluated only on held-out YouTube perfume-level rows using fixed perfume folds."
+            "Metrics are evaluated only on held-out YouTube perfume-level rows using fixed "
+            "source-component-grouped folds. Synthetic rows belonging to held-out perfume IDs are excluded from training."
         ),
     }
     report_json_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

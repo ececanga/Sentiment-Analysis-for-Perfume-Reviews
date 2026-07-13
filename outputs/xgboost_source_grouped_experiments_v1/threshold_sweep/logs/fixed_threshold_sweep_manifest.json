@@ -1,0 +1,101 @@
+{
+  "summary_root": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep",
+  "base_config_path": "config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml",
+  "input_csv": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+  "input_jsonl": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/model_benchmark/datasets/perfume_text_dataset_v1.jsonl",
+  "deep_device": "cpu",
+  "thresholds": [
+    0.2,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "models": [
+    "xgboost"
+  ],
+  "resume": false,
+  "command_manifest_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/commands/fixed_threshold_sweep_commands.txt",
+  "threshold_runs": [
+    {
+      "threshold": 0.2,
+      "threshold_tag": "t02",
+      "out_root": "outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t02",
+      "config_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t02.yaml",
+      "models": [
+        {
+          "model_id": "xgboost",
+          "status": "completed",
+          "metrics_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t02/metrics/xgboost.json",
+          "comparison_table_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t02/tables/comparison_table.csv"
+        }
+      ],
+      "final_figures": {
+        "status": "skipped",
+        "reason": "subset_run_requires_only_cross_threshold_summary"
+      }
+    },
+    {
+      "threshold": 0.3,
+      "threshold_tag": "t03",
+      "out_root": "outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t03",
+      "config_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t03.yaml",
+      "models": [
+        {
+          "model_id": "xgboost",
+          "status": "completed",
+          "metrics_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t03/metrics/xgboost.json",
+          "comparison_table_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t03/tables/comparison_table.csv"
+        }
+      ],
+      "final_figures": {
+        "status": "skipped",
+        "reason": "subset_run_requires_only_cross_threshold_summary"
+      }
+    },
+    {
+      "threshold": 0.5,
+      "threshold_tag": "t05",
+      "out_root": "outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t05",
+      "config_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t05.yaml",
+      "models": [
+        {
+          "model_id": "xgboost",
+          "status": "completed",
+          "metrics_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t05/metrics/xgboost.json",
+          "comparison_table_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t05/tables/comparison_table.csv"
+        }
+      ],
+      "final_figures": {
+        "status": "skipped",
+        "reason": "subset_run_requires_only_cross_threshold_summary"
+      }
+    },
+    {
+      "threshold": 0.7,
+      "threshold_tag": "t07",
+      "out_root": "outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t07",
+      "config_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/configs/evaluation_config_t07.yaml",
+      "models": [
+        {
+          "model_id": "xgboost",
+          "status": "completed",
+          "metrics_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t07/metrics/xgboost.json",
+          "comparison_table_path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t07/tables/comparison_table.csv"
+        }
+      ],
+      "final_figures": {
+        "status": "skipped",
+        "reason": "subset_run_requires_only_cross_threshold_summary"
+      }
+    }
+  ],
+  "summary_outputs": {
+    "long_table_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/tables/fixed_threshold_comparison_long.csv",
+    "wide_table_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/tables/fixed_threshold_macro_f1_wide.csv",
+    "thesis_table_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/tables/final_model_threshold_comparison_for_thesis.csv",
+    "best_threshold_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/tables/best_fixed_threshold_per_model.csv",
+    "line_plot_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/figures/macro_f1_vs_threshold_by_model.png",
+    "grouped_plot_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/figures/grouped_macro_f1_by_threshold.png",
+    "table_plot_path": "outputs/xgboost_source_grouped_experiments_v1/threshold_sweep/figures/final_model_threshold_comparison_table.png"
+  }
+}

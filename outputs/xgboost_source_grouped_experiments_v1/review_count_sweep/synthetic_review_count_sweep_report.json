@@ -1,0 +1,54 @@
+{
+  "generated_at_utc": "2026-07-13T16:49:46.314830+00:00",
+  "inputs": {
+    "synthetic_labeled_features": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+    "og_features": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "fold_assignments": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+    "og_metrics_dir": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics"
+  },
+  "review_counts": [
+    99,
+    201,
+    300,
+    501,
+    1002,
+    2001,
+    2352
+  ],
+  "models": [
+    "xgboost"
+  ],
+  "target_columns": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "threshold": 0.3,
+  "seed": 42,
+  "split_provenance": {
+    "design": "source_component_groupkfold",
+    "manifest_sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+    "expected_folds": 5,
+    "source_group_count": 359,
+    "fold_sizes": {
+      "1": 334,
+      "2": 113,
+      "3": 113,
+      "4": 112,
+      "5": 112
+    }
+  },
+  "feature_count": 58,
+  "outputs": {
+    "summary_csv": "outputs/xgboost_source_grouped_experiments_v1/review_count_sweep/synthetic_review_count_sweep_summary.csv",
+    "summary_md": "outputs/xgboost_source_grouped_experiments_v1/review_count_sweep/synthetic_review_count_sweep_summary.md",
+    "report_json": "outputs/xgboost_source_grouped_experiments_v1/review_count_sweep/synthetic_review_count_sweep_report.json",
+    "per_label_dir": "outputs/xgboost_source_grouped_experiments_v1/review_count_sweep/per_label",
+    "predictions_dir": "outputs/xgboost_source_grouped_experiments_v1/review_count_sweep/predictions"
+  },
+  "note": "Each synthetic review count is selected as complete 3-review perfume blocks. Metrics are evaluated only on held-out YouTube perfume-level rows using fixed source-component-grouped folds. Synthetic rows belonging to held-out perfume IDs are excluded from training."
+}

@@ -1,0 +1,4 @@
+model_id,model_family,macro_f1,macro_roc_auc,macro_pr_auc,reproducible_run,saved_metrics,comparable_plots,interpretation_note,row_complete,note_path
+logistic_regression,Logistic Regression,,,,False,False,False,False,False,outputs/model_benchmark/tables/logistic_regression_note.md
+xgboost,XGBoost,0.295027,0.568294,0.309433,True,True,True,True,True,outputs/xgboost_source_grouped_experiments_v1/model_benchmark_t05/tables/xgboost_note.md
+random_forest,Random Forest,,,,False,False,False,False,False,outputs/model_benchmark/tables/random_forest_note.md
