@@ -1,0 +1,19 @@
+{
+  "workflow_id": "gemini_browser_og784_source_grouped_v1",
+  "status": "completed",
+  "updated_at": "2026-07-13T14:51:17+00:00",
+  "dry_run": false,
+  "resume": true,
+  "selected_stages": [
+    "final_audit_gate"
+  ],
+  "current_stage": null,
+  "history": [
+    {
+      "stage": "final_audit_gate",
+      "status": "completed",
+      "updated_at": "2026-07-13T14:51:17+00:00"
+    }
+  ],
+  "command_manifest": "outputs/gemini_browser_og784_source_grouped_v1/workflow/command_manifest.json"
+}

@@ -5,8 +5,9 @@
 
 In imbalanced multi-label classification, a fixed baseline threshold may be
 suboptimal because label prevalences and score distributions differ across
-labels. Threshold tuning is used here as a calibration step to improve final
-binary decisions under Macro-F1.
+labels. Inner-validation threshold tuning is used only as a secondary
+sensitivity analysis. It is decision-threshold optimization, not probability
+calibration, and does not replace the fixed-threshold primary benchmark.
 """
 
 from __future__ import annotations
@@ -23,8 +24,10 @@ from sklearn.model_selection import KFold
 
 THRESHOLD_TUNING_RATIONALE = (
     "In imbalanced multi-label classification, a fixed baseline threshold may be suboptimal "
-    "because label prevalences and score distributions differ across labels. Threshold tuning "
-    "is used here as a calibration step to improve final binary decisions under Macro-F1."
+    "because label prevalences and score distributions differ across labels. Inner-validation "
+    "threshold tuning is reported only as a secondary sensitivity analysis: it optimizes "
+    "decision thresholds under Macro-F1, is not probability calibration, and does not replace "
+    "the fixed-threshold primary benchmark."
 )
 SUPPORTED_THRESHOLD_STRATEGIES = ("global", "per_label")
 

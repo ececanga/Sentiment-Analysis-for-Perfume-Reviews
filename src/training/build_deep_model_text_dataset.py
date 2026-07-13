@@ -1,5 +1,5 @@
 # Date Created: 2026-04-13 23:02:44+03:00
-# Date Last Modified: 2026-05-15
+# Date Last Modified: 2026-07-13
 
 """Build the canonical deep-model text dataset for the frozen perfume benchmark."""
 
@@ -18,6 +18,12 @@ from statistics import mean, median
 from typing import Any, Dict, Iterable, List, Sequence, Tuple
 
 from src.labeling.strict_schema import normalize_perfume_id
+from src.training.source_grouped_folds import (
+    SOURCE_GROUP_COLUMN,
+    normalize_video_id,
+    sha256_file,
+    transcript_sha256,
+)
 from src.utils.paths import PROJECT_ROOT, data_path, labels_path, outputs_path
 
 csv.field_size_limit(sys.maxsize)
@@ -271,17 +277,32 @@ def load_labels(labels_csv: Path) -> Dict[str, Dict[str, Any]]:
     return out
 
 
-def load_folds(folds_csv: Path) -> Dict[str, int]:
+def load_fold_records(folds_csv: Path) -> Dict[str, Dict[str, Any]]:
     rows = read_csv_dicts(folds_csv)
-    out: Dict[str, int] = {}
+    out: Dict[str, Dict[str, Any]] = {}
     for row in rows:
         perfume_id = str(row.get("perfume_id", "")).strip()
         if not perfume_id:
             raise ValueError(f"Missing perfume_id in fold manifest: {folds_csv}")
         if perfume_id in out:
             raise ValueError(f"Duplicate perfume_id in fold manifest: {perfume_id}")
-        out[perfume_id] = int(str(row.get("fold_id", "")).strip())
+        fold_id = int(str(row.get("fold_id", "")).strip())
+        source_group_id = str(row.get(SOURCE_GROUP_COLUMN, "")).strip()
+        source_group_size_text = str(row.get("source_group_size", "")).strip()
+        out[perfume_id] = {
+            "fold_id": fold_id,
+            SOURCE_GROUP_COLUMN: source_group_id,
+            "source_group_size": int(source_group_size_text) if source_group_size_text else None,
+        }
     return out
+
+
+def load_folds(folds_csv: Path) -> Dict[str, int]:
+    """Backward-compatible fold-only view used by existing callers/tests."""
+    return {
+        perfume_id: int(record["fold_id"])
+        for perfume_id, record in load_fold_records(folds_csv).items()
+    }
 
 
 def load_raw_groups(raw_csv: Path) -> Dict[str, List[Dict[str, str]]]:
@@ -354,19 +375,77 @@ def deduplicate_group_rows(rows: Sequence[Dict[str, str]]) -> Tuple[List[Dict[st
 
 def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
     labels_by_id = load_labels(cfg.labels_csv)
-    fold_by_id = load_folds(cfg.folds_csv)
+    fold_records = load_fold_records(cfg.folds_csv)
+    fold_by_id = {perfume_id: int(record["fold_id"]) for perfume_id, record in fold_records.items()}
     raw_groups = load_raw_groups(cfg.raw_csv)
     perfume_ids = validate_universe(labels_by_id=labels_by_id, fold_by_id=fold_by_id, raw_groups=raw_groups)
+
+    populated_group_ids = {
+        str(record[SOURCE_GROUP_COLUMN])
+        for record in fold_records.values()
+        if str(record.get(SOURCE_GROUP_COLUMN, "")).strip()
+    }
+    source_grouped = bool(populated_group_ids)
+    if source_grouped and any(
+        not str(record.get(SOURCE_GROUP_COLUMN, "")).strip() for record in fold_records.values()
+    ):
+        raise ValueError("Source-grouped fold manifest contains missing source_group_id values")
+    if source_grouped:
+        group_folds: Dict[str, set[int]] = defaultdict(set)
+        for record in fold_records.values():
+            group_folds[str(record[SOURCE_GROUP_COLUMN])].add(int(record["fold_id"]))
+        leaking_groups = {group: folds for group, folds in group_folds.items() if len(folds) > 1}
+        if leaking_groups:
+            raise ValueError(f"Source groups cross outer folds: {list(leaking_groups.items())[:5]}")
+
+    video_folds: Dict[str, set[int]] = defaultdict(set)
+    transcript_folds: Dict[str, set[int]] = defaultdict(set)
+    for perfume_id, rows in raw_groups.items():
+        if perfume_id not in fold_by_id:
+            continue
+        fold_id = fold_by_id[perfume_id]
+        for row in rows:
+            video_id = normalize_video_id(row.get("Video ID", ""), allow_empty=True)
+            transcript_hash = transcript_sha256(row.get("Final Transcript", ""))
+            if video_id:
+                video_folds[video_id].add(fold_id)
+            if transcript_hash:
+                transcript_folds[transcript_hash].add(fold_id)
+    cross_fold_videos = sorted(key for key, folds in video_folds.items() if len(folds) > 1)
+    cross_fold_transcripts = sorted(key for key, folds in transcript_folds.items() if len(folds) > 1)
+    if source_grouped and (cross_fold_videos or cross_fold_transcripts):
+        raise ValueError(
+            "Source-grouped fold manifest leaks exact sources: "
+            f"videos={len(cross_fold_videos)} transcripts={len(cross_fold_transcripts)}"
+        )
 
     cfg.output_jsonl.parent.mkdir(parents=True, exist_ok=True)
     cfg.output_chunks_csv.parent.mkdir(parents=True, exist_ok=True)
     cfg.output_summary_json.parent.mkdir(parents=True, exist_ok=True)
 
+    model_input_fields = ["Final Transcript"] if source_grouped else [
+        "Title",
+        "Description",
+        "Final Transcript",
+    ]
     summary: Dict[str, Any] = {
-        "dataset_version": "v1",
+        "dataset_version": "source_grouped_v1" if source_grouped else "v1",
         "raw_csv": stringify_path(cfg.raw_csv),
+        "raw_csv_sha256": sha256_file(cfg.raw_csv),
         "labels_csv": stringify_path(cfg.labels_csv),
+        "labels_csv_sha256": sha256_file(cfg.labels_csv),
         "fold_manifest_csv": stringify_path(cfg.folds_csv),
+        "fold_manifest_sha256": sha256_file(cfg.folds_csv),
+        "source_grouped": source_grouped,
+        "source_group_column": SOURCE_GROUP_COLUMN if source_grouped else None,
+        "cross_fold_video_id_count": len(cross_fold_videos),
+        "cross_fold_transcript_hash_count": len(cross_fold_transcripts),
+        "model_input_fields": model_input_fields,
+        "model_input_policy": (
+            "transcript_excerpt_only; Title, Description, URL, and Channel Title are audit metadata"
+            if source_grouped
+            else "legacy_title_description_transcript_excerpt"
+        ),
         "output_jsonl": stringify_path(cfg.output_jsonl),
         "output_chunks_csv": stringify_path(cfg.output_chunks_csv),
         "title_max_words": cfg.title_max_words,
@@ -389,10 +468,13 @@ def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
         "perfume_name",
         "perfume_id_hash",
         "fold_id",
+        SOURCE_GROUP_COLUMN,
+        "source_group_size",
         "source_review_count",
         "chunk_count",
         "chunk_index",
         "video_id",
+        "transcript_sha256",
         "url",
         "match_strategy",
         "title_match",
@@ -418,6 +500,8 @@ def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
         for perfume_id in perfume_ids:
             label_payload = labels_by_id[perfume_id]
             fold_id = fold_by_id[perfume_id]
+            source_group_id = str(fold_records[perfume_id].get(SOURCE_GROUP_COLUMN, ""))
+            source_group_size = fold_records[perfume_id].get("source_group_size")
             raw_rows = sort_group_rows(raw_groups[perfume_id])
             deduped_rows, dropped = deduplicate_group_rows(raw_rows)
             dedup_drops += dropped
@@ -450,9 +534,13 @@ def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
                     or excerpt["transcript_phrase_match"]
                     or excerpt["transcript_anchor_match"]
                 )
+                # In the leakage-repaired benchmark, title/description/channel/URL
+                # remain useful audit metadata but are not model inputs. Repeated
+                # descriptions and reviewer boilerplate can otherwise cross folds
+                # even after exact video/transcript grouping.
                 chunk_text = build_chunk_text(
-                    title=title,
-                    description=description,
+                    title="" if source_grouped else title,
+                    description="" if source_grouped else description,
                     transcript_excerpt=excerpt["excerpt_text"],
                     title_max_words=cfg.title_max_words,
                     description_max_words=cfg.description_max_words,
@@ -462,7 +550,8 @@ def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
 
                 chunk_record = {
                     "chunk_index": chunk_index,
-                    "video_id": clean_whitespace(row.get("Video ID", "")),
+                    "video_id": normalize_video_id(row.get("Video ID", ""), allow_empty=True),
+                    "transcript_sha256": transcript_sha256(row.get("Final Transcript", "")),
                     "url": clean_whitespace(row.get("URL", "")),
                     "match_strategy": excerpt["match_strategy"],
                     "title_match": title_match,
@@ -494,6 +583,8 @@ def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
                 "perfume_name": label_payload["perfume_name"],
                 "perfume_id_hash": label_payload["perfume_id_hash"],
                 "fold_id": fold_id,
+                SOURCE_GROUP_COLUMN: source_group_id or None,
+                "source_group_size": source_group_size,
                 "source_review_count": len(raw_rows),
                 "deduplicated_review_count": chunk_count,
                 "labels": label_payload["labels"],
@@ -510,10 +601,13 @@ def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
                     "perfume_name": label_payload["perfume_name"],
                     "perfume_id_hash": label_payload["perfume_id_hash"],
                     "fold_id": fold_id,
+                    SOURCE_GROUP_COLUMN: source_group_id,
+                    "source_group_size": source_group_size,
                     "source_review_count": len(raw_rows),
                     "chunk_count": chunk_count,
                     "chunk_index": chunk["chunk_index"],
                     "video_id": chunk["video_id"],
+                    "transcript_sha256": chunk["transcript_sha256"],
                     "url": chunk["url"],
                     "match_strategy": chunk["match_strategy"],
                     "title_match": chunk["title_match"],
@@ -549,6 +643,18 @@ def build_dataset(cfg: BuildConfig) -> Dict[str, Any]:
             "chunk_count_mean": round(mean(chunk_counts), 3),
             "chunk_count_max": max(chunk_counts),
             "match_strategy_counts": dict(match_strategy_counts),
+            "source_group_count": len(populated_group_ids) if source_grouped else None,
+            "source_group_sizes": (
+                dict(
+                    sorted(
+                        Counter(
+                            str(record[SOURCE_GROUP_COLUMN]) for record in fold_records.values()
+                        ).items()
+                    )
+                )
+                if source_grouped
+                else None
+            ),
         }
     )
 

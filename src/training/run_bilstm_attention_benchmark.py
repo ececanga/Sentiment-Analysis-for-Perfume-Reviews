@@ -1,5 +1,5 @@
 # Date Created: 2026-04-13 23:02:44+03:00
-# Date Last Modified: 2026-05-15
+# Date Last Modified: 2026-07-13
 
 """Run the official BiLSTM + Attention benchmark on the canonical deep-text dataset."""
 
@@ -29,10 +29,21 @@ from src.training.model_benchmark_runner import (
     collect_package_versions,
     get_git_commit,
     load_config,
+    resolve_project_path,
     save_curve_plot,
     save_per_label_plot,
     stringify_path,
+    source_grouped_split_enabled,
     update_comparison_table,
+    validate_configured_benchmark_root,
+    validate_configured_frozen_inputs,
+    validate_frozen_input_hash,
+    validate_source_group_audit,
+)
+from src.training.source_grouped_folds import (
+    SOURCE_GROUP_COLUMN,
+    sha256_file,
+    validate_grouped_inner_manifest,
 )
 from src.training.threshold_tuning import (
     add_threshold_tuning_columns,
@@ -355,7 +366,8 @@ def build_bilstm_interpretation_note(
     return (
         f"BiLSTM + Attention trains a from-scratch chunk-level sequence encoder with fold-local vocabulary building "
         f"and deterministic mean chunk-to-perfume aggregation, reaching macro-F1 {global_metrics['macro_f1']:.4f}, "
-        f"macro ROC-AUC {global_metrics['macro_roc_auc']:.4f}, and macro PR-AUC {global_metrics['macro_pr_auc']:.4f}. "
+        f"macro ROC-AUC {global_metrics['macro_roc_auc']:.4f}, and macro average precision "
+        f"{global_metrics['macro_pr_auc']:.4f}. "
         f"It is strongest on {strongest_text}, while {weakest_text} remain unstable under sparse support and noisy review anchoring. "
         f"The row is benchmark-ready for the official comparison table."
     )
@@ -570,15 +582,38 @@ def run_bilstm_attention_benchmark(
     device_preference: str = "auto",
 ) -> Dict[str, Any]:
     config = load_config(config_path)
+    config_relpath = stringify_path(config_path)
+    config_sha256 = sha256_file(config_path)
     settings = load_bilstm_settings(config)
     target_cols = list(config["targets"]["official_emotion_columns"])
     excluded_target_cols = dict(config["targets"]["excluded_emotion_columns"])
     seed = int(config["seeds"]["data_seed"])
     threshold = float(config["evaluation"]["probability_threshold"])
     threshold_tuning_settings = load_threshold_tuning_settings(config, baseline_threshold=threshold)
-    outer_n_splits = int(config["splits"]["outer_cv"]["n_splits"])
+    outer_cfg = config["splits"]["outer_cv"]
+    outer_n_splits = int(outer_cfg["n_splits"])
     inner_cfg = config["splits"]["inner_validation"]
     inner_n_splits = int(inner_cfg["n_splits"])
+    grouped_split = source_grouped_split_enabled(config)
+    out_root = validate_configured_benchmark_root(config, out_root=out_root)
+    group_col = str(outer_cfg.get("group_column", SOURCE_GROUP_COLUMN))
+    source_audit_path, source_audit_sha256 = validate_source_group_audit(config)
+    split_design = str(
+        outer_cfg.get(
+            "split_design_label",
+            f"{outer_n_splits}-fold KFold + deterministic inner holdout",
+        )
+    )
+    input_sha256 = validate_frozen_input_hash(
+        config,
+        key="deep_text_dataset_jsonl",
+        path=input_jsonl,
+        required=False,
+    )
+    frozen_input_sha256 = validate_configured_frozen_inputs(
+        config,
+        keys=("raw_csv", "labels_csv"),
+    ) if grouped_split else {}
 
     deterministic_flags = set_global_seed(seed)
     device = detect_device(device_preference)
@@ -602,12 +637,26 @@ def run_bilstm_attention_benchmark(
     comparison_table_path = tables_dir / "comparison_table.csv"
     comparison_template_path = PROJECT_ROOT / "docs" / "comparison_table_template.csv"
 
-    fold_manifest_path = tables_dir / "fold_assignments.csv"
+    configured_fold_path = outer_cfg.get("manifest_path")
+    fold_manifest_path = (
+        resolve_project_path(configured_fold_path)
+        if configured_fold_path
+        else tables_dir / "fold_assignments.csv"
+    )
+    if grouped_split and not fold_manifest_path.exists():
+        raise FileNotFoundError(
+            f"Source-grouped mode requires a prebuilt outer fold manifest: {fold_manifest_path}"
+        )
     perfume_df, chunk_df = load_deep_text_dataset(
         input_jsonl=input_jsonl,
         fold_manifest_path=fold_manifest_path,
         target_cols=target_cols,
         excluded_target_cols=excluded_target_cols,
+        canonical_labels_path=(
+            resolve_project_path(config["data"]["canonical_label_csv"])
+            if grouped_split
+            else None
+        ),
     )
 
     expected_inner_manifest = build_expected_inner_validation_manifest(
@@ -615,11 +664,30 @@ def run_bilstm_attention_benchmark(
         inner_n_splits=inner_n_splits,
         seed=seed,
     )
-    inner_manifest_path = tables_dir / f"{MODEL_ID}_inner_val_folds.csv"
+    configured_inner_path = inner_cfg.get("manifest_path")
+    inner_manifest_path = (
+        resolve_project_path(configured_inner_path)
+        if configured_inner_path
+        else tables_dir / f"{MODEL_ID}_inner_val_folds.csv"
+    )
+    if grouped_split and bool(inner_cfg.get("require_prebuilt_manifest", True)) and not inner_manifest_path.exists():
+        raise FileNotFoundError(
+            f"Source-grouped mode requires a prebuilt shared inner manifest: {inner_manifest_path}"
+        )
     inner_manifest_df = load_or_write_inner_validation_manifest(
         expected_inner_manifest,
         output_path=inner_manifest_path,
     )
+    if grouped_split:
+        validate_grouped_inner_manifest(
+            inner_manifest_df,
+            perfume_df,
+            unit_id_col="perfume_id",
+            group_col=group_col,
+            fold_id_col="fold_id",
+        )
+    fold_manifest_sha256 = sha256_file(fold_manifest_path)
+    inner_manifest_sha256 = sha256_file(inner_manifest_path)
 
     token_sequences = pretokenize_chunk_texts(chunk_df, lowercase=settings.lowercase_tokens)
     y_true = perfume_df[target_cols].to_numpy(dtype=int)
@@ -644,6 +712,12 @@ def run_bilstm_attention_benchmark(
 
         train_perfume_df = perfume_df.loc[perfume_df["perfume_id"].isin(train_perfume_ids)].sort_values("perfume_id")
         val_perfume_df = perfume_df.loc[perfume_df["perfume_id"].isin(val_perfume_ids)].sort_values("perfume_id")
+        if grouped_split:
+            train_groups = set(train_perfume_df[group_col].astype(str))
+            val_groups = set(val_perfume_df[group_col].astype(str))
+            test_groups = set(test_perfume_df[group_col].astype(str))
+            if train_groups & val_groups or train_groups & test_groups or val_groups & test_groups:
+                raise ValueError(f"Source-group leakage in BiLSTM outer fold {outer_fold_id}")
 
         train_chunk_mask = chunk_df["perfume_id"].isin(train_perfume_ids).to_numpy()
         val_chunk_mask = chunk_df["perfume_id"].isin(val_perfume_ids).to_numpy()
@@ -761,7 +835,10 @@ def run_bilstm_attention_benchmark(
         per_label_df,
         threshold_tuning_report=threshold_tuning_report,
     )
-    oof_df = perfume_df[["perfume_id", "fold_id", "Perfume", "chunk_count"]].copy()
+    oof_columns = ["perfume_id", "fold_id", "Perfume", "chunk_count"]
+    if grouped_split:
+        oof_columns.extend([group_col, "source_group_size"])
+    oof_df = perfume_df[oof_columns].copy()
     oof_df.rename(columns={"chunk_count": "review_chunk_count"}, inplace=True)
     for label_idx, label in enumerate(target_cols):
         oof_df[f"true_{label}"] = y_true[:, label_idx]
@@ -791,6 +868,15 @@ def run_bilstm_attention_benchmark(
     dataset_relpath = stringify_path(input_jsonl)
     fold_manifest_relpath = stringify_path(fold_manifest_path)
     inner_manifest_relpath = stringify_path(inner_manifest_path)
+    split_provenance = {
+        "type": str(outer_cfg.get("type", "kfold")),
+        "split_design": split_design,
+        "grouping_version": outer_cfg.get("grouping_version"),
+        "group_column": group_col if grouped_split else None,
+        "outer_manifest_sha256": fold_manifest_sha256,
+        "inner_manifest_sha256": inner_manifest_sha256,
+        "source_audit_sha256": source_audit_sha256,
+    }
     artifact_paths = {
         "metrics_json": stringify_path(metrics_path),
         "per_label_csv": stringify_path(per_label_path),
@@ -804,7 +890,10 @@ def run_bilstm_attention_benchmark(
         "fold_manifest": fold_manifest_relpath,
         "inner_validation_manifest": inner_manifest_relpath,
     }
-    run_id = f"{MODEL_ID}_seed{seed}_kfold{outer_n_splits}"
+    if source_audit_path is not None:
+        artifact_paths["source_group_audit"] = stringify_path(source_audit_path)
+    split_tag = "source_grouped" if grouped_split else "kfold"
+    run_id = f"{MODEL_ID}_seed{seed}_{split_tag}{outer_n_splits}"
 
     model_parameters = {
         "training_mode": TRAINING_MODE,
@@ -837,6 +926,10 @@ def run_bilstm_attention_benchmark(
         "model_family": MODEL_FAMILY,
         "run_id": run_id,
         "dataset_path": dataset_relpath,
+        "dataset_sha256": input_sha256,
+        "config_path": config_relpath,
+        "config_sha256": config_sha256,
+        "frozen_input_sha256": frozen_input_sha256,
         "n_rows": int(len(perfume_df)),
         "n_chunks": int(len(chunk_df)),
         "feature_columns": ["chunk_text_token_ids", "chunk_text_token_lengths"],
@@ -844,6 +937,8 @@ def run_bilstm_attention_benchmark(
         "excluded_target_columns": excluded_target_cols,
         "split_manifest_path": fold_manifest_relpath,
         "inner_validation_manifest_path": inner_manifest_relpath,
+        "split_design": split_design,
+        "split_provenance": split_provenance,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
@@ -878,8 +973,14 @@ def run_bilstm_attention_benchmark(
         "python_version": sys.version,
         "package_versions": collect_package_versions(("torch",)),
         "dataset_path": dataset_relpath,
+        "dataset_sha256": input_sha256,
+        "config_path": config_relpath,
+        "config_sha256": config_sha256,
+        "frozen_input_sha256": frozen_input_sha256,
         "split_manifest_path": fold_manifest_relpath,
         "inner_validation_manifest_path": inner_manifest_relpath,
+        "split_design": split_design,
+        "split_provenance": split_provenance,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
@@ -900,10 +1001,16 @@ def run_bilstm_attention_benchmark(
         f"model_id={MODEL_ID}",
         f"model_family={MODEL_FAMILY}",
         f"dataset={dataset_relpath}",
+        f"dataset_sha256={input_sha256}",
+        f"config={config_relpath}",
+        f"config_sha256={config_sha256}",
         f"n_rows={len(perfume_df)}",
         f"n_chunks={len(chunk_df)}",
         f"fold_manifest={fold_manifest_relpath}",
+        f"fold_manifest_sha256={fold_manifest_sha256}",
         f"inner_validation_manifest={inner_manifest_relpath}",
+        f"inner_validation_manifest_sha256={inner_manifest_sha256}",
+        f"split_design={split_design}",
         f"device={device}",
         f"macro_f1={global_metrics['macro_f1']:.6f}",
         f"macro_roc_auc={global_metrics['macro_roc_auc']:.6f}",
@@ -960,7 +1067,7 @@ def run_bilstm_attention_benchmark(
         model_family=MODEL_FAMILY,
         dataset_relpath=dataset_relpath,
         target_columns=target_cols,
-        split_design=f"{outer_n_splits}-fold KFold + deterministic inner holdout",
+        split_design=split_design,
         seed=seed,
         threshold=threshold,
         metrics=global_metrics,

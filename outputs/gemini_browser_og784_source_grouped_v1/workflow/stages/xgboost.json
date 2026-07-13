@@ -1,0 +1,66 @@
+{
+  "workflow_id": "gemini_browser_og784_source_grouped_v1",
+  "stage": "xgboost",
+  "status": "completed",
+  "updated_at": "2026-07-13T13:26:11+00:00",
+  "fingerprint": "6496a64bee66d7b4385365bf3a526bc5cc1b4146a137191aaf1ff22b76367b86",
+  "code_provenance": {
+    "base_git_commit": "af5f5dd7ced59481036901780549a73a3d8aae20",
+    "file_sha256": {
+      "src/training/source_grouped_folds.py": "d6b9da1312dbc4881d0300dc0ef349ada20b37d8312127b955e1282212452172",
+      "src/training/model_benchmark_runner.py": "1ff3cebd3931abfa5073c2a2cd57a7abaf15344d17862e17a06fe4644cfd23ea",
+      "src/training/threshold_tuning.py": "608a5ea33bd470ca64ffb353397da4e3761976aac2465e586dfa570873fd8954",
+      "src/training/build_deep_model_text_dataset.py": "fe0756017d754842a2af4ea99dd06487e9c9f70f774dbd28bed48d9fdf53543e",
+      "src/training/run_logistic_regression_benchmark.py": "6d19d214ee5edaa50d6619f57ca7b2c09f6f402bf50fdd037ee32037f508cce4",
+      "src/training/run_random_forest_benchmark.py": "f5e613f429c5605ed769de6e0e6c4cf3606977b5ce12134bf4d851bdf26d92cd",
+      "src/training/run_xgboost_benchmark.py": "1513f3e643437231b9b13a84466164a8aed138ffffe6a340476443c8a72d0d6a",
+      "src/training/run_bert_benchmark.py": "7329ce48c263d6c0a359645ca1a952ea686db2ea8d92728ab65f9fc75f8e641b",
+      "src/training/run_bilstm_attention_benchmark.py": "f05ddb24eb784718132c3673aba28771c9e98ed5fa0e4fa26bb0f27baebabe47",
+      "src/training/run_dummy_prevalence_baselines.py": "2035d5eaa541e9a9fc2f27ca705526bb5522d2b5d2e169d8642731f92c4f866b",
+      "src/training/generate_source_grouped_diagnostics.py": "2f13092ad2906d8c7df97670715c4b486ed912f5e9a19062ee5851b1086e9bc7",
+      "src/training/generate_final_benchmark_figures.py": "605bf781b3c089a70f165c34c72bec0455b459126bf00d76a15931d121474e44",
+      "src/pipeline/run_gemini_browser_source_grouped_benchmark.py": "bac860e0530e5cee5f9fed2016ddeb125d2d11e3d8ef234e1a4e0f7f835df615"
+    },
+    "config_sha256": "44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2"
+  },
+  "commands": [
+    [
+      "/Users/ece/Desktop/EceFolder/Sentiment Analysis/.venv/bin/python",
+      "-m",
+      "src.training.run_xgboost_benchmark",
+      "--config",
+      "config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml",
+      "--input-csv",
+      "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+      "--out-root",
+      "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark"
+    ]
+  ],
+  "expected_outputs": [
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost_per_label.csv",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/xgboost_oof.csv",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/figures/xgboost_per_label_metrics.png",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/figures/xgboost_roc_pr_curves.png",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost.log",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/xgboost_note.md"
+  ],
+  "checks": {
+    "status": "passed",
+    "model_id": "xgboost",
+    "n_oof_rows": 784,
+    "threshold": 0.3,
+    "split_design": "5-fold source-component grouped CV",
+    "macro_f1": 0.3259744723367426,
+    "macro_roc_auc": 0.5682939462541757,
+    "macro_pr_auc": 0.30943262292347656,
+    "micro_f1": 0.7262538526197815,
+    "subset_accuracy": 0.22704081632653061,
+    "hamming_loss": 0.17802478134110788,
+    "label_cardinality": 1.965561224489796,
+    "outer_manifest_sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+    "inner_manifest_sha256": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d",
+    "source_audit_sha256": "e232f96b6ee42c8961b4037caa1b1b1cd50ee8b8595b564d84f2a9a346ac9d1a"
+  }
+}

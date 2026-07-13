@@ -206,6 +206,87 @@ class BuildDeepModelTextDatasetTests(unittest.TestCase):
             self.assertEqual(summary["n_total_chunks"], 2)
             self.assertEqual(summary["deduplicated_transcript_rows_dropped"], 1)
 
+    def test_source_grouped_dataset_uses_transcript_text_only(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            raw_csv = tmp / "raw.csv"
+            labels_csv = tmp / "labels.csv"
+            folds_csv = tmp / "folds.csv"
+            output_jsonl = tmp / "dataset.jsonl"
+            output_chunks_csv = tmp / "chunks.csv"
+            output_summary_json = tmp / "summary.json"
+            perfume_id = normalize_perfume_id("Audit Scent")
+
+            _write_csv(
+                raw_csv,
+                ["Perfume", "Video ID", "Title", "Description", "URL", "Final Transcript"],
+                [
+                    {
+                        "Perfume": "Audit Scent",
+                        "Video ID": "abcdefghijk",
+                        "Title": "SECRET TITLE TOKEN",
+                        "Description": "SECRET DESCRIPTION TOKEN",
+                        "URL": "https://example.test",
+                        "Final Transcript": "Audit Scent smells bright and clean.",
+                    }
+                ],
+            )
+            _write_csv(
+                labels_csv,
+                [
+                    "perfume_id",
+                    "perfume_id_hash",
+                    "perfume_name",
+                    *OFFICIAL_LABELS,
+                    "anger",
+                    "valence",
+                    "arousal",
+                    "dominance",
+                ],
+                [
+                    {
+                        "perfume_id": perfume_id,
+                        "perfume_id_hash": "hash",
+                        "perfume_name": "Audit Scent",
+                        **{label: int(label == "joy") for label in OFFICIAL_LABELS},
+                        "anger": 0,
+                        "valence": 6.0,
+                        "arousal": 4.0,
+                        "dominance": 5.0,
+                    }
+                ],
+            )
+            _write_csv(
+                folds_csv,
+                ["perfume_id", "fold_id", "source_group_id", "source_group_size"],
+                [
+                    {
+                        "perfume_id": perfume_id,
+                        "fold_id": 1,
+                        "source_group_id": "sg_one",
+                        "source_group_size": 1,
+                    }
+                ],
+            )
+
+            result = build_dataset(
+                BuildConfig(
+                    raw_csv=raw_csv,
+                    labels_csv=labels_csv,
+                    folds_csv=folds_csv,
+                    output_jsonl=output_jsonl,
+                    output_chunks_csv=output_chunks_csv,
+                    output_summary_json=output_summary_json,
+                )
+            )
+            record = json.loads(output_jsonl.read_text(encoding="utf-8").strip())
+            text = record["review_chunks"][0]["chunk_text"]
+            self.assertIn("REVIEW:", text)
+            self.assertNotIn("SECRET TITLE TOKEN", text)
+            self.assertNotIn("SECRET DESCRIPTION TOKEN", text)
+            self.assertEqual(result["summary"]["model_input_fields"], ["Final Transcript"])
+            self.assertIn("transcript_excerpt_only", result["summary"]["model_input_policy"])
+
 
 if __name__ == "__main__":
     unittest.main()

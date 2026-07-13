@@ -1,0 +1,112 @@
+{
+  "audit_only_metadata_cross_fold_diagnostic": {
+    "Channel Title": {
+      "affected_perfume_count": 757,
+      "cross_fold_normalized_value_count": 405,
+      "unique_normalized_value_count": 1260
+    },
+    "Description": {
+      "affected_perfume_count": 151,
+      "cross_fold_normalized_value_count": 55,
+      "unique_normalized_value_count": 3504
+    },
+    "Title": {
+      "affected_perfume_count": 10,
+      "cross_fold_normalized_value_count": 3,
+      "unique_normalized_value_count": 4127
+    }
+  },
+  "component_size_distribution": {
+    "1": 309,
+    "2": 27,
+    "3": 11,
+    "334": 1,
+    "4": 6,
+    "5": 2,
+    "6": 1,
+    "7": 2
+  },
+  "cross_fold_source_group_count": 0,
+  "cross_fold_transcript_hash_count": 0,
+  "cross_fold_video_id_count": 0,
+  "deduplicated_membership_row_count": 4881,
+  "deep_model_input_policy": {
+    "excluded_audit_metadata": [
+      "Title",
+      "Description",
+      "URL",
+      "Channel Title"
+    ],
+    "included": [
+      "Final Transcript excerpt"
+    ],
+    "reason": "repeated reviewer/channel metadata is not covered by source_identity_v1"
+  },
+  "duplicate_membership_row_count": 0,
+  "empty_normalized_transcript_row_count": 0,
+  "fold_sizes": {
+    "1": 334,
+    "2": 113,
+    "3": 113,
+    "4": 112,
+    "5": 112
+  },
+  "fold_source_group_counts": {
+    "1": 1,
+    "2": 90,
+    "3": 90,
+    "4": 89,
+    "5": 89
+  },
+  "frozen_input_validation": {
+    "config_path": "config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml",
+    "config_sha256": "44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2",
+    "enforced": true,
+    "expected_sha256": {
+      "feature_label_csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+      "labels_csv": "d69318ea2ad04f574ccbe8d6b348041551a4762379673ec2e8cba0d2b0ad461e",
+      "raw_csv": "dc439566a60653939321fcd4b3cbe874320a436396530837cd1be24d84174782"
+    }
+  },
+  "grouping_version": "source_identity_v1",
+  "inner_n_splits": 10,
+  "input_paths": {
+    "feature_label_csv": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "labels_csv": "labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv",
+    "raw_csv": "data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv"
+  },
+  "input_sha256": {
+    "feature_label_csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "labels_csv": "d69318ea2ad04f574ccbe8d6b348041551a4762379673ec2e8cba0d2b0ad461e",
+    "raw_csv": "dc439566a60653939321fcd4b3cbe874320a436396530837cd1be24d84174782"
+  },
+  "invalid_or_empty_video_id_row_count": 0,
+  "largest_component": {
+    "share_of_perfumes": 0.4260204081632653,
+    "source_group_id": "sg_c990b1c29d841e5cacf4e98cf0447c5274783d6bc52a6ef5e1f7f40e0180dfc8",
+    "source_group_size": 334
+  },
+  "manifest_sha256": {
+    "fold_balance": "a1cc1a9974bfbc7f079446947ce4384240396155382bd84f7b6258eccba739c8",
+    "inner": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d",
+    "outer": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+  },
+  "n_perfumes": 784,
+  "n_source_components": 359,
+  "n_splits": 5,
+  "normalization": {
+    "component_rule": "undirected transitive closure over either shared source key",
+    "transcript": "html_unescape; unicode_nfkc; casefold; replace non-alphanumeric runs with spaces; collapse whitespace; sha256 utf-8",
+    "video_id": "strip; case-sensitive ^[A-Za-z0-9_-]{11}$; ignore invalid/empty"
+  },
+  "normalized_transcript_hash_count": 4155,
+  "raw_row_count": 4881,
+  "resolved_raw_row_count": 4881,
+  "schema_version": 1,
+  "seed": 42,
+  "shared_transcript_hash_count": 392,
+  "shared_video_id_count": 392,
+  "status": "passed",
+  "valid_video_id_count": 4158,
+  "validation_passed": true
+}

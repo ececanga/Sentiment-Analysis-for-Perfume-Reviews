@@ -1,0 +1,36 @@
+{
+  "workflow_id": "gemini_browser_og784_source_grouped_v1",
+  "stage": "prepare",
+  "status": "completed",
+  "updated_at": "2026-07-13T12:28:39+00:00",
+  "fingerprint": "91dc50d2a84b5a6ab04afc4bdc117d497c3effc92f5eab75b6611d35498ca456",
+  "commands": [
+    [
+      "/Users/ece/Desktop/EceFolder/Sentiment Analysis/.venv/bin/python",
+      "-m",
+      "src.training.source_grouped_folds",
+      "--raw-csv",
+      "data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv",
+      "--labels-csv",
+      "labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv",
+      "--feature-label-csv",
+      "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+      "--out-root",
+      "outputs/gemini_browser_og784_source_grouped_v1",
+      "--n-splits",
+      "5",
+      "--inner-n-splits",
+      "10",
+      "--seed",
+      "42"
+    ]
+  ],
+  "expected_outputs": [
+    "outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_memberships.csv",
+    "outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_components.csv",
+    "outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_group_audit.json",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_balance.csv"
+  ]
+}

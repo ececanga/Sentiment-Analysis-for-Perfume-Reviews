@@ -1,0 +1,6 @@
+model_id,n_perfumes,n_source_components,component_weight_total,threshold,sample_weight_method,label_aggregation,macro_f1,macro_roc_auc,macro_roc_auc_defined_label_count,macro_average_precision,macro_average_precision_defined_label_count
+logistic_regression,784,359,359,0.3,row_weight=1/source_group_perfume_count; each_source_group_total_weight=1,unweighted mean across seven official labels,0.357544393384,0.589221013458,7,0.35643409288,7
+random_forest,784,359,359,0.3,row_weight=1/source_group_perfume_count; each_source_group_total_weight=1,unweighted mean across seven official labels,0.341389221982,0.591945844713,7,0.360614983391,7
+xgboost,784,359,359,0.3,row_weight=1/source_group_perfume_count; each_source_group_total_weight=1,unweighted mean across seven official labels,0.336111051422,0.591723712395,7,0.325914370566,7
+bert,784,359,359,0.3,row_weight=1/source_group_perfume_count; each_source_group_total_weight=1,unweighted mean across seven official labels,0.483940232875,0.593235630982,7,0.466518852462,7
+bilstm_attention,784,359,359,0.3,row_weight=1/source_group_perfume_count; each_source_group_total_weight=1,unweighted mean across seven official labels,0.352907599909,0.517746943453,7,0.294213246052,7

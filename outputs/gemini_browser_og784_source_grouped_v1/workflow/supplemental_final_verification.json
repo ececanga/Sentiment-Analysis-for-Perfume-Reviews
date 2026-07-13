@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "verified_at_utc": "2026-07-13T14:56:25Z",
+  "scope": "Post-gate independent checks that supplement, but do not rewrite, the accepted stage receipts.",
+  "final_audit_gate": {
+    "status": "completed",
+    "receipt_sha256": "0cf8556d84a11393fc80e271695e7a6c50bda50f8e6af1e39ceff9555a1a3079"
+  },
+  "thesis_export_numeric_equality": {
+    "status": "passed",
+    "comparison_table_sha256": "4798451f16436f83cca95af646f276480c6b6d47698e6883f3737963bea34046",
+    "thesis_table_sha256": "0951b49f9236b67b88780e6684712e9ad64a465a498c7700961e832d2204d58d",
+    "rows_compared": 5,
+    "join_key": "model_id",
+    "metric_mapping": {
+      "macro_f1": "macro_f1",
+      "macro_roc_auc": "macro_roc_auc",
+      "macro_pr_auc": "macro_average_precision"
+    },
+    "absolute_tolerance": 5.1e-7,
+    "reason_for_tolerance": "The thesis export intentionally rounds metrics to six decimal places."
+  },
+  "oof_integrity": {
+    "status": "passed",
+    "models": 5,
+    "rows_per_model": 784,
+    "checks": [
+      "all true_ and pred_ cells are finite and exactly in {0,1} before any integer cast",
+      "all prob_ cells are finite and within [0,1]",
+      "every primary pred_ cell equals prob_ >= 0.3",
+      "perfume_id, fold_id, source_group_id, and all seven true-label columns are paired identically across models"
+    ],
+    "oof_sha256": {
+      "logistic_regression": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1",
+      "random_forest": "3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32",
+      "xgboost": "310055d3283c7c6ccf5b26b17516587e74b31d3dfc49b9d00cea911f3918b949",
+      "bert": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d",
+      "bilstm_attention": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624"
+    }
+  },
+  "deep_dataset_deterministic_rebuild": {
+    "status": "passed",
+    "method": "Rerun the accepted transcript-only builder from the frozen raw CSV, frozen labels, and accepted fold manifest into temporary files, then compare SHA-256 bytes.",
+    "jsonl_rows": 784,
+    "chunk_rows": 4879,
+    "accepted_jsonl_sha256": "48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f",
+    "rebuilt_jsonl_sha256": "48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f",
+    "accepted_chunks_sha256": "4e0bfaed7de1dd9eb3bd643f18b8589e720a80e7ce6eb6b991259703d4e00475",
+    "rebuilt_chunks_sha256": "4e0bfaed7de1dd9eb3bd643f18b8589e720a80e7ce6eb6b991259703d4e00475"
+  },
+  "bert_checkpoint_cache_provenance": {
+    "status": "recorded_post_run",
+    "path": "model_benchmark/logs/bert_checkpoint_provenance.json",
+    "sha256": "9858cc2ba3a9032493b2ffb502607c2cd260b021bf993f8ae185d7e19795fc3c",
+    "resolved_revision": "13c44c849132f82bb61188d909a574badffb27a3",
+    "qualification": "The accepted runner used local cache files but did not prospectively pin an immutable revision; the supplemental record identifies the revision and bytes observed immediately after the run."
+  },
+  "artifact_byte_anchor": {
+    "path": "SHA256SUMS",
+    "coverage": "Every regular file below the experiment root except SHA256SUMS itself."
+  }
+}

@@ -1,0 +1,4 @@
+baseline,n_rows,n_labels,threshold,macro_f1,macro_roc_auc,macro_average_precision,roc_auc_defined_label_count,average_precision_defined_label_count
+all_negative,784,7,0.3,0,0.5,0.280794460641,7,7
+all_positive,784,7,0.3,0.352250912702,0.5,0.280794460641,7,7
+train_fold_prevalence,784,7,0.3,0.325265258721,0.392990946774,0.268068560154,7,7

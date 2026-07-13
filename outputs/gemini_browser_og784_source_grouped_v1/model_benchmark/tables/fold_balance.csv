@@ -1,0 +1,6 @@
+fold_id,test_perfume_count,test_source_group_count,train_perfume_count,train_source_group_count,test_joy_positive,train_joy_positive,test_sadness_positive,train_sadness_positive,test_fear_positive,train_fear_positive,test_trust_positive,train_trust_positive,test_surprise_positive,train_surprise_positive,test_anticipation_positive,train_anticipation_positive,test_disgust_positive,train_disgust_positive
+1,334,1,450,358,247,375,3,8,2,1,194,282,20,24,155,211,14,5
+2,113,90,671,269,94,528,1,10,0,3,74,402,5,39,48,318,0,19
+3,113,90,671,269,103,519,4,7,0,3,79,397,5,39,47,319,0,19
+4,112,89,672,270,89,533,2,9,0,3,68,408,7,37,59,307,3,16
+5,112,89,672,270,89,533,1,10,1,2,61,415,7,37,57,309,2,17

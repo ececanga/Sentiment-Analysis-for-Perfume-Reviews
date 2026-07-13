@@ -1,0 +1,11 @@
+outer_fold_id,inner_role,perfume_count,source_group_count,joy_positive_support,sadness_positive_support,fear_positive_support,trust_positive_support,surprise_positive_support,anticipation_positive_support,disgust_positive_support
+1,train,405,322,336,7,1,256,22,196,4
+1,val,45,36,39,1,0,26,2,15,1
+2,train,633,239,494,9,3,377,38,301,18
+2,val,38,30,34,1,0,25,1,17,1
+3,train,633,239,489,6,3,374,36,302,19
+3,val,38,30,30,1,0,23,3,17,0
+4,train,634,240,502,9,3,383,36,287,15
+4,val,38,30,31,0,0,25,1,20,1
+5,train,634,239,496,10,2,388,34,296,16
+5,val,38,31,37,0,0,27,3,13,1

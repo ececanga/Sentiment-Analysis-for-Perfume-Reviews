@@ -1,5 +1,5 @@
 # Date Created: 2026-04-13 23:02:44+03:00
-# Date Last Modified: 2026-05-15
+# Date Last Modified: 2026-07-13
 
 """Shared utilities for official classical model benchmark runs."""
 
@@ -49,6 +49,13 @@ from src.training.threshold_tuning import (
     select_fold_thresholds,
     threshold_tuning_log_lines,
 )
+from src.training.source_grouped_folds import (
+    SOURCE_GROUP_COLUMN,
+    build_grouped_inner_validation_manifest,
+    load_and_validate_outer_fold_manifest,
+    sha256_file,
+    validate_grouped_inner_manifest,
+)
 
 CLASSICAL_MODEL_IDS = ("logistic_regression", "xgboost", "random_forest")
 
@@ -84,6 +91,117 @@ def stringify_path(path: Path) -> str:
         return str(path.relative_to(PROJECT_ROOT))
     except ValueError:
         return str(path)
+
+
+def resolve_project_path(value: str | Path) -> Path:
+    """Resolve a config path relative to the repository root."""
+    path = Path(value)
+    return path if path.is_absolute() else PROJECT_ROOT / path
+
+
+def source_grouped_split_enabled(config: Mapping[str, Any]) -> bool:
+    outer_cfg = config.get("splits", {}).get("outer_cv", {})
+    return isinstance(outer_cfg, Mapping) and str(outer_cfg.get("type", "")).lower() in {
+        "source_component_groupkfold",
+        "source_component_grouped_cv",
+    }
+
+
+def validate_configured_benchmark_root(
+    config: Mapping[str, Any],
+    *,
+    out_root: Path,
+) -> Path:
+    """Bind grouped runs to the configured non-legacy benchmark directory."""
+
+    resolved = Path(out_root).resolve()
+    if not source_grouped_split_enabled(config):
+        return resolved
+    artifacts = config.get("artifacts", {})
+    configured = artifacts.get("root_dir") if isinstance(artifacts, Mapping) else None
+    if not configured:
+        raise ValueError("Source-grouped config must define artifacts.root_dir")
+    expected = resolve_project_path(configured).resolve()
+    if resolved != expected:
+        raise ValueError(
+            "Source-grouped --out-root must exactly match configured artifacts.root_dir: "
+            f"expected {expected}, got {resolved}"
+        )
+    return resolved
+
+
+def validate_frozen_input_hash(
+    config: Mapping[str, Any],
+    *,
+    key: str,
+    path: Path,
+    required: bool,
+) -> str:
+    """Validate and return a canonical input digest from the Phase 2 config."""
+    digest = sha256_file(path)
+    expected_map = config.get("provenance", {}).get("frozen_input_sha256", {})
+    expected = expected_map.get(key) if isinstance(expected_map, Mapping) else None
+    if expected is None:
+        if required:
+            raise ValueError(f"Missing provenance.frozen_input_sha256.{key} in source-grouped config")
+        return digest
+    if str(expected).lower() != digest:
+        raise ValueError(
+            f"Frozen input SHA-256 mismatch for {key}: expected {expected}, got {digest} ({path})"
+        )
+    return digest
+
+
+def validate_configured_frozen_inputs(
+    config: Mapping[str, Any],
+    *,
+    keys: Sequence[str],
+) -> Dict[str, str]:
+    """Validate configured canonical inputs and return their exact digests."""
+    path_map = config.get("provenance", {}).get("frozen_input_paths", {})
+    if not isinstance(path_map, Mapping):
+        raise ValueError("provenance.frozen_input_paths must be a mapping")
+    digests: Dict[str, str] = {}
+    for key in keys:
+        value = path_map.get(key)
+        if not value:
+            raise ValueError(f"Missing provenance.frozen_input_paths.{key}")
+        path = resolve_project_path(value)
+        if not path.is_file():
+            raise FileNotFoundError(f"Configured frozen input does not exist: {path}")
+        digests[key] = validate_frozen_input_hash(
+            config,
+            key=key,
+            path=path,
+            required=True,
+        )
+    return digests
+
+
+def validate_source_group_audit(
+    config: Mapping[str, Any],
+) -> tuple[Path | None, str | None]:
+    """Fail closed unless the configured Phase 2 source audit passed."""
+    if not source_grouped_split_enabled(config):
+        return None, None
+    outer_cfg = config.get("splits", {}).get("outer_cv", {})
+    value = outer_cfg.get("audit_report_path") if isinstance(outer_cfg, Mapping) else None
+    if not value:
+        raise ValueError("Source-grouped config must define splits.outer_cv.audit_report_path")
+    path = resolve_project_path(value)
+    if not path.is_file():
+        raise FileNotFoundError(f"Required source-group audit does not exist: {path}")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("status") != "passed" or payload.get("validation_passed") is not True:
+        raise ValueError(f"Source-group audit did not pass: {path}")
+    video_overlap = int(payload.get("cross_fold_video_id_count", -1))
+    transcript_overlap = int(payload.get("cross_fold_transcript_hash_count", -1))
+    if video_overlap != 0 or transcript_overlap != 0:
+        raise ValueError(
+            "Source-group audit reports cross-fold overlap: "
+            f"video_ids={video_overlap}, transcript_hashes={transcript_overlap}"
+        )
+    return path, sha256_file(path)
 
 
 def select_feature_columns(df: pd.DataFrame, prefixes: List[str]) -> List[str]:
@@ -213,7 +331,7 @@ def save_per_label_plot(per_label_df: pd.DataFrame, *, model_family: str, path: 
     fig, ax = plt.subplots(figsize=(11, 5))
     ax.bar(x - width, per_label_df["f1"], width=width, label="F1")
     ax.bar(x, per_label_df["roc_auc"], width=width, label="ROC-AUC")
-    ax.bar(x + width, per_label_df["pr_auc"], width=width, label="PR-AUC")
+    ax.bar(x + width, per_label_df["pr_auc"], width=width, label="Average Precision")
     ax.set_xticks(x)
     ax.set_xticklabels(labels, rotation=30, ha="right")
     ax.set_ylim(0.0, 1.0)
@@ -277,7 +395,7 @@ def build_interpretation_note(
     return (
         f"{model_family} completed under the frozen 7-label perfume benchmark with macro-F1 "
         f"{global_metrics['macro_f1']:.4f}, macro ROC-AUC {global_metrics['macro_roc_auc']:.4f}, and "
-        f"macro PR-AUC {global_metrics['macro_pr_auc']:.4f}. "
+        f"macro average precision {global_metrics['macro_pr_auc']:.4f}. "
         f"It is strongest on {strong_text}, while {rare_text} remain unstable because positive support is very limited. "
         f"The row is benchmark-ready for classical model comparison."
     )
@@ -382,7 +500,12 @@ def write_classical_model_summary(
         width = 0.25
         ax.bar(x - width, plot_df["macro_f1"], width=width, label="Macro-F1")
         ax.bar(x, plot_df["macro_roc_auc"], width=width, label="Macro ROC-AUC")
-        ax.bar(x + width, plot_df["macro_pr_auc"], width=width, label="Macro PR-AUC")
+        ax.bar(
+            x + width,
+            plot_df["macro_pr_auc"],
+            width=width,
+            label="Macro Average Precision",
+        )
         ax.set_xticks(x)
         ax.set_xticklabels(plot_df["model_family"], rotation=15, ha="right")
         ax.set_ylim(0.0, 1.0)
@@ -404,16 +527,24 @@ def run_classical_model_benchmark(
     model_spec: BenchmarkModelSpec,
 ) -> Dict[str, Any]:
     config = load_config(config_path)
+    config_relpath = stringify_path(config_path)
+    config_sha256 = sha256_file(config_path)
     target_cols = list(config["targets"]["official_emotion_columns"])
     excluded_target_cols = dict(config["targets"]["excluded_emotion_columns"])
     feature_prefixes = list(config["data"]["feature_prefixes"])
     unit_id_col = str(config["data"]["unit_id_column"])
-    n_splits = int(config["splits"]["outer_cv"]["n_splits"])
+    outer_cfg = config["splits"]["outer_cv"]
+    n_splits = int(outer_cfg["n_splits"])
     seed = int(config["seeds"]["data_seed"])
     threshold = float(config["evaluation"]["probability_threshold"])
     threshold_tuning_settings = load_threshold_tuning_settings(config, baseline_threshold=threshold)
     inner_cfg = config.get("splits", {}).get("inner_validation", {})
     inner_n_splits = int(inner_cfg.get("n_splits", 10)) if isinstance(inner_cfg, Mapping) else 10
+    grouped_split = source_grouped_split_enabled(config)
+    out_root = validate_configured_benchmark_root(config, out_root=out_root)
+    group_col = str(outer_cfg.get("group_column", SOURCE_GROUP_COLUMN))
+    source_audit_path, source_audit_sha256 = validate_source_group_audit(config)
+    split_design = str(outer_cfg.get("split_design_label", f"{n_splits}-fold KFold"))
 
     metrics_dir = out_root / "metrics"
     figures_dir = out_root / "figures"
@@ -424,6 +555,13 @@ def run_classical_model_benchmark(
         path.mkdir(parents=True, exist_ok=True)
 
     df_raw = pd.read_csv(input_csv)
+    input_sha256 = validate_frozen_input_hash(
+        config,
+        key="feature_label_csv",
+        path=input_csv,
+        required=grouped_split,
+    )
+    frozen_input_sha256 = {"feature_label_csv": input_sha256}
     df = validate_dataset(
         df_raw,
         unit_id_col=unit_id_col,
@@ -434,43 +572,102 @@ def run_classical_model_benchmark(
     if not feature_cols:
         raise ValueError("No numeric benchmark feature columns found.")
 
-    fold_manifest_path = tables_dir / "fold_assignments.csv"
-    fold_manifest = load_or_create_fold_manifest(
-        df=df,
-        unit_id_col=unit_id_col,
-        n_splits=n_splits,
-        seed=seed,
-        path=fold_manifest_path,
+    configured_fold_path = outer_cfg.get("manifest_path")
+    fold_manifest_path = (
+        resolve_project_path(configured_fold_path)
+        if configured_fold_path
+        else tables_dir / "fold_assignments.csv"
     )
+    if grouped_split:
+        if not fold_manifest_path.exists():
+            raise FileNotFoundError(
+                "Source-grouped mode requires a prebuilt outer fold manifest: "
+                f"{fold_manifest_path}"
+            )
+        fold_manifest = load_and_validate_outer_fold_manifest(
+            fold_manifest_path,
+            expected_ids=df[unit_id_col].astype(str).tolist(),
+            n_splits=n_splits,
+        )
+        # Model arrays follow the canonical feature-table row order.  Align the
+        # prebuilt manifest explicitly by ID; its on-disk order is deliberately
+        # independent of model input order.
+        fold_manifest = (
+            fold_manifest.set_index(unit_id_col)
+            .loc[df[unit_id_col].astype(str).tolist()]
+            .reset_index()
+        )
+    else:
+        fold_manifest = load_or_create_fold_manifest(
+            df=df,
+            unit_id_col=unit_id_col,
+            n_splits=n_splits,
+            seed=seed,
+            path=fold_manifest_path,
+        )
+    fold_manifest_sha256 = sha256_file(fold_manifest_path)
 
     X = df[feature_cols].to_numpy(dtype=float)
     y = df[target_cols].to_numpy(dtype=int)
     fold_ids = fold_manifest["fold_id"].to_numpy(dtype=int)
     unit_ids = df[unit_id_col].astype(str).to_numpy()
-    inner_manifest_path = tables_dir / f"{model_spec.model_id}_inner_val_folds.csv"
+    configured_inner_path = inner_cfg.get("manifest_path") if isinstance(inner_cfg, Mapping) else None
+    inner_manifest_path = (
+        resolve_project_path(configured_inner_path)
+        if configured_inner_path
+        else tables_dir / f"{model_spec.model_id}_inner_val_folds.csv"
+    )
     inner_manifest_df: pd.DataFrame | None = None
     if threshold_tuning_settings.enabled:
-        manifest_input = pd.DataFrame(
-            {
-                unit_id_col: unit_ids,
-                "fold_id": fold_ids,
-            }
-        )
-        display_name_col = "Perfume" if "Perfume" in df.columns else None
-        if display_name_col is not None:
-            manifest_input[display_name_col] = df[display_name_col].astype(str).to_numpy()
-        expected_inner_manifest = build_inner_validation_manifest(
-            manifest_input,
-            unit_id_col=unit_id_col,
-            fold_id_col="fold_id",
-            display_name_col=display_name_col,
-            inner_n_splits=inner_n_splits,
-            seed=seed,
-        )
+        display_name_col = "Perfume" if "Perfume" in fold_manifest.columns else None
+        if grouped_split:
+            expected_inner_manifest = build_grouped_inner_validation_manifest(
+                fold_manifest,
+                unit_id_col=unit_id_col,
+                group_col=group_col,
+                fold_id_col="fold_id",
+                display_name_col=display_name_col,
+                inner_n_splits=inner_n_splits,
+                seed=seed,
+            )
+            if bool(inner_cfg.get("require_prebuilt_manifest", True)) and not inner_manifest_path.exists():
+                raise FileNotFoundError(
+                    "Source-grouped mode requires a prebuilt shared inner manifest: "
+                    f"{inner_manifest_path}"
+                )
+        else:
+            manifest_input = pd.DataFrame(
+                {
+                    unit_id_col: unit_ids,
+                    "fold_id": fold_ids,
+                }
+            )
+            if display_name_col is not None:
+                manifest_input[display_name_col] = df[display_name_col].astype(str).to_numpy()
+            expected_inner_manifest = build_inner_validation_manifest(
+                manifest_input,
+                unit_id_col=unit_id_col,
+                fold_id_col="fold_id",
+                display_name_col=display_name_col,
+                inner_n_splits=inner_n_splits,
+                seed=seed,
+            )
         inner_manifest_df = load_or_write_inner_validation_manifest(
             expected_inner_manifest,
             output_path=inner_manifest_path,
         )
+        if grouped_split:
+            validate_grouped_inner_manifest(
+                inner_manifest_df,
+                fold_manifest,
+                unit_id_col=unit_id_col,
+                group_col=group_col,
+                fold_id_col="fold_id",
+            )
+
+    inner_manifest_sha256 = (
+        sha256_file(inner_manifest_path) if threshold_tuning_settings.enabled else None
+    )
 
     oof_prob = np.zeros((len(df), len(target_cols)), dtype=float)
     oof_pred = np.zeros((len(df), len(target_cols)), dtype=int)
@@ -626,6 +823,15 @@ def run_classical_model_benchmark(
     dataset_relpath = stringify_path(input_csv)
     fold_manifest_relpath = stringify_path(fold_manifest_path)
     inner_manifest_relpath = stringify_path(inner_manifest_path) if threshold_tuning_settings.enabled else None
+    split_provenance = {
+        "type": str(outer_cfg.get("type", "kfold")),
+        "split_design": split_design,
+        "grouping_version": outer_cfg.get("grouping_version"),
+        "group_column": group_col if grouped_split else None,
+        "outer_manifest_sha256": fold_manifest_sha256,
+        "inner_manifest_sha256": inner_manifest_sha256,
+        "source_audit_sha256": source_audit_sha256,
+    }
     artifact_paths = {
         "metrics_json": stringify_path(metrics_path),
         "per_label_csv": stringify_path(per_label_path),
@@ -642,19 +848,28 @@ def run_classical_model_benchmark(
     }
     if inner_manifest_relpath is not None:
         artifact_paths["inner_validation_manifest"] = inner_manifest_relpath
-    run_id = f"{model_spec.model_id}_seed{seed}_kfold{n_splits}"
+    if source_audit_path is not None:
+        artifact_paths["source_group_audit"] = stringify_path(source_audit_path)
+    split_tag = "source_grouped" if grouped_split else "kfold"
+    run_id = f"{model_spec.model_id}_seed{seed}_{split_tag}{n_splits}"
 
     metrics_payload: Dict[str, Any] = {
         "model_id": model_spec.model_id,
         "model_family": model_spec.model_family,
         "run_id": run_id,
         "dataset_path": dataset_relpath,
+        "dataset_sha256": input_sha256,
+        "config_path": config_relpath,
+        "config_sha256": config_sha256,
+        "frozen_input_sha256": frozen_input_sha256,
         "n_rows": int(len(df)),
         "feature_columns": feature_cols,
         "target_columns": target_cols,
         "excluded_target_columns": excluded_target_cols,
         "split_manifest_path": fold_manifest_relpath,
         "inner_validation_manifest_path": inner_manifest_relpath,
+        "split_design": split_design,
+        "split_provenance": split_provenance,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
@@ -682,8 +897,14 @@ def run_classical_model_benchmark(
         "python_version": sys.version,
         "package_versions": collect_package_versions(model_spec.package_names),
         "dataset_path": dataset_relpath,
+        "dataset_sha256": input_sha256,
+        "config_path": config_relpath,
+        "config_sha256": config_sha256,
+        "frozen_input_sha256": frozen_input_sha256,
         "split_manifest_path": fold_manifest_relpath,
         "inner_validation_manifest_path": inner_manifest_relpath,
+        "split_design": split_design,
+        "split_provenance": split_provenance,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
@@ -703,10 +924,16 @@ def run_classical_model_benchmark(
         f"model_id={model_spec.model_id}",
         f"model_family={model_spec.model_family}",
         f"dataset={dataset_relpath}",
+        f"dataset_sha256={input_sha256}",
+        f"config={config_relpath}",
+        f"config_sha256={config_sha256}",
         f"n_rows={len(df)}",
         f"n_features={len(feature_cols)}",
         f"fold_manifest={fold_manifest_relpath}",
+        f"fold_manifest_sha256={fold_manifest_sha256}",
         f"inner_validation_manifest={inner_manifest_relpath}",
+        f"inner_validation_manifest_sha256={inner_manifest_sha256}",
+        f"split_design={split_design}",
         f"macro_f1={global_metrics['macro_f1']:.6f}",
         f"macro_roc_auc={global_metrics['macro_roc_auc']:.6f}",
         f"macro_pr_auc={global_metrics['macro_pr_auc']:.6f}",
@@ -731,7 +958,7 @@ def run_classical_model_benchmark(
         model_family=model_spec.model_family,
         dataset_relpath=dataset_relpath,
         target_columns=target_cols,
-        split_design=f"{n_splits}-fold KFold",
+        split_design=split_design,
         seed=seed,
         threshold=threshold,
         metrics=global_metrics,

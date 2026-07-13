@@ -1,0 +1,112 @@
+{
+  "artifact_rows": {
+    "component_weighted_model_metrics": 5,
+    "inner_fold_balance": 10,
+    "outer_fold_per_label_metrics": 175,
+    "paired_component_bootstrap": 10
+  },
+  "bootstrap": {
+    "confidence_level": 0.95,
+    "method": "paired source-group cluster bootstrap; sample n_source_components with replacement; each sampled component has total weight 1; macro-F1 averages all seven labels",
+    "pairing": "identical component draws reused for every model",
+    "quantile_method": "linear percentile interval",
+    "reps": 2000,
+    "seed": 42
+  },
+  "component_weighting": {
+    "label_aggregation": "unweighted mean across seven official labels",
+    "method": "row_weight=1/source_group_perfume_count; each_source_group_total_weight=1"
+  },
+  "model_ids": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost",
+    "bert",
+    "bilstm_attention"
+  ],
+  "n_perfumes": 784,
+  "n_source_components": 359,
+  "official_labels": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "outer_fold_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "provenance": {
+    "hash_algorithm": "sha256_binary_file_bytes",
+    "implementation": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/src/training/generate_source_grouped_diagnostics.py",
+      "sha256": "2f13092ad2906d8c7df97670715c4b486ed912f5e9a19062ee5851b1086e9bc7"
+    },
+    "inputs": {
+      "feature_label_csv": {
+        "path": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+        "sha256": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976"
+      },
+      "inner_manifest_csv": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv",
+        "sha256": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d"
+      },
+      "oof_bert": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bert_oof.csv",
+        "sha256": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d"
+      },
+      "oof_bilstm_attention": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bilstm_attention_oof.csv",
+        "sha256": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624"
+      },
+      "oof_logistic_regression": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv",
+        "sha256": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1"
+      },
+      "oof_random_forest": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/random_forest_oof.csv",
+        "sha256": "3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32"
+      },
+      "oof_xgboost": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/xgboost_oof.csv",
+        "sha256": "310055d3283c7c6ccf5b26b17516587e74b31d3dfc49b9d00cea911f3918b949"
+      },
+      "outer_manifest_csv": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+        "sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+      }
+    },
+    "outputs": {
+      "component_weighted_model_metrics.csv": {
+        "bytes": 1220,
+        "sha256": "893ed0c2054208af220fe408493b12243d160c0febd088a4aaee3cfb8f8e0196"
+      },
+      "inner_fold_balance.csv": {
+        "bytes": 565,
+        "sha256": "639eb1a987f99ccf1b06673af58dad8462b852da781557f4a4dfbe111be69231"
+      },
+      "outer_fold_per_label_metrics.csv": {
+        "bytes": 15013,
+        "sha256": "5dfb21429c9b969ee5e15a8a071b754e1f25e1f5162f12c75caa93ac897c254b"
+      },
+      "paired_component_bootstrap_macro_f1.csv": {
+        "bytes": 3785,
+        "sha256": "4ac112f2875282f7bbdcee8860b7a9794c9852bd775c69f86c05d50ab434ed01"
+      }
+    }
+  },
+  "schema_version": 1,
+  "status": "passed",
+  "threshold": 0.3,
+  "undefined_metric_policy": {
+    "average_precision": "null when support_pos=0",
+    "csv_representation": "blank with explicit defined flag",
+    "roc_auc": "null when support_pos=0 or support_neg=0"
+  }
+}

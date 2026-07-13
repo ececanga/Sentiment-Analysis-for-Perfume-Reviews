@@ -1,10 +1,14 @@
 # Date Created: 2026-04-13 23:02:44+03:00
-# Date Last Modified: 2026-05-15
+# Date Last Modified: 2026-07-13
 
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
+
+os.environ.setdefault("MPLCONFIGDIR", "/tmp/codex-mplconfig")
+os.environ.setdefault("XDG_CACHE_HOME", "/tmp/codex-cache")
 
 import matplotlib
 
@@ -13,10 +17,16 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_SOURCE_TABLE = PROJECT_ROOT / "outputs" / "model_benchmark" / "tables" / "comparison_table.csv"
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "outputs" / "model_benchmark"
+DEFAULT_OUTPUT_DIR = (
+    PROJECT_ROOT / "outputs" / "gemini_browser_og784_source_grouped_v1" / "model_benchmark"
+)
+DEFAULT_SOURCE_TABLE = DEFAULT_OUTPUT_DIR / "tables" / "comparison_table.csv"
+DEFAULT_CONFIG = (
+    PROJECT_ROOT / "config" / "evaluation_config_gemini_browser_og784_source_grouped_v1.yaml"
+)
 
 MODEL_ORDER = [
     "logistic_regression",
@@ -53,7 +63,11 @@ MODEL_COLORS = {
 METRIC_SPECS = [
     ("macro_f1", "Macro-F1", "all_models_macro_f1_comparison.png"),
     ("macro_roc_auc", "Macro ROC-AUC", "all_models_macro_roc_auc_comparison.png"),
-    ("macro_pr_auc", "Macro PR-AUC", "all_models_macro_pr_auc_comparison.png"),
+    (
+        "macro_pr_auc",
+        "Macro Average Precision",
+        "all_models_macro_pr_auc_comparison.png",
+    ),
 ]
 
 GROUPED_METRIC_COLORS = {
@@ -86,6 +100,12 @@ def parse_args() -> argparse.Namespace:
         description="Generate final thesis comparison figures from the frozen benchmark comparison table."
     )
     parser.add_argument(
+        "--config",
+        type=Path,
+        default=DEFAULT_CONFIG,
+        help="Phase-2 benchmark config used to bind split design, threshold, and output root.",
+    )
+    parser.add_argument(
         "--source-table",
         type=Path,
         default=DEFAULT_SOURCE_TABLE,
@@ -100,9 +120,22 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def load_final_model_comparison(source_table: Path) -> pd.DataFrame:
+def load_final_model_comparison(
+    source_table: Path,
+    *,
+    expected_split_design: str | None = None,
+    expected_threshold: float | None = None,
+) -> pd.DataFrame:
     df = pd.read_csv(source_table)
-    required_columns = {"model_id", "macro_f1", "macro_roc_auc", "macro_pr_auc", "row_complete"}
+    required_columns = {
+        "model_id",
+        "macro_f1",
+        "macro_roc_auc",
+        "macro_pr_auc",
+        "row_complete",
+        "split_design",
+        "threshold",
+    }
     missing_columns = sorted(required_columns - set(df.columns))
     if missing_columns:
         raise ValueError(f"Missing required columns in {source_table}: {', '.join(missing_columns)}")
@@ -132,6 +165,15 @@ def load_final_model_comparison(source_table: Path) -> pd.DataFrame:
             "Final comparison figures require complete benchmark rows. Incomplete rows: "
             + ", ".join(incomplete_model_ids)
         )
+
+    if expected_split_design is not None and not (
+        df["split_design"].astype(str) == expected_split_design
+    ).all():
+        raise ValueError("Final comparison table contains a non-configured split design")
+    if expected_threshold is not None:
+        thresholds = pd.to_numeric(df["threshold"], errors="raise").to_numpy(float)
+        if not np.allclose(thresholds, expected_threshold, rtol=0.0, atol=1e-12):
+            raise ValueError("Final comparison table contains a non-configured threshold")
 
     df["sort_key"] = df["model_id"].map({model_id: idx for idx, model_id in enumerate(MODEL_ORDER)})
     df["model_name"] = df["model_id"].map(MODEL_NAMES)
@@ -220,6 +262,7 @@ def save_grouped_metric_figure(df: pd.DataFrame, *, path: Path) -> None:
 
 def export_final_table(df: pd.DataFrame, *, path: Path) -> None:
     export_df = df.loc[:, ["model_id", "model_name", "macro_f1", "macro_roc_auc", "macro_pr_auc"]].copy()
+    export_df = export_df.rename(columns={"macro_pr_auc": "macro_average_precision"})
     path.parent.mkdir(parents=True, exist_ok=True)
     export_df.to_csv(path, index=False)
 
@@ -228,10 +271,30 @@ def main() -> None:
     args = parse_args()
     configure_plot_style()
 
+    config = yaml.safe_load(args.config.read_text(encoding="utf-8"))
+    if not isinstance(config, dict):
+        raise ValueError(f"Invalid benchmark config: {args.config}")
+    configured_root = (PROJECT_ROOT / config["artifacts"]["root_dir"]).resolve()
+    if args.output_dir.resolve() != configured_root:
+        raise ValueError(
+            f"--output-dir must match configured artifacts.root_dir: {configured_root}"
+        )
+    expected_source_table = configured_root / "tables" / "comparison_table.csv"
+    if args.source_table.resolve() != expected_source_table:
+        raise ValueError(
+            f"--source-table must be the configured comparison table: {expected_source_table}"
+        )
+    expected_split_design = str(config["splits"]["outer_cv"]["split_design_label"])
+    expected_threshold = float(config["evaluation"]["probability_threshold"])
+
     figures_dir = args.output_dir / "figures"
     tables_dir = args.output_dir / "tables"
 
-    comparison_df = load_final_model_comparison(args.source_table)
+    comparison_df = load_final_model_comparison(
+        args.source_table,
+        expected_split_design=expected_split_design,
+        expected_threshold=expected_threshold,
+    )
 
     export_final_table(
         comparison_df,

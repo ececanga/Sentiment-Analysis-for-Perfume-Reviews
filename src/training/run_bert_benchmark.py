@@ -1,5 +1,5 @@
 # Date Created: 2026-04-13 23:02:44+03:00
-# Date Last Modified: 2026-05-15
+# Date Last Modified: 2026-07-13
 
 """Run the official fine-tuned BERT benchmark on the canonical deep-text dataset."""
 
@@ -32,10 +32,22 @@ from src.training.model_benchmark_runner import (
     collect_package_versions,
     get_git_commit,
     load_config,
+    resolve_project_path,
     save_curve_plot,
     save_per_label_plot,
     stringify_path,
+    source_grouped_split_enabled,
     update_comparison_table,
+    validate_configured_benchmark_root,
+    validate_configured_frozen_inputs,
+    validate_frozen_input_hash,
+    validate_source_group_audit,
+)
+from src.training.source_grouped_folds import (
+    SOURCE_GROUP_COLUMN,
+    build_grouped_inner_validation_manifest,
+    sha256_file,
+    validate_grouped_inner_manifest,
 )
 from src.training.threshold_tuning import (
     add_threshold_tuning_columns,
@@ -157,11 +169,33 @@ def load_deep_text_dataset(
     fold_manifest_path: Path,
     target_cols: Sequence[str],
     excluded_target_cols: Mapping[str, str],
+    canonical_labels_path: Path | None = None,
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
     if not input_jsonl.exists():
         raise FileNotFoundError(f"Deep-text dataset not found: {input_jsonl}")
     if not fold_manifest_path.exists():
         raise FileNotFoundError(f"Frozen fold manifest not found: {fold_manifest_path}")
+
+    canonical_by_id: pd.DataFrame | None = None
+    if canonical_labels_path is not None:
+        if not canonical_labels_path.is_file():
+            raise FileNotFoundError(f"Canonical label table not found: {canonical_labels_path}")
+        canonical = pd.read_csv(canonical_labels_path, keep_default_na=False)
+        required = {
+            "perfume_id",
+            *target_cols,
+            *excluded_target_cols,
+            "valence",
+            "arousal",
+            "dominance",
+        }
+        missing = required - set(canonical.columns)
+        if missing:
+            raise ValueError(f"Canonical label table lacks fields: {sorted(missing)}")
+        canonical["perfume_id"] = canonical["perfume_id"].astype(str).str.strip()
+        if (canonical["perfume_id"] == "").any() or canonical["perfume_id"].duplicated().any():
+            raise ValueError("Canonical label table must contain unique, non-empty perfume_id values")
+        canonical_by_id = canonical.set_index("perfume_id")
 
     perfume_rows: List[Dict[str, Any]] = []
     chunk_rows: List[Dict[str, Any]] = []
@@ -175,20 +209,27 @@ def load_deep_text_dataset(
 
             labels = payload.get("labels")
             excluded_labels = payload.get("excluded_labels")
+            vad = payload.get("vad")
             review_chunks = payload.get("review_chunks")
             if not isinstance(labels, dict):
                 raise ValueError(f"Missing labels object for perfume_id={perfume_id}")
             if not isinstance(excluded_labels, dict):
                 raise ValueError(f"Missing excluded_labels object for perfume_id={perfume_id}")
+            if canonical_by_id is not None and not isinstance(vad, dict):
+                raise ValueError(f"Missing VAD object for perfume_id={perfume_id}")
             if not isinstance(review_chunks, list) or not review_chunks:
                 raise ValueError(f"Missing review_chunks for perfume_id={perfume_id}")
 
             fold_id = int(payload.get("fold_id", 0))
+            source_group_id = str(payload.get(SOURCE_GROUP_COLUMN, "") or "").strip()
+            source_group_size = payload.get("source_group_size")
             perfume_row: Dict[str, Any] = {
                 "perfume_id": perfume_id,
                 "Perfume": perfume_name,
                 "fold_id": fold_id,
                 "chunk_count": len(review_chunks),
+                SOURCE_GROUP_COLUMN: source_group_id,
+                "source_group_size": source_group_size,
             }
             for label in target_cols:
                 value = pd.to_numeric(labels.get(label), errors="coerce")
@@ -200,6 +241,25 @@ def load_deep_text_dataset(
                 if pd.isna(value) or int(value) not in (0, 1):
                     raise ValueError(f"Invalid excluded label value for {label} perfume_id={perfume_id}")
                 perfume_row[label] = int(value)
+            if canonical_by_id is not None:
+                if perfume_id not in canonical_by_id.index:
+                    raise ValueError(f"Unknown perfume_id in deep-text dataset: {perfume_id}")
+                for label in (*target_cols, *excluded_target_cols):
+                    if perfume_row[label] != int(canonical_by_id.loc[perfume_id, label]):
+                        raise ValueError(
+                            f"Deep-text label {label} disagrees with canonical labels for {perfume_id}"
+                        )
+                for dimension in ("valence", "arousal", "dominance"):
+                    actual = pd.to_numeric(vad.get(dimension), errors="coerce")
+                    expected = pd.to_numeric(
+                        canonical_by_id.loc[perfume_id, dimension], errors="coerce"
+                    )
+                    if pd.isna(actual) or pd.isna(expected) or not np.isclose(
+                        float(actual), float(expected), rtol=0.0, atol=1e-12
+                    ):
+                        raise ValueError(
+                            f"Deep-text VAD {dimension} disagrees with canonical labels for {perfume_id}"
+                        )
             perfume_rows.append(perfume_row)
 
             ordered_chunks = sorted(review_chunks, key=lambda item: int(item.get("chunk_index", 0)))
@@ -214,6 +274,10 @@ def load_deep_text_dataset(
                     "chunk_count": len(review_chunks),
                     "chunk_index": int(chunk.get("chunk_index", 0)),
                     "chunk_text": chunk_text,
+                    SOURCE_GROUP_COLUMN: source_group_id,
+                    "source_group_size": source_group_size,
+                    "video_id": str(chunk.get("video_id", "") or "").strip(),
+                    "transcript_sha256": str(chunk.get("transcript_sha256", "") or "").strip(),
                 }
                 for label in target_cols:
                     chunk_row[label] = perfume_row[label]
@@ -224,6 +288,8 @@ def load_deep_text_dataset(
         raise ValueError("Deep-text dataset is empty.")
     if not perfume_df["perfume_id"].is_unique:
         raise ValueError("perfume_id must be unique in the deep-text dataset.")
+    if canonical_by_id is not None and set(perfume_df["perfume_id"]) != set(canonical_by_id.index):
+        raise ValueError("Deep-text dataset perfume universe does not match canonical labels")
 
     chunk_df = pd.DataFrame(chunk_rows).sort_values(["perfume_id", "chunk_index"]).reset_index(drop=True)
     if chunk_df.empty:
@@ -239,6 +305,14 @@ def load_deep_text_dataset(
         raise ValueError("Deep-text dataset perfume_id set/order does not match the frozen fold manifest.")
     if perfume_df["fold_id"].tolist() != manifest_df["fold_id"].tolist():
         raise ValueError("Deep-text dataset fold ids do not match the frozen fold manifest.")
+    if SOURCE_GROUP_COLUMN in manifest_df.columns:
+        manifest_groups = manifest_df[SOURCE_GROUP_COLUMN].astype(str).tolist()
+        if not all(perfume_df[SOURCE_GROUP_COLUMN].astype(str)):
+            raise ValueError("Deep-text dataset is missing source_group_id values required by the fold manifest.")
+        if manifest_groups != perfume_df[SOURCE_GROUP_COLUMN].astype(str).tolist():
+            raise ValueError("Deep-text dataset source groups do not match the frozen fold manifest.")
+        if manifest_df.groupby(SOURCE_GROUP_COLUMN)["fold_id"].nunique().max() != 1:
+            raise ValueError("Frozen fold manifest assigns a source group to multiple outer folds.")
     if "Perfume" in manifest_df.columns:
         manifest_names = manifest_df["Perfume"].astype(str).tolist()
         if manifest_names != perfume_df["Perfume"].astype(str).tolist():
@@ -253,6 +327,16 @@ def build_expected_inner_validation_manifest(
     inner_n_splits: int,
     seed: int,
 ) -> pd.DataFrame:
+    if SOURCE_GROUP_COLUMN in perfume_df.columns and perfume_df[SOURCE_GROUP_COLUMN].astype(str).str.len().gt(0).all():
+        return build_grouped_inner_validation_manifest(
+            perfume_df,
+            unit_id_col="perfume_id",
+            group_col=SOURCE_GROUP_COLUMN,
+            fold_id_col="fold_id",
+            display_name_col="Perfume",
+            inner_n_splits=inner_n_splits,
+            seed=seed,
+        )
     if inner_n_splits < 2:
         raise ValueError("Inner validation n_splits must be >= 2.")
 
@@ -285,7 +369,7 @@ def load_or_write_inner_validation_manifest(
     expected_sorted = expected_df.sort_values(["outer_fold_id", "perfume_id"]).reset_index(drop=True)
     if output_path.exists():
         existing_df = pd.read_csv(output_path)
-        if list(existing_df.columns) != INNER_MANIFEST_COLUMNS:
+        if list(existing_df.columns) != list(expected_df.columns):
             raise ValueError(f"Existing inner validation manifest has unexpected columns: {output_path}")
         existing_sorted = existing_df.sort_values(["outer_fold_id", "perfume_id"]).reset_index(drop=True)
         if not expected_sorted.equals(existing_sorted):
@@ -572,14 +656,14 @@ def build_bert_interpretation_note(
         f"BERT now fine-tunes the full {settings.checkpoint} model end-to-end on chunk-level perfume reviews, "
         f"then aggregates chunk probabilities back to perfume level by deterministic arithmetic mean, reaching "
         f"macro-F1 {global_metrics['macro_f1']:.4f}, macro ROC-AUC {global_metrics['macro_roc_auc']:.4f}, and "
-        f"macro PR-AUC {global_metrics['macro_pr_auc']:.4f}."
+        f"macro average precision {global_metrics['macro_pr_auc']:.4f}."
     )
 
     if previous_run_comparison is not None and previous_run_comparison["previous_training_mode"] == FROZEN_ENCODER_MODE:
         sentence_two = (
             f"This replaces the earlier frozen-encoder run "
             f"(macro-F1 {previous_run_comparison['previous_macro_f1']:.4f}, macro ROC-AUC "
-            f"{previous_run_comparison['previous_macro_roc_auc']:.4f}, macro PR-AUC "
+            f"{previous_run_comparison['previous_macro_roc_auc']:.4f}, macro average precision "
             f"{previous_run_comparison['previous_macro_pr_auc']:.4f}) with deltas of "
             f"{previous_run_comparison['delta_macro_f1']:+.4f}, "
             f"{previous_run_comparison['delta_macro_roc_auc']:+.4f}, and "
@@ -854,15 +938,38 @@ def run_bert_benchmark(
     device_preference: str = "auto",
 ) -> Dict[str, Any]:
     config = load_config(config_path)
+    config_relpath = stringify_path(config_path)
+    config_sha256 = sha256_file(config_path)
     settings = load_bert_settings(config)
     target_cols = list(config["targets"]["official_emotion_columns"])
     excluded_target_cols = dict(config["targets"]["excluded_emotion_columns"])
     seed = int(config["seeds"]["data_seed"])
     threshold = float(config["evaluation"]["probability_threshold"])
     threshold_tuning_settings = load_threshold_tuning_settings(config, baseline_threshold=threshold)
-    outer_n_splits = int(config["splits"]["outer_cv"]["n_splits"])
+    outer_cfg = config["splits"]["outer_cv"]
+    outer_n_splits = int(outer_cfg["n_splits"])
     inner_cfg = config["splits"]["inner_validation"]
     inner_n_splits = int(inner_cfg["n_splits"])
+    grouped_split = source_grouped_split_enabled(config)
+    out_root = validate_configured_benchmark_root(config, out_root=out_root)
+    group_col = str(outer_cfg.get("group_column", SOURCE_GROUP_COLUMN))
+    source_audit_path, source_audit_sha256 = validate_source_group_audit(config)
+    split_design = str(
+        outer_cfg.get(
+            "split_design_label",
+            f"{outer_n_splits}-fold KFold + deterministic inner holdout",
+        )
+    )
+    input_sha256 = validate_frozen_input_hash(
+        config,
+        key="deep_text_dataset_jsonl",
+        path=input_jsonl,
+        required=False,
+    )
+    frozen_input_sha256 = validate_configured_frozen_inputs(
+        config,
+        keys=("raw_csv", "labels_csv"),
+    ) if grouped_split else {}
 
     deterministic_flags = set_global_seed(seed)
     device = detect_device(device_preference)
@@ -888,12 +995,26 @@ def run_bert_benchmark(
 
     previous_run = load_previous_bert_summary(metrics_path)
 
-    fold_manifest_path = tables_dir / "fold_assignments.csv"
+    configured_fold_path = outer_cfg.get("manifest_path")
+    fold_manifest_path = (
+        resolve_project_path(configured_fold_path)
+        if configured_fold_path
+        else tables_dir / "fold_assignments.csv"
+    )
+    if grouped_split and not fold_manifest_path.exists():
+        raise FileNotFoundError(
+            f"Source-grouped mode requires a prebuilt outer fold manifest: {fold_manifest_path}"
+        )
     perfume_df, chunk_df = load_deep_text_dataset(
         input_jsonl=input_jsonl,
         fold_manifest_path=fold_manifest_path,
         target_cols=target_cols,
         excluded_target_cols=excluded_target_cols,
+        canonical_labels_path=(
+            resolve_project_path(config["data"]["canonical_label_csv"])
+            if grouped_split
+            else None
+        ),
     )
 
     expected_inner_manifest = build_expected_inner_validation_manifest(
@@ -901,11 +1022,30 @@ def run_bert_benchmark(
         inner_n_splits=inner_n_splits,
         seed=seed,
     )
-    inner_manifest_path = tables_dir / f"{MODEL_ID}_inner_val_folds.csv"
+    configured_inner_path = inner_cfg.get("manifest_path")
+    inner_manifest_path = (
+        resolve_project_path(configured_inner_path)
+        if configured_inner_path
+        else tables_dir / f"{MODEL_ID}_inner_val_folds.csv"
+    )
+    if grouped_split and bool(inner_cfg.get("require_prebuilt_manifest", True)) and not inner_manifest_path.exists():
+        raise FileNotFoundError(
+            f"Source-grouped mode requires a prebuilt shared inner manifest: {inner_manifest_path}"
+        )
     inner_manifest_df = load_or_write_inner_validation_manifest(
         expected_inner_manifest,
         output_path=inner_manifest_path,
     )
+    if grouped_split:
+        validate_grouped_inner_manifest(
+            inner_manifest_df,
+            perfume_df,
+            unit_id_col="perfume_id",
+            group_col=group_col,
+            fold_id_col="fold_id",
+        )
+    fold_manifest_sha256 = sha256_file(fold_manifest_path)
+    inner_manifest_sha256 = sha256_file(inner_manifest_path)
 
     tokenized_inputs = tokenize_chunk_texts(
         chunk_df,
@@ -936,6 +1076,12 @@ def run_bert_benchmark(
 
         train_perfume_df = perfume_df.loc[perfume_df["perfume_id"].isin(train_perfume_ids)].sort_values("perfume_id")
         val_perfume_df = perfume_df.loc[perfume_df["perfume_id"].isin(val_perfume_ids)].sort_values("perfume_id")
+        if grouped_split:
+            train_groups = set(train_perfume_df[group_col].astype(str))
+            val_groups = set(val_perfume_df[group_col].astype(str))
+            test_groups = set(test_perfume_df[group_col].astype(str))
+            if train_groups & val_groups or train_groups & test_groups or val_groups & test_groups:
+                raise ValueError(f"Source-group leakage in BERT outer fold {outer_fold_id}")
 
         train_chunk_mask = chunk_df["perfume_id"].isin(train_perfume_ids).to_numpy()
         val_chunk_mask = chunk_df["perfume_id"].isin(val_perfume_ids).to_numpy()
@@ -1040,7 +1186,10 @@ def run_bert_benchmark(
     )
     previous_run_comparison = build_previous_run_comparison(previous_run, global_metrics)
 
-    oof_df = perfume_df[["perfume_id", "fold_id", "Perfume", "chunk_count"]].copy()
+    oof_columns = ["perfume_id", "fold_id", "Perfume", "chunk_count"]
+    if grouped_split:
+        oof_columns.extend([group_col, "source_group_size"])
+    oof_df = perfume_df[oof_columns].copy()
     oof_df.rename(columns={"chunk_count": "review_chunk_count"}, inplace=True)
     for label_idx, label in enumerate(target_cols):
         oof_df[f"true_{label}"] = y_true[:, label_idx]
@@ -1072,6 +1221,15 @@ def run_bert_benchmark(
     dataset_relpath = stringify_path(input_jsonl)
     fold_manifest_relpath = stringify_path(fold_manifest_path)
     inner_manifest_relpath = stringify_path(inner_manifest_path)
+    split_provenance = {
+        "type": str(outer_cfg.get("type", "kfold")),
+        "split_design": split_design,
+        "grouping_version": outer_cfg.get("grouping_version"),
+        "group_column": group_col if grouped_split else None,
+        "outer_manifest_sha256": fold_manifest_sha256,
+        "inner_manifest_sha256": inner_manifest_sha256,
+        "source_audit_sha256": source_audit_sha256,
+    }
     artifact_paths = {
         "metrics_json": stringify_path(metrics_path),
         "per_label_csv": stringify_path(per_label_path),
@@ -1085,7 +1243,10 @@ def run_bert_benchmark(
         "fold_manifest": fold_manifest_relpath,
         "inner_validation_manifest": inner_manifest_relpath,
     }
-    run_id = f"{MODEL_ID}_seed{seed}_kfold{outer_n_splits}"
+    if source_audit_path is not None:
+        artifact_paths["source_group_audit"] = stringify_path(source_audit_path)
+    split_tag = "source_grouped" if grouped_split else "kfold"
+    run_id = f"{MODEL_ID}_seed{seed}_{split_tag}{outer_n_splits}"
 
     model_parameters = {
         "training_mode": TRAINING_MODE,
@@ -1112,6 +1273,10 @@ def run_bert_benchmark(
         "model_family": MODEL_FAMILY,
         "run_id": run_id,
         "dataset_path": dataset_relpath,
+        "dataset_sha256": input_sha256,
+        "config_path": config_relpath,
+        "config_sha256": config_sha256,
+        "frozen_input_sha256": frozen_input_sha256,
         "n_rows": int(len(perfume_df)),
         "n_chunks": int(len(chunk_df)),
         "feature_columns": ["chunk_text_token_ids"],
@@ -1119,6 +1284,8 @@ def run_bert_benchmark(
         "excluded_target_columns": excluded_target_cols,
         "split_manifest_path": fold_manifest_relpath,
         "inner_validation_manifest_path": inner_manifest_relpath,
+        "split_design": split_design,
+        "split_provenance": split_provenance,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
@@ -1154,8 +1321,14 @@ def run_bert_benchmark(
         "python_version": sys.version,
         "package_versions": collect_package_versions(("torch", "transformers", "accelerate")),
         "dataset_path": dataset_relpath,
+        "dataset_sha256": input_sha256,
+        "config_path": config_relpath,
+        "config_sha256": config_sha256,
+        "frozen_input_sha256": frozen_input_sha256,
         "split_manifest_path": fold_manifest_relpath,
         "inner_validation_manifest_path": inner_manifest_relpath,
+        "split_design": split_design,
+        "split_provenance": split_provenance,
         "data_seed": seed,
         "model_seed": seed,
         "threshold": threshold,
@@ -1177,10 +1350,16 @@ def run_bert_benchmark(
         f"model_id={MODEL_ID}",
         f"model_family={MODEL_FAMILY}",
         f"dataset={dataset_relpath}",
+        f"dataset_sha256={input_sha256}",
+        f"config={config_relpath}",
+        f"config_sha256={config_sha256}",
         f"n_rows={len(perfume_df)}",
         f"n_chunks={len(chunk_df)}",
         f"fold_manifest={fold_manifest_relpath}",
+        f"fold_manifest_sha256={fold_manifest_sha256}",
         f"inner_validation_manifest={inner_manifest_relpath}",
+        f"inner_validation_manifest_sha256={inner_manifest_sha256}",
+        f"split_design={split_design}",
         f"device={device}",
         f"macro_f1={global_metrics['macro_f1']:.6f}",
         f"macro_roc_auc={global_metrics['macro_roc_auc']:.6f}",
@@ -1237,7 +1416,7 @@ def run_bert_benchmark(
         model_family=MODEL_FAMILY,
         dataset_relpath=dataset_relpath,
         target_columns=target_cols,
-        split_design=f"{outer_n_splits}-fold KFold + deterministic inner holdout",
+        split_design=split_design,
         seed=seed,
         threshold=threshold,
         metrics=global_metrics,

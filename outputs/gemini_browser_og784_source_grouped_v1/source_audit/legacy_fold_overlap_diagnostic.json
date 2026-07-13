@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "diagnostic_only",
+  "legacy_fold_manifest": "outputs/gemini_browser_og784/model_benchmark/tables/fold_assignments.csv",
+  "legacy_fold_manifest_sha256": "2aff5137b0ea449177aff2cc0fb04f58d1ef71b3b41c00e87eeef75d086ad56e",
+  "raw_csv_sha256": "dc439566a60653939321fcd4b3cbe874320a436396530837cd1be24d84174782",
+  "shared_source_context": {
+    "shared_valid_video_id_count": 392,
+    "shared_exact_transcript_count": 392,
+    "shared_source_identity_v1_transcript_count": 392,
+    "perfumes_affected_by_any_shared_source": 475
+  },
+  "legacy_cross_fold_overlap": {
+    "valid_video_id": {
+      "source_count": 341,
+      "affected_perfume_count": 462
+    },
+    "exact_or_whitespace_normalized_transcript": {
+      "source_count": 340,
+      "affected_perfume_count": 459
+    },
+    "source_identity_v1_transcript": {
+      "source_count": 341,
+      "affected_perfume_count": 462
+    }
+  },
+  "interpretation": "source_identity_v1 collapses one additional punctuation-only transcript variant; this explains the difference between the archived 340/459 transcript diagnostic and the v2 341/462 reconstruction."
+}

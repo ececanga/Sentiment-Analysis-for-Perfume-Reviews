@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "post_run_cache_provenance_observed",
+  "observed_at_utc": "2026-07-13T14:54:02Z",
+  "accepted_run_id": "bert_seed42_source_grouped5",
+  "accepted_run_manifest": "model_benchmark/logs/bert_run.json",
+  "checkpoint_repository": "monologg/bert-base-cased-goemotions-original",
+  "accepted_runner_local_files_only": true,
+  "resolved_cache_ref": "main",
+  "resolved_cache_revision": "13c44c849132f82bb61188d909a574badffb27a3",
+  "cache_files": {
+    "config.json": {
+      "bytes": 1666,
+      "sha256": "bb78405aa8c536f30b0f517f715a3474aa420a91118bbf8bf79c4b704dcd122b"
+    },
+    "tokenizer_config.json": {
+      "bytes": 235,
+      "sha256": "8327d5ec8fdafca3621ef26bf124a91bf1f9a0600e58263f16f9ee259c8fd0d9"
+    },
+    "special_tokens_map.json": {
+      "bytes": 182,
+      "sha256": "b8a8c41fe8751a59725136c615752d3c109ea69d32b2dc355be42b1b459ec410"
+    },
+    "vocab.txt": {
+      "bytes": 213448,
+      "sha256": "061925b27f9870e8ad6f6c02405508d5380fbb8279f7a418a61a2ddd7fa55a11"
+    },
+    "pytorch_model.bin": {
+      "bytes": 433412096,
+      "sha256": "ab2b94588c862d96c040024c8a92e248b37445a2ac62f5b010a65e36806c3024"
+    }
+  },
+  "observation_method": "Resolve the Hugging Face cache ref after the accepted local-files-only run, then hash the resolved snapshot bytes with SHA-256.",
+  "interpretation": "This supplemental record identifies the cached revision and bytes observed immediately after the accepted run. The original runner recorded the repository name but did not pass or persist an explicit immutable revision, so this is supporting post-run provenance rather than a claim that the revision was prospectively pinned."
+}
