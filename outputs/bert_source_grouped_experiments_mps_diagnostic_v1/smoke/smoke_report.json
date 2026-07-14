@@ -1,0 +1,94 @@
+{
+  "status": "smoke_complete",
+  "condition_id": "weighted_synthetic_reviews_0",
+  "folds": [
+    {
+      "outer_fold_id": 5,
+      "n_train_perfumes": 634,
+      "n_val_perfumes": 38,
+      "n_test_perfumes": 112,
+      "n_train_chunks": 386,
+      "n_unique_train_chunks": 386,
+      "n_val_chunks": 211,
+      "n_test_chunks": 612,
+      "best_epoch": 1,
+      "best_val_loss": 0.8282980003527233,
+      "best_val_macro_f1": 0.339788838612368,
+      "best_val_macro_roc_auc": 0.374961526961527,
+      "best_val_macro_pr_auc": 0.3165252168319528,
+      "train_positive_perfumes": {
+        "joy": 496,
+        "sadness": 10,
+        "fear": 2,
+        "trust": 388,
+        "surprise": 34,
+        "anticipation": 296,
+        "disgust": 16
+      },
+      "val_positive_perfumes": {
+        "joy": 37,
+        "sadness": 0,
+        "fear": 0,
+        "trust": 27,
+        "surprise": 3,
+        "anticipation": 13,
+        "disgust": 1
+      },
+      "test_positive_perfumes": {
+        "joy": 89,
+        "sadness": 1,
+        "fear": 1,
+        "trust": 61,
+        "surprise": 7,
+        "anticipation": 57,
+        "disgust": 2
+      },
+      "loss_pos_weight": {
+        "joy": 0.2782258093357086,
+        "sadness": 62.400001525878906,
+        "fear": 316.0,
+        "trust": 0.6340206265449524,
+        "surprise": 17.647058486938477,
+        "anticipation": 1.1418918371200562,
+        "disgust": 38.625
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.583359339407512,
+          "val_loss": 0.8282980003527233,
+          "val_macro_f1": 0.339788838612368,
+          "val_macro_roc_auc": 0.374961526961527,
+          "val_macro_pr_auc": 0.3165252168319528
+        }
+      ],
+      "condition_id": "weighted_synthetic_reviews_0",
+      "fold_wall_time_seconds": 27.872526582999853,
+      "logical_train_units_before_balance": 634,
+      "logical_train_units_after_balance": 64,
+      "logical_train_unique_units_after_balance": 64,
+      "synthetic_train_units_before_balance": 0,
+      "synthetic_train_units_after_balance": 0,
+      "logical_positive_counts_before_balance": {
+        "joy": 496,
+        "sadness": 10,
+        "fear": 2,
+        "trust": 388,
+        "surprise": 34,
+        "anticipation": 296,
+        "disgust": 16
+      },
+      "logical_positive_counts_after_balance": {
+        "joy": 49,
+        "sadness": 0,
+        "fear": 1,
+        "trust": 37,
+        "surprise": 2,
+        "anticipation": 26,
+        "disgust": 5
+      },
+      "balance_report": null
+    }
+  ],
+  "wall_time_seconds": 28.032931084002485
+}

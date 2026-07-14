@@ -13,7 +13,7 @@ import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Mapping, Sequence, Tuple
+from typing import Any, Callable, Dict, List, Mapping, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
@@ -429,14 +429,25 @@ def compute_pos_weight(train_perfume_df: pd.DataFrame, target_cols: Sequence[str
 def build_loader_from_arrays(
     *,
     tokenized_inputs: Mapping[str, np.ndarray],
-    mask: np.ndarray,
+    mask: np.ndarray | None,
+    row_indices: np.ndarray | None = None,
     labels: np.ndarray | None,
     sample_weights: np.ndarray | None,
     batch_size: int,
     shuffle: bool,
     seed: int,
 ) -> DataLoader:
-    mask_idx = np.where(mask)[0]
+    if (mask is None) == (row_indices is None):
+        raise ValueError("Provide exactly one of mask or row_indices.")
+    mask_idx = (
+        np.asarray(row_indices, dtype=np.int64)
+        if row_indices is not None
+        else np.where(np.asarray(mask, dtype=bool))[0]
+    )
+    if mask_idx.ndim != 1:
+        raise ValueError("row_indices must be one-dimensional.")
+    if len(mask_idx) and (mask_idx.min() < 0 or mask_idx.max() >= len(tokenized_inputs["input_ids"])):
+        raise ValueError("row_indices contains an out-of-range position.")
     tensors: List[torch.Tensor] = [
         torch.from_numpy(tokenized_inputs["input_ids"][mask_idx]).long(),
         torch.from_numpy(tokenized_inputs["attention_mask"][mask_idx]).long(),
@@ -730,17 +741,42 @@ def run_finetuned_bert_outer_fold(
     seed: int,
     device: torch.device,
     outer_fold_id: int,
+    train_chunk_indices: np.ndarray | None = None,
+    sample_weights_override: np.ndarray | None = None,
+    pos_weight_override: np.ndarray | None = None,
+    progress_callback: Callable[[Dict[str, Any]], None] | None = None,
 ) -> Tuple[np.ndarray, np.ndarray, Dict[str, Any]]:
     set_global_seed(seed)
 
     label_matrix = chunk_df[target_cols].to_numpy(dtype=np.float32)
-    sample_weights = (1.0 / chunk_df["chunk_count"].to_numpy(dtype=np.float32)).astype(np.float32)
-    pos_weight = compute_pos_weight(train_perfume_df, target_cols)
+    sample_weights = (
+        np.asarray(sample_weights_override, dtype=np.float32)
+        if sample_weights_override is not None
+        else (1.0 / chunk_df["chunk_count"].to_numpy(dtype=np.float32)).astype(np.float32)
+    )
+    if sample_weights.shape != (len(chunk_df),):
+        raise ValueError("sample_weights_override must have one value per chunk row.")
+    pos_weight = (
+        np.asarray(pos_weight_override, dtype=np.float32)
+        if pos_weight_override is not None
+        else compute_pos_weight(train_perfume_df, target_cols)
+    )
+    if pos_weight.shape != (len(target_cols),):
+        raise ValueError("pos_weight_override must have one value per target label.")
     pos_weight_tensor = torch.from_numpy(pos_weight.astype(np.float32)).to(device)
+
+    resolved_train_indices = (
+        np.asarray(train_chunk_indices, dtype=np.int64)
+        if train_chunk_indices is not None
+        else np.where(train_chunk_mask)[0]
+    )
+    if resolved_train_indices.ndim != 1 or len(resolved_train_indices) == 0:
+        raise ValueError("The resolved BERT training chunk index list is empty or invalid.")
 
     train_loader = build_loader_from_arrays(
         tokenized_inputs=tokenized_inputs,
-        mask=train_chunk_mask,
+        mask=None,
+        row_indices=resolved_train_indices,
         labels=label_matrix,
         sample_weights=sample_weights,
         batch_size=settings.train_batch_size,
@@ -869,6 +905,8 @@ def run_finetuned_bert_outer_fold(
             f"val_loss={epoch_record['val_loss']:.4f} "
             f"val_macro_f1={epoch_record['val_macro_f1']:.4f}"
         )
+        if progress_callback is not None:
+            progress_callback({"outer_fold_id": int(outer_fold_id), **epoch_record})
 
         is_better = choose_best_epoch(
             candidate_metrics=val_metrics,
@@ -914,7 +952,8 @@ def run_finetuned_bert_outer_fold(
         "n_train_perfumes": int(len(train_perfume_df)),
         "n_val_perfumes": int(len(val_perfume_df)),
         "n_test_perfumes": int(len(test_perfume_df)),
-        "n_train_chunks": int(train_chunk_mask.sum()),
+        "n_train_chunks": int(len(resolved_train_indices)),
+        "n_unique_train_chunks": int(len(np.unique(resolved_train_indices))),
         "n_val_chunks": int(val_chunk_mask.sum()),
         "n_test_chunks": int(test_chunk_mask.sum()),
         "best_epoch": int(best_epoch),
@@ -925,6 +964,7 @@ def run_finetuned_bert_outer_fold(
         "train_positive_perfumes": {label: int(train_perfume_df[label].sum()) for label in target_cols},
         "val_positive_perfumes": {label: int(val_perfume_df[label].sum()) for label in target_cols},
         "test_positive_perfumes": {label: int(test_perfume_df[label].sum()) for label in target_cols},
+        "loss_pos_weight": {label: float(pos_weight[idx]) for idx, label in enumerate(target_cols)},
         "epoch_history": epoch_history,
     }
     return test_chunk_probs, val_chunk_probs, fold_summary

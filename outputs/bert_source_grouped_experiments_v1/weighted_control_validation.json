@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "accepted_predictions": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bert_oof.csv",
+  "control_predictions": "outputs/bert_source_grouped_experiments_v1/review_count/weighted_synthetic_reviews_0/oof_predictions.csv",
+  "probability_atol": 1e-06,
+  "max_absolute_probability_difference": 0.0,
+  "rows": 784
+}

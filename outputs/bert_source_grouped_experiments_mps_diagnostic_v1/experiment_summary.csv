@@ -1,0 +1,2 @@
+stage,condition_id,data_setup,strategy,synthetic_reviews,positive_weighting,macro_f1,macro_roc_auc,macro_pr_auc,wall_time_seconds
+review_count,weighted_synthetic_reviews_0,youtube_only,positive_weighted_bce,0,True,0.32526525872063633,0.587536787579325,0.3352293241155886,2444.275365124995

@@ -1,0 +1,19 @@
+{
+  "status": "running",
+  "updated_utc": "2026-07-13T21:41:09+00:00",
+  "device": "mps",
+  "stage": "review_count",
+  "condition_id": "weighted_synthetic_reviews_99",
+  "condition_index": 2,
+  "condition_total": 14,
+  "fold": 1,
+  "fold_total": 5,
+  "epoch": null,
+  "stage_eta_seconds": 21142.975788039214,
+  "stage_eta": "5h 52m",
+  "stage_estimated_finish_utc": "2026-07-14T03:33:32+00:00",
+  "experiment_eta_seconds": 41308.24755032042,
+  "experiment_eta": "11h 28m",
+  "experiment_estimated_finish_utc": "2026-07-14T09:09:38+00:00",
+  "eta_calibration": 1.0184480688020812
+}
