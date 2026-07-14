@@ -1,0 +1,778 @@
+{
+  "status": "complete",
+  "condition": {
+    "stage": "balancing",
+    "condition_id": "youtube_plus_synthetic_784x3_hybrid",
+    "data_setup": "youtube_plus_synthetic_784x3",
+    "strategy": "hybrid",
+    "synthetic_source": "synthetic_784x3",
+    "synthetic_review_count": 2352,
+    "positive_weighting": false
+  },
+  "condition_fingerprint": "f9f932c1997ffd36ca3b8497924d96c49f7e1889e9757ff9ff6aca1f5a8c5622",
+  "started_utc": "2026-07-14T11:16:25+00:00",
+  "completed_utc": "2026-07-14T13:30:09+00:00",
+  "wall_time_seconds": 8024.310669625003,
+  "device": "cpu",
+  "threshold": 0.3,
+  "seed": 42,
+  "n_eval_perfumes": 784,
+  "n_source_groups": 359,
+  "macro_f1": 0.32408507256829383,
+  "macro_roc_auc": 0.5329607500478459,
+  "macro_pr_auc": 0.289895439149621,
+  "secondary_metrics": {
+    "micro_f1": 0.7533774834437086,
+    "subset_accuracy": 0.23979591836734693,
+    "hamming_loss": 0.16964285714285715,
+    "label_cardinality": 1.965561224489796
+  },
+  "folds": [
+    {
+      "outer_fold_id": 1,
+      "n_train_perfumes": 405,
+      "n_val_perfumes": 45,
+      "n_test_perfumes": 334,
+      "n_train_chunks": 9768,
+      "n_unique_train_chunks": 2576,
+      "n_val_chunks": 269,
+      "n_test_chunks": 2241,
+      "best_epoch": 1,
+      "best_val_loss": 0.2938034920131459,
+      "best_val_macro_f1": 0.30870939925265883,
+      "best_val_macro_roc_auc": 0.5684872340135497,
+      "best_val_macro_pr_auc": 0.32296585428459584,
+      "train_positive_perfumes": {
+        "joy": 336,
+        "sadness": 7,
+        "fear": 1,
+        "trust": 256,
+        "surprise": 22,
+        "anticipation": 196,
+        "disgust": 4
+      },
+      "val_positive_perfumes": {
+        "joy": 39,
+        "sadness": 1,
+        "fear": 0,
+        "trust": 26,
+        "surprise": 2,
+        "anticipation": 15,
+        "disgust": 1
+      },
+      "test_positive_perfumes": {
+        "joy": 247,
+        "sadness": 3,
+        "fear": 2,
+        "trust": 194,
+        "surprise": 20,
+        "anticipation": 155,
+        "disgust": 14
+      },
+      "loss_pos_weight": {
+        "joy": 1.0,
+        "sadness": 1.0,
+        "fear": 1.0,
+        "trust": 1.0,
+        "surprise": 1.0,
+        "anticipation": 1.0,
+        "disgust": 1.0
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.2287435955905724,
+          "val_loss": 0.2938034920131459,
+          "val_macro_f1": 0.30870939925265883,
+          "val_macro_roc_auc": 0.5684872340135497,
+          "val_macro_pr_auc": 0.32296585428459584
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1066149917681359,
+          "val_loss": 0.30543742197401386,
+          "val_macro_f1": 0.30733310273261844,
+          "val_macro_roc_auc": 0.5497561545847959,
+          "val_macro_pr_auc": 0.3332274339260492
+        }
+      ],
+      "condition_id": "youtube_plus_synthetic_784x3_hybrid",
+      "fold_wall_time_seconds": 1591.910255875002,
+      "logical_train_units_before_balance": 1620,
+      "logical_train_units_after_balance": 2134,
+      "logical_train_unique_units_after_balance": 1058,
+      "synthetic_train_units_before_balance": 1215,
+      "synthetic_train_units_after_balance": 1039,
+      "logical_positive_counts_before_balance": {
+        "joy": 494,
+        "sadness": 91,
+        "fear": 115,
+        "trust": 710,
+        "surprise": 435,
+        "anticipation": 1139,
+        "disgust": 23
+      },
+      "logical_positive_counts_after_balance": {
+        "joy": 435,
+        "sadness": 435,
+        "fear": 435,
+        "trust": 435,
+        "surprise": 436,
+        "anticipation": 634,
+        "disgust": 435
+      },
+      "balance_report": {
+        "label_balance_target": 435,
+        "before_rows": 1620,
+        "before_label_min": 23,
+        "before_label_max": 1139,
+        "before_label_median": 435.0,
+        "before_label_sd": 371.2903589002075,
+        "before_label_max_min_ratio": 49.52173913043478,
+        "before_count_joy": 494,
+        "before_count_sadness": 91,
+        "before_count_fear": 115,
+        "before_count_trust": 710,
+        "before_count_surprise": 435,
+        "before_count_anticipation": 1139,
+        "before_count_disgust": 23,
+        "after_rows": 2134,
+        "after_label_min": 435,
+        "after_label_max": 634,
+        "after_label_median": 435.0,
+        "after_label_sd": 69.57802843438671,
+        "after_label_max_min_ratio": 1.457471264367816,
+        "after_count_joy": 435,
+        "after_count_sadness": 435,
+        "after_count_fear": 435,
+        "after_count_trust": 435,
+        "after_count_surprise": 436,
+        "after_count_anticipation": 634,
+        "after_count_disgust": 435
+      }
+    },
+    {
+      "outer_fold_id": 2,
+      "n_train_perfumes": 633,
+      "n_val_perfumes": 38,
+      "n_test_perfumes": 113,
+      "n_train_chunks": 7449,
+      "n_unique_train_chunks": 4193,
+      "n_val_chunks": 255,
+      "n_test_chunks": 646,
+      "best_epoch": 3,
+      "best_val_loss": 0.296223821118474,
+      "best_val_macro_f1": 0.34146702159124526,
+      "best_val_macro_roc_auc": 0.6914477260065496,
+      "best_val_macro_pr_auc": 0.4175409656487755,
+      "train_positive_perfumes": {
+        "joy": 494,
+        "sadness": 9,
+        "fear": 3,
+        "trust": 377,
+        "surprise": 38,
+        "anticipation": 301,
+        "disgust": 18
+      },
+      "val_positive_perfumes": {
+        "joy": 34,
+        "sadness": 1,
+        "fear": 0,
+        "trust": 25,
+        "surprise": 1,
+        "anticipation": 17,
+        "disgust": 1
+      },
+      "test_positive_perfumes": {
+        "joy": 94,
+        "sadness": 1,
+        "fear": 0,
+        "trust": 74,
+        "surprise": 5,
+        "anticipation": 48,
+        "disgust": 0
+      },
+      "loss_pos_weight": {
+        "joy": 1.0,
+        "sadness": 1.0,
+        "fear": 1.0,
+        "trust": 1.0,
+        "surprise": 1.0,
+        "anticipation": 1.0,
+        "disgust": 1.0
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.2814742112532258,
+          "val_loss": 0.29667092580348253,
+          "val_macro_f1": 0.27427334570191714,
+          "val_macro_roc_auc": 0.6649249831602773,
+          "val_macro_pr_auc": 0.35243628470344185
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1469676089013403,
+          "val_loss": 0.3044776311144233,
+          "val_macro_f1": 0.33824640967498115,
+          "val_macro_roc_auc": 0.6506363231363231,
+          "val_macro_pr_auc": 0.3740334963965441
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.12163828465040341,
+          "val_loss": 0.296223821118474,
+          "val_macro_f1": 0.34146702159124526,
+          "val_macro_roc_auc": 0.6914477260065496,
+          "val_macro_pr_auc": 0.4175409656487755
+        }
+      ],
+      "condition_id": "youtube_plus_synthetic_784x3_hybrid",
+      "fold_wall_time_seconds": 1763.3634909160028,
+      "logical_train_units_before_balance": 2532,
+      "logical_train_units_after_balance": 2928,
+      "logical_train_unique_units_after_balance": 1643,
+      "synthetic_train_units_before_balance": 1899,
+      "synthetic_train_units_after_balance": 1786,
+      "logical_positive_counts_before_balance": {
+        "joy": 742,
+        "sadness": 139,
+        "fear": 185,
+        "trust": 1040,
+        "surprise": 655,
+        "anticipation": 1787,
+        "disgust": 34
+      },
+      "logical_positive_counts_after_balance": {
+        "joy": 977,
+        "sadness": 655,
+        "fear": 655,
+        "trust": 656,
+        "surprise": 978,
+        "anticipation": 957,
+        "disgust": 655
+      },
+      "balance_report": {
+        "label_balance_target": 655,
+        "before_rows": 2532,
+        "before_label_min": 34,
+        "before_label_max": 1787,
+        "before_label_median": 655.0,
+        "before_label_sd": 574.4579699017793,
+        "before_label_max_min_ratio": 52.55882352941177,
+        "before_count_joy": 742,
+        "before_count_sadness": 139,
+        "before_count_fear": 185,
+        "before_count_trust": 1040,
+        "before_count_surprise": 655,
+        "before_count_anticipation": 1787,
+        "before_count_disgust": 34,
+        "after_rows": 2928,
+        "after_label_min": 655,
+        "after_label_max": 978,
+        "after_label_median": 656.0,
+        "after_label_sd": 156.21949498140398,
+        "after_label_max_min_ratio": 1.4931297709923663,
+        "after_count_joy": 977,
+        "after_count_sadness": 655,
+        "after_count_fear": 655,
+        "after_count_trust": 656,
+        "after_count_surprise": 978,
+        "after_count_anticipation": 957,
+        "after_count_disgust": 655
+      }
+    },
+    {
+      "outer_fold_id": 3,
+      "n_train_perfumes": 633,
+      "n_val_perfumes": 38,
+      "n_test_perfumes": 113,
+      "n_train_chunks": 7530,
+      "n_unique_train_chunks": 4258,
+      "n_val_chunks": 214,
+      "n_test_chunks": 710,
+      "best_epoch": 2,
+      "best_val_loss": 0.334513752588204,
+      "best_val_macro_f1": 0.3098396805530723,
+      "best_val_macro_roc_auc": 0.610639312129082,
+      "best_val_macro_pr_auc": 0.3763582255378762,
+      "train_positive_perfumes": {
+        "joy": 489,
+        "sadness": 6,
+        "fear": 3,
+        "trust": 374,
+        "surprise": 36,
+        "anticipation": 302,
+        "disgust": 19
+      },
+      "val_positive_perfumes": {
+        "joy": 30,
+        "sadness": 1,
+        "fear": 0,
+        "trust": 23,
+        "surprise": 3,
+        "anticipation": 17,
+        "disgust": 0
+      },
+      "test_positive_perfumes": {
+        "joy": 103,
+        "sadness": 4,
+        "fear": 0,
+        "trust": 79,
+        "surprise": 5,
+        "anticipation": 47,
+        "disgust": 0
+      },
+      "loss_pos_weight": {
+        "joy": 1.0,
+        "sadness": 1.0,
+        "fear": 1.0,
+        "trust": 1.0,
+        "surprise": 1.0,
+        "anticipation": 1.0,
+        "disgust": 1.0
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.28376737160058474,
+          "val_loss": 0.32607462257146835,
+          "val_macro_f1": 0.2990848798535808,
+          "val_macro_roc_auc": 0.4615731944951894,
+          "val_macro_pr_auc": 0.31129013623360596
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1481887400407352,
+          "val_loss": 0.334513752588204,
+          "val_macro_f1": 0.3098396805530723,
+          "val_macro_roc_auc": 0.610639312129082,
+          "val_macro_pr_auc": 0.3763582255378762
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.12445461937679164,
+          "val_loss": 0.34050328390938894,
+          "val_macro_f1": 0.3087344028520499,
+          "val_macro_roc_auc": 0.5777483402291586,
+          "val_macro_pr_auc": 0.3598565584963219
+        }
+      ],
+      "condition_id": "youtube_plus_synthetic_784x3_hybrid",
+      "fold_wall_time_seconds": 1779.0482030420098,
+      "logical_train_units_before_balance": 2532,
+      "logical_train_units_after_balance": 2953,
+      "logical_train_unique_units_after_balance": 1646,
+      "synthetic_train_units_before_balance": 1899,
+      "synthetic_train_units_after_balance": 1811,
+      "logical_positive_counts_before_balance": {
+        "joy": 741,
+        "sadness": 134,
+        "fear": 183,
+        "trust": 1048,
+        "surprise": 663,
+        "anticipation": 1787,
+        "disgust": 38
+      },
+      "logical_positive_counts_after_balance": {
+        "joy": 990,
+        "sadness": 663,
+        "fear": 663,
+        "trust": 664,
+        "surprise": 990,
+        "anticipation": 929,
+        "disgust": 663
+      },
+      "balance_report": {
+        "label_balance_target": 663,
+        "before_rows": 2532,
+        "before_label_min": 38,
+        "before_label_max": 1787,
+        "before_label_median": 663.0,
+        "before_label_sd": 575.4793565332457,
+        "before_label_max_min_ratio": 47.026315789473685,
+        "before_count_joy": 741,
+        "before_count_sadness": 134,
+        "before_count_fear": 183,
+        "before_count_trust": 1048,
+        "before_count_surprise": 663,
+        "before_count_anticipation": 1787,
+        "before_count_disgust": 38,
+        "after_rows": 2953,
+        "after_label_min": 663,
+        "after_label_max": 990,
+        "after_label_median": 664.0,
+        "after_label_sd": 152.80132492213275,
+        "after_label_max_min_ratio": 1.493212669683258,
+        "after_count_joy": 990,
+        "after_count_sadness": 663,
+        "after_count_fear": 663,
+        "after_count_trust": 664,
+        "after_count_surprise": 990,
+        "after_count_anticipation": 929,
+        "after_count_disgust": 663
+      }
+    },
+    {
+      "outer_fold_id": 4,
+      "n_train_perfumes": 634,
+      "n_val_perfumes": 38,
+      "n_test_perfumes": 112,
+      "n_train_chunks": 7259,
+      "n_unique_train_chunks": 4043,
+      "n_val_chunks": 251,
+      "n_test_chunks": 670,
+      "best_epoch": 2,
+      "best_val_loss": 0.32642101496458054,
+      "best_val_macro_f1": 0.3261586584567951,
+      "best_val_macro_roc_auc": 0.5035757026079606,
+      "best_val_macro_pr_auc": 0.32664489370909716,
+      "train_positive_perfumes": {
+        "joy": 502,
+        "sadness": 9,
+        "fear": 3,
+        "trust": 383,
+        "surprise": 36,
+        "anticipation": 287,
+        "disgust": 15
+      },
+      "val_positive_perfumes": {
+        "joy": 31,
+        "sadness": 0,
+        "fear": 0,
+        "trust": 25,
+        "surprise": 1,
+        "anticipation": 20,
+        "disgust": 1
+      },
+      "test_positive_perfumes": {
+        "joy": 89,
+        "sadness": 2,
+        "fear": 0,
+        "trust": 68,
+        "surprise": 7,
+        "anticipation": 59,
+        "disgust": 3
+      },
+      "loss_pos_weight": {
+        "joy": 1.0,
+        "sadness": 1.0,
+        "fear": 1.0,
+        "trust": 1.0,
+        "surprise": 1.0,
+        "anticipation": 1.0,
+        "disgust": 1.0
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.2826259645309283,
+          "val_loss": 0.3177936412394047,
+          "val_macro_f1": 0.3261586584567951,
+          "val_macro_roc_auc": 0.4528832426896943,
+          "val_macro_pr_auc": 0.31013449591169673
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.15027019400806021,
+          "val_loss": 0.32642101496458054,
+          "val_macro_f1": 0.3261586584567951,
+          "val_macro_roc_auc": 0.5035757026079606,
+          "val_macro_pr_auc": 0.32664489370909716
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.12016734228744315,
+          "val_loss": 0.3472310695797205,
+          "val_macro_f1": 0.26658779453810505,
+          "val_macro_roc_auc": 0.46677556464653236,
+          "val_macro_pr_auc": 0.3220760999623456
+        }
+      ],
+      "condition_id": "youtube_plus_synthetic_784x3_hybrid",
+      "fold_wall_time_seconds": 1720.076231791987,
+      "logical_train_units_before_balance": 2536,
+      "logical_train_units_after_balance": 2887,
+      "logical_train_unique_units_after_balance": 1619,
+      "synthetic_train_units_before_balance": 1902,
+      "synthetic_train_units_after_balance": 1782,
+      "logical_positive_counts_before_balance": {
+        "joy": 753,
+        "sadness": 139,
+        "fear": 173,
+        "trust": 1044,
+        "surprise": 642,
+        "anticipation": 1769,
+        "disgust": 28
+      },
+      "logical_positive_counts_after_balance": {
+        "joy": 960,
+        "sadness": 642,
+        "fear": 642,
+        "trust": 643,
+        "surprise": 960,
+        "anticipation": 874,
+        "disgust": 642
+      },
+      "balance_report": {
+        "label_balance_target": 642,
+        "before_rows": 2536,
+        "before_label_min": 28,
+        "before_label_max": 1769,
+        "before_label_median": 642.0,
+        "before_label_sd": 572.4138648330081,
+        "before_label_max_min_ratio": 63.17857142857143,
+        "before_count_joy": 753,
+        "before_count_sadness": 139,
+        "before_count_fear": 173,
+        "before_count_trust": 1044,
+        "before_count_surprise": 642,
+        "before_count_anticipation": 1769,
+        "before_count_disgust": 28,
+        "after_rows": 2887,
+        "after_label_min": 642,
+        "after_label_max": 960,
+        "after_label_median": 643.0,
+        "after_label_sd": 145.50054351536045,
+        "after_label_max_min_ratio": 1.4953271028037383,
+        "after_count_joy": 960,
+        "after_count_sadness": 642,
+        "after_count_fear": 642,
+        "after_count_trust": 643,
+        "after_count_surprise": 960,
+        "after_count_anticipation": 874,
+        "after_count_disgust": 642
+      }
+    },
+    {
+      "outer_fold_id": 5,
+      "n_train_perfumes": 634,
+      "n_val_perfumes": 38,
+      "n_test_perfumes": 112,
+      "n_train_chunks": 7345,
+      "n_unique_train_chunks": 4107,
+      "n_val_chunks": 211,
+      "n_test_chunks": 612,
+      "best_epoch": 1,
+      "best_val_loss": 0.2771242346082415,
+      "best_val_macro_f1": 0.3344636316064888,
+      "best_val_macro_roc_auc": 0.6005209605209606,
+      "best_val_macro_pr_auc": 0.36550229283145025,
+      "train_positive_perfumes": {
+        "joy": 496,
+        "sadness": 10,
+        "fear": 2,
+        "trust": 388,
+        "surprise": 34,
+        "anticipation": 296,
+        "disgust": 16
+      },
+      "val_positive_perfumes": {
+        "joy": 37,
+        "sadness": 0,
+        "fear": 0,
+        "trust": 27,
+        "surprise": 3,
+        "anticipation": 13,
+        "disgust": 1
+      },
+      "test_positive_perfumes": {
+        "joy": 89,
+        "sadness": 1,
+        "fear": 1,
+        "trust": 61,
+        "surprise": 7,
+        "anticipation": 57,
+        "disgust": 2
+      },
+      "loss_pos_weight": {
+        "joy": 1.0,
+        "sadness": 1.0,
+        "fear": 1.0,
+        "trust": 1.0,
+        "surprise": 1.0,
+        "anticipation": 1.0,
+        "disgust": 1.0
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.28364777702420657,
+          "val_loss": 0.2771242346082415,
+          "val_macro_f1": 0.3344636316064888,
+          "val_macro_roc_auc": 0.6005209605209606,
+          "val_macro_pr_auc": 0.36550229283145025
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1504695061959075,
+          "val_loss": 0.28289219417742323,
+          "val_macro_f1": 0.328452380952381,
+          "val_macro_roc_auc": 0.5177261977261977,
+          "val_macro_pr_auc": 0.3657543439389054
+        }
+      ],
+      "condition_id": "youtube_plus_synthetic_784x3_hybrid",
+      "fold_wall_time_seconds": 1169.0640309579903,
+      "logical_train_units_before_balance": 2536,
+      "logical_train_units_after_balance": 2880,
+      "logical_train_unique_units_after_balance": 1620,
+      "synthetic_train_units_before_balance": 1902,
+      "synthetic_train_units_after_balance": 1780,
+      "logical_positive_counts_before_balance": {
+        "joy": 739,
+        "sadness": 141,
+        "fear": 180,
+        "trust": 1051,
+        "surprise": 645,
+        "anticipation": 1773,
+        "disgust": 31
+      },
+      "logical_positive_counts_after_balance": {
+        "joy": 968,
+        "sadness": 645,
+        "fear": 645,
+        "trust": 646,
+        "surprise": 968,
+        "anticipation": 881,
+        "disgust": 645
+      },
+      "balance_report": {
+        "label_balance_target": 645,
+        "before_rows": 2536,
+        "before_label_min": 31,
+        "before_label_max": 1773,
+        "before_label_median": 645.0,
+        "before_label_sd": 572.3390246905005,
+        "before_label_max_min_ratio": 57.193548387096776,
+        "before_count_joy": 739,
+        "before_count_sadness": 141,
+        "before_count_fear": 180,
+        "before_count_trust": 1051,
+        "before_count_surprise": 645,
+        "before_count_anticipation": 1773,
+        "before_count_disgust": 31,
+        "after_rows": 2880,
+        "after_label_min": 645,
+        "after_label_max": 968,
+        "after_label_median": 646.0,
+        "after_label_sd": 147.827533267104,
+        "after_label_max_min_ratio": 1.5007751937984497,
+        "after_count_joy": 968,
+        "after_count_sadness": 645,
+        "after_count_fear": 645,
+        "after_count_trust": 646,
+        "after_count_surprise": 968,
+        "after_count_anticipation": 881,
+        "after_count_disgust": 645
+      }
+    }
+  ],
+  "provenance": {
+    "git_commit_at_launch": "3201dbc3570e46671167b8ab2a00b50cb178567a",
+    "config": {
+      "path": "config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml",
+      "sha256": "44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2"
+    },
+    "base_jsonl": {
+      "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/datasets/perfume_text_dataset_v1.jsonl",
+      "sha256": "48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f"
+    },
+    "synthetic_3": {
+      "path": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+      "sha256": "c96f08081da4ba9a58a0a9ded856c68d61110cf2add218906a126198d1400715",
+      "rows": 2352,
+      "perfumes": 784,
+      "reviews_per_perfume": 3,
+      "review_indices": [
+        1,
+        2,
+        3
+      ],
+      "unique_normalized_texts": 2352,
+      "within_perfume_duplicate_rows": 0,
+      "cross_perfume_duplicate_groups": 0,
+      "positive_support": {
+        "joy": 312,
+        "sadness": 159,
+        "fear": 221,
+        "trust": 834,
+        "surprise": 774,
+        "anticipation": 1834,
+        "disgust": 23
+      }
+    },
+    "synthetic_6": {
+      "path": "outputs/synthetic_review_level_tests/emotion_rich_v2_6reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+      "sha256": "8395179651f31eca7b183cda651ca24caf85b443c21b52dc9ac223577f46c48c",
+      "rows": 4704,
+      "perfumes": 784,
+      "reviews_per_perfume": 6,
+      "review_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unique_normalized_texts": 4703,
+      "within_perfume_duplicate_rows": 2,
+      "cross_perfume_duplicate_groups": 0,
+      "positive_support": {
+        "joy": 434,
+        "sadness": 208,
+        "fear": 534,
+        "trust": 1649,
+        "surprise": 1435,
+        "anticipation": 2832,
+        "disgust": 118
+      }
+    },
+    "outer_manifest": {
+      "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+      "sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+    },
+    "inner_manifest": {
+      "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv",
+      "sha256": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d"
+    },
+    "runner_sha256": "4383d3ac86ce52db57ab12f3e402b104cb3adbc1adf32bb02b5bdceb41c84e5a",
+    "base_bert_runner_sha256": "602c2dc0ad1dd0ae12c2c4ba90851136b23930adc91cafa85d71dbf73c8acd3d",
+    "checkpoint": {
+      "configured_checkpoint": "monologg/bert-base-cased-goemotions-original",
+      "resolved_snapshot": "/Users/ece/.cache/huggingface/hub/models--monologg--bert-base-cased-goemotions-original/snapshots/13c44c849132f82bb61188d909a574badffb27a3",
+      "revision": "13c44c849132f82bb61188d909a574badffb27a3",
+      "files": {
+        "config.json": {
+          "sha256": "bb78405aa8c536f30b0f517f715a3474aa420a91118bbf8bf79c4b704dcd122b",
+          "bytes": 1666
+        },
+        "tokenizer_config.json": {
+          "sha256": "8327d5ec8fdafca3621ef26bf124a91bf1f9a0600e58263f16f9ee259c8fd0d9",
+          "bytes": 235
+        },
+        "special_tokens_map.json": {
+          "sha256": "b8a8c41fe8751a59725136c615752d3c109ea69d32b2dc355be42b1b459ec410",
+          "bytes": 182
+        },
+        "vocab.txt": {
+          "sha256": "061925b27f9870e8ad6f6c02405508d5380fbb8279f7a418a61a2ddd7fa55a11",
+          "bytes": 213448
+        },
+        "pytorch_model.bin": {
+          "sha256": "ab2b94588c862d96c040024c8a92e248b37445a2ac62f5b010a65e36806c3024",
+          "bytes": 433412096
+        }
+      }
+    },
+    "token_cache_fingerprint": "cce7760b9c71ef2df515e2bbff6da803a249b3f2ac9dbc4fe4756d3272f72f62",
+    "master_chunks": 9583,
+    "logical_units": 5488,
+    "smote_exclusion": "Not applicable to raw-text BERT: SMOTE interpolates continuous feature vectors, whereas token-ID sequences are discrete and interpolated embeddings would not correspond to observed review texts."
+  },
+  "artifacts": {
+    "predictions": "outputs/bert_source_grouped_experiments_v1/balancing/youtube_plus_synthetic_784x3_hybrid/oof_predictions.csv",
+    "per_label": "outputs/bert_source_grouped_experiments_v1/balancing/youtube_plus_synthetic_784x3_hybrid/per_label_metrics.csv"
+  }
+}
