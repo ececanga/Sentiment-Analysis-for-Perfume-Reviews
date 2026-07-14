@@ -1,0 +1,34 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 10
+    rankSpacing: 50
+---
+flowchart TD
+    A["Frozen perfume universe<br/>784 perfume targets"]
+
+    A --> B["YouTube benchmark rows<br/>perfume-level transcript features"]
+    A --> C["Synthetic review rows<br/>784x3 and 784x6 generated sets<br/>unlabeled at generation"]
+
+    B --> B1["YouTube feature matrix<br/>+ Gemini 3.1 Pro browser-based<br/>perfume-level labels"]
+    C --> C1["Synthetic feature matrix<br/>+ Gemini 3.1 Pro browser-based<br/>review-level labels"]
+
+    B1 --> D["YouTube-only setup<br/>train and test within YouTube folds"]
+    C1 --> E["Synthetic-only setup<br/>train and test within synthetic folds"]
+    B1 --> F["YouTube + synthetic setup<br/>YouTube training rows plus synthetic rows"]
+    C1 --> F
+
+    D --> G["Evaluate on held-out YouTube perfumes<br/>real-data baseline"]
+    F --> H["Evaluate on held-out YouTube perfumes<br/>augmentation test"]
+    E --> I["Evaluate on held-out synthetic rows<br/>synthetic corpus sanity check"]
+
+    G --> J["Report separately<br/>YouTube-only"]
+    H --> K["Report separately<br/>YouTube + synthetic"]
+    I --> L["Report separately<br/>synthetic-only"]
+
+    M["Balancing sensitivity analyses<br/>no balancing · hybrid · SMOTE"] -. applied within setup .-> D
+    M -. applied within setup .-> E
+    M -. applied within setup .-> F
+
+    N["Interpretation rule<br/>synthetic-only does not prove<br/>real YouTube generalization"] -. constrains .-> L

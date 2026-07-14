@@ -1,0 +1,27 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 25
+---
+flowchart TD
+    A["Frozen benchmark<br/>784 perfume-level rows"]
+    B["Group key<br/>perfume identifier"]
+
+    A --> B
+    B --> C["Assign 5 folds<br/>by perfume, not by transcript chunk"]
+
+    C --> D["For each fold<br/>hold out one perfume group split"]
+    D --> E["Training set<br/>remaining perfumes only"]
+    D --> F["Test set<br/>held-out perfumes only"]
+
+    E --> G["Fit preprocessing and model<br/>inside training fold"]
+    G --> H["Apply trained pipeline<br/>to held-out perfumes"]
+    F --> H
+
+    H --> I["Out-of-fold predictions<br/>for all 784 perfumes"]
+    I --> J["Evaluation<br/>macro-F1 · macro ROC-AUC · macro PR-AUC<br/>per-label diagnostics"]
+
+    K["Leakage-control rule<br/>same perfume never appears<br/>in both train and test"] -. enforced by .-> C
+    L["Thresholded metrics<br/>classification threshold: 0.3"] -. applied to .-> J

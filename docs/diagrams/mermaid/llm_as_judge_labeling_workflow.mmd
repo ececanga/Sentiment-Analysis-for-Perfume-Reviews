@@ -1,0 +1,22 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 25
+---
+flowchart TD
+    A["Annotation units<br/>YouTube perfume rows<br/>Synthetic review rows"]
+    B["Prompt packet<br/>text · emotion definitions · schema"]
+
+    A --> B
+
+    B --> C["Gemini 3.1 Pro<br/>browser-based labeling"]
+    C --> D["Structured label output"]
+
+    D --> E["Validation<br/>schema check · label normalization"]
+    E --> F["Reference-label table<br/>seven emotion targets"]
+
+    F --> G["Training and evaluation targets"]
+
+    H["Boundary<br/>model-based labels<br/>not human ground truth"] -. interpretation note .-> F

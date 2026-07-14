@@ -1,0 +1,27 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 25
+---
+flowchart TD
+    A["Review text sources<br/>YouTube transcripts: main dataset<br/>Synthetic reviews: extension"]
+    B["Text preparation and formatting"]
+
+    A --> B
+
+    B --> D["Feature extraction<br/>NRC · VAD · transformer emotion signals"]
+    D --> E[Unified engineered feature matrix]
+
+    B --> F["Gemini 3.1 Pro<br/>browser-based labeling"]
+    F --> G["Model-based reference labels<br/>seven emotion targets"]
+
+    E --> H["Supervised models<br/><b>Main:</b> Logistic Regression<br/><b>Comparisons:</b> XGBoost · Random Forest<br/>BERT · BiLSTM + Attention"]
+    G --> H
+
+    H --> I["Evaluation settings<br/>YouTube-only · synthetic-only · YouTube + synthetic<br/>5-fold CV · threshold: 0.3"]
+
+    I --> J["Metrics and diagnostics<br/>macro-F1 · macro ROC-AUC · macro PR-AUC"]
+
+    J --> K[Results and thesis reporting]

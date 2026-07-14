@@ -1,0 +1,24 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 10
+    rankSpacing: 50
+---
+flowchart TD
+    A["Engineered feature matrix<br/>NRC · VAD · Hartmann · Savani<br/>GoEmotions · Cardiff"]
+
+    A --> B["Logistic Regression coefficients<br/>one-vs-rest emotion models"]
+
+    B --> C["NRC interpretation<br/>lexical emotion evidence"]
+    B --> D["VAD interpretation<br/>valence · arousal · dominance"]
+    B --> E["Transformer interpretation<br/>contextual emotion probabilities"]
+
+    C --> F["Feature-family summary<br/>which signal groups support each label"]
+    D --> F
+    E --> F
+
+    F --> G["Per-label explanation<br/>joy · sadness · fear · trust<br/>surprise · anticipation · disgust"]
+    F --> H["Model diagnostics<br/>strong vs weak labels<br/>rare-label caution"]
+
+    I["Interpretation boundary<br/>coefficients explain model behavior<br/>not human causal emotion"] -. constrains .-> F
