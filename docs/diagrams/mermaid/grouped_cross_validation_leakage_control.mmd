@@ -23,5 +23,5 @@ flowchart TD
     H --> I["Out-of-fold predictions<br/>for all 784 perfumes"]
     I --> J["Evaluation<br/>macro-F1 · macro ROC-AUC · macro PR-AUC<br/>per-label diagnostics"]
 
-    K["Leakage-control rule<br/>same perfume never appears<br/>in both train and test"] -. enforced by .-> C
+    K["Source-isolation rule<br/>same perfume never appears<br/>in both train and test"] -. enforced by .-> C
     L["Thresholded metrics<br/>classification threshold: 0.3"] -. applied to .-> J

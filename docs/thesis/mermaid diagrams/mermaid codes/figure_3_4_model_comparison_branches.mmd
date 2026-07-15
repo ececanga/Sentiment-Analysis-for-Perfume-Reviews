@@ -15,7 +15,7 @@ flowchart TD
     B --> E["Classical comparisons<br/>XGBoost · Random Forest"]
     C --> F["Text-sequence comparisons<br/>BERT · BiLSTM + Attention"]
     C --> T["Simple learned baseline<br/>TF-IDF + Logistic Regression"]
-    A --> R["Non-learned diagnostics<br/>all-negative · all-positive<br/>train-fold prevalence"]
+    A --> R["Six non-learned diagnostics<br/>all-negative · all-positive · common labels<br/>train prevalence · uniform random · stratified random"]
 
     D --> G["Shared fold boundaries<br/>5-fold exact-source-grouped CV"]
     E --> G
@@ -23,7 +23,7 @@ flowchart TD
     T --> G
     R --> G
 
-    G --> H["Shared reporting metrics<br/>macro-F1 · macro ROC-AUC · macro average precision<br/>per-label counts and metrics"]
+    G --> H["Shared reporting metrics<br/>primary ranking: macro average precision<br/>primary thresholded: macro-F1 · secondary ranking: ROC-AUC<br/>per-label counts and metrics"]
 
     H --> I["Interpretation<br/>five primary model rows<br/>TF-IDF and rules remain baselines"]
 

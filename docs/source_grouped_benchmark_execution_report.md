@@ -3,6 +3,7 @@
 - Evidence cut-off: **2026-07-13 14:56:25 UTC**
 - Experiment: `gemini_browser_og784_source_grouped_v1`
 - Current status at cut-off: **completed and accepted; all five models, component-aware diagnostics, thesis exports, and the final audit gate passed**
+- Post-acceptance Phase 3 supplement: **completed 2026-07-15; the accepted experiment root remains unchanged**
 
 > **Defense boundary.** This report documents the completed leakage-repaired benchmark. The five-model comparison is accepted as final evidence for the narrowly defined exact-source-grouped evaluation. Acceptance does not convert the model-generated labels into human ground truth, establish channel-independent generalization, or remove the rare-label and giant-component limitations documented below.
 
@@ -310,11 +311,160 @@ The final audit receipt has `status: "completed"`, `checks.status: "passed"`, an
 
 Every regular file below the experiment root, except the checksum file itself, is anchored by the 95-entry `SHA256SUMS` manifest. The manifest passed full verification and has SHA-256 `11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852`. **Final benchmark acceptance is granted for the defense-bounded claim stated in this report.**
 
+### 11.4 Phase 3 post-acceptance diagnostics
+
+Phase 3 adds versioned diagnostics without modifying the accepted benchmark
+root or its receipts. The six-rule baseline supplement repeats the three
+accepted rules and adds always joy/trust/anticipation, deterministic uniform
+random scores, and deterministic train-prevalence-stratified random
+predictions.
+
+| Non-learned rule | Macro-F1 | Macro ROC-AUC | Macro average precision |
+|---|---:|---:|---:|
+| All-negative | 0.0000 | 0.5000 | 0.2808 |
+| All-positive | 0.3523 | 0.5000 | 0.2808 |
+| Always joy, trust, and anticipation | 0.3253 | 0.5000 | 0.2808 |
+| Train-fold prevalence | 0.3253 | 0.3930 | 0.2681 |
+| Uniform-random scores | 0.3025 | 0.4830 | 0.2824 |
+| Stratified-random predictions | 0.2895 | 0.5010 | 0.2806 |
+
+The all-metric supplement reuses the accepted five OOF matrices and the same
+359 component draws for all models, with 2,000 repetitions and seed 42. Its
+macro-F1 rows reproduce the accepted paired table exactly. It additionally
+reports model-level intervals and paired differences for macro average
+precision and macro ROC-AUC. All ten macro-F1 intervals cross zero. Five
+average-precision intervals exclude zero: Logistic Regression, Random Forest,
+XGBoost, and BERT each exceed BiLSTM, and Random Forest exceeds XGBoost. Two
+ROC-AUC intervals exclude zero: XGBoost and BERT each exceed BiLSTM. BERT's
+average-precision differences from the three classical models all cross zero,
+so the primary ranking analysis does not establish BERT as an overall winner.
+
+| Supplemental artifact | SHA-256 |
+|---|---|
+| `source_grouped_extended_baselines_v1/extended_baseline_summary.csv` | `4e079de861d8ece029f155ccd285d6adaad87ab0ca0c488c20f3c27934a0c501` |
+| `source_grouped_extended_baselines_v1/REPORT.json` | `986460558af67a68142a03fe3214242e3e5b2167ad2ac99495e5135c2ffcedf2` |
+| `source_grouped_all_metric_bootstrap_v1/model_metric_bootstrap_intervals.csv` | `653716822e48de0c9de8a151c745e190151f8cba2c87bf8c4dfa4dcde7697dda` |
+| `source_grouped_all_metric_bootstrap_v1/paired_model_metric_bootstrap_differences.csv` | `adda4bc734e82364a90fac7e9be80bf08c3758fccb1d05e2982d6587619832ad` |
+| `source_grouped_all_metric_bootstrap_v1/REPORT.json` | `7f2b025b293b72e2091a2ec6cde710c2b027806ef57242750f17b42a8b300320` |
+
+### 11.5 Phase 5 supervised feature-family analysis
+
+Phase 5 reuses the final class-weighted Logistic Regression pipeline and the
+frozen source-grouped outer folds to compare 15 representations: the full
+58-feature hybrid, eight family-only or grouped variants, and six
+leave-one-family-out variants. The full-hybrid reproduction gate passed with
+zero truth or prediction mismatches and a maximum probability difference of
+`1.11e-16`. All 525 label-fold fits completed without convergence warnings.
+The main thesis reports only the full model and six leave-one-family-out rows;
+the family-only, permutation, coefficient, and complete bootstrap results are
+kept here and in the versioned supplement to avoid overloading the central
+defense narrative.
+
+The pooled point estimates do not support uniform superiority of the full
+fusion. Hartmann-only has the largest seven-label macro average-precision point
+estimate (`0.3565` versus `0.3145` for the full hybrid), but this ordering is
+driven strongly by fear, which has only three positives. When fear is excluded,
+the full hybrid is `0.3616`, Hartmann-only is `0.3581`, and full minus
+GoEmotions is the pooled point leader at `0.3812`. Under component-equal
+six-label weighting, the full hybrid exceeds Hartmann-only by `0.0368`, with a
+95% interval of `[0.0021, 0.0906]`. Hartmann-only is therefore not treated as
+an overall winner.
+
+Hartmann has the clearest fear-robust leave-one-family-out signal. The
+component-equal full-minus-no-Hartmann macro average-precision difference is
+`0.0217 [0.0037, 0.0462]` with all seven labels and
+`0.0180 [0.0003, 0.0383]` without fear. The seven-label GoEmotions and Cardiff
+leave-out intervals exclude zero, but their fear-excluded intervals do not.
+No full-versus-variant macro-F1 interval excludes zero. All 14 contrasts are
+unadjusted post-hoc comparisons, and the bootstrap conditions on the fitted
+OOF models, so these findings remain exploratory.
+
+Thirty held-out family-permutation repetitions and foldwise standardized
+coefficient diagnostics support the same bounded interpretation. Hartmann's
+mean macro-average-precision drop remains positive after fear is excluded
+(`0.0075` pooled and `0.0274` component-equal). Savani changes from a negative
+seven-label mean drop to a positive fear-excluded mean drop, so it is described
+as label-sensitive or potentially redundant rather than harmful. Median signed
+coefficient-vector Spearman correlations range from `0.677` to `0.888`, while
+median top-10 Jaccard overlap ranges from `0.250` to `0.538`. Coefficients and
+permutations describe predictive reliance under correlated features, not
+causal importance.
+
+| Phase 5 artifact | SHA-256 |
+|---|---|
+| `source_grouped_feature_ablation_v1/ablation_summary.csv` | `ae7c14ce92347b2d9301c756bfefe5f71c59a275347ddd18dd380d049c9e4364` |
+| `source_grouped_feature_ablation_v1/paired_bootstrap_vs_full.csv` | `ea0f0069ec22bcb673bfee1ae90ca27f6129404c3586be067c60dac2d5b46bd3` |
+| `source_grouped_feature_ablation_v1/fear_excluded_ablation_summary.csv` | `7d574ae70cd5fcacaf60bb7c360ff36f3ff020c3a580fa3afb43147dac135327` |
+| `source_grouped_feature_ablation_v1/fear_excluded_paired_bootstrap_vs_full.csv` | `94ed2cc45470b9b9c89777ed7337fce2d6549fc5e987150e41ab71643059e458` |
+| `source_grouped_feature_ablation_v1/family_permutation_importance.csv` | `c88dbe8f71413f0d23a607c1d69a9ae4aa0db5ae0258906e6d226330fb14b01c` |
+| `source_grouped_feature_ablation_v1/fear_excluded_family_permutation_importance.csv` | `7a05b36ce04226d239ad8704f0f3ca539d64918a2fdd4d0a01dc2bee320b566f` |
+| `source_grouped_feature_ablation_v1/coefficient_vector_stability.csv` | `d05799d57abe2178a801c3a3976c432fbf397e1baaecbffc2da81bfb573b6cc5` |
+| `source_grouped_feature_ablation_v1/REPORT.json` | `43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2` |
+| `source_grouped_feature_ablation_v1/SHA256SUMS` | `929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd` |
+
+### 11.6 Phase 6 weighted synthetic-augmentation LR contrast
+
+Phase 6 replaces the earlier Logistic Regression augmentation comparison with
+a prespecified source-grouped contrast. Both conditions use the accepted
+class-weighted Logistic Regression, the same frozen 58 engineered features,
+and the same outer folds. In the augmented condition, each real YouTube
+perfume has training weight one and its three synthetic reviews have weight
+one third each, so the synthetic block cannot receive three times the training
+influence merely because it has three rows. These weights are applied to both
+feature standardization and classifier fitting. Synthetic rows matching any
+held-out perfume are excluded, and evaluation is performed only on the 784
+real held-out YouTube perfumes.
+
+| Condition | Pooled macro-F1 | Pooled macro average precision | Pooled macro ROC-AUC |
+|---|---:|---:|---:|
+| YouTube only | 0.3592 | 0.3145 | 0.5473 |
+| YouTube + weighted synthetic x3 | 0.3737 | 0.3505 | 0.5372 |
+
+The paired component bootstrap uses the same 359 source-component draws for
+both conditions, with 2,000 repetitions and seed 42. Positive differences
+favor augmentation.
+
+| Label scope | Metric | Augmented − control | 95% component interval | Excludes zero |
+|---|---|---:|---:|---|
+| Seven labels | Macro-F1 | +0.0227 | [+0.0011, +0.0466] | Yes |
+| Seven labels | Macro average precision | +0.1202 | [−0.0366, +0.1402] | No |
+| Seven labels | Macro ROC-AUC | +0.0081 | [−0.0195, +0.0358] | No |
+| Fear excluded | Macro-F1 | +0.0159 | [−0.0037, +0.0338] | No |
+| Fear excluded | Macro average precision | −0.0164 | [−0.0516, +0.0099] | No |
+| Fear excluded | Macro ROC-AUC | +0.0049 | [−0.0273, +0.0367] | No |
+
+The seven-label macro-F1 result is positive, but the broader evidence does not
+establish a robust general augmentation benefit. The primary macro-average-
+precision interval includes zero, and fear has only three positive real
+examples. Fear's component-equal average precision changes from 0.0480 to
+0.9882; after fear is removed, the average-precision point difference is
+slightly negative and all three intervals include zero. The defensible Phase 6
+conclusion is therefore that weighted synthetic augmentation produced some
+better point estimates, but its benefit is uncertain and highly sensitive to
+an ultra-rare label. The experiment remains a mixed-granularity sensitivity
+because real rows are perfume aggregates while synthetic rows are individual
+generated reviews.
+
+The validation gate found zero cross-fold source components, zero held-out
+synthetic overlap, and exact fixed-threshold agreement between the accepted
+control OOF predictions and the control replay. The largest replay probability
+difference was `8.03e-05`, within the prespecified `1e-4` tolerance. All five
+new tests and 22 selected source-grouped regression tests passed, and a full
+rerun reproduced the output manifest byte for byte.
+
+| Phase 6 artifact | SHA-256 |
+|---|---|
+| `config/evaluation_config_source_grouped_weighted_synthetic_lr_v1.yaml` | `8091a6ea23c1d9b4061c72d1550e7524635b2cd747b0ea2cebd9b2b3bbe4b09f` |
+| `source_grouped_weighted_synthetic_lr_v1/condition_summary.csv` | `8f85156012388cf9ef8a19d2f337404a1ab235682323ad9fc84cb614f5492e63` |
+| `source_grouped_weighted_synthetic_lr_v1/paired_component_bootstrap_differences.csv` | `3dd352dd0e641bebffc6c865932ee8617b34b5f02713970c4c48c70aa96b00a6` |
+| `source_grouped_weighted_synthetic_lr_v1/REPORT.json` | `858846deec6ddbf5c40aabdfc0103263734155ec5407ce7f81e5f80568816cb0` |
+| `source_grouped_weighted_synthetic_lr_v1/SHA256SUMS` | `adf975d439804fb183a6e5d2850c9ba0bff0c62293422f32808e71014904f278` |
+
 ## 12. Defense-ready final conclusion
 
 Phase 2 corrected the demonstrated exact-source leakage in the archived perfume-level folds. All five accepted models use the same source-component outer folds, the same source-safe inner manifest, the same frozen inputs appropriate to their model family, and independently checked OOF provenance. The deep models use only transcript excerpts after the pre-acceptance metadata amendment.
 
-At the pooled perfume level, BERT has the largest macro-F1 (0.4029) and macro average precision (0.3590) point estimates, while XGBoost has the largest macro ROC-AUC point estimate (0.5683). With every source component given equal total weight, BERT has the largest point estimate for all three metrics. These rankings are descriptive: all ten paired component-cluster bootstrap 95% confidence intervals cross zero, so the evidence does not justify declaring any model superior.
+At the pooled perfume level, BERT has the largest primary macro average-precision (0.3590) and primary thresholded macro-F1 (0.4029) point estimates, while XGBoost has the largest secondary macro ROC-AUC point estimate (0.5683). With every source component given equal total weight, BERT has the largest point estimate for all three metrics. These rankings are descriptive: all ten paired macro-F1 confidence intervals cross zero, and BERT's primary ranking differences from the three classical models also cross zero. The expanded bootstrap supports a few narrower ranking differences, mostly against BiLSTM, but does not justify declaring one universally superior model.
 
 The baseline comparison also calls for restraint. Only BERT and Logistic Regression exceed the all-positive macro-F1 comparator, and Logistic Regression's margin is 0.0070. Random Forest and XGBoost show ranking signal but do not beat that comparator at the fixed threshold. BiLSTM + Attention does not exceed the all-positive macro-F1, 0.5 ROC-AUC, or prevalence average-precision references in this run.
 
@@ -336,6 +486,7 @@ One reproducibility qualification remains explicit. The accepted BERT runner use
 - Legacy overlap diagnostic: `outputs/gemini_browser_og784_source_grouped_v1/source_audit/legacy_fold_overlap_diagnostic.json`
 - Fold support: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_balance.csv`
 - Baselines: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/dummy_prevalence_baselines/`
+- Extended six-rule baselines: `outputs/source_grouped_extended_baselines_v1/`
 - All-model metrics: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/`
 - All-model OOF predictions: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/`
 - Deep summary: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/datasets/perfume_text_dataset_v1_summary.json`
@@ -344,6 +495,9 @@ One reproducibility qualification remains explicit. The accepted BERT runner use
 - Outer-fold per-label metrics: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/outer_fold_per_label_metrics.csv`
 - Component-equal metrics: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/component_weighted_model_metrics.csv`
 - Paired component bootstrap: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/paired_component_bootstrap_macro_f1.csv`
+- All-metric component bootstrap: `outputs/source_grouped_all_metric_bootstrap_v1/`
+- Supervised feature-family analysis: `outputs/source_grouped_feature_ablation_v1/`
+- Weighted synthetic-augmentation LR contrast: `outputs/source_grouped_weighted_synthetic_lr_v1/`
 - Diagnostics provenance report: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/source_grouped_diagnostics_report.json`
 - Final thesis comparison: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/final_model_comparison_for_thesis.csv`
 - Final five-model figures: `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/figures/all_models_*.png`

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "diagnostic_id": "source_grouped_extended_baselines_v1",
+  "accepted_benchmark_modified": false,
+  "evaluation_unit": "perfume_id",
+  "split_design": "frozen five-fold exact-source-grouped OOF",
+  "seed": 42,
+  "threshold": 0.3,
+  "baselines": [
+    {
+      "baseline": "all_negative",
+      "description": "Assign probability 0.0 to every label and perfume."
+    },
+    {
+      "baseline": "all_positive",
+      "description": "Assign probability 1.0 to every label and perfume."
+    },
+    {
+      "baseline": "always_common_labels",
+      "description": "Assign probability 1.0 to joy, trust, and anticipation and 0.0 to the four rarer labels."
+    },
+    {
+      "baseline": "train_fold_prevalence",
+      "description": "Assign each held-out row the label prevalence calculated only from its complementary outer-training folds."
+    },
+    {
+      "baseline": "uniform_random",
+      "description": "Assign independent deterministic-seed Uniform(0,1) scores to every held-out perfume and label."
+    },
+    {
+      "baseline": "stratified_random",
+      "description": "Draw independent deterministic-seed binary scores using label prevalence estimated only from the complementary outer-training folds."
+    }
+  ],
+  "inputs": {
+    "feature_label_csv": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+    "feature_label_csv_sha256": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "fold_manifest_csv": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+    "fold_manifest_csv_sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+  },
+  "summary": [
+    {
+      "baseline": "all_negative",
+      "n_rows": 784,
+      "n_labels": 7,
+      "seed": 42,
+      "threshold": 0.3,
+      "macro_f1": 0.0,
+      "micro_f1": 0.0,
+      "hamming_loss": 0.2807944606413994,
+      "macro_roc_auc": 0.5,
+      "macro_average_precision": 0.2807944606413994,
+      "mean_predicted_labels_per_perfume": 0.0
+    },
+    {
+      "baseline": "all_positive",
+      "n_rows": 784,
+      "n_labels": 7,
+      "seed": 42,
+      "threshold": 0.3,
+      "macro_f1": 0.3522509127017444,
+      "micro_f1": 0.4384691990325793,
+      "hamming_loss": 0.7192055393586005,
+      "macro_roc_auc": 0.5,
+      "macro_average_precision": 0.2807944606413994,
+      "mean_predicted_labels_per_perfume": 7.0
+    },
+    {
+      "baseline": "always_common_labels",
+      "n_rows": 784,
+      "n_labels": 7,
+      "seed": 42,
+      "threshold": 0.3,
+      "macro_f1": 0.32526525872063633,
+      "micro_f1": 0.7521191882866683,
+      "hamming_loss": 0.17583819241982507,
+      "macro_roc_auc": 0.5,
+      "macro_average_precision": 0.2807944606413994,
+      "mean_predicted_labels_per_perfume": 3.0
+    },
+    {
+      "baseline": "train_fold_prevalence",
+      "n_rows": 784,
+      "n_labels": 7,
+      "seed": 42,
+      "threshold": 0.3,
+      "macro_f1": 0.32526525872063633,
+      "micro_f1": 0.7521191882866683,
+      "hamming_loss": 0.17583819241982507,
+      "macro_roc_auc": 0.39299094677418,
+      "macro_average_precision": 0.2680685601536129,
+      "mean_predicted_labels_per_perfume": 3.0
+    },
+    {
+      "baseline": "uniform_random",
+      "n_rows": 784,
+      "n_labels": 7,
+      "seed": 42,
+      "threshold": 0.3,
+      "macro_f1": 0.3024609331383196,
+      "micro_f1": 0.3935340022296544,
+      "hamming_loss": 0.5947521865889213,
+      "macro_roc_auc": 0.48301963312620216,
+      "macro_average_precision": 0.2823555207247837,
+      "mean_predicted_labels_per_perfume": 4.899234693877551
+    },
+    {
+      "baseline": "stratified_random",
+      "n_rows": 784,
+      "n_labels": 7,
+      "seed": 42,
+      "threshold": 0.3,
+      "macro_f1": 0.2895320318656823,
+      "micro_f1": 0.6217516843118384,
+      "hamming_loss": 0.214832361516035,
+      "macro_roc_auc": 0.5009677778352366,
+      "macro_average_precision": 0.2805891152672272,
+      "mean_predicted_labels_per_perfume": 2.010204081632653
+    }
+  ],
+  "artifacts": {
+    "extended_baseline_summary.csv": {
+      "sha256": "4e079de861d8ece029f155ccd285d6adaad87ab0ca0c488c20f3c27934a0c501"
+    },
+    "extended_baseline_per_label.csv": {
+      "sha256": "3837ea5410c6e9609db3d0f3c70884d5c6a147f797236f5810c915382e717ce4"
+    },
+    "extended_baseline_fold_diagnostics.csv": {
+      "sha256": "fe5c7094258035c16a67b2be921401a7761a62d0fa280b231af3b419b1ecb2e8"
+    },
+    "extended_baseline_oof_predictions.csv": {
+      "sha256": "30bc9d85e396aea8806d3a6b1fc74719e1f32259ea669ce41d53102a918b8f0a"
+    }
+  }
+}

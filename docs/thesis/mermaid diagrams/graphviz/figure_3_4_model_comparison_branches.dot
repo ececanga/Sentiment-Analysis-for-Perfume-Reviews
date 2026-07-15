@@ -10,9 +10,9 @@ digraph G {
   E [label="Classical comparisons\nXGBoost · Random Forest", fillcolor="#E9F7EF"];
   F [label="Text-sequence comparisons\nBERT · BiLSTM + Attention", fillcolor="#FFF4E5"];
   T [label="Simple learned baseline\nTF-IDF + Logistic Regression", fillcolor="#FFF4E5"];
-  R [label="Non-learned diagnostics\nall-negative · all-positive\ntrain-fold prevalence", fillcolor="#F5F5F5"];
+  R [label="Six non-learned diagnostics\nall-negative · all-positive · common labels\ntrain prevalence · uniform random · stratified random", fillcolor="#F5F5F5"];
   G [label="Shared five-fold\nexact-source-grouped manifests", fillcolor="#EEF3FF"];
-  H [label="Shared reporting\nmacro-F1 · macro ROC-AUC · macro average precision\nper-label counts and metrics", fillcolor="#EEF3FF"];
+  H [label="Shared reporting\nprimary ranking: macro average precision\nprimary thresholded: macro-F1 · secondary ranking: ROC-AUC\nper-label counts and metrics", fillcolor="#EEF3FF"];
   I [label="Interpretation\nfive primary model rows\nTF-IDF and rules remain baselines", fillcolor="#F7EEFF"];
   J [label="Fixed threshold 0.3\nfor primary thresholded metrics", fillcolor="#F5F5F5"];
 

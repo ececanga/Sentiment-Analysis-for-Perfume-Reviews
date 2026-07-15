@@ -1,0 +1,97 @@
+{
+  "accepted_benchmark_modified": false,
+  "artifacts": {
+    "model_metric_bootstrap_intervals.csv": {
+      "bytes": 2368,
+      "sha256": "653716822e48de0c9de8a151c745e190151f8cba2c87bf8c4dfa4dcde7697dda"
+    },
+    "paired_model_metric_bootstrap_differences.csv": {
+      "bytes": 6363,
+      "sha256": "adda4bc734e82364a90fac7e9be80bf08c3758fccb1d05e2982d6587619832ad"
+    }
+  },
+  "bootstrap_reps": 2000,
+  "confidence_level": 0.95,
+  "details": {
+    "component_ids_sha256": "f093d240cbb1c1eb237577ec7c5542e9225efdb63d128712647ba6751c4a6959",
+    "defined_label_counts": {
+      "component_equal_macro_average_precision": {
+        "bootstrap_max": 7,
+        "bootstrap_min": 6,
+        "point": 7
+      },
+      "component_equal_macro_f1": {
+        "bootstrap_max": 7,
+        "bootstrap_min": 7,
+        "point": 7
+      },
+      "component_equal_macro_roc_auc": {
+        "bootstrap_max": 7,
+        "bootstrap_min": 6,
+        "point": 7
+      }
+    },
+    "n_source_components": 359
+  },
+  "diagnostic_id": "source_grouped_all_metric_bootstrap_v1",
+  "inputs": {
+    "feature_label_csv": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+      "sha256": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976"
+    },
+    "inner_manifest_csv": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv",
+      "sha256": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d"
+    },
+    "oof_bert": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bert_oof.csv",
+      "sha256": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d"
+    },
+    "oof_bilstm_attention": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bilstm_attention_oof.csv",
+      "sha256": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624"
+    },
+    "oof_logistic_regression": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv",
+      "sha256": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1"
+    },
+    "oof_random_forest": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/random_forest_oof.csv",
+      "sha256": "3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32"
+    },
+    "oof_xgboost": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/xgboost_oof.csv",
+      "sha256": "310055d3283c7c6ccf5b26b17516587e74b31d3dfc49b9d00cea911f3918b949"
+    },
+    "outer_manifest_csv": {
+      "path": "/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+      "sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+    }
+  },
+  "method": "paired source-group cluster bootstrap with identical component draws for all models; each sampled component contributes total weight one",
+  "metrics": [
+    "component_equal_macro_f1",
+    "component_equal_macro_roc_auc",
+    "component_equal_macro_average_precision"
+  ],
+  "model_ids": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost",
+    "bert",
+    "bilstm_attention"
+  ],
+  "official_labels": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "quantile_method": "linear percentile interval",
+  "schema_version": 1,
+  "seed": 42,
+  "status": "passed"
+}

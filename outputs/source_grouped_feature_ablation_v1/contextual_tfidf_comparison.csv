@@ -1,0 +1,3 @@
+comparison_role,model,macro_average_precision,macro_f1,macro_roc_auc,component_equal_macro_average_precision,component_equal_macro_f1,component_equal_macro_roc_auc,class_weight
+external_text_baseline_not_feature_ablation,Full hybrid balanced LR,0.3144693825465339,0.3592487768979632,0.547251423837486,0.3564340928799542,0.3575443933844236,0.5892210134579824,balanced
+external_text_baseline_not_feature_ablation,TF-IDF + unweighted LR,0.30954994193648727,0.3254236762764179,0.54088737388743,0.3119634677701023,0.32957987102610425,0.5384364695104441,none

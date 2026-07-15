@@ -1,6 +1,6 @@
 <!--
 Date Created: 2026-07-13
-Date Last Modified: 2026-07-13
+Date Last Modified: 2026-07-15
 -->
 
 # Source-Grouped Evaluation Protocol v2
@@ -300,8 +300,10 @@ the full corpus, and reviewer style can remain in transcript language. The
 defense-safe claim is exact video/transcript isolation, accompanied by
 component-aware sensitivity analysis—not complete domain independence.
 
-Required metrics are macro-F1 at threshold 0.3, macro ROC-AUC, and macro average
-precision from pooled OOF predictions over all seven official labels. Per-label
+Required metrics are macro average precision, macro-F1 at threshold 0.3, and
+macro ROC-AUC from pooled OOF predictions over all seven official labels. Macro
+average precision is the primary ranking comparison, macro-F1 is the primary
+thresholded comparison, and macro ROC-AUC is a secondary ranking comparison. Per-label
 support, precision, recall, F1, ROC-AUC, and average precision are required
 diagnostics. The historical artifact key `macro_pr_auc` may be retained for
 compatibility, but tables and prose must label the quantity macro average
@@ -321,6 +323,32 @@ each source component given equal total weight and deterministic paired
 component-cluster bootstrap intervals for model differences. These sensitivity
 results govern superiority claims; ordinary row bootstrap and five-fold
 standard deviations are not valid substitutes.
+
+## Phase 3 post-acceptance diagnostic supplement
+
+The accepted benchmark root and its workflow receipts remain immutable. Phase
+3 adds two versioned supplemental roots derived from the frozen inputs, outer
+manifest, and accepted OOF predictions:
+
+- `outputs/source_grouped_extended_baselines_v1/`; and
+- `outputs/source_grouped_all_metric_bootstrap_v1/`.
+
+The extended baseline root repeats the accepted three rules and adds three
+post-hoc diagnostics: always predict joy, trust, and anticipation; assign
+independent Uniform(0,1) scores; and draw independent binary scores from each
+label's complementary-training-fold prevalence. Random draws use deterministic
+fold-specific streams derived from seed 42. These additions expand the
+non-learned comparison to six rules without changing the five primary model
+rows or their accepted artifacts.
+
+The all-metric bootstrap root uses the same 359-component draws for all five
+models, 2,000 repetitions, seed 42, inverse-component-size row weights, and 95%
+percentile intervals. It reports model-level intervals and all ten paired model
+differences for component-equal macro-F1, macro average precision, and macro
+ROC-AUC. Macro-F1 retains the fixed seven-label denominator. Ranking metrics
+average the labels defined in each resample and record that denominator; a
+resample may contain six rather than seven defined labels when all positives
+for an ultra-rare label are absent.
 
 ## Acceptance checks
 

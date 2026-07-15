@@ -1,0 +1,11 @@
+fold_id,condition,test_youtube_rows,train_youtube_rows,train_synthetic_rows,train_perfumes,youtube_effective_weight,synthetic_effective_weight,total_effective_weight,held_out_synthetic_rows_excluded,test_perfume_overlap_in_training
+1,youtube_only,334,450,0,450,450,0,450,1002,0
+2,youtube_only,113,671,0,671,671,0,671,339,0
+3,youtube_only,113,671,0,671,671,0,671,339,0
+4,youtube_only,112,672,0,672,672,0,672,336,0
+5,youtube_only,112,672,0,672,672,0,672,336,0
+1,youtube_plus_weighted_synthetic_784x3,334,450,1350,450,450,450,900,1002,0
+2,youtube_plus_weighted_synthetic_784x3,113,671,2013,671,671,671,1342,339,0
+3,youtube_plus_weighted_synthetic_784x3,113,671,2013,671,671,671,1342,339,0
+4,youtube_plus_weighted_synthetic_784x3,112,672,2016,672,672,672,1344,336,0
+5,youtube_plus_weighted_synthetic_784x3,112,672,2016,672,672,672,1344,336,0

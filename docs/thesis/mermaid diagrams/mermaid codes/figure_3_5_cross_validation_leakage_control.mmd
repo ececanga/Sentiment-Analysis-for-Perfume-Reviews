@@ -24,6 +24,6 @@ flowchart TD
     H --> I["Out-of-fold predictions<br/>for all 784 perfumes"]
     I --> J["Evaluation<br/>macro-F1 · macro ROC-AUC · macro average precision<br/>per-label and component-aware diagnostics"]
 
-    K["Leakage-control rule<br/>shared video, transcript, or transitive source identity<br/>must remain on one side of every split"] -. enforced by .-> D
+    K["Source-isolation rule<br/>shared video, transcript, or transitive source identity<br/>must remain on one side of every split"] -. enforced by .-> D
     M["Largest component: 334 perfumes<br/>fold sizes: 334 · 113 · 113 · 112 · 112"] -. disclosed at .-> D
     L["Thresholded metrics<br/>classification threshold: 0.3"] -. applied to .-> J

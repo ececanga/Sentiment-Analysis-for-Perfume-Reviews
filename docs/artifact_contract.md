@@ -1,18 +1,21 @@
 <!--
 Date Created: 2026-04-13 23:02:44+03:00
-Date Last Modified: 2026-07-13
+Date Last Modified: 2026-07-15
 -->
 
 # Artifact Contract
 
 ## Contract versions and roots
 
-The repository has two benchmark contracts:
+The repository has two benchmark contracts, two versioned Phase 3 diagnostic supplements, and one Phase 5 supervised feature-analysis supplement:
 
 | Contract | Root | Status |
 | --- | --- | --- |
-| perfume-only v1 | `outputs/model_benchmark/` and historical branch-specific equivalents | legacy/non-final for the thesis source-leakage repair |
-| source-grouped v2 | `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/` | prospective candidate-final benchmark |
+| perfume-only v1 | `outputs/model_benchmark/` and historical branch-specific equivalents | legacy/non-final; not thesis evidence |
+| source-grouped v2 | `outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/` | accepted final benchmark |
+| extended baselines v1 | `outputs/source_grouped_extended_baselines_v1/` | post-acceptance supplemental diagnostics |
+| all-metric bootstrap v1 | `outputs/source_grouped_all_metric_bootstrap_v1/` | post-acceptance supplemental uncertainty |
+| supervised feature ablation v1 | `outputs/source_grouped_feature_ablation_v1/` | post-acceptance supplemental representation analysis |
 
 The v2 root is isolated from every legacy root. Explicit Phase 2 reruns may
 replace model-specific files only inside the configured v2 benchmark root and
@@ -164,6 +167,96 @@ requires `pred_<label> == (prob_<label> >= 0.3)`, and numerically checks each
 comparison-table row. Inner-validation threshold optimization is a secondary
 sensitivity analysis, not probability calibration and not the primary decision
 rule.
+
+## Phase 3 supplemental artifact contract
+
+The supplemental roots do not replace, rewrite, or satisfy any accepted v2
+workflow receipt. They must bind to the frozen 784-row feature-label table and
+outer manifest; the uncertainty supplement must additionally validate all five
+accepted OOF files and the shared inner manifest.
+
+`outputs/source_grouped_extended_baselines_v1/` requires:
+
+- `extended_baseline_summary.csv`, with exactly the six rules all-negative,
+  all-positive, always-common-labels, train-fold prevalence, uniform random,
+  and stratified random;
+- `extended_baseline_per_label.csv`;
+- `extended_baseline_fold_diagnostics.csv`;
+- `extended_baseline_oof_predictions.csv`, containing all 784 perfume IDs and
+  the frozen fold and source-group IDs;
+- `REPORT.json`; and
+- `SHA256SUMS`.
+
+The threshold is fixed at 0.3 and random rules use seed 42. The stratified rule
+may estimate probabilities only from the complementary outer training folds.
+
+`outputs/source_grouped_all_metric_bootstrap_v1/` requires:
+
+- `model_metric_bootstrap_intervals.csv`, with 15 rows: five models by three
+  headline metrics;
+- `paired_model_metric_bootstrap_differences.csv`, with 30 rows: ten pairs by
+  three headline metrics;
+- `REPORT.json`; and
+- `SHA256SUMS`.
+
+Both tables must record 2,000 paired source-component repetitions, seed 42,
+359 source components, 95% percentile intervals, and the defined-label count.
+The macro-F1 rows must reproduce the accepted component-equal point estimates
+and all ten accepted paired macro-F1 differences exactly. Macro average
+precision is the primary ranking metric, macro-F1 at threshold 0.3 is the
+primary thresholded metric, and macro ROC-AUC is a secondary ranking metric.
+
+## Phase 5 supervised feature-analysis contract
+
+`outputs/source_grouped_feature_ablation_v1/` is supplemental and must never
+replace or modify the accepted source-grouped benchmark. Its canonical run is
+fixed to 2,000 bootstrap repetitions, 30 held-out permutation repetitions,
+seed 42, confidence level 0.95, threshold 0.3, the accepted outer manifest,
+and the frozen 58-column numeric feature schema. A non-empty canonical output
+root may be replaced only when every existing file is owned by and matches its
+current `SHA256SUMS` entry.
+
+The analysis requires exactly 15 balanced Logistic Regression variants: the
+full hybrid, NRC only, VAD only, NRC plus VAD, each of the four contextual
+families separately, all contextual families, and six leave-one-family-out
+variants. Each variant must produce a 784-row OOF CSV with the frozen perfume,
+fold, source-component, truth, probability, and thresholded-prediction fields.
+Before any OOF file is written, the full 58-feature replay must reproduce the
+accepted Logistic Regression truth and predictions and match its probabilities
+within `1e-12`.
+
+Required top-level artifacts include:
+
+- `feature_columns_by_variant.csv`;
+- `ablation_summary.csv`, `ablation_per_label.csv`, and
+  `ablation_fold_diagnostics.csv`;
+- `model_metric_bootstrap_intervals.csv` and
+  `paired_bootstrap_vs_full.csv`;
+- the three `fear_excluded_*ablation*` / bootstrap tables;
+- `family_permutation_importance.csv`, its repeat-level table, its per-label
+  aggregate and repeat-level tables, and both fear-excluded permutation tables;
+- standardized coefficient, feature-stability, family-stability, and
+  coefficient-vector-stability tables;
+- contextual TF-IDF comparison and paired-bootstrap tables;
+- the two generated figures;
+- `REPORT.json`; and
+- `SHA256SUMS`.
+
+Bootstrap tables must use paired source-component resampling, equal total
+weight per sampled component, shared draws across variants, percentile
+intervals with linear quantile interpolation, and explicit defined-label
+counts. The seven-label analysis remains primary; the six-label fear-excluded
+tables are a declared rare-label sensitivity. Family permutation jointly
+shuffles all columns in one family across perfume rows within each held-out
+outer fold. Its 2.5% and 97.5% repeat quantiles are Monte Carlo ranges rather
+than confidence intervals. Coefficients are the standardized foldwise
+Logistic Regression coefficients and are associational diagnostics.
+
+`REPORT.json` must record the accepted-input hashes, exact hashes of the Phase
+5 runner and imported training utilities, the full-hybrid reproduction gate,
+the bootstrap and permutation definitions, output-path safety checks, and the
+accepted benchmark checksum-manifest hash before and after the run. The two
+accepted-manifest hashes must be identical.
 
 ## Legacy v1 root
 
