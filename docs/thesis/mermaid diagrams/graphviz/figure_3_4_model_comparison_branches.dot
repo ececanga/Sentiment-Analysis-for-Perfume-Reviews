@@ -1,0 +1,37 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.28, ranksep=0.40, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#3155C6", penwidth=2, fontname="Arial", fontsize=13, margin="0.16,0.10"];
+  edge [color="#555555", penwidth=1.5, arrowsize=0.7];
+
+  A [label="Frozen 784-perfume benchmark\nGemini 3.1 Pro browser-based labels", fillcolor="#EEF3FF"];
+  B [label="Engineered feature matrix\nNRC · VAD · Hartmann · Savani\nGoEmotions · Cardiff"];
+  C [label="Transcript-only text\nFinal Transcript excerpts"];
+  D [label="Main thesis model\nLogistic Regression", fillcolor="#E9F7EF"];
+  E [label="Classical comparisons\nXGBoost · Random Forest", fillcolor="#E9F7EF"];
+  F [label="Text-sequence comparisons\nBERT · BiLSTM + Attention", fillcolor="#FFF4E5"];
+  T [label="Simple learned baseline\nTF-IDF + Logistic Regression", fillcolor="#FFF4E5"];
+  R [label="Non-learned diagnostics\nall-negative · all-positive\ntrain-fold prevalence", fillcolor="#F5F5F5"];
+  G [label="Shared five-fold\nexact-source-grouped manifests", fillcolor="#EEF3FF"];
+  H [label="Shared reporting\nmacro-F1 · macro ROC-AUC · macro average precision\nper-label counts and metrics", fillcolor="#EEF3FF"];
+  I [label="Interpretation\nfive primary model rows\nTF-IDF and rules remain baselines", fillcolor="#F7EEFF"];
+  J [label="Fixed threshold 0.3\nfor primary thresholded metrics", fillcolor="#F5F5F5"];
+
+  A -> B;
+  A -> C;
+  A -> R;
+  B -> D;
+  B -> E;
+  C -> F;
+  C -> T;
+  D -> G;
+  E -> G;
+  F -> G;
+  T -> G;
+  R -> G;
+  G -> H;
+  J -> H [style=dashed];
+  H -> I;
+
+  {rank=same; B; C; R}
+  {rank=same; D; E; F; T}
+}

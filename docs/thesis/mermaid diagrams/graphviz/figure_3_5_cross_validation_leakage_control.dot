@@ -1,0 +1,32 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.30, ranksep=0.38, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#3155C6", penwidth=2, fontname="Arial", fontsize=12, margin="0.15,0.09"];
+  edge [color="#555555", penwidth=1.5, arrowsize=0.7];
+
+  A [label="Frozen inputs\n4,881 transcript rows · 784 perfumes", fillcolor="#EEF3FF"];
+  B [label="Exact source keys\nvalid YouTube video ID\nnormalized transcript SHA-256"];
+  C [label="Transitive connected components\n359 atomic source groups", fillcolor="#E9F7EF"];
+  D [label="Five outer folds\nsource groups never cross", fillcolor="#EEF3FF"];
+  E [label="Outer training components"];
+  F [label="Held-out test components", fillcolor="#FFF4E5"];
+  V [label="Frozen inner manifest\nsource-isolated train / validation"];
+  G [label="Fit learned preprocessing, vocabulary,\nand model inside training partitions"];
+  H [label="Apply frozen pipeline\nto held-out source components"];
+  I [label="Out-of-fold probabilities\nall 784 perfumes"];
+  J [label="Primary evaluation\nmacro-F1 at 0.3 · macro ROC-AUC\nmacro average precision · per-label diagnostics", fillcolor="#EEF3FF"];
+  K [label="Leakage rule\nshared video, transcript, or transitive source identity\nmust remain on one side of every split", fillcolor="#F5F5F5"];
+  M [label="Topology disclosed\nlargest component: 334 perfumes\nfold sizes: 334 · 113 · 113 · 112 · 112", fillcolor="#F5F5F5"];
+  N [label="Component-aware sensitivity\ninverse-size weighting · paired cluster bootstrap", fillcolor="#F7EEFF"];
+
+  A -> B -> C -> D;
+  D -> E;
+  D -> F;
+  E -> V -> G -> H;
+  F -> H;
+  H -> I -> J -> N;
+  K -> D [style=dashed];
+  M -> D [style=dashed];
+
+  {rank=same; K; D; M}
+  {rank=same; E; F}
+}

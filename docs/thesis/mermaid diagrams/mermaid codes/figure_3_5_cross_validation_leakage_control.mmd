@@ -6,22 +6,24 @@ config:
     rankSpacing: 25
 ---
 flowchart TD
-    A["Frozen benchmark<br/>784 perfume-level rows"]
-    B["Group key<br/>perfume identifier"]
+    A["Frozen benchmark<br/>4,881 transcript rows · 784 perfumes"]
+    B["Exact source identities<br/>valid YouTube video ID<br/>normalized transcript SHA-256"]
 
     A --> B
-    B --> C["Assign 5 folds<br/>by perfume, not by transcript chunk"]
+    B --> C["Undirected transitive closure<br/>359 atomic source components"]
+    C --> D["Assign 5 outer folds<br/>no source component may cross"]
 
-    C --> D["For each fold<br/>hold out one perfume group split"]
-    D --> E["Training set<br/>remaining perfumes only"]
-    D --> F["Test set<br/>held-out perfumes only"]
+    D --> E["Outer training components"]
+    D --> F["Held-out test components"]
 
-    E --> G["Fit preprocessing and model<br/>inside training fold"]
-    G --> H["Apply trained pipeline<br/>to held-out perfumes"]
+    E --> V["Source-group-isolated<br/>inner train/validation manifest"]
+    V --> G["Fit learned preprocessing,<br/>vocabulary, and model<br/>inside training partitions"]
+    G --> H["Apply frozen pipeline<br/>to held-out components"]
     F --> H
 
     H --> I["Out-of-fold predictions<br/>for all 784 perfumes"]
-    I --> J["Evaluation<br/>macro-F1 · macro ROC-AUC · macro PR-AUC<br/>per-label diagnostics"]
+    I --> J["Evaluation<br/>macro-F1 · macro ROC-AUC · macro average precision<br/>per-label and component-aware diagnostics"]
 
-    K["Leakage-control rule<br/>same perfume never appears<br/>in both train and test"] -. enforced by .-> C
+    K["Leakage-control rule<br/>shared video, transcript, or transitive source identity<br/>must remain on one side of every split"] -. enforced by .-> D
+    M["Largest component: 334 perfumes<br/>fold sizes: 334 · 113 · 113 · 112 · 112"] -. disclosed at .-> D
     L["Thresholded metrics<br/>classification threshold: 0.3"] -. applied to .-> J

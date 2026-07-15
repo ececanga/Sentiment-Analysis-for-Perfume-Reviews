@@ -1,0 +1,44 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 30
+---
+flowchart TD
+    A["Benchmark observation<br/><b>vetiver nocturne absolu extrait de parfum</b><br/>10 usable YouTube transcript rows"]
+
+    A --> B["Repaired evaluation assignment<br/>Outer fold: 4<br/>Exact-source component: 4 perfumes"]
+    A --> C["Scent-focused excerpt<br/>'slightly sweet medicinal herbs'"]
+
+    C --> D["Excerpt-level analysis<br/>NRC match: sweet → anticipation, joy,<br/>positive, surprise, trust<br/>Mean VAD: 0.213, -0.296, -0.221"]
+
+    A --> E["Full perfume-level feature row<br/>NRC · VAD · Hartmann · Savani<br/>GoEmotions · Cardiff"]
+
+    E --> F["Gemini reference labels<br/>Positive: joy, trust, anticipation<br/>Negative: sadness, fear, surprise, disgust"]
+
+    B --> G["Source-grouped Logistic Regression<br/>accepted out-of-fold prediction"]
+    E --> G
+    F --> G
+
+    G --> H["OOF probabilities<br/>joy: 0.673850<br/>trust: 0.603986<br/>anticipation: 0.602763<br/>sadness: 0.027227<br/>surprise: 0.019994<br/>fear: 0.006614<br/>disgust: 0.002589"]
+
+    H --> I{"Primary threshold<br/>0.3"}
+    I -->|"Probability ≥ 0.3"| J["Positive predictions<br/>joy · trust · anticipation"]
+    I -->|"Probability &lt; 0.3"| K["Negative predictions<br/>sadness · fear · surprise · disgust"]
+
+    L["Accepted artifact<br/>source-grouped Logistic Regression OOF file"] -. source .-> G
+
+    classDef input fill:#E8F1FF,stroke:#2563EB,color:#111827
+    classDef feature fill:#ECFDF5,stroke:#059669,color:#111827
+    classDef label fill:#F3E8FF,stroke:#7C3AED,color:#111827
+    classDef output fill:#F1F5F9,stroke:#334155,color:#111827
+    classDef positive fill:#D1FAE5,stroke:#07877F,color:#111827
+    classDef negative fill:#F3F4F6,stroke:#94A3B8,color:#111827
+
+    class A,B input
+    class C,D,E feature
+    class F label
+    class G,H,I output
+    class J positive
+    class K negative

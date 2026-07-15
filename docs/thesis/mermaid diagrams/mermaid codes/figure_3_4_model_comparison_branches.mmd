@@ -9,18 +9,22 @@ flowchart TD
     A["Frozen 784-perfume benchmark<br/>Gemini 3.1 Pro browser-based labels"]
 
     A --> B["Engineered feature matrix<br/>NRC · VAD · Hartmann · Savani<br/>GoEmotions · Cardiff"]
-    A --> C["Perfume-level text representation<br/>deterministic review text input"]
+    A --> C["Transcript-only text<br/>deterministic Final Transcript excerpts"]
 
     B --> D["Main thesis model<br/><b>Logistic Regression</b>"]
     B --> E["Classical comparisons<br/>XGBoost · Random Forest"]
     C --> F["Text-sequence comparisons<br/>BERT · BiLSTM + Attention"]
+    C --> T["Simple learned baseline<br/>TF-IDF + Logistic Regression"]
+    A --> R["Non-learned diagnostics<br/>all-negative · all-positive<br/>train-fold prevalence"]
 
-    D --> G["Shared fold boundaries<br/>5-fold perfume-level CV"]
+    D --> G["Shared fold boundaries<br/>5-fold exact-source-grouped CV"]
     E --> G
     F --> G
+    T --> G
+    R --> G
 
-    G --> H["Shared reporting metrics<br/>macro-F1 · macro ROC-AUC · macro PR-AUC<br/>per-label precision, recall, F1"]
+    G --> H["Shared reporting metrics<br/>macro-F1 · macro ROC-AUC · macro average precision<br/>per-label counts and metrics"]
 
-    H --> I["Interpretation<br/>LR is the main model<br/>comparisons contextualize performance"]
+    H --> I["Interpretation<br/>five primary model rows<br/>TF-IDF and rules remain baselines"]
 
     J["Reporting threshold<br/>0.3 for thresholded metrics"] -. applied to .-> H
