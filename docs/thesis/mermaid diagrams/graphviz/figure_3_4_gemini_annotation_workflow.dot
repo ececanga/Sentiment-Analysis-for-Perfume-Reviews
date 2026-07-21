@@ -1,0 +1,19 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.32, ranksep=0.42, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#3155C6", penwidth=2, fontname="Arial", fontsize=13, margin="0.16,0.10"];
+  edge [color="#555555", penwidth=1.5, arrowsize=0.7];
+
+  A [label="Annotation units\nYouTube perfume rows\nSynthetic review rows", fillcolor="#EEF3FF"];
+  B [label="Prompt packet\ntext · emotion definitions · schema"];
+  C [label="Gemini 3.1 Pro\nbrowser-based labeling", fillcolor="#F7EEFF"];
+  D [label="Structured label output"];
+  E [label="Validation\nschema check · label normalization", fillcolor="#E9F7EF"];
+  F [label="Reference-label table\nseven emotion targets", fillcolor="#F7EEFF"];
+  G [label="Training and evaluation targets", fillcolor="#EEF3FF"];
+  H [label="Interpretation boundary\nmodel-based labels\nnot human ground truth", fillcolor="#FFF1F2", color="#E11D48"];
+
+  A -> B -> C -> D -> E -> F -> G;
+  H -> F [style=dashed, color="#E11D48"];
+
+  {rank=same; E; H}
+}

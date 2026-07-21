@@ -1,0 +1,68 @@
+digraph weighted_synthetic_augmentation {
+    graph [
+        rankdir=TB,
+        bgcolor="transparent",
+        pad=0.25,
+        nodesep=0.30,
+        ranksep=0.42,
+        splines=ortho,
+        fontname="Arial"
+    ];
+    node [
+        shape=box,
+        style="rounded,filled",
+        color="#334155",
+        fillcolor="#F8FAFC",
+        fontcolor="#111827",
+        fontname="Arial",
+        fontsize=14,
+        margin="0.18,0.12",
+        penwidth=1.4
+    ];
+    edge [color="#64748B", penwidth=1.4, arrowsize=0.75];
+
+    A [label=<Frozen universe<BR/><B>784 perfume identities</B>>, fillcolor="#E8F1FF", color="#2563EB"];
+    B [label=<Five exact-source-grouped outer folds<BR/>359 source components>, fillcolor="#E8F1FF", color="#2563EB"];
+    C [label=<Outer-training perfume identities>, fillcolor="#EFF6FF", color="#3B82F6"];
+    D [label=<Held-out YouTube perfumes<BR/>test rows only>, fillcolor="#FFF7ED", color="#EA580C"];
+
+    E [label=<YouTube training rows<BR/>perfume-level · weight 1>, fillcolor="#ECFDF5", color="#059669"];
+    F [label=<784×3 synthetic training reviews<BR/>review-level · weight 1/3 each<BR/>held-out perfume identities excluded>, fillcolor="#F3E8FF", color="#7C3AED"];
+
+    G [label=<Control condition<BR/><B>YouTube-only training</B>>, fillcolor="#ECFDF5", color="#059669"];
+    H [label=<Augmented condition<BR/><B>YouTube + weighted synthetic</B>>, fillcolor="#F3E8FF", color="#7C3AED"];
+
+    I [label=<Same engineered LR pipeline<BR/>weighted scaler · class-weighted classifier<BR/>threshold 0.3>, fillcolor="#F1F5F9", color="#475569"];
+    J [label=<Same engineered LR pipeline<BR/>weighted scaler · class-weighted classifier<BR/>threshold 0.3>, fillcolor="#F1F5F9", color="#475569"];
+
+    K [label=<Control OOF predictions<BR/>held-out YouTube only>, fillcolor="#FEF3C7", color="#D97706"];
+    L [label=<Augmented OOF predictions<BR/>held-out YouTube only>, fillcolor="#FEF3C7", color="#D97706"];
+    M [label=<Paired comparison<BR/>pooled metrics + 2,000 source-component<BR/>bootstrap repetitions>, fillcolor="#E0F2FE", color="#0284C7"];
+    N [label=<Report seven-label analysis<BR/>and fear-excluded sensitivity>, fillcolor="#D1FAE5", color="#07877F"];
+    O [label=<Interpretation boundary<BR/>equal total training influence per perfume<BR/>does not make real and synthetic units equivalent>, fillcolor="#FFF1F2", color="#E11D48"];
+
+    A -> B;
+    B -> C;
+    B -> D;
+    C -> E;
+    C -> F;
+    E -> G;
+    E -> H;
+    F -> H;
+    G -> I;
+    H -> J;
+    I -> K;
+    J -> L;
+    D -> K;
+    D -> L;
+    K -> M;
+    L -> M;
+    M -> N;
+    O -> M [style=dashed, color="#E11D48", constraint=false];
+
+    {rank=same; C; D}
+    {rank=same; E; F}
+    {rank=same; G; H}
+    {rank=same; I; J}
+    {rank=same; K; L}
+}

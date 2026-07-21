@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-07-19T10:56:50.780803+00:00",
+  "input_jsonl": "outputs/gemini_judge/judge_g25pro_v1/model_benchmark/datasets/perfume_text_dataset_v1.jsonl",
+  "packet_dir": "data/annotation_packets/og784_gemini_browser_pro_review_level",
+  "rows": 784,
+  "max_excerpts": 2,
+  "max_chars_per_excerpt": 360,
+  "excerpt_count_distribution": {
+    "2": 736,
+    "1": 48
+  },
+  "items_with_detected_name_or_anchor_match": 610,
+  "items_without_detected_name_or_anchor_match": 174,
+  "items_without_detected_name_or_anchor_match_rate": 0.22193877551020408,
+  "all_packets_match_selected_source": true,
+  "spot_check": {
+    "population": "items_without_detected_name_or_anchor_match",
+    "sample_size": 20,
+    "seed": 42,
+    "all_sampled_packets_match_selected_source": true,
+    "scope": "Traceability from packet excerpts to stored selected source chunks only; not a judgment of topical relevance or label correctness."
+  }
+}

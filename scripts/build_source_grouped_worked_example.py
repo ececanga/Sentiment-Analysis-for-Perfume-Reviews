@@ -348,7 +348,7 @@ def build_probability_figure(example: dict[str, Any]) -> None:
         axis.text(
             max(value + 0.010, 0.018),
             bar.get_y() + bar.get_height() / 2,
-            f"{value:.3f}",
+            f"{value:.6f}",
             va="center",
             fontsize=12,
             color="#111827",

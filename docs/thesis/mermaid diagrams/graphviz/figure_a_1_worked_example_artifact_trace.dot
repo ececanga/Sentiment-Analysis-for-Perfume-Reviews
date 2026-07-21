@@ -1,0 +1,33 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.28, ranksep=0.40, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#3155C6", penwidth=2, fontname="Arial", fontsize=12, margin="0.15,0.09"];
+  edge [color="#555555", penwidth=1.5, arrowsize=0.7];
+
+  A [label="Benchmark observation\nvetiver nocturne absolu extrait de parfum\n10 usable YouTube transcript rows", fillcolor="#EEF3FF"];
+  B [label="Final evaluation assignment\nouter fold 4\nexact-source component: 4 perfumes", fillcolor="#EEF3FF"];
+  C [label="Scent-focused excerpt\n‘slightly sweet medicinal herbs’", fillcolor="#E9F7EF"];
+  D [label="Excerpt-level analysis\nNRC match: sweet → anticipation, joy,\npositive, surprise, trust\nmean VAD: 0.213, -0.296, -0.221", fillcolor="#E9F7EF"];
+  E [label="Full perfume-level feature row\nNRC · VAD · Hartmann · Savani\nGoEmotions · Cardiff", fillcolor="#E9F7EF"];
+  F [label="Gemini reference labels\npositive: joy, trust, anticipation\nnegative: sadness, fear, surprise, disgust", fillcolor="#F7EEFF"];
+  L [label="Accepted artifact\nsource-grouped Logistic Regression OOF file", fillcolor="#F5F5F5"];
+  G [label="Source-grouped Logistic Regression\naccepted out-of-fold prediction"];
+  H [label="OOF probabilities\njoy 0.673850 · trust 0.603986 · anticipation 0.602763\nsadness 0.027227 · surprise 0.019994\nfear 0.006614 · disgust 0.002589"];
+  I [label="Primary threshold\n0.3", shape=diamond, style="filled", fillcolor="#F1F5F9", color="#334155"];
+  J [label="Positive predictions\njoy · trust · anticipation", fillcolor="#D1FAE5", color="#07877F"];
+  K [label="Negative predictions\nsadness · fear · surprise · disgust", fillcolor="#F3F4F6", color="#94A3B8"];
+
+  A -> B;
+  A -> C -> D;
+  A -> E -> F;
+  B -> G;
+  E -> G;
+  F -> G;
+  L -> G [style=dashed];
+  G -> H -> I;
+  I -> J;
+  I -> K;
+
+  {rank=same; B; D; E}
+  {rank=same; F; L}
+  {rank=same; J; K}
+}

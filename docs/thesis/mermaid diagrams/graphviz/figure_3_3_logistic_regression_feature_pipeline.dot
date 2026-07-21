@@ -1,0 +1,23 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.30, ranksep=0.38, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#3155C6", penwidth=2, fontname="Arial", fontsize=12, margin="0.15,0.09"];
+  edge [color="#555555", penwidth=1.5, arrowsize=0.7];
+
+  A [label="Perfume-level transcript text\none row per perfume", fillcolor="#EEF3FF"];
+  B [label="Feature extraction\nNRC · VAD · Hartmann · Savani\nGoEmotions · Cardiff", fillcolor="#E9F7EF"];
+  C [label="Unified engineered feature matrix\nlexicon + affect + transformer signals", fillcolor="#E9F7EF"];
+  D [label="Fold-specific preprocessing\nscaling inside each training fold", fillcolor="#EEF3FF"];
+  E [label="Gemini 3.1 Pro\nbrowser-based reference labels", fillcolor="#F7EEFF"];
+  F [label="Seven binary targets\njoy · sadness · fear · trust\nsurprise · anticipation · disgust", fillcolor="#F7EEFF"];
+  G [label="One-vs-rest Logistic Regression\nseparate classifier per emotion"];
+  H [label="Predicted emotion probabilities"];
+  I [label="Thresholded multi-label output\nmain threshold: 0.3"];
+  J [label="Evaluation and interpretation\nmacro-F1 · macro ROC-AUC · macro average precision\nfeature-family coefficients", fillcolor="#EEF3FF"];
+  K [label="Anger excluded\nnear-zero support", fillcolor="#F5F5F5"];
+
+  A -> B -> C -> D -> G -> H -> I -> J;
+  E -> F -> G;
+  K -> F [style=dashed];
+
+  {rank=same; C; E; K}
+}

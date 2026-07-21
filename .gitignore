@@ -71,5 +71,6 @@ notes/Nov3MeetingQsAnswered.pages
 # Local leftovers from exploratory runs; keep out of commits
 archive/local_experiments_2026-06-16/
 archive/thesis_current_draft_benchmark_*/payload/
+docs/thesis/archive/*
 data/raw/YouTube_Perfume_Reviews_Phase2A_FullyFormatted.csv
 data/raw/YouTube_Perfume_Reviews_Phase2A_Partial.csv

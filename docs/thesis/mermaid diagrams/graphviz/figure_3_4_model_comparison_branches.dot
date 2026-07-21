@@ -1,5 +1,5 @@
 digraph G {
-  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.28, ranksep=0.40, fontname="Arial"];
+  graph [rankdir=TB, bgcolor="white", pad=0.2, nodesep=0.28, ranksep=0.40, fontname="Arial", size="15,7.84!", ratio=fill];
   node [shape=box, style="rounded,filled", fillcolor="white", color="#3155C6", penwidth=2, fontname="Arial", fontsize=13, margin="0.16,0.10"];
   edge [color="#555555", penwidth=1.5, arrowsize=0.7];
 
@@ -7,13 +7,14 @@ digraph G {
   B [label="Engineered feature matrix\nNRC · VAD · Hartmann · Savani\nGoEmotions · Cardiff"];
   C [label="Transcript-only text\nFinal Transcript excerpts"];
   D [label="Main thesis model\nLogistic Regression", fillcolor="#E9F7EF"];
-  E [label="Classical comparisons\nXGBoost · Random Forest", fillcolor="#E9F7EF"];
-  F [label="Text-sequence comparisons\nBERT · BiLSTM + Attention", fillcolor="#FFF4E5"];
-  T [label="Simple learned baseline\nTF-IDF + Logistic Regression", fillcolor="#FFF4E5"];
-  R [label="Six non-learned diagnostics\nall-negative · all-positive · common labels\ntrain prevalence · uniform random · stratified random", fillcolor="#F5F5F5"];
+  E [label="Engineered-feature comparison\nXGBoost", fillcolor="#E9F7EF"];
+  F [label="Direct-text comparison\nBERT", fillcolor="#FFF4E5"];
+  S [label="Supplemental classical model\nRandom Forest", fillcolor="#F5F5F5"];
+  U [label="Supplemental sequence model\nBiLSTM + Attention", fillcolor="#F5F5F5"];
+  R [label="Three non-learned baselines\nall-negative · all-positive\ntrain-fold prevalence", fillcolor="#F5F5F5"];
   G [label="Shared five-fold\nexact-source-grouped manifests", fillcolor="#EEF3FF"];
   H [label="Shared reporting\nprimary ranking: macro average precision\nprimary thresholded: macro-F1 · secondary ranking: ROC-AUC\nper-label counts and metrics", fillcolor="#EEF3FF"];
-  I [label="Interpretation\nfive primary model rows\nTF-IDF and rules remain baselines", fillcolor="#F7EEFF"];
+  I [label="Interpretation hierarchy\ncentral RQ3: LR · XGBoost · BERT\nRandom Forest · BiLSTM: supplemental\nthree non-learned baselines", fillcolor="#F7EEFF"];
   J [label="Fixed threshold 0.3\nfor primary thresholded metrics", fillcolor="#F5F5F5"];
 
   A -> B;
@@ -21,17 +22,23 @@ digraph G {
   A -> R;
   B -> D;
   B -> E;
+  B -> S;
   C -> F;
-  C -> T;
+  C -> U;
+  D -> S [style=invis];
+  E -> R [style=invis];
+  F -> U [style=invis];
   D -> G;
   E -> G;
   F -> G;
-  T -> G;
+  S -> G;
+  U -> G;
   R -> G;
   G -> H;
   J -> H [style=dashed];
   H -> I;
 
-  {rank=same; B; C; R}
-  {rank=same; D; E; F; T}
+  {rank=same; B; C}
+  {rank=same; D; E; F}
+  {rank=same; S; U; R}
 }

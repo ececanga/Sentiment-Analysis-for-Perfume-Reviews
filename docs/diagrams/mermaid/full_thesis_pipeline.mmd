@@ -17,11 +17,11 @@ flowchart TD
     B --> F["Gemini 3.1 Pro<br/>browser-based labeling"]
     F --> G["Model-based reference labels<br/>seven emotion targets"]
 
-    E --> H["Supervised models<br/><b>Main:</b> Logistic Regression<br/><b>Comparisons:</b> XGBoost · Random Forest<br/>BERT · BiLSTM + Attention"]
+    E --> H["Supervised model roles<br/><b>Main:</b> Logistic Regression<br/><b>Comparisons:</b> XGBoost · BERT<br/><b>Supplemental:</b> Random Forest · BiLSTM + Attention"]
     G --> H
 
-    H --> I["Evaluation settings<br/>YouTube-only · synthetic-only · YouTube + synthetic<br/>5-fold CV · threshold: 0.3"]
+    H --> I["Evaluation settings<br/>exact-source-grouped 5-fold OOF<br/>YouTube-only and weighted synthetic extension<br/>threshold: 0.3"]
 
-    I --> J["Metrics and diagnostics<br/>macro-F1 · macro ROC-AUC · macro PR-AUC"]
+    I --> J["Metrics and diagnostics<br/>macro average precision · macro-F1 · macro ROC-AUC<br/>paired component uncertainty"]
 
     J --> K[Results and thesis reporting]

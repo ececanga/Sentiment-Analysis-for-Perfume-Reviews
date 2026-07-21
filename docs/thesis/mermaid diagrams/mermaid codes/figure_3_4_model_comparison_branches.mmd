@@ -12,19 +12,21 @@ flowchart TD
     A --> C["Transcript-only text<br/>deterministic Final Transcript excerpts"]
 
     B --> D["Main thesis model<br/><b>Logistic Regression</b>"]
-    B --> E["Classical comparisons<br/>XGBoost · Random Forest"]
-    C --> F["Text-sequence comparisons<br/>BERT · BiLSTM + Attention"]
-    C --> T["Simple learned baseline<br/>TF-IDF + Logistic Regression"]
-    A --> R["Six non-learned diagnostics<br/>all-negative · all-positive · common labels<br/>train prevalence · uniform random · stratified random"]
+    B --> E["Engineered-feature comparison<br/><b>XGBoost</b>"]
+    C --> F["Direct-text comparison<br/><b>BERT</b>"]
+    B --> S["Supplemental classical model<br/>Random Forest"]
+    C --> U["Supplemental sequence model<br/>BiLSTM + Attention"]
+    A --> R["Three non-learned baselines<br/>all-negative · all-positive<br/>train-fold prevalence"]
 
     D --> G["Shared fold boundaries<br/>5-fold exact-source-grouped CV"]
     E --> G
     F --> G
-    T --> G
+    S --> G
+    U --> G
     R --> G
 
     G --> H["Shared reporting metrics<br/>primary ranking: macro average precision<br/>primary thresholded: macro-F1 · secondary ranking: ROC-AUC<br/>per-label counts and metrics"]
 
-    H --> I["Interpretation<br/>five primary model rows<br/>TF-IDF and rules remain baselines"]
+    H --> I["Interpretation hierarchy<br/>central RQ3: LR · XGBoost · BERT<br/>Random Forest · BiLSTM: supplemental<br/>three non-learned baselines"]
 
     J["Reporting threshold<br/>0.3 for thresholded metrics"] -. applied to .-> H

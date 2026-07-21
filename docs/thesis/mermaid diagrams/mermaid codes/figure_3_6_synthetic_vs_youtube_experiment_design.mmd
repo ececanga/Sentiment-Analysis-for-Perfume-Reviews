@@ -6,31 +6,29 @@ config:
     rankSpacing: 50
 ---
 flowchart TD
-    A["Frozen perfume universe<br/>784 perfume targets"]
+    A["Frozen universe<br/><b>784 perfume identities</b>"]
+    A --> B["Five exact-source-grouped outer folds<br/>359 source components"]
 
-    A --> B["YouTube benchmark rows<br/>perfume-level transcript features"]
-    A --> C["Synthetic review rows<br/>784x3 and 784x6 generated sets<br/>unlabeled at generation"]
-    X["Context-term output<br/>local sensory hints<br/>not model features"]
+    B --> C["Outer-training perfume identities"]
+    B --> D["Held-out YouTube perfumes<br/>test rows only"]
 
-    B --> B1["YouTube feature matrix<br/>+ Gemini 3.1 Pro browser-based<br/>perfume-level labels"]
-    X -. supports generation .-> C
-    C --> C1["Synthetic feature matrix<br/>+ Gemini 3.1 Pro browser-based<br/>review-level labels"]
+    C --> E["YouTube training rows<br/>perfume-level · weight 1"]
+    C --> F["784x3 synthetic training reviews<br/>review-level · weight 1/3 each<br/>held-out perfume identities excluded"]
 
-    B1 --> D["YouTube-only setup<br/>train and test within YouTube folds"]
-    C1 --> E["Synthetic-only setup<br/>train and test within synthetic folds"]
-    B1 --> F["YouTube + synthetic setup<br/>YouTube training rows plus synthetic rows"]
-    C1 --> F
+    E --> G["Control condition<br/>YouTube-only training"]
+    E --> H["Augmented condition<br/>YouTube + weighted synthetic"]
+    F --> H
 
-    D --> G["Evaluate on held-out YouTube perfumes<br/>real-data baseline"]
-    F --> H["Evaluate on held-out YouTube perfumes<br/>augmentation test"]
-    E --> I["Evaluate on held-out synthetic rows<br/>synthetic corpus sanity check"]
+    G --> I["Same engineered LR pipeline<br/>weighted scaler · class-weighted classifier<br/>threshold 0.3"]
+    H --> J["Same engineered LR pipeline<br/>weighted scaler · class-weighted classifier<br/>threshold 0.3"]
 
-    G --> J["Report separately<br/>YouTube-only"]
-    H --> K["Report separately<br/>YouTube + synthetic"]
-    I --> L["Report separately<br/>synthetic-only"]
+    D --> K["Control OOF predictions<br/>held-out YouTube only"]
+    D --> L["Augmented OOF predictions<br/>held-out YouTube only"]
+    I --> K
+    J --> L
 
-    M["Balancing sensitivity checks<br/>no balancing · hybrid · SMOTE"] -. applied within setup .-> D
-    M -. applied within setup .-> E
-    M -. applied within setup .-> F
+    K --> M["Paired comparison<br/>pooled metrics + 2,000 source-component<br/>bootstrap repetitions"]
+    L --> M
+    M --> N["Report seven-label analysis<br/>and fear-excluded sensitivity"]
 
-    N["Interpretation rule<br/>synthetic-only does not prove<br/>real YouTube generalization"] -. constrains .-> L
+    O["Interpretation boundary<br/>equal total training influence per perfume<br/>does not make real and synthetic units equivalent"] -. constrains .-> M

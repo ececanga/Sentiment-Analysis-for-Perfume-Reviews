@@ -1,0 +1,57 @@
+digraph ContextTerms {
+  graph [
+    rankdir=TB,
+    bgcolor="white",
+    pad="0.35",
+    nodesep="0.42",
+    ranksep="0.72",
+    splines=ortho,
+    fontname="Arial",
+    fontsize=27,
+    labelloc="t",
+    label="Supporting Context-Term Extraction\nQualitative analysis and synthetic sensory hints only"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fontname="Arial",
+    fontsize=18,
+    color="#526A78",
+    penwidth=2.0,
+    fillcolor="#F4F8FA",
+    margin="0.22,0.16",
+    width=1.9,
+    height=1.0
+  ];
+
+  edge [
+    color="#526A78",
+    penwidth=2.2,
+    arrowsize=0.8
+  ];
+
+  transcript [label="Canonical\ntranscript text", fillcolor="#E8F2F7"];
+  anchor [label="Detect a predefined\nemotion anchor\n(e.g., uplifting)", fillcolor="#FDECEC", color="#C9342F"];
+  window [label="Collect the four\ncontext words on\neach side", fillcolor="#FFF5D9", color="#A97B18"];
+  filter [label="Remove basic\nstopwords and\nshort tokens", fillcolor="#F2F0FA", color="#66589A"];
+  aggregate [label="Count frequent\ncontext terms\nby perfume", fillcolor="#EAF6ED", color="#3B7D4A"];
+
+  { rank=same; transcript; anchor; window; }
+  { rank=same; filter; aggregate; }
+  transcript -> anchor -> window;
+  window -> filter;
+  filter -> aggregate;
+
+  support [
+    label="SUPPORTING OUTPUT ONLY\nDomain-language inspection  •  Perfume-specific sensory hints for synthetic reviews\nExcluded from the final 58-feature supervised matrix",
+    width=7.2,
+    height=1.0,
+    fontsize=18,
+    fillcolor="#FFF9DE",
+    color="#C7A72A",
+    penwidth=2.2
+  ];
+
+  aggregate -> support;
+}
