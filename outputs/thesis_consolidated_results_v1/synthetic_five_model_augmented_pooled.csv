@@ -1,0 +1,6 @@
+model_order,model_id,model_name,input_branch,condition,synthetic_training_reviews_per_perfume,evaluation_rows,threshold,macro_f1,macro_average_precision,macro_roc_auc
+1,logistic_regression,Logistic Regression,58 structured features,youtube_plus_weighted_synthetic_784x3,3,784,0.3,0.373657752322,0.35049685616,0.537232898196
+2,xgboost,XGBoost,58 structured features,youtube_plus_weighted_synthetic_784x3,3,784,0.3,0.335875663385,0.310829080036,0.598176423081
+3,random_forest,Random Forest,58 structured features,youtube_plus_weighted_synthetic_784x3,3,784,0.3,0.324711334265,0.31449383675,0.573095935038
+4,bert,BERT,review text,youtube_plus_weighted_synthetic_784x3,3,784,0.3,0.331563293656,0.320981707266,0.526733808559
+5,bilstm_attention,BiLSTM with Attention,review text,youtube_plus_weighted_synthetic_784x3,3,784,0.3,0.34659347998,0.277151855123,0.449015081808

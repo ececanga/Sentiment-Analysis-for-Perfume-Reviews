@@ -1,0 +1,38 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 28
+    rankSpacing: 34
+---
+flowchart TD
+    A["784 perfume records"]
+    B["Keep perfumes from the same video<br/>or identical transcript together"]
+    C["Divide the groups into five folds"]
+
+    A --> B --> C
+
+    C --> D["Use four folds for training<br/>and validation"]
+    C --> E["Keep one fold aside for testing"]
+
+    D --> F["Fit preprocessing and the model<br/>using training data only"]
+
+    F --> G["Predict emotions for the<br/>held-out test fold"]
+    E --> G
+
+    G --> H["Repeat until every fold<br/>has been used for testing"]
+    H --> I["Evaluate each model using<br/>all held-out predictions"]
+
+    N["Source-grouping rule:<br/>related perfumes always stay<br/>on the same side of a split"] -.-> C
+
+    classDef data fill:#EAF1FF,stroke:#3155C6,stroke-width:2px,color:#172033;
+    classDef train fill:#E9F7EF,stroke:#3B7D4A,stroke-width:2px,color:#172033;
+    classDef test fill:#FFF4E5,stroke:#D97706,stroke-width:2px,color:#172033;
+    classDef result fill:#F3EEFF,stroke:#7656B3,stroke-width:2px,color:#172033;
+    classDef note fill:#FFF9DE,stroke:#C7A72A,stroke-width:2px,color:#172033;
+
+    class A,B,C data;
+    class D,F train;
+    class E,G test;
+    class H,I result;
+    class N note;

@@ -1,0 +1,6 @@
+model_order,model_id,model_name,input_branch,evaluation_rows,threshold,macro_f1,macro_average_precision,macro_roc_auc,source_condition
+1,logistic_regression,Logistic Regression,58 structured features,784,0.3,0.3592487768979632,0.3144693825465339,0.547251423837486,youtube_only
+2,xgboost,XGBoost,58 structured features,784,0.3,0.3259744723367426,0.30943262292347656,0.5682939462541757,youtube_only
+3,random_forest,Random Forest,58 structured features,784,0.3,0.33059648121107,0.3345664711619894,0.5637711096919518,youtube_only
+4,bert,BERT,review text,784,0.3,0.40290501027343134,0.35896998377082323,0.5532734838046054,youtube_only
+5,bilstm_attention,BiLSTM with Attention,review text,784,0.3,0.348602791604447,0.2753228902645707,0.4507392074416957,youtube_only

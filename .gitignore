@@ -36,6 +36,10 @@ outputs/model_benchmark/logs/
 outputs/model_benchmark/predictions/
 outputs/model_benchmark/metrics/
 
+# Resumable experiment checkpoints are local derived artifacts. Verified
+# reports, predictions, and checksum manifests remain versioned.
+outputs/source_grouped_*/checkpoints/
+
 # Operating system files
 .DS_Store
 .DS_Store?

@@ -1,0 +1,39 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 36
+---
+flowchart TD
+    A["For each source-grouped fold"]
+
+    A --> B["Perfumes used for training"]
+    A --> C["YouTube perfumes kept aside for testing<br/>No synthetic reviews are added"]
+
+    B --> D["YouTube-only condition<br/>Train with YouTube reviews"]
+    B --> E["Weighted synthetic condition<br/>Add three weighted synthetic reviews<br/>per training perfume"]
+
+    D --> F["For each of the five model types<br/>train one model under each condition<br/>using its fixed settings"]
+    E --> F
+
+    F --> G["For each model type, test both conditions<br/>on the same held-out YouTube perfumes"]
+    C --> G
+
+    G --> H["Compare the two conditions within each model<br/>and measure uncertainty in the difference"]
+
+    N["Base-weight rule:<br/>three synthetic reviews per perfume,<br/>each with one-third weight<br/>used through model-specific training"] -.-> E
+
+    classDef data fill:#EAF1FF,stroke:#3155C6,stroke-width:2px,color:#172033;
+    classDef control fill:#E9F7EF,stroke:#3B7D4A,stroke-width:2px,color:#172033;
+    classDef augmented fill:#F3EEFF,stroke:#7656B3,stroke-width:2px,color:#172033;
+    classDef test fill:#FFF4E5,stroke:#D97706,stroke-width:2px,color:#172033;
+    classDef result fill:#E8F7FF,stroke:#2384A8,stroke-width:2px,color:#172033;
+    classDef note fill:#FFF9DE,stroke:#C7A72A,stroke-width:2px,color:#172033;
+
+    class A,B data;
+    class D control;
+    class E augmented;
+    class C,G test;
+    class F,H result;
+    class N note;

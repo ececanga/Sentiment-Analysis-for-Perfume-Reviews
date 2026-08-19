@@ -1,0 +1,27 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 28
+    rankSpacing: 30
+---
+flowchart TD
+    A["<b>1. YouTube perfume review</b><br/>'This fragrance is uplifting with fresh citrus notes.'"]
+    B["<b>2. Find feeling or perfume-description terms</b><br/>Check each review word<br/>Examples: uplifting • calming • mysterious • harsh"]
+    C["<b>3. Keep useful nearby words</b><br/>Up to four words on each side → fresh • citrus • notes"]
+    D["<b>4. Repeat for each perfume</b><br/>Keep its most frequent nearby words"]
+    E["<b>5. Writing hints for GPT-5</b><br/>Used to create synthetic reviews—not as classifier inputs"]
+
+    A --> B --> C --> D --> E
+
+    classDef input fill:#EAF1FF,stroke:#3155C6,stroke-width:2px,color:#172033;
+    classDef match fill:#FDECEC,stroke:#C9342F,stroke-width:2px,color:#172033;
+    classDef context fill:#FFF5D9,stroke:#A97B18,stroke-width:2px,color:#172033;
+    classDef process fill:#E9F7EF,stroke:#3B7D4A,stroke-width:2px,color:#172033;
+    classDef output fill:#FFF9DE,stroke:#C7A72A,stroke-width:2px,color:#172033;
+
+    class A input;
+    class B match;
+    class C context;
+    class D process;
+    class E output;

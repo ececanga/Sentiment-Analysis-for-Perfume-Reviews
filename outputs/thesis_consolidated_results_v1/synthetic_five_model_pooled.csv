@@ -1,0 +1,16 @@
+model_order,model_id,model_name,metric_order,metric,youtube_only,youtube_plus_weighted_synthetic_784x3,augmented_minus_youtube_only,evaluation_rows,threshold
+1,logistic_regression,Logistic Regression,1,macro_f1,0.359248776898,0.373657752322,0.014408975423999992,784,0.3
+1,logistic_regression,Logistic Regression,2,macro_average_precision,0.314469382547,0.35049685616,0.03602747361299996,784,0.3
+1,logistic_regression,Logistic Regression,3,macro_roc_auc,0.547251423837,0.537232898196,-0.010018525641000031,784,0.3
+2,xgboost,XGBoost,1,macro_f1,0.325974472337,0.335875663385,0.009901191048000024,784,0.3
+2,xgboost,XGBoost,2,macro_average_precision,0.309432622923,0.310829080036,0.0013964571130000158,784,0.3
+2,xgboost,XGBoost,3,macro_roc_auc,0.568293946254,0.598176423081,0.02988247682700007,784,0.3
+3,random_forest,Random Forest,1,macro_f1,0.330596481211,0.324711334265,-0.005885146946000008,784,0.3
+3,random_forest,Random Forest,2,macro_average_precision,0.334566471162,0.31449383675,-0.020072634412000023,784,0.3
+3,random_forest,Random Forest,3,macro_roc_auc,0.563771109692,0.573095935038,0.009324825346000098,784,0.3
+4,bert,BERT,1,macro_f1,0.402905010273,0.331563293656,-0.071341716617,784,0.3
+4,bert,BERT,2,macro_average_precision,0.358969983771,0.320981707266,-0.037988276504999974,784,0.3
+4,bert,BERT,3,macro_roc_auc,0.553273483805,0.526733808559,-0.026539675245999983,784,0.3
+5,bilstm_attention,BiLSTM with Attention,1,macro_f1,0.348602791604,0.34659347998,-0.0020093116239999764,784,0.3
+5,bilstm_attention,BiLSTM with Attention,2,macro_average_precision,0.275322890265,0.277151855123,0.0018289648579999929,784,0.3
+5,bilstm_attention,BiLSTM with Attention,3,macro_roc_auc,0.450739207442,0.449015081808,-0.00172412563400004,784,0.3

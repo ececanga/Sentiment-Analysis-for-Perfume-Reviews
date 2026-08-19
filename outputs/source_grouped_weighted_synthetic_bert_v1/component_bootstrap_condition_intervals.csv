@@ -1,0 +1,13 @@
+label_scope,condition,metric,point_estimate,bootstrap_mean,bootstrap_standard_error,ci_lower,ci_upper,confidence_level,bootstrap_reps,seed,n_source_components
+seven_labels,youtube_only,component_equal_macro_f1,0.483940232875,0.431524948972,0.0702462711309,0.326148612443,0.507612490504,0.95,2000,42,359
+seven_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_f1,0.342286745666,0.341402933351,0.0127747684069,0.321756749654,0.369449889647,0.95,2000,42,359
+seven_labels,youtube_only,component_equal_macro_average_precision,0.466518852462,0.431306710862,0.0630134484037,0.313673115471,0.50841275676,0.95,2000,42,359
+seven_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_average_precision,0.320759340641,0.339959965103,0.0302614934058,0.301137141794,0.410796069039,0.95,2000,42,359
+seven_labels,youtube_only,component_equal_macro_roc_auc,0.593235630982,0.570949538839,0.0471953808842,0.47851329539,0.663855827583,0.95,2000,42,359
+seven_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_roc_auc,0.522833873471,0.529558520781,0.0275536638703,0.473529483055,0.582718462099,0.95,2000,42,359
+fear_excluded_six_labels,youtube_only,component_equal_macro_f1,0.39892233518,0.398194750943,0.0141299288971,0.37631632009,0.429002877119,0.95,2000,42,359
+fear_excluded_six_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_f1,0.39933453661,0.398303422243,0.0149038964747,0.375382874597,0.431024871255,0.95,2000,42,359
+fear_excluded_six_labels,youtube_only,component_equal_macro_average_precision,0.379551507626,0.389923301442,0.0205669154843,0.356885537363,0.439522609663,0.95,2000,42,359
+fear_excluded_six_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_average_precision,0.373809213366,0.380408761169,0.0177033973247,0.349440695632,0.416750735805,0.95,2000,42,359
+fear_excluded_six_labels,youtube_only,component_equal_macro_roc_auc,0.526348332992,0.528061152814,0.0401995364114,0.45629127248,0.614372080942,0.95,2000,42,359
+fear_excluded_six_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_roc_auc,0.537747691635,0.53648049772,0.0288913084283,0.477459779948,0.589533605281,0.95,2000,42,359

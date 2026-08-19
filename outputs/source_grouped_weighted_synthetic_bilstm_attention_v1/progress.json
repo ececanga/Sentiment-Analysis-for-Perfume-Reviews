@@ -1,0 +1,11 @@
+{
+  "bootstrap_completed_draws": 4000,
+  "bootstrap_total_draws": 4000,
+  "completed_fold_tasks": 10,
+  "experiment_fingerprint": "087f15782ff13325e29873665169318c1b1e4c73dbd0aaf8ccb978ddaca1bbb3",
+  "experiment_id": "source_grouped_weighted_synthetic_bilstm_attention_v1",
+  "schema_version": 1,
+  "status": "complete",
+  "total_fold_tasks": 10,
+  "updated_utc": "2026-08-10T19:59:45+00:00"
+}

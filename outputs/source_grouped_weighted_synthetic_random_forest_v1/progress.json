@@ -1,0 +1,20 @@
+{
+  "bootstrap_completed_draws": 4000,
+  "bootstrap_total_draws": 4000,
+  "completed_fit_tasks": 70,
+  "current_task": null,
+  "estimated_remaining_fit_seconds": 0.0,
+  "experiment_id": "source_grouped_weighted_synthetic_random_forest_v1",
+  "fit_fingerprint": "d8ed6133d508f31b95f7c74fe0af1004a474d14d2a4c4ecbff0ac1ac806f131c",
+  "fit_percent": 100.0,
+  "last_checkpoint": null,
+  "mean_completed_fit_seconds": 1.9855956214588202,
+  "note": "all fits, validation, bootstrap, and artifact writes complete",
+  "remaining_fit_tasks": 0,
+  "resume_command": "'/Users/ece/Desktop/EceFolder/Sentiment Analysis/.venv/bin/python' '/Users/ece/Desktop/EceFolder/Sentiment Analysis/src/training/run_source_grouped_weighted_synthetic_random_forest.py' --out-dir '/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_random_forest_v1'",
+  "schema_version": 1,
+  "stage": "bootstrap",
+  "status": "complete",
+  "total_fit_tasks": 70,
+  "updated_utc": "2026-08-10T18:35:44+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "feature_family_counts": {
+    "Cardiff": 4,
+    "GoEmotions": 28,
+    "Hartmann": 7,
+    "NRC": 10,
+    "Savani": 6,
+    "VAD": 3
+  },
+  "fit_tasks": 245,
+  "fold_sizes": {
+    "1": 334,
+    "2": 113,
+    "3": 113,
+    "4": 112,
+    "5": 112
+  },
+  "input_hashes": {
+    "accepted_checksums": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+    "accepted_metrics": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+    "accepted_oof": "310055d3283c7c6ccf5b26b17516587e74b31d3dfc49b9d00cea911f3918b949",
+    "base_config": "44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2",
+    "base_runner": "1513f3e643437231b9b13a84466164a8aed138ffffe6a340476443c8a72d0d6a",
+    "data": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "feature_ablation_helper": "83821ce43d6e65ba78b3e02badcbc57dba068a24a4f15f23984d3473607fc8a6",
+    "manifest": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+    "source_audit": "e232f96b6ee42c8961b4037caa1b1b1cd50ee8b8595b564d84f2a9a346ac9d1a",
+    "source_grouped_folds_helper": "d6b9da1312dbc4881d0300dc0ef349ada20b37d8312127b955e1282212452172",
+    "weighted_lr_helper": "f98ed9b499334b23fcb0b65d608f89f46f8d67dd5c7711f91419c891989659c3",
+    "weighted_xgb_helper": "54d37a6a37c4c3c0d7fd0b0c5d75b022bb27750c6a679dc9938be944cfce0c20"
+  },
+  "labels": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "perfumes": 784,
+  "source_components": 359,
+  "status": "passed",
+  "variant_feature_counts": {
+    "full_hybrid": 58,
+    "nrc_only": 10,
+    "nrc_plus_transformer": 55,
+    "nrc_plus_vad": 13,
+    "transformer_only": 45,
+    "vad_only": 3,
+    "vad_plus_transformer": 48
+  }
+}

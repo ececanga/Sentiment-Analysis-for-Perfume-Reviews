@@ -1,27 +1,44 @@
 ---
 config:
   layout: dagre
+  theme: base
   flowchart:
-    nodeSpacing: 20
-    rankSpacing: 25
+    nodeSpacing: 18
+    rankSpacing: 24
+    curve: linear
 ---
-flowchart TD
-    A["Review text sources<br/>YouTube transcripts: main dataset<br/>Synthetic reviews: extension"]
-    B["Text preparation and formatting"]
+flowchart TB
+    A["<b>Dataset</b><br/>YouTube perfume-review transcripts<br/>784 perfumes"]
+    B["<b>Preprocessing</b><br/>Text cleaning and preprocessing"]
 
     A --> B
 
-    B --> D["Feature extraction<br/>NRC · VAD · transformer emotion signals"]
-    D --> E[Unified engineered feature matrix]
+    B --> F["<b>58-feature matrix</b><br/>• 10 NRC word-count features<br/>• 3 VAD features<br/>• 45 transformer-derived features"]
+    F --> ML["<b>Machine-learning models</b><br/>Training: 58 features + emotion labels<br/>• Logistic Regression<br/>• XGBoost<br/>• Random Forest"]
 
-    B --> F["Gemini 3.1 Pro<br/>browser-based labeling"]
-    F --> G["Model-based reference labels<br/>seven emotion targets"]
+    B --> T["<b>Transcript-text inputs</b><br/>Used without NRC or VAD features"]
+    T --> DL["<b>Deep-learning models</b><br/>Training: transcript text + emotion labels<br/>• BERT<br/>• BiLSTM with Attention"]
 
-    E --> H["Supervised model roles<br/><b>Main:</b> Logistic Regression<br/><b>Comparisons:</b> XGBoost · BERT<br/><b>Supplemental:</b> Random Forest · BiLSTM + Attention"]
-    G --> H
+    B -->|Review text| G["<b>Emotion labels</b><br/>Assigned by Gemini 3.1 Pro<br/>784 perfumes"]
+    G --> ML
+    G --> DL
 
-    H --> I["Evaluation settings<br/>exact-source-grouped 5-fold OOF<br/>YouTube-only and weighted synthetic extension<br/>threshold: 0.3"]
+    ML --> P["<b>Held-out predictions</b><br/>ML: 58-feature rows<br/>DL: transcript text"]
+    DL --> P
 
-    I --> J["Metrics and diagnostics<br/>macro average precision · macro-F1 · macro ROC-AUC<br/>paired component uncertainty"]
+    G --> H["<b>Held-out labels</b><br/>Gemini labels used only for evaluation"]
 
-    J --> K[Results and thesis reporting]
+    P --> E["<b>Performance evaluation</b><br/>Predictions vs. held-out labels<br/>• Macro average precision<br/>• Macro-F1<br/>• Macro ROC-AUC"]
+    H --> E
+
+    classDef source fill:#E8F0FE,stroke:#2563EB,stroke-width:2px,color:#111827;
+    classDef process fill:#ECFDF5,stroke:#059669,stroke-width:2px,color:#111827;
+    classDef labels fill:#F3E8FF,stroke:#7C3AED,stroke-width:2px,color:#111827;
+    classDef model fill:#FFF7ED,stroke:#EA580C,stroke-width:2px,color:#111827;
+    classDef evaluation fill:#E0F2FE,stroke:#0284C7,stroke-width:2px,color:#111827;
+
+    class A source;
+    class B,F,T process;
+    class G,H labels;
+    class ML,DL model;
+    class P,E evaluation;

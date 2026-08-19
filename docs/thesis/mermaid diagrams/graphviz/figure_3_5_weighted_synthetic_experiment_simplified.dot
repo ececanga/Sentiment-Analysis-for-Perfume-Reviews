@@ -1,0 +1,47 @@
+digraph weighted_synthetic_five_model_design {
+    graph [
+        rankdir=TB,
+        bgcolor="white",
+        pad=0.22,
+        nodesep=0.34,
+        ranksep=0.48,
+        splines=ortho,
+        fontname="Arial"
+    ];
+    node [
+        shape=box,
+        style="rounded,filled",
+        color="#334155",
+        fillcolor="#F8FAFC",
+        fontcolor="#172033",
+        fontname="Arial",
+        fontsize=15,
+        margin="0.20,0.14",
+        penwidth=1.8
+    ];
+    edge [color="#64748B", penwidth=1.6, arrowsize=0.8];
+
+    A [label=<For each source-grouped fold>, fillcolor="#EAF1FF", color="#3155C6"];
+    B [label=<Perfumes used for training>, fillcolor="#EAF1FF", color="#3155C6"];
+    C [label=<YouTube perfumes kept aside for testing<BR/>No synthetic reviews are added>, fillcolor="#FFF4E5", color="#D97706"];
+    D [label=<YouTube-only condition<BR/><B>Train with YouTube reviews</B>>, fillcolor="#E9F7EF", color="#3B7D4A"];
+    E [label=<Weighted synthetic condition<BR/><B>Add three weighted synthetic reviews<BR/>per training perfume</B>>, fillcolor="#F3EEFF", color="#7656B3"];
+    F [label=<For each of the five model types<BR/><B>train one model under each condition</B><BR/>using its fixed settings>, fillcolor="#E8F7FF", color="#2384A8"];
+    G [label=<For each model type, test both conditions<BR/>on the same held-out YouTube perfumes>, fillcolor="#FFF4E5", color="#D97706"];
+    H [label=<Compare the two conditions within each model<BR/>and measure uncertainty in the difference>, fillcolor="#E8F7FF", color="#2384A8"];
+    N [label=<Base-weight rule:<BR/>three synthetic reviews per perfume,<BR/>each with one-third weight<BR/>used through model-specific training>, fillcolor="#FFF9DE", color="#C7A72A"];
+
+    A -> B;
+    A -> C;
+    B -> D;
+    B -> E;
+    D -> F;
+    E -> F;
+    F -> G;
+    C -> G;
+    G -> H;
+    N -> E [style=dashed, color="#C7A72A", constraint=false];
+
+    {rank=same; B; C}
+    {rank=same; D; E}
+}

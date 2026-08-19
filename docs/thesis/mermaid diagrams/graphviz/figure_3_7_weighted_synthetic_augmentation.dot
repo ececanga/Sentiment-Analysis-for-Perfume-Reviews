@@ -21,7 +21,7 @@ digraph weighted_synthetic_augmentation {
     ];
     edge [color="#64748B", penwidth=1.4, arrowsize=0.75];
 
-    A [label=<Frozen universe<BR/><B>784 perfume identities</B>>, fillcolor="#E8F1FF", color="#2563EB"];
+    A [label=<Benchmark set<BR/><B>784 perfume identities</B>>, fillcolor="#E8F1FF", color="#2563EB"];
     B [label=<Five exact-source-grouped outer folds<BR/>359 source components>, fillcolor="#E8F1FF", color="#2563EB"];
     C [label=<Outer-training perfume identities>, fillcolor="#EFF6FF", color="#3B82F6"];
     D [label=<Held-out YouTube perfumes<BR/>test rows only>, fillcolor="#FFF7ED", color="#EA580C"];
@@ -32,8 +32,8 @@ digraph weighted_synthetic_augmentation {
     G [label=<Control condition<BR/><B>YouTube-only training</B>>, fillcolor="#ECFDF5", color="#059669"];
     H [label=<Augmented condition<BR/><B>YouTube + weighted synthetic</B>>, fillcolor="#F3E8FF", color="#7C3AED"];
 
-    I [label=<Same engineered LR pipeline<BR/>weighted scaler · class-weighted classifier<BR/>threshold 0.3>, fillcolor="#F1F5F9", color="#475569"];
-    J [label=<Same engineered LR pipeline<BR/>weighted scaler · class-weighted classifier<BR/>threshold 0.3>, fillcolor="#F1F5F9", color="#475569"];
+    I [label=<Same 58-feature<BR/>Logistic Regression pipeline<BR/>weighted scaler · class-weighted classifier<BR/>threshold 0.3>, fillcolor="#F1F5F9", color="#475569"];
+    J [label=<Same 58-feature<BR/>Logistic Regression pipeline<BR/>weighted scaler · class-weighted classifier<BR/>threshold 0.3>, fillcolor="#F1F5F9", color="#475569"];
 
     K [label=<Control OOF predictions<BR/>held-out YouTube only>, fillcolor="#FEF3C7", color="#D97706"];
     L [label=<Augmented OOF predictions<BR/>held-out YouTube only>, fillcolor="#FEF3C7", color="#D97706"];

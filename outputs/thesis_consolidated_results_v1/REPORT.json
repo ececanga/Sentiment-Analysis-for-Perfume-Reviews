@@ -1,0 +1,252 @@
+{
+  "contents": {
+    "feature_combination_three_model_component_differences.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "label_scope_order",
+        "label_scope",
+        "variant_order",
+        "reference_variant",
+        "comparison_variant",
+        "source_variant",
+        "metric_order",
+        "metric",
+        "difference_definition",
+        "point_estimate_difference",
+        "bootstrap_mean_difference",
+        "bootstrap_standard_error",
+        "confidence_level",
+        "ci_lower",
+        "ci_upper",
+        "ci_excludes_zero",
+        "established_direction",
+        "bootstrap_reps",
+        "seed",
+        "n_source_components",
+        "resampling_unit",
+        "defined_label_count_min",
+        "defined_label_count_max",
+        "interval_method",
+        "interval_scope",
+        "multiplicity_adjustment"
+      ],
+      "rows": 108
+    },
+    "feature_combination_three_model_component_intervals.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "label_scope_order",
+        "label_scope",
+        "variant_order",
+        "variant",
+        "source_variant",
+        "metric_order",
+        "metric",
+        "point_estimate",
+        "bootstrap_mean",
+        "bootstrap_standard_error",
+        "confidence_level",
+        "ci_lower",
+        "ci_upper",
+        "bootstrap_reps",
+        "seed",
+        "n_source_components",
+        "defined_label_count_point",
+        "defined_label_count_min",
+        "defined_label_count_max",
+        "resampling_unit",
+        "interval_method",
+        "interval_scope",
+        "multiplicity_adjustment"
+      ],
+      "rows": 126
+    },
+    "feature_combination_three_model_pooled.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "variant_order",
+        "variant",
+        "variant_label",
+        "source_variant",
+        "source_variant_label",
+        "feature_count",
+        "feature_groups",
+        "source_feature_families",
+        "source_feature_columns_sha256",
+        "evaluation_rows",
+        "threshold",
+        "macro_f1",
+        "macro_average_precision",
+        "macro_roc_auc",
+        "micro_f1",
+        "hamming_loss",
+        "predicted_label_cardinality",
+        "component_equal_macro_f1",
+        "component_equal_macro_average_precision",
+        "component_equal_macro_roc_auc"
+      ],
+      "rows": 21
+    },
+    "synthetic_five_model_augmented_pooled.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "input_branch",
+        "condition",
+        "synthetic_training_reviews_per_perfume",
+        "evaluation_rows",
+        "threshold",
+        "macro_f1",
+        "macro_average_precision",
+        "macro_roc_auc"
+      ],
+      "rows": 5
+    },
+    "synthetic_five_model_component_differences.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "label_scope_order",
+        "label_scope",
+        "metric_order",
+        "metric",
+        "difference_definition",
+        "point_estimate_difference",
+        "bootstrap_mean_difference",
+        "bootstrap_standard_error",
+        "ci_lower",
+        "ci_upper",
+        "ci_excludes_zero",
+        "positive_improvement_established",
+        "established_direction",
+        "confidence_level",
+        "bootstrap_reps",
+        "seed",
+        "n_source_components",
+        "defined_label_count_point",
+        "defined_label_count_min",
+        "defined_label_count_max",
+        "resampling_unit",
+        "interval_method",
+        "interval_scope",
+        "multiplicity_adjustment"
+      ],
+      "rows": 30
+    },
+    "synthetic_five_model_component_intervals.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "label_scope_order",
+        "label_scope",
+        "condition_order",
+        "condition",
+        "metric_order",
+        "metric",
+        "point_estimate",
+        "bootstrap_mean",
+        "bootstrap_standard_error",
+        "ci_lower",
+        "ci_upper",
+        "confidence_level",
+        "bootstrap_reps",
+        "seed",
+        "n_source_components",
+        "resampling_unit",
+        "interval_method",
+        "interval_scope",
+        "multiplicity_adjustment"
+      ],
+      "rows": 60
+    },
+    "synthetic_five_model_pooled.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "metric_order",
+        "metric",
+        "youtube_only",
+        "youtube_plus_weighted_synthetic_784x3",
+        "augmented_minus_youtube_only",
+        "evaluation_rows",
+        "threshold"
+      ],
+      "rows": 15
+    },
+    "youtube_five_model_component_equal.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "label_scope_order",
+        "label_scope",
+        "condition_order",
+        "condition",
+        "metric_order",
+        "metric",
+        "point_estimate",
+        "bootstrap_mean",
+        "bootstrap_standard_error",
+        "ci_lower",
+        "ci_upper",
+        "confidence_level",
+        "bootstrap_reps",
+        "seed",
+        "n_source_components",
+        "resampling_unit",
+        "interval_method",
+        "interval_scope",
+        "multiplicity_adjustment"
+      ],
+      "rows": 15
+    },
+    "youtube_five_model_pooled.csv": {
+      "columns": [
+        "model_order",
+        "model_id",
+        "model_name",
+        "input_branch",
+        "evaluation_rows",
+        "threshold",
+        "macro_f1",
+        "macro_average_precision",
+        "macro_roc_auc",
+        "source_condition"
+      ],
+      "rows": 5
+    }
+  },
+  "docx_modified": false,
+  "experiments_rerun": false,
+  "package_id": "thesis_consolidated_results_v1",
+  "primary_scope_summary": {
+    "ablation_effect_interval_count_excluding_zero_unadjusted": 6,
+    "synthetic_effect_intervals_excluding_zero": [
+      {
+        "ci_lower": 0.0011431273,
+        "ci_upper": 0.0466266678,
+        "metric": "component_equal_macro_f1",
+        "model_id": "logistic_regression",
+        "point_estimate_difference": 0.0227411428
+      }
+    ]
+  },
+  "purpose": "single verified source for thesis result tables and discussion",
+  "scope_notes": [
+    "Synthetic effects are augmented minus YouTube-only; positive values favor augmentation.",
+    "Feature-combination effects are full representation minus comparison; positive values favor the full representation.",
+    "BERT and BiLSTM with Attention are text-only and are not part of the structured-feature ablation.",
+    "Intervals are unadjusted 95% component-bootstrap intervals conditional on fitted outer-fold models."
+  ],
+  "status": "completed"
+}

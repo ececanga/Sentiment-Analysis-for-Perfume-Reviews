@@ -1,0 +1,13 @@
+label_scope,condition,metric,point_estimate,bootstrap_mean,bootstrap_standard_error,ci_lower,ci_upper,confidence_level,bootstrap_reps,seed,n_source_components
+seven_labels,youtube_only,component_equal_macro_f1,0.336111051422,0.335602490283,0.0137592230964,0.311102597404,0.364528706352,0.95,2000,42,359
+seven_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_f1,0.345269840751,0.344390417869,0.0144836946018,0.316808317864,0.373770984691,0.95,2000,42,359
+seven_labels,youtube_only,component_equal_macro_average_precision,0.325914370566,0.338254199738,0.0228133797567,0.299535072104,0.38775178529,0.95,2000,42,359
+seven_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_average_precision,0.3284150028,0.345705672904,0.0250739058838,0.306140843409,0.402989070509,0.95,2000,42,359
+seven_labels,youtube_only,component_equal_macro_roc_auc,0.591723712395,0.580564153958,0.0423485988982,0.483702007223,0.652247656779,0.95,2000,42,359
+seven_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_roc_auc,0.620311653909,0.606803732315,0.0419181847017,0.516304058191,0.682731722288,0.95,2000,42,359
+fear_excluded_six_labels,youtube_only,component_equal_macro_f1,0.392129559992,0.391536238663,0.0160524269458,0.362953030305,0.425283490744,0.95,2000,42,359
+fear_excluded_six_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_f1,0.40281481421,0.401788820847,0.0168976437021,0.369609704175,0.436066148806,0.95,2000,42,359
+fear_excluded_six_labels,youtube_only,component_equal_macro_average_precision,0.365671963333,0.372050786001,0.0175489951274,0.339727890286,0.40759881199,0.95,2000,42,359
+fear_excluded_six_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_average_precision,0.372349756162,0.383604169831,0.0197492422597,0.349687883073,0.426057252592,0.95,2000,42,359
+fear_excluded_six_labels,youtube_only,component_equal_macro_roc_auc,0.526231987718,0.526181513096,0.0411317607613,0.442555932829,0.603181363412,0.95,2000,42,359
+fear_excluded_six_labels,youtube_plus_weighted_synthetic_784x3,component_equal_macro_roc_auc,0.560744226331,0.561631217094,0.0412025181447,0.482139630714,0.640608646054,0.95,2000,42,359

@@ -1,0 +1,11 @@
+{
+  "bootstrap_completed_draws": 4000,
+  "bootstrap_total_draws": 4000,
+  "completed_fold_tasks": 5,
+  "experiment_fingerprint": "926f4bbf002fbf3b8e9b9e6078c28b4da2fe93f9935754efa9baf608f947aade",
+  "experiment_id": "source_grouped_weighted_synthetic_bert_v1",
+  "schema_version": 1,
+  "status": "complete",
+  "total_fold_tasks": 5,
+  "updated_utc": "2026-08-10T22:51:02+00:00"
+}

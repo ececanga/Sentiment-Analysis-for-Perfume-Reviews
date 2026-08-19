@@ -6,7 +6,7 @@ config:
     rankSpacing: 25
 ---
 flowchart TD
-    A["Frozen benchmark<br/>784 perfume-level rows"]
+    A["Benchmark set<br/>784 perfume-level rows"]
     B["Group key<br/>perfume identifier"]
 
     A --> B
@@ -17,7 +17,7 @@ flowchart TD
     D --> F["Test set<br/>held-out perfumes only"]
 
     E --> G["Fit preprocessing and model<br/>inside training fold"]
-    G --> H["Apply trained pipeline<br/>to held-out perfumes"]
+    G --> H["Apply the fitted pipeline<br/>to held-out perfumes"]
     F --> H
 
     H --> I["Out-of-fold predictions<br/>for all 784 perfumes"]

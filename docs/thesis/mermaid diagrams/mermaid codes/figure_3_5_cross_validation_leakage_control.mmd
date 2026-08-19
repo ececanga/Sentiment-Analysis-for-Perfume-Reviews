@@ -16,9 +16,9 @@ flowchart TD
     D --> E["Outer training components"]
     D --> F["Held-out test components"]
 
-    E --> V["Source-group-isolated<br/>inner train/validation manifest"]
+    E --> V["Predefined inner split<br/>source-isolated train / validation"]
     V --> G["Fit learned preprocessing,<br/>vocabulary, and model<br/>inside training partitions"]
-    G --> H["Apply frozen pipeline<br/>to held-out components"]
+    G --> H["Apply the fitted pipeline<br/>to held-out components"]
     F --> H
 
     H --> I["Out-of-fold predictions<br/>for all 784 perfumes"]

@@ -1,0 +1,151 @@
+experiment:
+  id: source_grouped_random_forest_feature_combination_ablation_v1
+  phase: 7
+  status: frozen_before_first_formal_run
+  role: advisor_requested_random_forest_feature_combination_ablation
+  created_date: '2026-08-12'
+  interpretation_boundary: >-
+    This is a supplemental feature-representation analysis. It compares the
+    accepted Random Forest specification across six advisor-requested feature
+    combinations while preserving the accepted source-grouped folds, labels,
+    threshold, and model settings. It is not a model-selection rerun.
+
+inputs:
+  accepted_benchmark_config:
+    path: config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml
+    sha256: 44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2
+  accepted_random_forest_runner:
+    path: src/training/run_random_forest_benchmark.py
+    sha256: f5e613f429c5605ed769de6e0e6c4cf3606977b5ce12134bf4d851bdf26d92cd
+  feature_ablation_helper:
+    path: src/training/run_source_grouped_feature_ablation.py
+    sha256: 83821ce43d6e65ba78b3e02badcbc57dba068a24a4f15f23984d3473607fc8a6
+  weighted_lr_helper:
+    path: src/training/run_source_grouped_weighted_synthetic_lr.py
+    sha256: f98ed9b499334b23fcb0b65d608f89f46f8d67dd5c7711f91419c891989659c3
+  weighted_random_forest_checkpoint_helper:
+    path: src/training/run_source_grouped_weighted_synthetic_random_forest.py
+    sha256: b5db0cf5ee0280f84d6dbd0b3262d43e48c0caf275683a0e47dd0628e0d7574a
+  source_grouped_folds_helper:
+    path: src/training/source_grouped_folds.py
+    sha256: d6b9da1312dbc4881d0300dc0ef349ada20b37d8312127b955e1282212452172
+  youtube_feature_labels:
+    path: outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv
+    sha256: 518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976
+    expected_rows: 784
+  outer_fold_manifest:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv
+    sha256: 5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579
+    expected_rows: 784
+    expected_source_components: 359
+  source_group_audit:
+    path: outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_group_audit.json
+    sha256: e232f96b6ee42c8961b4037caa1b1b1cd50ee8b8595b564d84f2a9a346ac9d1a
+  accepted_random_forest_oof:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/random_forest_oof.csv
+    sha256: 3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32
+  accepted_random_forest_metrics:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json
+    sha256: c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa
+  accepted_benchmark_checksums:
+    path: outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS
+    sha256: 11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852
+
+task:
+  official_labels:
+    - joy
+    - sadness
+    - fear
+    - trust
+    - surprise
+    - anticipation
+    - disgust
+  excluded_label: anger
+  sensitivity_labels:
+    - joy
+    - sadness
+    - trust
+    - surprise
+    - anticipation
+    - disgust
+  expected_feature_count: 58
+  feature_family_counts:
+    NRC: 10
+    VAD: 3
+    Hartmann: 7
+    Savani: 6
+    GoEmotions: 28
+    Cardiff: 4
+
+model:
+  family: RandomForestClassifier
+  n_estimators: 500
+  class_weight: balanced_subsample
+  random_seed: 42
+  n_jobs: 1
+  preprocessing:
+    imputer: median
+  training_sample_weight: none
+
+variants:
+  full_hybrid:
+    role: accepted_control_replay_gate
+    families: [NRC, VAD, Hartmann, Savani, GoEmotions, Cardiff]
+    feature_count: 58
+  nrc_only:
+    families: [NRC]
+    feature_count: 10
+  vad_only:
+    families: [VAD]
+    feature_count: 3
+  transformer_only:
+    families: [Hartmann, Savani, GoEmotions, Cardiff]
+    feature_count: 45
+  nrc_plus_vad:
+    families: [NRC, VAD]
+    feature_count: 13
+  nrc_plus_transformer:
+    families: [NRC, Hartmann, Savani, GoEmotions, Cardiff]
+    feature_count: 55
+  vad_plus_transformer:
+    families: [VAD, Hartmann, Savani, GoEmotions, Cardiff]
+    feature_count: 48
+
+evaluation:
+  threshold: 0.3
+  full_control_probability_tolerance: 0.000000000001
+  reported_metrics:
+    - macro_average_precision
+    - macro_f1
+    - macro_roc_auc
+  component_equal_point_estimates: true
+  paired_source_component_bootstrap:
+    repetitions: 2000
+    seed: 42
+    confidence_level: 0.95
+    interval: percentile_linear
+    resampling_unit: source_group_id
+    identical_draws_across_variants: true
+  label_scopes:
+    - seven_labels
+    - fear_excluded_six_labels
+  difference_definition: full_hybrid_minus_comparison
+
+execution:
+  task_order: full_control_gate_then_six_combinations
+  fit_task_count: 245
+  new_combination_fit_task_count: 210
+  control_gate_fit_task_count: 35
+  checkpoint_granularity: fold_by_label
+  resume_by_default: true
+  pause_after_current_fit_on_signal: true
+
+scope_exclusions:
+  - no_threshold_tuning
+  - no_model_hyperparameter_selection
+  - no_deep_model_fusion
+  - no_synthetic_data
+  - no_thesis_edit_during_experiment_execution
+
+outputs:
+  root: outputs/source_grouped_random_forest_feature_combination_ablation_v1

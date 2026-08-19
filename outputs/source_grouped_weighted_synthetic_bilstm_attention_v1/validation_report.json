@@ -1,0 +1,58 @@
+{
+  "augmented_synthetic_base_weight_per_training_perfume": 1.0,
+  "bootstrap": {
+    "defined_label_counts": {
+      "fear_excluded_six_labels": {
+        "component_equal_macro_average_precision": {
+          "bootstrap_max": 6,
+          "bootstrap_min": 5,
+          "point": 6
+        },
+        "component_equal_macro_f1": {
+          "bootstrap_max": 6,
+          "bootstrap_min": 6,
+          "point": 6
+        },
+        "component_equal_macro_roc_auc": {
+          "bootstrap_max": 6,
+          "bootstrap_min": 5,
+          "point": 6
+        }
+      },
+      "seven_labels": {
+        "component_equal_macro_average_precision": {
+          "bootstrap_max": 7,
+          "bootstrap_min": 6,
+          "point": 7
+        },
+        "component_equal_macro_f1": {
+          "bootstrap_max": 7,
+          "bootstrap_min": 7,
+          "point": 7
+        },
+        "component_equal_macro_roc_auc": {
+          "bootstrap_max": 7,
+          "bootstrap_min": 6,
+          "point": 7
+        }
+      }
+    },
+    "n_source_components": 359,
+    "source_component_ids_sha256": "f093d240cbb1c1eb237577ec7c5542e9225efdb63d128712647ba6751c4a6959"
+  },
+  "control_replay": {
+    "max_absolute_probability_difference": 2.9792022737673562e-08,
+    "probability_tolerance": 1e-06,
+    "rows": 784,
+    "status": "passed",
+    "thresholded_predictions_exact": true
+  },
+  "cross_fold_source_components": 0,
+  "joint_multilabel_fold_models": 10,
+  "rows_per_condition": 784,
+  "source_components": 359,
+  "status": "passed",
+  "synthetic_validation_or_test_rows_max": 0,
+  "unique_perfumes_per_condition": 784,
+  "validation_and_test_youtube_only": true
+}

@@ -9,9 +9,9 @@ digraph G {
   D [label="Five outer folds\nsource groups never cross", fillcolor="#EEF3FF"];
   E [label="Outer training components"];
   F [label="Held-out test components", fillcolor="#FFF4E5"];
-  V [label="Frozen inner manifest\nsource-isolated train / validation"];
+  V [label="Predefined inner split\nsource-isolated train / validation"];
   G [label="Fit learned preprocessing, vocabulary,\nand model inside training partitions"];
-  H [label="Apply frozen pipeline\nto held-out source components"];
+  H [label="Apply the fitted pipeline\nto held-out source components"];
   I [label="Out-of-fold probabilities\nall 784 perfumes"];
   J [label="Primary evaluation\nmacro-F1 at 0.3 · macro ROC-AUC\nmacro average precision · per-label diagnostics", fillcolor="#EEF3FF"];
   K [label="Source-isolation rule\nshared exact video or normalized transcript identity\nmust remain on one side of every split", fillcolor="#F5F5F5"];

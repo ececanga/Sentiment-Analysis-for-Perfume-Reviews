@@ -21,7 +21,7 @@ import json
 import math
 from pathlib import Path
 import sys
-from typing import Any, Mapping, Sequence
+from typing import Any, Callable, Mapping, Sequence
 
 import numpy as np
 import pandas as pd
@@ -643,6 +643,7 @@ def build_paired_component_bootstrap(
     reps: int,
     seed: int,
     confidence_level: float,
+    progress_callback: Callable[[str, int, int], None] | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame, dict[str, Any]]:
     if set(oof_by_condition) != set(CONDITIONS):
         raise ValueError(f"Expected exactly the Phase 6 conditions: {CONDITIONS}")
@@ -702,6 +703,8 @@ def build_paired_component_bootstrap(
                     values[metric][draw_index, condition_index] = metrics[metric]
                     if condition_index == 0:
                         defined_counts[metric][draw_index] = defined[metric]
+            if progress_callback is not None:
+                progress_callback(scope_name, draw_index + 1, reps)
 
         defined_details[scope_name] = {
             metric: {

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vetiver Nocturne feature row</title>
+  <style>
+    :root { color-scheme: dark; font-family: Menlo, Monaco, Consolas, monospace; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 42px; background: #101214; color: #e5e7eb; }
+    main { width: 1116px; margin: 0 auto; }
+    h1 { margin: 0 0 8px; font: 700 26px/1.25 Arial, sans-serif; color: #f8fafc; }
+    .subtitle { margin: 0 0 26px; font: 17px/1.4 Arial, sans-serif; color: #aeb8c5; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px; }
+    col:first-child { width: 42%; }
+    col:last-child { width: 58%; }
+    th, td {
+      border: 1px solid #475569;
+      padding: 9px 12px;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    th { background: #243041; color: #f8fafc; font-family: Arial, sans-serif; }
+    tbody tr:nth-child(even) td { background: #171b20; }
+    tbody tr:nth-child(odd) td { background: #111418; }
+    .group td {
+      background: #293241 !important;
+      color: #cbd5e1;
+      font: 700 15px/1.3 Arial, sans-serif;
+    }
+    .nrc { color: #f4ca64; }
+    .vad { color: #8bcf7b; }
+    .hartmann { color: #f2776b; }
+    .savani { color: #66b6df; }
+    .go { color: #62c6b8; }
+    .cardiff { color: #ae8ce8; }
+    .label { color: #f6a65d; }
+    .value { color: #d7dee8; }
+  </style>
+</head>
+<body>
+<main>
+  <h1 id="title"></h1>
+  <p class="subtitle">Vetiver Nocturne Absolu Extrait de Parfum — verified unified feature row</p>
+  <table>
+    <colgroup><col><col></colgroup>
+    <thead><tr><th>Column</th><th>Stored value</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+<script>
+const parts = {
+  "1": {
+    title: "Unified feature row — Part 1 of 3",
+    rows: [
+      ["Identity", "Perfume", "vetiver nocturne absolu extrait de parfum", "label"],
+      ["NRC features", "NRC_anger", "245", "nrc"],
+      [null, "NRC_anticipation", "663", "nrc"],
+      [null, "NRC_disgust", "266", "nrc"],
+      [null, "NRC_fear", "187", "nrc"],
+      [null, "NRC_joy", "1059", "nrc"],
+      [null, "NRC_sadness", "211", "nrc"],
+      [null, "NRC_surprise", "373", "nrc"],
+      [null, "NRC_trust", "1163", "nrc"],
+      [null, "NRC_positive", "1964", "nrc"],
+      [null, "NRC_negative", "521", "nrc"],
+      ["VAD features", "VAD_valence", "0.16316563732753284", "vad"],
+      [null, "VAD_arousal", "-0.10375630009750644", "vad"],
+      [null, "VAD_dominance", "0.03191889954129023", "vad"],
+      ["Hartmann features", "Hartmann_joy", "0.4082", "hartmann"],
+      [null, "Hartmann_neutral", "0.42345", "hartmann"],
+      [null, "Hartmann_surprise", "0.09997", "hartmann"],
+      [null, "Hartmann_sadness", "0.02337", "hartmann"],
+      [null, "Hartmann_anger", "0.01026", "hartmann"],
+      [null, "Hartmann_disgust", "0.02156", "hartmann"],
+      [null, "Hartmann_fear", "0.01318", "hartmann"]
+    ]
+  },
+  "2": {
+    title: "Unified feature row — Part 2 of 3",
+    rows: [
+      ["Savani features", "Savani_joy", "0.7948170349292922", "savani"],
+      [null, "Savani_sadness", "0.00273817350825987", "savani"],
+      [null, "Savani_love", "0.02239069452189138", "savani"],
+      [null, "Savani_anger", "0.0750967789557762", "savani"],
+      [null, "Savani_fear", "0.1041030386506463", "savani"],
+      [null, "Savani_surprise", "0.0008542973853763699", "savani"],
+      ["GoEmotions features", "GoEmotions_admiration", "0.24411999999999998", "go"],
+      [null, "GoEmotions_amusement", "0.04416", "go"],
+      [null, "GoEmotions_anger", "0.00091", "go"],
+      [null, "GoEmotions_annoyance", "0.00092", "go"],
+      [null, "GoEmotions_approval", "0.04132", "go"],
+      [null, "GoEmotions_caring", "0.00184", "go"],
+      [null, "GoEmotions_confusion", "0.001", "go"],
+      [null, "GoEmotions_curiosity", "0.00786", "go"],
+      [null, "GoEmotions_desire", "0.01069", "go"],
+      [null, "GoEmotions_disappointment", "0.0007900000000000001", "go"],
+      [null, "GoEmotions_disapproval", "0.00155", "go"],
+      [null, "GoEmotions_disgust", "0.00039", "go"],
+      [null, "GoEmotions_embarrassment", "0.00028", "go"],
+      [null, "GoEmotions_excitement", "0.25949", "go"],
+      [null, "GoEmotions_fear", "0.00076", "go"]
+    ]
+  },
+  "3": {
+    title: "Unified feature row — Part 3 of 3",
+    rows: [
+      ["GoEmotions features (continued)", "GoEmotions_gratitude", "0.10398", "go"],
+      [null, "GoEmotions_grief", "0.00046999999999999993", "go"],
+      [null, "GoEmotions_joy", "0.11212", "go"],
+      [null, "GoEmotions_love", "0.07775", "go"],
+      [null, "GoEmotions_nervousness", "0.00066", "go"],
+      [null, "GoEmotions_optimism", "0.12502", "go"],
+      [null, "GoEmotions_pride", "0.004749999999999999", "go"],
+      [null, "GoEmotions_realization", "0.0044", "go"],
+      [null, "GoEmotions_relief", "0.0016400000000000002", "go"],
+      [null, "GoEmotions_remorse", "0.0005499999999999999", "go"],
+      [null, "GoEmotions_sadness", "0.00031", "go"],
+      [null, "GoEmotions_surprise", "0.0010999999999999998", "go"],
+      [null, "GoEmotions_neutral", "0.39652", "go"],
+      ["Cardiff features", "Cardiff_joy", "0.038389999999999994", "cardiff"],
+      [null, "Cardiff_optimism", "0.86046", "cardiff"],
+      [null, "Cardiff_anger", "0.042609999999999995", "cardiff"],
+      [null, "Cardiff_sadness", "0.05850999999999999", "cardiff"],
+      ["Stored top-label columns (not part of the 58 numeric model inputs)", "JHartmann_Label", "joy", "label"],
+      [null, "Savani_Label", "joy", "label"],
+      [null, "GoEmotions_Label", "neutral", "label"],
+      [null, "Cardiff_Label", "optimism", "label"]
+    ]
+  }
+};
+const key = new URLSearchParams(location.search).get("part") || "1";
+const part = parts[key];
+document.getElementById("title").textContent = part.title;
+const tbody = document.getElementById("rows");
+for (const [group, name, value, cls] of part.rows) {
+  if (group) {
+    const g = document.createElement("tr");
+    g.className = "group";
+    const c = document.createElement("td");
+    c.colSpan = 2;
+    c.textContent = group;
+    g.appendChild(c);
+    tbody.appendChild(g);
+  }
+  const tr = document.createElement("tr");
+  const n = document.createElement("td");
+  n.className = cls;
+  n.textContent = name;
+  const v = document.createElement("td");
+  v.className = "value";
+  v.textContent = value;
+  tr.append(n, v);
+  tbody.appendChild(tr);
+}
+</script>
+</body>
+</html>

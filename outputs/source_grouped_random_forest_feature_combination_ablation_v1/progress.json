@@ -1,0 +1,17 @@
+{
+  "completed_fit_tasks": 245,
+  "current_task": null,
+  "estimated_remaining_fit_seconds": 0.0,
+  "experiment_id": "source_grouped_random_forest_feature_combination_ablation_v1",
+  "fit_fingerprint": "3f19a287fa5721bc640f5833d8b29493219bbed19603b87d5ee10647c7bf46ed",
+  "fit_percent": 100.0,
+  "last_checkpoint": null,
+  "mean_completed_fit_seconds": 0.5741436047393981,
+  "note": "all fits, validation, bootstrap, and artifact writes complete",
+  "remaining_fit_tasks": 0,
+  "resume_command": "'/Users/ece/Desktop/EceFolder/Sentiment Analysis/.venv/bin/python' -m src.training.run_source_grouped_random_forest_feature_combination_ablation --out-dir '/Users/ece/Desktop/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1'",
+  "schema_version": 1,
+  "status": "complete",
+  "total_fit_tasks": 245,
+  "updated_utc": "2026-08-12T10:43:14+00:00"
+}

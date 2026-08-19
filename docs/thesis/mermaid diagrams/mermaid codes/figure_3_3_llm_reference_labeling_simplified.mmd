@@ -1,0 +1,30 @@
+---
+config:
+  layout: dagre
+  flowchart:
+    nodeSpacing: 28
+    rankSpacing: 34
+---
+flowchart TD
+    A["YouTube perfume reviews<br/>and synthetic reviews"]
+    B["Give Gemini 3.1 Pro<br/>the review text and emotion definitions"]
+    C["Gemini assigns the emotion labels"]
+    D["Check that the labels are complete<br/>and correctly formatted"]
+    E["Save the seven reference<br/>emotion labels"]
+    F["Use the labels to train<br/>and evaluate the models"]
+    N["These are model-generated<br/>reference labels,<br/>not human annotations"]
+
+    A --> B --> C --> D --> E --> F
+    N -.-> E
+
+    classDef input fill:#EAF1FF,stroke:#3155C6,stroke-width:2px,color:#172033;
+    classDef llm fill:#F3EEFF,stroke:#7656B3,stroke-width:2px,color:#172033;
+    classDef check fill:#E9F7EF,stroke:#3B7D4A,stroke-width:2px,color:#172033;
+    classDef output fill:#E8F7FF,stroke:#2384A8,stroke-width:2px,color:#172033;
+    classDef note fill:#FDECEC,stroke:#C9342F,stroke-width:2px,color:#172033;
+
+    class A input;
+    class B,C llm;
+    class D check;
+    class E,F output;
+    class N note;

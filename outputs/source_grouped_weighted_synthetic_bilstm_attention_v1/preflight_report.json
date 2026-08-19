@@ -1,0 +1,140 @@
+{
+  "folds": [
+    {
+      "condition": "youtube_only",
+      "fold_id": 1,
+      "pos_weight_finite": true,
+      "test_perfumes": 334,
+      "test_youtube_chunks": 2241,
+      "train_perfumes": 405,
+      "train_synthetic_reviews": 0,
+      "train_youtube_chunks": 2369,
+      "val_perfumes": 45,
+      "validation_youtube_chunks": 269
+    },
+    {
+      "condition": "youtube_only",
+      "fold_id": 2,
+      "pos_weight_finite": true,
+      "test_perfumes": 113,
+      "test_youtube_chunks": 646,
+      "train_perfumes": 633,
+      "train_synthetic_reviews": 0,
+      "train_youtube_chunks": 3978,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 255
+    },
+    {
+      "condition": "youtube_only",
+      "fold_id": 3,
+      "pos_weight_finite": true,
+      "test_perfumes": 113,
+      "test_youtube_chunks": 710,
+      "train_perfumes": 633,
+      "train_synthetic_reviews": 0,
+      "train_youtube_chunks": 3955,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 214
+    },
+    {
+      "condition": "youtube_only",
+      "fold_id": 4,
+      "pos_weight_finite": true,
+      "test_perfumes": 112,
+      "test_youtube_chunks": 670,
+      "train_perfumes": 634,
+      "train_synthetic_reviews": 0,
+      "train_youtube_chunks": 3958,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 251
+    },
+    {
+      "condition": "youtube_only",
+      "fold_id": 5,
+      "pos_weight_finite": true,
+      "test_perfumes": 112,
+      "test_youtube_chunks": 612,
+      "train_perfumes": 634,
+      "train_synthetic_reviews": 0,
+      "train_youtube_chunks": 4056,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 211
+    },
+    {
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "fold_id": 1,
+      "pos_weight_finite": true,
+      "test_perfumes": 334,
+      "test_youtube_chunks": 2241,
+      "train_perfumes": 405,
+      "train_synthetic_reviews": 1215,
+      "train_youtube_chunks": 2369,
+      "val_perfumes": 45,
+      "validation_youtube_chunks": 269
+    },
+    {
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "fold_id": 2,
+      "pos_weight_finite": true,
+      "test_perfumes": 113,
+      "test_youtube_chunks": 646,
+      "train_perfumes": 633,
+      "train_synthetic_reviews": 1899,
+      "train_youtube_chunks": 3978,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 255
+    },
+    {
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "fold_id": 3,
+      "pos_weight_finite": true,
+      "test_perfumes": 113,
+      "test_youtube_chunks": 710,
+      "train_perfumes": 633,
+      "train_synthetic_reviews": 1899,
+      "train_youtube_chunks": 3955,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 214
+    },
+    {
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "fold_id": 4,
+      "pos_weight_finite": true,
+      "test_perfumes": 112,
+      "test_youtube_chunks": 670,
+      "train_perfumes": 634,
+      "train_synthetic_reviews": 1902,
+      "train_youtube_chunks": 3958,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 251
+    },
+    {
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "fold_id": 5,
+      "pos_weight_finite": true,
+      "test_perfumes": 112,
+      "test_youtube_chunks": 612,
+      "train_perfumes": 634,
+      "train_synthetic_reviews": 1902,
+      "train_youtube_chunks": 4056,
+      "val_perfumes": 38,
+      "validation_youtube_chunks": 211
+    }
+  ],
+  "input_hashes": {
+    "accepted_metrics": "b3ffb60fcb58a07c06f2138958240d89fce2350c5a82f54bae206185e83a4248",
+    "accepted_oof": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624",
+    "base_config": "44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2",
+    "base_runner": "f05ddb24eb784718132c3673aba28771c9e98ed5fa0e4fa26bb0f27baebabe47",
+    "canonical_labels": "d69318ea2ad04f574ccbe8d6b348041551a4762379673ec2e8cba0d2b0ad461e",
+    "deep_text": "48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f",
+    "inner_manifest": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d",
+    "outer_manifest": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+    "synthetic": "c96f08081da4ba9a58a0a9ded856c68d61110cf2add218906a126198d1400715"
+  },
+  "perfumes": 784,
+  "source_components": 359,
+  "status": "passed",
+  "synthetic_reviews": 2352,
+  "youtube_chunks": 4879
+}

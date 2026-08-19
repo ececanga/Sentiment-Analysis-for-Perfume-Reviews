@@ -6,7 +6,7 @@ config:
     rankSpacing: 50
 ---
 flowchart TD
-    A["Frozen universe<br/><b>784 perfume identities</b>"]
+    A["Benchmark set<br/><b>784 perfume identities</b>"]
     A --> B["Five exact-source-grouped outer folds<br/>359 source components"]
 
     B --> C["Outer-training perfume identities"]
@@ -19,8 +19,8 @@ flowchart TD
     E --> H["Augmented condition<br/>YouTube + weighted synthetic"]
     F --> H
 
-    G --> I["Same engineered LR pipeline<br/>weighted scaler · class-weighted classifier<br/>threshold 0.3"]
-    H --> J["Same engineered LR pipeline<br/>weighted scaler · class-weighted classifier<br/>threshold 0.3"]
+    G --> I["Same 58-feature<br/>Logistic Regression pipeline<br/>weighted scaler · class-weighted classifier<br/>threshold 0.3"]
+    H --> J["Same 58-feature<br/>Logistic Regression pipeline<br/>weighted scaler · class-weighted classifier<br/>threshold 0.3"]
 
     D --> K["Control OOF predictions<br/>held-out YouTube only"]
     D --> L["Augmented OOF predictions<br/>held-out YouTube only"]

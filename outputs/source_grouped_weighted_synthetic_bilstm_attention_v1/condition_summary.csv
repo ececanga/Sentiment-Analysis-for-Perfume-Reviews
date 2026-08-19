@@ -1,0 +1,3 @@
+condition,evaluation_rows,threshold,macro_f1,macro_average_precision,macro_roc_auc,micro_f1,hamming_loss,predicted_label_cardinality,component_equal_macro_f1,component_equal_macro_average_precision,component_equal_macro_roc_auc
+youtube_only,784,0.3,0.348602791604,0.275322890265,0.450739207442,0.518228279387,0.515306122449,5.52168367347,0.352907599909,0.294213246052,0.517746943453
+youtube_plus_weighted_synthetic_784x3,784,0.3,0.34659347998,0.277151855123,0.449015081808,0.63710718898,0.30721574344,3.96045918367,0.352644338672,0.289793591188,0.461761305177

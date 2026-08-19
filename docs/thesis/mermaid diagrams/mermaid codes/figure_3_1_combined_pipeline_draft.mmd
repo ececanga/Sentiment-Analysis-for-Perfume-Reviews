@@ -1,0 +1,52 @@
+---
+config:
+  layout: dagre
+  theme: base
+  flowchart:
+    nodeSpacing: 18
+    rankSpacing: 24
+    curve: linear
+---
+flowchart TB
+    A["<b>Dataset</b><br/>YouTube perfume-review transcripts<br/>784 perfumes"]
+    B["<b>Preprocessing</b><br/>Text cleaning and preprocessing"]
+
+    A --> B
+
+    B --> F["<b>58-feature matrix</b><br/>• 10 NRC word-count features<br/>• 3 VAD features<br/>• 45 transformer-derived features"]
+
+    B --> T["<b>Transcript-text inputs</b><br/>Used without NRC or VAD features"]
+
+    B -->|Review text| G["<b>Emotion labels</b><br/>Assigned by Gemini 3.1 Pro<br/>784 perfumes"]
+
+    F --> ML["<b>Variation 1 – Machine-learning models</b><br/>Training: 58 features + emotion labels<br/>• Logistic Regression<br/>• XGBoost<br/>• Random Forest"]
+
+    T --> DL["<b>Variation 1 – Deep-learning models</b><br/>Training: transcript text + emotion labels<br/>• BERT<br/>• BiLSTM with Attention"]
+
+    G --> ML
+    G --> DL
+
+    A -.-> S["<b>Variation 2 – Synthetic augmentation</b><br/>• GPT-5 creates 3 reviews per training perfume<br/>• No emotion or VAD labels used for generation<br/>• Same preprocessing, 58 features, and Gemini labeling<br/>• Added to YouTube Logistic Regression training<br/>• Each synthetic review has weight 1/3<br/>Linked held-out perfumes excluded"]
+
+    ML --> P["<b>Held-out predictions</b><br/>Same YouTube test perfumes<br/>• Variation 1: five-model benchmark<br/>• Variation 2: YouTube-only vs. augmented Logistic Regression"]
+
+    DL --> P
+    S --> P
+
+    G --> H["<b>Held-out labels</b><br/>Gemini labels used only for evaluation"]
+
+    P --> E["<b>Performance evaluation</b><br/>Predictions vs. held-out labels<br/>• Macro average precision<br/>• Macro-F1<br/>• Macro ROC-AUC"]
+
+    H --> E
+
+    classDef source fill:#E8F0FE,stroke:#2563EB,stroke-width:2px,color:#111827;
+    classDef process fill:#ECFDF5,stroke:#059669,stroke-width:2px,color:#111827;
+    classDef labels fill:#F3E8FF,stroke:#7C3AED,stroke-width:2px,color:#111827;
+    classDef model fill:#FFF7ED,stroke:#EA580C,stroke-width:2px,color:#111827;
+    classDef evaluation fill:#E0F2FE,stroke:#0284C7,stroke-width:2px,color:#111827;
+
+    class A source;
+    class B,F,T process;
+    class G,H labels;
+    class ML,DL,S model;
+    class P,E evaluation;
