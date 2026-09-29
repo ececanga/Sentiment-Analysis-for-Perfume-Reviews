@@ -25,7 +25,7 @@ ENV/
 *.swp
 *.swo
 *~
-~$*.docx
+~$*
 logs/
 
 # Generated model benchmark artifacts
@@ -78,3 +78,27 @@ archive/thesis_current_draft_benchmark_*/payload/
 docs/thesis/archive/*
 data/raw/YouTube_Perfume_Reviews_Phase2A_FullyFormatted.csv
 data/raw/YouTube_Perfume_Reviews_Phase2A_Partial.csv
+
+# Local thesis milestones and superseded form exports
+/docs/thesis/previous thesis versions/
+/docs/thesis/defense_presentation_2026-09-24/forms/Old pdf/
+
+# Local presentation previews and intermediate files
+/defense_presentation_2026-09-24/build/review/
+/defense_presentation_2026-09-24/build/revised_review/
+/defense_presentation_2026-09-24/build/keynote_review/
+/defense_presentation_2026-09-24/build/generated_source.pptx
+/defense_presentation_2026-09-24/build/revised_generated_source.pptx
+
+# Retain earlier and partial defense decks locally
+/defense_presentation_2026-09-24/ThesisDefensePresentation_Full.key
+/defense_presentation_2026-09-24/ThesisDefensePresentation_Full.pdf
+/defense_presentation_2026-09-24/ThesisDefensePresentation_20min.key
+/defense_presentation_2026-09-24/ThesisDefensePresentation_20min.pdf
+/defense_presentation_2026-09-24/ThesisDefensePresentation_20min_v3.pdf
+/defense_presentation_2026-09-24/ThesisDefensePresentation_v2.pdf
+/defense_presentation_2026-09-24/ThesisDefensePresentation_Slides_7-8_Review.key
+/defense_presentation_2026-09-24/ThesisDefensePresentation_Slides_7-8_Preview.pdf
+
+# Alternate data export pending review; differs from the canonical CSV
+/data/perfume_level/Unified_Emotion_Profile_Perfume copy.csv
