@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vetiver Nocturne Vertical Feature Example</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 52px; background: #ffffff; }
+    main { width: 1180px; margin: 0 auto; }
+    h1 { margin: 0 0 10px; font-size: 32px; line-height: 1.2; color: #111827; }
+    .subtitle { margin: 0 0 30px; font-size: 18px; color: #4b5563; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 17px; }
+    col:first-child { width: 34%; }
+    col:last-child { width: 66%; }
+    th, td {
+      border: 1.5px solid #526071;
+      padding: 10px 14px;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.32;
+      overflow-wrap: anywhere;
+    }
+    th { background: #dbe7f4; font-weight: 700; font-size: 18px; }
+    tbody tr:nth-child(even) td { background: #f7f9fc; }
+    .group td {
+      background: #e9eef5 !important;
+      color: #253044;
+      font-weight: 700;
+      font-size: 17px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .note { margin: 20px 0 0; color: #4b5563; font-size: 15px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Worked Feature Example</h1>
+  <p class="subtitle">Vetiver Nocturne Absolu Extrait de Parfum</p>
+  <table aria-label="Vertical worked feature example">
+    <colgroup><col><col></colgroup>
+    <thead><tr><th>Item</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr class="group"><td colspan="2">Perfume and data trace</td></tr>
+      <tr><td>Perfume</td><td>vetiver nocturne absolu extrait de parfum</td></tr>
+      <tr><td>Perfume ID</td><td>vetiver-nocturne-absolu-extrait-de-parfum</td></tr>
+      <tr><td>Raw transcript artifact</td><td>data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv</td></tr>
+      <tr><td>Feature artifact</td><td>data/perfume_level/Unified_Emotion_Profile_Perfume.csv</td></tr>
+      <tr><td>Reference-label artifact</td><td>labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv</td></tr>
+      <tr><td>Accepted out-of-fold prediction artifact</td><td>outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv</td></tr>
+      <tr><td>Raw transcript rows</td><td>10</td></tr>
+      <tr><td>Cross-validation fold</td><td>4</td></tr>
+      <tr><td>Source group</td><td>sg_203d88937511a353c874c9c0bc4d9cbd89512a2d1ad0aa8872f740c24e869cb6</td></tr>
+      <tr><td>Perfumes in source group</td><td>4</td></tr>
+
+      <tr class="group"><td colspan="2">Short transcript example</td></tr>
+      <tr><td>Excerpt</td><td>slightly sweet medicinal herbs</td></tr>
+      <tr><td>Words checked</td><td>slightly, sweet, medicinal, herbs</td></tr>
+      <tr><td>NRC match</td><td>sweet → anticipation, joy, positive, surprise, trust</td></tr>
+      <tr><td>VAD for “slightly”</td><td>valence −0.060; arousal −0.452; dominance −0.490</td></tr>
+      <tr><td>VAD for “sweet”</td><td>valence 0.336; arousal −0.164; dominance −0.236</td></tr>
+      <tr><td>VAD for “medicinal”</td><td>valence 0.334; arousal −0.166; dominance 0.228</td></tr>
+      <tr><td>VAD for “herbs”</td><td>valence 0.240; arousal −0.402; dominance −0.384</td></tr>
+      <tr><td>Mean VAD for excerpt</td><td>valence 0.213; arousal −0.296; dominance −0.221</td></tr>
+
+      <tr class="group"><td colspan="2">Reference labels and prediction</td></tr>
+      <tr><td>Positive Gemini emotion labels</td><td>joy, trust, anticipation</td></tr>
+      <tr><td>Gemini VAD labels</td><td>valence 7; arousal 5; dominance 5</td></tr>
+      <tr><td>Logistic Regression positive predictions at threshold 0.3</td><td>joy, trust, anticipation</td></tr>
+
+      <tr class="group"><td colspan="2">Perfume-level structured features</td></tr>
+      <tr><td>NRC positive</td><td>1964</td></tr>
+      <tr><td>NRC trust</td><td>1163</td></tr>
+      <tr><td>NRC joy</td><td>1059</td></tr>
+      <tr><td>NRC anticipation</td><td>663</td></tr>
+      <tr><td>NRC negative</td><td>521</td></tr>
+      <tr><td>VAD valence</td><td>0.163</td></tr>
+      <tr><td>VAD arousal</td><td>−0.104</td></tr>
+      <tr><td>VAD dominance</td><td>0.032</td></tr>
+      <tr><td>Hartmann output</td><td>joy</td></tr>
+      <tr><td>Savani output</td><td>joy</td></tr>
+      <tr><td>GoEmotions output</td><td>neutral</td></tr>
+      <tr><td>Cardiff output</td><td>optimism</td></tr>
+
+      <tr class="group"><td colspan="2">Logistic Regression probabilities</td></tr>
+      <tr><td>Joy</td><td>0.673850</td></tr>
+      <tr><td>Sadness</td><td>0.027227</td></tr>
+      <tr><td>Fear</td><td>0.006614</td></tr>
+      <tr><td>Trust</td><td>0.603986</td></tr>
+      <tr><td>Surprise</td><td>0.019994</td></tr>
+      <tr><td>Anticipation</td><td>0.602763</td></tr>
+      <tr><td>Disgust</td><td>0.002589</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Values are taken from the verified thesis artifacts listed above.</p>
+</main>
+</body>
+</html>
