@@ -1,0 +1,49 @@
+{
+  "thesis_file": "docs/thesis/Ece_CANGA_Thesis.docx",
+  "thesis_sha256": "6a9e17e44beec682462e7c782364374bc2918e7267b4baeb5af7d5845685f974",
+  "17_model_comparison": {
+    "thesis_source": "Tables 9 and 10, YouTube-only rows",
+    "artifact": "outputs/thesis_consolidated_results_v1/youtube_five_model_pooled.csv",
+    "values": {
+      "Logistic Regression": 0.3144693825465339,
+      "XGBoost": 0.3094326229234765,
+      "Random Forest": 0.3345664711619894,
+      "BERT": 0.3589699837708232,
+      "BiLSTM + Attention": 0.2753228902645707
+    },
+    "additional_constant_score_baseline_included": false
+  },
+  "19_emotion_distribution": {
+    "thesis_source": "Table 14",
+    "values": {
+      "Joy": 622,
+      "Trust": 476,
+      "Anticipation": 366,
+      "Surprise": 44,
+      "Disgust": 19,
+      "Sadness": 11,
+      "Fear": 3
+    }
+  },
+  "24_generated_review_comparison": {
+    "thesis_source": "Tables 9 and 10",
+    "artifacts": [
+      "outputs/thesis_consolidated_results_v1/youtube_five_model_pooled.csv",
+      "outputs/thesis_consolidated_results_v1/synthetic_five_model_augmented_pooled.csv"
+    ],
+    "natural_values": {
+      "Logistic Regression": 0.3144693825465339,
+      "XGBoost": 0.3094326229234765,
+      "Random Forest": 0.3345664711619894,
+      "BERT": 0.3589699837708232,
+      "BiLSTM + Attention": 0.2753228902645707
+    },
+    "augmented_values": {
+      "Logistic Regression": 0.35049685616,
+      "XGBoost": 0.310829080036,
+      "Random Forest": 0.31449383675,
+      "BERT": 0.320981707266,
+      "BiLSTM + Attention": 0.277151855123
+    }
+  }
+}

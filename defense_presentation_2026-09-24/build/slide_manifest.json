@@ -1,0 +1,1427 @@
+[
+  {
+    "slide": 1,
+    "label": 1,
+    "title": "Emotions in\nPerfume Reviews",
+    "source": "",
+    "text": [
+      "",
+      "MASTER’S THESIS DEFENSE",
+      "Emotions in\nPerfume Reviews",
+      "",
+      "01",
+      "Advanced Sentiment Analysis Framework for Olfactory Perception Mining:\nUtilizing Machine Learning and Deep Learning Techniques\non Social Media Data Streams",
+      "",
+      "Ece ÇANGA",
+      "Computer Engineering\nÇankaya University",
+      "Supervisor: Assoc. Prof. Dr. Serdar ARSLAN\nSeptember 2026"
+    ],
+    "tables": []
+  },
+  {
+    "slide": 2,
+    "label": 2,
+    "title": "Why look beyond positive and negative reviews?",
+    "source": "Nikitina & Furuoka (2023); Nandwani & Verma (2021).",
+    "text": [
+      "",
+      "MOTIVATION",
+      "Why look beyond positive and negative reviews?",
+      "",
+      "Nikitina & Furuoka (2023); Nandwani & Verma (2021).",
+      "02",
+      "Perfume reviews describe sensory impressions and emotional associations.",
+      "",
+      "",
+      "Enjoyment",
+      "“This makes me happy.”",
+      "",
+      "",
+      "Anticipation",
+      "“I cannot wait to wear this.”",
+      "Two positive reviews; different emotional meanings. Illustrative examples.",
+      "",
+      "Emotion classification offers a more detailed description of review language."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 3,
+    "label": 3,
+    "title": "One review can express several emotions",
+    "source": "",
+    "text": [
+      "",
+      "THE TASK",
+      "One review can express several emotions",
+      "",
+      "03",
+      "",
+      "“This perfume makes me happy, and I cannot wait to wear it.”",
+      "Illustrative example",
+      "",
+      "Joy",
+      "+",
+      "",
+      "Anticipation",
+      "The task allows multiple emotion labels for the same perfume, based on its review text.",
+      "",
+      "Joy",
+      "",
+      "Trust",
+      "",
+      "Anticipation",
+      "",
+      "Surprise",
+      "",
+      "Sadness",
+      "",
+      "Fear",
+      "",
+      "Disgust",
+      "",
+      "Target: emotion expressed in review language. Wearer responses are not directly measured."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 4,
+    "label": 4,
+    "title": "Existing methods provide different kinds of evidence",
+    "source": "Mohammad & Turney (2013); Mohammad (2018); Demszky et al. (2020); Devlin et al. (2019).",
+    "text": [
+      "",
+      "BACKGROUND",
+      "Existing methods provide different kinds of evidence",
+      "",
+      "Mohammad & Turney (2013); Mohammad (2018); Demszky et al. (2020); Devlin et al. (2019).",
+      "04",
+      "",
+      "This thesis evaluates these approaches within a shared perfume-review benchmark."
+    ],
+    "tables": [
+      [
+        [
+          "Approach",
+          "What it contributes"
+        ],
+        [
+          "Emotion dictionaries",
+          "Associations between words and emotions"
+        ],
+        [
+          "Affect dimensions",
+          "Pleasantness, activation and control"
+        ],
+        [
+          "Contextual language models",
+          "Patterns that depend on surrounding text"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 5,
+    "label": 5,
+    "title": "Three research questions",
+    "source": "Thesis §1.4.",
+    "text": [
+      "",
+      "RESEARCH AIM",
+      "Three research questions",
+      "",
+      "Thesis §1.4.",
+      "05",
+      "",
+      "RQ1",
+      "Representation",
+      "How can perfume-review transcripts be represented as structured emotion features?",
+      "",
+      "RQ2",
+      "Model comparison",
+      "How do machine learning and deep learning methods compare in identifying multiple emotions?",
+      "",
+      "RQ3",
+      "Synthetic augmentation",
+      "How does weighted augmentation with generated reviews affect prediction on held-out YouTube perfumes?"
+    ],
+    "tables": []
+  },
+  {
+    "slide": 6,
+    "label": 6,
+    "title": "What this thesis contributes",
+    "source": "Thesis §§1.5 and 6.3.",
+    "text": [
+      "",
+      "CONTRIBUTION",
+      "What this thesis contributes",
+      "",
+      "Thesis §§1.5 and 6.3.",
+      "06",
+      "",
+      "",
+      "A perfume-review\ndataset",
+      "English YouTube transcript records linked to 784 perfumes.",
+      "",
+      "",
+      "A reproducible\nworkflow",
+      "A 58-feature representation alongside a direct text modelling route.",
+      "",
+      "",
+      "A controlled\ncomparison",
+      "Five models, feature combinations and weighted synthetic augmentation.",
+      "",
+      "Shared evaluation conditions connect the dataset, representations and experiments."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 7,
+    "label": 7,
+    "title": "From review transcripts to perfume-level predictions",
+    "source": "Thesis §3.2.1; Table 1.",
+    "text": [
+      "",
+      "DATA",
+      "From review transcripts to perfume-level predictions",
+      "",
+      "Thesis §3.2.1; Table 1.",
+      "07",
+      "784",
+      "perfumes",
+      "4,881",
+      "usable transcript records",
+      "1–10",
+      "records per perfume; median 7",
+      "Perfume-specific YouTube searches supplied available English transcripts.\nRetained transcripts contain at least 20 words.",
+      "",
+      "Transcript records",
+      "",
+      "Grouped by perfume",
+      "",
+      "Emotion predictions\nfor each perfume",
+      "",
+      "Perfumes can share source material, so the records are not necessarily independent."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 8,
+    "label": 8,
+    "title": "The reference labels follow a fixed annotation policy",
+    "source": "Thesis §3.4; Niu et al. (2024), methodological context.",
+    "text": [
+      "",
+      "REFERENCE LABELS",
+      "The reference labels follow a fixed annotation policy",
+      "",
+      "Thesis §3.4; Niu et al. (2024), methodological context.",
+      "08",
+      "",
+      "",
+      "Gemini 3.1 Pro",
+      "Assigned emotion labels from supplied review excerpts.\n\nFixed instructions and a consistent label set.",
+      "",
+      "",
+      "What the model saw",
+      "One or two excerpts per perfume.\n\nMaximum 360 characters per excerpt.",
+      "",
+      "Evaluation measures agreement with these model-generated reference labels.",
+      "Independent human validation was not conducted."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 9,
+    "label": 9,
+    "title": "The AI tools have four different roles",
+    "source": "Thesis §§3.2.2 and 3.4–3.6.",
+    "text": [
+      "",
+      "ROLES IN THE WORKFLOW",
+      "The AI tools have four different roles",
+      "",
+      "Thesis §§3.2.2 and 3.4–3.6.",
+      "09",
+      "",
+      "Feature generation, annotation, prediction and text generation are separate steps."
+    ],
+    "tables": [
+      [
+        [
+          "Component",
+          "Role"
+        ],
+        [
+          "Pretrained text models",
+          "Produce numerical input features"
+        ],
+        [
+          "Gemini 3.1 Pro",
+          "Assign reference labels"
+        ],
+        [
+          "Five supervised classifiers",
+          "Learn to predict the emotion labels"
+        ],
+        [
+          "GPT-5",
+          "Generate additional review text for augmentation"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 10,
+    "label": 10,
+    "title": "Two routes lead to the same prediction task",
+    "source": "Simplified from thesis Figure 1; §§3.5–3.7.",
+    "text": [
+      "",
+      "METHOD OVERVIEW",
+      "Two routes lead to the same prediction task",
+      "",
+      "Simplified from thesis Figure 1; §§3.5–3.7.",
+      "10",
+      "",
+      "Review\ntranscripts",
+      "",
+      "58 features\nper perfume",
+      "",
+      "Transcript\ntext",
+      "",
+      "Three feature\nclassifiers",
+      "",
+      "Two text\nclassifiers",
+      "",
+      "Separate predictions\nfrom each model",
+      "Evaluate against held-out reference labels",
+      "",
+      "Reference labels are training targets. Held-out predictions use only model inputs."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 11,
+    "label": 11,
+    "title": "What do the 58 features describe?",
+    "source": "Thesis §3.5; Table 5.",
+    "text": [
+      "",
+      "REPRESENTATION",
+      "What do the 58 features describe?",
+      "",
+      "Thesis §3.5; Table 5.",
+      "11",
+      "",
+      "The representation combines dictionary evidence with contextual model outputs."
+    ],
+    "tables": [
+      [
+        [
+          "Feature family",
+          "Count",
+          "Meaning"
+        ],
+        [
+          "Emotion and sentiment word counts",
+          "10",
+          "Vocabulary associated with emotions and sentiment"
+        ],
+        [
+          "Affect dimensions",
+          "3",
+          "Pleasantness, activation and control"
+        ],
+        [
+          "Pretrained model scores",
+          "45",
+          "Signals from existing text classifiers"
+        ],
+        [
+          "Total",
+          "58",
+          "One numerical representation per perfume"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 12,
+    "label": 12,
+    "title": "Five models, grouped by their inputs",
+    "source": "Thesis §3.6; Table 6.",
+    "text": [
+      "",
+      "MODEL COMPARISON",
+      "Five models, grouped by their inputs",
+      "",
+      "Thesis §3.6; Table 6.",
+      "12",
+      "",
+      "",
+      "58 structured features",
+      "Logistic Regression\nXGBoost\nRandom Forest",
+      "",
+      "",
+      "Review text",
+      "BERT\nBiLSTM with Attention",
+      "Learn from the 58-value representation.",
+      "Learn from transcripts; combine predictions at perfume level.",
+      "",
+      "The comparison covers complete approaches, including their different inputs."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 13,
+    "label": 13,
+    "title": "Performance is measured on held-out perfumes",
+    "source": "Thesis §§3.7 and 4.1.1.",
+    "text": [
+      "",
+      "EVALUATION",
+      "Performance is measured on held-out perfumes",
+      "",
+      "Thesis §§3.7 and 4.1.1.",
+      "13",
+      "",
+      "Training inputs\nand reference labels",
+      "",
+      "Validation data",
+      "Learn parameters",
+      "Guide training\ndecisions",
+      "",
+      "Trained model",
+      "",
+      "Predict test\nperfumes",
+      "Five outer folds share the same splits. Each perfume is held out for its prediction.",
+      "",
+      "Test data do not guide training. Emotion labels use a fixed 0.30 probability cutoff."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 14,
+    "label": 14,
+    "title": "Shared sources stay together",
+    "source": "Thesis §3.7; Table 8.",
+    "text": [
+      "",
+      "EVALUATION INTEGRITY",
+      "Shared sources stay together",
+      "",
+      "Thesis §3.7; Table 8.",
+      "14",
+      "",
+      "Perfume A",
+      "",
+      "Perfume B",
+      "",
+      "Shared video or\nidentical full transcript",
+      "",
+      "Same connected group\nSame evaluation fold",
+      "359 source groups",
+      "Shared videos and identical transcripts cannot cross training and test data.",
+      "Groups differ in size; supplementary analyses give each source group equal weight."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 15,
+    "label": 15,
+    "title": "Different scores answer different questions",
+    "source": "Thesis §4.1.3; Saito & Rehmsmeier (2015).",
+    "text": [
+      "",
+      "READING THE RESULTS",
+      "Different scores answer different questions",
+      "",
+      "Thesis §4.1.3; Saito & Rehmsmeier (2015).",
+      "15",
+      "AP evaluates ranking; F1 evaluates labels at the fixed cutoff. ROC-AUC is supplementary.",
+      "“Macro” gives each emotion equal weight. These scores are not percentages correct."
+    ],
+    "tables": [
+      [
+        [
+          "Metric",
+          "Question"
+        ],
+        [
+          "Macro Average Precision (AP)",
+          "Are perfumes with the reference emotion ranked near the top?"
+        ],
+        [
+          "Macro F1",
+          "How well do final labels balance missed emotions and false alarms?"
+        ],
+        [
+          "Macro ROC-AUC",
+          "How often do reference positives rank above reference negatives?"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 16,
+    "label": 16,
+    "title": "A real example connects the steps",
+    "source": "Thesis §3.9; Table 7.",
+    "text": [
+      "",
+      "WORKED EXAMPLE",
+      "A real example connects the steps",
+      "",
+      "Thesis §3.9; Table 7.",
+      "16",
+      "Vetiver Nocturne Absolu Extrait de Parfum",
+      "",
+      "“slightly sweet medicinal herbs”",
+      "“Sweet” contributes to dictionary emotion counts.",
+      "",
+      "10 transcripts",
+      "",
+      "58 features",
+      "",
+      "Logistic\nRegression",
+      "Other four scores are below the cutoff.\nThe result matches the reference labels.",
+      "",
+      "The excerpt illustrates one feature step; prediction uses the full perfume-level representation."
+    ],
+    "tables": [
+      [
+        [
+          "Emotion",
+          "Score",
+          "At 0.30"
+        ],
+        [
+          "Joy",
+          "0.674",
+          "Present"
+        ],
+        [
+          "Trust",
+          "0.604",
+          "Present"
+        ],
+        [
+          "Anticipation",
+          "0.603",
+          "Present"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 17,
+    "label": 17,
+    "title": "BERT has the highest observed Macro AP",
+    "source": "YouTube-only training; pooled out-of-fold predictions. Thesis Tables 9 and 10.",
+    "text": [
+      "",
+      "NATURAL-DATA RESULTS",
+      "BERT has the highest observed Macro AP",
+      "",
+      "YouTube-only training; pooled out-of-fold predictions. Thesis Tables 9 and 10.",
+      "17",
+      "Macro Average Precision  ·  Higher is better",
+      "",
+      "BERT: 0.3590 Macro AP. All five models use the same 784 held-out perfumes."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 18,
+    "label": 18,
+    "title": "The leading model depends on the metric",
+    "source": "Thesis Tables 9 and 10; §4.4.2.",
+    "text": [
+      "",
+      "INTERPRETING MODEL COMPARISONS",
+      "The leading model depends on the metric",
+      "",
+      "Thesis Tables 9 and 10; §4.4.2.",
+      "18",
+      "With equal source-group weighting, paired F1 comparisons do not clearly separate the models.",
+      "",
+      "The evidence does not establish one overall best model."
+    ],
+    "tables": [
+      [
+        [
+          "Metric",
+          "Highest pooled result",
+          "Score"
+        ],
+        [
+          "Macro F1",
+          "BERT",
+          "0.4029"
+        ],
+        [
+          "Macro AP",
+          "BERT",
+          "0.3590"
+        ],
+        [
+          "Macro ROC-AUC",
+          "XGBoost",
+          "0.5683"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 19,
+    "label": 19,
+    "title": "Emotion frequencies shape the evidence",
+    "source": "Thesis Table 14; §4.6.1. Counts are perfume-level reference positives.",
+    "text": [
+      "",
+      "CLASS IMBALANCE",
+      "Emotion frequencies shape the evidence",
+      "",
+      "Thesis Table 14; §4.6.1. Counts are perfume-level reference positives.",
+      "19",
+      "",
+      "3",
+      "positive cases\nfor Fear",
+      "BERT’s F1 of 0.5000 reflects one correct detection.",
+      "",
+      "Joy, Trust and Anticipation dominate; rare-emotion scores depend on very few cases."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 20,
+    "label": 20,
+    "title": "Prediction behaviour helps explain F1",
+    "source": "Thesis Tables 13–15. BERT, YouTube-only training, cutoff 0.30.",
+    "text": [
+      "",
+      "INTERPRETING MODEL OUTPUTS",
+      "Prediction behaviour helps explain F1",
+      "",
+      "Thesis Tables 13–15. BERT, YouTube-only training, cutoff 0.30.",
+      "20",
+      "BERT predicts all three emotions for every perfume at the official cutoff.",
+      "",
+      "Interpret F1 alongside label frequency and prediction behaviour.",
+      "Changing the cutoff changes F1; AP and ROC-AUC remain unchanged for the same probabilities."
+    ],
+    "tables": [
+      [
+        [
+          "Emotion",
+          "Reference positives",
+          "Predicted positives",
+          "F1"
+        ],
+        [
+          "Joy",
+          "622",
+          "784",
+          "0.8848"
+        ],
+        [
+          "Trust",
+          "476",
+          "784",
+          "0.7556"
+        ],
+        [
+          "Anticipation",
+          "366",
+          "784",
+          "0.6365"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 21,
+    "label": 21,
+    "title": "Feature combinations affect models differently",
+    "source": "Thesis §4.5.1; Table 12. Results use the tested fixed model settings.",
+    "text": [
+      "",
+      "REPRESENTATION EXPERIMENT",
+      "Feature combinations affect models differently",
+      "",
+      "Thesis §4.5.1; Table 12. Results use the tested fixed model settings.",
+      "21",
+      "Seven feature combinations were tested across the three feature-based classifiers.",
+      "",
+      "The benefit of a feature family depends on the classifier."
+    ],
+    "tables": [
+      [
+        [
+          "Classifier",
+          "Observed pattern"
+        ],
+        [
+          "Logistic Regression",
+          "F1 changes little across feature combinations"
+        ],
+        [
+          "XGBoost",
+          "Word counts + affect dimensions: F1 0.3797\nFull 58-feature representation: F1 0.3260"
+        ],
+        [
+          "Random Forest",
+          "The full representation has the highest observed pooled scores"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 22,
+    "label": 22,
+    "title": "Generated reviews test an additional training-data strategy",
+    "source": "Thesis §3.2.2.",
+    "text": [
+      "",
+      "SYNTHETIC AUGMENTATION",
+      "Generated reviews test an additional training-data strategy",
+      "",
+      "Thesis §3.2.2.",
+      "22",
+      "",
+      "Sensory keywords\n+ templates",
+      "",
+      "GPT-5\nreview text",
+      "",
+      "Gemini\nemotion labels",
+      "",
+      "Additional\ntraining examples",
+      "2,352",
+      "reviews in the primary corpus\nThree generated reviews per perfume",
+      "",
+      "Existing target emotion labels and VAD values were not supplied to GPT-5."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 23,
+    "label": 23,
+    "title": "Both training conditions face the same natural test data",
+    "source": "Thesis §§3.8 and 4.1.1. Base weighting is before model-specific class weighting.",
+    "text": [
+      "",
+      "CONTROLLED AUGMENTATION COMPARISON",
+      "Both training conditions face the same natural test data",
+      "",
+      "Thesis §§3.8 and 4.1.1. Base weighting is before model-specific class weighting.",
+      "23",
+      "",
+      "Natural training data",
+      "",
+      "Natural + permitted\nsynthetic reviews",
+      "",
+      "Natural-only model",
+      "",
+      "Augmented model",
+      "",
+      "Same held-out\nnatural test perfumes",
+      "Per training perfume: natural records have total base weight 1;\nthe three synthetic reviews together also have total base weight 1.",
+      "",
+      "Same folds, settings and cutoff. No synthetic reviews from validation or test perfumes."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 24,
+    "label": 24,
+    "title": "Augmentation produces mixed changes",
+    "source": "Thesis Tables 9 and 10. Pooled out-of-fold Macro AP on the same natural test data.",
+    "text": [
+      "",
+      "AUGMENTATION RESULTS",
+      "Augmentation produces mixed changes",
+      "",
+      "Thesis Tables 9 and 10. Pooled out-of-fold Macro AP on the same natural test data.",
+      "24",
+      "Macro Average Precision  ·  Natural-only vs. weighted augmented training",
+      "",
+      "Logistic Regression improves; Random Forest and BERT decline. Other changes are small."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 25,
+    "label": 25,
+    "title": "The evidence does not establish a general augmentation benefit",
+    "source": "Thesis §4.4.3; Table 11. Paired source-group bootstrap intervals.",
+    "text": [
+      "",
+      "STRENGTH OF EVIDENCE",
+      "The evidence does not establish a general augmentation benefit",
+      "",
+      "Thesis §4.4.3; Table 11. Paired source-group bootstrap intervals.",
+      "25",
+      "",
+      "",
+      "Changes depend on the model",
+      "The direction and size of changes differ across models and metrics.",
+      "",
+      "",
+      "Uncertainty remains",
+      "Under equal source-group weighting, all five 95% intervals for seven-label Macro AP change include zero.",
+      "This experiment does not isolate why the models respond differently.",
+      "",
+      "Generated text needs validation on natural reviews before it can be assumed beneficial."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 26,
+    "label": 26,
+    "title": "Answers to the research questions",
+    "source": "Thesis §6.2.",
+    "text": [
+      "",
+      "SYNTHESIS",
+      "Answers to the research questions",
+      "",
+      "Thesis §6.2.",
+      "26",
+      "",
+      "RQ1",
+      "Representation",
+      "58 features combine word counts, affect dimensions and contextual scores. Their effects depend on the classifier.",
+      "",
+      "RQ2",
+      "Model comparison",
+      "BERT leads pooled F1 and AP; XGBoost leads ROC-AUC. The evidence does not establish an overall best model.",
+      "",
+      "RQ3",
+      "Synthetic augmentation",
+      "Weighted augmentation produces model- and metric-dependent changes, without a consistent general benefit."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 27,
+    "label": 27,
+    "title": "The scope of the conclusions",
+    "source": "Thesis §5.6.",
+    "text": [
+      "",
+      "LIMITATIONS",
+      "The scope of the conclusions",
+      "",
+      "Thesis §5.6.",
+      "27",
+      "Grouping addresses shared videos and identical transcripts.\nDependence through reviewers or channels may remain.",
+      "Conclusions apply to this dataset, annotation policy and experimental configuration."
+    ],
+    "tables": [
+      [
+        [
+          "Boundary",
+          "What it means"
+        ],
+        [
+          "Model-generated reference labels",
+          "Agreement with human judgments is not established"
+        ],
+        [
+          "English YouTube transcripts",
+          "Findings are specific to this review setting"
+        ],
+        [
+          "Shared sources and rare emotions",
+          "Independence and estimation precision are limited"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 28,
+    "label": 28,
+    "title": "Three priorities for extending the work",
+    "source": "Thesis §6.4.",
+    "text": [
+      "",
+      "FUTURE WORK",
+      "Three priorities for extending the work",
+      "",
+      "Thesis §6.4.",
+      "28",
+      "",
+      "",
+      "1  Validate labels",
+      "Check excerpt relevance.\n\nCollect independent human annotations.",
+      "",
+      "",
+      "2  Broaden the data",
+      "Add independent sources and rare-emotion cases.\n\nTest new channels and platforms.",
+      "",
+      "",
+      "3  Refine\naugmentation",
+      "Use comparable review or perfume units.\n\nTest generation strategies on independent natural reviews."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 29,
+    "label": 29,
+    "title": "Three takeaways",
+    "source": "Thesis §§6.1–6.3.",
+    "text": [
+      "",
+      "CONCLUSION",
+      "Three takeaways",
+      "",
+      "Thesis §§6.1–6.3.",
+      "29",
+      "01",
+      "Reproducible representation",
+      "Review transcripts become lexical, dimensional and contextual emotion features.",
+      "02",
+      "Comparative benchmark",
+      "Five approaches show strengths that vary across metrics and emotions.",
+      "03",
+      "Empirical augmentation finding",
+      "Generated reviews produce model-dependent changes, without consistent improvement.",
+      "A traceable dataset, a reproducible workflow and controlled evidence."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 30,
+    "label": 30,
+    "title": "Thank you",
+    "source": "",
+    "text": [
+      "",
+      "THESIS DEFENSE",
+      "Thank you",
+      "",
+      "30",
+      "Questions & Discussion",
+      "Ece ÇANGA  |  Çankaya University, Computer Engineering",
+      "",
+      "784 perfumes   •   5 models   •   2 training conditions",
+      "Understanding emotional language in perfume reviews\nthrough reproducible modelling and evaluation."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 31,
+    "label": "A1",
+    "title": "Full results: natural training data",
+    "source": "Thesis Tables 9 and 10. Pooled out-of-fold predictions; seven labels; cutoff 0.30.",
+    "text": [
+      "",
+      "BACKUP · FULL RESULTS",
+      "Full results: natural training data",
+      "",
+      "Thesis Tables 9 and 10. Pooled out-of-fold predictions; seven labels; cutoff 0.30.",
+      "A1",
+      "",
+      "All five models are evaluated on the same 784 held-out YouTube perfumes."
+    ],
+    "tables": [
+      [
+        [
+          "Model",
+          "Macro F1",
+          "Macro AP",
+          "Macro ROC-AUC"
+        ],
+        [
+          "Logistic Regression",
+          ".3592",
+          ".3145",
+          ".5473"
+        ],
+        [
+          "XGBoost",
+          ".3260",
+          ".3094",
+          ".5683"
+        ],
+        [
+          "Random Forest",
+          ".3306",
+          ".3346",
+          ".5638"
+        ],
+        [
+          "BERT",
+          ".4029",
+          ".3590",
+          ".5533"
+        ],
+        [
+          "BiLSTM with Attention",
+          ".3486",
+          ".2753",
+          ".4507"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 32,
+    "label": "A2",
+    "title": "Full results: augmented training data",
+    "source": "Thesis §§3.8 and 4.1.1; Tables 9 and 10. Pooled out-of-fold results; cutoff 0.30.",
+    "text": [
+      "",
+      "BACKUP · FULL RESULTS",
+      "Full results: augmented training data",
+      "",
+      "Thesis §§3.8 and 4.1.1; Tables 9 and 10. Pooled out-of-fold results; cutoff 0.30.",
+      "A2",
+      "Three synthetic reviews per eligible perfume: each has base weight ⅓; natural records total 1.",
+      "Class weighting also applies. Equal base weights do not imply identical effective influence across models."
+    ],
+    "tables": [
+      [
+        [
+          "Model",
+          "Macro F1",
+          "Macro AP",
+          "Macro ROC-AUC"
+        ],
+        [
+          "Logistic Regression",
+          ".3737",
+          ".3505",
+          ".5372"
+        ],
+        [
+          "XGBoost",
+          ".3359",
+          ".3108",
+          ".5982"
+        ],
+        [
+          "Random Forest",
+          ".3247",
+          ".3145",
+          ".5731"
+        ],
+        [
+          "BERT",
+          ".3316",
+          ".3210",
+          ".5267"
+        ],
+        [
+          "BiLSTM with Attention",
+          ".3466",
+          ".2772",
+          ".4490"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 33,
+    "label": "A3",
+    "title": "Source grouping and fold sizes",
+    "source": "Thesis §3.7; Figure 5; Table 8; saved fold assignments.",
+    "text": [
+      "",
+      "BACKUP · EVALUATION SPLITS",
+      "Source grouping and fold sizes",
+      "",
+      "Thesis §3.7; Figure 5; Table 8; saved fold assignments.",
+      "A3",
+      "Shared videos and normalized identical full transcripts connect perfumes into groups.",
+      "Connections are transitive. Each complete group remains within one fold.",
+      "",
+      "Pooled results weight perfumes equally; supplementary analyses weight source groups equally."
+    ],
+    "tables": [
+      [
+        [
+          "Outer fold",
+          "Perfumes",
+          "Source groups"
+        ],
+        [
+          "1",
+          "334",
+          "1"
+        ],
+        [
+          "2",
+          "113",
+          "90"
+        ],
+        [
+          "3",
+          "113",
+          "90"
+        ],
+        [
+          "4",
+          "112",
+          "89"
+        ],
+        [
+          "5",
+          "112",
+          "89"
+        ],
+        [
+          "Total",
+          "784",
+          "359"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 34,
+    "label": "A4",
+    "title": "Augmentation uncertainty under equal-source weighting",
+    "source": "Thesis §4.4.3; Table 11. Changes are augmented minus natural-only training.",
+    "text": [
+      "",
+      "BACKUP · PAIRED UNCERTAINTY",
+      "Augmentation uncertainty under equal-source weighting",
+      "",
+      "Thesis §4.4.3; Table 11. Changes are augmented minus natural-only training.",
+      "A4",
+      "Seven-label Macro AP. Equal-group weighting answers a different question from pooled scores.",
+      "Across seven-label and Fear-omitted analyses, 2 of 30 intervals exclude zero.\n2,000 bootstrap samples; fitted predictions held fixed; no multiple-comparison correction."
+    ],
+    "tables": [
+      [
+        [
+          "Model",
+          "Δ Macro AP",
+          "Unadjusted 95% interval"
+        ],
+        [
+          "Logistic Regression",
+          "+.1202",
+          "[−.0366, +.1402]"
+        ],
+        [
+          "XGBoost",
+          "+.0025",
+          "[−.0205, +.0381]"
+        ],
+        [
+          "Random Forest",
+          "−.0244",
+          "[−.1079, +.0154]"
+        ],
+        [
+          "BERT",
+          "−.1458",
+          "[−.1726, +.0722]"
+        ],
+        [
+          "BiLSTM with Attention",
+          "−.0044",
+          "[−.0434, +.0274]"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 35,
+    "label": "A5",
+    "title": "Annotation policy and validation boundaries",
+    "source": "Thesis §3.4; Appendices 2 and 3.",
+    "text": [
+      "",
+      "BACKUP · REFERENCE LABELS",
+      "Annotation policy and validation boundaries",
+      "",
+      "Thesis §3.4; Appendices 2 and 3.",
+      "A5",
+      "",
+      "",
+      "Fixed annotation policy",
+      "Gemini 3.1 Pro with fixed prompts.\n\nNatural data: 1–2 excerpts, each ≤360 characters. Synthetic data: one review.\n\nWeak or neutral evidence can produce all-zero labels.",
+      "",
+      "",
+      "Validation boundaries",
+      "Anger excluded: 7 natural positives and 0 synthetic positives.\n\n174 of 784 records had no name anchor found; 20 inspected traces were correct.",
+      "",
+      "Traceability does not establish topical relevance or agreement with human emotion judgments."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 36,
+    "label": "A6",
+    "title": "Input scope and model configuration",
+    "source": "Thesis §§3.5.3 and 3.6.",
+    "text": [
+      "",
+      "BACKUP · MODELLING DETAILS",
+      "Input scope and model configuration",
+      "",
+      "Thesis §§3.5.3 and 3.6.",
+      "A6",
+      "BERT\nGoEmotions initialization; up to 3 epochs.",
+      "BiLSTM\nTrained from scratch; up to 12 epochs.",
+      "Text probabilities are averaged at perfume level. 4,879 chunks remain after removing two within-perfume duplicates.",
+      "",
+      "The comparison includes differences in input scope and training configuration."
+    ],
+    "tables": [
+      [
+        [
+          "Component",
+          "Input scope"
+        ],
+        [
+          "Lexicon and affect dimensions",
+          "Full transcript"
+        ],
+        [
+          "Pretrained feature models",
+          "First 512 characters"
+        ],
+        [
+          "BERT",
+          "Up to 96 tokens"
+        ],
+        [
+          "BiLSTM with Attention",
+          "Up to 208 tokens"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 37,
+    "label": "A7",
+    "title": "Per-emotion F1: natural training data",
+    "source": "Thesis Table 14. Perfume-level reference support; cutoff 0.30; BiLSTM uses attention.",
+    "text": [
+      "",
+      "BACKUP · PER-EMOTION RESULTS",
+      "Per-emotion F1: natural training data",
+      "",
+      "Thesis Table 14. Perfume-level reference support; cutoff 0.30; BiLSTM uses attention.",
+      "A7",
+      "",
+      "Rare-emotion scores can change substantially with one prediction."
+    ],
+    "tables": [
+      [
+        [
+          "Emotion",
+          "Support",
+          "LR",
+          "XGBoost",
+          "RF",
+          "BERT",
+          "BiLSTM"
+        ],
+        [
+          "Joy",
+          "622",
+          ".8614",
+          ".8774",
+          ".8848",
+          ".8848",
+          ".8848"
+        ],
+        [
+          "Trust",
+          "476",
+          ".7376",
+          ".7179",
+          ".7556",
+          ".7556",
+          ".7556"
+        ],
+        [
+          "Anticipation",
+          "366",
+          ".6380",
+          ".5831",
+          ".6294",
+          ".6365",
+          ".6365"
+        ],
+        [
+          "Surprise",
+          "44",
+          ".1274",
+          ".1034",
+          ".0444",
+          ".0435",
+          ".1068"
+        ],
+        [
+          "Disgust",
+          "19",
+          ".0235",
+          ".0000",
+          ".0000",
+          ".0000",
+          ".0197"
+        ],
+        [
+          "Sadness",
+          "11",
+          ".0435",
+          ".0000",
+          ".0000",
+          ".0000",
+          ".0261"
+        ],
+        [
+          "Fear",
+          "3",
+          ".0833",
+          ".0000",
+          ".0000",
+          ".5000",
+          ".0108"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 38,
+    "label": "A8",
+    "title": "Selected references",
+    "source": "All eight works are cited in the thesis. Titles are linked to the source pages.",
+    "text": [
+      "",
+      "BACKUP · REFERENCES",
+      "Selected references",
+      "",
+      "All eight works are cited in the thesis. Titles are linked to the source pages.",
+      "A8",
+      "Nikitina & Furuoka (2023)",
+      "Words of scents: A linguistic analysis of online perfume reviews.",
+      "Nandwani & Verma (2021)",
+      "A review on sentiment analysis and emotion detection from text.",
+      "Mohammad & Turney (2013)",
+      "Crowdsourcing a Word–Emotion Association Lexicon.",
+      "Mohammad (2018)",
+      "Obtaining Reliable Human Ratings of Valence, Arousal, and Dominance for 20,000 English Words.",
+      "Demszky et al. (2020)",
+      "GoEmotions: A Dataset of Fine-Grained Emotions.",
+      "Devlin et al. (2019)",
+      "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.",
+      "Saito & Rehmsmeier (2015)",
+      "The Precision–Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets.",
+      "Niu et al. (2024)",
+      "Rethinking Emotion Annotations in the Era of Large Language Models."
+    ],
+    "tables": []
+  },
+  {
+    "slide": 39,
+    "label": "A9",
+    "title": "Threshold sensitivity",
+    "source": "Thesis §4.5.2; Table 13. Macro F1 from the same YouTube-only out-of-fold probabilities.",
+    "text": [
+      "",
+      "BACKUP · PREDICTION CUTOFF",
+      "Threshold sensitivity",
+      "",
+      "Thesis §4.5.2; Table 13. Macro F1 from the same YouTube-only out-of-fold probabilities.",
+      "A9",
+      "Changing the cutoff changes the labels without retraining. AP and ROC-AUC are unchanged.",
+      "The official 0.30 cutoff was specified before this sensitivity check."
+    ],
+    "tables": [
+      [
+        [
+          "Model",
+          "0.20",
+          "0.30 official",
+          "0.50",
+          "0.70"
+        ],
+        [
+          "Logistic Regression",
+          ".3590",
+          ".3592",
+          ".2985",
+          ".1690"
+        ],
+        [
+          "XGBoost",
+          ".3409",
+          ".3260",
+          ".2950",
+          ".2248"
+        ],
+        [
+          "Random Forest",
+          ".3526",
+          ".3306",
+          ".2952",
+          ".1669"
+        ],
+        [
+          "BERT",
+          ".3926",
+          ".4029",
+          ".2899",
+          ".0000"
+        ],
+        [
+          "BiLSTM with Attention",
+          ".3515",
+          ".3486",
+          ".1943",
+          ".0000"
+        ]
+      ]
+    ]
+  },
+  {
+    "slide": 40,
+    "label": "A10",
+    "title": "Model-comparison uncertainty",
+    "source": "Thesis §4.4.2. Unadjusted 95% source-group bootstrap intervals; conditional on fitted models.",
+    "text": [
+      "",
+      "BACKUP · EVIDENCE STRENGTH",
+      "Model-comparison uncertainty",
+      "",
+      "Thesis §4.4.2. Unadjusted 95% source-group bootstrap intervals; conditional on fitted models.",
+      "A10",
+      "Supplementary analysis: equal weight for each source group",
+      "",
+      "",
+      "F1 comparisons",
+      "All 10 paired intervals include zero.",
+      "",
+      "",
+      "Ranking comparisons",
+      "7 of 20 intervals exclude zero, mainly involving BiLSTM.",
+      "",
+      "These results do not establish one model as clearly best across all measures."
+    ],
+    "tables": [
+      [
+        [
+          "BERT point estimate",
+          "Macro F1",
+          "Macro AP",
+          "Macro ROC-AUC"
+        ],
+        [
+          "Highest observed",
+          ".4839",
+          ".4665",
+          ".5932"
+        ]
+      ]
+    ]
+  }
+]

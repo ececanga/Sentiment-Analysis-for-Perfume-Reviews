@@ -1,0 +1,58 @@
+{
+  "slides": 40,
+  "editable_charts": 3,
+  "editable_tables": 18,
+  "aggregate_table_values_verified": 30,
+  "recomputed_natural_aggregate_metrics": 15,
+  "recomputed_per_emotion_f1": 35,
+  "recomputed_threshold_f1": 20,
+  "emotion_support_counts_verified": 7,
+  "source_groups": 359,
+  "source_group_fold_leakage": 0,
+  "chart_values_verified": 22,
+  "all_58_feature_names_verified": true,
+  "main_model_comparison_values_verified": 15,
+  "feature_combination_comparison_values_verified": 12,
+  "requested_slide_changes": "verified",
+  "reference_hyperlinks": [
+    "https://aclanthology.org/2020.acl-main.372/",
+    "https://aclanthology.org/N19-1423/",
+    "https://aclanthology.org/P18-1017/",
+    "https://arxiv.org/abs/2412.07906",
+    "https://doi.org/10.1007/s13278-021-00776-6",
+    "https://doi.org/10.1111/j.1467-8640.2012.00460.x",
+    "https://doi.org/10.1371/journal.pone.0118432",
+    "https://doi.org/10.1515/lingvan-2022-0135"
+  ],
+  "zip_xml_integrity": "passed",
+  "thesis_sha256": "6a9e17e44beec682462e7c782364374bc2918e7267b4baeb5af7d5845685f974",
+  "powerpoint_open_save_reopen": "passed",
+  "pdf_pages": 40,
+  "rendered_text_elements_verified": 711,
+  "missing_rendered_text_elements": 0,
+  "text_outside_pdf_pages": 0,
+  "annotations_addressed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "Ece_CANGA_Thesis_Defense_Revised.pptx": {
+    "bytes": 201059,
+    "sha256": "62c784a8db860f06d36a7634eff1e22705a7c1a2692dabd84dfdbf3e99740124"
+  },
+  "Ece_CANGA_Thesis_Defense_Revised.pdf": {
+    "bytes": 516698,
+    "sha256": "5bca1b64b6b25602159e12d183e378f8e3cc0939e034686e2e98a78c6234ea01"
+  }
+}

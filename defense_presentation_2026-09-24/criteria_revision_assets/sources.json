@@ -1,0 +1,11 @@
+{
+  "09_emotion_distribution": "Thesis Table 14: positive label supports",
+  "17_model_comparison": [
+    "outputs/thesis_consolidated_results_v1/youtube_five_model_pooled.csv",
+    "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/dummy_prevalence_baselines/dummy_prevalence_summary.csv"
+  ],
+  "24_generated_review_comparison": [
+    "outputs/thesis_consolidated_results_v1/youtube_five_model_pooled.csv",
+    "outputs/thesis_consolidated_results_v1/synthetic_five_model_augmented_pooled.csv"
+  ]
+}
