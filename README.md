@@ -16,6 +16,8 @@ This repository now has two pipeline runners with different scopes.
 
 Working drafts, advisor feedback, personal documents, administrative forms, downloaded literature, and editorial revision records are kept locally and excluded from version control. Model checkpoints and token caches are also local; predictions, metrics, and reproducibility records remain versioned.
 
+NRC lexicons, source transcripts and excerpt datasets, scraped perfume descriptions, the similarity report, and one-off document-editing scripts are also excluded. To rerun preprocessing or text-model training, supply the required inputs locally. See [public repository scope and local inputs](docs/public_repository_scope.md) for download locations and the reproducibility boundary.
+
 ## `run_pipeline.py` vs `run_thesis_workflow.py`
 
 - `src/pipeline/run_pipeline.py`
