@@ -52,7 +52,7 @@ digraph ContextTerms {
   ];
 
   use [
-    label=<<B>5. Writing hints for GPT-5</B><BR/><FONT POINT-SIZE="14">Used to create synthetic reviews—not as classifier inputs</FONT>>,
+    label=<<B>5. Context terms for<BR/>synthetic-review generation</B><BR/><FONT POINT-SIZE="14">Used to create synthetic reviews—not as classifier inputs</FONT>>,
     fillcolor="#FFF9DE",
     color="#C7A72A"
   ];
