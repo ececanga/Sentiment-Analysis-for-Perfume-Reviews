@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "metrics.json": "2cf4af5fed4cc02dbcaa207f146d412f31da8e1d4b5c6d4ee3cb9e7f22f2ee3f",
+    "oof.csv": "b276953f6e2df50daf414a2995f79792c051f0b7a41bb8963c151787769247bf",
+    "training_audit.json": "5a78099948297a130b96ae78efcaae7f45f4fcb988232201bd0468ab6de09759"
+  },
+  "contract_sha256": "aad3b87181eab675c344d0ac6621f309405e05bd1456ac5a5f7736b415aa3a75",
+  "historical_reuse": {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3002662015693812,
+      "macro_f1": 0.3220331738794866,
+      "macro_roc_auc": 0.5540361215719616
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/transformer_only_oof.csv",
+    "prediction_sha256": "b276953f6e2df50daf414a2995f79792c051f0b7a41bb8963c151787769247bf",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/transformer_only/data42_model42",
+    "status": "reusable"
+  },
+  "status": "complete"
+}

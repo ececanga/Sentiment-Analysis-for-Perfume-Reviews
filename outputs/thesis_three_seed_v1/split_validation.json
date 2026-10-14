@@ -1,0 +1,17 @@
+{
+  "data_seed": 42,
+  "folds": 5,
+  "frozen_files": {
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml": "44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv": "dc439566a60653939321fcd4b3cbe874320a436396530837cd1be24d84174782",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv": "d69318ea2ad04f574ccbe8d6b348041551a4762379673ec2e8cba0d2b0ad461e",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_group_audit.json": "e232f96b6ee42c8961b4037caa1b1b1cd50ee8b8595b564d84f2a9a346ac9d1a"
+  },
+  "outer_and_inner_fixed_for_all_jobs": true,
+  "perfumes": 784,
+  "source_groups": 359,
+  "status": "passed"
+}

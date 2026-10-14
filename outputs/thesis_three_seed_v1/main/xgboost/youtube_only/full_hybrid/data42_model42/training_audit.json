@@ -1,0 +1,43 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "historical_reuse": {
+        "checks": [
+          "dataset and labels",
+          "outer and inner manifests",
+          "model/checkpoint/preprocessing",
+          "threshold and seeds",
+          "condition/variant protocol",
+          "historical artifact checksums",
+          "complete matching OOF rows and targets",
+          "pooled metrics recomputed"
+        ],
+        "evidence": {
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c"
+        },
+        "historical_software": {
+          "PyYAML": "6.0.2",
+          "matplotlib": "3.10.6",
+          "numpy": "2.3.1",
+          "pandas": "2.3.0",
+          "scikit-learn": "1.7.1",
+          "xgboost": "3.2.0"
+        },
+        "metrics": {
+          "macro_average_precision": 0.30943262292347656,
+          "macro_f1": 0.3259744723367426,
+          "macro_roc_auc": 0.5682939462541757
+        },
+        "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/xgboost_oof.csv",
+        "prediction_sha256": "310055d3283c7c6ccf5b26b17516587e74b31d3dfc49b9d00cea911f3918b949",
+        "reason": "Frozen protocol and complete predictions validated",
+        "run_id": "main/xgboost/youtube_only/full_hybrid/data42_model42",
+        "status": "reusable"
+      }
+    }
+  ],
+  "model_seed": 42
+}

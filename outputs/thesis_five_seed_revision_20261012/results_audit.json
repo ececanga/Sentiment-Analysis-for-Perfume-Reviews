@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "jobs": 195,
+  "summaries": 117,
+  "paired_comparisons": 93,
+  "checks": [
+    "784 unique perfumes per job",
+    "identical IDs, labels and outer folds",
+    "finite probabilities in [0,1]",
+    "predictions match threshold 0.3",
+    "metrics recomputed from OOF predictions",
+    "means and sample SD recomputed",
+    "paired differences recomputed"
+  ],
+  "summary_sha256": "9cc0e14e740bba270bc624fc95be245c2456aec7637146f2558305c5984c7ae4"
+}

@@ -1,0 +1,81 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "condition": "youtube_only",
+      "data_seed": 42,
+      "fold_id": 1,
+      "held_out_synthetic_rows_excluded": 1002,
+      "model_seed": 99,
+      "synthetic_effective_weight": 0.0,
+      "test_perfume_overlap_in_training": 0,
+      "test_youtube_rows": 334,
+      "total_effective_weight": 450.0,
+      "train_perfumes": 450,
+      "train_synthetic_rows": 0,
+      "train_youtube_rows": 450,
+      "youtube_effective_weight": 450.0
+    },
+    {
+      "condition": "youtube_only",
+      "data_seed": 42,
+      "fold_id": 2,
+      "held_out_synthetic_rows_excluded": 339,
+      "model_seed": 99,
+      "synthetic_effective_weight": 0.0,
+      "test_perfume_overlap_in_training": 0,
+      "test_youtube_rows": 113,
+      "total_effective_weight": 671.0,
+      "train_perfumes": 671,
+      "train_synthetic_rows": 0,
+      "train_youtube_rows": 671,
+      "youtube_effective_weight": 671.0
+    },
+    {
+      "condition": "youtube_only",
+      "data_seed": 42,
+      "fold_id": 3,
+      "held_out_synthetic_rows_excluded": 339,
+      "model_seed": 99,
+      "synthetic_effective_weight": 0.0,
+      "test_perfume_overlap_in_training": 0,
+      "test_youtube_rows": 113,
+      "total_effective_weight": 671.0,
+      "train_perfumes": 671,
+      "train_synthetic_rows": 0,
+      "train_youtube_rows": 671,
+      "youtube_effective_weight": 671.0
+    },
+    {
+      "condition": "youtube_only",
+      "data_seed": 42,
+      "fold_id": 4,
+      "held_out_synthetic_rows_excluded": 336,
+      "model_seed": 99,
+      "synthetic_effective_weight": 0.0,
+      "test_perfume_overlap_in_training": 0,
+      "test_youtube_rows": 112,
+      "total_effective_weight": 672.0,
+      "train_perfumes": 672,
+      "train_synthetic_rows": 0,
+      "train_youtube_rows": 672,
+      "youtube_effective_weight": 672.0
+    },
+    {
+      "condition": "youtube_only",
+      "data_seed": 42,
+      "fold_id": 5,
+      "held_out_synthetic_rows_excluded": 336,
+      "model_seed": 99,
+      "synthetic_effective_weight": 0.0,
+      "test_perfume_overlap_in_training": 0,
+      "test_youtube_rows": 112,
+      "total_effective_weight": 672.0,
+      "train_perfumes": 672,
+      "train_synthetic_rows": 0,
+      "train_youtube_rows": 672,
+      "youtube_effective_weight": 672.0
+    }
+  ],
+  "model_seed": 99
+}

@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "metrics.json": "cf4937689705cf658f049be14e990cff9233126d9d5a04971e6068c2b971b986",
+    "oof.csv": "5532479638bb3bb075f87cafb671ca61449c2442b761f945a59f14e02322ac11",
+    "training_audit.json": "e8d26cd00d3bd9ba213e99e35fa2822c68ac8b30622ebedb9caefc5c0332cc3a"
+  },
+  "contract_sha256": "be8317759ec7ee06afad621eeec7114c5c9a4fc14266ca7b4d09071a3070eeb8",
+  "historical_reuse": {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.30757045118683424,
+      "macro_f1": 0.3430654540344595,
+      "macro_roc_auc": 0.494173628103471
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/no_hartmann_oof.csv",
+    "prediction_sha256": "012c23dae462b5cd70a7298e5250c7b3fe09488c66a758faadabfc546505d36b",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/no_hartmann/data42_model42",
+    "status": "reusable"
+  },
+  "status": "complete"
+}

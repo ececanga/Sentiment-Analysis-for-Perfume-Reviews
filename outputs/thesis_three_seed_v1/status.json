@@ -1,0 +1,27 @@
+{
+  "completed_jobs": 195,
+  "condition": "youtube_only",
+  "current_training_percent": 100,
+  "current_training_progress": "saved fold 5, label disgust",
+  "elapsed_seconds": 23060.61270850002,
+  "epoch": null,
+  "expected_seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "fold": 5,
+  "job_percentage_is_elapsed_time_percentage": false,
+  "last_completed_epoch": 3,
+  "model": "random_forest",
+  "overall_job_completion_percent": 100.0,
+  "pause_requested": false,
+  "remaining_seconds": 0,
+  "seed": 99,
+  "status": "complete",
+  "total_jobs": 195,
+  "training_launched": true,
+  "updated_at": "2026-10-02T15:07:44Z"
+}

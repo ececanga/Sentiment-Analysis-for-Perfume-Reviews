@@ -1,0 +1,222 @@
+{
+  "accepted_inputs": {
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml": "44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/data/raw/YouTube_Perfume_Reviews_FullyFormatted.csv": "dc439566a60653939321fcd4b3cbe874320a436396530837cd1be24d84174782",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv": "d69318ea2ad04f574ccbe8d6b348041551a4762379673ec2e8cba0d2b0ad461e",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv": "56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/source_audit/source_group_audit.json": "e232f96b6ee42c8961b4037caa1b1b1cd50ee8b8595b564d84f2a9a346ac9d1a"
+  },
+  "aggregation": "pooled_oof_then_seed_mean_sample_std",
+  "bootstrap_seed": 42,
+  "checkpoint": null,
+  "code": {
+    "src/training/build_deep_model_text_dataset.py": "fe0756017d754842a2af4ea99dd06487e9c9f70f774dbd28bed48d9fdf53543e",
+    "src/training/build_source_grouped_all_metric_bootstrap.py": "78953b5e65ede26bca3b8ad47c35f90737966752b154028788042aae54ee30bf",
+    "src/training/experiment_seeds.py": "9038f67433f6dd0e3f5558ae08ae06aec8fb6f2937c490493d7d6198b88e123f",
+    "src/training/generate_available_threshold_comparison_table.py": "718a6127cd10cb4eff5784ca728a07aeb7bf8595626853ff871740be80fe9d62",
+    "src/training/generate_final_benchmark_figures.py": "605bf781b3c089a70f165c34c72bec0455b459126bf00d76a15931d121474e44",
+    "src/training/generate_source_grouped_diagnostics.py": "2f13092ad2906d8c7df97670715c4b486ed912f5e9a19062ee5851b1086e9bc7",
+    "src/training/generate_threshold_sweep_summary.py": "8dace4ccbd0a2dbcf8a1080d45d96fd1b3ccd5a1b7060caaffdd01e3c35fa3eb",
+    "src/training/model_benchmark_runner.py": "89abc9802b66c787a874d66d04877a7dde0e652c368612cf7c0e191c99b36e40",
+    "src/training/run_bert_benchmark.py": "40f51b60e25728798f013d2aaa218cb6c1608e8aa432b4dc8a47d73b76533034",
+    "src/training/run_bert_source_grouped_experiments.py": "4383d3ac86ce52db57ab12f3e402b104cb3adbc1adf32bb02b5bdceb41c84e5a",
+    "src/training/run_bilstm_attention_benchmark.py": "cd66363ca8495e5e82e149887b514e1dbd93f8b7cf1b88020b9eaa8aede7e629",
+    "src/training/run_dummy_prevalence_baselines.py": "2035d5eaa541e9a9fc2f27ca705526bb5522d2b5d2e169d8642731f92c4f866b",
+    "src/training/run_extended_source_grouped_baselines.py": "37ede975715c14a84eef8821eaba6f07360b7f704153e798b77cf9f06b8874ea",
+    "src/training/run_fixed_threshold_sweep.py": "2b464f741a4fa16ce60abd269751ba4846da7ac8e957ffa2bd7248f3c48155eb",
+    "src/training/run_logistic_regression_benchmark.py": "6d19d214ee5edaa50d6619f57ca7b2c09f6f402bf50fdd037ee32037f508cce4",
+    "src/training/run_logistic_regression_unweighted_sensitivity.py": "c90dd9dfc54fecc7019818796da65cf5071350cf69e72fce720e1fb9d28b282c",
+    "src/training/run_random_forest_benchmark.py": "f5e613f429c5605ed769de6e0e6c4cf3606977b5ce12134bf4d851bdf26d92cd",
+    "src/training/run_source_grouped_feature_ablation.py": "83821ce43d6e65ba78b3e02badcbc57dba068a24a4f15f23984d3473607fc8a6",
+    "src/training/run_source_grouped_random_forest_feature_combination_ablation.py": "82dee192525dbda87fcb2d38f6da3040f5b5ff521a3f0e70f0c1b54af5097a33",
+    "src/training/run_source_grouped_weighted_synthetic_bert.py": "7a962a937e56b109cd05843d8cb3b134e0061dc71aac5189881b5055745c531f",
+    "src/training/run_source_grouped_weighted_synthetic_bilstm_attention.py": "d06000981c5a8ded6bb45d5a41c43a2f838fe207a304443daddda0aa488d5e2f",
+    "src/training/run_source_grouped_weighted_synthetic_lr.py": "f98ed9b499334b23fcb0b65d608f89f46f8d67dd5c7711f91419c891989659c3",
+    "src/training/run_source_grouped_weighted_synthetic_random_forest.py": "e41e4e56719154a3a2ad990957181dba9533d28e3f2dd78eb65f4f3da78d5417",
+    "src/training/run_source_grouped_weighted_synthetic_xgboost.py": "2b852901398732d75a56f11d1251f40265c4bfc57f8bfbcd4c633c82aa0aa012",
+    "src/training/run_source_grouped_xgboost_feature_combination_ablation.py": "4b3b3518ea2a405d3933e7b6d203d5ec4e5f7f1bddd3ef1ae7d2bb08c8f92af0",
+    "src/training/run_tfidf_logistic_regression_baseline.py": "a37fc737f77bb7bd20bc34df25e5acdc1e574ab9a8891512cfc456eed566330a",
+    "src/training/run_thesis_three_seed.py": "c006f5b4e9574ba76e20a027c9e3c6f3c64e5781d4b51f23a8dfce22b3db6661",
+    "src/training/run_xgboost_benchmark.py": "1513f3e643437231b9b13a84466164a8aed138ffffe6a340476443c8a72d0d6a",
+    "src/training/source_grouped_folds.py": "d6b9da1312dbc4881d0300dc0ef349ada20b37d8312127b955e1282212452172",
+    "src/training/threshold_tuning.py": "608a5ea33bd470ca64ffb353397da4e3761976aac2465e586dfa570873fd8954",
+    "src/training/train_eval_gemini784.py": "c8289e7cbebc3431806348947e324ab52be3a915c6bc7ad1ef7d70fb8b13e2b9"
+  },
+  "config": {
+    "conditions": {
+      "youtube_only": {
+        "synthetic_rows": 0,
+        "validation": "replay_must_match_accepted_control_oof",
+        "youtube_row_weight": 1.0
+      },
+      "youtube_plus_weighted_synthetic_784x3": {
+        "apply_weight_to": [
+          "StandardScaler",
+          "LogisticRegression"
+        ],
+        "exclude_synthetic_for_outer_test_perfumes": true,
+        "synthetic_row_weight": 0.3333333333333333,
+        "synthetic_total_weight_per_perfume": 1.0,
+        "youtube_row_weight": 1.0
+      }
+    },
+    "evaluation": {
+      "component_equal_point_estimates": true,
+      "interpretation_rule": "Treat augmentation as an established improvement only when the paired interval for the relevant metric excludes zero in the positive direction. Report the six-label fear-excluded sensitivity from the same predictions and bootstrap draws because fear has only three YouTube positives.",
+      "paired_source_component_bootstrap": {
+        "confidence_level": 0.95,
+        "identical_draws_for_both_conditions": true,
+        "interval": "percentile",
+        "repetitions": 2000,
+        "resampling_unit": "source_group_id",
+        "seed": 42
+      },
+      "per_label_diagnostics": true,
+      "pooled_metrics": [
+        "macro_average_precision",
+        "macro_f1",
+        "macro_roc_auc"
+      ],
+      "threshold": 0.3
+    },
+    "experiment": {
+      "created_date": "2026-07-15",
+      "id": "source_grouped_weighted_synthetic_lr_v1",
+      "interpretation_boundary": "This is a weighted mixed-granularity sensitivity analysis. It tests whether the fixed 784x3 synthetic review corpus changes held-out YouTube performance; it does not treat synthetic reviews as independent natural observations.",
+      "phase": 6,
+      "role": "primary_synthetic_augmentation_contrast",
+      "status": "prospectively_frozen_before_primary_run"
+    },
+    "inputs": {
+      "accepted_youtube_control_metrics": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json",
+        "sha256": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa"
+      },
+      "accepted_youtube_control_oof": {
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv",
+        "sha256": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1"
+      },
+      "outer_fold_manifest": {
+        "expected_rows": 784,
+        "expected_source_components": 359,
+        "path": "outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv",
+        "sha256": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579"
+      },
+      "synthetic_feature_labels": {
+        "expected_reviews_per_perfume": 3,
+        "expected_rows": 2352,
+        "path": "outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv",
+        "sha256": "c96f08081da4ba9a58a0a9ded856c68d61110cf2add218906a126198d1400715"
+      },
+      "youtube_feature_labels": {
+        "expected_rows": 784,
+        "path": "outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv",
+        "sha256": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976"
+      }
+    },
+    "model": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "family": "LogisticRegression",
+      "max_iter": 2000,
+      "preprocessing": {
+        "imputer": "median",
+        "scaler": "StandardScaler"
+      },
+      "random_seed": 42,
+      "regularization": "l2",
+      "solver": "liblinear"
+    },
+    "outputs": {
+      "root": "outputs/source_grouped_weighted_synthetic_lr_v1"
+    },
+    "scope_exclusions": [
+      "no_threshold_tuning",
+      "no_784x6_model_selection",
+      "no_balancing_grid_selection",
+      "no_synthetic_only_rerun",
+      "no_thesis_edit_during_experiment_execution"
+    ],
+    "task": {
+      "evaluation_rows": "held_out_youtube_perfumes_only",
+      "excluded_label": "anger",
+      "expected_feature_count": 58,
+      "feature_families": [
+        "NRC",
+        "VAD",
+        "Hartmann",
+        "Savani",
+        "GoEmotions",
+        "Cardiff"
+      ],
+      "official_labels": [
+        "joy",
+        "sadness",
+        "fear",
+        "trust",
+        "surprise",
+        "anticipation",
+        "disgust"
+      ],
+      "sensitivity_labels": [
+        "joy",
+        "sadness",
+        "trust",
+        "surprise",
+        "anticipation",
+        "disgust"
+      ]
+    },
+    "three_seed_code_revision": {
+      "revisions": {},
+      "source_config": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/config/evaluation_config_source_grouped_weighted_synthetic_lr_v1.yaml",
+      "source_sha256": "8091a6ea23c1d9b4061c72d1550e7524635b2cd747b0ea2cebd9b2b3bbe4b09f"
+    }
+  },
+  "features": [
+    "Savani_joy",
+    "Savani_sadness",
+    "Savani_love",
+    "Savani_anger",
+    "Savani_fear",
+    "Savani_surprise"
+  ],
+  "inputs": {
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv": "518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv": "5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579",
+    "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv": "c96f08081da4ba9a58a0a9ded856c68d61110cf2add218906a126198d1400715"
+  },
+  "job": {
+    "condition": "youtube_only",
+    "data_seed": 42,
+    "experiment": "structured_ablation",
+    "model": "logistic_regression",
+    "model_seed": 2026,
+    "variant": "savani_only"
+  },
+  "labels": [
+    "joy",
+    "sadness",
+    "fear",
+    "trust",
+    "surprise",
+    "anticipation",
+    "disgust"
+  ],
+  "permutation_seed": 42,
+  "run_id": "structured_ablation/logistic_regression/youtube_only/savani_only/data42_model2026",
+  "schema": 1,
+  "software": {
+    "numpy": "2.3.1",
+    "pandas": "2.3.0",
+    "scikit-learn": "1.7.1",
+    "torch": "2.9.1",
+    "transformers": "4.53.0",
+    "xgboost": "3.2.0"
+  },
+  "threshold": 0.3
+}

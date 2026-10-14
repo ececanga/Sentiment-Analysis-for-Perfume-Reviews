@@ -1,0 +1,417 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "best_epoch": 1,
+      "best_val_loss": 1.2539142072200775,
+      "best_val_macro_f1": 0.3139358800888958,
+      "best_val_macro_pr_auc": 0.3182000486354149,
+      "best_val_macro_roc_auc": 0.5277827628194826,
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.7998691523514155,
+          "val_loss": 1.2539142072200775,
+          "val_macro_f1": 0.3139358800888958,
+          "val_macro_pr_auc": 0.3182000486354149,
+          "val_macro_roc_auc": 0.5277827628194826
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.6322238937885102,
+          "val_loss": 1.4057883444954367,
+          "val_macro_f1": 0.31117245343985095,
+          "val_macro_pr_auc": 0.3433443298285054,
+          "val_macro_roc_auc": 0.5199206260895367
+        }
+      ],
+      "fold_id": 1,
+      "loss_pos_weight": {
+        "anticipation": {
+          "negative_effective_mass": 299.66666666666663,
+          "pos_weight": 0.5871979098628347,
+          "positive_effective_mass": 510.3333333333333
+        },
+        "disgust": {
+          "negative_effective_mass": 799.6666666666665,
+          "pos_weight": 77.38709677419354,
+          "positive_effective_mass": 10.333333333333332
+        },
+        "fear": {
+          "negative_effective_mass": 771.0,
+          "pos_weight": 19.76923076923077,
+          "positive_effective_mass": 39.0
+        },
+        "joy": {
+          "negative_effective_mass": 421.3333333333333,
+          "pos_weight": 1.0840480274442537,
+          "positive_effective_mass": 388.6666666666667
+        },
+        "sadness": {
+          "negative_effective_mass": 775.0,
+          "pos_weight": 22.142857142857142,
+          "positive_effective_mass": 35.0
+        },
+        "surprise": {
+          "negative_effective_mass": 650.3333333333334,
+          "pos_weight": 4.073068893528184,
+          "positive_effective_mass": 159.66666666666666
+        },
+        "trust": {
+          "negative_effective_mass": 402.66666666666663,
+          "pos_weight": 0.9885433715220949,
+          "positive_effective_mass": 407.3333333333333
+        }
+      },
+      "n_test_perfumes": 334,
+      "n_test_youtube_chunks": 2241,
+      "n_train_perfumes": 405,
+      "n_train_synthetic_reviews": 1215,
+      "n_train_text_rows": 3584,
+      "n_train_youtube_chunks": 2369,
+      "n_trainable_parameters": 108315655,
+      "n_val_perfumes": 45,
+      "n_val_youtube_chunks": 269,
+      "scheduler_total_steps": 1344,
+      "scheduler_warmup_steps": 134,
+      "synthetic_base_weight": 405.0,
+      "synthetic_validation_or_test_rows": 0,
+      "test_perfume_ids_sha256": "36510e2dbf6758273b02b7eb19e2f02f360d5e581ee505857d610e5474bcc6aa",
+      "youtube_base_weight": 405.0
+    },
+    {
+      "best_epoch": 1,
+      "best_val_loss": 0.8306731404736638,
+      "best_val_macro_f1": 0.3366110080395795,
+      "best_val_macro_pr_auc": 0.3681900943427839,
+      "best_val_macro_roc_auc": 0.6618924548336312,
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.8104045709176939,
+          "val_loss": 0.8306731404736638,
+          "val_macro_f1": 0.3366110080395795,
+          "val_macro_pr_auc": 0.3681900943427839,
+          "val_macro_roc_auc": 0.6618924548336312
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7025933565027048,
+          "val_loss": 0.8773998450487852,
+          "val_macro_f1": 0.329044661342798,
+          "val_macro_pr_auc": 0.3707545250500507,
+          "val_macro_roc_auc": 0.611470064117123
+        }
+      ],
+      "fold_id": 2,
+      "loss_pos_weight": {
+        "anticipation": {
+          "negative_effective_mass": 469.66666666666663,
+          "pos_weight": 0.5897865215571368,
+          "positive_effective_mass": 796.3333333333333
+        },
+        "disgust": {
+          "negative_effective_mass": 1242.6666666666667,
+          "pos_weight": 53.25714285714286,
+          "positive_effective_mass": 23.333333333333332
+        },
+        "fear": {
+          "negative_effective_mass": 1202.3333333333333,
+          "pos_weight": 18.8848167539267,
+          "positive_effective_mass": 63.666666666666664
+        },
+        "joy": {
+          "negative_effective_mass": 689.3333333333334,
+          "pos_weight": 1.1953757225433528,
+          "positive_effective_mass": 576.6666666666666
+        },
+        "sadness": {
+          "negative_effective_mass": 1213.6666666666665,
+          "pos_weight": 23.19108280254777,
+          "positive_effective_mass": 52.33333333333333
+        },
+        "surprise": {
+          "negative_effective_mass": 1022.3333333333333,
+          "pos_weight": 4.195622435020519,
+          "positive_effective_mass": 243.66666666666666
+        },
+        "trust": {
+          "negative_effective_mass": 668.0,
+          "pos_weight": 1.117056856187291,
+          "positive_effective_mass": 598.0
+        }
+      },
+      "n_test_perfumes": 113,
+      "n_test_youtube_chunks": 646,
+      "n_train_perfumes": 633,
+      "n_train_synthetic_reviews": 1899,
+      "n_train_text_rows": 5877,
+      "n_train_youtube_chunks": 3978,
+      "n_trainable_parameters": 108315655,
+      "n_val_perfumes": 38,
+      "n_val_youtube_chunks": 255,
+      "scheduler_total_steps": 2205,
+      "scheduler_warmup_steps": 220,
+      "synthetic_base_weight": 633.0,
+      "synthetic_validation_or_test_rows": 0,
+      "test_perfume_ids_sha256": "15ace760fe0605ee91cc83ed85972565d577e1811d377d743a49ca4b6cf413df",
+      "youtube_base_weight": 633.0
+    },
+    {
+      "best_epoch": 2,
+      "best_val_loss": 0.5263802579471043,
+      "best_val_macro_f1": 0.32124231425591315,
+      "best_val_macro_pr_auc": 0.41539904546133133,
+      "best_val_macro_roc_auc": 0.6682524925363801,
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.7868477444831139,
+          "val_loss": 0.5483031485761914,
+          "val_macro_f1": 0.3194930431188869,
+          "val_macro_pr_auc": 0.3980446434485635,
+          "val_macro_roc_auc": 0.6819889436385601
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.6682026605299913,
+          "val_loss": 0.5263802579471043,
+          "val_macro_f1": 0.32124231425591315,
+          "val_macro_pr_auc": 0.41539904546133133,
+          "val_macro_roc_auc": 0.6682524925363801
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.5449048206617272,
+          "val_loss": 0.547134090747152,
+          "val_macro_f1": 0.3124449779911965,
+          "val_macro_pr_auc": 0.43385143183717706,
+          "val_macro_roc_auc": 0.6728874334692749
+        }
+      ],
+      "fold_id": 3,
+      "loss_pos_weight": {
+        "anticipation": {
+          "negative_effective_mass": 469.0,
+          "pos_weight": 0.588456712672522,
+          "positive_effective_mass": 797.0
+        },
+        "disgust": {
+          "negative_effective_mass": 1240.6666666666667,
+          "pos_weight": 48.97368421052632,
+          "positive_effective_mass": 25.333333333333332
+        },
+        "fear": {
+          "negative_effective_mass": 1203.0,
+          "pos_weight": 19.095238095238095,
+          "positive_effective_mass": 63.0
+        },
+        "joy": {
+          "negative_effective_mass": 693.0,
+          "pos_weight": 1.2094240837696335,
+          "positive_effective_mass": 573.0
+        },
+        "sadness": {
+          "negative_effective_mass": 1217.3333333333333,
+          "pos_weight": 25.013698630136986,
+          "positive_effective_mass": 48.666666666666664
+        },
+        "surprise": {
+          "negative_effective_mass": 1021.0,
+          "pos_weight": 4.167346938775511,
+          "positive_effective_mass": 244.99999999999997
+        },
+        "trust": {
+          "negative_effective_mass": 667.3333333333333,
+          "pos_weight": 1.1146993318485523,
+          "positive_effective_mass": 598.6666666666666
+        }
+      },
+      "n_test_perfumes": 113,
+      "n_test_youtube_chunks": 710,
+      "n_train_perfumes": 633,
+      "n_train_synthetic_reviews": 1899,
+      "n_train_text_rows": 5854,
+      "n_train_youtube_chunks": 3955,
+      "n_trainable_parameters": 108315655,
+      "n_val_perfumes": 38,
+      "n_val_youtube_chunks": 214,
+      "scheduler_total_steps": 2196,
+      "scheduler_warmup_steps": 220,
+      "synthetic_base_weight": 633.0,
+      "synthetic_validation_or_test_rows": 0,
+      "test_perfume_ids_sha256": "f2585b013b6c85701e2c3d5eea2340f9e4c577e40074fbec1fbba371d5aaa756",
+      "youtube_base_weight": 633.0
+    },
+    {
+      "best_epoch": 1,
+      "best_val_loss": 0.8081974145025015,
+      "best_val_macro_f1": 0.3402652415288954,
+      "best_val_macro_pr_auc": 0.3179975682118416,
+      "best_val_macro_roc_auc": 0.5215485403872501,
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.831928366142113,
+          "val_loss": 0.8081974145025015,
+          "val_macro_f1": 0.3402652415288954,
+          "val_macro_pr_auc": 0.3179975682118416,
+          "val_macro_roc_auc": 0.5215485403872501
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7410100569178593,
+          "val_loss": 0.9317205296829343,
+          "val_macro_f1": 0.33102878832692495,
+          "val_macro_pr_auc": 0.3733729804847488,
+          "val_macro_roc_auc": 0.5723830558669268
+        }
+      ],
+      "fold_id": 4,
+      "loss_pos_weight": {
+        "anticipation": {
+          "negative_effective_mass": 486.99999999999994,
+          "pos_weight": 0.6235595390524967,
+          "positive_effective_mass": 781.0
+        },
+        "disgust": {
+          "negative_effective_mass": 1248.6666666666667,
+          "pos_weight": 64.58620689655173,
+          "positive_effective_mass": 19.333333333333332
+        },
+        "fear": {
+          "negative_effective_mass": 1208.3333333333333,
+          "pos_weight": 20.251396648044693,
+          "positive_effective_mass": 59.66666666666666
+        },
+        "joy": {
+          "negative_effective_mass": 682.3333333333333,
+          "pos_weight": 1.1650540694365394,
+          "positive_effective_mass": 585.6666666666666
+        },
+        "sadness": {
+          "negative_effective_mass": 1215.6666666666665,
+          "pos_weight": 23.229299363057326,
+          "positive_effective_mass": 52.33333333333333
+        },
+        "surprise": {
+          "negative_effective_mass": 1030.0,
+          "pos_weight": 4.327731092436975,
+          "positive_effective_mass": 237.99999999999997
+        },
+        "trust": {
+          "negative_effective_mass": 664.6666666666666,
+          "pos_weight": 1.101657458563536,
+          "positive_effective_mass": 603.3333333333333
+        }
+      },
+      "n_test_perfumes": 112,
+      "n_test_youtube_chunks": 670,
+      "n_train_perfumes": 634,
+      "n_train_synthetic_reviews": 1902,
+      "n_train_text_rows": 5860,
+      "n_train_youtube_chunks": 3958,
+      "n_trainable_parameters": 108315655,
+      "n_val_perfumes": 38,
+      "n_val_youtube_chunks": 251,
+      "scheduler_total_steps": 2199,
+      "scheduler_warmup_steps": 220,
+      "synthetic_base_weight": 634.0,
+      "synthetic_validation_or_test_rows": 0,
+      "test_perfume_ids_sha256": "45fbea90581670976b73314012c1f2888212f982ea9d9f7a56f53dab67bbfb6a",
+      "youtube_base_weight": 634.0
+    },
+    {
+      "best_epoch": 3,
+      "best_val_loss": 0.9685809026871409,
+      "best_val_macro_f1": 0.41468596444206207,
+      "best_val_macro_pr_auc": 0.40801775317793065,
+      "best_val_macro_roc_auc": 0.6531098291098292,
+      "condition": "youtube_plus_weighted_synthetic_784x3",
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.8192699206755465,
+          "val_loss": 0.7926544036184039,
+          "val_macro_f1": 0.3324628312863607,
+          "val_macro_pr_auc": 0.37018203364897595,
+          "val_macro_roc_auc": 0.6071836391836392
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7269594740147559,
+          "val_loss": 0.8480260318943432,
+          "val_macro_f1": 0.3354354489048367,
+          "val_macro_pr_auc": 0.40621384004454375,
+          "val_macro_roc_auc": 0.6857467977467977
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.6040522052937706,
+          "val_loss": 0.9685809026871409,
+          "val_macro_f1": 0.41468596444206207,
+          "val_macro_pr_auc": 0.40801775317793065,
+          "val_macro_roc_auc": 0.6531098291098292
+        }
+      ],
+      "fold_id": 5,
+      "loss_pos_weight": {
+        "anticipation": {
+          "negative_effective_mass": 479.6666666666667,
+          "pos_weight": 0.6084566596194503,
+          "positive_effective_mass": 788.3333333333334
+        },
+        "disgust": {
+          "negative_effective_mass": 1247.0,
+          "pos_weight": 59.38095238095238,
+          "positive_effective_mass": 21.0
+        },
+        "fear": {
+          "negative_effective_mass": 1206.6666666666665,
+          "pos_weight": 19.67391304347826,
+          "positive_effective_mass": 61.33333333333333
+        },
+        "joy": {
+          "negative_effective_mass": 691.0,
+          "pos_weight": 1.197573656845754,
+          "positive_effective_mass": 577.0
+        },
+        "sadness": {
+          "negative_effective_mass": 1214.3333333333335,
+          "pos_weight": 22.62732919254659,
+          "positive_effective_mass": 53.66666666666666
+        },
+        "surprise": {
+          "negative_effective_mass": 1030.3333333333333,
+          "pos_weight": 4.335203366058906,
+          "positive_effective_mass": 237.66666666666666
+        },
+        "trust": {
+          "negative_effective_mass": 659.0,
+          "pos_weight": 1.0821018062397372,
+          "positive_effective_mass": 609.0
+        }
+      },
+      "n_test_perfumes": 112,
+      "n_test_youtube_chunks": 612,
+      "n_train_perfumes": 634,
+      "n_train_synthetic_reviews": 1902,
+      "n_train_text_rows": 5958,
+      "n_train_youtube_chunks": 4056,
+      "n_trainable_parameters": 108315655,
+      "n_val_perfumes": 38,
+      "n_val_youtube_chunks": 211,
+      "scheduler_total_steps": 2235,
+      "scheduler_warmup_steps": 224,
+      "synthetic_base_weight": 634.0,
+      "synthetic_validation_or_test_rows": 0,
+      "test_perfume_ids_sha256": "dfd5f5323c4a3921b1caa9b0ae2513bad7dbf6f4d762207b656fe906fde22e2c",
+      "youtube_base_weight": 634.0
+    }
+  ],
+  "model_seed": 7
+}

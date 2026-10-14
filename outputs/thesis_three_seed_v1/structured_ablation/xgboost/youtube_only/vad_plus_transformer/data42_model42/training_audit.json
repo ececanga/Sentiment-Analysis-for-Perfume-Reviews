@@ -1,0 +1,42 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "historical_reuse": {
+        "checks": [
+          "dataset and labels",
+          "outer and inner manifests",
+          "model/checkpoint/preprocessing",
+          "threshold and seeds",
+          "condition/variant protocol",
+          "historical artifact checksums",
+          "complete matching OOF rows and targets",
+          "pooled metrics recomputed"
+        ],
+        "evidence": {
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+        },
+        "historical_software": {
+          "numpy": "2.3.1",
+          "pandas": "2.3.0",
+          "scikit_learn": "1.7.1",
+          "xgboost": "3.2.0"
+        },
+        "metrics": {
+          "macro_average_precision": 0.29964730612358903,
+          "macro_f1": 0.33094047407905913,
+          "macro_roc_auc": 0.5505143737464805
+        },
+        "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/vad_plus_transformer_oof.csv",
+        "prediction_sha256": "c64ed53ed2d4b3a2dd1f8257a16bd8416d53b858f569740d515b3c654b780097",
+        "reason": "Frozen protocol and complete predictions validated",
+        "run_id": "structured_ablation/xgboost/youtube_only/vad_plus_transformer/data42_model42",
+        "status": "reusable"
+      }
+    }
+  ],
+  "model_seed": 42
+}

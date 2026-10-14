@@ -1,0 +1,11 @@
+# Repeated training on the accepted fixed source-grouped splits (not repeated CV).
+output_root: outputs/thesis_three_seed_v1
+data_seed: 42
+model_seeds: [42, 123, 2026]
+base_config: config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml
+models: [logistic_regression, xgboost, random_forest, bert, bilstm_attention]
+conditions: [youtube_only, youtube_plus_weighted_synthetic_784x3]
+experiments: [main, structured_ablation]
+# Structured ablations preserve their original YouTube-only scope:
+# LR: 15 feature-family variants; XGBoost/RF: 7 feature combinations each.
+# DL architectural ablations intentionally deferred.

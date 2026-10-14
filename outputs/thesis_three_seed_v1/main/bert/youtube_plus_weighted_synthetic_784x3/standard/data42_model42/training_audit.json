@@ -1,0 +1,46 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "historical_reuse": {
+        "checks": [
+          "dataset and labels",
+          "outer and inner manifests",
+          "model/checkpoint/preprocessing",
+          "threshold and seeds",
+          "condition/variant protocol",
+          "historical artifact checksums",
+          "complete matching OOF rows and targets",
+          "pooled metrics recomputed"
+        ],
+        "evidence": {
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bert_run.json": "5166e6eb7d2a2a8d5d5735495554d65dab7a5f784efa65c118afc385dde58520",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bert.json": "cf8a9189d7b637a135c7e8af313b440b2c58a13c8f40e87e0af642580d533314",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/PROTOCOL.yaml": "34467266edc3c0faab79c017c2eb35a16e0dafca3b260c788c7658fc5ab2f3ed",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/REPORT.json": "d28c8e2349358cab3195d89d7c03fd2484d587685bc81b3088b52a63d9d2532d",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/SHA256SUMS": "a66564ac0247b4f14f1d8ce96ed218a32256b9295c9f61ff0b41d8efd2729015",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/validation_report.json": "2840945843d2d5dbce44ab6dbe8e9874b48bc51ca36eb5dd98cdc7f195e8eb1b"
+        },
+        "historical_software": {
+          "numpy": "2.3.1",
+          "pandas": "2.3.0",
+          "python": "3.13.5",
+          "scikit_learn": "1.7.1",
+          "torch": "2.9.1",
+          "transformers": "4.53.0"
+        },
+        "metrics": {
+          "macro_average_precision": 0.3209817072664459,
+          "macro_f1": 0.33156329365621595,
+          "macro_roc_auc": 0.5267338085586286
+        },
+        "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/oof_predictions/youtube_plus_weighted_synthetic_784x3_oof.csv",
+        "prediction_sha256": "f14d700092950fd2f30e60ee56c24c8bf3bae75dd80475e0489bf8cb8c20b226",
+        "reason": "Frozen protocol and complete predictions validated",
+        "run_id": "main/bert/youtube_plus_weighted_synthetic_784x3/standard/data42_model42",
+        "status": "reusable"
+      }
+    }
+  ],
+  "model_seed": 42
+}

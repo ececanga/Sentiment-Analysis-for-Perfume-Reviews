@@ -1,0 +1,46 @@
+{
+  "artifacts": {
+    "metrics.json": "62ac2f43286a3d21dc5f8de8ff37f627aba642834107249ab5c354059a15ca0a",
+    "oof.csv": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d",
+    "training_audit.json": "77d734f6c5ee54cc3fc0020bd149ac4acf64c0e9a5a218bbcb92e11b5fe40cca"
+  },
+  "contract_sha256": "b9702765fb244fa799f9d98e67c7da8ac224f02229e3d531361d719914227758",
+  "historical_reuse": {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bert_run.json": "5166e6eb7d2a2a8d5d5735495554d65dab7a5f784efa65c118afc385dde58520",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bert.json": "cf8a9189d7b637a135c7e8af313b440b2c58a13c8f40e87e0af642580d533314"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "accelerate": "1.12.0",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1",
+      "torch": "2.9.1",
+      "transformers": "4.53.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.35896998377082323,
+      "macro_f1": 0.40290501027343134,
+      "macro_roc_auc": 0.5532734838046054
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bert_oof.csv",
+    "prediction_sha256": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/bert/youtube_only/standard/data42_model42",
+    "status": "reusable"
+  },
+  "status": "complete"
+}

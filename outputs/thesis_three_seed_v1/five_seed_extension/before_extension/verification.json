@@ -1,0 +1,25 @@
+{
+  "full_training_launched": false,
+  "historical_results_imported": false,
+  "full_suite": {
+    "command": ".venv/bin/python -m unittest discover -s src/training/tests -v",
+    "tests": 111,
+    "status": "passed"
+  },
+  "final_focused_suite": {
+    "command": ".venv/bin/python -m unittest src.training.tests.test_thesis_three_seed -v",
+    "tests": 11,
+    "status": "passed"
+  },
+  "dry_run": {
+    "jobs": 117,
+    "seed42_reusable": 39,
+    "remaining_new_training_jobs": 78,
+    "completed_new_jobs": 0
+  },
+  "limitations": [
+    "No full-data training launched.",
+    "ETA remains estimating until sufficient comparable completed runtimes exist.",
+    "Forced mid-epoch interruption repeats the unfinished epoch; graceful pause finishes it first."
+  ]
+}

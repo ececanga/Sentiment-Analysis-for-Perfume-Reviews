@@ -1,0 +1,169 @@
+experiment:
+  id: source_grouped_weighted_synthetic_bert_v1
+  phase: 6
+  status: frozen_before_first_formal_run
+  role: full_five_model_synthetic_variation_bert
+  created_date: '2026-08-10'
+  interpretation_boundary: This is a weighted text-augmentation sensitivity analysis.
+    It tests whether the fixed 784x3 synthetic-review corpus changes held-out YouTube
+    performance for the accepted BERT specification. Synthetic reviews are generated
+    observations and are not treated as independent natural reviews.
+inputs:
+  accepted_benchmark_config:
+    path: config/evaluation_config_gemini_browser_og784_source_grouped_v1.yaml
+    sha256: 44852e49d8ab2654ed233fd48d0a237c3e6abb924331d38d259f5ba03792bff2
+  accepted_bert_runner:
+    path: src/training/run_bert_benchmark.py
+    sha256: 40f51b60e25728798f013d2aaa218cb6c1608e8aa432b4dc8a47d73b76533034
+  bert_augmentation_utility_runner:
+    path: src/training/run_bert_source_grouped_experiments.py
+    sha256: 4383d3ac86ce52db57ab12f3e402b104cb3adbc1adf32bb02b5bdceb41c84e5a
+  shared_analysis_runner:
+    path: src/training/run_source_grouped_weighted_synthetic_lr.py
+    sha256: f98ed9b499334b23fcb0b65d608f89f46f8d67dd5c7711f91419c891989659c3
+  pause_checkpoint_utility_runner:
+    path: src/training/run_source_grouped_weighted_synthetic_random_forest.py
+    sha256: e41e4e56719154a3a2ad990957181dba9533d28e3f2dd78eb65f4f3da78d5417
+  source_group_validation_runner:
+    path: src/training/source_grouped_folds.py
+    sha256: d6b9da1312dbc4881d0300dc0ef349ada20b37d8312127b955e1282212452172
+  youtube_deep_text_jsonl:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/datasets/perfume_text_dataset_v1.jsonl
+    sha256: 48f30d49041f80dc4bd8cfb755177b6b520c3b7fdb47dbf6cc66b243d97c129f
+    expected_perfumes: 784
+    expected_chunks: 4879
+  canonical_youtube_labels:
+    path: labels/gemini_browser_og784/gemini_browser_labels_og784_v1.csv
+    sha256: d69318ea2ad04f574ccbe8d6b348041551a4762379673ec2e8cba0d2b0ad461e
+  synthetic_text_labels:
+    path: outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv
+    sha256: c96f08081da4ba9a58a0a9ded856c68d61110cf2add218906a126198d1400715
+    expected_rows: 2352
+    expected_reviews_per_perfume: 3
+    text_column: Final Transcript
+  outer_fold_manifest:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv
+    sha256: 5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579
+    expected_rows: 784
+    expected_source_components: 359
+  inner_validation_manifest:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/inner_validation_folds.csv
+    sha256: 56172122cf0bc2d36e4ad5240feb3677eee27ab82387fc8fd0182f162bb24e0d
+  accepted_youtube_control_oof:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bert_oof.csv
+    sha256: 3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d
+  accepted_youtube_control_metrics:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bert.json
+    sha256: cf8a9189d7b637a135c7e8af313b440b2c58a13c8f40e87e0af642580d533314
+  verified_youtube_control_replay_oof:
+    path: outputs/bert_source_grouped_experiments_v1/review_count/weighted_synthetic_reviews_0/oof_predictions.csv
+    sha256: 153e598262efd30d235e111e25dfed63fa6347048aba19da9cd8152df1131e19
+task:
+  evaluation_rows: held_out_youtube_perfumes_only
+  official_labels:
+  - joy
+  - sadness
+  - fear
+  - trust
+  - surprise
+  - anticipation
+  - disgust
+  excluded_label: anger
+  sensitivity_labels:
+  - joy
+  - sadness
+  - trust
+  - surprise
+  - anticipation
+  - disgust
+model:
+  family: BERT
+  device: cpu
+  random_seed: 42
+  training_mode: end_to_end_finetune
+  checkpoint: monologg/bert-base-cased-goemotions-original
+  checkpoint_revision: 13c44c849132f82bb61188d909a574badffb27a3
+  checkpoint_files:
+    config.json: bb78405aa8c536f30b0f517f715a3474aa420a91118bbf8bf79c4b704dcd122b
+    tokenizer_config.json: 8327d5ec8fdafca3621ef26bf124a91bf1f9a0600e58263f16f9ee259c8fd0d9
+    special_tokens_map.json: b8a8c41fe8751a59725136c615752d3c109ea69d32b2dc355be42b1b459ec410
+    vocab.txt: 061925b27f9870e8ad6f6c02405508d5380fbb8279f7a418a61a2ddd7fa55a11
+    pytorch_model.bin: ab2b94588c862d96c040024c8a92e248b37445a2ac62f5b010a65e36806c3024
+  local_files_only: true
+  max_length: 96
+  aggregation_strategy: mean_probability
+  train_batch_size: 8
+  eval_batch_size: 16
+  learning_rate: 2.0e-05
+  weight_decay: 0.01
+  max_epochs: 3
+  patience: 1
+  min_delta: 0.0001
+  warmup_ratio: 0.1
+  gradient_accumulation_steps: 1
+  max_grad_norm: 1.0
+  selection_metric: macro_f1
+  loss: weighted_binary_cross_entropy_with_logits
+  class_balance: weighted_labelwise_negative_to_positive_ratio
+conditions:
+  youtube_only:
+    execution: reuse_accepted_control_without_retraining
+    replay_validation: compare_archived_exact_replay_to_accepted_oof
+  youtube_plus_weighted_synthetic_784x3:
+    youtube_chunk_base_weight: inverse_native_chunk_count
+    synthetic_review_base_weight: 0.3333333333333333
+    synthetic_total_base_weight_per_perfume: 1.0
+    synthetic_inner_train_only: true
+    validation_and_test_youtube_only: true
+    recompute_weighted_pos_weight: true
+evaluation:
+  threshold: 0.3
+  reported_metrics:
+  - macro_average_precision
+  - macro_f1
+  - macro_roc_auc
+  per_label_diagnostics: true
+  component_equal_point_estimates: true
+  paired_source_component_bootstrap:
+    repetitions: 2000
+    seed: 42
+    confidence_level: 0.95
+    interval: percentile
+    resampling_unit: source_group_id
+    identical_draws_for_both_conditions: true
+  interpretation_rule: Treat augmentation as an established improvement for a metric
+    only when its paired interval excludes zero in the positive direction. Report
+    all three metrics and the six-label fear-excluded sensitivity.
+execution:
+  task_order: augmented_folds_1_to_5
+  fold_task_count: 5
+  checkpoint_granularity:
+  - epoch
+  - fold
+  resume_by_default: true
+  pause_after_current_epoch_on_signal: true
+  control_probability_tolerance: 1.0e-06
+scope_exclusions:
+- no_control_retraining
+- no_threshold_tuning
+- no_784x6_model_selection
+- no_balancing_grid_selection
+- no_synthetic_only_rerun
+- no_thesis_edit_during_experiment_execution
+outputs:
+  root: outputs/source_grouped_weighted_synthetic_bert_v1
+three_seed_code_revision:
+  source_config: /Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment
+    Analysis/config/evaluation_config_source_grouped_weighted_synthetic_bert_v1.yaml
+  source_sha256: 34467266edc3c0faab79c017c2eb35a16e0dafca3b260c788c7658fc5ab2f3ed
+  revisions:
+    accepted_bert_runner:
+      path: /Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment
+        Analysis/src/training/run_bert_benchmark.py
+      historical_sha256: 602c2dc0ad1dd0ae12c2c4ba90851136b23930adc91cafa85d71dbf73c8acd3d
+      current_sha256: 40f51b60e25728798f013d2aaa218cb6c1608e8aa432b4dc8a47d73b76533034
+    pause_checkpoint_utility_runner:
+      path: /Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment
+        Analysis/src/training/run_source_grouped_weighted_synthetic_random_forest.py
+      historical_sha256: b5db0cf5ee0280f84d6dbd0b3262d43e48c0caf275683a0e47dd0628e0d7574a
+      current_sha256: e41e4e56719154a3a2ad990957181dba9533d28e3f2dd78eb65f4f3da78d5417

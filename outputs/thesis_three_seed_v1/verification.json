@@ -1,0 +1,59 @@
+{
+  "additional_full_training_launched": false,
+  "data_seed": 42,
+  "dry_run": {
+    "command": ".venv/bin/python -m src.training.run_thesis_three_seed --dry-run --reuse-seed42",
+    "log": "outputs/thesis_three_seed_v1/five_seed_extension/dry_run.log",
+    "remaining_new_training_jobs": 78,
+    "seed42_reusable": 39,
+    "status": "passed",
+    "total_jobs": 195,
+    "validated_completed_jobs": 117
+  },
+  "extension": "five_training_seeds",
+  "full_suite": {
+    "command": ".venv/bin/python -m unittest discover -s src/training/tests -v",
+    "log": "outputs/thesis_three_seed_v1/five_seed_extension/tests.log",
+    "status": "passed",
+    "tests": 116
+  },
+  "limitations": [
+    "Five-seed training and final five-seed summaries remain pending.",
+    "ETA remains estimating until sufficient comparable completed runtimes exist.",
+    "Forced mid-epoch interruption repeats the unfinished epoch; graceful pause finishes it first."
+  ],
+  "preservation": {
+    "all_unchanged": true,
+    "completed_run_primary_artifacts_checked": 585,
+    "original_summary_snapshot": "outputs/thesis_three_seed_v1/five_seed_extension/before_extension/summary.json",
+    "three_seed_summary_values_unchanged": true
+  },
+  "progress": {
+    "completed_jobs": 117,
+    "overall_job_completion_percent": 60.0,
+    "status": "ready",
+    "total_jobs": 195
+  },
+  "provenance": {
+    "compatibility_validation": "outputs/thesis_three_seed_v1/five_seed_extension/compatibility_validation.json",
+    "runner_sha256": "d7d0a54916cfd02e806e1de3f9be0d92cfc9cfadeff936e428057d7cc1a0ff45"
+  },
+  "status": "passed",
+  "summary_checks": {
+    "all_paired_comparisons_flag_missing_seeds": true,
+    "completed_seeds": 3,
+    "expected_seeds": 5,
+    "incomplete": true,
+    "missing_seeds": [
+      7,
+      99
+    ]
+  },
+  "training_seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ]
+}

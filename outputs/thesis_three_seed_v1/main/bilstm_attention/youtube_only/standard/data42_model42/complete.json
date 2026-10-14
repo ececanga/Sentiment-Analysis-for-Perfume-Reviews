@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "metrics.json": "da0bccaa6300784ddf12299b0992d6992149680cd891537534848b67f77d6077",
+    "oof.csv": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624",
+    "training_audit.json": "a77bace9a20d3be658b71caab8a5e3bc8f236624e4fecaee490acbd642789cea"
+  },
+  "contract_sha256": "13fb2533141561bb17902752de05f7804265890c74f3c23f5ea47448c3d7119e",
+  "historical_reuse": {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bilstm_attention_run.json": "6780aa778f265a8f4dc19833f324c7514a18f7e42deaf7b77327a8beb5090286",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bilstm_attention.json": "b3ffb60fcb58a07c06f2138958240d89fce2350c5a82f54bae206185e83a4248"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1",
+      "torch": "2.9.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.2753228902645707,
+      "macro_f1": 0.348602791604447,
+      "macro_roc_auc": 0.4507392074416957
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bilstm_attention_oof.csv",
+    "prediction_sha256": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/bilstm_attention/youtube_only/standard/data42_model42",
+    "status": "reusable"
+  },
+  "status": "complete"
+}

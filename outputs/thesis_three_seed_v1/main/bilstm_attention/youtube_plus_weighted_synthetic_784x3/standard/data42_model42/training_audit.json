@@ -1,0 +1,44 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "historical_reuse": {
+        "checks": [
+          "dataset and labels",
+          "outer and inner manifests",
+          "model/checkpoint/preprocessing",
+          "threshold and seeds",
+          "condition/variant protocol",
+          "historical artifact checksums",
+          "complete matching OOF rows and targets",
+          "pooled metrics recomputed"
+        ],
+        "evidence": {
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bilstm_attention_run.json": "6780aa778f265a8f4dc19833f324c7514a18f7e42deaf7b77327a8beb5090286",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bilstm_attention.json": "b3ffb60fcb58a07c06f2138958240d89fce2350c5a82f54bae206185e83a4248",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/PROTOCOL.yaml": "c68aa06a87aa011f6719950c61b4a336d940382d90f2816b25c8c9df926d7839",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/REPORT.json": "ef5cadffb181bdf0033521d70ffdd0353746444d6203063b2ead074599cfcd99",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/SHA256SUMS": "52b020e5575dbbe2d0ebe6f66ea5535bd72b8534799e4ed2afff0e48c5ee5d63",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/validation_report.json": "0c6a7bc83060a8d6c9ca1f488b720f185ddc3940e812182d19772ea1f7b99916"
+        },
+        "historical_software": {
+          "numpy": "2.3.1",
+          "pandas": "2.3.0",
+          "scikit_learn": "1.7.1",
+          "torch": "2.9.1"
+        },
+        "metrics": {
+          "macro_average_precision": 0.277151855123098,
+          "macro_f1": 0.3465934799802988,
+          "macro_roc_auc": 0.44901508180784033
+        },
+        "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/oof_predictions/youtube_plus_weighted_synthetic_784x3_oof.csv",
+        "prediction_sha256": "7133d241a7d6f2d936149558997e3f78208a5a737c0c6569352c0aac8e4168ea",
+        "reason": "Frozen protocol and complete predictions validated",
+        "run_id": "main/bilstm_attention/youtube_plus_weighted_synthetic_784x3/standard/data42_model42",
+        "status": "reusable"
+      }
+    }
+  ],
+  "model_seed": 42
+}

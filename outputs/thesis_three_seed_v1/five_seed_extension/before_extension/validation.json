@@ -1,0 +1,10 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "split_seed": 42,
+  "training_launched": false,
+  "validated_complete_jobs": 117
+}

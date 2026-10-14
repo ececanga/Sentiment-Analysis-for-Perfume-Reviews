@@ -1,0 +1,112 @@
+experiment:
+  id: source_grouped_weighted_synthetic_lr_v1
+  phase: 6
+  status: prospectively_frozen_before_primary_run
+  role: primary_synthetic_augmentation_contrast
+  created_date: '2026-07-15'
+  interpretation_boundary: This is a weighted mixed-granularity sensitivity analysis.
+    It tests whether the fixed 784x3 synthetic review corpus changes held-out YouTube
+    performance; it does not treat synthetic reviews as independent natural observations.
+inputs:
+  youtube_feature_labels:
+    path: outputs/gemini_browser_og784/analysis_out/gemini_browser_og784_feature_labels.csv
+    sha256: 518048e34d1b9145cd98d70cf63dbda730b55e80eb7c66db42f3d73103c52976
+    expected_rows: 784
+  synthetic_feature_labels:
+    path: outputs/synthetic_review_level_tests/emotion_rich_v2_3reviews/supervised_eval_gemini_browser/review_level_features_labeled_g25pro.csv
+    sha256: c96f08081da4ba9a58a0a9ded856c68d61110cf2add218906a126198d1400715
+    expected_rows: 2352
+    expected_reviews_per_perfume: 3
+  outer_fold_manifest:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/tables/fold_assignments.csv
+    sha256: 5338fbb3f05a51d2dc7ec42564f5cf9d31f3c742dc278e31fb1f4dbf5f47e579
+    expected_rows: 784
+    expected_source_components: 359
+  accepted_youtube_control_oof:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv
+    sha256: 3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1
+  accepted_youtube_control_metrics:
+    path: outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json
+    sha256: c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa
+task:
+  evaluation_rows: held_out_youtube_perfumes_only
+  official_labels:
+  - joy
+  - sadness
+  - fear
+  - trust
+  - surprise
+  - anticipation
+  - disgust
+  excluded_label: anger
+  sensitivity_labels:
+  - joy
+  - sadness
+  - trust
+  - surprise
+  - anticipation
+  - disgust
+  feature_families:
+  - NRC
+  - VAD
+  - Hartmann
+  - Savani
+  - GoEmotions
+  - Cardiff
+  expected_feature_count: 58
+model:
+  family: LogisticRegression
+  solver: liblinear
+  max_iter: 2000
+  regularization: l2
+  C: 1.0
+  class_weight: balanced
+  random_seed: 42
+  preprocessing:
+    imputer: median
+    scaler: StandardScaler
+conditions:
+  youtube_only:
+    youtube_row_weight: 1.0
+    synthetic_rows: 0
+    validation: replay_must_match_accepted_control_oof
+  youtube_plus_weighted_synthetic_784x3:
+    youtube_row_weight: 1.0
+    synthetic_row_weight: 0.3333333333333333
+    synthetic_total_weight_per_perfume: 1.0
+    exclude_synthetic_for_outer_test_perfumes: true
+    apply_weight_to:
+    - StandardScaler
+    - LogisticRegression
+evaluation:
+  threshold: 0.3
+  pooled_metrics:
+  - macro_average_precision
+  - macro_f1
+  - macro_roc_auc
+  per_label_diagnostics: true
+  component_equal_point_estimates: true
+  paired_source_component_bootstrap:
+    repetitions: 2000
+    seed: 42
+    confidence_level: 0.95
+    interval: percentile
+    resampling_unit: source_group_id
+    identical_draws_for_both_conditions: true
+  interpretation_rule: Treat augmentation as an established improvement only when
+    the paired interval for the relevant metric excludes zero in the positive direction.
+    Report the six-label fear-excluded sensitivity from the same predictions and bootstrap
+    draws because fear has only three YouTube positives.
+scope_exclusions:
+- no_threshold_tuning
+- no_784x6_model_selection
+- no_balancing_grid_selection
+- no_synthetic_only_rerun
+- no_thesis_edit_during_experiment_execution
+outputs:
+  root: outputs/source_grouped_weighted_synthetic_lr_v1
+three_seed_code_revision:
+  source_config: /Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment
+    Analysis/config/evaluation_config_source_grouped_weighted_synthetic_lr_v1.yaml
+  source_sha256: 8091a6ea23c1d9b4061c72d1550e7524635b2cd747b0ea2cebd9b2b3bbe4b09f
+  revisions: {}

@@ -1,0 +1,42 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "historical_reuse": {
+        "checks": [
+          "dataset and labels",
+          "outer and inner manifests",
+          "model/checkpoint/preprocessing",
+          "threshold and seeds",
+          "condition/variant protocol",
+          "historical artifact checksums",
+          "complete matching OOF rows and targets",
+          "pooled metrics recomputed"
+        ],
+        "evidence": {
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa"
+        },
+        "historical_software": {
+          "PyYAML": "6.0.2",
+          "matplotlib": "3.10.6",
+          "numpy": "2.3.1",
+          "pandas": "2.3.0",
+          "scikit-learn": "1.7.1"
+        },
+        "metrics": {
+          "macro_average_precision": 0.3144693825465339,
+          "macro_f1": 0.3592487768979632,
+          "macro_roc_auc": 0.547251423837486
+        },
+        "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv",
+        "prediction_sha256": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1",
+        "reason": "Frozen protocol and complete predictions validated",
+        "run_id": "main/logistic_regression/youtube_only/full_hybrid/data42_model42",
+        "status": "reusable"
+      }
+    }
+  ],
+  "model_seed": 42
+}

@@ -1,0 +1,821 @@
+{
+  "main/bert/youtube_only/standard/data42_model123": {
+    "complete.json": "1794e371f2b2c954b0dabed827d22270f976d941ccfcbace2232e4f39d0a1ed3",
+    "contract.json": "4b7ff4d135edd600c578318b42e0ccc6431276e378663008667f2b48f75be42c",
+    "metrics.json": "ca8820990e03a23cbc5e6ebfbf9488b79edeba9d5303933b8e0fa84e7d1a5701",
+    "oof.csv": "0a1e7954b6f6f40f430094efcfd5b9cc801e97f54cc63ea72e5edcd79491f579",
+    "training_audit.json": "42179eb50c9075752cefc14807bcd6f047b575deaf13cb03403354501c59452f"
+  },
+  "main/bert/youtube_only/standard/data42_model2026": {
+    "complete.json": "597247805655e926252cae3d44654b1daa7a51bc6fb74bf4b83002f1ec7c6647",
+    "contract.json": "291ca15ab9e5c4afcfc907abcaf0ca58433fac15450dac250a01b67bc6703461",
+    "metrics.json": "f416bc0652af1be43f24db8a94f51fb65a02f9ce6745f979b83048d85f98c1c6",
+    "oof.csv": "0a86e99ccde21d58b8f8b55805a34c69f958c92ad5daca0ebe5c0cc5a8edcb92",
+    "training_audit.json": "61dc1d6ebf627dd199fe1d9082fafcca89cf783d28d1ac79e704d27e806105f9"
+  },
+  "main/bert/youtube_only/standard/data42_model42": {
+    "complete.json": "c8a48218171f88a3f48dd27a002a1af0fdcf99f8d8b121327e889af5d050d864",
+    "contract.json": "df94906f0d1a14b531c85be5cbba89244700f0d3b4735edfdae1580525944093",
+    "metrics.json": "62ac2f43286a3d21dc5f8de8ff37f627aba642834107249ab5c354059a15ca0a",
+    "oof.csv": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d",
+    "training_audit.json": "77d734f6c5ee54cc3fc0020bd149ac4acf64c0e9a5a218bbcb92e11b5fe40cca"
+  },
+  "main/bert/youtube_plus_weighted_synthetic_784x3/standard/data42_model123": {
+    "complete.json": "34a7403fdf1f007777792eb26d792ec3526ff383fe3e81d774d96292da8a5ebb",
+    "contract.json": "b40e4c932af8651e6e1696ad9bfd40a494a6f7a82f7e4817f3b784027eb61f5d",
+    "metrics.json": "e8ba6ab77dd7c528542a2e2472c75ea06481415e338cb7cc067eb886b39448db",
+    "oof.csv": "19d7e7d7e5dadde1eae26b2a79da43f523ad9eeb5eb55206d777a0691d10fe6c",
+    "training_audit.json": "10800c1470c2e9185894c4351f9dca78617aa0ed98fcd9929b3660d925b16593"
+  },
+  "main/bert/youtube_plus_weighted_synthetic_784x3/standard/data42_model2026": {
+    "complete.json": "19679f8c312c95eb2026cfc569f269039d37e263708d721f9ebc4feed2bb63ae",
+    "contract.json": "d39b4253f1c8fd1e031dc1e4b0c33dd8abf8f468dc4bc74dd3b0594352bf97c4",
+    "metrics.json": "4c8174953514579db7dbe635e99d6bb5e1516b06d22a9132375c6c5bed00df3a",
+    "oof.csv": "bcb98e9ee0867cd93a3f9778bcbbdbe42bb967fe6beb8586942eee6287a45517",
+    "training_audit.json": "ab5735ac45c3aca16a0b39dfb1bdf74ff218aa1c195333a5a2c7eb12c1f69170"
+  },
+  "main/bert/youtube_plus_weighted_synthetic_784x3/standard/data42_model42": {
+    "complete.json": "7de9692bf1b35efc72ef78c4168452a06b06e24b4e39eaa66533e0e07df56ec5",
+    "contract.json": "1c77d7e94e2505d826114b52304dd593b42eb94ee89c0fd8dd654212ea810516",
+    "metrics.json": "111fe314879b93c76fb0bd3923ae07408e2d24693279fc4d2b3409a78f14ee3d",
+    "oof.csv": "f14d700092950fd2f30e60ee56c24c8bf3bae75dd80475e0489bf8cb8c20b226",
+    "training_audit.json": "4ae7dca18ad9e3ed10bb1f09bed3eb80dc876ef14bda5270d5330bfd08fdbe46"
+  },
+  "main/bilstm_attention/youtube_only/standard/data42_model123": {
+    "complete.json": "b802ef1f0efb4bf9a69fe181178a17ba16b0f06f88e49263d9c51d2e99212324",
+    "contract.json": "bbe61749632336b660e9d19bcef94b6860f1febe77ff393b609af13c2ba67341",
+    "metrics.json": "984cb03a2bd9f9597ab64a2f7f9be65bc724b968569159a64cb133ece41fafeb",
+    "oof.csv": "6e240f8cb9774d6e6b3a3470625fb04d8caa2f9f00888d960a54b9b0e4d7dbf3",
+    "training_audit.json": "d90bba13df76a105f34a982dc1c49fa2c0dec26b06eb550aa0defc2d935939ac"
+  },
+  "main/bilstm_attention/youtube_only/standard/data42_model2026": {
+    "complete.json": "1a79c96abe1ae460a128c6884431724ab54035dc510f41fcfebb7e20f4fd22f9",
+    "contract.json": "a9aa0faaa7ef45f5d34136bb076e24ac2a103551c9e015a2c9ed56da3a402bf3",
+    "metrics.json": "47a7133b7acd159a085eea1415e3e33545f471c258b482972a6bee53213d7349",
+    "oof.csv": "7c325a466a210ef36a6eb261bed524bc7192fd73699b65e776096c0d5f94605e",
+    "training_audit.json": "947cc599361f7f60874560403e786a12f00703f29b2850e284fdd853a2775946"
+  },
+  "main/bilstm_attention/youtube_only/standard/data42_model42": {
+    "complete.json": "9f098788f6e7748b3e93c808419b7d737699d882001f96d3a5aa7a90bb12ffab",
+    "contract.json": "7e5ae3b111c9d56d7186cd82b900f2a836ed99191c8704af49e9997eb4d826a4",
+    "metrics.json": "da0bccaa6300784ddf12299b0992d6992149680cd891537534848b67f77d6077",
+    "oof.csv": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624",
+    "training_audit.json": "a77bace9a20d3be658b71caab8a5e3bc8f236624e4fecaee490acbd642789cea"
+  },
+  "main/bilstm_attention/youtube_plus_weighted_synthetic_784x3/standard/data42_model123": {
+    "complete.json": "1799bae14cf949cc35cc176b49623c5839201e1312fadcb1ea8c8e7f391158e1",
+    "contract.json": "43aa80f7e022b5c4a460b8f6aaf2bc10dea40ca9bfd1264e4508c98fbf0aed5c",
+    "metrics.json": "a2d1e2723a114a49fd46ff8938cae9e77f4147a359e2592e4f75d2dbb5acb083",
+    "oof.csv": "dafd312eb39ed6dc4e587b0d4e58a40300eb988e345266235a24e68f1b2034f0",
+    "training_audit.json": "7e51580455984f1f100940e3f48569f57d2b7ad0948d3a6b2b79292d7b596a75"
+  },
+  "main/bilstm_attention/youtube_plus_weighted_synthetic_784x3/standard/data42_model2026": {
+    "complete.json": "6129cede352537506ea19e616a0815599e3712181131bb0c0433d253286b4f9a",
+    "contract.json": "032bb9f62998d788ce3780845e6d8216b389be348a2c763f2f9cbe1e8d34031c",
+    "metrics.json": "a08edd2e877e073eb0f4d94d6df19c12dbe77b0c6725656b563e3a07d39220f7",
+    "oof.csv": "4adc8368b486e779281dae03a46bf38417c2ff119f59aa4f57595fe79f6c9881",
+    "training_audit.json": "50a6a77660c7f0309dfc4f203433eefe118486c1ea0ac5b8675b8d3c13cb490f"
+  },
+  "main/bilstm_attention/youtube_plus_weighted_synthetic_784x3/standard/data42_model42": {
+    "complete.json": "9300f041ed977fc6e0627ee160c32f89f7b4b4d1167667f513e43d4c4f65c311",
+    "contract.json": "c22146b997cbb99e2d9bd4550fb1fe831a9bf229912b09420c5b22909cf6520b",
+    "metrics.json": "052dbcd3546db8b86e5e9c819cbb9e8957c5b320ba264e2d519fbefacac99169",
+    "oof.csv": "7133d241a7d6f2d936149558997e3f78208a5a737c0c6569352c0aac8e4168ea",
+    "training_audit.json": "0d37e662d882e7e98d2b66c57155414f1b7ab3c75c12cc19fe2d430bd781b4f8"
+  },
+  "main/logistic_regression/youtube_only/full_hybrid/data42_model123": {
+    "complete.json": "54032816a83c0a77ac43c19cc5a6e695e4c323b6bd84304c1771b8b03b2ec35d",
+    "contract.json": "3a45fc3f5c4a25f8476e63a3f59434d0fa38e286be1eab9a50af7dd78ef79ac4",
+    "metrics.json": "401bef5d07d01db35f59bbc8e1d9e754bcfef4e6e2b3e3cb06265b9d0af721e8",
+    "oof.csv": "5c5be37c3f82050d53644f42ad8120b31f11b6aa50e6bcafd2ff859002077308",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "main/logistic_regression/youtube_only/full_hybrid/data42_model2026": {
+    "complete.json": "739100ea33c5f9d9c88168735712ffd6ba5f9fc1dc72db0b14fe01e3ef970c2a",
+    "contract.json": "684cb826b57f8b1116b30942bb1f962754a8718bd8b029384c7f01c9fca68755",
+    "metrics.json": "401bef5d07d01db35f59bbc8e1d9e754bcfef4e6e2b3e3cb06265b9d0af721e8",
+    "oof.csv": "5c5be37c3f82050d53644f42ad8120b31f11b6aa50e6bcafd2ff859002077308",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "main/logistic_regression/youtube_only/full_hybrid/data42_model42": {
+    "complete.json": "31d6869d6766e5b08d167d2d09831927840d03c15ea23e18dcdbef38f27847c5",
+    "contract.json": "0047865a8506ceba7b996d3d9aaa7774be4b2eb820eb43c6fa2303e2ec4aab60",
+    "metrics.json": "d985d42d343bcabc459d872f4a2f3eec1f0c50fa0d201cd12be49ccc52deeb0a",
+    "oof.csv": "d03bfd3463336af4b5b5938ffe5d903590e3ddbb2db3d4ffb5f7b705efd1028f",
+    "training_audit.json": "ad7f3e62c22c08b486c3d23e1bc1718f7ac3162e148db23cf0db09f139b93547"
+  },
+  "main/logistic_regression/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model123": {
+    "complete.json": "1ebea890d29624a2d3f6770701a1563db1d418e67cc20601c69a9276000ebf2e",
+    "contract.json": "4b5edc47984a0b7819283e46020a9dae13c7dd02a8bd62985cea92e935d87314",
+    "metrics.json": "14689a84323f44be5463c838fe34027b81764a66c0062777b1a532eeab5a4831",
+    "oof.csv": "38fce7860249420dfdcc47d6720fbb174b9fc814523030c9bb0f666169cfc2b4",
+    "training_audit.json": "b707261924cb874f1bc06721b9aa93397f8b3d8ebc169fa001e6beaae376341f"
+  },
+  "main/logistic_regression/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model2026": {
+    "complete.json": "0f613462b67347e3d48ba6e9ebfdf295690af934896c8402cc10e973a04eae28",
+    "contract.json": "1cc0aff215d63c34ba753d092408ec130900daaff265c348e812342a82c0291f",
+    "metrics.json": "14689a84323f44be5463c838fe34027b81764a66c0062777b1a532eeab5a4831",
+    "oof.csv": "38fce7860249420dfdcc47d6720fbb174b9fc814523030c9bb0f666169cfc2b4",
+    "training_audit.json": "3ea3d5c111c1df295f36b10a577419221f4f9bfb5b774d5bbe85c2f4a39f6aea"
+  },
+  "main/logistic_regression/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model42": {
+    "complete.json": "344462b7aedb9f1369173c8380c29a62d7b2a5868ff90e3866fa2ff8fda8984f",
+    "contract.json": "4846a765d1b5356c66c6633ece1dd1aa541ce122ea18b3d66b383b0fc8dce7f9",
+    "metrics.json": "7b755ca9f7987a299ac4307dad29ec9b3d61b100c770f301dae35490463a42a6",
+    "oof.csv": "3c5e6378e5e085357fec1dea3a8222a0f3724f91aaf55ef412483eb1dfa0df67",
+    "training_audit.json": "d15cc1a128e355ff073b98042e0ef3a9bf6c43de423386bf155be4994f4d732d"
+  },
+  "main/random_forest/youtube_only/full_hybrid/data42_model123": {
+    "complete.json": "28e0fe5981e30b45e0536bacfa8d9bffd7c679d6e25be60eb9b88340a89902f3",
+    "contract.json": "598372d41a0f1736cc1d6ad621972e16cacbd0ef30db565610deba4ade350b6b",
+    "metrics.json": "a09c2bdedd291c97ac4b84f44ab3d3b73fe416b1f75d91eba9932be6cd034b8b",
+    "oof.csv": "9651aeb8e6e8a436fed80a5025b77a08341551a790098d719283bc686498de43",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "main/random_forest/youtube_only/full_hybrid/data42_model2026": {
+    "complete.json": "193b57ecae435bab8f03fb52724e42d11459fd694666502cf83f1f851bee388a",
+    "contract.json": "f5f088b433df1f3dc7d2dbe284c9b89d173979251e7907f9bb234f789707d7ca",
+    "metrics.json": "9760c5cd260fcba7578d59e9b66e4d6531d982762f3d9b6a3c8974d7d9b60169",
+    "oof.csv": "3364863c6039c23a2ba89e9bef687efc426b89b353d39b5500c2201922d0cd67",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "main/random_forest/youtube_only/full_hybrid/data42_model42": {
+    "complete.json": "49eb5c516e07aec3cbb07f27d286e00d97b40bddeef9cd172c8ccacbc6a2459b",
+    "contract.json": "49cd9d928e040da97e1ec2ad189344de4d6e5dc34853a7f1e3566d5005147cb7",
+    "metrics.json": "a50111e99848d9607a2fbfd76bb1088a49c74b13dde1456dd0fd899e061a4ecf",
+    "oof.csv": "3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32",
+    "training_audit.json": "9e938e0cf7e49ddea2bbbf72e70c88b887262db22c78bf541d4c17d8fd2e92d1"
+  },
+  "main/random_forest/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model123": {
+    "complete.json": "d56fe24a0b5bb46e9c307ceb6fb366260ec315b03a481a4f474e3eeb4b187c29",
+    "contract.json": "04770d753d753a277892f75cbdcfa645263f11ee4c2d8b2eb3ba42dcf717276a",
+    "metrics.json": "eac9324f1b1954a7144d63248a634ac7c4cc779342d5b9902bd955a3a6abb7d8",
+    "oof.csv": "4e3f15a18f3b56bb91535c932b1e35143c8dc7cccbe64913bb9f0f3dcbafdb8d",
+    "training_audit.json": "b707261924cb874f1bc06721b9aa93397f8b3d8ebc169fa001e6beaae376341f"
+  },
+  "main/random_forest/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model2026": {
+    "complete.json": "39ce133622d056bebdebb995ac50e0c20110a98927baa34b43064c2f1495d88d",
+    "contract.json": "032806f8fc3f6705897786dc8c86657bb62157a8dffdc48df3fd5891527c4e52",
+    "metrics.json": "2599468bd6c645c91535bbe4023c0979fc1eeab087707bced70f731c70cf164d",
+    "oof.csv": "60ad5d5ebbb6f262f7fed37401c2e9d3ae8d933b9ca33a532ff335ab0888e8de",
+    "training_audit.json": "3ea3d5c111c1df295f36b10a577419221f4f9bfb5b774d5bbe85c2f4a39f6aea"
+  },
+  "main/random_forest/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model42": {
+    "complete.json": "951219fbd3bf59e0a520a1cfb8a2652a2294bfe734f030a3c589ceb084f32fa6",
+    "contract.json": "338179d84175fa6ee181cb31184092584a1e1d780eb86f98d5aeac1ec687acbe",
+    "metrics.json": "c492115e6b0858ab454255bbff2b4908f0629c30b9d0e38a025835d9aea8f3c6",
+    "oof.csv": "8f65316d0657e6a50631e81e2b12d31152805d5567e0ae8d16217f6d25622a77",
+    "training_audit.json": "aee2bcdf4b3dce053544546ec83925519aa3cc4285ac3beee02336f43ff0d38c"
+  },
+  "main/xgboost/youtube_only/full_hybrid/data42_model123": {
+    "complete.json": "24a97340be6ee25b69a3339a18503a5de254534817ed6173a838e04491ea122e",
+    "contract.json": "143c489df75def79594e6e496400c7471c17c3b674bc667fcf2842208d642c31",
+    "metrics.json": "81d8260d193252834806300052fc06af3c966bb9b51046fbc782f6abd9eb584f",
+    "oof.csv": "c239a2077dbc3b0c9dd3cbc9abbbf3dd2c3f8480dab7f99f9d580bc0c06c7f6c",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "main/xgboost/youtube_only/full_hybrid/data42_model2026": {
+    "complete.json": "805b2a6b98e6a7f036db5ff8ecce8a8f20be5a1dedda380b7776e700ecb51e39",
+    "contract.json": "400c8a5eaa9082069c6942297bb935624774d0c8605f98a181d4b41b548737be",
+    "metrics.json": "37fbe1abc83b8598d3f45eb1462928f6e26c26c87ba57f91562bce1c40f49954",
+    "oof.csv": "eac5e896f0d50568bee620e2a3818489769a6136b4bcf9bddcf98987cf158f59",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "main/xgboost/youtube_only/full_hybrid/data42_model42": {
+    "complete.json": "293333606fb8a0ca0b85681c563c4e967ed3958b6d6b952f841fad44fcdf2afb",
+    "contract.json": "c7582e53c8088b8e4ad56f2a892a61cbcca12fd7f81413f73f7a8c8b1027842a",
+    "metrics.json": "5c82fdbe99f932a1184998e298352ad9d908b6396a0fd6849980177f20a03dc4",
+    "oof.csv": "bcfe7bfe93e13a2b11630f54de975babf19af0a164859efc9989f99379b5cd54",
+    "training_audit.json": "d764d186e4cc1f89f7079b685c56b00eaa95d653d2c192cd6be2f4929c0b2ccc"
+  },
+  "main/xgboost/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model123": {
+    "complete.json": "f6870a4f4964bc445600607cffccdb9f632826e0fd4dadcb04e85add84090f0d",
+    "contract.json": "f89c41e7e4163e494413359f88b56bba5399824f10adac9996b2e7cb9043da90",
+    "metrics.json": "beb5e63a3aaabe09967ab7561b3a600fde064737b0e3a47866dba6788d82a0e0",
+    "oof.csv": "f1c0d2cb7d6e408a44ac869ca4df09e1e773dfd3b4373571e942895850d64886",
+    "training_audit.json": "b707261924cb874f1bc06721b9aa93397f8b3d8ebc169fa001e6beaae376341f"
+  },
+  "main/xgboost/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model2026": {
+    "complete.json": "596abf4e2cbc1cce2bab67d025d16f4bdaa82f34f2e7cdd9873dc4d1921659ac",
+    "contract.json": "ccbffb966e33d41f8337363331e0839d230a4c7b4ed68496a14cb52d1139c84f",
+    "metrics.json": "0bf33c0cbc96025a7b3f689d9a454b846ddc793f0791e8e42ff7b581e231d453",
+    "oof.csv": "1bd48e60192ed52fc902671aa74535cc7da6c40e0bed2e50dbd34a322a20e8d1",
+    "training_audit.json": "3ea3d5c111c1df295f36b10a577419221f4f9bfb5b774d5bbe85c2f4a39f6aea"
+  },
+  "main/xgboost/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model42": {
+    "complete.json": "489256a36a144f7d20298ba257b6a6112068a0a37ed261602b1f903b261abf37",
+    "contract.json": "24fc6861f2bf51402a6cc655b4e9ffe338b9e56b2be72bbbcde0d20df2058d67",
+    "metrics.json": "d68009924ffd2ab5314873232e5039ca9dd4ee81b8f4261aa25abaaa5ff8aee4",
+    "oof.csv": "642170281d6aeadfdfee9b06f35581d5e8e38f22d8ad312fba06f3820d7cfd0b",
+    "training_audit.json": "0381ab07f7ad0ca1fe74123b51e44e7c7c126676f1deac3d98f7e3245b77178a"
+  },
+  "structured_ablation/logistic_regression/youtube_only/cardiff_only/data42_model123": {
+    "complete.json": "3c9c10c7737c9fb84557d18b68b869b44733f582438745aa99f335b971b65ac2",
+    "contract.json": "58e538b8ed1082e3d423180d2473d0247eb67bcf904d5d7ec749c8cfc52e4810",
+    "metrics.json": "1def391baedea0e7d9667cf34b2c0efac3e6abf1a993b39a7ea1a11a26b71445",
+    "oof.csv": "95964c8c98866158b6647213f6aaa0f47b2fb405b81d9a481bb9fcc911d9221e",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/cardiff_only/data42_model2026": {
+    "complete.json": "c6667b173766ea1914748da9d4eafabd420ed18a2f935065e159a715e706eec7",
+    "contract.json": "994773878df1f810fe1d66c9cbe599ba595c9e400ab703ebf24b2776903e8833",
+    "metrics.json": "1def391baedea0e7d9667cf34b2c0efac3e6abf1a993b39a7ea1a11a26b71445",
+    "oof.csv": "95964c8c98866158b6647213f6aaa0f47b2fb405b81d9a481bb9fcc911d9221e",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/cardiff_only/data42_model42": {
+    "complete.json": "5896e55bc1cdad858e2c6318c2eeef686eca5632732eb34f28a53bb2337c4ce9",
+    "contract.json": "fa841f05f7ed757bc107ddd15600678085296370fc5787448719222db8305837",
+    "metrics.json": "1def391baedea0e7d9667cf34b2c0efac3e6abf1a993b39a7ea1a11a26b71445",
+    "oof.csv": "cdb95ea23bbf0c4f328ce20a9b26a30d40a15ab9c883bce7e14bd25a9b3b81e9",
+    "training_audit.json": "b50dc72cbe04a905dd8411176345b4cc3c9271c5016bfbc88b70d6affdaeb501"
+  },
+  "structured_ablation/logistic_regression/youtube_only/full_hybrid/data42_model123": {
+    "complete.json": "33172d1698c62136d05d59f3b440ab9142cf5c286ae2c6d57f9df754998c9e43",
+    "contract.json": "28072077b10278175a686f689171a23bf2f1e2ef3af9ccf1f7a67fce7dd9a79a",
+    "metrics.json": "401bef5d07d01db35f59bbc8e1d9e754bcfef4e6e2b3e3cb06265b9d0af721e8",
+    "oof.csv": "5c5be37c3f82050d53644f42ad8120b31f11b6aa50e6bcafd2ff859002077308",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/full_hybrid/data42_model2026": {
+    "complete.json": "5a641906188f9055eaaeb75d9b06dc7824f27dd4581b10b78e6e5551723cfff6",
+    "contract.json": "018f817ad44a9505f99ec2e22a658a197061f4c0cee2a262a239e1bd430e02b2",
+    "metrics.json": "401bef5d07d01db35f59bbc8e1d9e754bcfef4e6e2b3e3cb06265b9d0af721e8",
+    "oof.csv": "5c5be37c3f82050d53644f42ad8120b31f11b6aa50e6bcafd2ff859002077308",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/full_hybrid/data42_model42": {
+    "complete.json": "d23b7dc48546d5def625025137323ae6d7efa60b06b8eab4af2740c750f3d684",
+    "contract.json": "3b16b863fca6041c39dae380c65f92911ddc409f3e85d3eccad1883bcf768ee6",
+    "metrics.json": "d985d42d343bcabc459d872f4a2f3eec1f0c50fa0d201cd12be49ccc52deeb0a",
+    "oof.csv": "258d7e5c8ec5a9106d9455de6a57f2fe33a5b99ae9ffac09cc482889b37e96bd",
+    "training_audit.json": "cd2bf37465a8d205a9aa66d2fc58aa392926b2ace537ce9795f1e432353a40ab"
+  },
+  "structured_ablation/logistic_regression/youtube_only/goemotions_only/data42_model123": {
+    "complete.json": "a804a0e3a8d0eb158cdda8a3e02ab8ea31de5f37d3081337dd6a4c6907fa5b25",
+    "contract.json": "aafc6934456abee1e881e3ff8c962d85b8864621daa0758684be224bcefce8d5",
+    "metrics.json": "98d6483572014b77e0459d91b131b78c05e8044bea7309419c9d7d2be3dc76de",
+    "oof.csv": "cd1b2a4dbf67519e9a42c35b8104925d62171ba7439f0ece9ecde37b4ac9871a",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/goemotions_only/data42_model2026": {
+    "complete.json": "c1161fd689e31a8b36e0c0855d0f64582a13432586077bc5ad86a88a1590fbbf",
+    "contract.json": "3896768e5bb3c93eb709f389dd4a6a946c2bfcad074fc05bd55a51e47090644c",
+    "metrics.json": "98d6483572014b77e0459d91b131b78c05e8044bea7309419c9d7d2be3dc76de",
+    "oof.csv": "cd1b2a4dbf67519e9a42c35b8104925d62171ba7439f0ece9ecde37b4ac9871a",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/goemotions_only/data42_model42": {
+    "complete.json": "f09e4e4b4feedfc992f761a1c7cae3d4b73aeb469db7f5de02759e10a26dc054",
+    "contract.json": "f599db7654a372e0f7556da4b0f6f22548aff4efa0750d7e2d2e4dc72aeb41c1",
+    "metrics.json": "98d6483572014b77e0459d91b131b78c05e8044bea7309419c9d7d2be3dc76de",
+    "oof.csv": "a38637f7add4246e0877bef288bc1e57eec298473da9b0fb90e12513dd07907e",
+    "training_audit.json": "d937e73ad60e190e98f04c27ab4b232844916b2273e3b35d830d3601b678fb43"
+  },
+  "structured_ablation/logistic_regression/youtube_only/hartmann_only/data42_model123": {
+    "complete.json": "e917e09ee07e455eebf7978f7da25789fdee806c38fc815771aec23de36154be",
+    "contract.json": "6acb6f95c915c1f55d884674a5a829d39b89ec6376158abce0c692aecf496ebe",
+    "metrics.json": "e705a0ce9c9038e41a1c19809a1a3e9c64e26624adf8e72745c363e9e136fc57",
+    "oof.csv": "50ec3eb87977ca7821e7aa07ab5c46ebbac028041f12e5f3353e18b4d5f645c8",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/hartmann_only/data42_model2026": {
+    "complete.json": "5b23620390d2a53b6de004338944c6daf1bd45c4d5be7d86853830d0e403ae77",
+    "contract.json": "683b27a6d9bb34e2117823c4b90b5db9cc2296dd8bdabc44887b836e319004dd",
+    "metrics.json": "e705a0ce9c9038e41a1c19809a1a3e9c64e26624adf8e72745c363e9e136fc57",
+    "oof.csv": "50ec3eb87977ca7821e7aa07ab5c46ebbac028041f12e5f3353e18b4d5f645c8",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/hartmann_only/data42_model42": {
+    "complete.json": "59cf0ef5f0a83c4aa11de142e4037f13ad3adc507a5bc2637404d7b9c42bafef",
+    "contract.json": "3981d3236684f33722066197422d4d64647320463ccbc9bf3a739e008878cdc9",
+    "metrics.json": "e705a0ce9c9038e41a1c19809a1a3e9c64e26624adf8e72745c363e9e136fc57",
+    "oof.csv": "e071296119402dbfa10e66a998832732f28fd47417fefbd46c945b7285145df3",
+    "training_audit.json": "c53f5aa48afb307ca9b8cf8c1f38cc85862c29d47991240a054f7bf4a12734e4"
+  },
+  "structured_ablation/logistic_regression/youtube_only/lexicon_only/data42_model123": {
+    "complete.json": "afacbfd0a02358058c81671202a81fc6b39635c65b3a5e9c590cec83ae83232d",
+    "contract.json": "e1bca1568671d99d9f25c914cca32a554c1321c883d9b79f27e193935d9c80ac",
+    "metrics.json": "494a93355522caa1d8a5723fb043585fedd3d7bba6794d9014fced98c1929e26",
+    "oof.csv": "09ecad1c580bc3aaf0f0f614c9987a02624df4d32cc83b2a67203c539e5b674c",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/lexicon_only/data42_model2026": {
+    "complete.json": "30dfb2a4cc1f4d5f44cac238b52f7a794d70906dfe9e28cbb768eb988b074ed8",
+    "contract.json": "718cd8a01f7c47dbee6b234a3bc355ae22ccb313b00b09074ab44dd756dcca2a",
+    "metrics.json": "494a93355522caa1d8a5723fb043585fedd3d7bba6794d9014fced98c1929e26",
+    "oof.csv": "09ecad1c580bc3aaf0f0f614c9987a02624df4d32cc83b2a67203c539e5b674c",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/lexicon_only/data42_model42": {
+    "complete.json": "474ad23f09360eeeb3030961dba83f0659493f140b00cb121b456ff910172051",
+    "contract.json": "7a6e75c7e309bcadc730dbb0fb788844433d56c0310ce0a8fee45e15fcb3664b",
+    "metrics.json": "959d0e4c96e8ec7eac42673d4fea1334daf619939ec1a5d45002dc7cfdc7b365",
+    "oof.csv": "409449cdc1e4de9e10962ddf5f3437f1595b07ede6f60667cbac474fdc70c190",
+    "training_audit.json": "3c38b47d05e672cb423231ec1c88f5b43812a06d0093a2dc23d274e2537fc9e2"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_cardiff/data42_model123": {
+    "complete.json": "46373f73f079a1aedddba24f168b963e9f48778883023405c05801ad9b02c9e8",
+    "contract.json": "4c13b5c349f4b27ac89d15a7bb42aa934258ecb61d67b45ead9124fafbdb0a1f",
+    "metrics.json": "2d160d68801d4e772d598732b4d199c7a137d9279ecc9439fb961daa8f94a016",
+    "oof.csv": "5b6a5a617c1471722819b072519d7058fec1ae1b22e965c33fa7918c4d2ef019",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_cardiff/data42_model2026": {
+    "complete.json": "c7355b797d875c2c18e013307c38ffbea2fe6927d783d56f106e40e9087b15c2",
+    "contract.json": "cdb3e735797fb4a8adb907a07987b0abc20f3ab15d96023c651ec303b7e7c7e0",
+    "metrics.json": "2d160d68801d4e772d598732b4d199c7a137d9279ecc9439fb961daa8f94a016",
+    "oof.csv": "5b6a5a617c1471722819b072519d7058fec1ae1b22e965c33fa7918c4d2ef019",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_cardiff/data42_model42": {
+    "complete.json": "fd54c21a5bbaea76821f77a3182853ef3653fa2b62b3e8e00abda657cb3e2edf",
+    "contract.json": "1142856c9e448c26356111721f55af84af60e20ffd5995a35cc7c90a377a778b",
+    "metrics.json": "a937cd549654dabda268956526c8db8be5f8f1319725b3e151230e53bf156360",
+    "oof.csv": "93656443633055e026fcaa8f6ff432989871ce2440fd7a44c129a91b1050148c",
+    "training_audit.json": "ea1ee378b60d03e3fd34bf1fa09f4865842d402c0d3bd057538bf8c131b0041f"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_goemotions/data42_model123": {
+    "complete.json": "c79f6b7bac911b587abef6d3e6bd33a60e6ba4fb22e31771c09230a018164af2",
+    "contract.json": "34f05113dc00a0fb208d9e8b7c2df1e568493cad4a0959c196a9ba8372736df9",
+    "metrics.json": "d0fa7e816835be16fcfc3b17553c971e024683c3f5683a2df062087eaf226a55",
+    "oof.csv": "d92eecd3e285245787ceec405a3c9db21e1b23061999886468c85c6e87a6b99a",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_goemotions/data42_model2026": {
+    "complete.json": "0b31de447b50acf64b86db3b0a26dc2add05819424243171d65cc8bd0210663b",
+    "contract.json": "fafd90f811a53bae433314813de4cae310398d4a2679653b6c4adce322135b42",
+    "metrics.json": "d0fa7e816835be16fcfc3b17553c971e024683c3f5683a2df062087eaf226a55",
+    "oof.csv": "d92eecd3e285245787ceec405a3c9db21e1b23061999886468c85c6e87a6b99a",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_goemotions/data42_model42": {
+    "complete.json": "7f6728dd8d8494c701e5a923a89f9d19ab3047b77f99946a288c6c2e89a76e6c",
+    "contract.json": "ab58196f1c8e8e5094e84d6c6dbf1c4dd469cf18cfc2fd713be9417aebbd138e",
+    "metrics.json": "14ed68b7be7fb6af2337b713b35326aaa81711b197227d9793f097933d64558e",
+    "oof.csv": "a5328d87bef7d98c4e372e76611f2014a4c9cd156a77ceae7f53870f09a314af",
+    "training_audit.json": "1ad714f992aa1e279e7c0aa5b3c95bfe05c26725c3941b13bfc2d16289b50b06"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_hartmann/data42_model123": {
+    "complete.json": "9026801ff1a842322bf852734b321c4c257bad4d0d9ffa3eb372e663de2e1497",
+    "contract.json": "c3cc3cb8afa31d04f16bcc7116bbbd8c739eb42939a1b43aaf6239fed09fcfde",
+    "metrics.json": "b6e9985ec55070e8f7594d5c63baa8222fac77467385eadee5eee774938c365c",
+    "oof.csv": "982b35cd3243c52e8fbbacdc0a2e24ed86d9e0784d1e2c7eea0d00aad4f98c59",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_hartmann/data42_model2026": {
+    "complete.json": "69765ebd16e5a8b941806b2ad685b205312f6fe009da7ea6aad17db7de532aa5",
+    "contract.json": "7c4bbdff01617c2c95438a4b8117bbdd03d8d66a8c1d0bfbc3d0c26adf405dbe",
+    "metrics.json": "b6e9985ec55070e8f7594d5c63baa8222fac77467385eadee5eee774938c365c",
+    "oof.csv": "982b35cd3243c52e8fbbacdc0a2e24ed86d9e0784d1e2c7eea0d00aad4f98c59",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_hartmann/data42_model42": {
+    "complete.json": "e29fd64ce46212f0f982b1dd8f4644cb8b27b3de98230fbef7f1a80f12327a42",
+    "contract.json": "5e4427fce0c1cef74673928ad3ea40a4f34c971e590eb77540f6fd10bb8d8302",
+    "metrics.json": "cf4937689705cf658f049be14e990cff9233126d9d5a04971e6068c2b971b986",
+    "oof.csv": "5532479638bb3bb075f87cafb671ca61449c2442b761f945a59f14e02322ac11",
+    "training_audit.json": "e8d26cd00d3bd9ba213e99e35fa2822c68ac8b30622ebedb9caefc5c0332cc3a"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_nrc/data42_model123": {
+    "complete.json": "6f26abe0acdf6ee6bb7d3143069263679616c8353e602e10ffd34a986ea22a00",
+    "contract.json": "268f4f350cd5bdf27897e72078c951012c61889ec53f9311a94192baebeea372",
+    "metrics.json": "da806114de5b2b80a43a55b75e22bc4985712e54a2cf80da79c31b5bf65680a0",
+    "oof.csv": "9c476229bd776fb7a7854480280b8c7c5ad6466defba24fa55f92b034b1c47a0",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_nrc/data42_model2026": {
+    "complete.json": "d4dca19eec750ccc2f2860ebc27f0b99031a34b9d4fb9b920e9508eca088040d",
+    "contract.json": "303a30c34216d59ab048f8f823c72367404cc61522277f7bf369e4872e365500",
+    "metrics.json": "da806114de5b2b80a43a55b75e22bc4985712e54a2cf80da79c31b5bf65680a0",
+    "oof.csv": "9c476229bd776fb7a7854480280b8c7c5ad6466defba24fa55f92b034b1c47a0",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_nrc/data42_model42": {
+    "complete.json": "f4e07dd691f2d929e86b5d643d928bbd161c8bad9541c5b7cd5d4ed914b28c9d",
+    "contract.json": "dc12b307f0caf84a943667d4b6e8353c9ccb37d68d97941ea4791f4b4796dba6",
+    "metrics.json": "da806114de5b2b80a43a55b75e22bc4985712e54a2cf80da79c31b5bf65680a0",
+    "oof.csv": "b2984808c09f63368462f9f89fb0614b33ac71aa1d894c27596e995b48d9e56f",
+    "training_audit.json": "e32d38f0cb5e0e5e4fd57d59697e3c98aa1b8e9c6d11c60c86d2192320288f4d"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_savani/data42_model123": {
+    "complete.json": "51c467abe607b6fc824df7e4e58c46008f8edf93f4300e51447f48a88d9abbf9",
+    "contract.json": "f5f4215dd29fd5453ee6bacaf592decd4c3da0cd5709f7ee791dba6748f62f48",
+    "metrics.json": "a573835b2571e67b1b84a4a5ff698edeaad9b59a4542e03751c8286a4f4553b4",
+    "oof.csv": "47eb36662a5eaa09d8ed0c2ea4adb3e27e26d9ec647102c0259a467e8adec18a",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_savani/data42_model2026": {
+    "complete.json": "8f1f63ffbe1bbe3bd93ea42c3a9b3b4c582382e1c780b97221966e0067e15f9a",
+    "contract.json": "8d9054d7da7f0fc0d4ea82bbb20470ae26c2587a7d335865ffe1cc9fae387620",
+    "metrics.json": "a573835b2571e67b1b84a4a5ff698edeaad9b59a4542e03751c8286a4f4553b4",
+    "oof.csv": "47eb36662a5eaa09d8ed0c2ea4adb3e27e26d9ec647102c0259a467e8adec18a",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_savani/data42_model42": {
+    "complete.json": "933d9fff1292a5c5741e620931aae2b59c9448028037f33b02f27ca9de2e6a23",
+    "contract.json": "82baa40fb40832751ddc1735c823ab6947636f42243040b0f44388cc6cedb986",
+    "metrics.json": "37e4ebdf1742f77f1d274302609df8e1559aa1aeb23bcdb10b21c12380a95275",
+    "oof.csv": "6e66a057187d71810e98646ae3eb6b679a936e16896f4a9e29821682fd47f655",
+    "training_audit.json": "1695a14162917375765fc16380e63432880e39804125f075f20a8588d6739c6a"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_vad/data42_model123": {
+    "complete.json": "000ffb69fa52961623e9dfee3c2be0c20299f810094cbacaaf2e621f9f87d252",
+    "contract.json": "94b52c73192069b32a249b3edc793422efeb215bc32f123676f3abe8a0afde25",
+    "metrics.json": "1c8b2e69bbb4de978703602138520f74d726bcd2e2cb924cbc90b534613e9a43",
+    "oof.csv": "a304448e97e14a756a9f409e96c8d7189318a566b02229d163c83f53e76d2465",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_vad/data42_model2026": {
+    "complete.json": "0f765a66cbe18d163a9b4212724b6d2536cb49f16b4803a319ce16da665c436d",
+    "contract.json": "ed947d8011953d29cd9f0ca6b2c35a71c93d9b24a1d96f42ebb04d33bffee951",
+    "metrics.json": "1c8b2e69bbb4de978703602138520f74d726bcd2e2cb924cbc90b534613e9a43",
+    "oof.csv": "a304448e97e14a756a9f409e96c8d7189318a566b02229d163c83f53e76d2465",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/no_vad/data42_model42": {
+    "complete.json": "f3ebae65772752ab55964f79c68cae1a7dfb0b4bd68cf5a474da2c5c9514c953",
+    "contract.json": "3cf8b938bfee7c27ef9c86922ffef04c7548244658629f0fd5167e92d445db5b",
+    "metrics.json": "32b6ac0e5b265281daf98a09b0deba4599383cc664d4b8357508b97f273dc927",
+    "oof.csv": "8499fa727476d06d0f5b96f743fcc809b5a3ea62e7daa6cb1e82d1143ac315f1",
+    "training_audit.json": "eb27884c03caf134ac4b693dd73cae413bf5b507357eef6dae1cfcf6e36a3f1f"
+  },
+  "structured_ablation/logistic_regression/youtube_only/nrc_only/data42_model123": {
+    "complete.json": "9a00076dda424ed0b280e064d680e9bd87591fbba0433aa198f60f6eb9368ea8",
+    "contract.json": "ccc3e9c4c853dff5dd48a26bec11638da5cb56e7632857a674187668196b2d68",
+    "metrics.json": "31899898698afb00e7e390b5345223da8870e33d5bc56922e9e562140bfcaacd",
+    "oof.csv": "6cd480dd61450c9d246c2ebfe47f7c55b4d2d00d76cf80de0e81bd5894cf0dbc",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/nrc_only/data42_model2026": {
+    "complete.json": "a1d356502625843988b56dff6e9bfd28eb7a81cd5365f51ce0a453239e22bb13",
+    "contract.json": "235a3eadc314fa865f5991163f56ab1868dc4e22443418f234ef012f8c17e023",
+    "metrics.json": "31899898698afb00e7e390b5345223da8870e33d5bc56922e9e562140bfcaacd",
+    "oof.csv": "6cd480dd61450c9d246c2ebfe47f7c55b4d2d00d76cf80de0e81bd5894cf0dbc",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/nrc_only/data42_model42": {
+    "complete.json": "35229d20ca374826645896c932c461b42411a9b6d492235c147d198eb432bd01",
+    "contract.json": "6a93df935a0419bb96f53147bc2d09c1739b70d2fcf528ca765174f46928b62f",
+    "metrics.json": "31899898698afb00e7e390b5345223da8870e33d5bc56922e9e562140bfcaacd",
+    "oof.csv": "2ba2f48a18876cb24890d5d6b21ee8d647fbfb1a33b2aaed45f9a3c4cc6bda6e",
+    "training_audit.json": "191a6b39746db8ecc36e847cbd50da67eb580bcb1f9f0fb00c4a756b22616700"
+  },
+  "structured_ablation/logistic_regression/youtube_only/savani_only/data42_model123": {
+    "complete.json": "904b46f2b7e7492a0dd391a6700435a459fe94dadc2f576e13984036b8975b95",
+    "contract.json": "9e3a894cf6ffefae7901457018b3b7df2cd63643723e6b5aabc6e9cea07d9b4c",
+    "metrics.json": "dcc79ce27cd2815502363f1c9a75e24a4a0f304c92c575daf86db88a19f10cee",
+    "oof.csv": "f0279a7c065133516a7a6a35d33cdfe6ac9930fabb4833b712dd6eac5c31fa38",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/savani_only/data42_model2026": {
+    "complete.json": "c8053674620d577e6001f8c831ae45f67c2be8262b949e1f70763c067008380e",
+    "contract.json": "bdc5f0b06e07cea4c0ea1a13c2b48ff53cf9316c238355adc5abdd7091943164",
+    "metrics.json": "dcc79ce27cd2815502363f1c9a75e24a4a0f304c92c575daf86db88a19f10cee",
+    "oof.csv": "f0279a7c065133516a7a6a35d33cdfe6ac9930fabb4833b712dd6eac5c31fa38",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/savani_only/data42_model42": {
+    "complete.json": "bee829168bcb6f077be8fec5dd55b615778168eafe493c9d908175b49527accc",
+    "contract.json": "15db095449650d8f0b11a2f8694aa627d0e629aae7852f497daba8621fb794be",
+    "metrics.json": "dcc79ce27cd2815502363f1c9a75e24a4a0f304c92c575daf86db88a19f10cee",
+    "oof.csv": "3036f69729ff146e30bdde67db97b23bf7454b10eb2164ae03c6fbbf0a936c68",
+    "training_audit.json": "44cc4e425458ec5def0c7011cc16951015ea76b6b401f5cc479271d5c1df70c2"
+  },
+  "structured_ablation/logistic_regression/youtube_only/transformer_only/data42_model123": {
+    "complete.json": "bbff54fe4073c3dbf9b8c160ea08e10d206244f6b228f81a4ca4c75931cbf485",
+    "contract.json": "7e9cb0f9504d31a03e19ed0025060930cf59fdbbbd615e6016b096b226919b27",
+    "metrics.json": "2b61c3c5a42f0f2c3338eef65c8096b14ecba04527ebcc28117fb7b237fe3626",
+    "oof.csv": "734393f4b45f3f1a375af8a5748aa7c9055b4749d4dec09c909b73e6b6cd5ed2",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/transformer_only/data42_model2026": {
+    "complete.json": "ed1d1cd2c468311486e62ba0357ef3eb50375a32a35a56e54f88e629e9919217",
+    "contract.json": "35426c41b383d33c1a469eb63fba34ac1f4c538c0faa11fc287e5d768910576f",
+    "metrics.json": "2b61c3c5a42f0f2c3338eef65c8096b14ecba04527ebcc28117fb7b237fe3626",
+    "oof.csv": "734393f4b45f3f1a375af8a5748aa7c9055b4749d4dec09c909b73e6b6cd5ed2",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/transformer_only/data42_model42": {
+    "complete.json": "f45100d723ef8c44c46499a12c9faa0b0849d9753ebbdec52351345b2fb94975",
+    "contract.json": "3bb8088c4054f2e69c5f7d47a2fb4dab7933861de03a330236a41ee696217d18",
+    "metrics.json": "20aa1cea6af400778b1b68e4484048897696811a002d74fbef2bd2a43ad292a4",
+    "oof.csv": "fe39bf967a75a105fab1f84a0da97254c69e7028a0337f299bba9edeacac068c",
+    "training_audit.json": "7c8563f52ec15d6f127c81edd01ac20d8bec8629e43d30a9514d47d32a457040"
+  },
+  "structured_ablation/logistic_regression/youtube_only/vad_only/data42_model123": {
+    "complete.json": "58b7df3dbafacf87b4eb7a036f2571d738f3c5bf60e303f1bc68be136f1bb6d0",
+    "contract.json": "93cb4836ed32cdf1d9229457d44d6c7cb534cb6be622289d4457c9f73be6f4b1",
+    "metrics.json": "06391132259a7f64026fc9480f4ddcc8928c5a3f77273bf5c3ec6d90b13abe04",
+    "oof.csv": "c4f9d6489b7929b6e5641c5b55cb851a40803f220ae927ca8dd3ff441a0183fb",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/logistic_regression/youtube_only/vad_only/data42_model2026": {
+    "complete.json": "906902fe00e975c53d2ffbcc1c4e583d87f9ce913fcfb7b6a71e7c98c93dfd5c",
+    "contract.json": "b340a8b4f5148261cd210c3d9b7ebc79cc03212d8d07c8b0fd3387dec8b09238",
+    "metrics.json": "06391132259a7f64026fc9480f4ddcc8928c5a3f77273bf5c3ec6d90b13abe04",
+    "oof.csv": "c4f9d6489b7929b6e5641c5b55cb851a40803f220ae927ca8dd3ff441a0183fb",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/logistic_regression/youtube_only/vad_only/data42_model42": {
+    "complete.json": "375ff9a80b851e3e31e1981066914ba708775e81d7ccca1eca8be37f10be0036",
+    "contract.json": "ddf2fe4e480a536d3e32aa7a3b223fdb60a5e856a846554e5b858b4ad8dcb219",
+    "metrics.json": "06391132259a7f64026fc9480f4ddcc8928c5a3f77273bf5c3ec6d90b13abe04",
+    "oof.csv": "eaaea256d97a09e928abe1aa652894cceb8024534ea711a119fd7a7a9dbec857",
+    "training_audit.json": "807e6e9f17586466cad6b6717f6b515772be503d5dcd630eab41f277d621ba1d"
+  },
+  "structured_ablation/random_forest/youtube_only/full_hybrid/data42_model123": {
+    "complete.json": "f3b7ca875f3d8686d762765b0fdacba017603b4b5f9682332d6cee13822c8ef2",
+    "contract.json": "7eff4ef8bd09501655cacfdbaaa54a7cee19693bfb61302ad283b9131e7845d3",
+    "metrics.json": "a09c2bdedd291c97ac4b84f44ab3d3b73fe416b1f75d91eba9932be6cd034b8b",
+    "oof.csv": "9651aeb8e6e8a436fed80a5025b77a08341551a790098d719283bc686498de43",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/random_forest/youtube_only/full_hybrid/data42_model2026": {
+    "complete.json": "63960f04ee85da332e082abb7f8229d9a31c29a6dbaf9468739a5058f2dee4e2",
+    "contract.json": "24cf0a6316215ac3a53415a18aa1bb57a21c3fef8a26c98d3f08beb1527932c9",
+    "metrics.json": "9760c5cd260fcba7578d59e9b66e4d6531d982762f3d9b6a3c8974d7d9b60169",
+    "oof.csv": "3364863c6039c23a2ba89e9bef687efc426b89b353d39b5500c2201922d0cd67",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/random_forest/youtube_only/full_hybrid/data42_model42": {
+    "complete.json": "dbc86d244545e6c76569685579974fd3995270a4fa0aa0d8265c4063ec6a5260",
+    "contract.json": "e320a2e59afb8c7623b8524ae0d56dc5935d791bdb93e719ea6f157ee5e616ef",
+    "metrics.json": "a50111e99848d9607a2fbfd76bb1088a49c74b13dde1456dd0fd899e061a4ecf",
+    "oof.csv": "b7338a50ab0a9f8531ab7f54e39b090e00c700a7c7dcc319162581cb1b24e996",
+    "training_audit.json": "00fb394c418019bf1d261ba6d9fc782d62de14a14ee9567944860c97f4c1db6f"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_only/data42_model123": {
+    "complete.json": "c92c552ea1921b781798aba253c4b19ac8a4ce197e872182b6d1fddcb03b439d",
+    "contract.json": "df011e56ed3d42d802dcc582082442e09346ea4320c333b170e89f2d96ef393c",
+    "metrics.json": "f728fb2a4bfb0b2a917c3115e0dceaeeb7ad7510deaa2ddc056abf9d12b19f74",
+    "oof.csv": "e4c851216c4c8b63b123c88ed38957589e66423f3598f42440bd742aaf0dde2d",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_only/data42_model2026": {
+    "complete.json": "3512f4181e95fd18ecf15826bde795d9fdda64e85ab49e5142bcbb907be046b0",
+    "contract.json": "9e421ea2405e36b24648838fca8c414a043094565c804ca1cc8a9734618dc546",
+    "metrics.json": "74433c84e36d0f5ac4516ab4757e34b46833de7e6df3395cba349c505b4d34b6",
+    "oof.csv": "57a1406548abe3801f21a7794286ea7c16250a8ea89e60804944b142f3207a4c",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_only/data42_model42": {
+    "complete.json": "38d74b56fb94109ab024f9da461dfe8ef713cf1581d73f2a8ae5edbf23f4da04",
+    "contract.json": "7dcaede9635d123328f014cfdb2e4569b96e649509b1460e16b80c5559bd3cee",
+    "metrics.json": "5f0df1753d8cf5d9705979f0bb782c5ebfcde9093be15b940ef2018431269793",
+    "oof.csv": "e5b1de233786f871b9dc5e3902f4532d3adf801be29fe7c46ec419794ab96be6",
+    "training_audit.json": "ba4d1949c08da342bad437f8487f90c910a07da6f2539e044533d7f788c4b9c9"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_plus_transformer/data42_model123": {
+    "complete.json": "7b237a7f261dbca9faa275edd6f189479acab5ad9f6174947cab14b3e5bd62c9",
+    "contract.json": "c325469d06d57fe91c6cbed5fbbebacdb21922d5363fca8cbb9b4cece0ec2006",
+    "metrics.json": "e16c3d033a3a7e277d5569512c16b0226bec43fa28ba3e9fc71f73fb929d67fb",
+    "oof.csv": "ad3bdc020c9c5dde2ecb7a2a06824a57166c61d71553a42c3500760d5d5f0f5e",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_plus_transformer/data42_model2026": {
+    "complete.json": "98ece5a9f8dac79f6ac996800aa05ed5f4263a505a0b3b4efa8083652b727fbd",
+    "contract.json": "9c7a5f25452ee2a0c8de358319e60b196542aa36b9dba7ba71607d57a127f1dd",
+    "metrics.json": "8a6701fa4d0aad495de3d208655cd042fc4d4d189da00c14078e7f1030af323c",
+    "oof.csv": "786e5326a3bcf4632076ac1787208932dfdf4ea39172782be95dc3796809cd5c",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_plus_transformer/data42_model42": {
+    "complete.json": "56561de38c9e28311ba74cd84be46d8b2c1865afd1ea4c74143155e1cbee430a",
+    "contract.json": "b65bb1f74f6591e5cdf9ec8577bdd68c5f8e183234008c2e1ce208aa63644217",
+    "metrics.json": "c6a699290aab3dc131ffa630a38d423ab44d9a7c9189169179c7b040e714535b",
+    "oof.csv": "fc866850db9a6943840eb9dbe3fa9103eabb7202a72129c37546f9361801c9fb",
+    "training_audit.json": "7f754a0d330cfd670d9a4c2ffd09586b3ebf332075f001467f93a725dc15dff8"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_plus_vad/data42_model123": {
+    "complete.json": "384879c95b7542199bf5ae2de7d391b1f9d71f5d64bcaaa66c09e165104dee05",
+    "contract.json": "8ad0b803e7852b774a60f7e2585d0c716c898435301992f95d0d46a5eabf5598",
+    "metrics.json": "49d17f1b27804c6d75b64f09aa3d37e3df0fe34501131eeabd9ce2b124c70130",
+    "oof.csv": "d17758451f74257c079cd33958ce5f0030d818b953de394b128bda2e3edcd2f1",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_plus_vad/data42_model2026": {
+    "complete.json": "3ae56ed970105af302fcc95671571529d23b209a9b9ab68898b61055067317ff",
+    "contract.json": "b1eaa2dc89e189849d707a88582bd89fdd40b00eac820ff2735f3a0586382d36",
+    "metrics.json": "401a42d1572eef48ce9c269c425019ee9b9d2ac906f0e7744885d043b5d83478",
+    "oof.csv": "975b41b7fd78baf061357ca09577df4c2a8eca52fa6530050fa39a4937387862",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/random_forest/youtube_only/nrc_plus_vad/data42_model42": {
+    "complete.json": "4ff219bb96de6a0c69ff7ee76e017825528fb208846e64fad47a61d62af17e78",
+    "contract.json": "90c4e73d39acb0d94c777ad78f5f87115578ae031f84a920d32e86cc46875ed3",
+    "metrics.json": "15ac5a2194dafd7e582516036e44c88fc1de7f05d72b0755fe700c7a89b1a30f",
+    "oof.csv": "c571d014d7e5b5be92703d47fa5aa30221597f8d314973dfb53eb90155de324b",
+    "training_audit.json": "380fbfb660537977ee8b657f2ec89de6ef7b41eba00d9c3447329136da661925"
+  },
+  "structured_ablation/random_forest/youtube_only/transformer_only/data42_model123": {
+    "complete.json": "417e7e01e9c772735deed171090ddf6627511e6ec39c0d5b249858128dd0f8c2",
+    "contract.json": "71e7083d4071ea754982a738e7fbc293d380e2e3b63fd17519ddd6abf13c4036",
+    "metrics.json": "7d5a44795fbabd8c6fc463df850a97ace4c778160dca3d0f2a3a0ff7f474f15c",
+    "oof.csv": "e5c86d6c422eceab99de7ddffa9d62803b5fc3745e3cd254b26bd65aae89b5e8",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/random_forest/youtube_only/transformer_only/data42_model2026": {
+    "complete.json": "d3e20d9d9278358cd9c27076b4083a89d2cce823213b4149af5db9ab399e7307",
+    "contract.json": "f65daad379872b3df1b80a1c3964477fd800ccdfe1fd2d65a77200654bae4170",
+    "metrics.json": "d36d046e2ff31de640a3c30dcdc8ddbca43b9180f28b3da404b75375679f21cd",
+    "oof.csv": "3e5abed8cc62c62cd53326a3171dddbfb5f4063a2be7fd007c4d24ac77cd7a1a",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/random_forest/youtube_only/transformer_only/data42_model42": {
+    "complete.json": "3b1b62d2f2de6d03e0c4f9b5678e988335ffc55dcd18844dc745a784a26179b6",
+    "contract.json": "0e80468d7f4efc79d108a39aa09eab4516dd57f6b9352dac4cfea6cd0947a333",
+    "metrics.json": "96ef458b6ec97ebeb6e8f9254be403f6db4c1b36bfbc064100992848a6afcee6",
+    "oof.csv": "5a561df947cec359ff1a3f9e787a45309d8c95bd60cc5d49a9f9f61fe037657c",
+    "training_audit.json": "9b8d59385bbd0fbeeddceb492a524633ebea2efb5da2d4f70163b66411926492"
+  },
+  "structured_ablation/random_forest/youtube_only/vad_only/data42_model123": {
+    "complete.json": "cdc099b7ce5cab52b8cd1119bc0017702fcfc58a95db56db3b834e218e72a2cf",
+    "contract.json": "afb7e8250bef6b93cf94036ee6705c752d65e8cdd12e090ba45654b0458f2c5b",
+    "metrics.json": "5d434858c75e742d9e97975b686474129995b6e67e78dbf7e57b8ae49db6818b",
+    "oof.csv": "32bf56760e8052aeb0fc4aaf963926d3f18a54ca8d235345d7f666f0fde41599",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/random_forest/youtube_only/vad_only/data42_model2026": {
+    "complete.json": "bfb340d71953d5d9530fe377d56607f18deb68c8d9ab3a8156db668af21f82d0",
+    "contract.json": "afbe66fd811bc4d57e54c757d6bb00a02f270dadc304405038b32ac16d8f5183",
+    "metrics.json": "805d68edcec16533f56ba8a1e256f8b6f3679c25de67c8aecc9b6fe86c4c58aa",
+    "oof.csv": "a7c6ba1799b8f5d71b0ad65fd52ac418bf8fd1d783ef80c280d088b4c481b8de",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/random_forest/youtube_only/vad_only/data42_model42": {
+    "complete.json": "3d5fa34e53c2da1212f02be647c503d32ea1bb17ac9d4d0bc27511e849000449",
+    "contract.json": "322f67efd534c16791fe0afc5f5785b788e1b06d47a6de8166646db963fa662c",
+    "metrics.json": "d6bf40aff8f061ede2e8e95a1898224c407eff85711d5a3b29996abf690b535f",
+    "oof.csv": "c3e5d40f3b38e84f7e2db5f20d67e2b23ea920f1b62c6ff689ec79290aa2cf90",
+    "training_audit.json": "792581fcccf685be4d4866aeedc516bfe5c2d5afdda753dfa3b6453589108d46"
+  },
+  "structured_ablation/random_forest/youtube_only/vad_plus_transformer/data42_model123": {
+    "complete.json": "651d13238fd269f1ed73711df130b5d9e88c606640e775a19c34ff543d648ce1",
+    "contract.json": "72ede439c86e6988b36b02b73d2248fb35e63dd65adc6c54eccd8b38a5c36cdf",
+    "metrics.json": "4f070d961223c81e09de909e576068e862aeb53d45fc235afc96e79e0f6ac3cb",
+    "oof.csv": "066e2346ae41b55e416853f0f84b2ece4d04d4f06537f3df195a66aa52c41705",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/random_forest/youtube_only/vad_plus_transformer/data42_model2026": {
+    "complete.json": "cbec290fa00d93318b6bac255876801cf778a392ecb6720dcb464f981c1f7dbf",
+    "contract.json": "329961685e8b663259133922f79d64980b6950b0eda1b0f2d3a20c871157739f",
+    "metrics.json": "f8f686e5277513c23b021b17660e77bf087eed87c93ef808ce4ce8e3243870a5",
+    "oof.csv": "36b7a94439f2da8ad8ef1a7cb6a170362dc4f3ba3dd65e9d96421ff2c9618fa3",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/random_forest/youtube_only/vad_plus_transformer/data42_model42": {
+    "complete.json": "aef85b3022822d6cef710d3011a35a95ad4544a54d25299dc80de61648bb62db",
+    "contract.json": "947a00ff7019d34c2603427b87f1c16b96e70e4ffae51b247b85542927e95108",
+    "metrics.json": "abe2416ada11f1fb7095facf14df1f31470203e375394ca42b2f0033736c98d1",
+    "oof.csv": "b7e4661d36764fec336389ef09f04dbd762cccf2eef3d2a93d497636cbea4ed3",
+    "training_audit.json": "b3429c591d0fc309871e7a40914b669c6589336dc8e84053c9104076a11ad70e"
+  },
+  "structured_ablation/xgboost/youtube_only/full_hybrid/data42_model123": {
+    "complete.json": "85833beade9a6aa0a6c6bd2e1733cf6aa8fc2d390c6f365629094a00f561ed05",
+    "contract.json": "c740d4cc6a7c27ecd3413d906c2cda67d5b80b4d8d76795c77d33d7a6167e460",
+    "metrics.json": "81d8260d193252834806300052fc06af3c966bb9b51046fbc782f6abd9eb584f",
+    "oof.csv": "c239a2077dbc3b0c9dd3cbc9abbbf3dd2c3f8480dab7f99f9d580bc0c06c7f6c",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/xgboost/youtube_only/full_hybrid/data42_model2026": {
+    "complete.json": "40c25902e15db0c6dea603c46a280b5332d4b341f8fcf030e63138d315ff3de2",
+    "contract.json": "308beaa8ece1045a2faf5fc61048fd77684217bd33dc553851789c8958a9d9ea",
+    "metrics.json": "37fbe1abc83b8598d3f45eb1462928f6e26c26c87ba57f91562bce1c40f49954",
+    "oof.csv": "eac5e896f0d50568bee620e2a3818489769a6136b4bcf9bddcf98987cf158f59",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/xgboost/youtube_only/full_hybrid/data42_model42": {
+    "complete.json": "d99995abb9d8af1a5bf21ea7681434672906eac63e6e3b44940ce29892d187b8",
+    "contract.json": "4a58dd402468a23d6073fefbb68f30719f9758521d96e3deade8173a895cfc66",
+    "metrics.json": "5c82fdbe99f932a1184998e298352ad9d908b6396a0fd6849980177f20a03dc4",
+    "oof.csv": "64a0da1649aeec14c99ebb6abca5a7be1fb3426ba0d937ce49c462e3437c9d94",
+    "training_audit.json": "fa32c2f072922d1ce1d9f5e31c90c3a2362bc8b9b26f4c66eece5a4da2613c95"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_only/data42_model123": {
+    "complete.json": "ed6e02bf14fd2a6d0b582c14634f0dde50a3962d895fdde8cbb935147b1368eb",
+    "contract.json": "4590601d8d8eb3b095e332d4ac7b4d2db06af53524887cfe21a5c4fca86d39fc",
+    "metrics.json": "32f4066a6af47f7dae718b67b6661902426cc5f323aeba56dba510c3a9abee62",
+    "oof.csv": "b28a3a0bd8039019fc3266e8d986683375669a932c4bcda711d906b589674b0d",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_only/data42_model2026": {
+    "complete.json": "e9b6bcceca7526c9ee15a2810146fb62812e0d1e80da180b812e691ccc1283ed",
+    "contract.json": "6fce34d0b7c27f05df7616535d2c3ee5a731f2ea03d7cce680c1b5052dc511fa",
+    "metrics.json": "5f75d04af4a3d775a42cca7319217fdc752288dc4a83eaf160ae37ebb8715204",
+    "oof.csv": "b8e15dfb8654a55f50ddcbc386b7d9deba37714aad0b029a5ce0282892c4e4fb",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_only/data42_model42": {
+    "complete.json": "d92497b09066b406f8390055754c48d0c581c989bfaac9fd91d41c786be89037",
+    "contract.json": "c7c95ce83f5da4561e92ec5d1c9486bdd092c01093ddf15aa4f454debee7e87d",
+    "metrics.json": "dd1ff8a4d925358a7fa48bf32e18b68d021db6b5de7b7e3385bac03ae93df57b",
+    "oof.csv": "35f1e01307fa2c8346ca0f5a064916f4b0bb868fd90601aa5514fad878410067",
+    "training_audit.json": "0e80f8a509c956a653e8136e83a26a427e7b97e3c768aa7fc9866a3df5f68ec8"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_plus_transformer/data42_model123": {
+    "complete.json": "70a6afef1eb8f0eb5fde3033c5f3c7c872dae8eb6529138c223c263abc23ec5a",
+    "contract.json": "2328286e4cf27017192d5811862f670646becdbe178a347327ad90b0183ceebc",
+    "metrics.json": "6f9421895011fde7ccd3c7290be75408a3a12f91c5e3feedd9a0cac064c4feab",
+    "oof.csv": "66090637eaeb1e909bd3fa5b395340608ae427e434e12d2318ac5bf1a2bf4d25",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_plus_transformer/data42_model2026": {
+    "complete.json": "899ff4617cb32e2a370ef225e220ff94cc08c5f197e3d48f4616c16a226f7347",
+    "contract.json": "9660b49ac2600f78e52ea2573fc11c4197c1beee29160224c6d5925e3441fc59",
+    "metrics.json": "9f61558f8bcfa04adf597f2615bd77e8db7d691b929c69050f01d76cd4c6ce07",
+    "oof.csv": "f2ff56e977b52a7be5e4c78f963931d451e0f971efbf324dc814c9391f846164",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_plus_transformer/data42_model42": {
+    "complete.json": "eec1d147791c57e9930964bce7aecd5b9699072d944df8a4702f5b9d653d4d6a",
+    "contract.json": "5de8ae7c576c15a1d230296f11d95b19a7cfd44676664f2d81a42d41b44a2d39",
+    "metrics.json": "a5e548968fa30cfd47fa539be3906a4b410f2bf56a1783dcf08a4b83dc040258",
+    "oof.csv": "df1cd9822d46d781797825b2acdf1276ef8dd07ed8d44dcc155931ebbb4c0875",
+    "training_audit.json": "0961ae2d59907874a7980e053201f7aa90fe49cedbba5b75ff0038c3d81572a6"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_plus_vad/data42_model123": {
+    "complete.json": "0ebeeef308e8739d9610e9cb55eb3a7858d268b0d6157c8fd2021b46826dfc31",
+    "contract.json": "d30f2de4d464568e8c36cc0e831163735a23c32c03725d3f299c2981c3b4b9d5",
+    "metrics.json": "63e457a7ea20e906645a0fa148abe97f1e1c7df447c0f98da0661f89acaded1b",
+    "oof.csv": "6fc4930b8152fabb33e527c6884dd6d8f7c10ff13088c79b4651706777d5e8da",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_plus_vad/data42_model2026": {
+    "complete.json": "a71c02e15af846dfa040c65cdfbf03503f51ac308f0b4d23cc3661512831d130",
+    "contract.json": "cf547aa325cebf5efb144db3fdd0eac2feb88906d271ce6dbcb3b8907a209cea",
+    "metrics.json": "bddc5f3f67ce99b50dc541c6a032f52649ee0f387730025e84fcb3fadb77ac89",
+    "oof.csv": "72b5bdda12bc70bf323c00fbdba5aba29fb4c169699438a82b7058f5d6733a0c",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/xgboost/youtube_only/nrc_plus_vad/data42_model42": {
+    "complete.json": "cc04e09e78f09c67b2e5fe69d31ce80ad7871fdce0c6b432fc4b8a522be5cfc8",
+    "contract.json": "fe0b707fdb795177de1e1481d146595895ce6183cb5d8076418ce062e900db13",
+    "metrics.json": "878e4ae0accb4e3e07a3e7550c1f01dd6bd94ade42bd1ab6490e2c9caf22984d",
+    "oof.csv": "5e909d5e28d2170bcc2e7d9eab4b90905e59f17c0123d067a4083a941c178eeb",
+    "training_audit.json": "9bee8f0d6645bb48e42f4a70c184160a0e9f9eff6587fbc8effd50c9b07e9d42"
+  },
+  "structured_ablation/xgboost/youtube_only/transformer_only/data42_model123": {
+    "complete.json": "a62600a3d6a566105aef8f36d28f4b6e440bcccef4779b1efd98d89652406d9c",
+    "contract.json": "b19a9f6eeea904cbe4a1e669b319b9938d41425f090899b14019f828b3f127e2",
+    "metrics.json": "a4a0b25e3391ffa923ee316747a7045adb809e57fd4525e71670567423bbf3ae",
+    "oof.csv": "0d13b72efb4758d2ea16cdd52cdf03c53b06b87fd417786be267ca840f4893b0",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/xgboost/youtube_only/transformer_only/data42_model2026": {
+    "complete.json": "fe742f23a7f9062dd0a020c0da01f014c65c1cd44b5a7638a049502bbabf51f0",
+    "contract.json": "c074838cb2b166ade0eaa75947dffd0aee5bf1fafca0033b3b8d7c8feb56d489",
+    "metrics.json": "0fe58e091aa86b4c3b9e278d332e52dc602ee230ac9d22580caea43adbcac818",
+    "oof.csv": "b2fa763349e297d2e056d62ef59dedac7dfb43d26ccf6a474131243470f04d4a",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/xgboost/youtube_only/transformer_only/data42_model42": {
+    "complete.json": "fd704093becec5ef08f30d33dd28507469cf1dc11c2a1d6c01dc25ca7f2cf944",
+    "contract.json": "f8c13e54a73e92980395fa3f432a963d8047f794c6d4c07fc72509b07036bfc1",
+    "metrics.json": "2cf4af5fed4cc02dbcaa207f146d412f31da8e1d4b5c6d4ee3cb9e7f22f2ee3f",
+    "oof.csv": "b276953f6e2df50daf414a2995f79792c051f0b7a41bb8963c151787769247bf",
+    "training_audit.json": "5a78099948297a130b96ae78efcaae7f45f4fcb988232201bd0468ab6de09759"
+  },
+  "structured_ablation/xgboost/youtube_only/vad_only/data42_model123": {
+    "complete.json": "e193ad12ad9f9adc84e5d56bb85cb868784e04a9da3250ce664f8cbe2b637e5f",
+    "contract.json": "c8874d1641c04941d3e7ce2e08f6818c39c4cf4547b71ebfe3bff356d4991a9d",
+    "metrics.json": "e27ce0662de249a03811420b950ed4d8d2343b536c31cd2af0a0db16f89a8110",
+    "oof.csv": "4dd477a9434cb25c1ae52f0f023bde20b3c1725ee66dd13ab48481a2e1c8bc6d",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/xgboost/youtube_only/vad_only/data42_model2026": {
+    "complete.json": "3df7100baa69821ee79cf50be8144b02e28b6f78425d339ffa358eb5ab142dde",
+    "contract.json": "b3f169e3b835d69964530bced52ce30739ed7baaccfbf8a6f4f0514ddc9a3dda",
+    "metrics.json": "72f2082cc56efc8da22cacc158530d6355bb46d276868a4397f17efca219f4a0",
+    "oof.csv": "3dd181b416fb680ce43cc834b7a2f561deca52e75e37344acd8edcf34a70fda5",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/xgboost/youtube_only/vad_only/data42_model42": {
+    "complete.json": "b52d2971278d97fab28f2de3305a5b7c16d4906adf44d3e16ca76fdfaa8e69a5",
+    "contract.json": "c0747c4c043646ee046eb92487c572253aced409e912213b3dbf1dd7a7202ff9",
+    "metrics.json": "df95e55596b723f6692d5343b5fd18e29deeb8119a5aca50adb7759cdd18925f",
+    "oof.csv": "1319b06f2e277643f9a3fe5b8751c8cea1868e64f1c0e3b237cd80712245e166",
+    "training_audit.json": "07f6dfec0957fc880823ca64ad1c4f53c493356b33a136c9d1eb62e82cd6e646"
+  },
+  "structured_ablation/xgboost/youtube_only/vad_plus_transformer/data42_model123": {
+    "complete.json": "d35d126b1fd6b5e9ad705dc6fac10750c09d01b4644046fd89741f83ff708b22",
+    "contract.json": "42c475b0ea9390d27bd2266d2e2969a34db08414298cc76393dee21ad96609db",
+    "metrics.json": "7891971ab6f54bbd3e55be5acbf1fc40a2b6150da458ca1d839c226835b2cc6f",
+    "oof.csv": "11e9b74bf972feb77d5085e1d6733de2500d598bd67fd306c60b232f65af2f0f",
+    "training_audit.json": "b9e6e6b2d1b04aab66f462151c1b324bb6eacddcd634b5edc2cb7384303b6350"
+  },
+  "structured_ablation/xgboost/youtube_only/vad_plus_transformer/data42_model2026": {
+    "complete.json": "0c8ab3b2d2a7c51ef886dbb7a15777bb3be8aefe51ba808c320ed8d1ebe536a4",
+    "contract.json": "16c5b56848f826675116afea17f368ab2a43f8b1165b4e5cdc5e728c0d10f62b",
+    "metrics.json": "dc631bd99d9aa709281e6d088997359a5ead3cbb7c70cd331d254c1970190595",
+    "oof.csv": "b239378db37979f40f1b1723d4c16e83dfc50c6be4b4a5e5fe9d0ef6e34108a6",
+    "training_audit.json": "509f8d5e00612fcd3f25930ca3a8d23c76f2ac7010690811e37cd477eac1cc08"
+  },
+  "structured_ablation/xgboost/youtube_only/vad_plus_transformer/data42_model42": {
+    "complete.json": "7357f39d880a4091b65c8cf0e9a0c9e366fe89ff1723d5cfb92a00a66f4645c5",
+    "contract.json": "99cb6a8aca84be7565ae02c62a430c1de506926f950c12352101422dbee0b835",
+    "metrics.json": "3b110195e82ba6d070b3324dd2b061ad5b4a46d8fef47b52815f076e02c5800b",
+    "oof.csv": "c64ed53ed2d4b3a2dd1f8257a16bd8416d53b858f569740d515b3c654b780097",
+    "training_audit.json": "cf01d85c2b9d09caeeeb7838b8d293f5afda6846c014c2ded730ea746b20825d"
+  }
+}

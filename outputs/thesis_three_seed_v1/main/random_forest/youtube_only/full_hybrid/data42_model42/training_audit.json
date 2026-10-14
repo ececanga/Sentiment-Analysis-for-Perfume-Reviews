@@ -1,0 +1,42 @@
+{
+  "data_seed": 42,
+  "folds": [
+    {
+      "historical_reuse": {
+        "checks": [
+          "dataset and labels",
+          "outer and inner manifests",
+          "model/checkpoint/preprocessing",
+          "threshold and seeds",
+          "condition/variant protocol",
+          "historical artifact checksums",
+          "complete matching OOF rows and targets",
+          "pooled metrics recomputed"
+        ],
+        "evidence": {
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+          "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa"
+        },
+        "historical_software": {
+          "PyYAML": "6.0.2",
+          "matplotlib": "3.10.6",
+          "numpy": "2.3.1",
+          "pandas": "2.3.0",
+          "scikit-learn": "1.7.1"
+        },
+        "metrics": {
+          "macro_average_precision": 0.3345664711619894,
+          "macro_f1": 0.33059648121107,
+          "macro_roc_auc": 0.5637711096919518
+        },
+        "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/random_forest_oof.csv",
+        "prediction_sha256": "3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32",
+        "reason": "Frozen protocol and complete predictions validated",
+        "run_id": "main/random_forest/youtube_only/full_hybrid/data42_model42",
+        "status": "reusable"
+      }
+    }
+  ],
+  "model_seed": 42
+}

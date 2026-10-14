@@ -1,0 +1,1351 @@
+[
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3144693825465339,
+      "macro_f1": 0.3592487768979632,
+      "macro_roc_auc": 0.547251423837486
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/logistic_regression_oof.csv",
+    "prediction_sha256": "3b33ad2e529035c9312f32fdc5778f8cb7e598b0714cda6d5fa043f9866941f1",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/logistic_regression/youtube_only/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_lr_v1/PROTOCOL.yaml": "8091a6ea23c1d9b4061c72d1550e7524635b2cd747b0ea2cebd9b2b3bbe4b09f",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_lr_v1/REPORT.json": "858846deec6ddbf5c40aabdfc0103263734155ec5407ce7f81e5f80568816cb0",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_lr_v1/SHA256SUMS": "adf975d439804fb183a6e5d2850c9ba0bff0c62293422f32808e71014904f278",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_lr_v1/validation_report.json": "9d28cdcf1a45a20761587da77d54df2ebc0fa7a55d3da9c02f522ebe4db088dd"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.35049691596980803,
+      "macro_f1": 0.3736577523215487,
+      "macro_roc_auc": 0.5372328981955019
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_lr_v1/oof_predictions/youtube_plus_weighted_synthetic_784x3_oof.csv",
+    "prediction_sha256": "a5b56423abd9dfbd4667a2cb1d94b9821f78f801ad9f1a9ad80e329f6ee0e80d",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/logistic_regression/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.30943262292347656,
+      "macro_f1": 0.3259744723367426,
+      "macro_roc_auc": 0.5682939462541757
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/xgboost_oof.csv",
+    "prediction_sha256": "310055d3283c7c6ccf5b26b17516587e74b31d3dfc49b9d00cea911f3918b949",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/xgboost/youtube_only/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_xgboost_v1/PROTOCOL.yaml": "8fabcff8eba61fc595b73f5875ddcf66710f52e4be5a6800c815bfc8bd3537e9",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_xgboost_v1/REPORT.json": "0b86a2bc3d008fbd27b1eb6ace8f95003ea6c012342a3f42d9e041d3e9ecbc75",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_xgboost_v1/SHA256SUMS": "5aa26fb4e771478e5e73d44e07f1ba6ee861382424a275b4750e3a591ac9168e",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_xgboost_v1/validation_report.json": "6d55c28984b959850adc4b54d006172fe4c58e1d4afcf30f0b8774d410c54316"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3108290800363462,
+      "macro_f1": 0.3358756633845208,
+      "macro_roc_auc": 0.5981764230814389
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_xgboost_v1/oof_predictions/youtube_plus_weighted_synthetic_784x3_oof.csv",
+    "prediction_sha256": "642170281d6aeadfdfee9b06f35581d5e8e38f22d8ad312fba06f3820d7cfd0b",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/xgboost/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3345664711619894,
+      "macro_f1": 0.33059648121107,
+      "macro_roc_auc": 0.5637711096919518
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/random_forest_oof.csv",
+    "prediction_sha256": "3d2d585adc52c91dc07e0cd0f52392426739a6bdb306a404b3be82ebd4af8e32",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/random_forest/youtube_only/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_random_forest_v1/PROTOCOL.yaml": "205143b3cd1fb9a7b44da91b4781990a47a4a286e57efdae5d6e5bf4b2b52441",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_random_forest_v1/REPORT.json": "ea9907d2c7ff45a56c708bf43a4302d235be05668bafbe35d059d04413445f71",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_random_forest_v1/SHA256SUMS": "b9b4c3e28d950e40d216ad19fcb4e78437a0dd656ee80eeeb008b04d8b71c753",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_random_forest_v1/validation_report.json": "e9236e901f6f9e2dfd51b0300977a3c3b4788693eb9f0cb00e5b6940768747c4"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.31449383675049,
+      "macro_f1": 0.32471133426548027,
+      "macro_roc_auc": 0.5730959350375854
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_random_forest_v1/oof_predictions/youtube_plus_weighted_synthetic_784x3_oof.csv",
+    "prediction_sha256": "4d7cf277d3f1fa7896e45be45eddeec3247cb0e82945237248e7edeec76e322e",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/random_forest/youtube_plus_weighted_synthetic_784x3/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bert_run.json": "5166e6eb7d2a2a8d5d5735495554d65dab7a5f784efa65c118afc385dde58520",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bert.json": "cf8a9189d7b637a135c7e8af313b440b2c58a13c8f40e87e0af642580d533314"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "accelerate": "1.12.0",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1",
+      "torch": "2.9.1",
+      "transformers": "4.53.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.35896998377082323,
+      "macro_f1": 0.40290501027343134,
+      "macro_roc_auc": 0.5532734838046054
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bert_oof.csv",
+    "prediction_sha256": "3f41a0d90b60a964171571f671f5c53b738282fdbad4b546209ec061d9ce040d",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/bert/youtube_only/standard/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bert_run.json": "5166e6eb7d2a2a8d5d5735495554d65dab7a5f784efa65c118afc385dde58520",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bert.json": "cf8a9189d7b637a135c7e8af313b440b2c58a13c8f40e87e0af642580d533314",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/PROTOCOL.yaml": "34467266edc3c0faab79c017c2eb35a16e0dafca3b260c788c7658fc5ab2f3ed",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/REPORT.json": "d28c8e2349358cab3195d89d7c03fd2484d587685bc81b3088b52a63d9d2532d",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/SHA256SUMS": "a66564ac0247b4f14f1d8ce96ed218a32256b9295c9f61ff0b41d8efd2729015",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/validation_report.json": "2840945843d2d5dbce44ab6dbe8e9874b48bc51ca36eb5dd98cdc7f195e8eb1b"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "python": "3.13.5",
+      "scikit_learn": "1.7.1",
+      "torch": "2.9.1",
+      "transformers": "4.53.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3209817072664459,
+      "macro_f1": 0.33156329365621595,
+      "macro_roc_auc": 0.5267338085586286
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bert_v1/oof_predictions/youtube_plus_weighted_synthetic_784x3_oof.csv",
+    "prediction_sha256": "f14d700092950fd2f30e60ee56c24c8bf3bae75dd80475e0489bf8cb8c20b226",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/bert/youtube_plus_weighted_synthetic_784x3/standard/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/SHA256SUMS": "11cca80d9767e0e368c2502aae57f7263c0b5d9bfd20794f85df58681f47f852",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bilstm_attention_run.json": "6780aa778f265a8f4dc19833f324c7514a18f7e42deaf7b77327a8beb5090286",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bilstm_attention.json": "b3ffb60fcb58a07c06f2138958240d89fce2350c5a82f54bae206185e83a4248"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1",
+      "torch": "2.9.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.2753228902645707,
+      "macro_f1": 0.348602791604447,
+      "macro_roc_auc": 0.4507392074416957
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/predictions/bilstm_attention_oof.csv",
+    "prediction_sha256": "6bb2309a4080eaa602efd95293261d5c8c117a6393ea572856b95ad1bd72f624",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/bilstm_attention/youtube_only/standard/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/bilstm_attention_run.json": "6780aa778f265a8f4dc19833f324c7514a18f7e42deaf7b77327a8beb5090286",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/bilstm_attention.json": "b3ffb60fcb58a07c06f2138958240d89fce2350c5a82f54bae206185e83a4248",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/PROTOCOL.yaml": "c68aa06a87aa011f6719950c61b4a336d940382d90f2816b25c8c9df926d7839",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/REPORT.json": "ef5cadffb181bdf0033521d70ffdd0353746444d6203063b2ead074599cfcd99",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/SHA256SUMS": "52b020e5575dbbe2d0ebe6f66ea5535bd72b8534799e4ed2afff0e48c5ee5d63",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/validation_report.json": "0c6a7bc83060a8d6c9ca1f488b720f185ddc3940e812182d19772ea1f7b99916"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "torch": "2.9.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.277151855123098,
+      "macro_f1": 0.3465934799802988,
+      "macro_roc_auc": 0.44901508180784033
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_weighted_synthetic_bilstm_attention_v1/oof_predictions/youtube_plus_weighted_synthetic_784x3_oof.csv",
+    "prediction_sha256": "7133d241a7d6f2d936149558997e3f78208a5a737c0c6569352c0aac8e4168ea",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "main/bilstm_attention/youtube_plus_weighted_synthetic_784x3/standard/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3144693825465339,
+      "macro_f1": 0.3592487768979632,
+      "macro_roc_auc": 0.547251423837486
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/full_hybrid_oof.csv",
+    "prediction_sha256": "c3a378a820ae7415e1d2776763aa886e2f242e30c4d1cea4c35f89ebd41e0f8d",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3216091562962345,
+      "macro_f1": 0.35906239530136214,
+      "macro_roc_auc": 0.5073609056596301
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/nrc_only_oof.csv",
+    "prediction_sha256": "a8c401c64719221b3c9079688a5dd495abf2e18aa9d79b449168dbcb41fda9a1",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/nrc_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.32407671414014816,
+      "macro_f1": 0.35443875327819047,
+      "macro_roc_auc": 0.5883883642387377
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/vad_only_oof.csv",
+    "prediction_sha256": "f62bbf40a9a3dd1b24ad33214d102297c082a2e67dd8131a422c6126730e20b2",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/vad_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3317811689151418,
+      "macro_f1": 0.360214888706664,
+      "macro_roc_auc": 0.5338291301930683
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/lexicon_only_oof.csv",
+    "prediction_sha256": "e1edeb1f40fb8b886ce277629cedce0bf5c370bf32058bb91c789ff0b41456d1",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/lexicon_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3565057737474658,
+      "macro_f1": 0.3574284539780722,
+      "macro_roc_auc": 0.5459837320353854
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/hartmann_only_oof.csv",
+    "prediction_sha256": "cfe15f42b2092d8456269f16ac40ebb8107a68c3d7156c9fc6b3737a4ae470c2",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/hartmann_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.31396102602375914,
+      "macro_f1": 0.35270226843020275,
+      "macro_roc_auc": 0.5482633979004977
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/savani_only_oof.csv",
+    "prediction_sha256": "51e4e66582b8fb31675a037829e17a68070b938e3392cedd52988d8e025a87a2",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/savani_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.29993326915194424,
+      "macro_f1": 0.3393442662044987,
+      "macro_roc_auc": 0.49424777227240685
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/goemotions_only_oof.csv",
+    "prediction_sha256": "d386ef9002a6ee7e2595d4de93527abb17af18e8ef62595faa8c133b263bf8d4",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/goemotions_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.34103779656696,
+      "macro_f1": 0.3531349341880451,
+      "macro_roc_auc": 0.5739928536812693
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/cardiff_only_oof.csv",
+    "prediction_sha256": "29deea1cd0467e7152ec28fad06037b032a939002b981904332678583f7d7bb2",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/cardiff_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.339512357686934,
+      "macro_f1": 0.35563794701577284,
+      "macro_roc_auc": 0.5772361138754805
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/transformer_only_oof.csv",
+    "prediction_sha256": "7ad64753a4a35c6cb6b6221a961bcd68fae53cf3cb28e746e2f734ee95a6ccd5",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/transformer_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3485726308506734,
+      "macro_f1": 0.35435046954866045,
+      "macro_roc_auc": 0.5837613862080506
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/no_nrc_oof.csv",
+    "prediction_sha256": "1c0f6e82d73f9e2c07c0aae9fb58f4fc458299d435b82b3979f97db43bfaddf9",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/no_nrc/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3129505563822783,
+      "macro_f1": 0.3600315497766373,
+      "macro_roc_auc": 0.5416182426173338
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/no_vad_oof.csv",
+    "prediction_sha256": "1cec7a5f4fccd9b2ada00d6507c4022bf7886b7a240dd916df090b8ae0cd310d",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/no_vad/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.30757045118683424,
+      "macro_f1": 0.3430654540344595,
+      "macro_roc_auc": 0.494173628103471
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/no_hartmann_oof.csv",
+    "prediction_sha256": "012c23dae462b5cd70a7298e5250c7b3fe09488c66a758faadabfc546505d36b",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/no_hartmann/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.34098853019063796,
+      "macro_f1": 0.3676664772976802,
+      "macro_roc_auc": 0.5756475203150698
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/no_savani_oof.csv",
+    "prediction_sha256": "17ebee526bc4974b7b03ed709772332f33e204a2cdd263a7aa53d64401b2764e",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/no_savani/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.32743381998635895,
+      "macro_f1": 0.3570746287449237,
+      "macro_roc_auc": 0.5449157704581398
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/no_goemotions_oof.csv",
+    "prediction_sha256": "98bcfa289c45e4de257927b78b019407ae989f22e89b67cff8351bc7a695005d",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/no_goemotions/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/logistic_regression_run.json": "d8cc11502a3c567e50d12645d26aae2bc80efca8d64b03ae9f4446645dac42c6",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/logistic_regression.json": "c7390d60506f63f3e24b13a5f4eb74baba00f6b57f413ff22b11125ed14698aa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/REPORT.json": "43a31dc31ad5ea04930a2dce6d37bc249707dbde014a817a11b3352d503bddb2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/SHA256SUMS": "929baf572d87e5bc1316e978a2d1fb4ca1bdaa661b96c6cb2e463876d28bc5fd"
+    },
+    "historical_software": {
+      "PyYAML": "6.0.2",
+      "matplotlib": "3.10.6",
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3095564799620168,
+      "macro_f1": 0.3492161049067544,
+      "macro_roc_auc": 0.5021027509989735
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_feature_ablation_v1/oof_predictions/no_cardiff_oof.csv",
+    "prediction_sha256": "d10ef0b70b87be7c86f9d64e07804d373f74e85e7ff78471488e6f0995d5f6e0",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/logistic_regression/youtube_only/no_cardiff/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.30943262292347656,
+      "macro_f1": 0.3259744723367426,
+      "macro_roc_auc": 0.5682939462541757
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/full_hybrid_oof.csv",
+    "prediction_sha256": "64a0da1649aeec14c99ebb6abca5a7be1fb3426ba0d937ce49c462e3437c9d94",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3512391505622576,
+      "macro_f1": 0.3794722337930679,
+      "macro_roc_auc": 0.5614716735100541
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/nrc_only_oof.csv",
+    "prediction_sha256": "35f1e01307fa2c8346ca0f5a064916f4b0bb868fd90601aa5514fad878410067",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/nrc_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.27982528439295956,
+      "macro_f1": 0.3271958439600567,
+      "macro_roc_auc": 0.5273275503915975
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/vad_only_oof.csv",
+    "prediction_sha256": "1319b06f2e277643f9a3fe5b8751c8cea1868e64f1c0e3b237cd80712245e166",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/vad_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3002662015693812,
+      "macro_f1": 0.3220331738794866,
+      "macro_roc_auc": 0.5540361215719616
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/transformer_only_oof.csv",
+    "prediction_sha256": "b276953f6e2df50daf414a2995f79792c051f0b7a41bb8963c151787769247bf",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/transformer_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3417528322203168,
+      "macro_f1": 0.37970562857758194,
+      "macro_roc_auc": 0.5701880096519536
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/nrc_plus_vad_oof.csv",
+    "prediction_sha256": "5e909d5e28d2170bcc2e7d9eab4b90905e59f17c0123d067a4083a941c178eeb",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/nrc_plus_vad/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3038806775488302,
+      "macro_f1": 0.32998987673517227,
+      "macro_roc_auc": 0.5596135456246002
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/nrc_plus_transformer_oof.csv",
+    "prediction_sha256": "df1cd9822d46d781797825b2acdf1276ef8dd07ed8d44dcc155931ebbb4c0875",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/nrc_plus_transformer/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/xgboost_run.json": "b0999cc4541cb634aa2290633e6211cb5b047d0eac67291889b56679cec89419",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/xgboost.json": "e389b6ae719486667e2726c8ff357b5d744b3ae015b8a19602341330179dfa0c",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/REPORT.json": "d97b0fd1fbcd34f50e4dfc07c5862f9f0f8978f6db460b5c529151b51ae260e2",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/SHA256SUMS": "1f682b883b47c1fdadf292cf25c881ea965b5110b416aeb3ed34616244a26b81"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1",
+      "xgboost": "3.2.0"
+    },
+    "metrics": {
+      "macro_average_precision": 0.29964730612358903,
+      "macro_f1": 0.33094047407905913,
+      "macro_roc_auc": 0.5505143737464805
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_xgboost_feature_combination_ablation_v1/oof_predictions/vad_plus_transformer_oof.csv",
+    "prediction_sha256": "c64ed53ed2d4b3a2dd1f8257a16bd8416d53b858f569740d515b3c654b780097",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/xgboost/youtube_only/vad_plus_transformer/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3345664711619894,
+      "macro_f1": 0.33059648121107,
+      "macro_roc_auc": 0.5637711096919518
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/full_hybrid_oof.csv",
+    "prediction_sha256": "acc9f70b56351a16470228f47ff19eceae3367e4164f0dcde3fc239912acaf49",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/full_hybrid/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.293046765127938,
+      "macro_f1": 0.3202475640359825,
+      "macro_roc_auc": 0.4937342964765619
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/nrc_only_oof.csv",
+    "prediction_sha256": "062efada0f28b0a9720d670de5a0b13fef5115977287d2de78e9ed21c748ce53",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/nrc_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.2814299217921828,
+      "macro_f1": 0.32338484372099463,
+      "macro_roc_auc": 0.5220464077898969
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/vad_only_oof.csv",
+    "prediction_sha256": "b23fcdfc6a615c7c81cb8af6566bfa025a1f329b9a91f8169d431cf4a9147705",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/vad_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.3167541549241487,
+      "macro_f1": 0.32481402008609855,
+      "macro_roc_auc": 0.5255069269756667
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/transformer_only_oof.csv",
+    "prediction_sha256": "7d0c62fa004c644ced0bee1282abd2494c106124510f90228d6b65a230b28ad6",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/transformer_only/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.30737696872329906,
+      "macro_f1": 0.3222755963329153,
+      "macro_roc_auc": 0.537365003847586
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/nrc_plus_vad_oof.csv",
+    "prediction_sha256": "7c44d99d5bdf19828e41801e0337bd13a1bda6fc08ebcc8c50cc51fb8dece182",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/nrc_plus_vad/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.33444902263558707,
+      "macro_f1": 0.33028852281823423,
+      "macro_roc_auc": 0.555356893581352
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/nrc_plus_transformer_oof.csv",
+    "prediction_sha256": "22046f011b4192eec185eebd64daa39e0d530808e066188c5c894aa32669b0a4",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/nrc_plus_transformer/data42_model42",
+    "status": "reusable"
+  },
+  {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.312632801182137,
+      "macro_f1": 0.32481402008609855,
+      "macro_roc_auc": 0.5223529956368564
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/vad_plus_transformer_oof.csv",
+    "prediction_sha256": "208d6a257fd0331c42f38564b95c8105e2947245fc5906280f8dff6ce6bf5e3b",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/vad_plus_transformer/data42_model42",
+    "status": "reusable"
+  }
+]

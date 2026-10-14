@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "metrics.json": "c6a699290aab3dc131ffa630a38d423ab44d9a7c9189169179c7b040e714535b",
+    "oof.csv": "fc866850db9a6943840eb9dbe3fa9103eabb7202a72129c37546f9361801c9fb",
+    "training_audit.json": "7f754a0d330cfd670d9a4c2ffd09586b3ebf332075f001467f93a725dc15dff8"
+  },
+  "contract_sha256": "f77225a235d29a4625bda55baa4978566c0c115e301641481157566f46dcbe81",
+  "historical_reuse": {
+    "checks": [
+      "dataset and labels",
+      "outer and inner manifests",
+      "model/checkpoint/preprocessing",
+      "threshold and seeds",
+      "condition/variant protocol",
+      "historical artifact checksums",
+      "complete matching OOF rows and targets",
+      "pooled metrics recomputed"
+    ],
+    "evidence": {
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/logs/random_forest_run.json": "bfa2b07632102ae9afea456b5e69ba12310148d3ee116defe70f015f426526ec",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/gemini_browser_og784_source_grouped_v1/model_benchmark/metrics/random_forest.json": "c298a975b1e9b10423651fdf86094740e08944883d6bb1a2721cb56c779bd6fa",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/REPORT.json": "993a343fb8a128c90cc4b3c0c5a8eef129e0c497388d8e5c60de88e704dee525",
+      "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/SHA256SUMS": "878f283491af8cb235ad0f5433601973d50bf0cbb00015355ee5c6de9163af71"
+    },
+    "historical_software": {
+      "numpy": "2.3.1",
+      "pandas": "2.3.0",
+      "scikit_learn": "1.7.1"
+    },
+    "metrics": {
+      "macro_average_precision": 0.33444902263558707,
+      "macro_f1": 0.33028852281823423,
+      "macro_roc_auc": 0.555356893581352
+    },
+    "prediction_path": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/outputs/source_grouped_random_forest_feature_combination_ablation_v1/oof_predictions/nrc_plus_transformer_oof.csv",
+    "prediction_sha256": "22046f011b4192eec185eebd64daa39e0d530808e066188c5c894aa32669b0a4",
+    "reason": "Frozen protocol and complete predictions validated",
+    "run_id": "structured_ablation/random_forest/youtube_only/nrc_plus_transformer/data42_model42",
+    "status": "reusable"
+  },
+  "status": "complete"
+}

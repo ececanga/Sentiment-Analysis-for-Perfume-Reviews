@@ -1,0 +1,14 @@
+{
+  "actual_resume_skips_validated": 19,
+  "before_fix_probe_exit_code": 139,
+  "compatibility_registry": "/Users/ece/Library/Mobile Documents/com~apple~CloudDocs/EceFolder/Sentiment Analysis/config/thesis_three_seed_resume_compatibility.json",
+  "diagnostic_training_scope": "One real batch in temporary directories, no full epoch or experiment.",
+  "failed_bert_job_has_no_training_checkpoints": true,
+  "full_training_restarted": false,
+  "original_artifacts_byte_unchanged": true,
+  "original_completed_jobs_preserved": 19,
+  "real_batch_probe_after_fix_exit_code": 0,
+  "repair": "native_pytorch_before_xgboost_startup_2026_09_29",
+  "resume_dry_run": "passed",
+  "tests_passed": 113
+}

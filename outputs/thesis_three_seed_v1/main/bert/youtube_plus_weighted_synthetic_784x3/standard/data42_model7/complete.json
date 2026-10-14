@@ -1,0 +1,10 @@
+{
+  "artifacts": {
+    "metrics.json": "ff3c12124bc6e8a877ac6bc769eeb581e8752ad053e7afb1366e84af025e8134",
+    "oof.csv": "836b491c401f0382d71e3616030e3a5b4f1e7462cd1b9edbcd2caaff01102ce3",
+    "training_audit.json": "12816dd9789e57cb2107624384447db6ed379279ba1a80c754b1e83985520102"
+  },
+  "contract_sha256": "b9d91e7351db12b34f73d8a7589b8573101e70ad904880468f05e88f21a6a074",
+  "historical_reuse": null,
+  "status": "complete"
+}
