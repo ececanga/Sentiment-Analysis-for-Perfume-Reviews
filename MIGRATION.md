@@ -12,8 +12,8 @@ This document describes the new project layout and how legacy paths were moved.
 - `labels/` for LLM and silver labels
 - `src/` for all code
 - `outputs/` for evaluation and ablation artifacts
-- `docs/` for thesis, papers, presentations, and diagrams
-- `notes/` for working notes
+- `docs/` for the final thesis, technical documentation, and diagrams
+- `notes/` for local working notes (excluded from Git)
 
 ## Path mapping (old -> new)
 

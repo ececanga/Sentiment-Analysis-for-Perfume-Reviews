@@ -104,3 +104,44 @@ data/raw/YouTube_Perfume_Reviews_Phase2A_Partial.csv
 
 # Alternate data export pending review; differs from the canonical CSV
 /data/perfume_level/Unified_Emotion_Profile_Perfume copy.csv
+
+# Local thesis preparation and personal material
+/notes/
+/docs/cv/
+/docs/presentations/
+/docs/meeting_5_10_min_update.txt
+/docs/update_dataset_expansion_and_gemini_results.txt
+/docs/synthetic_review_experiment_memory.md
+/docs/thesis/Feedback/
+/docs/thesis/Literature Review/
+/docs/thesis/markdown/
+/docs/thesis/defense_presentation_2026-09-24/
+/docs/thesis/*.docx
+!/docs/thesis/ECE_CANGA_THESIS_VFINAL.docx
+/docs/thesis/*.pages
+/docs/thesis/*.pdf
+/docs/thesis/*.zip
+/docs/thesis/CHANGELOG_verified_results_v1.md
+/docs/thesis/DEFERRED_FEEDBACK_TASKS.md
+/docs/thesis/REFERENCE_REVIEW_CHECKLIST_ALL_REFERENCES.md
+/docs/thesis/deep_learning_literature_rationale.md
+/docs/thesis/deep_model_text_input_protocol.md
+/docs/thesis/worked_example_vetiver_nocturne_summary.csv
+/fullCode*.docx
+/fullCode*.pages
+
+# Keep final defense exports; retain other presentation versions locally
+/defense_presentation_2026-09-24/*.pdf
+!/defense_presentation_2026-09-24/Ece_CANGA_Final_Thesis_Defense.pdf
+/defense_presentation_2026-09-24/*.pptx
+!/defense_presentation_2026-09-24/Ece_CANGA_Final_Thesis_Defense.pptx
+/defense_presentation_2026-09-24/*.key
+
+# Editorial snapshots, downloaded references, and document revision notes
+/outputs/thesis_*_20*/
+# Retain the audited numerical results and final figures from this folder.
+!/outputs/thesis_five_seed_revision_20261012/
+/outputs/thesis_five_seed_revision_20261012/*.docx
+/outputs/thesis_five_seed_revision_20261012/document_changes.json
+/outputs/thesis_five_seed_revision_20261012/document_verification.json
+/outputs/thesis_five_seed_revision_20261012/jury_feedback_response.txt

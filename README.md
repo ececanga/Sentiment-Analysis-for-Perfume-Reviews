@@ -7,6 +7,15 @@ Date Last Modified: 2026-05-15
 
 This repository now has two pipeline runners with different scopes.
 
+## Final thesis and experiment results
+
+- [Final thesis](<Thesis Final Version/ECE_CANGA_THESIS_VFINAL.docx>)
+- [Five-seed experiment protocol and commands](docs/thesis_three_seed_experiments.md)
+- [Saved predictions and experiment summaries](outputs/thesis_three_seed_v1/)
+- [Audited results tables and final figures](outputs/thesis_five_seed_revision_20261012/)
+
+Working drafts, advisor feedback, personal documents, administrative forms, downloaded literature, and editorial revision records are kept locally and excluded from version control. Model checkpoints and token caches are also local; predictions, metrics, and reproducibility records remain versioned.
+
 ## `run_pipeline.py` vs `run_thesis_workflow.py`
 
 - `src/pipeline/run_pipeline.py`
