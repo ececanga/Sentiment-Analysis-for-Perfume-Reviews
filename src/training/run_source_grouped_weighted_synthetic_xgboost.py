@@ -393,6 +393,7 @@ def build_weighted_xgboost_model(
     model_config: Mapping[str, Any],
     *,
     scale_pos_weight: float,
+    model_seed: int | None = None,
 ) -> Pipeline:
     """Build the accepted XGBoost specification with an effective-weight ratio."""
 
@@ -411,7 +412,7 @@ def build_weighted_xgboost_model(
                     min_child_weight=float(model_config["min_child_weight"]),
                     objective=str(model_config["objective"]),
                     eval_metric=str(model_config["eval_metric"]),
-                    random_state=int(model_config["random_seed"]),
+                    random_state=int(model_config["random_seed"] if model_seed is None else model_seed),
                     n_jobs=int(model_config["n_jobs"]),
                     tree_method=str(model_config["tree_method"]),
                     scale_pos_weight=float(scale_pos_weight),

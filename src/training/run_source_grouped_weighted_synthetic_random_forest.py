@@ -383,6 +383,7 @@ def effective_class_masses(
 
 def build_weighted_random_forest_model(
     model_config: Mapping[str, Any],
+    *, model_seed: int | None = None,
 ) -> Pipeline:
     """Build the accepted Random Forest specification unchanged."""
 
@@ -394,7 +395,7 @@ def build_weighted_random_forest_model(
                 RandomForestClassifier(
                     n_estimators=int(model_config["n_estimators"]),
                     class_weight=str(model_config["class_weight"]),
-                    random_state=int(model_config["random_seed"]),
+                    random_state=int(model_config["random_seed"] if model_seed is None else model_seed),
                     n_jobs=int(model_config["n_jobs"]),
                 ),
             ),

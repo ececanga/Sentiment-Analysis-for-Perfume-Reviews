@@ -308,6 +308,10 @@ class RunBertBenchmarkTests(unittest.TestCase):
             fold_manifest_path = out_root / "tables" / "fold_assignments.csv"
 
             _write_config(config_path)
+            import yaml
+            seed_config = yaml.safe_load(config_path.read_text())
+            seed_config['seeds']['model_seed'] = 123
+            config_path.write_text(yaml.safe_dump(seed_config))
             _write_synthetic_text_dataset(input_jsonl, fold_manifest_path, n_perfumes=30)
             _seed_existing_comparison_table(out_root)
             _seed_existing_frozen_bert_metrics(out_root)
@@ -318,7 +322,7 @@ class RunBertBenchmarkTests(unittest.TestCase):
             ), mock.patch(
                 "src.training.run_bert_benchmark.run_finetuned_bert_outer_fold",
                 side_effect=_mock_run_finetuned_outer_fold,
-            ):
+            ) as train_spy:
                 result = run_bert_benchmark(
                     input_jsonl=input_jsonl,
                     out_root=out_root,
@@ -326,6 +330,9 @@ class RunBertBenchmarkTests(unittest.TestCase):
                     device_preference="cpu",
                 )
 
+            self.assertEqual({call.kwargs['seed'] for call in train_spy.call_args_list}, {123})
+            saved = json.loads(result['metrics_path'].read_text())
+            self.assertEqual((saved['data_seed'], saved['model_seed']), (42, 123))
             self.assertTrue(result["fold_manifest_path"].exists())
             self.assertTrue(result["inner_validation_manifest_path"].exists())
             self.assertTrue(result["predictions_path"].exists())

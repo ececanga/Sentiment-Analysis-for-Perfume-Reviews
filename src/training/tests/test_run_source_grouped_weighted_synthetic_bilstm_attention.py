@@ -34,7 +34,12 @@ from src.training.source_grouped_folds import SOURCE_GROUP_COLUMN
 class WeightedSyntheticBiLSTMAttentionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.prepared = load_and_validate_inputs(DEFAULT_CONFIG)
+        from src.training.run_thesis_three_seed import derive_protocol_config
+        cls.protocol_directory = tempfile.TemporaryDirectory()
+        cls.addClassCleanup(cls.protocol_directory.cleanup)
+        cls.current_config = derive_protocol_config(
+            DEFAULT_CONFIG, Path(cls.protocol_directory.name) / 'current_protocol.yaml')
+        cls.prepared = load_and_validate_inputs(cls.current_config)
 
     def test_preflight_counts_and_split_leakage_contract(self) -> None:
         prepared = self.prepared

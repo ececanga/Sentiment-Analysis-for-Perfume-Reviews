@@ -56,6 +56,7 @@ from src.training.threshold_tuning import (
     select_fold_thresholds,
     threshold_tuning_log_lines,
 )
+from src.training.experiment_seeds import model_seed as resolve_model_seed
 from src.utils.paths import PROJECT_ROOT
 
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
@@ -984,6 +985,7 @@ def run_bert_benchmark(
     target_cols = list(config["targets"]["official_emotion_columns"])
     excluded_target_cols = dict(config["targets"]["excluded_emotion_columns"])
     seed = int(config["seeds"]["data_seed"])
+    training_seed = resolve_model_seed(config)
     threshold = float(config["evaluation"]["probability_threshold"])
     threshold_tuning_settings = load_threshold_tuning_settings(config, baseline_threshold=threshold)
     outer_cfg = config["splits"]["outer_cv"]
@@ -1011,7 +1013,7 @@ def run_bert_benchmark(
         keys=("raw_csv", "labels_csv"),
     ) if grouped_split else {}
 
-    deterministic_flags = set_global_seed(seed)
+    deterministic_flags = set_global_seed(training_seed)
     device = detect_device(device_preference)
 
     metrics_dir = out_root / "metrics"
@@ -1139,7 +1141,7 @@ def run_bert_benchmark(
             target_cols=target_cols,
             settings=settings,
             threshold=threshold,
-            seed=seed,
+            seed=training_seed,
             device=device,
             outer_fold_id=outer_fold_id,
         )
@@ -1286,7 +1288,7 @@ def run_bert_benchmark(
     if source_audit_path is not None:
         artifact_paths["source_group_audit"] = stringify_path(source_audit_path)
     split_tag = "source_grouped" if grouped_split else "kfold"
-    run_id = f"{MODEL_ID}_seed{seed}_{split_tag}{outer_n_splits}"
+    run_id = f"{MODEL_ID}_data{seed}_model{training_seed}_{split_tag}{outer_n_splits}"
 
     model_parameters = {
         "training_mode": TRAINING_MODE,
@@ -1327,7 +1329,7 @@ def run_bert_benchmark(
         "split_design": split_design,
         "split_provenance": split_provenance,
         "data_seed": seed,
-        "model_seed": seed,
+        "model_seed": training_seed,
         "threshold": threshold,
         "baseline_threshold": threshold,
         "model_parameters": model_parameters,
@@ -1370,7 +1372,7 @@ def run_bert_benchmark(
         "split_design": split_design,
         "split_provenance": split_provenance,
         "data_seed": seed,
-        "model_seed": seed,
+        "model_seed": training_seed,
         "threshold": threshold,
         "baseline_threshold": threshold,
         "command": " ".join(sys.argv),
@@ -1386,6 +1388,7 @@ def run_bert_benchmark(
     run_manifest_path.write_text(json.dumps(run_manifest, indent=2), encoding="utf-8")
 
     log_lines = [
+        f"data_seed={seed} model_seed={training_seed}",
         f"timestamp_utc={timestamp_utc}",
         f"model_id={MODEL_ID}",
         f"model_family={MODEL_FAMILY}",
@@ -1461,6 +1464,7 @@ def run_bert_benchmark(
         threshold=threshold,
         metrics=global_metrics,
         note_relpath=stringify_path(note_path),
+        model_seed=training_seed,
     )
 
     return {

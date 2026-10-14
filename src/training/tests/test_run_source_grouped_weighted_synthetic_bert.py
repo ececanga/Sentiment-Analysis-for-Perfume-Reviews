@@ -246,7 +246,12 @@ def _assert_nested_equal(test: unittest.TestCase, left: object, right: object) -
 class WeightedSyntheticBertTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.prepared = load_and_validate_inputs(DEFAULT_CONFIG)
+        from src.training.run_thesis_three_seed import derive_protocol_config
+        cls.protocol_directory = tempfile.TemporaryDirectory()
+        cls.addClassCleanup(cls.protocol_directory.cleanup)
+        cls.current_config = derive_protocol_config(
+            DEFAULT_CONFIG, Path(cls.protocol_directory.name) / 'current_protocol.yaml')
+        cls.prepared = load_and_validate_inputs(cls.current_config)
 
     def test_preflight_counts_weights_and_split_leakage_contract(self) -> None:
         prepared = self.prepared
@@ -336,8 +341,13 @@ class WeightedSyntheticBertTests(unittest.TestCase):
             )
 
         self.assertEqual(all_test_ids, set(prepared.perfume_df["perfume_id"]))
-        with self.assertRaisesRegex(ValueError, "only the augmented"):
-            fold_membership(prepared, FoldTask(CONTROL, 1))
+        control = fold_membership(prepared, FoldTask(CONTROL, 1))
+        augmented = fold_membership(prepared, FoldTask(AUGMENTED, 1))
+        for role in ("train_ids", "val_ids", "test_ids"):
+            self.assertEqual(control[role], augmented[role])
+        self.assertFalse(master.loc[control["train_mask"], "is_synthetic"].any())
+        with self.assertRaisesRegex(ValueError, "Unknown BERT training condition"):
+            fold_membership(prepared, FoldTask("unknown", 1))
 
     def test_weighted_pos_weight_matches_manual_logical_mass(self) -> None:
         prepared = self.prepared

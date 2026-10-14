@@ -39,6 +39,8 @@ outputs/model_benchmark/metrics/
 # Resumable experiment checkpoints are local derived artifacts. Verified
 # reports, predictions, and checksum manifests remain versioned.
 outputs/source_grouped_*/checkpoints/
+outputs/thesis_three_seed_v1/**/*.pt
+outputs/thesis_three_seed_v1/**/tokenized.npz
 
 # Operating system files
 .DS_Store

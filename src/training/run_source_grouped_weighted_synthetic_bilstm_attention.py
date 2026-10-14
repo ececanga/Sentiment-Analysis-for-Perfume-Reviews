@@ -601,6 +601,7 @@ def train_fold(
     epoch_path: Path,
     epoch_callback: Callable[[Mapping[str, Any]], None] | None,
     pause_requested: Callable[[], bool],
+    model_seed: int | None = None,
 ) -> tuple[np.ndarray, dict[str, Any]]:
     """Train one joint seven-label fold with exact epoch-state resume."""
 
@@ -613,7 +614,7 @@ def train_fold(
     train_ids = membership["train_ids"]
     val_ids = membership["val_ids"]
     test_ids = membership["test_ids"]
-    seed = int(prepared.config["model"]["random_seed"])
+    seed = int(prepared.config["model"]["random_seed"] if model_seed is None else model_seed)
     threshold = float(prepared.config["evaluation"]["threshold"])
     device = torch.device("cpu")
 

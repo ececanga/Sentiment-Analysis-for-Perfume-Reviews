@@ -15,6 +15,7 @@ from importlib.metadata import version
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Mapping, Sequence
 
+from src.training.experiment_seeds import model_seed as resolve_model_seed
 from src.utils.paths import PROJECT_ROOT
 
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/codex-mplconfig")
@@ -414,6 +415,7 @@ def update_comparison_table(
     threshold: float,
     metrics: Mapping[str, float],
     note_relpath: str,
+    model_seed: int | None = None,
 ) -> None:
     if output_path.exists():
         table_df = pd.read_csv(output_path)
@@ -431,7 +433,7 @@ def update_comparison_table(
         "target_columns": ";".join(target_columns),
         "split_design": split_design,
         "data_seed": seed,
-        "model_seed": seed,
+        "model_seed": seed if model_seed is None else model_seed,
         "threshold": threshold,
         "macro_f1": round(metrics["macro_f1"], 6),
         "macro_roc_auc": round(metrics["macro_roc_auc"], 6),
@@ -536,6 +538,7 @@ def run_classical_model_benchmark(
     outer_cfg = config["splits"]["outer_cv"]
     n_splits = int(outer_cfg["n_splits"])
     seed = int(config["seeds"]["data_seed"])
+    training_seed = resolve_model_seed(config)
     threshold = float(config["evaluation"]["probability_threshold"])
     threshold_tuning_settings = load_threshold_tuning_settings(config, baseline_threshold=threshold)
     inner_cfg = config.get("splits", {}).get("inner_validation", {})
@@ -701,7 +704,7 @@ def run_classical_model_benchmark(
                     const_val = int(y_inner_train[0]) if len(y_inner_train) else 0
                     prob = np.full(len(val_idx), float(const_val))
                 else:
-                    threshold_model = model_spec.build_model(seed, y_inner_train)
+                    threshold_model = model_spec.build_model(training_seed, y_inner_train)
                     threshold_model.fit(X[inner_train_idx], y_inner_train)
                     prob = threshold_model.predict_proba(X[val_idx])[:, 1]
                 val_prob[:, label_idx] = prob
@@ -726,7 +729,7 @@ def run_classical_model_benchmark(
                 pred = np.full(len(test_idx), const_val, dtype=int)
                 status = f"constant_train_fold_{fold_id}"
             else:
-                model = model_spec.build_model(seed, y_train)
+                model = model_spec.build_model(training_seed, y_train)
                 model.fit(X_train, y_train)
                 prob = model.predict_proba(X_test)[:, 1]
                 pred = (prob >= threshold).astype(int)
@@ -851,7 +854,7 @@ def run_classical_model_benchmark(
     if source_audit_path is not None:
         artifact_paths["source_group_audit"] = stringify_path(source_audit_path)
     split_tag = "source_grouped" if grouped_split else "kfold"
-    run_id = f"{model_spec.model_id}_seed{seed}_{split_tag}{n_splits}"
+    run_id = f"{model_spec.model_id}_data{seed}_model{training_seed}_{split_tag}{n_splits}"
 
     metrics_payload: Dict[str, Any] = {
         "model_id": model_spec.model_id,
@@ -871,7 +874,7 @@ def run_classical_model_benchmark(
         "split_design": split_design,
         "split_provenance": split_provenance,
         "data_seed": seed,
-        "model_seed": seed,
+        "model_seed": training_seed,
         "threshold": threshold,
         "baseline_threshold": threshold,
         "model_parameters": dict(model_spec.model_params),
@@ -906,7 +909,7 @@ def run_classical_model_benchmark(
         "split_design": split_design,
         "split_provenance": split_provenance,
         "data_seed": seed,
-        "model_seed": seed,
+        "model_seed": training_seed,
         "threshold": threshold,
         "baseline_threshold": threshold,
         "command": " ".join(sys.argv),
@@ -920,6 +923,7 @@ def run_classical_model_benchmark(
     run_manifest_path.write_text(json.dumps(run_manifest, indent=2), encoding="utf-8")
 
     log_lines = [
+        f"data_seed={seed} model_seed={training_seed}",
         f"timestamp_utc={timestamp_utc}",
         f"model_id={model_spec.model_id}",
         f"model_family={model_spec.model_family}",
@@ -963,6 +967,7 @@ def run_classical_model_benchmark(
         threshold=threshold,
         metrics=global_metrics,
         note_relpath=stringify_path(note_path),
+        model_seed=training_seed,
     )
     write_classical_model_summary(
         comparison_table_path=comparison_table_path,

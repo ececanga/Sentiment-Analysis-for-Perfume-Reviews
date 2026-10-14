@@ -40,7 +40,12 @@ def _sha256(path: Path) -> str:
 class SourceGroupedXGBoostCombinationAblationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.prepared = load_and_validate_inputs(DEFAULT_CONFIG)
+        from src.training.run_thesis_three_seed import derive_protocol_config
+        cls.protocol_directory = tempfile.TemporaryDirectory()
+        cls.addClassCleanup(cls.protocol_directory.cleanup)
+        cls.current_config = derive_protocol_config(
+            DEFAULT_CONFIG, Path(cls.protocol_directory.name) / 'current_protocol.yaml')
+        cls.prepared = load_and_validate_inputs(cls.current_config)
 
     def test_frozen_schema_and_task_order(self) -> None:
         prepared = self.prepared
@@ -105,7 +110,7 @@ class SourceGroupedXGBoostCombinationAblationTests(unittest.TestCase):
             ValueError, "canonical formal output root requires the frozen 2000"
         ):
             run_experiment(
-                config_path=DEFAULT_CONFIG,
+                config_path=self.current_config,
                 bootstrap_reps=2,
                 show_progress=False,
                 install_signal_handlers=False,
@@ -191,7 +196,7 @@ class SourceGroupedXGBoostCombinationAblationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmpdir:
             out_dir = Path(tmpdir) / "xgboost-combinations"
             first = run_experiment(
-                config_path=DEFAULT_CONFIG,
+                config_path=self.current_config,
                 out_dir=out_dir,
                 bootstrap_reps=2,
                 stop_after_tasks=1,
@@ -209,7 +214,7 @@ class SourceGroupedXGBoostCombinationAblationTests(unittest.TestCase):
             self.assertEqual(progress["total_fit_tasks"], 245)
 
             second = run_experiment(
-                config_path=DEFAULT_CONFIG,
+                config_path=self.current_config,
                 out_dir=out_dir,
                 bootstrap_reps=2,
                 stop_after_tasks=2,

@@ -1,0 +1,34 @@
+{
+  "baseline_git_commit": "b596caf86d39b73b0924de13bd20f2a396e98032",
+  "reason": "Separate model and data seeds; expose explicit seed overrides to the three-seed runner. Historical protocols remain unchanged.",
+  "files": {
+    "src/training/model_benchmark_runner.py": {
+      "historical_sha256": "1ff3cebd3931abfa5073c2a2cd57a7abaf15344d17862e17a06fe4644cfd23ea",
+      "current_sha256": "89abc9802b66c787a874d66d04877a7dde0e652c368612cf7c0e191c99b36e40"
+    },
+    "src/training/run_bert_benchmark.py": {
+      "historical_sha256": "602c2dc0ad1dd0ae12c2c4ba90851136b23930adc91cafa85d71dbf73c8acd3d",
+      "current_sha256": "40f51b60e25728798f013d2aaa218cb6c1608e8aa432b4dc8a47d73b76533034"
+    },
+    "src/training/run_bilstm_attention_benchmark.py": {
+      "historical_sha256": "f05ddb24eb784718132c3673aba28771c9e98ed5fa0e4fa26bb0f27baebabe47",
+      "current_sha256": "cd66363ca8495e5e82e149887b514e1dbd93f8b7cf1b88020b9eaa8aede7e629"
+    },
+    "src/training/run_source_grouped_weighted_synthetic_bert.py": {
+      "historical_sha256": "6333c1bb19698326ec87578df5da4a1559d7f01a68294dcdba8b3b4a0d4c80eb",
+      "current_sha256": "7a962a937e56b109cd05843d8cb3b134e0061dc71aac5189881b5055745c531f"
+    },
+    "src/training/run_source_grouped_weighted_synthetic_bilstm_attention.py": {
+      "historical_sha256": "1f910ea5a0055243fd1107a646e984931fd5ce37796002cf0678b36ce4d22d4f",
+      "current_sha256": "d06000981c5a8ded6bb45d5a41c43a2f838fe207a304443daddda0aa488d5e2f"
+    },
+    "src/training/run_source_grouped_weighted_synthetic_random_forest.py": {
+      "historical_sha256": "b5db0cf5ee0280f84d6dbd0b3262d43e48c0caf275683a0e47dd0628e0d7574a",
+      "current_sha256": "e41e4e56719154a3a2ad990957181dba9533d28e3f2dd78eb65f4f3da78d5417"
+    },
+    "src/training/run_source_grouped_weighted_synthetic_xgboost.py": {
+      "historical_sha256": "54d37a6a37c4c3c0d7fd0b0c5d75b022bb27750c6a679dc9938be944cfce0c20",
+      "current_sha256": "2b852901398732d75a56f11d1251f40265c4bfc57f8bfbcd4c633c82aa0aa012"
+    }
+  }
+}

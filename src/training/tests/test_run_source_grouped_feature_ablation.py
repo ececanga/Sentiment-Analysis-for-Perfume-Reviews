@@ -9,6 +9,8 @@ import unittest
 from collections import OrderedDict
 from pathlib import Path
 
+from src.utils.paths import PROJECT_ROOT
+
 import numpy as np
 import pandas as pd
 from sklearn.metrics import average_precision_score, f1_score, roc_auc_score
@@ -687,7 +689,12 @@ class SourceGroupedFeatureAblationTests(unittest.TestCase):
             set(report["software"]["code_sha256"]), set(CODE_PROVENANCE_PATHS)
         )
         for name, path in CODE_PROVENANCE_PATHS.items():
-            self.assertEqual(report["software"]["code_sha256"][name], sha256_file(path))
+            # Historical reports must retain historical code hashes after a
+            # reviewed implementation revision; they do not describe current code.
+            revisions = json.loads((PROJECT_ROOT / "config/thesis_three_seed_code_revisions.json").read_text())["files"]
+            revision = revisions.get(str(path.relative_to(PROJECT_ROOT)))
+            expected = revision["historical_sha256"] if revision else sha256_file(path)
+            self.assertEqual(report["software"]["code_sha256"][name], expected)
 
         checksum_path = root / "SHA256SUMS"
         recorded: dict[str, str] = {}

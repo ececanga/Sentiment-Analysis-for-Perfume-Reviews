@@ -44,6 +44,7 @@ from src.training.run_bert_benchmark import (
     aggregate_chunk_probabilities,
     build_loader_from_arrays,
     choose_best_epoch,
+    compute_pos_weight,
     compute_probability_metrics,
     evaluate_model_on_mask,
     load_bert_settings,
@@ -421,8 +422,8 @@ def load_and_validate_inputs(config_path: Path = DEFAULT_CONFIG) -> PreparedInpu
 
 
 def fold_membership(prepared: PreparedInputs, task: FoldTask) -> dict[str, Any]:
-    if task.condition != AUGMENTED:
-        raise ValueError("This runner trains only the augmented BERT condition")
+    if task.condition not in CONDITIONS:
+        raise ValueError(f"Unknown BERT training condition: {task.condition}")
     fold_inner = prepared.inner_manifest.loc[
         prepared.inner_manifest["outer_fold_id"].eq(task.fold_id)
     ]
@@ -453,6 +454,8 @@ def fold_membership(prepared: PreparedInputs, task: FoldTask) -> dict[str, Any]:
     master = prepared.master_chunk_df
     original = ~master["is_synthetic"].to_numpy(dtype=bool)
     train_mask = master["perfume_id"].isin(train_ids).to_numpy()
+    if task.condition == CONTROL:
+        train_mask &= original
     val_mask = original & master["perfume_id"].isin(val_ids).to_numpy()
     test_mask = original & master["perfume_id"].isin(test_ids).to_numpy()
     train_rows = master.loc[train_mask]
@@ -461,7 +464,8 @@ def fold_membership(prepared: PreparedInputs, task: FoldTask) -> dict[str, Any]:
         raise ValueError(f"Synthetic validation/test twins entered fold {task.fold_id}")
     if master.loc[val_mask | test_mask, "is_synthetic"].any():
         raise ValueError("Validation or test contains synthetic text")
-    if len(synthetic_train) != 3 * len(train_ids):
+    expected_synthetic = 3 * len(train_ids) if task.condition == AUGMENTED else 0
+    if len(synthetic_train) != expected_synthetic:
         raise ValueError(f"Unexpected synthetic training rows in fold {task.fold_id}")
     return {
         "train_ids": train_ids,
@@ -479,12 +483,24 @@ def weighted_pos_weight(
     membership: Mapping[str, Any],
     condition: str = AUGMENTED,
 ) -> tuple[np.ndarray, dict[str, dict[str, float]]]:
-    if condition != AUGMENTED:
-        raise ValueError("Only the augmented weighted pos_weight is trained here")
+    if condition not in CONDITIONS:
+        raise ValueError(f"Unknown BERT training condition: {condition}")
     train_ids = membership["train_ids"]
     youtube = prepared.perfume_df.loc[
         prepared.perfume_df["perfume_id"].isin(train_ids)
     ].sort_values("perfume_id")
+    if condition == CONTROL:
+        # Match the accepted main benchmark's perfume-level class balance.
+        values = compute_pos_weight(youtube, prepared.labels)
+        detail = {}
+        for index, label in enumerate(prepared.labels):
+            positive = float(youtube[label].sum())
+            detail[label] = {
+                "positive_effective_mass": positive,
+                "negative_effective_mass": float(len(youtube) - positive),
+                "pos_weight": float(values[index]),
+            }
+        return values.astype(np.float32), detail
     synthetic = prepared.synthetic.loc[
         prepared.synthetic["perfume_id"].isin(train_ids)
     ].sort_values(["perfume_id", "review_index"])
@@ -666,6 +682,7 @@ def train_fold(
     epoch_path: Path,
     epoch_callback: Callable[[Mapping[str, Any]], None] | None,
     pause_requested: Callable[[], bool],
+    model_seed: int | None = None,
 ) -> tuple[np.ndarray, dict[str, Any]]:
     """Train one joint seven-label fold with exact epoch-state resume."""
 
@@ -678,7 +695,7 @@ def train_fold(
     train_ids = membership["train_ids"]
     val_ids = membership["val_ids"]
     test_ids = membership["test_ids"]
-    seed = int(prepared.config["model"]["random_seed"])
+    seed = int(prepared.config["model"]["random_seed"] if model_seed is None else model_seed)
     threshold = float(prepared.config["evaluation"]["threshold"])
     device = torch.device("cpu")
 
